@@ -1,0 +1,245 @@
+---
+/**
+ * Services Index Page
+ * Lists all available services with links to individual pages.
+ */
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+
+import navigationData from '../../content/navigation.json';
+import siteData from '../../content/site.json';
+
+import type { Navigation } from '../../schemas/navigation';
+import type { SiteConfig } from '../../schemas/site';
+
+const navigation = navigationData as unknown as Navigation;
+const site = siteData as unknown as SiteConfig;
+
+const services = [
+  {
+    title: 'Website erstellen lassen',
+    description: 'Professionelle, moderne Websites für Schweizer KMU. Massgeschneidert, SEO-optimiert und einfach zu pflegen.',
+    href: '/services/website-erstellen',
+    icon: 'globe',
+  },
+  {
+    title: 'Squarespace Agentur',
+    description: 'Als Circle Gold Partner erstellen wir wartungsarme Squarespace Websites mit persönlicher Betreuung.',
+    href: '/services/squarespace',
+    icon: 'layout',
+  },
+  {
+    title: 'Webseiten Beratung',
+    description: 'CMS-Auswahl, Website-Audit und Relaunch-Planung. Wir helfen bei allen Fragen rund um eure digitale Präsenz.',
+    href: '/services/beratung',
+    icon: 'message-circle',
+  },
+  {
+    title: 'AI Beratung',
+    description: 'Künstliche Intelligenz praktisch nutzen. Von ChatGPT bis Automatisierung - wir zeigen wie.',
+    href: '/services/ai-beratung',
+    icon: 'cpu',
+  },
+];
+---
+
+<Base
+  title="Services | Noevu GmbH"
+  description="Unsere Dienstleistungen für Schweizer KMU: Website erstellen, Squarespace Agentur, Beratung und AI-Integration."
+>
+  <Header navigation={navigation} currentPath="/services" />
+
+  <main id="main-content">
+    <section class="services-hero section">
+      <div class="container">
+        <h1 class="services-hero__title">Unsere Services</h1>
+        <p class="services-hero__subtitle">
+          Von der Konzeption bis zum Launch - wir begleiten euch auf dem Weg zur perfekten Website.
+        </p>
+      </div>
+    </section>
+
+    <section class="services-list section">
+      <div class="container">
+        <div class="services-list__grid">
+          {services.map((service) => (
+            <a href={service.href} class="service-card">
+              <div class="service-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  {service.icon === 'globe' && (
+                    <circle cx="12" cy="12" r="10" />
+                  )}
+                  {service.icon === 'layout' && (
+                    <>
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                      <line x1="3" y1="9" x2="21" y2="9" />
+                      <line x1="9" y1="21" x2="9" y2="9" />
+                    </>
+                  )}
+                  {service.icon === 'message-circle' && (
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                  )}
+                  {service.icon === 'cpu' && (
+                    <>
+                      <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+                      <rect x="9" y="9" width="6" height="6" />
+                      <line x1="9" y1="1" x2="9" y2="4" />
+                      <line x1="15" y1="1" x2="15" y2="4" />
+                      <line x1="9" y1="20" x2="9" y2="23" />
+                      <line x1="15" y1="20" x2="15" y2="23" />
+                      <line x1="20" y1="9" x2="23" y2="9" />
+                      <line x1="20" y1="14" x2="23" y2="14" />
+                      <line x1="1" y1="9" x2="4" y2="9" />
+                      <line x1="1" y1="14" x2="4" y2="14" />
+                    </>
+                  )}
+                </svg>
+              </div>
+              <h2 class="service-card__title">{service.title}</h2>
+              <p class="service-card__description">{service.description}</p>
+              <span class="service-card__link">
+                Mehr erfahren
+                <svg viewBox="0 0 20 20" fill="currentColor" class="service-card__arrow">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="services-cta section">
+      <div class="container">
+        <div class="services-cta__content">
+          <h2 class="services-cta__title">Nicht sicher, was ihr braucht?</h2>
+          <p class="services-cta__description">
+            Kein Problem! In einem kostenlosen Erstgespräch finden wir gemeinsam heraus, wie wir euch am besten unterstützen können.
+          </p>
+          <a href="/kontakt" class="btn btn--primary">Gespräch buchen</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer navigation={navigation} site={site} />
+</Base>
+
+<style>
+  .services-hero {
+    background-color: var(--color-bg-beige);
+    text-align: center;
+  }
+
+  .services-hero__title {
+    font-size: var(--text-5xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .services-hero__subtitle {
+    font-size: var(--text-xl);
+    color: var(--color-text-muted);
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  .services-list {
+    background-color: var(--color-bg-white);
+  }
+
+  .services-list__grid {
+    display: grid;
+    gap: var(--space-8);
+  }
+
+  @media (min-width: 768px) {
+    .services-list__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .service-card {
+    display: block;
+    padding: var(--space-8);
+    background-color: var(--color-bg-cream);
+    border-radius: var(--radius-xl);
+    text-decoration: none;
+    color: inherit;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .service-card__icon {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: var(--space-4);
+    color: var(--color-primary);
+  }
+
+  .service-card__icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .service-card__title {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-3);
+    color: var(--color-text);
+  }
+
+  .service-card:hover .service-card__title {
+    color: var(--color-primary);
+  }
+
+  .service-card__description {
+    font-size: var(--text-base);
+    color: var(--color-text-muted);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+  }
+
+  .service-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-primary);
+  }
+
+  .service-card__arrow {
+    width: 1.25rem;
+    height: 1.25rem;
+    transition: transform var(--transition-fast);
+  }
+
+  .service-card:hover .service-card__arrow {
+    transform: translateX(4px);
+  }
+
+  .services-cta {
+    background-color: var(--color-bg-beige);
+    text-align: center;
+  }
+
+  .services-cta__content {
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  .services-cta__title {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .services-cta__description {
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-8);
+  }
+</style>

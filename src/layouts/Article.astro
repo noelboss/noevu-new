@@ -53,14 +53,56 @@ const updatedFormatted = updatedAt
       year: 'numeric',
     })
   : null;
+
+const siteUrl = import.meta.env.SITE || 'https://noevu.ch';
+const articleUrl = Astro.url.href;
+const fullImageUrl = featuredImage?.startsWith('http')
+  ? featuredImage
+  : featuredImage
+    ? `${siteUrl}${featuredImage}`
+    : undefined;
+
+// Article structured data
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": excerpt,
+  "image": fullImageUrl,
+  "datePublished": publishedAt,
+  "dateModified": updatedAt || publishedAt,
+  "author": {
+    "@type": "Person",
+    "name": author.name,
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Noevu GmbH",
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${siteUrl}/images/logos/noevu-logo.png`
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": articleUrl
+  }
+};
 ---
 
 <Base
   title={`${title} | Noevu Blog`}
   description={excerpt}
   image={featuredImage}
+  type="article"
+  publishedTime={publishedAt}
+  modifiedTime={updatedAt}
+  author={author.name}
 >
   <Header navigation={navigationData as any} currentPath="/blog" />
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 
   <main id="main-content">
     <article class="article">
