@@ -53,10 +53,10 @@
 - [x] Add missing blog posts if referenced in navigation - All exist via dynamic routing
 - [x] Internal link validity check - 2 service pages missing
 
-### Issues Identified (Pending)
-1. **Missing Images (19)**: badges, services, seo, about, team, resources directories need images
-2. **Missing Service Pages (2)**: `/services/optimierung`, `/services/support`
-3. **Section Type**: 9 files use `splitContent` - may need schema update
+### Issues Identified - RESOLVED
+1. **~~Missing Images (19)~~**: FIXED - Updated 16 JSON files to use Squarespace CDN URLs
+2. **~~Missing Service Pages (2)~~**: FIXED - Created `/services/optimierung` and `/services/support`
+3. **~~Section Type~~**: RESOLVED - `splitContent` is valid in Zod schema (agent finding was incorrect)
 
 ## Extracted Content Summary (from /extracted-content/extracted-content.json)
 
@@ -74,7 +74,13 @@
 | squarespace-webdesign | 0 | 10 |
 | webseiten-beratung-hilfe | 0 | 10 |
 
+### Phase 5: Image CDN Migration
+- [x] Updated 19 image references across 16 JSON files
+- [x] All local `/images/` paths replaced with Squarespace CDN URLs
+- [x] Build verified: 91 pages pass
+
 ## Notes
 - All FAQ sections now use `items` key (not `questions`) per schema
-- Build passes with 89 pages
+- Build passes with 91 pages
 - Testimonials are consistent across pages using shared data file
+- Images now load from original Squarespace CDN (no local hosting needed)

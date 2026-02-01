@@ -23,8 +23,9 @@ Rebuilding noevu.ch with Astro 5, TinaCMS, Zod validation, and JSON as canonical
 8. `7fb3bf4` - Enhance content and fix broken link (3 files)
 9. `6cb86b0` - Update documentation with Phase 4 findings
 10. `62a7285` - Add missing service pages: optimierung and support (4 files)
+11. `e622fb9` - Replace local image paths with Squarespace CDN URLs (16 files)
 
-**Total: 14 commits ahead of origin/main**
+**Total: 16 commits ahead of origin/main**
 
 ---
 
@@ -78,19 +79,9 @@ Rebuilding noevu.ch with Astro 5, TinaCMS, Zod validation, and JSON as canonical
 
 ## Next Steps (Prioritized)
 
-### Priority 1: Missing Images (19 images needed)
-Create missing directories and add images:
-```bash
-mkdir -p public/images/{badges,services,seo,about,team,resources}
-```
-
-**Missing images by category:**
-- **badges/** (2 files): squarespace-gold-partner.svg, squarespace-gold-partner-large.png
-- **services/** (8 files): squarespace-webdesign-hero.jpg, squarespace-entwicklung-hero.jpg, squarespace-expertise.jpg, strategie.jpg, squarespace-prozess.jpg, beratung-hero.jpg, kmu-website-hero.jpg, website-erstellen-hero.jpg
-- **seo/** (3 files): squarespace-agentur-zuerich.jpg, webdesign-agentur-zuerich.jpg, marketing-agentur-zuerich.jpg
-- **about/** (2 files): collaboration.jpg, team-working.jpg
-- **team/** (1 file): noel-bossart.jpg
-- **resources/** (1 file): go-live-checklist.jpg
+### Priority 1: Missing Images - DONE
+All 19 image references updated to use Squarespace CDN URLs.
+Updated 16 JSON files - images now load from `images.squarespace-cdn.com`.
 
 ### Priority 2: Missing Service Pages - DONE
 - [x] `/services/optimierung` - Created with full content
