@@ -7,9 +7,10 @@ Rebuilding noevu.ch with Astro 5, TinaCMS, Zod validation, and JSON as canonical
 ## Current Status (2026-02-01)
 
 ### Build Status
-- **89 pages** build successfully
+- **91 pages** build successfully
 - No errors
 - All FAQ sections use correct `items` key
+- All internal links now work
 
 ### Commits Made This Session
 1. `d13d188` - Update page content with extracted FAQs and testimonials (19 files)
@@ -20,8 +21,10 @@ Rebuilding noevu.ch with Astro 5, TinaCMS, Zod validation, and JSON as canonical
 6. `5414d9d` - Add page documentation and templates (55 files)
 7. `e6e077d` - Add CLAUDE.md session documentation
 8. `7fb3bf4` - Enhance content and fix broken link (3 files)
+9. `6cb86b0` - Update documentation with Phase 4 findings
+10. `62a7285` - Add missing service pages: optimierung and support (4 files)
 
-**Total: 12 commits ahead of origin/main**
+**Total: 14 commits ahead of origin/main**
 
 ---
 
@@ -89,17 +92,13 @@ mkdir -p public/images/{badges,services,seo,about,team,resources}
 - **team/** (1 file): noel-bossart.jpg
 - **resources/** (1 file): go-live-checklist.jpg
 
-### Priority 2: Missing Service Pages
-Create or remove links to:
-- [ ] `/services/optimierung` (referenced in home.json)
-- [ ] `/services/support` (referenced in home.json)
+### Priority 2: Missing Service Pages - DONE
+- [x] `/services/optimierung` - Created with full content
+- [x] `/services/support` - Created with full content
 
-### Priority 3: Schema Type `splitContent`
-9 files use `splitContent` section type - decide if this should be:
-- Added to Zod schema as valid type, OR
-- Replaced with existing types (textContent, etc.)
-
-Files affected: ai-beratung.json, gold-partner.json, schweizer-squarespace-experte.json, squarespace-hilfe.json, squarespace-tipps.json, squarespace-webdesign.json, termin.json, ueber-uns.json, webdesign-agentur.json
+### Priority 3: Schema Type `splitContent` - RESOLVED
+`splitContent` is already in the Zod schema (src/schemas/sections.ts lines 49-58, 224).
+The validation agent's finding was incorrect - no fix needed.
 
 ### Priority 4: Content Alignment
 - [ ] Update hero headlines to match reference site exactly
