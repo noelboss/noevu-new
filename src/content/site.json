@@ -1,0 +1,45 @@
+{
+  "url": "https://noevu.ch",
+  "defaultLocale": "de",
+  "locales": ["de", "en"],
+  "company": {
+    "name": "Noevu",
+    "legalName": "Noevu GmbH",
+    "tagline": "Webdesign Agentur in Zürich",
+    "description": "Digitale Lösungen für Schweizer KMU - Webdesign, Beratung und AI-Integration",
+    "foundedYear": 2015,
+    "logo": {
+      "default": "/images/logo.svg",
+      "dark": "/images/logo-dark.svg",
+      "icon": "/images/icon.svg"
+    }
+  },
+  "contact": {
+    "phone": "+41 44 505 10 20",
+    "email": "hello@noevu.ch",
+    "address": {
+      "street": "Zürichstrasse 131",
+      "city": "Dübendorf",
+      "zip": "8600",
+      "country": "Schweiz"
+    },
+    "hours": {
+      "days": "Mo-Fr",
+      "time": "08:00-22:00"
+    }
+  },
+  "defaultSeo": {
+    "titleTemplate": "%s | Noevu - Webdesign Agentur Zürich",
+    "defaultTitle": "Noevu - Webdesign Agentur in Zürich | Digitale Lösungen für KMU",
+    "defaultDescription": "Professionelle Webdesign Agentur in Zürich. Wir entwickeln massgeschneiderte Websites für Schweizer KMU mit Squarespace, modernem Design und AI-Integration.",
+    "defaultImage": "/images/og-default.jpg"
+  },
+  "analytics": {
+    "googleTagManager": "GTM-XXXXXX"
+  },
+  "features": {
+    "blog": true,
+    "i18n": true,
+    "darkMode": false
+  }
+}

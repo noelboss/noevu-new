@@ -1,0 +1,155 @@
+---
+import type { ServicesGridSection } from '../../schemas/sections';
+
+interface Props {
+  data: ServicesGridSection;
+}
+
+const { data } = Astro.props;
+const { title, subtitle, services, columns = '4' } = data;
+
+const gridClass = `services-grid--cols-${columns}`;
+---
+
+<section class="services-grid section">
+  <div class="container">
+    {(title || subtitle) && (
+      <div class="services-grid__header">
+        {title && <h2 class="services-grid__title">{title}</h2>}
+        {subtitle && <p class="services-grid__subtitle">{subtitle}</p>}
+      </div>
+    )}
+
+    <div class={`services-grid__grid ${gridClass}`}>
+      {services.map((service) => (
+        <div class="services-grid__item">
+          {service.icon && (
+            <div class="services-grid__icon" aria-hidden="true">
+              <Fragment set:html={service.icon} />
+            </div>
+          )}
+          <h3 class="services-grid__item-title">{service.title}</h3>
+          <div class="services-grid__description" set:html={service.description} />
+          {service.cta && (
+            <a
+              href={service.cta.href}
+              class="services-grid__link"
+              target={service.cta.external ? '_blank' : undefined}
+              rel={service.cta.external ? 'noopener noreferrer' : undefined}
+            >
+              {service.cta.label}
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .services-grid {
+    background-color: var(--color-bg-white);
+  }
+
+  .services-grid__header {
+    text-align: center;
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: var(--space-12);
+  }
+
+  .services-grid__title {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .services-grid__subtitle {
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+  }
+
+  .services-grid__grid {
+    display: grid;
+    gap: var(--space-8);
+  }
+
+  @media (min-width: 640px) {
+    .services-grid__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .services-grid--cols-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .services-grid--cols-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .services-grid__item {
+    padding: var(--space-6);
+    background-color: var(--color-bg-cream);
+    border-radius: var(--radius-lg);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+
+  .services-grid__item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .services-grid__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: var(--space-4);
+    background-color: var(--color-primary);
+    border-radius: var(--radius);
+    color: var(--color-text-inverted);
+  }
+
+  .services-grid__icon :global(svg) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .services-grid__item-title {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--space-3);
+  }
+
+  .services-grid__description {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+  }
+
+  .services-grid__link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-primary);
+  }
+
+  .services-grid__link svg {
+    width: 1rem;
+    height: 1rem;
+    transition: transform var(--transition-fast);
+  }
+
+  .services-grid__link:hover svg {
+    transform: translateX(4px);
+  }
+</style>

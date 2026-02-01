@@ -1,0 +1,85 @@
+---
+import type { LogoGallerySection } from '../../schemas/sections';
+
+interface Props {
+  data: LogoGallerySection;
+}
+
+const { data } = Astro.props;
+const { title, logos } = data;
+---
+
+<section class="logo-gallery section--sm">
+  <div class="container">
+    {title && <p class="logo-gallery__title">{title}</p>}
+    <div class="logo-gallery__grid">
+      {logos.map((logo) => (
+        <div class="logo-gallery__item">
+          {logo.href ? (
+            <a href={logo.href} target="_blank" rel="noopener noreferrer" aria-label={logo.name}>
+              <img
+                src={logo.image.src}
+                alt={logo.image.alt || logo.name}
+                loading="lazy"
+                class="logo-gallery__logo"
+              />
+            </a>
+          ) : (
+            <img
+              src={logo.image.src}
+              alt={logo.image.alt || logo.name}
+              loading="lazy"
+              class="logo-gallery__logo"
+            />
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .logo-gallery {
+    background-color: var(--color-bg-white);
+  }
+
+  .logo-gallery__title {
+    text-align: center;
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-8);
+  }
+
+  .logo-gallery__grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-8) var(--space-12);
+  }
+
+  .logo-gallery__item {
+    flex-shrink: 0;
+  }
+
+  .logo-gallery__logo {
+    max-height: 2.5rem;
+    width: auto;
+    opacity: 0.7;
+    filter: grayscale(100%);
+    transition: all var(--transition);
+  }
+
+  .logo-gallery__item:hover .logo-gallery__logo {
+    opacity: 1;
+    filter: grayscale(0%);
+  }
+
+  @media (min-width: 768px) {
+    .logo-gallery__logo {
+      max-height: 3rem;
+    }
+  }
+</style>

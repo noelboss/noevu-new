@@ -1,0 +1,135 @@
+---
+import type { CTASection } from '../../schemas/sections';
+
+interface Props {
+  data: CTASection;
+}
+
+const { data } = Astro.props;
+const { title, description, ctas, backgroundColor = 'green', image } = data;
+
+const bgClass = `cta--${backgroundColor}`;
+---
+
+<section class={`cta section ${bgClass}`}>
+  <div class="cta__container container">
+    {image && (
+      <div class="cta__image">
+        <img
+          src={image.src}
+          alt={image.alt}
+          loading="lazy"
+        />
+      </div>
+    )}
+    <div class="cta__content">
+      <h2 class="cta__title">{title}</h2>
+      {description && <div class="cta__description" set:html={description} />}
+      <div class="cta__buttons">
+        {ctas.map((cta, index) => (
+          <a
+            href={cta.href}
+            class={`btn ${index === 0 ? (backgroundColor === 'green' ? 'btn--accent' : 'btn--primary') : 'btn--secondary'}`}
+            target={cta.external ? '_blank' : undefined}
+            rel={cta.external ? 'noopener noreferrer' : undefined}
+          >
+            {cta.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta {
+    text-align: center;
+  }
+
+  .cta--green {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverted);
+  }
+
+  .cta--orange {
+    background-color: var(--color-accent);
+    color: var(--color-text-inverted);
+  }
+
+  .cta--beige {
+    background-color: var(--color-bg-beige);
+    color: var(--color-text);
+  }
+
+  .cta__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-8);
+  }
+
+  @media (min-width: 1024px) {
+    .cta__container:has(.cta__image) {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    .cta__container:has(.cta__image) .cta__content {
+      flex: 1;
+    }
+  }
+
+  .cta__image {
+    max-width: 300px;
+  }
+
+  .cta__image img {
+    border-radius: var(--radius-lg);
+  }
+
+  .cta__content {
+    max-width: 600px;
+  }
+
+  .cta__title {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .cta--green .cta__title,
+  .cta--orange .cta__title {
+    color: var(--color-text-inverted);
+  }
+
+  .cta__description {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-8);
+    opacity: 0.9;
+  }
+
+  .cta__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-4);
+  }
+
+  @media (min-width: 1024px) {
+    .cta__container:has(.cta__image) .cta__buttons {
+      justify-content: flex-start;
+    }
+  }
+
+  /* Button overrides for dark backgrounds */
+  .cta--green .btn--secondary,
+  .cta--orange .btn--secondary {
+    color: var(--color-text-inverted);
+    border-color: var(--color-text-inverted);
+  }
+
+  .cta--green .btn--secondary:hover,
+  .cta--orange .btn--secondary:hover {
+    background-color: var(--color-text-inverted);
+    color: var(--color-text);
+  }
+</style>

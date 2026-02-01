@@ -1,0 +1,128 @@
+---
+import type { FAQSection } from '../../schemas/sections';
+
+interface Props {
+  data: FAQSection;
+}
+
+const { data } = Astro.props;
+const { title, items } = data;
+
+// Generate unique IDs for accessibility
+const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
+---
+
+<section class="faq section">
+  <div class="container">
+    {title && <h2 class="faq__title">{title}</h2>}
+
+    <div class="faq__list" role="list">
+      {items.map((item, index) => {
+        const itemId = `${sectionId}-${index}`;
+        return (
+          <details class="faq__item" name={sectionId}>
+            <summary class="faq__question" id={`question-${itemId}`}>
+              {item.question}
+              <svg class="faq__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </summary>
+            <div
+              class="faq__answer"
+              id={`answer-${itemId}`}
+              set:html={item.answer}
+            />
+          </details>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq {
+    background-color: var(--color-bg-cream);
+  }
+
+  .faq__title {
+    text-align: center;
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-12);
+  }
+
+  .faq__list {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+
+  .faq__item {
+    border-bottom: 1px solid var(--color-neutral-200);
+  }
+
+  .faq__item:first-child {
+    border-top: 1px solid var(--color-neutral-200);
+  }
+
+  .faq__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-4);
+    width: 100%;
+    padding: var(--space-5) 0;
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    text-align: left;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .faq__question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq__question::marker {
+    display: none;
+  }
+
+  .faq__icon {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-primary);
+    transition: transform var(--transition);
+  }
+
+  .faq__item[open] .faq__icon {
+    transform: rotate(180deg);
+  }
+
+  .faq__answer {
+    padding-bottom: var(--space-6);
+    color: var(--color-text-muted);
+    line-height: var(--leading-relaxed);
+  }
+
+  .faq__answer :global(p) {
+    margin-bottom: var(--space-4);
+  }
+
+  .faq__answer :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .faq__answer :global(a) {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  .faq__answer :global(ul) {
+    margin-top: var(--space-2);
+    margin-bottom: var(--space-4);
+    padding-left: var(--space-6);
+  }
+
+  .faq__answer :global(li) {
+    margin-bottom: var(--space-2);
+  }
+</style>

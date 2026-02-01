@@ -1,0 +1,94 @@
+---
+import type { ValuePropositionSection } from '../../schemas/sections';
+
+interface Props {
+  data: ValuePropositionSection;
+}
+
+const { data } = Astro.props;
+const { title, items } = data;
+---
+
+<section class="value-prop section">
+  <div class="container">
+    {title && <h2 class="value-prop__title">{title}</h2>}
+    <div class="value-prop__grid">
+      {items.map((item) => (
+        <div class="value-prop__item">
+          {item.icon && (
+            <div class="value-prop__icon" aria-hidden="true">
+              <Fragment set:html={item.icon} />
+            </div>
+          )}
+          <h3 class="value-prop__item-title">{item.title}</h3>
+          <div class="value-prop__description" set:html={item.description} />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .value-prop {
+    background-color: var(--color-bg-beige);
+  }
+
+  .value-prop__title {
+    text-align: center;
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-12);
+  }
+
+  .value-prop__grid {
+    display: grid;
+    gap: var(--space-8);
+  }
+
+  @media (min-width: 768px) {
+    .value-prop__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .value-prop__grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-12);
+    }
+  }
+
+  .value-prop__item {
+    text-align: center;
+    padding: var(--space-6);
+  }
+
+  .value-prop__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-inline: auto;
+    margin-bottom: var(--space-4);
+    background-color: var(--color-primary-100);
+    border-radius: var(--radius-lg);
+    color: var(--color-primary);
+  }
+
+  .value-prop__icon :global(svg) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .value-prop__item-title {
+    font-size: var(--text-xl);
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--space-3);
+  }
+
+  .value-prop__description {
+    font-size: var(--text-base);
+    color: var(--color-text-muted);
+    line-height: var(--leading-relaxed);
+  }
+</style>

@@ -1,0 +1,317 @@
+---
+import type { Navigation } from '../../schemas/navigation';
+
+interface Props {
+  navigation: Navigation;
+  currentPath?: string;
+}
+
+const { navigation, currentPath = '' } = Astro.props;
+const { main: navItems, cta } = navigation;
+---
+
+<header class="header">
+  <div class="header__container container">
+    <a href="/" class="header__logo" aria-label="Noevu - Zur Startseite">
+      <svg viewBox="0 0 120 40" fill="currentColor" aria-hidden="true">
+        <text x="0" y="28" font-family="Inter, sans-serif" font-size="24" font-weight="700">noevu</text>
+      </svg>
+    </a>
+
+    <nav class="header__nav" aria-label="Hauptnavigation">
+      <ul class="header__nav-list">
+        {navItems.map((item) => (
+          <li class="header__nav-item">
+            {item.children && item.children.length > 0 ? (
+              <div class="header__dropdown">
+                <button
+                  class="header__nav-link header__dropdown-trigger"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                  {item.label}
+                  <svg class="header__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+                <ul class="header__dropdown-menu">
+                  {item.children.map((child) => (
+                    <li>
+                      <a
+                        href={child.href}
+                        class="header__dropdown-link"
+                        target={child.external ? '_blank' : undefined}
+                        rel={child.external ? 'noopener noreferrer' : undefined}
+                      >
+                        {child.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : (
+              <a
+                href={item.href}
+                class={`header__nav-link ${currentPath === item.href ? 'header__nav-link--active' : ''}`}
+                target={item.external ? '_blank' : undefined}
+                rel={item.external ? 'noopener noreferrer' : undefined}
+              >
+                {item.label}
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <div class="header__lang">
+        <a href="/de" class="header__lang-link header__lang-link--active">DE</a>
+        <span class="header__lang-separator">/</span>
+        <a href="/en" class="header__lang-link">EN</a>
+      </div>
+
+      {cta && (
+        <a href={cta.href} class="btn btn--primary header__cta">
+          {cta.label}
+        </a>
+      )}
+
+      <button class="header__mobile-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <svg class="header__menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg class="header__close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-bg-white);
+    border-bottom: 1px solid var(--color-neutral-200);
+  }
+
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-8);
+    height: 4.5rem;
+  }
+
+  .header__logo {
+    flex-shrink: 0;
+    color: var(--color-primary);
+  }
+
+  .header__logo svg {
+    height: 2rem;
+    width: auto;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .header__nav {
+      display: block;
+    }
+  }
+
+  .header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__nav-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-text);
+    border-radius: var(--radius);
+    transition: background-color var(--transition-fast);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .header__nav-link:hover {
+    background-color: var(--color-neutral-100);
+    color: var(--color-text);
+  }
+
+  .header__nav-link--active {
+    color: var(--color-primary);
+  }
+
+  .header__chevron {
+    width: 1rem;
+    height: 1rem;
+    transition: transform var(--transition-fast);
+  }
+
+  .header__dropdown {
+    position: relative;
+  }
+
+  .header__dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    padding: var(--space-2);
+    background-color: var(--color-bg-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all var(--transition-fast);
+    list-style: none;
+    margin: 0;
+  }
+
+  .header__dropdown:hover .header__dropdown-menu,
+  .header__dropdown:focus-within .header__dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .header__dropdown:hover .header__chevron,
+  .header__dropdown:focus-within .header__chevron {
+    transform: rotate(180deg);
+  }
+
+  .header__dropdown-link {
+    display: block;
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--text-sm);
+    color: var(--color-text);
+    border-radius: var(--radius);
+    transition: background-color var(--transition-fast);
+  }
+
+  .header__dropdown-link:hover {
+    background-color: var(--color-neutral-100);
+    color: var(--color-text);
+  }
+
+  .header__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+
+  .header__lang {
+    display: none;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+  }
+
+  @media (min-width: 768px) {
+    .header__lang {
+      display: flex;
+    }
+  }
+
+  .header__lang-link {
+    color: var(--color-text-muted);
+    font-weight: var(--font-medium);
+  }
+
+  .header__lang-link--active {
+    color: var(--color-primary);
+  }
+
+  .header__lang-separator {
+    color: var(--color-neutral-300);
+  }
+
+  .header__cta {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .header__cta {
+      display: inline-flex;
+    }
+  }
+
+  .header__mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text);
+  }
+
+  @media (min-width: 1024px) {
+    .header__mobile-toggle {
+      display: none;
+    }
+  }
+
+  .header__menu-icon,
+  .header__close-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .header__close-icon {
+    display: none;
+  }
+
+  .header__mobile-toggle[aria-expanded="true"] .header__menu-icon {
+    display: none;
+  }
+
+  .header__mobile-toggle[aria-expanded="true"] .header__close-icon {
+    display: block;
+  }
+</style>
+
+<script>
+  // Mobile menu toggle
+  const toggle = document.querySelector('.header__mobile-toggle');
+  const nav = document.querySelector('.header__nav');
+
+  toggle?.addEventListener('click', () => {
+    const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!isExpanded));
+    nav?.classList.toggle('header__nav--open');
+  });
+
+  // Dropdown keyboard accessibility
+  const dropdownTriggers = document.querySelectorAll('.header__dropdown-trigger');
+
+  dropdownTriggers.forEach((trigger) => {
+    trigger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+        trigger.setAttribute('aria-expanded', String(!isExpanded));
+      }
+    });
+  });
+</script>

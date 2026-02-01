@@ -1,0 +1,196 @@
+---
+import type { TestimonialsSection } from '../../schemas/sections';
+
+interface Props {
+  data: TestimonialsSection;
+}
+
+const { data } = Astro.props;
+const { title, rating, testimonials } = data;
+---
+
+<section class="testimonials section">
+  <div class="container">
+    {(title || rating) && (
+      <div class="testimonials__header">
+        {title && <h2 class="testimonials__title">{title}</h2>}
+        {rating && (
+          <div class="testimonials__rating">
+            <div class="testimonials__stars" aria-label={`${rating.average} von 5 Sternen`}>
+              {Array.from({ length: 5 }).map((_, i) => (
+                <svg
+                  class={`testimonials__star ${i < Math.floor(rating.average) ? 'testimonials__star--filled' : ''}`}
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+            </div>
+            <span class="testimonials__rating-text">
+              {rating.average} Sterne ({rating.count} Bewertungen)
+              {rating.source && <span class="testimonials__source">auf {rating.source}</span>}
+            </span>
+          </div>
+        )}
+      </div>
+    )}
+
+    <div class="testimonials__grid">
+      {testimonials.map((testimonial) => (
+        <blockquote class="testimonials__item">
+          {testimonial.rating && (
+            <div class="testimonials__item-stars">
+              {Array.from({ length: testimonial.rating }).map(() => (
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+            </div>
+          )}
+          <p class="testimonials__quote">{testimonial.quote}</p>
+          <footer class="testimonials__footer">
+            {testimonial.image && (
+              <img
+                src={testimonial.image.src}
+                alt={testimonial.image.alt || testimonial.author}
+                class="testimonials__avatar"
+                loading="lazy"
+              />
+            )}
+            <div class="testimonials__author">
+              <cite class="testimonials__name">{testimonial.author}</cite>
+              {(testimonial.role || testimonial.company) && (
+                <span class="testimonials__role">
+                  {testimonial.role}
+                  {testimonial.role && testimonial.company && ', '}
+                  {testimonial.company}
+                </span>
+              )}
+            </div>
+          </footer>
+        </blockquote>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonials {
+    background-color: var(--color-bg-white);
+  }
+
+  .testimonials__header {
+    text-align: center;
+    margin-bottom: var(--space-12);
+  }
+
+  .testimonials__title {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .testimonials__rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .testimonials__stars {
+    display: flex;
+    gap: var(--space-1);
+  }
+
+  .testimonials__star {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--color-neutral-300);
+  }
+
+  .testimonials__star--filled {
+    color: var(--color-accent);
+  }
+
+  .testimonials__rating-text {
+    font-size: var(--text-base);
+    color: var(--color-text-muted);
+  }
+
+  .testimonials__source {
+    color: var(--color-text-muted);
+  }
+
+  .testimonials__grid {
+    display: grid;
+    gap: var(--space-8);
+  }
+
+  @media (min-width: 768px) {
+    .testimonials__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .testimonials__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .testimonials__item {
+    background-color: var(--color-bg-cream);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    margin: 0;
+  }
+
+  .testimonials__item-stars {
+    display: flex;
+    gap: var(--space-1);
+    margin-bottom: var(--space-4);
+    color: var(--color-accent);
+  }
+
+  .testimonials__item-stars svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .testimonials__quote {
+    font-size: var(--text-base);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-6);
+    font-style: italic;
+  }
+
+  .testimonials__footer {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .testimonials__avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--radius-full);
+    object-fit: cover;
+  }
+
+  .testimonials__author {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonials__name {
+    font-style: normal;
+    font-weight: var(--font-semibold);
+    font-size: var(--text-sm);
+  }
+
+  .testimonials__role {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+</style>

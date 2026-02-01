@@ -1,0 +1,41 @@
+---
+/**
+ * Homepage - Rendered from structured JSON data
+ *
+ * Architecture: Page orchestration with pure renderer components.
+ * All content comes from validated JSON, components are pure renderers.
+ */
+import Base from '../layouts/Base.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import SectionRenderer from '../components/SectionRenderer.astro';
+
+// Import structured content
+import pageData from '../content/pages/home.json';
+import navigationData from '../content/navigation.json';
+import siteData from '../content/site.json';
+
+// Type imports for validation (optional runtime validation can be added)
+import type { Page } from '../schemas/page';
+import type { Navigation } from '../schemas/navigation';
+import type { SiteConfig } from '../schemas/site';
+
+// Cast to types (in production, add runtime validation with Zod)
+const page = pageData as unknown as Page;
+const navigation = navigationData as unknown as Navigation;
+const site = siteData as unknown as SiteConfig;
+---
+
+<Base
+  title={page.seo.title}
+  description={page.seo.description}
+  image={page.seo.image?.src}
+>
+  <Header navigation={navigation} currentPath="/" />
+
+  <main id="main-content">
+    <SectionRenderer sections={page.sections} />
+  </main>
+
+  <Footer navigation={navigation} site={site} />
+</Base>

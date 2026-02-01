@@ -1,0 +1,160 @@
+---
+import type { ProcessSection } from '../../schemas/sections';
+
+interface Props {
+  data: ProcessSection;
+}
+
+const { data } = Astro.props;
+const { title, subtitle, steps, layout = 'alternating' } = data;
+
+const layoutClass = `process--${layout}`;
+---
+
+<section class={`process section ${layoutClass}`}>
+  <div class="container">
+    {(title || subtitle) && (
+      <div class="process__header">
+        {title && <h2 class="process__title">{title}</h2>}
+        {subtitle && <p class="process__subtitle">{subtitle}</p>}
+      </div>
+    )}
+
+    <div class="process__steps">
+      {steps.map((step, index) => (
+        <div class={`process__step ${index % 2 === 1 && layout === 'alternating' ? 'process__step--reverse' : ''}`}>
+          {step.image && (
+            <div class="process__image">
+              <img
+                src={step.image.src}
+                alt={step.image.alt}
+                loading="lazy"
+              />
+            </div>
+          )}
+          <div class="process__content">
+            <div class="process__number">
+              {step.number || index + 1}
+            </div>
+            <h3 class="process__step-title">{step.title}</h3>
+            <div class="process__description" set:html={step.description} />
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .process {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverted);
+  }
+
+  .process__header {
+    text-align: center;
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: var(--space-16);
+  }
+
+  .process__title {
+    font-size: var(--text-3xl);
+    color: var(--color-text-inverted);
+    margin-bottom: var(--space-4);
+  }
+
+  .process__subtitle {
+    font-size: var(--text-lg);
+    color: var(--color-primary-200);
+  }
+
+  .process__steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+
+  .process__step {
+    display: grid;
+    gap: var(--space-8);
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .process__step {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-16);
+    }
+
+    .process__step--reverse .process__image {
+      order: 2;
+    }
+  }
+
+  .process__image img {
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .process__content {
+    padding-block: var(--space-4);
+  }
+
+  .process__number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: var(--text-lg);
+    font-weight: var(--font-bold);
+    background-color: var(--color-accent);
+    color: var(--color-text-inverted);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-4);
+  }
+
+  .process__step-title {
+    font-size: var(--text-2xl);
+    color: var(--color-text-inverted);
+    margin-bottom: var(--space-4);
+  }
+
+  .process__description {
+    font-size: var(--text-lg);
+    color: var(--color-primary-100);
+    line-height: var(--leading-relaxed);
+  }
+
+  /* Vertical layout */
+  .process--vertical .process__steps {
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  .process--vertical .process__step {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .process--vertical .process__number {
+    margin-inline: auto;
+  }
+
+  /* Horizontal layout */
+  @media (min-width: 1024px) {
+    .process--horizontal .process__steps {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .process--horizontal .process__step {
+      flex: 1 1 300px;
+      max-width: 350px;
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+</style>

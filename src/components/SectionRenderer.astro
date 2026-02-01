@@ -1,0 +1,78 @@
+---
+/**
+ * SectionRenderer - Orchestrates section rendering from structured data
+ *
+ * This component maps section data (from the discriminated union) to the
+ * appropriate pure renderer component. It handles both inline sections
+ * and section references.
+ *
+ * Architecture principle: Pages are orchestration graphs, components are pure renderers.
+ */
+import type { SectionEntry, Section } from '../schemas/sections';
+
+import Hero from './sections/Hero.astro';
+import LogoGallery from './sections/LogoGallery.astro';
+import ValueProposition from './sections/ValueProposition.astro';
+import SplitContent from './sections/SplitContent.astro';
+import ServicesGrid from './sections/ServicesGrid.astro';
+import ComparisonTable from './sections/ComparisonTable.astro';
+import Process from './sections/Process.astro';
+import FeaturesList from './sections/FeaturesList.astro';
+import Testimonials from './sections/Testimonials.astro';
+import CTA from './sections/CTA.astro';
+import FAQ from './sections/FAQ.astro';
+import TextContent from './sections/TextContent.astro';
+import WaveDivider from './sections/WaveDivider.astro';
+
+interface Props {
+  sections: SectionEntry[];
+  sharedSections?: Record<string, Section>;
+}
+
+const { sections, sharedSections = {} } = Astro.props;
+
+// Resolve section entry (inline or reference)
+function resolveSection(entry: SectionEntry): Section | null {
+  if ('ref' in entry) {
+    // Reference to shared section
+    return sharedSections[entry.ref] || null;
+  }
+  // Inline section
+  return entry;
+}
+
+// Map section type to component
+const sectionComponents: Record<string, any> = {
+  hero: Hero,
+  logoGallery: LogoGallery,
+  valueProposition: ValueProposition,
+  splitContent: SplitContent,
+  servicesGrid: ServicesGrid,
+  comparisonTable: ComparisonTable,
+  process: Process,
+  featuresList: FeaturesList,
+  testimonials: Testimonials,
+  cta: CTA,
+  faq: FAQ,
+  textContent: TextContent,
+  waveDivider: WaveDivider,
+};
+---
+
+{sections.map((entry, index) => {
+  const section = resolveSection(entry);
+
+  if (!section) {
+    console.warn(`Section reference not found at index ${index}`);
+    return null;
+  }
+
+  const Component = sectionComponents[section.type];
+
+  if (!Component) {
+    console.warn(`Unknown section type: ${section.type}`);
+    return null;
+  }
+
+  return <Component data={section} />;
+})}

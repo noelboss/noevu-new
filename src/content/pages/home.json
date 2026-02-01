@@ -1,0 +1,233 @@
+{
+  "slug": "",
+  "locale": "de",
+  "seo": {
+    "title": "Webdesign Agentur in Zürich – digitale Lösungen für Schweizer KMU",
+    "description": "Noevu ist Ihre Webdesign Agentur in Zürich. Wir entwickeln massgeschneiderte Websites mit Squarespace für Schweizer KMU. 25+ Jahre Erfahrung, AI-Integration, persönliche Beratung."
+  },
+  "layout": "default",
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Webdesign Agentur in Zürich – digitale Lösungen für Schweizer KMU",
+      "description": "Wir entwickeln einzigartige Lösungen, die Ihre Marke stärken und Ihre Kunden begeistern. Modern, effizient und mit einem klaren Fokus auf Ihre Ziele.",
+      "ctas": [
+        { "label": "Kostenlose Video-Beratung", "href": "/kontakt#termin", "variant": "primary" },
+        { "label": "Website erstellen lassen", "href": "/services/website-erstellen", "variant": "secondary" }
+      ],
+      "rating": {
+        "score": 4.9,
+        "count": 13,
+        "label": "Bewertungen"
+      },
+      "alignment": "left"
+    },
+    {
+      "type": "logoGallery",
+      "title": "Eure Webdesign Agentur in Zürich für qualitätvolles Webdesign",
+      "logos": [
+        { "name": "Migros", "image": { "src": "/images/logos/migros.svg", "alt": "Migros" } },
+        { "name": "NZZ", "image": { "src": "/images/logos/nzz.svg", "alt": "NZZ" } },
+        { "name": "Belimo", "image": { "src": "/images/logos/belimo.svg", "alt": "Belimo" } },
+        { "name": "Vogel Dental", "image": { "src": "/images/logos/vogel-dental.svg", "alt": "Vogel Dental" } },
+        { "name": "Ausgleichskasse", "image": { "src": "/images/logos/ausgleichskasse.svg", "alt": "Ausgleichskasse" } },
+        { "name": "Davatz", "image": { "src": "/images/logos/davatz.svg", "alt": "Davatz" } }
+      ]
+    },
+    {
+      "type": "valueProposition",
+      "items": [
+        {
+          "title": "Ihr startet mit Vorsprung",
+          "description": "Modernste Technologie und AI-Effizienz für maximale Wirkung. Wir nutzen die besten Tools, damit ihr schneller zum Ziel kommt."
+        },
+        {
+          "title": "Website die Ziele erreicht",
+          "description": "Strategische Customer Journey und klare Zielgruppenanalyse. Jede Seite ist auf Conversion optimiert."
+        },
+        {
+          "title": "Perfektion durch Erfahrung",
+          "description": "Über 25 Jahre Erfahrung in Webdesign und digitaler Kommunikation. Wir wissen, was funktioniert."
+        }
+      ]
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "servicesGrid",
+      "title": "Unsere Services",
+      "subtitle": "Von der Beratung bis zur Umsetzung – alles aus einer Hand",
+      "services": [
+        {
+          "title": "Professionelle Beratung",
+          "description": "Strategie, Zielgruppenanalyse und Konzeption. Wir helfen euch, die richtigen Entscheidungen zu treffen.",
+          "cta": { "label": "Mehr erfahren", "href": "/services/beratung", "variant": "text" }
+        },
+        {
+          "title": "Website Entwicklung",
+          "description": "Squarespace, responsive Design und moderne Technologien. Websites die begeistern und konvertieren.",
+          "cta": { "label": "Mehr erfahren", "href": "/services/website-erstellen", "variant": "text" }
+        },
+        {
+          "title": "Optimierung",
+          "description": "Performance, SEO und Conversion-Optimierung. Damit eure Website gefunden wird und Ergebnisse liefert.",
+          "cta": { "label": "Mehr erfahren", "href": "/services/optimierung", "variant": "text" }
+        },
+        {
+          "title": "Support & Hosting",
+          "description": "Wartung, Sicherheit und technischer Support. Wir kümmern uns um alles, damit ihr euch auf euer Business konzentrieren könnt.",
+          "cta": { "label": "Mehr erfahren", "href": "/services/support", "variant": "text" }
+        }
+      ],
+      "columns": "4"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "comparisonTable",
+      "title": "Warum Noevu?",
+      "leftColumn": {
+        "header": "Traditionelle Agentur",
+        "items": [
+          "Starre Templates ohne Flexibilität",
+          "Komplexes CMS mit steiler Lernkurve",
+          "Hoher Wartungsaufwand",
+          "Lange Entwicklungszeiten",
+          "Fokus auf Technik statt Ergebnisse",
+          "Veraltete Technologien"
+        ],
+        "highlighted": false
+      },
+      "rightColumn": {
+        "header": "Noevu",
+        "items": [
+          "Massgeschneidertes Design für eure Marke",
+          "Einfaches CMS – ihr könnt alles selbst bearbeiten",
+          "Minimaler Wartungsaufwand",
+          "Schnelle Umsetzung dank moderner Tools",
+          "Fokus auf eure Geschäftsziele",
+          "Modernste AI-Technologie"
+        ],
+        "highlighted": true
+      }
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "green",
+      "height": "large"
+    },
+    {
+      "type": "process",
+      "title": "Unser Prozess",
+      "subtitle": "In vier Schritten zu eurer perfekten Website",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Klare Botschaft",
+          "description": "Mit dem Golden Circle Framework entwickeln wir eure einzigartige Positionierung. Warum tut ihr, was ihr tut?"
+        },
+        {
+          "number": 2,
+          "title": "Intuitive User Experience",
+          "description": "Wir gestalten Nutzererlebnisse, die eure Besucher begeistern und zum Handeln motivieren."
+        },
+        {
+          "number": 3,
+          "title": "Strategisches Design",
+          "description": "Design das nicht nur gut aussieht, sondern eure Geschäftsziele unterstützt und Vertrauen aufbaut."
+        },
+        {
+          "number": 4,
+          "title": "Service & Betrieb",
+          "description": "Nach dem Launch sind wir weiterhin für euch da. Support, Updates und kontinuierliche Optimierung."
+        }
+      ],
+      "layout": "alternating"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "green",
+      "bottomColor": "beige",
+      "height": "large"
+    },
+    {
+      "type": "featuresList",
+      "title": "Das macht uns aus",
+      "features": [
+        {
+          "title": "Massgeschneiderte Designs",
+          "description": "Kosteneffizient und einzigartig – kein Template von der Stange"
+        },
+        {
+          "title": "Einfache Inhaltspflege",
+          "description": "Intuitives CMS – ihr behaltet die volle Kontrolle"
+        },
+        {
+          "title": "Mobile & Desktop optimiert",
+          "description": "Perfekte Darstellung auf allen Geräten"
+        },
+        {
+          "title": "Volle Kontrolle",
+          "description": "Ihr könnt jederzeit Inhalte selbst anpassen"
+        },
+        {
+          "title": "AI-gestützte Technologie",
+          "description": "Modernste Tools für maximale Effizienz"
+        },
+        {
+          "title": "Erfahrene Webentwickler",
+          "description": "Über 25 Jahre Erfahrung in der Branche"
+        }
+      ],
+      "columns": "2"
+    },
+    {
+      "type": "testimonials",
+      "title": "Das sagen unsere Kunden",
+      "rating": {
+        "average": 4.9,
+        "count": 13,
+        "source": "Google"
+      },
+      "testimonials": [
+        {
+          "quote": "Noevu hat unsere Erwartungen übertroffen. Die neue Website ist nicht nur schön, sondern bringt auch messbare Ergebnisse.",
+          "author": "Martin Künzi",
+          "company": "Wohnperspektive GmbH",
+          "rating": 5
+        },
+        {
+          "quote": "Professionell, schnell und unkompliziert. Die Zusammenarbeit mit Noevu war ein Vergnügen.",
+          "author": "Sandra Meier",
+          "company": "Davatz Anwaltskanzlei",
+          "rating": 5
+        },
+        {
+          "quote": "Endlich eine Website, die wir selbst pflegen können. Das CMS ist so einfach zu bedienen!",
+          "author": "Thomas Weber",
+          "company": "Weber Handwerk",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Bereit für eure neue Website?",
+      "description": "Lasst uns gemeinsam eure digitale Präsenz auf das nächste Level bringen. Kostenlose Erstberatung – unverbindlich und persönlich.",
+      "ctas": [
+        { "label": "Termin buchen", "href": "/kontakt#termin", "variant": "primary" },
+        { "label": "Mehr erfahren", "href": "/ueber-uns", "variant": "secondary" }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}

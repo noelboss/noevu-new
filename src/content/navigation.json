@@ -1,0 +1,69 @@
+{
+  "main": [
+    {
+      "label": "Services",
+      "children": [
+        { "label": "Website erstellen lassen", "href": "/services/website-erstellen" },
+        { "label": "Webseiten Beratung", "href": "/services/beratung" },
+        { "label": "Squarespace Agentur", "href": "/services/squarespace" },
+        { "label": "AI Beratung", "href": "/services/ai-beratung" },
+        { "label": "Projekte", "href": "/projekte" }
+      ]
+    },
+    {
+      "label": "Agentur",
+      "children": [
+        { "label": "Über uns", "href": "/ueber-uns" },
+        { "label": "Team", "href": "/team" },
+        { "label": "Social Responsibility", "href": "/social-responsibility" },
+        { "label": "Squarespace Expert", "href": "/squarespace-expert" }
+      ]
+    },
+    {
+      "label": "Resources",
+      "children": [
+        { "label": "Blog", "href": "/blog" },
+        { "label": "CMS Evaluation", "href": "/cms-check" },
+        { "label": "AI Guides", "href": "/ai-guides" }
+      ]
+    }
+  ],
+  "footer": {
+    "columns": [
+      {
+        "title": "Services",
+        "links": [
+          { "label": "Website erstellen", "href": "/services/website-erstellen" },
+          { "label": "Beratung", "href": "/services/beratung" },
+          { "label": "Squarespace", "href": "/services/squarespace" },
+          { "label": "AI Integration", "href": "/services/ai-beratung" }
+        ]
+      },
+      {
+        "title": "Agentur",
+        "links": [
+          { "label": "Über uns", "href": "/ueber-uns" },
+          { "label": "Team", "href": "/team" },
+          { "label": "Projekte", "href": "/projekte" },
+          { "label": "Kontakt", "href": "/kontakt" }
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          { "label": "Blog", "href": "/blog" },
+          { "label": "CMS Check", "href": "/cms-check" },
+          { "label": "FAQ", "href": "/faq" }
+        ]
+      }
+    ]
+  },
+  "social": [
+    { "platform": "linkedin", "href": "https://linkedin.com/company/noevu", "label": "LinkedIn" },
+    { "platform": "facebook", "href": "https://facebook.com/noevugmbh", "label": "Facebook" }
+  ],
+  "cta": {
+    "label": "Termin buchen",
+    "href": "/kontakt#termin"
+  }
+}
