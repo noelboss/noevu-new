@@ -136,6 +136,30 @@ const localBusinessSchema = {
     <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
     <slot />
   </body>
 </html>
+
+<style is:global>
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    padding: var(--space-3) var(--space-6);
+    background-color: var(--color-primary);
+    color: var(--color-text-inverted);
+    font-weight: var(--font-medium);
+    text-decoration: none;
+    border-radius: var(--radius);
+    transition: top 0.2s ease;
+  }
+
+  .skip-link:focus {
+    top: var(--space-4);
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+</style>

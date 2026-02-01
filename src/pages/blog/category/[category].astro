@@ -1,0 +1,224 @@
+---
+/**
+ * Blog category page - Filters posts by category
+ */
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import Header from '../../../components/layout/Header.astro';
+import Footer from '../../../components/layout/Footer.astro';
+import BlogCard from '../../../components/blog/BlogCard.astro';
+
+import navigationData from '../../../content/navigation.json';
+import siteData from '../../../content/site.json';
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog');
+
+  // Get all unique categories
+  const allCategories = new Set<string>();
+  blogEntries.forEach(entry => {
+    (entry.data.categories || []).forEach((cat: string) => {
+      allCategories.add(cat.toLowerCase());
+    });
+  });
+
+  return Array.from(allCategories).map(category => ({
+    params: { category },
+    props: { categoryName: category },
+  }));
+}
+
+const { category } = Astro.params;
+const { categoryName } = Astro.props;
+
+// Get blog posts filtered by category
+const blogEntries = await getCollection('blog');
+const posts = blogEntries
+  .filter(entry => {
+    const categories = (entry.data.categories || []).map((c: string) => c.toLowerCase());
+    return categories.includes(categoryName);
+  })
+  .map(entry => ({
+    title: entry.data.title,
+    slug: entry.data.slug || entry.id.replace(/\.md$/, ''),
+    excerpt: entry.data.excerpt,
+    featuredImage: entry.data.featuredImage,
+    categories: entry.data.categories || [],
+    publishedAt: entry.data.publishedAt,
+    author: entry.data.author,
+  }))
+  .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+
+// Get all categories for filter links
+const allCategories = [...new Set(blogEntries.flatMap(entry => entry.data.categories || []))];
+
+// Format category name for display
+const displayCategory = allCategories.find(c => c.toLowerCase() === categoryName) || categoryName;
+---
+
+<Base
+  title={`${displayCategory} | Blog | Noevu`}
+  description={`Alle Blog-Beiträge in der Kategorie ${displayCategory}. Tipps und Insights für Schweizer KMU.`}
+>
+  <Header navigation={navigationData as any} currentPath="/blog" />
+
+  <main id="main-content">
+    <section class="blog-hero section">
+      <div class="container">
+        <nav class="blog-hero__breadcrumb" aria-label="Breadcrumb">
+          <a href="/blog">Blog</a>
+          <span aria-hidden="true">/</span>
+          <span>{displayCategory}</span>
+        </nav>
+        <h1 class="blog-hero__title">{displayCategory}</h1>
+        <p class="blog-hero__subtitle">
+          {posts.length} {posts.length === 1 ? 'Beitrag' : 'Beiträge'} in dieser Kategorie
+        </p>
+      </div>
+    </section>
+
+    <section class="blog-filters section--sm">
+      <div class="container">
+        <div class="blog-filters__list">
+          <a href="/blog" class="blog-filters__item">
+            Alle
+          </a>
+          {allCategories.map((cat) => (
+            <a
+              href={`/blog/category/${encodeURIComponent(cat.toLowerCase())}`}
+              class={`blog-filters__item ${cat.toLowerCase() === categoryName ? 'blog-filters__item--active' : ''}`}
+            >
+              {cat}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-list section">
+      <div class="container">
+        {posts.length > 0 ? (
+          <div class="blog-list__grid">
+            {posts.map((post) => (
+              <BlogCard
+                title={post.title}
+                slug={post.slug}
+                excerpt={post.excerpt}
+                featuredImage={post.featuredImage}
+                categories={post.categories}
+                publishedAt={post.publishedAt}
+                author={post.author}
+              />
+            ))}
+          </div>
+        ) : (
+          <div class="blog-list__empty">
+            <p>Keine Beiträge in dieser Kategorie gefunden.</p>
+            <a href="/blog" class="btn btn--primary">Alle Beiträge ansehen</a>
+          </div>
+        )}
+      </div>
+    </section>
+  </main>
+
+  <Footer navigation={navigationData as any} site={siteData as any} />
+</Base>
+
+<style>
+  .blog-hero {
+    background-color: var(--color-bg-beige);
+    text-align: center;
+  }
+
+  .blog-hero__breadcrumb {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  .blog-hero__breadcrumb a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .blog-hero__breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .blog-hero__title {
+    font-size: var(--text-5xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .blog-hero__subtitle {
+    font-size: var(--text-xl);
+    color: var(--color-text-muted);
+  }
+
+  .blog-filters {
+    background-color: var(--color-bg-beige);
+    border-bottom: 1px solid var(--color-neutral-200);
+  }
+
+  .blog-filters__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: center;
+  }
+
+  .blog-filters__item {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-text-muted);
+    background-color: transparent;
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .blog-filters__item:hover {
+    background-color: var(--color-bg-white);
+    color: var(--color-text);
+  }
+
+  .blog-filters__item--active {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverted);
+  }
+
+  .blog-list {
+    background-color: var(--color-bg-beige);
+  }
+
+  .blog-list__grid {
+    display: grid;
+    gap: var(--space-8);
+  }
+
+  @media (min-width: 640px) {
+    .blog-list__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .blog-list__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .blog-list__empty {
+    text-align: center;
+    padding: var(--space-16);
+  }
+
+  .blog-list__empty p {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-6);
+  }
+</style>
