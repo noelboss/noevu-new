@@ -1,0 +1,186 @@
+{
+  "slug": "webseiten-beratung-hilfe",
+  "locale": "de",
+  "seo": {
+    "title": "Webseiten Beratung & Hilfe für Schweizer KMU — Noevu GmbH",
+    "description": "Professionelle Webseiten-Beratung und Hilfe für Schweizer KMU. Strategieentwicklung, Optimierung und laufender Support."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Webseiten Beratung & Hilfe",
+      "subheadline": "Professionelle Unterstützung für euren digitalen Erfolg",
+      "description": "<p>Ihr habt Fragen zu eurer Website? Wir helfen – von der strategischen Beratung bis zur technischen Problemlösung. Als erfahrene Experten kennen wir die Herausforderungen von Schweizer KMU.</p>",
+      "backgroundImage": {
+        "src": "/images/services/beratung-hero.jpg",
+        "alt": "Webseiten Beratung"
+      },
+      "alignment": "left",
+      "ctas": [
+        {
+          "label": "Beratung buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Hilfe anfragen",
+          "href": "/kontakt",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "textContent",
+      "title": "Eure Website als Geschäftswerkzeug",
+      "content": "<p>Eine Website ist mehr als nur eine digitale Visitenkarte. Sie ist ein Verkaufsinstrument, ein Marketing-Kanal und oft der erste Kontaktpunkt mit potenziellen Kunden. Wir helfen euch, das volle Potential auszuschöpfen.</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "featuresList",
+      "title": "Unsere vier Beratungssäulen",
+      "features": [
+        {
+          "title": "Eine glasklare Strategie",
+          "description": "Situationsanalyse, Identifikation von Quick Wins, Ausrichtung der digitalen Präsenz auf eure Geschäftsziele."
+        },
+        {
+          "title": "Eure Kunden im Fokus",
+          "description": "Zielgruppenanalyse, Verhaltensanalyse, Design-Optimierung für mehr Conversions."
+        },
+        {
+          "title": "Eure Effizienz",
+          "description": "CMS-Evaluation, Automatisierungs-Tools (Bexio, HubSpot, Notion, Zapier), Prozessvereinfachung."
+        },
+        {
+          "title": "Eure Zukunftssicherheit",
+          "description": "Digitale Trendanalyse, Best Practices, nachhaltige Entscheidungen für morgen."
+        }
+      ],
+      "columns": "2"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "servicesGrid",
+      "title": "Wie wir euch helfen",
+      "services": [
+        {
+          "title": "Strategieberatung",
+          "description": "Von der Zielgruppenanalyse bis zur Content-Strategie. Wir entwickeln einen klaren Plan."
+        },
+        {
+          "title": "Website-Audit",
+          "description": "Umfassende Analyse eurer bestehenden Website mit konkreten Verbesserungsvorschlägen."
+        },
+        {
+          "title": "SEO-Beratung",
+          "description": "Bessere Platzierungen bei Google. Wir zeigen euch, was funktioniert."
+        },
+        {
+          "title": "Technischer Support",
+          "description": "Probleme mit der Website? Wir finden und lösen sie schnell."
+        },
+        {
+          "title": "Schulung & Training",
+          "description": "Lernt, eure Website selbst zu pflegen. Individuell oder im Team."
+        },
+        {
+          "title": "Laufende Betreuung",
+          "description": "Regelmässige Wartung, Updates und ein Ansprechpartner für alle Fragen."
+        }
+      ],
+      "columns": "3"
+    },
+    {
+      "type": "contactForm",
+      "title": "Beratung anfragen",
+      "description": "Beschreibt uns kurz eure Situation – wir melden uns innerhalb eines Werktages.",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "E-Mail",
+          "type": "email",
+          "required": true
+        },
+        {
+          "name": "message",
+          "label": "Wie können wir helfen?",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "submitLabel": "Anfrage senden"
+    },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen zur Beratung",
+      "items": [
+        {
+          "question": "Was kostet eine Beratung bei Noevu?",
+          "answer": "Ein erstes Gespräch ist kostenlos und unverbindlich. Danach berechnen wir CHF 180/Stunde oder bieten Pauschalangebote für grössere Projekte. So habt ihr volle Kostenkontrolle."
+        },
+        {
+          "question": "Wie schnell könnt ihr bei Problemen helfen?",
+          "answer": "Bei dringenden Problemen reagieren wir in der Regel innerhalb weniger Stunden. Für Beratungstermine findet ihr oft schon in der gleichen Woche einen Slot. Wir verstehen, dass Website-Probleme euer Geschäft beeinträchtigen können."
+        },
+        {
+          "question": "Beratet ihr auch zu anderen Plattformen als Squarespace?",
+          "answer": "Ja, wir beraten plattformunabhängig. Ob WordPress, Shopify oder eine andere Lösung – wir helfen euch, die beste Plattform für eure spezifischen Anforderungen zu finden. Ehrliche Beratung steht bei uns an erster Stelle."
+        },
+        {
+          "question": "Können wir auch remote beraten werden?",
+          "answer": "Absolut! Die meisten Beratungen führen wir per Video-Call durch. So spart ihr Zeit, wir können Bildschirme teilen und direkt an euren Themen arbeiten. Persönliche Meetings in Zürich sind natürlich auch möglich."
+        },
+        {
+          "question": "Was beinhaltet eine strategische Webseiten-Beratung?",
+          "answer": "Wir analysieren eure aktuelle Situation, verstehen eure Ziele und Zielgruppe, und entwickeln konkrete Empfehlungen für Strategie, Design, Inhalte und Technik. Ihr erhaltet einen klaren Fahrplan für euren digitalen Erfolg."
+        },
+        {
+          "question": "Bietet ihr auch laufende Betreuung an?",
+          "answer": "Ja, wir bieten verschiedene Support-Pakete an: Von der technischen Wartung über Content-Updates bis zur strategischen Weiterentwicklung. Ihr entscheidet, wie viel Unterstützung ihr braucht."
+        }
+      ]
+    },
+    {
+      "type": "blogGrid",
+      "title": "Hilfreiche Ressourcen",
+      "subtitle": "Tipps und Anleitungen",
+      "limit": 3
+    },
+    {
+      "type": "cta",
+      "title": "Braucht ihr Hilfe?",
+      "description": "Egal ob kleine Frage oder grösseres Anliegen – wir sind für euch da.",
+      "ctas": [
+        {
+          "label": "Kostenlose Beratung",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Anrufen: +41 44 505 10 20",
+          "href": "tel:+41445051020",
+          "variant": "secondary",
+          "external": true
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}

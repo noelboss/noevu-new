@@ -1,0 +1,135 @@
+{
+  "slug": "ressourcen",
+  "locale": "de",
+  "seo": {
+    "title": "Ressourcen & Tools für Schweizer KMU — Noevu GmbH",
+    "description": "Nützliche Ressourcen, Tools und Anleitungen für Schweizer KMU. Von CMS-Vergleichen bis zu AI-Tools."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Ressourcen & Tools",
+      "subheadline": "Nützliches für Schweizer KMU",
+      "description": "<p>Kostenlose Tools, Anleitungen und Ressourcen für euren digitalen Erfolg. Von Experten zusammengestellt.</p>",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "CMS Check starten",
+          "href": "/blog/cms-evaluation-fuer-schweizer-kmus",
+          "variant": "primary"
+        },
+        {
+          "label": "Alle Blog-Artikel",
+          "href": "/blog",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "servicesGrid",
+      "title": "Interaktive Tools",
+      "subtitle": "Kostenlos und sofort nutzbar",
+      "services": [
+        {
+          "title": "CMS Evaluation",
+          "description": "WordPress vs. Squarespace: Welches CMS passt zu eurem KMU? Findet es in wenigen Minuten heraus.",
+          "cta": { "label": "Test starten", "href": "/blog/cms-evaluation-fuer-schweizer-kmus", "variant": "primary" }
+        },
+        {
+          "title": "Go-Live Checkliste",
+          "description": "Alles gecheckt vor dem Website-Launch? Unsere umfassende Checkliste hilft euch.",
+          "cta": { "label": "Zur Checkliste", "href": "/blog/squarespace-webseite-online-gehen-checkliste", "variant": "primary" }
+        },
+        {
+          "title": "AI Tools Übersicht",
+          "description": "Die besten AI-Tools für Schweizer KMU: Von ChatGPT bis Bildgenerierung.",
+          "cta": { "label": "Tools entdecken", "href": "/blog/ai-tools-kmu-schweiz", "variant": "primary" }
+        }
+      ],
+      "columns": "3"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "textContent",
+      "title": "Anleitungen & Guides",
+      "content": "<p>Schritt-für-Schritt-Anleitungen für die wichtigsten Themen rund um Webdesign und digitales Marketing.</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "featuresList",
+      "features": [
+        {
+          "title": "Squarespace Anleitung 2026",
+          "description": "Komplette Schritt-für-Schritt-Anleitung für eure erste Squarespace-Website."
+        },
+        {
+          "title": "WordPress Alternative",
+          "description": "Warum Squarespace 2026 die beste Alternative zu WordPress für KMU ist."
+        },
+        {
+          "title": "Squarespace Erfahrungen",
+          "description": "Ehrliche Erfahrungen und Learnings aus der Praxis."
+        },
+        {
+          "title": "AI für KMU",
+          "description": "Warum Schweizer KMU jetzt AI brauchen und wie sie starten können."
+        }
+      ],
+      "columns": "2"
+    },
+    {
+      "type": "cta",
+      "title": "Mehr Ressourcen im Blog",
+      "description": "Entdeckt alle unsere Blog-Artikel, Anleitungen und Tipps rund um Webdesign, CMS und AI.",
+      "ctas": [
+        {
+          "label": "Zum Blog",
+          "href": "/blog",
+          "variant": "primary"
+        }
+      ],
+      "backgroundColor": "beige"
+    },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen",
+      "items": [
+        {
+          "question": "Sind die Tools wirklich kostenlos?",
+          "answer": "Ja, alle unsere Online-Tools und Ressourcen sind kostenlos nutzbar. Wir möchten Schweizer KMU damit unterstützen, bessere Entscheidungen zu treffen."
+        },
+        {
+          "question": "Wie oft werden die Inhalte aktualisiert?",
+          "answer": "Wir aktualisieren unsere Ressourcen regelmässig, insbesondere bei wichtigen Änderungen der Plattformen oder neuen AI-Tools."
+        },
+        {
+          "question": "Kann ich die Inhalte teilen?",
+          "answer": "Selbstverständlich! Wir freuen uns, wenn ihr nützliche Inhalte mit anderen teilt. Eine Quellenangabe ist nett, aber nicht zwingend."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Persönliche Beratung gewünscht?",
+      "description": "Unsere Ressourcen helfen bei vielen Fragen. Für individuelle Anliegen stehen wir euch gerne persönlich zur Verfügung.",
+      "ctas": [
+        {
+          "label": "Termin buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Kontakt aufnehmen",
+          "href": "/kontakt",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}

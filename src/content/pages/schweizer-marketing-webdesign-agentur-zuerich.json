@@ -1,0 +1,231 @@
+{
+  "slug": "schweizer-marketing-und-webdesign-agentur-in-zuerich",
+  "locale": "de",
+  "seo": {
+    "title": "Marketing und Webdesign Agentur in Zürich für Schweizer KMU — Noevu GmbH",
+    "description": "Ihre Marketing und Webdesign Agentur in Zürich. Strategisches Design, digitales Marketing und professionelle Websites für Schweizer Unternehmen."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Marketing und Webdesign Agentur in Zürich",
+      "subheadline": "Strategische Lösungen für Schweizer KMU",
+      "description": "<p>Webdesign trifft Marketing. Wir entwickeln Websites, die nicht nur gut aussehen, sondern gefunden werden und Kunden gewinnen. Digitaler Erfolg für Schweizer Unternehmen.</p>",
+      "backgroundImage": {
+        "src": "/images/seo/marketing-agentur-zuerich.jpg",
+        "alt": "Marketing und Webdesign Agentur Zürich"
+      },
+      "alignment": "left",
+      "ctas": [
+        {
+          "label": "Kostenlose Beratung",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Projekte ansehen",
+          "href": "/projekte",
+          "variant": "secondary"
+        }
+      ],
+      "rating": {
+        "score": 4.9,
+        "count": 13,
+        "label": "Google Bewertungen"
+      }
+    },
+    {
+      "type": "textContent",
+      "title": "Webdesign + Marketing = Erfolg",
+      "content": "<p>Eine schöne Website allein reicht nicht. Ihr braucht eine digitale Präsenz, die gefunden wird, überzeugt und konvertiert. Wir verbinden strategisches Webdesign mit digitalem Marketing für messbare Ergebnisse.</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "featuresList",
+      "title": "Warum Noevu?",
+      "features": [
+        {
+          "title": "Ihr startet mit Vorsprung",
+          "description": "25+ Jahre Erfahrung, hunderte erfolgreiche Projekte. Strategisches Denken von Tag 1."
+        },
+        {
+          "title": "Eine Webseite, die Eure Ziele erreicht",
+          "description": "Nicht nur hübsch, sondern effektiv. Jede Design-Entscheidung dient euren Geschäftszielen."
+        },
+        {
+          "title": "Perfektion dank Erfahrung",
+          "description": "Von lokalen Handwerkern bis zu nationalen Brands. Wir wissen, was funktioniert."
+        }
+      ],
+      "columns": "3"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "servicesGrid",
+      "title": "Unsere Leistungen",
+      "services": [
+        {
+          "title": "Strategische Beratung",
+          "description": "Von der Zielgruppenanalyse bis zur Content-Strategie. Wir entwickeln einen klaren Plan."
+        },
+        {
+          "title": "Webdesign & Entwicklung",
+          "description": "Professionelle Website-Entwicklung mit Squarespace – dem einfachsten CMS der Welt."
+        },
+        {
+          "title": "SEO & Marketing",
+          "description": "Bessere Google-Platzierungen, mehr Sichtbarkeit, mehr Kunden."
+        },
+        {
+          "title": "Laufende Betreuung",
+          "description": "Updates, Optimierung und ein Ansprechpartner für alle Fragen."
+        }
+      ],
+      "columns": "4"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "comparisonTable",
+      "title": "Der Unterschied",
+      "leftColumn": {
+        "header": "Herkömmliche Agentur",
+        "items": [
+          "Design ohne Strategie",
+          "Website als Kostenfaktor",
+          "Kompliziertes CMS",
+          "Einmalige Projekte",
+          "Keine Marketing-Integration"
+        ],
+        "highlighted": false
+      },
+      "rightColumn": {
+        "header": "Noevu",
+        "items": [
+          "Strategie vor Design",
+          "Website als Investition",
+          "Einfachstes CMS der Welt",
+          "Langfristige Partnerschaft",
+          "Webdesign + Marketing integriert"
+        ],
+        "highlighted": true
+      }
+    },
+    {
+      "type": "testimonials",
+      "title": "Kundenstimmen",
+      "rating": {
+        "average": 4.9,
+        "count": 13,
+        "source": "Google"
+      },
+      "testimonials": [
+        {
+          "quote": "Die neue Website hat unsere Erwartungen übertroffen. Professionell, schnell und fair.",
+          "author": "Martin Künzi",
+          "company": "Wohnperspektive GmbH",
+          "rating": 5
+        },
+        {
+          "quote": "Noevu kombiniert Innovation und Experten-Wissen auf beeindruckende Weise.",
+          "author": "Reto Gerber",
+          "company": "Rrevival",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "process",
+      "title": "Unser Prozess",
+      "subtitle": "Strategie – Design – Marketing",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Analyse",
+          "description": "Zielgruppe, Markt und Wettbewerb verstehen."
+        },
+        {
+          "number": 2,
+          "title": "Strategie",
+          "description": "Klare Ziele und Massnahmen definieren."
+        },
+        {
+          "number": 3,
+          "title": "Design",
+          "description": "Strategisches Webdesign entwickeln."
+        },
+        {
+          "number": 4,
+          "title": "Launch & Marketing",
+          "description": "Go-Live und kontinuierliche Optimierung."
+        }
+      ],
+      "layout": "horizontal"
+    },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen",
+      "items": [
+        {
+          "question": "Was kostet eine Webseite bei Euch?",
+          "answer": "Effiziente Starter-Lösungen starten bei CHF 4'500. Individuelles, strategisches Webdesign beginnt bei CHF 10'000. Für jedes Projekt erhaltet Ihr ein klares Fixpreis-Angebot für volle Kostenkontrolle und Planungssicherheit."
+        },
+        {
+          "question": "Wie lange dauert die Entwicklung einer Webseite?",
+          "answer": "Die meisten Projekte realisieren wir in 8 bis 10 Wochen vom strategischen Kick-off bis zum Go-Live. Wenn es schnell gehen muss, auch in 7 Tagen."
+        },
+        {
+          "question": "Was unterscheidet euch von anderen Agenturen?",
+          "answer": "Wir verbinden strategisches Denken mit technischer Expertise. Design und Marketing sind bei uns keine getrennten Disziplinen, sondern ein integrierter Ansatz. Mit 25 Jahren Erfahrung wissen wir, was funktioniert."
+        },
+        {
+          "question": "Bietet ihr auch SEO an?",
+          "answer": "Ja! SEO ist integraler Bestandteil unserer Arbeit. Jede Website wird mit SEO-Grundlagen entwickelt, und wir bieten auch laufende SEO-Betreuung an."
+        },
+        {
+          "question": "Könnt Ihr uns auch bei den Texten helfen?",
+          "answer": "Ja. Eine klare Botschaft ist zentral. Ihr liefert uns Stichworte und Gespräche; wir erstellen SEO-optimierten Content, der informiert und überzeugt."
+        },
+        {
+          "question": "Wie starten wir ein Projekt mit Euch?",
+          "answer": "Der Start ist klar definiert: 1) Strategisches Erstgespräch zur Vision und Zielen. 2) Interaktive, digitale Offerte mit modularen Optionen. 3) Kick-off und Vorbereitungs-Workshop zur User Journey und strategischem Fundament."
+        },
+        {
+          "question": "Wie messt ihr den Erfolg?",
+          "answer": "Mit klaren KPIs: Besucherzahlen, Conversion-Rates, Google-Rankings. Wir setzen Analytics auf und liefern regelmässige Reports."
+        },
+        {
+          "question": "Können wir unsere alte Webseite erneuern lassen?",
+          "answer": "Ja. Wir analysieren die bestehende Seite und planen den Umzug strategisch auf eine moderne, pflegeleichte Plattform. Der Übergang erfolgt nahtlos, SEO-Rankings bleiben erhalten."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Bereit für digitalen Erfolg?",
+      "description": "Lasst uns in einem kostenlosen Gespräch herausfinden, wie wir euch helfen können.",
+      "ctas": [
+        {
+          "label": "Kostenlosen Termin buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Kontakt aufnehmen",
+          "href": "/kontakt",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}

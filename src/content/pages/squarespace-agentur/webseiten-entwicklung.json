@@ -1,0 +1,234 @@
+{
+  "slug": "squarespace-agentur/webseiten-entwicklung",
+  "locale": "de",
+  "seo": {
+    "title": "Squarespace Website erstellen lassen – Professionelle Homepage Entwicklung — Noevu GmbH",
+    "description": "Professionelle Squarespace Homepage Entwicklung für Schweizer KMU. Individuelles Webdesign, einfaches CMS, und zertifizierte Gold Partner Expertise."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Squarespace Webseiten Entwicklung",
+      "subheadline": "Professionelle Homepage vom Gold Partner",
+      "description": "<p>Von der Strategie bis zum Launch – wir entwickeln Squarespace Websites, die überzeugen. Individuelles Design, einfaches CMS und zertifizierte Expertise für euren digitalen Erfolg.</p>",
+      "backgroundImage": {
+        "src": "/images/services/squarespace-entwicklung-hero.jpg",
+        "alt": "Squarespace Entwicklung"
+      },
+      "alignment": "left",
+      "ctas": [
+        {
+          "label": "Kostenloser Video-Termin",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Vorteile entdecken",
+          "href": "#vorteile",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "textContent",
+      "title": "Euer Potential entfalten",
+      "content": "<p>Eine Squarespace Website ist mehr als nur ein Online-Auftritt. Es ist euer digitales Zuhause, das Kunden anzieht, überzeugt und bindet. Wir entwickeln Websites, die genau das tun.</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "servicesGrid",
+      "id": "vorteile",
+      "title": "Was ihr bekommt",
+      "subtitle": "Squarespace Vorteile",
+      "services": [
+        {
+          "title": "Individuelles Design",
+          "description": "Keine Standard-Themes. Massgeschneidertes Design für eure Marke."
+        },
+        {
+          "title": "Interaktive Prototypen",
+          "description": "Erlebt euer Design bevor wir entwickeln. Klickbare Vorschau."
+        },
+        {
+          "title": "Einfachstes CMS",
+          "description": "Drag & Drop Bearbeitung. Inhalte selbst pflegen ohne Technik-Wissen."
+        },
+        {
+          "title": "Marketing-Tools",
+          "description": "Newsletter, Email-Kampagnen und Analytics integriert."
+        },
+        {
+          "title": "Online-Shop",
+          "description": "E-Commerce leicht gemacht. Produkte, Zahlungen, Bestellungen."
+        },
+        {
+          "title": "Mehrsprachigkeit",
+          "description": "DE, FR, IT, EN – AI-unterstützte Übersetzungen."
+        },
+        {
+          "title": "SEO optimiert",
+          "description": "Bei Google gefunden werden. Integrierte SEO-Tools."
+        },
+        {
+          "title": "Gold Partner Support",
+          "description": "Priority-Support und exklusive Ressourcen."
+        }
+      ],
+      "columns": "4"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "featuresList",
+      "title": "Unsere vier Säulen",
+      "features": [
+        {
+          "title": "Strategie & Fundament",
+          "description": "Discovery, Zielgruppenanalyse, Positionierung, Content-Strategie."
+        },
+        {
+          "title": "Webdesign & Marketing",
+          "description": "Visuelles Design, User Experience, Conversion-Optimierung."
+        },
+        {
+          "title": "Entwicklung",
+          "description": "Technische Umsetzung mit Squarespace, Custom Code, Integrationen."
+        },
+        {
+          "title": "Betrieb & Wachstum",
+          "description": "Go-Live, laufende Wartung, Support, Weiterentwicklung."
+        }
+      ],
+      "columns": "4"
+    },
+    {
+      "type": "process",
+      "title": "Unser Entwicklungsprozess",
+      "subtitle": "Von der Idee zur fertigen Website",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Verstehen",
+          "description": "Wir lernen euer Unternehmen, eure Ziele und Zielgruppe kennen."
+        },
+        {
+          "number": 2,
+          "title": "Konzipieren",
+          "description": "Struktur, Inhalte und User Experience werden gemeinsam entwickelt."
+        },
+        {
+          "number": 3,
+          "title": "Gestalten",
+          "description": "Interaktive Prototypen zeigen euch das künftige Design."
+        },
+        {
+          "number": 4,
+          "title": "Entwickeln",
+          "description": "Technische Umsetzung mit Squarespace und allen Integrationen."
+        },
+        {
+          "number": 5,
+          "title": "Launchen",
+          "description": "Go-Live, Schulung und Start der laufenden Betreuung."
+        }
+      ],
+      "layout": "horizontal"
+    },
+    {
+      "type": "contactForm",
+      "title": "Projekt anfragen",
+      "description": "Erzählt uns von eurem Vorhaben – wir melden uns innerhalb eines Werktages.",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "E-Mail",
+          "type": "email",
+          "required": true
+        },
+        {
+          "name": "message",
+          "label": "Wie können wir helfen?",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "submitLabel": "Anfrage senden"
+    },
+    {
+      "type": "testimonials",
+      "title": "Kundenstimmen",
+      "testimonials": [
+        {
+          "quote": "Die Squarespace-Entwicklung war professionell und effizient. Das Ergebnis übertrifft unsere Erwartungen.",
+          "author": "Reto Gerber",
+          "company": "Rrevival",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen zur Squarespace Entwicklung",
+      "items": [
+        {
+          "question": "Was kostet eine professionelle Squarespace Website?",
+          "answer": "Effiziente Starter-Lösungen starten bei CHF 4'500. Individuelles, strategisches Webdesign beginnt bei CHF 10'000. Für jedes Projekt erhaltet Ihr ein klares Fixpreis-Angebot mit voller Kostenkontrolle und Planungssicherheit."
+        },
+        {
+          "question": "Wie lange dauert die Entwicklung einer Squarespace Website?",
+          "answer": "Die meisten Webseiten-Projekte realisieren wir innerhalb von 8 bis 10 Wochen vom strategischen Kick-off bis zum Go-Live. Wenn es schnell gehen muss, auch in 7 Tagen. Dank Squarespace können wir unsere Energie direkt in Strategie, Botschaft und Design investieren."
+        },
+        {
+          "question": "Kann ich die Website nach dem Launch selbst bearbeiten?",
+          "answer": "Ja! Squarespace hat den einfachsten Editor der Branche. Nach dem Launch könnt Ihr Inhalte wie Texte, Bilder oder Blogartikel einfach und intuitiv selbst verwalten – ganz ohne Code. Wir zeigen euch in einer Schulung, wie alles funktioniert."
+        },
+        {
+          "question": "Warum setzt ihr auf Squarespace statt WordPress?",
+          "answer": "Als Squarespace Gold Partner nutzen wir die Plattform aus strategischen Gründen: Fokus auf Design und Strategie ohne technische Ablenkung, einfache Verwaltung ohne Code für Euch, Sicherheit und Wartungsfreiheit ohne ständige Plugin-Updates, sowie eine starke SEO-Grundlage."
+        },
+        {
+          "question": "Was passiert nach dem Launch?",
+          "answer": "Wir bieten verschiedene Support-Pakete an: Von der technischen Wartung bis zur laufenden Weiterentwicklung. Ihr seid nach dem Go-Live nicht allein – wir begleiten euch weiterhin bei der Optimierung eurer Website."
+        },
+        {
+          "question": "Können wir eine bestehende Website zu Squarespace migrieren?",
+          "answer": "Ja, das ist eine unserer Kernkompetenzen. Wir analysieren eure alte Webseite und planen den Umzug strategisch. Der Übergang erfolgt nahtlos, SEO-Rankings bleiben erhalten und eure digitale Präsenz wird gestärkt."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Bereit für eure Squarespace Website?",
+      "description": "Lasst uns in einem kostenlosen Gespräch herausfinden, wie wir euch helfen können.",
+      "ctas": [
+        {
+          "label": "Termin buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Kontakt aufnehmen",
+          "href": "/kontakt",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}

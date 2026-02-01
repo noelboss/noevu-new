@@ -1,0 +1,246 @@
+{
+  "slug": "schweizer-squarespace-webdesign-agentur",
+  "locale": "de",
+  "seo": {
+    "title": "Schweizer Squarespace Webdesign Agentur in Zürich — Noevu GmbH",
+    "description": "Ihre Schweizer Squarespace Agentur in Zürich. Gold Partner Expertise, individuelles Design und einfaches CMS für Schweizer KMU."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Schweizer Squarespace Webdesign Agentur in Zürich",
+      "subheadline": "Gold Partner Expertise für euer KMU",
+      "description": "<p>Als offizielle Squarespace Circle Gold Partner entwickeln wir professionelle Websites für Schweizer Unternehmen. Individuelles Design, einfachstes CMS, zertifizierte Expertise.</p>",
+      "backgroundImage": {
+        "src": "/images/seo/squarespace-agentur-zuerich.jpg",
+        "alt": "Squarespace Webdesign Agentur Zürich"
+      },
+      "alignment": "left",
+      "ctas": [
+        {
+          "label": "Kostenlose Beratung",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Projekte ansehen",
+          "href": "/projekte",
+          "variant": "secondary"
+        }
+      ],
+      "rating": {
+        "score": 4.9,
+        "count": 13,
+        "label": "Google Bewertungen"
+      }
+    },
+    {
+      "type": "textContent",
+      "title": "Euer Vorsprung mit Squarespace",
+      "content": "<p>Squarespace ist die modernste Website-Plattform der Welt. Als zertifizierte Gold Partner bringen wir das Beste aus der Plattform – für Websites, die gefunden werden, überzeugen und einfach zu pflegen sind.</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "featuresList",
+      "title": "Warum Squarespace mit uns?",
+      "features": [
+        {
+          "title": "Ihr startet mit Vorsprung",
+          "description": "Modernste Technologie, bewährte Prozesse, zertifizierte Expertise. Euer Projekt ist von Tag 1 in den richtigen Händen."
+        },
+        {
+          "title": "Eine Webseite, die Eure Ziele erreicht",
+          "description": "Nicht einfach hübsch, sondern strategisch. Jede Design-Entscheidung dient euren Geschäftszielen."
+        },
+        {
+          "title": "Perfektion dank Erfahrung",
+          "description": "Hunderte erfolgreiche Projekte. Wir wissen, was funktioniert – und setzen es für euch um."
+        }
+      ],
+      "columns": "3"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "servicesGrid",
+      "title": "Unsere Squarespace Leistungen",
+      "services": [
+        {
+          "title": "Beratung von Profis",
+          "description": "Strategische Beratung von zertifizierten Squarespace Gold Partnern."
+        },
+        {
+          "title": "KMU Webseiten Entwicklung",
+          "description": "Professionelle Website-Entwicklung speziell für Schweizer KMU."
+        },
+        {
+          "title": "Webseiten Optimierung",
+          "description": "SEO, Performance und Conversion-Optimierung für bestehende Websites."
+        },
+        {
+          "title": "Pflege & Support",
+          "description": "Laufende Betreuung, Updates und technischer Support."
+        }
+      ],
+      "columns": "4"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "servicesGrid",
+      "title": "Squarespace Vorteile",
+      "subtitle": "All-in-one CMS",
+      "services": [
+        {
+          "title": "Das einfachste CMS",
+          "description": "Drag & Drop Bearbeitung. Inhalte ändern ohne technische Kenntnisse."
+        },
+        {
+          "title": "Mehrsprachigkeit",
+          "description": "DE, FR, IT, EN – mit AI-unterstützter Übersetzung."
+        },
+        {
+          "title": "SEO integriert",
+          "description": "Eingebaute SEO-Tools für bessere Google-Platzierungen."
+        },
+        {
+          "title": "E-Commerce ready",
+          "description": "Online-Shop mit Zahlungen, Versand und Bestellverwaltung."
+        },
+        {
+          "title": "Marketing-Tools",
+          "description": "Newsletter, Email-Kampagnen und Analytics inklusive."
+        },
+        {
+          "title": "Sicher & schnell",
+          "description": "SSL, CDN und automatische Updates – alles inklusive."
+        },
+        {
+          "title": "Mobile-first",
+          "description": "Responsive Design, perfekt auf jedem Gerät."
+        },
+        {
+          "title": "Gold Partner Support",
+          "description": "Priority-Support und exklusive Ressourcen."
+        }
+      ],
+      "columns": "4"
+    },
+    {
+      "type": "testimonials",
+      "title": "Kundenstimmen",
+      "rating": {
+        "average": 4.9,
+        "count": 13,
+        "source": "Google"
+      },
+      "testimonials": [
+        {
+          "quote": "Noevu hat unsere Squarespace Website auf ein neues Level gebracht. Professionell, effizient und das Ergebnis übertrifft unsere Erwartungen.",
+          "author": "Reto Gerber",
+          "company": "Rrevival",
+          "rating": 5
+        },
+        {
+          "quote": "Die Gold Partner Expertise macht sich bemerkbar. Komplexe Anforderungen wurden souverän umgesetzt.",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "process",
+      "title": "Unser Prozess",
+      "subtitle": "Von der Idee zur fertigen Website",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Verstehen",
+          "description": "Wir lernen euer Unternehmen und eure Ziele kennen."
+        },
+        {
+          "number": 2,
+          "title": "Konzipieren",
+          "description": "Struktur, Inhalte und User Experience entwickeln."
+        },
+        {
+          "number": 3,
+          "title": "Gestalten",
+          "description": "Interaktive Prototypen zeigen das künftige Design."
+        },
+        {
+          "number": 4,
+          "title": "Entwickeln",
+          "description": "Technische Umsetzung mit Squarespace."
+        },
+        {
+          "number": 5,
+          "title": "Launchen",
+          "description": "Go-Live und Start der laufenden Betreuung."
+        }
+      ],
+      "layout": "horizontal"
+    },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen zu Squarespace",
+      "items": [
+        {
+          "question": "Was ist ein Squarespace Gold Partner?",
+          "answer": "Der Gold Partner Status ist die höchste Auszeichnung, die Squarespace an Partner vergibt. Er bestätigt nachweisbare Expertise, hunderte erfolgreiche Projekte und tiefes Plattformwissen. Als Gold Partner haben wir direkten Zugang zu Squarespace-Ressourcen und können euch optimal unterstützen."
+        },
+        {
+          "question": "Warum Squarespace statt WordPress?",
+          "answer": "Squarespace bietet entscheidende Vorteile: Fokus auf Design und Strategie ohne technische Ablenkung, einfache Verwaltung ohne Code, keine ständigen Plugin-Updates oder Sicherheitslücken, automatische Backups und Updates, sowie eine starke SEO-Grundlage von Haus aus."
+        },
+        {
+          "question": "Was kostet eine professionelle Squarespace Website?",
+          "answer": "Effiziente Starter-Lösungen starten bei CHF 4'500. Individuelles, strategisches Webdesign beginnt bei CHF 10'000. Für jedes Projekt erhaltet Ihr ein klares Fixpreis-Angebot mit voller Kostenkontrolle."
+        },
+        {
+          "question": "Kann ich die Website nach dem Launch selbst bearbeiten?",
+          "answer": "Ja! Squarespace hat den einfachsten Editor der Branche. Nach dem Launch könnt Ihr Texte, Bilder und Blogartikel intuitiv selbst verwalten – ganz ohne Code. Wir schulen euch gründlich, damit ihr selbstständig arbeiten könnt."
+        },
+        {
+          "question": "Wie lange dauert ein Squarespace Projekt?",
+          "answer": "Die meisten Projekte realisieren wir in 8 bis 10 Wochen vom strategischen Kick-off bis zum Go-Live. Dank Squarespace können wir unsere Energie direkt in Strategie, Botschaft und Design investieren statt in technische Setups."
+        },
+        {
+          "question": "Können wir eine bestehende Website zu Squarespace migrieren?",
+          "answer": "Ja, das ist eine unserer Kernkompetenzen. Wir migrieren regelmässig Websites von WordPress, Joomla oder anderen Systemen zu Squarespace. Der Übergang erfolgt nahtlos, SEO-Rankings bleiben erhalten."
+        },
+        {
+          "question": "Was passiert nach dem Launch?",
+          "answer": "Wir bieten verschiedene Support-Pakete an: Von der technischen Betreuung bis zur laufenden Weiterentwicklung. Bei Squarespace fällt viel Wartungsaufwand weg, aber wir sind trotzdem für euch da, wenn ihr Hilfe braucht."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Bereit für eure Squarespace Website?",
+      "description": "Lasst uns in einem kostenlosen Gespräch herausfinden, wie wir euch helfen können.",
+      "ctas": [
+        {
+          "label": "Kostenlosen Termin buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Kontakt aufnehmen",
+          "href": "/kontakt",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}

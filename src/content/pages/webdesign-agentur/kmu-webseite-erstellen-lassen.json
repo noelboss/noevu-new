@@ -1,0 +1,238 @@
+{
+  "slug": "webdesign-agentur/kmu-webseite-erstellen-lassen",
+  "locale": "de",
+  "seo": {
+    "title": "Website erstellen lassen in der Schweiz – Eure neue KMU Homepage — Noevu GmbH",
+    "description": "Neue Homepage erstellen lassen für Schweizer KMU. Professionelles Webdesign mit Squarespace - responsive, SEO-optimiert."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Website erstellen lassen in der Schweiz",
+      "subheadline": "Eure neue KMU Homepage",
+      "description": "<p>Neue Homepage erstellen lassen für Schweizer KMU. Professionelles Webdesign, das gefunden wird, überzeugt und Kunden gewinnt. Responsive, SEO-optimiert und einfach zu pflegen.</p>",
+      "backgroundImage": {
+        "src": "/images/services/kmu-website-hero.jpg",
+        "alt": "KMU Website erstellen lassen"
+      },
+      "alignment": "left",
+      "ctas": [
+        {
+          "label": "Termin für neue Webseite",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Vorteile einer neuen Webseite",
+          "href": "#vorteile",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "textContent",
+      "title": "Leistungen & Preise",
+      "content": "<p>Wir bieten professionelle Website-Entwicklung speziell für Schweizer KMU. Von der Strategie über das Design bis zur technischen Umsetzung – alles aus einer Hand.</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "servicesGrid",
+      "id": "vorteile",
+      "title": "Vorteile einer professionellen Website",
+      "services": [
+        {
+          "title": "Individuelles Webdesign",
+          "description": "Keine Standard-Themes. Massgeschneidertes Design, das perfekt zu eurer Marke passt."
+        },
+        {
+          "title": "Interaktive Prototypen",
+          "description": "Erlebt euer Design bevor wir entwickeln. Keine Überraschungen am Ende."
+        },
+        {
+          "title": "Einfaches CMS",
+          "description": "Inhalte selbst bearbeiten – ganz ohne technische Kenntnisse."
+        },
+        {
+          "title": "Marketing & Newsletter",
+          "description": "Integrierte Tools für Email-Kampagnen und Kundenkommunikation."
+        },
+        {
+          "title": "Online-Shop möglich",
+          "description": "E-Commerce Funktionalität bei Bedarf. Produkte, Zahlungen, Versand."
+        },
+        {
+          "title": "Mehrsprachigkeit",
+          "description": "DE, FR, IT, EN – für eure internationale Reichweite."
+        },
+        {
+          "title": "SEO optimiert",
+          "description": "Bessere Platzierungen bei Google. Gefunden werden, wenn es zählt."
+        },
+        {
+          "title": "Gold Partner Expertise",
+          "description": "Zertifizierte Squarespace Experten mit hunderten Projekten."
+        }
+      ],
+      "columns": "4"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "comparisonTable",
+      "title": "Warum Schweizer Firmen mit uns arbeiten",
+      "leftColumn": {
+        "header": "Herkömmliche Agentur",
+        "items": [
+          "Template-basierte Designs",
+          "Kompliziertes CMS",
+          "Hoher Wartungsaufwand",
+          "Lange Entwicklungszeiten",
+          "Unklare Preisstrukturen",
+          "Nach Launch allein"
+        ],
+        "highlighted": false
+      },
+      "rightColumn": {
+        "header": "Noevu",
+        "items": [
+          "Individuelles Design für eure Marke",
+          "Einfachstes CMS der Welt",
+          "Minimaler Wartungsaufwand",
+          "Effiziente Prozesse",
+          "Transparente Festpreise",
+          "Laufende Betreuung & Support"
+        ],
+        "highlighted": true
+      }
+    },
+    {
+      "type": "featuresList",
+      "title": "Das bekommt ihr",
+      "features": [
+        {
+          "title": "Einfache Bedienung",
+          "description": "Drag & Drop Editor. Inhalte ändern ohne IT-Kenntnisse."
+        },
+        {
+          "title": "Modernes Design",
+          "description": "Zeitgemässe Ästhetik, die eure Marke perfekt repräsentiert."
+        },
+        {
+          "title": "Messbare Resultate",
+          "description": "Analytics und Tracking für datenbasierte Entscheidungen."
+        }
+      ],
+      "columns": "3"
+    },
+    {
+      "type": "testimonials",
+      "title": "Kundenstimmen",
+      "testimonials": [
+        {
+          "quote": "Ein Profi durch und durch, sehr gutes Preis-Leistungsverhältnis! Wir sind mit dem Resultat äusserst zufrieden.",
+          "author": "Reto Gerber",
+          "company": "Rrevival",
+          "rating": 5
+        },
+        {
+          "quote": "Die neue Website hat unsere Erwartungen übertroffen. Professionell, schnell und fair.",
+          "author": "Martin Künzi",
+          "company": "Wohnperspektive GmbH",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "contactForm",
+      "title": "Webseite anfragen",
+      "description": "Erzählt uns von eurem Projekt – wir melden uns innerhalb eines Werktages.",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "E-Mail",
+          "type": "email",
+          "required": true
+        },
+        {
+          "name": "message",
+          "label": "Wie können wir helfen?",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "submitLabel": "Anfrage senden"
+    },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen",
+      "items": [
+        {
+          "question": "Wie können KMU in der Schweiz professionell Websites erstellen lassen – und was kostet das?",
+          "answer": "Ihr bekommt bei uns keine KMU Webseite von der Stange, sondern eine fundierte Investition in Eure digitale Zukunft. Effiziente Starter-Lösungen für KMU starten bei CHF 4'500. Individuelles, strategisches Webdesign beginnt bei CHF 10'000. Für jedes Projekt erhaltet Ihr ein klares Fixpreis-Angebot mit voller Kostenkontrolle und Planungssicherheit."
+        },
+        {
+          "question": "Wie lange dauert die Erstellung einer neuen Webseite für mein KMU?",
+          "answer": "Die meisten Webseiten-Projekte realisieren wir innerhalb von 8 bis 10 Wochen vom strategischen Kick-off bis zum Go-Live. Wenn es schnell gehen muss, auch in 7 Tagen. Wir investieren unsere Energie direkt in Eure Strategie, Botschaft und Design."
+        },
+        {
+          "question": "Könnt ihr uns auch bei den Texten helfen?",
+          "answer": "Absolut. Eine klare Botschaft ist das Herzstück jeder erfolgreichen Firmen-Webseite. Ihr liefert uns Euer Expertenwissen in Form von Stichworten und Gesprächen. Wir verwandeln diese Essenz in SEO-optimierten Content, der Eure Zielgruppe informiert und überzeugt."
+        },
+        {
+          "question": "Uns fehlen professionelle Bilder. Was nun?",
+          "answer": "Die visuelle Gestaltung ist entscheidend. Wir bieten drei Optionen: KI-gestützte Bildwelten für einzigartige, konsistente Visuals; Vermittlung an professionelle Fotografen aus unserem Netzwerk; oder kuratierte und lizenzierte Stockbilder passend zu Eurer Marke."
+        },
+        {
+          "question": "Wie erhalte ich ein Angebot für meine neue Website?",
+          "answer": "Der Start ist klar definiert: 1) Strategisches Erstgespräch zu Vision, Zielen und Kundenbedürfnissen. 2) Interaktive, digitale Offerte mit modularen Optionen und transparenter Investition. 3) Kick-off und Vorbereitungs-Workshop für User Journey, Kernbotschaften und strategisches Fundament."
+        },
+        {
+          "question": "Welche Art von Webseiten entwickelt ihr?",
+          "answer": "Wir entwickeln umfassende Unternehmens-Webseiten, strategische Landingpages, mehrsprachige Portale und moderne Portfolio-Seiten. Je nach Anforderungen setzen wir auf Squarespace, WordPress oder Shopify – immer mit ehrlicher, zielführender Beratung."
+        },
+        {
+          "question": "Warum setzt ihr auf Squarespace?",
+          "answer": "Als Schweizer Squarespace Gold Partner nutzen wir die Plattform aus strategischen Gründen: Fokus auf Design und Strategie ohne technische Ablenkung, einfache Verwaltung ohne Code für Euch, Sicherheit und Wartungsfreiheit ohne Plugin-Updates, sowie eine starke SEO-Grundlage."
+        },
+        {
+          "question": "Können wir unsere alte Firmen-Webseite erneuern?",
+          "answer": "Ja, das ist eine unserer Kernkompetenzen. Wir analysieren Eure bestehende Seite und planen den Umzug strategisch (z.B. von WordPress, Typo3 oder Squarespace 7.0) auf die moderne, pflegeleichte Plattform. Der Übergang erfolgt nahtlos, SEO-Rankings bleiben erhalten."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Bereit für eure neue Website?",
+      "description": "Lasst uns in einem kostenlosen Gespräch herausfinden, was ihr braucht.",
+      "ctas": [
+        {
+          "label": "Kostenlosen Termin buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Kontakt aufnehmen",
+          "href": "/kontakt",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}

@@ -42,15 +42,43 @@
       ]
     },
     {
+      "type": "faq",
+      "title": "Häufige Fragen zur Webseiten-Beratung",
+      "items": [
+        {
+          "question": "Was kostet eine Beratung bei Noevu?",
+          "answer": "Ein erstes Gespräch ist kostenlos und unverbindlich. Danach berechnen wir CHF 180/Stunde oder bieten Pauschalangebote für grössere Projekte. So habt ihr volle Kostenkontrolle."
+        },
+        {
+          "question": "Welches CMS empfehlt ihr für Schweizer KMU?",
+          "answer": "Wir beraten plattformunabhängig. Für die meisten KMU empfehlen wir Squarespace wegen der einfachen Bedienung und Wartungsfreiheit. Für spezielle Anforderungen prüfen wir auch WordPress, Shopify oder andere Lösungen."
+        },
+        {
+          "question": "Was beinhaltet ein Website-Audit?",
+          "answer": "Wir analysieren eure Website hinsichtlich technischer Performance, SEO, Benutzerfreundlichkeit, Mobile-Optimierung und Conversion-Potenzial. Ihr erhaltet einen klaren Bericht mit priorisierten Handlungsempfehlungen."
+        },
+        {
+          "question": "Wie läuft eine Relaunch-Planung ab?",
+          "answer": "Wir starten mit einer Analyse eurer aktuellen Website und Ziele. Dann entwickeln wir gemeinsam Struktur, Content-Konzept und Design-Richtung. Ihr erhaltet einen detaillierten Projektplan mit Zeitrahmen und Meilensteinen."
+        },
+        {
+          "question": "Können wir auch remote beraten werden?",
+          "answer": "Absolut! Die meisten Beratungen führen wir per Video-Call durch. So spart ihr Zeit und wir können Bildschirme teilen und direkt an euren Themen arbeiten."
+        }
+      ]
+    },
+    {
       "type": "cta",
-      "headline": "Fragen zur Website?",
+      "title": "Fragen zur Website?",
       "description": "Bucht ein kostenloses 15-minütiges Erstgespräch. Wir klären eure Fragen und zeigen Möglichkeiten auf.",
       "ctas": [
         {
           "label": "Gespräch buchen",
-          "href": "/kontakt"
+          "href": "/kontakt",
+          "variant": "primary"
         }
-      ]
+      ],
+      "backgroundColor": "green"
     }
   ]
 }

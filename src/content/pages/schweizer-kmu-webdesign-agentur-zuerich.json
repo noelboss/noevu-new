@@ -1,0 +1,256 @@
+{
+  "slug": "schweizer-kmu-webdesign-und-marketing-agentur-in-zuerich",
+  "locale": "de",
+  "seo": {
+    "title": "Webdesign Agentur in Zürich: Schweizer Webagentur & Marketing für KMU — Noevu GmbH",
+    "description": "Ihre KMU Webdesign und Marketing Agentur in Zürich. Professionelle Websites, die gefunden werden und Kunden gewinnen."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Webdesign Agentur in Zürich",
+      "subheadline": "Schweizer Webagentur & Marketing für KMU",
+      "description": "<p>Professionelles Webdesign und digitales Marketing für Schweizer KMU. Websites, die gefunden werden, überzeugen und Kunden gewinnen – von eurer Agentur in Zürich.</p>",
+      "backgroundImage": {
+        "src": "/images/seo/webdesign-agentur-zuerich.jpg",
+        "alt": "Webdesign Agentur Zürich"
+      },
+      "alignment": "left",
+      "ctas": [
+        {
+          "label": "Kostenlose Beratung",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Projekte ansehen",
+          "href": "/projekte",
+          "variant": "secondary"
+        }
+      ],
+      "rating": {
+        "score": 4.9,
+        "count": 13,
+        "label": "Google Bewertungen"
+      }
+    },
+    {
+      "type": "textContent",
+      "title": "Digitaler Erfolg für Schweizer KMU",
+      "content": "<p>Eine Website ist mehr als ein Online-Auftritt. Sie ist euer wichtigstes Verkaufsinstrument. Wir entwickeln Websites und Marketing-Strategien, die messbare Ergebnisse liefern.</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "featuresList",
+      "title": "Warum zu uns wechseln?",
+      "features": [
+        {
+          "title": "Ihr startet mit Vorsprung",
+          "description": "25+ Jahre Erfahrung, hunderte erfolgreiche Projekte. Euer Projekt ist von Tag 1 in den richtigen Händen."
+        },
+        {
+          "title": "Eine Webseite, die Eure Ziele erreicht",
+          "description": "Strategisches Design für messbare Ergebnisse. Jede Entscheidung dient euren Geschäftszielen."
+        },
+        {
+          "title": "Perfektion dank Erfahrung",
+          "description": "Von lokalen Handwerkern bis zu nationalen Unternehmen. Wir wissen, was für Schweizer KMU funktioniert."
+        }
+      ],
+      "columns": "3"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "servicesGrid",
+      "title": "Unsere Leistungen",
+      "services": [
+        {
+          "title": "Beratung von Profis",
+          "description": "Strategische Beratung für eure digitale Präsenz. Von der Analyse bis zur Umsetzung."
+        },
+        {
+          "title": "KMU Webseiten Entwicklung",
+          "description": "Professionelle Website-Entwicklung mit Squarespace – dem einfachsten CMS der Welt."
+        },
+        {
+          "title": "Webseiten Optimierung",
+          "description": "SEO, Performance und Conversion-Optimierung für bestehende Websites."
+        },
+        {
+          "title": "Pflege & Support",
+          "description": "Laufende Betreuung, Updates und ein Ansprechpartner für alle Fragen."
+        }
+      ],
+      "columns": "4"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "comparisonTable",
+      "title": "Warum andere zu uns wechseln",
+      "leftColumn": {
+        "header": "Herkömmliche Agentur",
+        "items": [
+          "Template-basierte Designs",
+          "Kompliziertes CMS",
+          "Hoher Wartungsaufwand",
+          "Lange Entwicklungszeiten",
+          "Unklare Preisstrukturen",
+          "Nach Launch allein"
+        ],
+        "highlighted": false
+      },
+      "rightColumn": {
+        "header": "Noevu",
+        "items": [
+          "Individuelles Design für eure Marke",
+          "Einfachstes CMS der Welt",
+          "Minimaler Wartungsaufwand",
+          "Effiziente Prozesse",
+          "Transparente Festpreise",
+          "Laufende Betreuung & Support"
+        ],
+        "highlighted": true
+      }
+    },
+    {
+      "type": "testimonials",
+      "title": "Kundenstimmen",
+      "rating": {
+        "average": 4.9,
+        "count": 13,
+        "source": "Google"
+      },
+      "testimonials": [
+        {
+          "quote": "Die neue Website hat unsere Erwartungen übertroffen. Professionell, schnell und fair. Wir können Noevu uneingeschränkt empfehlen.",
+          "author": "Martin Künzi",
+          "company": "Wohnperspektive GmbH",
+          "rating": 5
+        },
+        {
+          "quote": "Ein Profi durch und durch, sehr gutes Preis-Leistungsverhältnis! Wir sind mit dem Resultat äusserst zufrieden.",
+          "author": "Reto Gerber",
+          "company": "Rrevival",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "process",
+      "title": "Unser Prozess",
+      "subtitle": "Von der Idee zur fertigen Website",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Verstehen",
+          "description": "Wir lernen euer Unternehmen, eure Ziele und Zielgruppe kennen."
+        },
+        {
+          "number": 2,
+          "title": "Konzipieren",
+          "description": "Struktur, Inhalte und User Experience werden gemeinsam entwickelt."
+        },
+        {
+          "number": 3,
+          "title": "Gestalten",
+          "description": "Interaktive Prototypen zeigen euch das künftige Design."
+        },
+        {
+          "number": 4,
+          "title": "Entwickeln",
+          "description": "Technische Umsetzung und Go-Live eurer Website."
+        }
+      ],
+      "layout": "horizontal"
+    },
+    {
+      "type": "featuresList",
+      "title": "Was ihr bekommt",
+      "features": [
+        {
+          "title": "Einfache Bedienung",
+          "description": "Drag & Drop Editor. Inhalte ändern ohne IT-Kenntnisse."
+        },
+        {
+          "title": "Modernes Design",
+          "description": "Zeitgemässe Ästhetik, die eure Marke perfekt repräsentiert."
+        },
+        {
+          "title": "Messbare Resultate",
+          "description": "Analytics und Tracking für datenbasierte Entscheidungen."
+        },
+        {
+          "title": "SEO optimiert",
+          "description": "Bessere Platzierungen bei Google. Gefunden werden, wenn es zählt."
+        }
+      ],
+      "columns": "4"
+    },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen",
+      "items": [
+        {
+          "question": "Was kostet eine Webseite bei Euch?",
+          "answer": "Ihr bekommt bei uns keine KMU Webseite von der Stange, sondern eine fundierte Investition in Eure digitale Zukunft. Effiziente Starter-Lösungen starten bei CHF 4'500. Individuelles, strategisches Webdesign beginnt bei CHF 10'000. Für jedes Projekt erhaltet Ihr ein klares Fixpreis-Angebot für volle Kostenkontrolle."
+        },
+        {
+          "question": "Wie lange dauert die Entwicklung einer Webseite?",
+          "answer": "Die meisten Projekte realisieren wir in 8 bis 10 Wochen vom strategischen Kick-off bis zum Go-Live. Wenn es schnell gehen muss, auch in 7 Tagen. Der schnelle Fortschritt hängt von Eurer Entscheidungsfreudigkeit und unserem klaren Prozess ab."
+        },
+        {
+          "question": "Könnt Ihr uns auch bei den Texten helfen?",
+          "answer": "Ja. Eine klare Botschaft ist zentral. Ihr liefert uns Stichworte und Gespräche; wir erstellen SEO-optimierten Content, der informiert und überzeugt. Das ist Bestandteil unserer Webseiten Beratung."
+        },
+        {
+          "question": "Uns fehlen professionelle Bilder. Was nun?",
+          "answer": "Wir bieten drei Optionen: KI-gestützte Bildwelten für einzigartige, konsistente Visuals; Vermittlung an professionelle Fotografen; kuratierte und lizenzierte Stockbilder passend zu Eurer Marke."
+        },
+        {
+          "question": "Wie starten wir ein Projekt mit Euch?",
+          "answer": "Der Start ist klar definiert: 1) Strategisches Erstgespräch zur Vision, Zielen und Kundenbedürfnissen. 2) Interaktive, digitale Offerte mit modularen Optionen und transparenter Investition. 3) Kick-off und Vorbereitungs-Workshop zur User Journey und strategischem Fundament."
+        },
+        {
+          "question": "Welche Art von Webseiten entwickelt Ihr?",
+          "answer": "Wir entwickeln umfassende Firmen-Webseiten, strategische Landingpages, mehrsprachige Portale und moderne Portfolio-Seiten. Je nach Anforderungen setzen wir auf Squarespace, WordPress oder Shopify – immer mit ehrlicher, zielführender Beratung."
+        },
+        {
+          "question": "Auf welche Technologie setzt Ihr?",
+          "answer": "Wenn Squarespace Eure Anforderungen erfüllt, nutzen wir die Plattform aus strategischen Gründen: Fokus auf Design und Strategie, einfache Verwaltung ohne Code, hohe Sicherheit und Wartungsfreiheit sowie starke SEO-Grundlage."
+        },
+        {
+          "question": "Können wir unsere alte Webseite erneuern lassen?",
+          "answer": "Ja. Wir analysieren die bestehende Seite und planen den Umzug strategisch (z. B. von WordPress, Typo3 oder Squarespace 7.0) auf eine moderne, pflegeleichte Plattform. Der Übergang erfolgt nahtlos, SEO-Rankings bleiben erhalten."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Bereit für eure neue Website?",
+      "description": "Lasst uns in einem kostenlosen Gespräch herausfinden, was ihr braucht.",
+      "ctas": [
+        {
+          "label": "Kostenlosen Termin buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Kontakt aufnehmen",
+          "href": "/kontakt",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}

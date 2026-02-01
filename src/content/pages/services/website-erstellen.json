@@ -73,15 +73,52 @@
       ]
     },
     {
+      "type": "faq",
+      "title": "Häufige Fragen zum Website erstellen",
+      "items": [
+        {
+          "question": "Was kostet es, eine Website erstellen zu lassen?",
+          "answer": "Effiziente Starter-Lösungen starten bei CHF 4'500. Individuelles, strategisches Webdesign beginnt bei CHF 10'000. Für jedes Projekt erhaltet Ihr ein klares Fixpreis-Angebot mit voller Kostenkontrolle und Planungssicherheit."
+        },
+        {
+          "question": "Wie lange dauert es, eine Website erstellen zu lassen?",
+          "answer": "Die meisten Projekte realisieren wir in 8 bis 10 Wochen vom strategischen Kick-off bis zum Go-Live. Wenn es schnell gehen muss, auch in 7 Tagen. Der Zeitrahmen hängt von Umfang und eurer Entscheidungsfreudigkeit ab."
+        },
+        {
+          "question": "Kann ich meine Website später selbst bearbeiten?",
+          "answer": "Ja! Wir setzen auf benutzerfreundliche CMS wie Squarespace. Nach dem Launch könnt Ihr Texte, Bilder und Inhalte intuitiv selbst verwalten – ganz ohne Code. Wir schulen euch gründlich."
+        },
+        {
+          "question": "Was braucht ihr von mir für den Start?",
+          "answer": "Wir starten mit einem strategischen Erstgespräch zu eurer Vision und euren Zielen. Texte und Bilder können wir gemeinsam entwickeln – ihr müsst nicht alles fertig haben."
+        },
+        {
+          "question": "Wird meine Website für Google optimiert?",
+          "answer": "Ja. SEO ist integraler Bestandteil unserer Arbeit. Wir legen das technische Fundament und optimieren alle On-Page-Faktoren für bessere Sichtbarkeit bei Google."
+        },
+        {
+          "question": "Was passiert nach dem Launch?",
+          "answer": "Wir bieten verschiedene Support-Pakete an: Von der technischen Wartung bis zur laufenden Weiterentwicklung. Ihr seid nach dem Go-Live nicht allein."
+        }
+      ]
+    },
+    {
       "type": "cta",
-      "headline": "Startet euer Website-Projekt",
+      "title": "Startet euer Website-Projekt",
       "description": "Ob Neuaufbau oder Relaunch - wir freuen uns auf euer Projekt.",
       "ctas": [
         {
           "label": "Kostenloses Gespräch buchen",
-          "href": "/kontakt"
+          "href": "/kontakt",
+          "variant": "primary"
+        },
+        {
+          "label": "Projekte ansehen",
+          "href": "/projekte",
+          "variant": "secondary"
         }
-      ]
+      ],
+      "backgroundColor": "green"
     }
   ]
 }

@@ -2,17 +2,22 @@
   "slug": "",
   "locale": "de",
   "seo": {
-    "title": "Webdesign Agentur in Zürich – digitale Lösungen für Schweizer KMU",
-    "description": "Noevu ist Ihre Webdesign Agentur in Zürich. Wir entwickeln massgeschneiderte Websites mit Squarespace für Schweizer KMU. 25+ Jahre Erfahrung, AI-Integration, persönliche Beratung."
+    "title": "Webdesign Agentur in Zürich: Schweizer Webagentur & Marketing für KMU – Noevu GmbH",
+    "description": "Schweizer Webdesign Agentur und Marketing in Zürich, Dübendorf: Unsere Webagentur erstellt für Euer KMU eine moderne, professionelle Webseite → Jetzt anfragen"
   },
   "layout": "default",
   "sections": [
     {
       "type": "hero",
-      "headline": "Webdesign Agentur in Zürich – digitale Lösungen für Schweizer KMU",
-      "description": "Wir entwickeln einzigartige Lösungen, die Ihre Marke stärken und Ihre Kunden begeistern. Modern, effizient und mit einem klaren Fokus auf Ihre Ziele.",
+      "subheadline": "Webdesign Agentur in Zürich – Webagentur für professionelles digitales Marketing für Schweizer KMU",
+      "headline": "Wir entwickeln, was Euch einzigartig macht.",
+      "description": "Ihr braucht nicht nur eine schöne KMU-Webseite, sondern praktische digitale Lösungen, die Euer Unternehmen voranbringen. Als eine der besten Schweizer Webdesign Agentur in Zürich unterstützen wir Firmen und Organisationen mit 25 Jahren Erfahrung kompetent mit <a href=\"/services/beratung\">Webseiten Beratung und Hilfe</a> eine <a href=\"/services/website-erstellen\">neue Firmenhomepage zu erstellen</a>.",
+      "backgroundImage": {
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/923563ed-ec0a-4736-bf30-8c7b24c35bc0/Digitale+Hindernisse+%C3%BCberwinden.png",
+        "alt": "Digitale Hindernisse überwinden - Bergsteiger als Metapher für digitale Transformation"
+      },
       "ctas": [
-        { "label": "Kostenlose Video-Beratung", "href": "/kontakt#termin", "variant": "primary" },
+        { "label": "Kostenloser Video-Termin", "href": "/kontakt#termin", "variant": "primary" },
         { "label": "Website erstellen lassen", "href": "/services/website-erstellen", "variant": "secondary" }
       ],
       "rating": {
@@ -200,22 +205,72 @@
       },
       "testimonials": [
         {
-          "quote": "Noevu hat unsere Erwartungen übertroffen. Die neue Website ist nicht nur schön, sondern bringt auch messbare Ergebnisse.",
+          "quote": "Die Zusammenarbeit mit der Noevu GmbH war durchweg positiv. Besonders hervorzuheben ist die schnelle Reaktionszeit – Anliegen wurden stets zügig und zuverlässig bearbeitet. Die Kommunikation war angenehm und unkompliziert.",
+          "author": "Wohnperspektive GmbH",
+          "company": "",
+          "rating": 5
+        },
+        {
+          "quote": "Noevu GmbH arbeitet talentiert, effizient und mit einem klaren Blick für durchdachte Lösungen. Die vielseitigen Kompetenzen mit modernen Web-CMS-Tools sind beeindruckend.",
           "author": "Martin Künzi",
-          "company": "Wohnperspektive GmbH",
+          "company": "",
           "rating": 5
         },
         {
-          "quote": "Professionell, schnell und unkompliziert. Die Zusammenarbeit mit Noevu war ein Vergnügen.",
-          "author": "Sandra Meier",
-          "company": "Davatz Anwaltskanzlei",
+          "quote": "Ein Profi durch und durch, sehr gutes Preis-Leistungsverhältnis! Wir sind mit dem Resultat äusserst zufrieden.",
+          "author": "Reto Gerber",
+          "company": "",
           "rating": 5
         },
         {
-          "quote": "Endlich eine Website, die wir selbst pflegen können. Das CMS ist so einfach zu bedienen!",
-          "author": "Thomas Weber",
-          "company": "Weber Handwerk",
+          "quote": "Die Qualität und das Preis-Leistungs-Verhältnis haben mich beeindruckt. Die erstellte Website überzeugt durch ihr ansprechendes Design, ihre Nutzerfreundlichkeit und ihre Optimierung für Suchmaschinen.",
+          "author": "Peter Hirning",
+          "company": "",
           "rating": 5
+        },
+        {
+          "quote": "Noevu entwickelt schnell und verlässlich gute Web-Lösungen, die nicht nur optisch sehr ästhetisch daher kommen, sondern auch in ihrer Funktionalität herausstechen. Ein weiteres Plus ist das Hintergrundwissen von SEO.",
+          "author": "Anabel Hafstad",
+          "company": "Senior SEO-Beraterin",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen",
+      "items": [
+        {
+          "question": "Was kostet eine Webseite bei Euch?",
+          "answer": "Ihr bekommt bei uns keine KMU Webseite von der Stange, sondern eine fundierte Investition in Eure digitale Zukunft. Effiziente Starter-Lösungen starten bei CHF 4'500. Individuelles, strategisches Webdesign beginnt bei CHF 10'000. Für jedes Projekt erhaltet Ihr ein klares Fixpreis-Angebot für volle Kostenkontrolle."
+        },
+        {
+          "question": "Wie lange dauert die Entwicklung einer Webseite?",
+          "answer": "Die meisten Projekte realisieren wir in 8 bis 10 Wochen vom strategischen Kick-off bis zum Go-Live. Wenn es schnell gehen muss, auch in 7 Tagen. Der schnelle Fortschritt hängt von Eurer Entscheidungsfreudigkeit und unserem klaren Prozess ab."
+        },
+        {
+          "question": "Könnt Ihr uns auch bei den Texten helfen?",
+          "answer": "Ja. Eine klare Botschaft ist zentral. Ihr liefert uns Stichworte und Gespräche; wir erstellen SEO-optimierten Content, der informiert und überzeugt. Das ist Bestandteil unserer Webseiten Beratung."
+        },
+        {
+          "question": "Uns fehlen professionelle Bilder. Was nun?",
+          "answer": "Wir bieten drei Optionen: KI-gestützte Bildwelten für einzigartige, konsistente Visuals; Vermittlung an professionelle Fotografen; kuratierte und lizenzierte Stockbilder passend zu Eurer Marke."
+        },
+        {
+          "question": "Wie starten wir ein Projekt mit Euch?",
+          "answer": "Der Start ist klar definiert: 1) Strategisches Erstgespräch zur Vision, Zielen und Kundenbedürfnissen. 2) Interaktive, digitale Offerte mit modularen Optionen und transparenter Investition. 3) Kick-off & Vorbereitungs-Workshop zur User Journey, Kernbotschaften und strategischem Fundament."
+        },
+        {
+          "question": "Welche Art von Webseiten entwickelt Ihr?",
+          "answer": "Wir entwickeln umfassende Firmen-Webseiten, strategische Landingpages, mehrsprachige Portale und moderne Portfolio-Seiten. Je nach Anforderungen setzen wir auf Squarespace, WordPress oder Shopify – immer mit ehrlicher, zielführender Beratung."
+        },
+        {
+          "question": "Auf welche Technologie setzt Ihr?",
+          "answer": "Wenn Squarespace Eure Anforderungen erfüllt, nutzen wir die Plattform aus strategischen Gründen: Fokus auf Design & Strategie, einfache Verwaltung ohne Code, hohe Sicherheit und Wartungsfreiheit sowie starke SEO-Grundlage."
+        },
+        {
+          "question": "Können wir unsere alte Webseite erneuern lassen?",
+          "answer": "Ja. Wir analysieren die bestehende Seite und planen den Umzug strategisch (z. B. von WordPress, Typo3 oder Squarespace 7.0) auf eine moderne, pflegeleichte Plattform. Der Übergang erfolgt nahtlos, SEO-Rankings bleiben erhalten und Eure Präsenz wird gestärkt."
         }
       ]
     },

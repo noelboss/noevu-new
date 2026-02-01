@@ -1,0 +1,234 @@
+{
+  "slug": "squarespace-agentur",
+  "locale": "de",
+  "seo": {
+    "title": "Schweizer Squarespace Webdesign Agentur in Zürich — Noevu GmbH",
+    "description": "Schweizer Squarespace Agentur mit 25 Jahren Erfahrung im Webdesign für Euer KMU oder Start-up. Jetzt Squarespace Experte kontaktieren."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Professionelle Schweizer Squarespace Webdesign Agentur",
+      "subheadline": "Die besten digitale Lösung für Eure neue Homepage",
+      "description": "Squarespace bietet die ideale Grundlage für Eure neue KMU Webseite. Denn Ihr braucht nicht nur eine schöne Webseite, sondern praktische digitale Lösungen, die Euer KMU voranbringen. Als eine der besten Schweizer Squarespace Webagenturen unterstützen wir Firmen und Organisationen mit 25 Jahren Erfahrung.",
+      "backgroundImage": {
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/6878fab822913208288e40a6/squarespace-product-render.png",
+        "alt": "Squarespace Webdesign Agentur"
+      },
+      "alignment": "left",
+      "ctas": [
+        {
+          "label": "Kostenloser Video-Termin",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Squarespace Hilfe",
+          "href": "/squarespace-hilfe",
+          "variant": "secondary"
+        }
+      ],
+      "rating": {
+        "score": 4.9,
+        "count": 13,
+        "label": "Bewertungen"
+      }
+    },
+    {
+      "type": "logoGallery",
+      "title": "Squarespace Circle Gold Partner seit 2020",
+      "logos": [
+        { "name": "Squarespace Gold Partner", "image": { "src": "/images/badges/squarespace-gold-partner.svg", "alt": "Squarespace Circle Gold Partner Badge" } }
+      ]
+    },
+    {
+      "type": "valueProposition",
+      "title": "Warum Squarespace?",
+      "items": [
+        {
+          "title": "All-in-One Plattform",
+          "description": "Hosting, Design, CMS und Support aus einer Hand. Kein Plugin-Chaos, keine Sicherheitslücken."
+        },
+        {
+          "title": "Einfache Bedienung",
+          "description": "Inhalte selbst bearbeiten ohne technisches Know-how. Drag & Drop Editor für alle."
+        },
+        {
+          "title": "Professionelles Design",
+          "description": "Award-prämierte Templates als Basis für individuelle Anpassungen. Responsive auf allen Geräten."
+        }
+      ]
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "green",
+      "height": "medium"
+    },
+    {
+      "type": "servicesGrid",
+      "title": "Unsere Squarespace Services",
+      "subtitle": "Was wir für euch tun können",
+      "services": [
+        {
+          "title": "Webdesign & Entwicklung",
+          "description": "Individuelle Squarespace-Websites mit massgeschneidertem Design.",
+          "cta": { "label": "Details", "href": "/squarespace-agentur/webseiten-entwicklung", "variant": "text" }
+        },
+        {
+          "title": "E-Commerce Setup",
+          "description": "Online-Shop Einrichtung mit Squarespace Commerce.",
+          "cta": { "label": "Details", "href": "/services/website-erstellen", "variant": "text" }
+        },
+        {
+          "title": "SEO Optimierung",
+          "description": "Suchmaschinenoptimierung für bessere Google-Rankings.",
+          "cta": { "label": "Details", "href": "/services/beratung", "variant": "text" }
+        },
+        {
+          "title": "Wartung & Support",
+          "description": "Laufende Betreuung und technischer Support.",
+          "cta": { "label": "Details", "href": "/squarespace-hilfe", "variant": "text" }
+        }
+      ],
+      "columns": "4"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "green",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "process",
+      "title": "Unser Vorgehen",
+      "subtitle": "Vom Konzept zur fertigen Webseite",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Beratungsgespräch",
+          "description": "Kostenlos und unverbindlich. Wir lernen eure Ziele kennen und prüfen, ob Squarespace die richtige Wahl ist."
+        },
+        {
+          "number": 2,
+          "title": "Strategie & Konzept",
+          "description": "Gemeinsam entwickeln wir die Struktur, Inhalte und das visuelle Konzept eurer Website."
+        },
+        {
+          "number": 3,
+          "title": "Design & Entwicklung",
+          "description": "Wir setzen eure Website um – mit individuellem Design und allen gewünschten Funktionen."
+        },
+        {
+          "number": 4,
+          "title": "Launch & Schulung",
+          "description": "Nach dem Go-Live zeigen wir euch, wie ihr Inhalte selbst pflegen könnt."
+        }
+      ],
+      "layout": "horizontal"
+    },
+    {
+      "type": "comparisonTable",
+      "title": "Squarespace vs. WordPress",
+      "subtitle": "Welche Plattform passt zu euch?",
+      "leftColumn": {
+        "header": "WordPress",
+        "items": [
+          "Open Source – kostenlose Basis",
+          "Unbegrenzte Anpassungsmöglichkeiten",
+          "Grosses Plugin-Ökosystem",
+          "Selbst um Hosting kümmern",
+          "Regelmässige Updates nötig",
+          "Sicherheit eigenverantwortlich"
+        ],
+        "highlighted": false
+      },
+      "rightColumn": {
+        "header": "Squarespace",
+        "items": [
+          "All-in-One Lösung mit Hosting",
+          "Professionelle Design-Templates",
+          "Integrierte Funktionen ohne Plugins",
+          "Hosting inklusive (schnell & sicher)",
+          "Automatische Updates",
+          "Enterprise-Grade Sicherheit"
+        ],
+        "highlighted": true
+      }
+    },
+    {
+      "type": "testimonials",
+      "title": "Das sagen unsere Squarespace-Kunden",
+      "rating": {
+        "average": 4.9,
+        "count": 13,
+        "source": "Google"
+      },
+      "testimonials": [
+        {
+          "quote": "Die Squarespace-Website von Noevu ist genau das, was wir gesucht haben: professionell, einfach zu bedienen und wunderschön.",
+          "author": "Reto Gerber",
+          "company": "Rrevival",
+          "rating": 5
+        },
+        {
+          "quote": "Als Dentaltechniker brauchten wir einen Partner, der unser Handwerk versteht. Noevu hat unsere Expertise perfekt digital übersetzt.",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen zu Squarespace",
+      "items": [
+        {
+          "question": "Was kostet eine Squarespace-Website bei Noevu?",
+          "answer": "Eine professionelle Squarespace-Website startet bei CHF 5'000. Der genaue Preis hängt von Seitenzahl, Funktionen und individuellem Design ab. Wir erstellen euch vor Projektstart eine transparente Offerte."
+        },
+        {
+          "question": "Kann ich die Website selbst bearbeiten?",
+          "answer": "Ja! Squarespace ist bekannt für seine einfache Bedienung. Nach dem Launch zeigen wir euch in einer Schulung, wie ihr Texte, Bilder und Inhalte selbst anpassen könnt."
+        },
+        {
+          "question": "Was ist ein Squarespace Gold Partner?",
+          "answer": "Als Gold Partner gehören wir zu den erfahrensten Squarespace-Agenturen weltweit. Wir haben zahlreiche Projekte erfolgreich umgesetzt und werden direkt von Squarespace zertifiziert."
+        },
+        {
+          "question": "Ist Squarespace für SEO geeignet?",
+          "answer": "Absolut. Squarespace bietet alle wichtigen SEO-Funktionen: Clean URLs, automatische Sitemaps, SSL, responsive Design und schnelle Ladezeiten. Wir optimieren zusätzlich On-Page-Faktoren."
+        },
+        {
+          "question": "Kann ich von WordPress zu Squarespace wechseln?",
+          "answer": "Ja, wir migrieren regelmässig Websites von WordPress zu Squarespace. Je nach Umfang und Inhalten erstellen wir ein individuelles Migrationsangebot."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Bereit für eure Squarespace-Website?",
+      "description": "Lasst uns in einem kostenlosen Gespräch herausfinden, ob Squarespace die richtige Wahl für euer Projekt ist.",
+      "ctas": [
+        {
+          "label": "Kostenlos beraten lassen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Projekte ansehen",
+          "href": "/projekte",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    },
+    {
+      "type": "blogGrid",
+      "title": "Squarespace Tipps & Ressourcen",
+      "subtitle": "Anleitungen und Best Practices",
+      "limit": 3,
+      "category": "Squarespace"
+    }
+  ]
+}

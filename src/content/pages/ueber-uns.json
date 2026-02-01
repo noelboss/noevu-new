@@ -1,0 +1,181 @@
+{
+  "slug": "ueber-uns",
+  "locale": "de",
+  "seo": {
+    "title": "Schweizer Webdesign & Marketing Agentur Noevu in Zürich — Noevu GmbH",
+    "description": "Schweizer Webdesign Agentur in Zürich: Webseiten Entwicklung und digitale Strategien. Professionell, kundenorientiert und verantwortungsbewusst."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Schweizer Webdesign & Marketing Agentur",
+      "subheadline": "Für digitalen Erfolg mit Verantwortung.",
+      "description": "Was macht euer Unternehmen besonders? Erfolg liegt nicht nur in dem, was ihr anbietet, sondern warum und wie ihr es tut. Nach diesem \"Golden Circle\"-Prinzip gestalten wir eure digitale Präsenz als strategisches Werkzeug, das Botschaft klar kommuniziert und Besucher zu Kunden macht.",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "Webseiten Projekt starten",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "CMS-Evaluation starten",
+          "href": "/blog/cms-evaluation",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "valueProposition",
+      "items": [
+        {
+          "title": "Professionell",
+          "description": "Über 25 Jahre Erfahrung in Webdesign und digitaler Kommunikation. Wir wissen, was funktioniert."
+        },
+        {
+          "title": "Kundenorientiert",
+          "description": "Eure Ziele stehen im Mittelpunkt. Wir hören zu, verstehen und setzen um, was ihr braucht."
+        },
+        {
+          "title": "Verantwortungsbewusst",
+          "description": "Transparente Prozesse, faire Preise und langfristige Partnerschaften."
+        }
+      ]
+    },
+    {
+      "type": "splitContent",
+      "layout": "imageRight",
+      "title": "Warum Schweizer KMUs unsere Zürcher Webdesign Agentur wählen?",
+      "content": "<p>Für Schweizer KMU ist es oft eine Herausforderung, eine moderne und effektive Homepage zu betreiben. Meist fehlt die Zeit, das Know-how oder es bleibt nur die Wahl zwischen teuren Agenturlösungen oder mittelmässigen Standard-Templates.</p><p>Unser Ziel ist es, Schweizer KMUs dank smarten Tools und effizienten Prozessen mit modernen, kundenzentrierten digitalen Lösungen höchster Qualität zu unterstützen – zu einem Preis, der für KMUs erschwinglich bleibt.</p>",
+      "image": {
+        "src": "/images/about/team-working.jpg",
+        "alt": "Noevu Team bei der Arbeit"
+      },
+      "cta": {
+        "label": "Projekte ansehen",
+        "href": "/projekte",
+        "variant": "primary"
+      }
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "textContent",
+      "title": "Unser Vorgehen",
+      "subtitle": "Klarheit von Anfang an",
+      "content": "<p>Ihr profitiert von einem agilen, effizienten und sicheren Prozess. Wir arbeiten in drei klaren Phasen, damit ihr immer wisst, wo wir stehen und was als nächstes kommt.</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "process",
+      "title": "So arbeiten wir",
+      "subtitle": "Unser bewährter 3-Phasen-Prozess",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Verständnis & Strategie",
+          "description": "Verstehen und Strukturieren. Mit dem Golden Circle Framework entwickeln wir eure einzigartige Positionierung. Was ist eure Botschaft? Wer sind eure Kunden? Was macht euch besonders?"
+        },
+        {
+          "number": 2,
+          "title": "Design & Entwicklung",
+          "description": "Gestalten und Programmieren. Basierend auf der Strategie entwickeln wir interaktive Design-Prototypen. So könnt ihr das künftige Erscheinungsbild erleben, bevor die erste Zeile Code geschrieben wird."
+        },
+        {
+          "number": 3,
+          "title": "Livegang & Optimierung",
+          "description": "Starten und Verbessern. Nach dem Launch ist unsere Arbeit nicht getan. Wir begleiten euch beim Go-Live und optimieren kontinuierlich basierend auf echten Nutzerdaten."
+        }
+      ],
+      "layout": "alternating"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "textContent",
+      "id": "team",
+      "title": "Die Menschen hinter Noevu",
+      "content": "<p>Ein eingespieltes Team aus erfahrenen Spezialisten für Webdesign, Entwicklung und digitale Strategie.</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "featuresList",
+      "title": "",
+      "features": [
+        {
+          "title": "Noël Bossart",
+          "description": "Gründer & CEO. Über 25 Jahre Erfahrung in Webdesign und digitaler Strategie. Squarespace Circle Gold Partner."
+        },
+        {
+          "title": "Tobias Morf",
+          "description": "Creative Director. Spezialist für User Experience und visuelles Design mit Fokus auf Conversion-Optimierung."
+        },
+        {
+          "title": "Michael Karrer",
+          "description": "Senior Developer. Experte für moderne Web-Technologien und technische Umsetzung komplexer Projekte."
+        },
+        {
+          "title": "Anabel Hafstad",
+          "description": "Content Strategist. Spezialistin für SEO-optimierte Inhalte und digitale Kommunikationsstrategien."
+        }
+      ],
+      "columns": "2"
+    },
+    {
+      "type": "testimonials",
+      "id": "social",
+      "title": "Das sagen unsere Kunden",
+      "rating": {
+        "average": 4.9,
+        "count": 13,
+        "source": "Google"
+      },
+      "testimonials": [
+        {
+          "quote": "Noevu hat unsere Erwartungen übertroffen. Die neue Website ist nicht nur schön, sondern bringt auch messbare Ergebnisse. Die Zusammenarbeit war professionell und unkompliziert.",
+          "author": "Reto Gerber",
+          "company": "Rrevival",
+          "rating": 5
+        },
+        {
+          "quote": "Als Dentaltechniker brauchten wir einen Partner, der unser Handwerk versteht. Noevu hat unsere Expertise perfekt digital übersetzt.",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Bereit für euer Projekt?",
+      "description": "Sichert euch eure kostenlose Beratung. Wir freuen uns darauf, eure Vision kennenzulernen und gemeinsam euer digitales Projekt zu meistern.",
+      "ctas": [
+        {
+          "label": "Termin buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Kontakt aufnehmen",
+          "href": "/kontakt",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    },
+    {
+      "type": "blogGrid",
+      "title": "Insights für den digitalen Vorsprung",
+      "subtitle": "Erfolgreiche Webseiten Projekte und Expertenwissen",
+      "limit": 3
+    }
+  ]
+}

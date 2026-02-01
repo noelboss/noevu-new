@@ -2,60 +2,158 @@
   "slug": "services/ai-beratung",
   "locale": "de",
   "seo": {
-    "title": "AI Beratung für Schweizer KMU | Noevu GmbH",
-    "description": "Künstliche Intelligenz für euer Unternehmen. Wir zeigen, wie ihr AI-Tools gewinnbringend einsetzen könnt - von ChatGPT bis Automatisierung."
+    "title": "AI Beratung KMU Zürich – Schweiz | Noevu GmbH",
+    "description": "AI Beratung & Implementierung für Schweizer KMU. Wir begleiten Euch von der Analyse über Strategie bis zur erfolgreichen Umsetzung Eurer KI-Lösungen: Coaching, Beratung, Mentoring, Workshops."
   },
   "sections": [
     {
       "type": "hero",
-      "headline": "AI Beratung für KMU",
-      "subheadline": "Künstliche Intelligenz praktisch nutzen",
-      "description": "<p>AI ist kein Zukunftsszenario mehr. Wir zeigen euch, wie ihr ChatGPT, Bildgenerierung und Automatisierung konkret in eurem Unternehmen einsetzen könnt.</p>",
+      "headline": "AI-Beratung und Implementierung für Schweizer KMU",
+      "subheadline": "Künstliche Intelligenz für Schweizer KMU – Euer Weg in die Zukunft beginnt hier.",
+      "description": "Entdeckt, wie Künstliche Intelligenz Euch als Schweizer KMU voranbringt – mehr Effizienz, neue Chancen und konkrete Resultate für Euer Geschäft.",
+      "backgroundImage": {
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/fe21b5e6-ecb3-475c-903a-1b18b80f9b69/a-high-quality-digital-render-without-an_J9KvaV4pQ2SQPAjXj6B98A_709s_ZBpSR6LLgLftUnAmg.png",
+        "alt": "AI Beratung für Schweizer KMU"
+      },
       "alignment": "left",
+      "theme": "black-bold",
       "ctas": [
         {
-          "label": "AI-Workshop buchen",
-          "href": "/kontakt"
-        },
-        {
-          "label": "Mehr erfahren",
-          "href": "/blog/ai-tools-kmu-schweiz",
-          "variant": "secondary"
+          "label": "Schulung oder Potenzialanalyse anfragen",
+          "href": "/termin",
+          "variant": "primary"
         }
       ]
+    },
+    {
+      "type": "splitContent",
+      "headline": "Wie Schweizer KMU AI im Firmenalltag effektiv einsetzen können?",
+      "content": "Ihr kennt den Druck, laufend innovativ zu bleiben und gleichzeitig Kosten sowie Fachkräftemangel im Griff zu haben. Die Digitalisierung verlangt schnelle, kluge Entscheidungen – doch der Weg zu Künstlicher Intelligenz wirkt oft kompliziert und undurchsichtig. Wie könnt Ihr AI nutzen, ohne Euch im Technik-Dschungel zu verlieren?",
+      "theme": "black-bold"
+    },
+    {
+      "type": "splitContent",
+      "headline": "So startet Euere Firma mit AI durch",
+      "content": "Der Markt ist voll von AI-Beratern, die Euch alles versprechen. Wir sind anders. Mit über 25 Jahren Erfahrung in digitalen Lösungen und Prozessen begleiten wir Euch Schritt für Schritt. Gemeinsam entdecken wir das Potenzial von AI für Eure Abläufe. Und wir implementieren die passenden Lösungen – pragmatisch, sicher und messbar.",
+      "theme": "black"
+    },
+    {
+      "type": "servicesGrid",
+      "title": "Unsere AI-Services",
+      "services": [
+        {
+          "title": "AI Schulung für Mitarbeitende",
+          "description": "Praxisnahe KI-Schulung: Mitarbeitende lernen sichere, effiziente Workflows mit modernen AI-Tools – direkt an euren Use-Cases. Produktivität, Qualität & Maturität steigen.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/931d0650-8d12-49af-942d-cb39c25bc150/AI-Schulung_fuer_Mitarbeitende.png",
+            "alt": "AI Schulung für Mitarbeitende"
+          }
+        },
+        {
+          "title": "AI Potenzialanalyse für KMU",
+          "description": "Wir identifizieren rentable AI-Use-Cases, Automatisierungspotenzial und Datenquellen. Klarer Fahrplan mit Quick Wins, ROI-Schätzung und Risiken.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/5a0a11da-85d2-44b0-8008-2f8c3a368222/strategy-paper-with-the-title-strategie.png",
+            "alt": "AI Potenzialanalyse"
+          }
+        },
+        {
+          "title": "AI im KMU implementieren",
+          "description": "Wir planen, bauen und integrieren sichere AI-Lösungen in Ihre Systeme. Von MVP bis Rollout – messbare Effizienz, Compliance und Betreuung.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/d1db9936-d57e-4a9e-aad6-4d4553638bc8/a-dashboard-landing-page-for-a-data-anal.png",
+            "alt": "AI Implementation"
+          }
+        }
+      ],
+      "columns": "3",
+      "theme": "black"
+    },
+    {
+      "type": "splitContent",
+      "headline": "AI, die für Euch arbeitet.",
+      "content": "Wir übersetzen komplexe KI-Konzepte in einfache, wirkungsvolle Lösungen, die direkt auf Eure Bedürfnisse als Schweizer KMU zugeschnitten sind. Mit uns bekommt Ihr nicht nur eine Strategie, sondern konkrete Ergebnisse: Automatisierte Abläufe, bessere Entscheidungen und spürbare Entlastung für Euer Team. Wir begleiten Euch von der ersten Idee bis zur erfolgreichen Umsetzung und machen AI zum echten Vorteil – nicht zum Buzzword.",
+      "ctas": [
+        {
+          "label": "Schulung oder Potenzialanalyse anfragen",
+          "href": "/termin",
+          "variant": "primary"
+        }
+      ],
+      "theme": "black"
     },
     {
       "type": "featuresList",
-      "title": "AI-Einsatzbereiche für KMU",
+      "title": "Das bringt AI Eurem Unternehmen",
       "features": [
         {
-          "title": "Content-Erstellung",
-          "description": "Texte, Social-Media-Posts und E-Mails schneller erstellen mit ChatGPT und anderen Tools."
+          "title": "Mehr Zeit & weniger Kosten",
+          "description": "Ihr automatisiert Routinetätigkeiten wie Dateneingabe oder Kundenanfragen und spart bis zu 30% der Betriebskosten. So bleibt Euch mehr Raum für die wichtigen Aufgaben."
         },
         {
-          "title": "Bildgenerierung",
-          "description": "Professionelle Produktbilder und Illustrationen mit AI erstellen."
+          "title": "Bessere Entscheidungen",
+          "description": "Ihr nutzt Eure Daten gezielt, erkennt Trends frühzeitig und trefft fundierte, zukunftsweisende Entscheidungen. Das sichert Euch den Vorsprung am Markt."
         },
         {
-          "title": "Kundenservice",
-          "description": "Chatbots und automatisierte Antworten für häufige Kundenanfragen."
+          "title": "Stärkeres Marketing & Sales",
+          "description": "Ihr erreicht Eure Zielgruppe präziser, steigert die Produktivität im Marketing und Vertrieb um über 20% und generiert mehr Umsatz – mit weniger Aufwand."
         },
         {
-          "title": "Prozessautomatisierung",
-          "description": "Wiederkehrende Aufgaben automatisieren und Zeit sparen."
+          "title": "Kundenservice, der begeistert",
+          "description": "Mit AI-basierten Chatbots reagiert Ihr schneller und persönlicher. Das freut Eure Kunden und entlastet Euer Team spürbar."
+        },
+        {
+          "title": "Wettbewerbsvorsprung sichern",
+          "description": "Ihr integriert AI in Eure Unternehmensstrategie und positioniert Euch als Innovatoren in Eurer Branche. So bleibt Ihr vorne und gestaltet die Zukunft aktiv mit."
         }
-      ]
+      ],
+      "columns": "2",
+      "theme": "black-bold"
+    },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen zur AI-Beratung",
+      "items": [
+        {
+          "question": "Was sind die ersten Schritte bei einer AI-Implementierung?",
+          "answer": "Wir starten mit einer Potenzialanalyse, um zu verstehen, wo AI in Eurem Unternehmen den grössten Mehrwert bringen kann. Danach definieren wir Quick Wins und entwickeln einen klaren Fahrplan."
+        },
+        {
+          "question": "Wie lange dauert eine AI-Schulung?",
+          "answer": "Unsere praxisnahen Schulungen dauern in der Regel einen halben bis ganzen Tag. Die Mitarbeitenden lernen dabei direkt an Euren Use-Cases und können das Gelernte sofort anwenden."
+        },
+        {
+          "question": "Ist AI für mein kleines Unternehmen überhaupt relevant?",
+          "answer": "Absolut! Gerade KMU können von AI profitieren, weil sie flexibler sind und schneller neue Prozesse implementieren können. Viele AI-Tools sind heute auch für kleinere Budgets erschwinglich."
+        },
+        {
+          "question": "Wie steht es um den Datenschutz bei AI-Lösungen?",
+          "answer": "Datenschutz hat bei uns höchste Priorität. Wir setzen auf Lösungen, die DSGVO-konform sind und beraten Euch, wie Ihr AI-Tools sicher einsetzen könnt."
+        },
+        {
+          "question": "Welche AI-Tools setzt ihr ein?",
+          "answer": "Wir arbeiten mit einer Vielzahl von Tools – von ChatGPT und Claude für Textarbeit über Midjourney für Bildgenerierung bis hin zu Automatisierungsplattformen wie Make oder n8n. Die Auswahl richtet sich immer nach Euren spezifischen Anforderungen."
+        }
+      ],
+      "theme": "dark"
     },
     {
       "type": "cta",
-      "headline": "AI-Potenzial entdecken",
-      "description": "In einem Workshop zeigen wir eurem Team, welche AI-Tools für euer Unternehmen sinnvoll sind.",
+      "title": "Bereit für den nächsten Schritt?",
+      "description": "Lasst uns gemeinsam entdecken, wie AI Euer Unternehmen voranbringen kann. Kostenloses Erstgespräch – unverbindlich und persönlich.",
       "ctas": [
         {
-          "label": "Workshop anfragen",
-          "href": "/kontakt"
+          "label": "Termin buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Kontakt aufnehmen",
+          "href": "/kontakt",
+          "variant": "secondary"
         }
-      ]
+      ],
+      "backgroundColor": "green"
     }
   ]
 }
