@@ -28,15 +28,17 @@
 
 ## Pending Tasks
 
-### Pages Still Needing FAQ Updates
-- [ ] `squarespace-agentur.json` - Has FAQs but could be enhanced
-- [ ] `services/squarespace.json` - Check if needs FAQ section
-- [ ] `ueber-uns.json` - Check if needs FAQ section
-- [ ] `squarespace-hilfe.json` - Has 5 FAQs, could be enhanced
-- [ ] `webseiten-tipps.json` - Has 7 FAQs, seems complete
+### Pages Updated by Sub-Agents (Batch 2)
+- [x] `squarespace-agentur.json` - FAQs enhanced
+- [x] `services/squarespace.json` - FAQ section added
+- [x] `ueber-uns.json` - Testimonials expanded
+- [x] `termin.json` - FAQ section added (fixed faqs→items)
+- [x] `home.json` - Testimonials updated from shared file
+- [ ] `squarespace-hilfe.json` - May need enhancement
+- [x] `webseiten-tipps.json` - Complete (7 FAQs)
 
-### Content Sections to Update
-- [ ] Update testimonials sections across pages to use extracted reviews
+### Content Sections Updated
+- [x] Testimonials sections updated on home.json and ueber-uns.json
 - [ ] Update hero sections with extracted headlines where different
 - [ ] Update SEO meta descriptions where extracted content differs
 

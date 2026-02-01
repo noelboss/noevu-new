@@ -1,0 +1,111 @@
+{
+  "slug": "termin",
+  "locale": "de",
+  "seo": {
+    "title": "Termin mit KMU Webseiten und Squarespace Experten — Noevu GmbH",
+    "description": "Kostenloser Video-Termin buchen. Bucht ein unverbindliches 15-Minuten-Gespräch mit unserem Webseiten-Experten."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Termin mit KMU Webseiten und Squarespace Experten",
+      "subheadline": "Kostenloser Video-Termin buchen",
+      "description": "<p>Ganz einfach einen unverbindlichen 15-Minuten-Termin mit unserem Experten Noël Bossart buchen. Wir freuen uns auf das Gespräch!</p>",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "Direkt bei Cal.com buchen",
+          "href": "https://cal.com/noevu/15min",
+          "variant": "primary",
+          "external": true
+        }
+      ]
+    },
+    {
+      "type": "splitContent",
+      "layout": "imageLeft",
+      "title": "Hallo, ich bin Noël",
+      "content": "<p><strong>Gründer & CEO von Noevu</strong></p><p>Mit über 25 Jahren Erfahrung in Webdesign, Marketing und digitaler Strategie helfe ich Schweizer KMUs, Online-Auftritte zu schaffen, die nicht nur gut aussehen, sondern auch Ergebnisse liefern.</p><p>Als Schweizer Squarespace-Experte kombiniere ich Effizienz, Benutzerfreundlichkeit und ästhetisches Design, um Websites zu realisieren, die langfristig funktionieren und Wachstum ermöglichen.</p><p><strong>Kontakt:</strong><br><a href='mailto:noel@noevu.ch'>noel@noevu.ch</a><br><a href='tel:+41445051020'>+41 44 505 10 20</a></p>",
+      "image": {
+        "src": "/images/team/noel-bossart.jpg",
+        "alt": "Noël Bossart - Gründer & CEO von Noevu"
+      },
+      "cta": {
+        "label": "LinkedIn Profil",
+        "href": "https://www.linkedin.com/in/noelbossart/",
+        "variant": "secondary",
+        "external": true
+      }
+    },
+    {
+      "type": "textContent",
+      "title": "Kalender",
+      "content": "<div id='my-cal-inline' style='width:100%;min-height:600px;'></div><script>(function(d,s){var c=d.createElement(s);c.src='https://app.cal.com/embed/embed.js';c.async=true;d.head.appendChild(c)})(document,'script');</script><script>window.addEventListener('load',function(){Cal('init',{origin:'https://cal.com'});Cal.ns['15min']('inline',{elementOrSelector:'#my-cal-inline',calLink:'noevu/15min',layout:'month_view',config:{theme:'light',brandColor:'#236053'}})});</script>",
+      "alignment": "center",
+      "width": "wide"
+    },
+    {
+      "type": "testimonials",
+      "title": "Kunden lieben die Zusammenarbeit",
+      "subtitle": "100% Fünf-Sterne Bewertungen auf Google",
+      "rating": {
+        "average": 5.0,
+        "count": 13,
+        "source": "Google"
+      },
+      "testimonials": [
+        {
+          "quote": "Noevu hat unsere Erwartungen übertroffen. Die neue Website ist nicht nur schön, sondern bringt auch messbare Ergebnisse.",
+          "author": "Martin Künzi",
+          "company": "Wohnperspektive GmbH",
+          "rating": 5
+        },
+        {
+          "quote": "Professionell, schnell und unkompliziert. Die Zusammenarbeit mit Noevu war ein Vergnügen.",
+          "author": "Sandra Meier",
+          "company": "Davatz Anwaltskanzlei",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen",
+      "items": [
+        {
+          "question": "Was passiert im Beratungsgespräch (kostenloses 15-30 Minuten Video-Call)?",
+          "answer": "Im kostenlosen Erstgespräch lernen wir deine Situation kennen, besprechen deine Ziele und schauen, wie wir dir am besten helfen können. Du bekommst erste konkrete Tipps und einen Überblick über mögliche nächste Schritte."
+        },
+        {
+          "question": "Wie bereite ich mich auf den Termin vor?",
+          "answer": "Überlege dir vorab, welche Ziele du mit deiner Website verfolgen möchtest, und notiere dir Fragen, die dir auf dem Herzen liegen. Das hilft uns, die Zeit optimal zu nutzen. Allerdings ist eine aufwendige Vorbereitung nicht nötig."
+        },
+        {
+          "question": "Ist das Gespräch wirklich kostenlos?",
+          "answer": "Ja, absolut! Unser Erstgespräch ist unverbindlich und kostenlos. Es entsteht keine Verpflichtung für weitere Zusammenarbeit. Wir möchten einfach dich und deine Anforderungen kennenlernen."
+        },
+        {
+          "question": "Welche Themen können wir besprechen?",
+          "answer": "Gerne besprechen wir Website-Strategie, CMS-Auswahl, Website-Redesign, Squarespace-Optimierung, Online-Marketing, Suchmaschinen-Optimierung (SEO) und vieles mehr. Was sind deine Herausforderungen?"
+        },
+        {
+          "question": "Was passiert nach dem Termin?",
+          "answer": "Falls wir beide denken, dass eine Zusammenarbeit sinnvoll ist, erstelle ich dir ein maßgeschneidertes Angebot. Du entscheidest dann in aller Ruhe, ob du mit uns zusammenarbeiten möchtest."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Lieber direkt anrufen?",
+      "description": "Kein Problem! Ruft uns einfach an unter <a href='tel:+41445051020'>+41 44 505 10 20</a> oder schreibt uns eine E-Mail an <a href='mailto:hello@noevu.ch'>hello@noevu.ch</a>.",
+      "ctas": [
+        {
+          "label": "Kontaktformular",
+          "href": "/kontakt",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}

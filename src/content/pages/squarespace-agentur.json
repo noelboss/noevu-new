@@ -184,24 +184,24 @@
       "title": "Häufige Fragen zu Squarespace",
       "items": [
         {
+          "question": "Was ist ein Squarespace Gold Partner und warum ist das wichtig?",
+          "answer": "Als Squarespace Circle Gold Partner gehören wir zu den weltweit zertifizierten und anerkannten Top-Agenturen. Das bedeutet: Wir haben umfangreiche Erfahrung mit hunderten von Squarespace-Projekten, direkten Zugang zu Squarespace-Experten, early Access zu neuen Features und regelmässige Schulungen. Für Sie als Kunde heisst das eine garantierte hohe Qualität, professionelle Unterstützung und dass Ihr Projekt in Expertenhänden ist. Seit 2020 arbeiten wir auf dieser Stufe und haben kontinuierlich die höchsten Qualitätsstandards erfüllt."
+        },
+        {
           "question": "Was kostet eine Squarespace-Website bei Noevu?",
-          "answer": "Eine professionelle Squarespace-Website startet bei CHF 5'000. Der genaue Preis hängt von Seitenzahl, Funktionen und individuellem Design ab. Wir erstellen euch vor Projektstart eine transparente Offerte."
+          "answer": "Wir bieten verschiedene Preispakete je nach Umfang und Anforderungen: Ein Starter-Paket für kleinere Websites beginnt bei CHF 4'500, während ein Strategic-Paket mit umfangreichen Features, E-Commerce-Integration oder komplexeren Anforderungen ca. CHF 10'000 kostet. Der genaue Preis hängt von der Anzahl der Seiten, den gewünschten Funktionen (z.B. Shop, Buchungssystem, Membership), dem Grad der individuellen Anpassung und den Design-Requirements ab. Wir erstellen Ihnen vor Projektstart eine transparente, detaillierte Offerte ohne versteckte Kosten. Hinzu kommt die monatliche Squarespace-Lizenz ab ca. CHF 20/Monat (je nach Funktionen)."
         },
         {
-          "question": "Kann ich die Website selbst bearbeiten?",
-          "answer": "Ja! Squarespace ist bekannt für seine einfache Bedienung. Nach dem Launch zeigen wir euch in einer Schulung, wie ihr Texte, Bilder und Inhalte selbst anpassen könnt."
+          "question": "Wie lange dauert die Entwicklung einer Squarespace-Website?",
+          "answer": "Eine Standard-Webseite dauert normalerweise 8-10 Wochen vom Kick-off bis zum Launch. Das umfasst: Beratung und Strategie (1-2 Wochen), Design und Konzept (2-3 Wochen), Entwicklung und Integration (3-4 Wochen), und finale Tests sowie Schulung (1-2 Wochen). Falls Sie unter Zeitdruck sind, bieten wir auch einen Express-Service mit 7 Tagen Lieferzeit an – allerdings mit etwas höheren Kosten und in diesem Fall mit eingeschränktem Scope. Der genaue Timeline wird individuell besprochen und ist abhängig von Ihrer Verfügbarkeit für Feedback und Content-Bereitstellung."
         },
         {
-          "question": "Was ist ein Squarespace Gold Partner?",
-          "answer": "Als Gold Partner gehören wir zu den erfahrensten Squarespace-Agenturen weltweit. Wir haben zahlreiche Projekte erfolgreich umgesetzt und werden direkt von Squarespace zertifiziert."
+          "question": "Kann ich die Website selbst bearbeiten und brauche ich dafür technisches Know-how?",
+          "answer": "Ja, absolut! Das ist einer der grossen Vorteile von Squarespace. Die Plattform ist explizit für Nicht-Techniker entwickelt worden und verwendet einen intuitiven Drag-and-Drop-Editor. Sie können einfach Texte bearbeiten, Bilder austauschen, neue Seiten hinzufügen und Inhalte aktualisieren – ohne jegliches technisches Wissen oder Programmier-Kenntnisse. Nach dem Launch führen wir Sie in einer umfassenden Schulungs-Session ein, zeigen Ihnen alle wichtigen Funktionen und geben Ihnen eine detaillierte Dokumentation mit. Bei Fragen unterstützen wir Sie auch weiterhin. So bleiben Sie unabhängig bei Änderungen und sparen langfristig Kosten für laufende Anpassungen."
         },
         {
-          "question": "Ist Squarespace für SEO geeignet?",
-          "answer": "Absolut. Squarespace bietet alle wichtigen SEO-Funktionen: Clean URLs, automatische Sitemaps, SSL, responsive Design und schnelle Ladezeiten. Wir optimieren zusätzlich On-Page-Faktoren."
-        },
-        {
-          "question": "Kann ich von WordPress zu Squarespace wechseln?",
-          "answer": "Ja, wir migrieren regelmässig Websites von WordPress zu Squarespace. Je nach Umfang und Inhalten erstellen wir ein individuelles Migrationsangebot."
+          "question": "Warum sollte ich Squarespace wählen statt WordPress?",
+          "answer": "Squarespace bietet entscheidende Vorteile gegenüber WordPress: (1) Wartungsfrei: Keine Updates, Patches oder Sicherheits-Fixes nötig – Squarespace macht das automatisch. (2) Sichere Plattform: Enterprise-Grade Sicherheit aus dem Hause Squarespace, keine Sicherheitslücken durch veraltete Plugins. (3) Keine Plugins nötig: WordPress erfordert oft dutzende Plugins, was zu Performance-Problemen und Sicherheitsrisiken führt. Squarespace hat alle wichtigen Funktionen integriert. (4) All-in-One: Hosting, Backup, SSL, CDN, SEO-Tools – alles ist inklusive. Bei WordPress müssen Sie selbst ein Hosting wählen und konfigurieren. (5) Bessere Performance: Squarespace ist extrem schnell optimiert und lädt überall auf der Welt schnell. (6) Weniger Komplexität: Keine PHP, keine Datenbank-Verwaltung, kein technischer Overhead. Ideal für KMU, die eine solide Website brauchen, ohne sich um Technik kümmern zu müssen."
         }
       ]
     },

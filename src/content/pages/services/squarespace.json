@@ -105,6 +105,37 @@
       ]
     },
     {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen",
+      "description": "Alles, was ihr über Squarespace wissen müsst.",
+      "items": [
+        {
+          "question": "Was ist Squarespace?",
+          "answer": "Squarespace ist eine All-in-One-Plattform zur Erstellung professioneller Websites. Sie kombiniert Hosting, Design-Templates, SEO-Tools, E-Commerce und Kundenunterstützung in einer einzigen Lösung – alles ohne technische Kenntnisse."
+        },
+        {
+          "question": "Warum sollten wir uns für Squarespace statt WordPress entscheiden?",
+          "answer": "Squarespace ist deutlich benutzerfreundlicher und sicherer als WordPress. Die Plattform ist wartungsarm – Squarespace kümmert sich automatisch um Hosting, Updates und Sicherheit. WordPress erfordert dagegen ständige Verwaltung, regelmäßige Plugin-Updates und manuelle Sicherheitsvorkehrungen. Mit Squarespace könnt ihr euch auf euer Geschäft konzentrieren, nicht auf die Website-Verwaltung."
+        },
+        {
+          "question": "Wie viel kostet eine Squarespace Website?",
+          "answer": "Die Kosten richten sich nach eurem Projekt. Eine schlüsselfertige Starter-Website kostet etwa CHF 4'500. Für umfangreichere oder strategische Projekte mit erweiterten Funktionen wie E-Commerce oder Custom-Integrationen liegt das Budget bei CHF 10'000 oder mehr. Gerne erstellen wir euch ein unverbindliches Angebot."
+        },
+        {
+          "question": "Können wir die Website nach dem Launch selbst bearbeiten?",
+          "answer": "Ja, absolut! Der Squarespace-Editor ist sehr benutzerfreundlich und intuitiv. Ihr könnt Texte, Bilder und andere Inhalte ganz einfach direkt im Browser bearbeiten – ohne Programmierung. Wir schulen euch bei der Website-Übergabe und stehen euch jederzeit für Fragen zur Verfügung."
+        },
+        {
+          "question": "Wie lange dauert die Erstellung einer Squarespace Website?",
+          "answer": "Ein typisches Projekt dauert etwa 8–10 Wochen. Dies hängt von der Komplexität, Projektumfang und der Geschwindigkeit eurer Rückmeldungen ab. In unserem Beratungsgespräch geben wir euch einen realistischen Zeitplan für euer spezifisches Projekt."
+        },
+        {
+          "question": "Was ist im Preis enthalten?",
+          "answer": "Unsere Leistungen umfassen: kostenlose Erstberatung, Konzept- und Design-Entwicklung, technische Umsetzung, SEO-Optimierung, Schulung und Übergabe, sowie After-Launch-Support. Der genaue Leistungsumfang ist abhängig vom gewählten Paket."
+        }
+      ]
+    },
+    {
       "type": "cta",
       "headline": "Bereit für eure Squarespace Website?",
       "description": "Lasst uns besprechen, wie wir eure digitale Präsenz auf das nächste Level bringen können.",
