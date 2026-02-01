@@ -2,7 +2,7 @@
 title: "Beste Alternative zu WordPress 2025 – Für Schweizer KMUs"
 slug: "beste-alternative-zu-wordpress"
 excerpt: "Was ist besser, alles selber machen mit Wordpress oder Squarespace als SaaS  Alternative? Dieser Artikel beleuchtet die beste Alternative zu WordPress  und hilft Schweizer KMU die richtige Entscheidung für das beste  Webseiten-CMS zu fällen."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/685de38944658c1ad033eda8/1756239038437/a-blog-post-feature-image-for-swiss-smes_FDeaSZzaQzCPLi0oPPSpFQ_iFe3bl1nSqyAMQi-QNvupQ.png?format=1500w"
+featuredImage: "/images/blog/beste-alternative-zu-wordpress.png"
 categories:
   - "WordPress"
   - "Squarespace"

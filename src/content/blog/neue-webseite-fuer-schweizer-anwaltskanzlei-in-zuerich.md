@@ -2,7 +2,7 @@
 title: "Sichere und Vertrauensvolle Webseite für die Zürcher Anwaltskanzlei Davatz Legal"
 slug: "neue-webseite-fuer-schweizer-anwaltskanzlei-in-zuerich"
 excerpt: "Für die renommierte Zürcher Anwaltskanzlei Davatz Legal AG war klar: Ihr  digitaler Auftritt sollte ihre etablierte Kompetenz und ihre nahbare,  lösungsorientierte Beratung perfekt widerspiegeln."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/688a2648f118807ec3e7102e/1755170914390/Neue+Webseite+fu%CC%88r+Schweizer+Anwa%CC%88lte+und+Kanzlei+Maac2.jpeg?format=1500w"
+featuredImage: "/images/blog/neue-webseite-fuer-schweizer-anwaltskanzlei-in-zuerich.jpeg"
 categories:
   - "Service: Webdesign"
   - "Service: Squarespace Website"

@@ -2,7 +2,7 @@
 title: "In 7 Tagen von WordPress zu einer eleganten Squarespace-Webseite"
 slug: "squarespace-webseite-fuer-ferienwohnung"
 excerpt: "Wie wir als Schweizer Squarespace Experte eine veraltete Wordpress Webseite  in eine Oase der Ruhe verwandelten. Ein Relaunch in Rekordzeit."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/687157596044991850b11f25/1755171338781/Ferienwohnung%2BWebseite%2B3.jpg?format=1500w"
+featuredImage: "/images/blog/squarespace-webseite-fuer-ferienwohnung.jpg"
 categories:
   - "Service: Squarespace Website"
   - "Service: Fotos & Videos"

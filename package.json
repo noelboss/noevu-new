@@ -6,13 +6,16 @@
   "scripts": {
     "dev": "astro dev",
     "dev:cms": "tinacms dev -c \"astro dev\"",
-    "build": "astro build",
-    "build:cms": "tinacms build && astro build",
+    "validate": "node scripts/validate-content.mjs",
+    "download-images": "node scripts/download-images.mjs",
+    "build": "npm run validate && astro build",
+    "build:cms": "npm run validate && tinacms build && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
+    "@astrojs/sitemap": "^3.7.0",
     "@tinacms/cli": "^2.1.2",
     "astro": "^5.17.1",
     "cheerio": "^1.2.0",

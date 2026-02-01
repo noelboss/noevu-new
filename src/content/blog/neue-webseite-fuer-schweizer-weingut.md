@@ -2,7 +2,7 @@
 title: "Professionelles Website für Weingut am Zürichsee"
 slug: "neue-webseite-fuer-schweizer-weingut"
 excerpt: "Websites für Weingut erstellen lassen: Professionelles Webdesign,  Online‑Shop, Degustations‑Buchung und lokale SEO. Euer Weinbau, Weine und  Events klar präsentiert."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/t/688913b533167255891524b9/1753813941329/Neue+Weinbau+Webseite+2.jpeg?format=1500w"
+featuredImage: "/images/blog/neue-webseite-fuer-schweizer-weingut.jpeg"
 categories:
   - "Service: Squarespace Website"
   - "Service: Online-Store & E-Commerce"

@@ -1,0 +1,78 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+
+import navigationData from '../content/navigation.json';
+import siteData from '../content/site.json';
+
+import type { Navigation } from '../schemas/navigation';
+import type { SiteConfig } from '../schemas/site';
+
+const navigation = navigationData as unknown as Navigation;
+const site = siteData as unknown as SiteConfig;
+---
+
+<Base title="Seite nicht gefunden | Noevu GmbH" description="Die gesuchte Seite konnte nicht gefunden werden.">
+  <Header navigation={navigation} />
+
+  <main id="main-content" class="error-page">
+    <div class="container">
+      <div class="error-page__content">
+        <span class="error-page__code">404</span>
+        <h1 class="error-page__title">Seite nicht gefunden</h1>
+        <p class="error-page__description">
+          Die gesuchte Seite existiert leider nicht oder wurde verschoben.
+        </p>
+        <div class="error-page__actions">
+          <a href="/" class="btn btn--primary">Zur Startseite</a>
+          <a href="/kontakt" class="btn btn--secondary">Kontakt aufnehmen</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <Footer navigation={navigation} site={site} />
+</Base>
+
+<style>
+  .error-page {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-block: var(--space-16);
+  }
+
+  .error-page__content {
+    max-width: 500px;
+  }
+
+  .error-page__code {
+    display: block;
+    font-size: 8rem;
+    font-weight: var(--font-bold);
+    color: var(--color-primary);
+    line-height: 1;
+    margin-bottom: var(--space-4);
+  }
+
+  .error-page__title {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .error-page__description {
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-8);
+  }
+
+  .error-page__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    justify-content: center;
+  }
+</style>

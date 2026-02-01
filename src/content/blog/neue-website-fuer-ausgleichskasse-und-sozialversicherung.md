@@ -2,7 +2,7 @@
 title: "Migros Ausgleichskasse: Website Relaunch"
 slug: "neue-website-fuer-ausgleichskasse-und-sozialversicherung"
 excerpt: "Eigentlich wollte die AK Migros ihre alte Typo3-Seite nur optisch  auffrischen. Das Resultat ist weit mehr: Wahrscheinlich die schönste  Ausgleichskassen-Webseite der Schweiz, die zudem mit einer radikalen  Nutzerzentrierung und höchster Sicherheit überzeugt."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/t/697242d095c208458eb1d3c2/1769095888260/Ausgleichskasse+Migros+Webseite.png?format=1500w"
+featuredImage: "/images/blog/neue-website-fuer-ausgleichskasse-und-sozialversicherung.png"
 categories:
   - "Branche: Staat & Behörden"
   - "Service: Beratung"

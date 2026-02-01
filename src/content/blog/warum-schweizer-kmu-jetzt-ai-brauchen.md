@@ -2,7 +2,7 @@
 title: "AI für KMU: Warum die Zukunft Eurer Firma davon abhängt"
 slug: "warum-schweizer-kmu-jetzt-ai-brauchen"
 excerpt: "Wer jetzt AI ignoriert, verliert: Warum künstliche Intelligenz über die  Zukunft von Schweizer KMU entscheidet. Findet heraus, warum AI wichtig für  Euer Unternehmen ist, und wie Ihr den Anschluss nicht verpasst."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/68db2d223507bc4a3d50cae7/1764816258767/the-german-text-ai-in-unternehmen-appear_TwBuYQ72RbOordRNCEJ_zw_2YFkCz3kR9WR0r2cDqCOvw.png?format=1500w"
+featuredImage: "/images/blog/warum-schweizer-kmu-jetzt-ai-brauchen.png"
 categories:
   - "AI & Künstliche Intelligenz"
 author:

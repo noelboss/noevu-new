@@ -2,7 +2,7 @@
 title: "Modernes Marken– und Webdesign für Rrevival®"
 slug: "squarespace-webseite-fuer-interimsmanagement"
 excerpt: "Vom Konzept zur digitalen Marke: Erlebt die Geburt einer der neuen  Identität für Interim-Management Anbieter Rrevival — mit moderner  Squarespace Webseite samt Branding und KI-gestützter Bildwelt."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/6841f15e93713320dda48996/1755408794535/Mac+Book+Rrevival.jpeg?format=1500w"
+featuredImage: "/images/blog/squarespace-webseite-fuer-interimsmanagement.jpeg"
 categories:
   - "Service: User-Experience Workshop"
   - "Service: KI-Bildwelt"

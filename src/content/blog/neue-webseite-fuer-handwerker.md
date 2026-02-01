@@ -2,7 +2,7 @@
 title: "Handwerker-Website erstellen lassen: Macht Eure Qualität online sichtbar."
 slug: "neue-webseite-fuer-handwerker"
 excerpt: "Lasst Eure neue Handwerker-Homepage von Experten erstellen. Für mehr  Sichtbarkeit & Anfragen in Eurer Region. Jetzt unverbindlich informieren."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/6875a7ed29bb9b249a639542/1759251038222/Neue+Webseite+Schweizer+Bodenleger.jpeg?format=1500w"
+featuredImage: "/images/blog/neue-webseite-fuer-handwerker.jpeg"
 categories:
   - "Service: Fotos & Videos"
   - "Service: Squarespace Website"

@@ -2,7 +2,7 @@
 title: "Notion Beratung: Flexibles Firmen-Intranet für Schweizer KMU 2026"
 slug: "notion-ideales-intranet-fuer-schweizer-kmus"
 excerpt: "Als erfahrener Notion Experten zeigen wir Euch, wie Ihr mit Notion in eurem  Unternehmen einführen könnt. Ihr profitiert von einer intelligenten  Plattform womit Ihr Euer Wissensmanagement und Projektmanagement zentralen  aufbaut."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/t/687924fe22913208288e700d/1752769790316/a-website-header-image-for-a-blog-post-t_TmJkwdvHSzm9juEX13Q_Rw_7h_qK4t3RaeePHQzibclug.png?format=1500w"
+featuredImage: "/images/blog/notion-ideales-intranet-fuer-schweizer-kmus.png"
 categories:
   - "Notion"
   - "Intranet"

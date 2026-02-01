@@ -1,0 +1,56 @@
+{
+  "slug": "services/beratung",
+  "locale": "de",
+  "seo": {
+    "title": "Webseiten Beratung für Schweizer KMU | Noevu GmbH",
+    "description": "Professionelle Webseiten-Beratung für Schweizer KMU. Wir helfen bei CMS-Auswahl, Website-Strategie und digitaler Transformation."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Webseiten Beratung & Konzeption",
+      "subheadline": "Für Schweizer KMU",
+      "description": "<p>Nicht sicher, welche Website-Lösung die richtige für euch ist? Wir beraten euch unabhängig und helfen bei der Planung eurer digitalen Präsenz.</p>",
+      "alignment": "left",
+      "ctas": [
+        {
+          "label": "Beratungsgespräch buchen",
+          "href": "/kontakt"
+        }
+      ]
+    },
+    {
+      "type": "featuresList",
+      "title": "Unsere Beratungsleistungen",
+      "features": [
+        {
+          "title": "CMS-Auswahl",
+          "description": "Wir analysieren eure Anforderungen und empfehlen das passende Content-Management-System."
+        },
+        {
+          "title": "Website-Audit",
+          "description": "Wir prüfen eure bestehende Website auf technische Mängel, SEO und Benutzerfreundlichkeit."
+        },
+        {
+          "title": "Relaunch-Planung",
+          "description": "Strukturierte Planung für euren Website-Relaunch mit Zeitplan und Meilensteinen."
+        },
+        {
+          "title": "Content-Strategie",
+          "description": "Entwicklung einer nachhaltigen Content-Strategie für mehr Sichtbarkeit und Leads."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "headline": "Fragen zur Website?",
+      "description": "Bucht ein kostenloses 15-minütiges Erstgespräch. Wir klären eure Fragen und zeigen Möglichkeiten auf.",
+      "ctas": [
+        {
+          "label": "Gespräch buchen",
+          "href": "/kontakt"
+        }
+      ]
+    }
+  ]
+}

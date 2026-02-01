@@ -1,0 +1,70 @@
+---
+/**
+ * OptimizedImage - Responsive image component with optimization
+ *
+ * Wraps Astro's Image component with:
+ * - Responsive srcset generation
+ * - Lazy loading by default
+ * - Proper aspect ratio handling
+ * - Fallback for external images
+ */
+import { Image } from 'astro:assets';
+
+interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  class?: string;
+  loading?: 'lazy' | 'eager';
+  sizes?: string;
+  quality?: number;
+}
+
+const {
+  src,
+  alt,
+  width,
+  height,
+  class: className = '',
+  loading = 'lazy',
+  sizes = '100vw',
+  quality = 80,
+} = Astro.props;
+
+// Check if it's an external URL
+const isExternal = src.startsWith('http://') || src.startsWith('https://');
+
+// Check if it's an SVG (don't optimize SVGs)
+const isSvg = src.endsWith('.svg');
+---
+
+{isExternal || isSvg ? (
+  <img
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    class={className}
+    loading={loading}
+    decoding="async"
+  />
+) : (
+  <Image
+    src={src}
+    alt={alt}
+    width={width || 1200}
+    height={height || 675}
+    class={className}
+    loading={loading}
+    quality={quality}
+    format="webp"
+  />
+)}
+
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>

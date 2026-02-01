@@ -1,0 +1,82 @@
+{
+  "slug": "kontakt",
+  "locale": "de",
+  "seo": {
+    "title": "Kontakt & Termin buchen | Noevu GmbH",
+    "description": "Ihr wollt direkt über Euer Webseiten Projekt, eure Ziele und Ideen sprechen? Jetzt kostenloses und unverbindliches 15-Minuten-Gespräch buchen."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Lass uns sprechen",
+      "subheadline": "Kostenlose Beratung",
+      "description": "<p>Ihr wollt direkt über Euer Webseiten-Projekt, eure Ziele und Ideen sprechen? Bucht jetzt ein kostenloses und unverbindliches 15-Minuten-Gespräch mit uns.</p>",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "Termin buchen",
+          "href": "https://calendly.com/noevu",
+          "external": true
+        }
+      ]
+    },
+    {
+      "type": "contactForm",
+      "title": "Schreibt uns",
+      "description": "<p>Alternativ könnt Ihr uns auch direkt eine Nachricht senden. Wir melden uns innerhalb von 24 Stunden bei Euch.</p>",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "E-Mail",
+          "type": "email",
+          "required": true
+        },
+        {
+          "name": "phone",
+          "label": "Telefon",
+          "type": "tel",
+          "required": false
+        },
+        {
+          "name": "company",
+          "label": "Firma",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "service",
+          "label": "Interessiert an",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Website erstellen lassen",
+            "Webseiten Beratung",
+            "Squarespace Agentur",
+            "AI Beratung",
+            "Anderes"
+          ]
+        },
+        {
+          "name": "message",
+          "label": "Nachricht",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "submitLabel": "Nachricht senden",
+      "successMessage": "Vielen Dank für Ihre Nachricht! Wir melden uns in Kürze."
+    },
+    {
+      "type": "textContent",
+      "title": "Direkt erreichen",
+      "content": "<div style='display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));'><div><h3>Adresse</h3><p>Noevu GmbH<br>Zürichstrasse 131<br>8600 Dübendorf<br>Schweiz</p></div><div><h3>Telefon</h3><p><a href='tel:+41445051020'>+41 44 505 10 20</a></p><h3>E-Mail</h3><p><a href='mailto:hello@noevu.ch'>hello@noevu.ch</a></p></div><div><h3>Öffnungszeiten</h3><p>Montag - Freitag<br>08:00 - 18:00 Uhr</p></div></div>",
+      "alignment": "left"
+    }
+  ]
+}

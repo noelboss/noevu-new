@@ -2,7 +2,7 @@
 title: "Webdesign für NGOs und Spendenbasierte Organisationen: Erfolgsgeschichte “Zukunft für Kibambili”"
 slug: "squarespace-webseite-fuer-schweizer-ngo-vereine"
 excerpt: "Wie eine Schweizer NGO mit strategischem Webdesign ihre digitale Präsenz  transformierte und mehr Unterstützung für ihre wichtige Mission gewinnt."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/686c07f5d9d6965a8ae52352/1755171405837/kibambili+website.jpeg?format=1500w"
+featuredImage: "/images/blog/squarespace-webseite-fuer-schweizer-ngo-vereine.jpeg"
 categories:
   - "Service: Squarespace Website"
   - "Branche: NGOs & Gemeinnützige Institutionen"

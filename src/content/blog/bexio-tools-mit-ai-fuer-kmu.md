@@ -2,7 +2,7 @@
 title: "AI im Schweizer KMU Alltag: Mehr als nur E-Mail-Schreiben"
 slug: "bexio-tools-mit-ai-fuer-kmu"
 excerpt: "Wie ihr KI über E-Mail hinaus sinnvoll nutzt: Praxisbeispiel aus der  Buchhaltung mit Bexio und Gemini, Tool‑Stack, Schritt‑für‑Schritt‑Vorgehen  und Angebote (Schulung, Potenzialanalyse, Implementierung)."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/6930e3853d044543fbc3d828/1764816387807/a-script-downloading-finacial-documents-_dVJrEE4JTzC1_NBPXfZmXQ_jf-cOj8TRd6g5JV15_NE8w.png?format=1500w"
+featuredImage: "/images/blog/bexio-tools-mit-ai-fuer-kmu.png"
 categories:
   - "AI & Künstliche Intelligenz"
 author:

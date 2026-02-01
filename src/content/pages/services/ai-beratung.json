@@ -1,0 +1,61 @@
+{
+  "slug": "services/ai-beratung",
+  "locale": "de",
+  "seo": {
+    "title": "AI Beratung für Schweizer KMU | Noevu GmbH",
+    "description": "Künstliche Intelligenz für euer Unternehmen. Wir zeigen, wie ihr AI-Tools gewinnbringend einsetzen könnt - von ChatGPT bis Automatisierung."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "AI Beratung für KMU",
+      "subheadline": "Künstliche Intelligenz praktisch nutzen",
+      "description": "<p>AI ist kein Zukunftsszenario mehr. Wir zeigen euch, wie ihr ChatGPT, Bildgenerierung und Automatisierung konkret in eurem Unternehmen einsetzen könnt.</p>",
+      "alignment": "left",
+      "ctas": [
+        {
+          "label": "AI-Workshop buchen",
+          "href": "/kontakt"
+        },
+        {
+          "label": "Mehr erfahren",
+          "href": "/blog/ai-tools-kmu-schweiz",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "featuresList",
+      "title": "AI-Einsatzbereiche für KMU",
+      "features": [
+        {
+          "title": "Content-Erstellung",
+          "description": "Texte, Social-Media-Posts und E-Mails schneller erstellen mit ChatGPT und anderen Tools."
+        },
+        {
+          "title": "Bildgenerierung",
+          "description": "Professionelle Produktbilder und Illustrationen mit AI erstellen."
+        },
+        {
+          "title": "Kundenservice",
+          "description": "Chatbots und automatisierte Antworten für häufige Kundenanfragen."
+        },
+        {
+          "title": "Prozessautomatisierung",
+          "description": "Wiederkehrende Aufgaben automatisieren und Zeit sparen."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "headline": "AI-Potenzial entdecken",
+      "description": "In einem Workshop zeigen wir eurem Team, welche AI-Tools für euer Unternehmen sinnvoll sind.",
+      "ctas": [
+        {
+          "label": "Workshop anfragen",
+          "href": "/kontakt"
+        }
+      ]
+    }
+  ]
+}

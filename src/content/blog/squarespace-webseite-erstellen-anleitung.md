@@ -2,7 +2,7 @@
 title: "Squarespace Webseite erstellen 2026 – Schritt-für-Schritt-Anleitung für Schweizer KMU"
 slug: "squarespace-webseite-erstellen-anleitung"
 excerpt: "Diese Squarespace Webseiten Anleitung für 2026 führt Euch von den  Squarespace Kosten über das Design bis zur SEO-Optimierung. Jetzt loslegen!"
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/68892bfc78c55a04246a3972/1769295895580/a-minimalist-blog-post-cover-image-for-a_cBzM2a4ZR9GerprFDxqvdA_wtwZVoJbRrOTV-jH1ZgCsg.png?format=1500w"
+featuredImage: "/images/blog/squarespace-webseite-erstellen-anleitung.png"
 categories:
   - "Squarespace"
   - "Start-Ups"

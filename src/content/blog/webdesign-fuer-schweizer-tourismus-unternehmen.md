@@ -2,7 +2,7 @@
 title: "Premium Webdesign für Schweizer Tourismus Unternehmen"
 slug: "webdesign-fuer-schweizer-tourismus-unternehmen"
 excerpt: "Erfahrt, wie wir als Schweizer Squarespace Experte für mobileo eine  veraltete Webseite in eine moderne, buchungsstarke Plattform verwandelt  haben."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/687a3bfb2290ae07217eab68/1769105858137/neue+webseite+fu%CC%88r+tourismus+betrieb.jpeg?format=1500w"
+featuredImage: "/images/blog/webdesign-fuer-schweizer-tourismus-unternehmen.jpeg"
 categories:
   - "Service: Fotos & Videos"
   - "Service: KI-Bildwelt"

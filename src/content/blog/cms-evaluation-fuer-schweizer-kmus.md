@@ -2,7 +2,7 @@
 title: "CMS Check für Schweizer KMU – Kostenloser Vergleich (2026)"
 slug: "cms-evaluation-fuer-schweizer-kmus"
 excerpt: "Kostenloser CMS Check für Schweizer KMU: WordPress vs. Squarespace objektiv  vergleichen. In Minuten Ergebnisse + klare Empfehlung."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/t/6877a327d8d1901b563d4378/1752671015212/a-sophisticated-product-comparison-adver_C8FUfS4bTRKxoUaA5OC4IQ_fadE5WSJSMGnpKoOVvdALw.png?format=1500w"
+featuredImage: "/images/blog/cms-evaluation-fuer-schweizer-kmus.png"
 categories:
   - "WordPress"
   - "Squarespace"

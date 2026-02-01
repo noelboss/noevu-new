@@ -1,0 +1,119 @@
+{
+  "slug": "services/squarespace",
+  "locale": "de",
+  "seo": {
+    "title": "Squarespace Agentur Schweiz | Noevu GmbH",
+    "description": "Als Squarespace Circle Gold Partner erstellen wir professionelle Websites für Schweizer KMU. Erhaltet eine moderne, wartungsarme Website mit persönlicher Betreuung."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Squarespace Agentur für die Schweiz",
+      "subheadline": "Circle Gold Partner",
+      "description": "<p>Als offizielle Squarespace Circle Gold Partner erstellen wir professionelle, moderne Websites für Schweizer KMU. Profitiert von wartungsarmen Lösungen mit persönlicher Betreuung.</p>",
+      "alignment": "left",
+      "ctas": [
+        {
+          "label": "Projekt besprechen",
+          "href": "/kontakt"
+        },
+        {
+          "label": "Projekte ansehen",
+          "href": "/projekte",
+          "variant": "secondary"
+        }
+      ],
+      "rating": {
+        "score": 5,
+        "count": 12,
+        "label": "Google-Bewertungen"
+      }
+    },
+    {
+      "type": "valueProposition",
+      "items": [
+        {
+          "title": "Circle Gold Partner",
+          "description": "Direkter Zugang zu Squarespace-Support und exklusiven Funktionen als offizieller Partner."
+        },
+        {
+          "title": "Wartungsarm",
+          "description": "Squarespace kümmert sich um Hosting, Updates und Sicherheit. Ihr konzentriert euch aufs Geschäft."
+        },
+        {
+          "title": "Swiss Made",
+          "description": "Persönliche Betreuung in der Schweiz. Wir sprechen eure Sprache und kennen den Markt."
+        }
+      ]
+    },
+    {
+      "type": "featuresList",
+      "title": "Warum Squarespace?",
+      "description": "Die moderne All-in-One-Plattform für professionelle Websites.",
+      "features": [
+        {
+          "title": "Designvorlagen auf höchstem Niveau",
+          "description": "Preisgekrönte Templates, die auf jedem Gerät perfekt aussehen."
+        },
+        {
+          "title": "Einfache Inhaltspflege",
+          "description": "Bearbeitet Texte und Bilder direkt im Browser, ohne Programmierung."
+        },
+        {
+          "title": "SEO eingebaut",
+          "description": "Automatische Sitemap, Meta-Tags und schnelle Ladezeiten."
+        },
+        {
+          "title": "E-Commerce integriert",
+          "description": "Verkauft Produkte und Dienstleistungen direkt über eure Website."
+        },
+        {
+          "title": "24/7 Support inklusive",
+          "description": "Squarespace bietet direkten Support für alle technischen Fragen."
+        },
+        {
+          "title": "Sichere Hosting-Plattform",
+          "description": "SSL-Zertifikate, DDoS-Schutz und 99.99% Uptime garantiert."
+        }
+      ]
+    },
+    {
+      "type": "process",
+      "title": "Unser Ablauf",
+      "description": "Von der Idee zur fertigen Website in wenigen Wochen.",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Beratung",
+          "description": "Wir besprechen eure Ziele, Zielgruppe und Wünsche in einem kostenlosen Erstgespräch."
+        },
+        {
+          "number": 2,
+          "title": "Konzept",
+          "description": "Wir erstellen ein Konzept mit Seitenstruktur, Design-Richtung und Funktionsumfang."
+        },
+        {
+          "number": 3,
+          "title": "Design",
+          "description": "Ihr seht einen ersten Entwurf und gebt Feedback. Wir verfeinern bis es passt."
+        },
+        {
+          "number": 4,
+          "title": "Launch",
+          "description": "Nach eurer Freigabe geht die Website online. Wir schulen euch in der Bedienung."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "headline": "Bereit für eure Squarespace Website?",
+      "description": "Lasst uns besprechen, wie wir eure digitale Präsenz auf das nächste Level bringen können.",
+      "ctas": [
+        {
+          "label": "Kostenloses Gespräch buchen",
+          "href": "/kontakt"
+        }
+      ]
+    }
+  ]
+}

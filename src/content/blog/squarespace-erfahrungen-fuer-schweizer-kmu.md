@@ -2,7 +2,7 @@
 title: "Squarespace Erfahrungen: Lohnt sich die Plattform für Schweizer KMU wirklich?"
 slug: "squarespace-erfahrungen-fuer-schweizer-kmu"
 excerpt: "Echte Squarespace Erfahrungen aus der Schweiz. Wir zeigen Euch, was mit  Squarespace für KMU möglich ist – von SEO über Design-Anpassungen bis zu  Custom Code."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/68adf547f9b8bb2b069821ec/1758041216302/a-blog-post-cover-image-featuring-a-clea_pNzGIMFJSBCipYNO4At_dg_aDUnhRDTRtikURumYNJv7g.png?format=1500w"
+featuredImage: "/images/blog/squarespace-erfahrungen-fuer-schweizer-kmu.png"
 categories:
   - "Squarespace"
   - "Tourismus & Gastgewerbe"

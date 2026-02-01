@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+import SectionRenderer from '../../components/SectionRenderer.astro';
+
+import pageData from '../../content/pages/services/squarespace.json';
+import navigationData from '../../content/navigation.json';
+import siteData from '../../content/site.json';
+
+import type { Page } from '../../schemas/page';
+import type { Navigation } from '../../schemas/navigation';
+import type { SiteConfig } from '../../schemas/site';
+
+const page = pageData as unknown as Page;
+const navigation = navigationData as unknown as Navigation;
+const site = siteData as unknown as SiteConfig;
+---
+
+<Base title={page.seo.title} description={page.seo.description}>
+  <Header navigation={navigation} currentPath="/services/squarespace" />
+  <main id="main-content">
+    <SectionRenderer sections={page.sections} />
+  </main>
+  <Footer navigation={navigation} site={site} />
+</Base>

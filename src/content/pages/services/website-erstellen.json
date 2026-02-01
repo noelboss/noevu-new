@@ -1,0 +1,87 @@
+{
+  "slug": "services/website-erstellen",
+  "locale": "de",
+  "seo": {
+    "title": "Website erstellen lassen | Schweizer Webdesign Agentur | Noevu",
+    "description": "Professionelle Website erstellen lassen von Schweizer Webdesign Experten. Moderne, schnelle und SEO-optimierte Websites für KMU."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Website erstellen lassen",
+      "subheadline": "Professionelles Webdesign",
+      "description": "<p>Eine professionelle Website ist das Fundament eurer digitalen Präsenz. Wir erstellen moderne, schnelle und SEO-optimierte Websites, die Besucher zu Kunden machen.</p>",
+      "alignment": "left",
+      "ctas": [
+        {
+          "label": "Projekt besprechen",
+          "href": "/kontakt"
+        },
+        {
+          "label": "Projekte ansehen",
+          "href": "/projekte",
+          "variant": "secondary"
+        }
+      ],
+      "rating": {
+        "score": 5,
+        "count": 12,
+        "label": "Google-Bewertungen"
+      }
+    },
+    {
+      "type": "valueProposition",
+      "items": [
+        {
+          "title": "Massgeschneidert",
+          "description": "Keine Templates von der Stange. Jede Website wird individuell für eure Marke gestaltet."
+        },
+        {
+          "title": "Schnell & SEO-optimiert",
+          "description": "Blitzschnelle Ladezeiten und beste Voraussetzungen für Google-Rankings."
+        },
+        {
+          "title": "Einfach zu pflegen",
+          "description": "Ihr könnt Inhalte selbst aktualisieren. Wir schulen euch und stehen für Fragen bereit."
+        }
+      ]
+    },
+    {
+      "type": "servicesGrid",
+      "title": "Unsere Leistungen",
+      "services": [
+        {
+          "title": "Unternehmenswebsite",
+          "description": "Professionelle Präsenz für euer Unternehmen mit Leistungsübersicht, Team und Kontakt.",
+          "icon": "building"
+        },
+        {
+          "title": "Landing Pages",
+          "description": "Conversion-optimierte Seiten für Kampagnen, Produktlaunches oder Lead-Generierung.",
+          "icon": "target"
+        },
+        {
+          "title": "E-Commerce",
+          "description": "Online-Shops für physische und digitale Produkte mit sicherer Zahlungsabwicklung.",
+          "icon": "shopping-cart"
+        },
+        {
+          "title": "Blog & Content",
+          "description": "Content-Plattformen für regelmässige Veröffentlichungen und SEO-Traffic.",
+          "icon": "edit"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "headline": "Startet euer Website-Projekt",
+      "description": "Ob Neuaufbau oder Relaunch - wir freuen uns auf euer Projekt.",
+      "ctas": [
+        {
+          "label": "Kostenloses Gespräch buchen",
+          "href": "/kontakt"
+        }
+      ]
+    }
+  ]
+}

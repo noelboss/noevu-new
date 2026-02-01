@@ -2,7 +2,7 @@
 title: "Professionelle Squarespace Webseite für Zürcher Sicherheitsfirma"
 slug: "squarespace-webseite-fuer-zuercher-sicherheitsfirma"
 excerpt: "Wie wir als Schweizer Squarespace Experte für eine Sicherheits- und  Eventfirma eine digitale Plattform schufen, die nicht nur professionell  aussieht, sondern auch messbare Erfolge liefert."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/686d35995e522f24f05e9450/1755171375889/Security+Firma+Webseite+mit+Squarespace+2.jpeg?format=1500w"
+featuredImage: "/images/blog/squarespace-webseite-fuer-zuercher-sicherheitsfirma.jpeg"
 categories:
   - "Service: KI-Bildwelt"
   - "Service: Squarespace Website"

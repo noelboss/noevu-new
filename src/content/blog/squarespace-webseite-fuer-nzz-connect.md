@@ -2,7 +2,7 @@
 title: "Sicheres Webdesign für NZZ Connect"
 slug: "squarespace-webseite-fuer-nzz-connect"
 excerpt: "Wie schafft man für ein hochkarätiges Cybersecurity Seminar in Rekordzeit  eine sichere Webseite? Wir zeigen es Euch."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/68686906bb641a19bf1ced73/1755171399446/MacBook+Air+Cybersecurity.jpeg?format=1500w"
+featuredImage: "/images/blog/squarespace-webseite-fuer-nzz-connect.jpeg"
 categories:
   - "Service: Squarespace Website"
   - "Branche: Events und Anlässe"

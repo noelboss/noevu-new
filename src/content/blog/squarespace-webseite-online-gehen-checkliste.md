@@ -2,7 +2,7 @@
 title: "Neue Squarespace Webseite online schalten – Die ultimative Go-Live-Checkliste!"
 slug: "squarespace-webseite-online-gehen-checkliste"
 excerpt: "Ihr wollt eure neue Squarespace Webseite online gehen? Mit unserer  ultimativen Go-Live-Checkliste stellt Ihr sicher, dass es nicht zu bösen  Überraschungen kommt!"
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/687907bc56f7b04168f7b627/1756239038463/a-clean-dashboard-landing-page-for-go-li_GnERGyvqQKO1tpF0LYBoJA_f7_OjX_oQHacWCZXtF_sLQ.png?format=1500w"
+featuredImage: "/images/blog/squarespace-webseite-online-gehen-checkliste.png"
 categories:
   - "Squarespace"
 author:

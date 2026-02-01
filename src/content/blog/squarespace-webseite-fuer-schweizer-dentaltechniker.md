@@ -2,7 +2,7 @@
 title: "Modernes Webdesign für innovative Zahntechniker: Das Projekt Vogel Dental"
 slug: "squarespace-webseite-fuer-schweizer-dentaltechniker"
 excerpt: "Moderne Websites für Zahnärzte und Dentaltechniker in der Schweiz –  professionell, mobiloptimiert und auf Ihre Kunden ausgerichtet."
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/6868752da386956469676346/1755180847795/neue+Webseite+fu%CC%88r+Zahntechniker.jpeg?format=1500w"
+featuredImage: "/images/blog/squarespace-webseite-fuer-schweizer-dentaltechniker.jpeg"
 categories:
   - "Service: Squarespace Website"
   - "Service: User-Experience Workshop"

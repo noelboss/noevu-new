@@ -2,7 +2,7 @@
 title: "Einladende Marke und Mehrsprachige Webseite für junges Berner Sozialunternehmen"
 slug: "squarespace-webseite-fuer-sozialbetrieb"
 excerpt: "Wir haben für dieses Sozialunternehmen eine neue Webseite erstellt, das  nicht nur Hoffnung und Perspektive vermittelt, sondern auch Kunden. Erfahrt  wie!"
-featuredImage: "http://static1.squarespace.com/static/67fe953929835a475f4fe93c/680c3810d0a1584bd894c93d/686fef7606a8b65511b63a2c/1755171364200/Screenshot+4.jpeg?format=1500w"
+featuredImage: "/images/blog/squarespace-webseite-fuer-sozialbetrieb.jpeg"
 categories:
   - "Service: KI-Bildwelt"
   - "Service: Branding & Logo-Design"

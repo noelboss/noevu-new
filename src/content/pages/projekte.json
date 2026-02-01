@@ -1,0 +1,77 @@
+{
+  "slug": "projekte",
+  "locale": "de",
+  "seo": {
+    "title": "Erfolgreiche Webseiten Projekte in der Schweiz | Noevu GmbH",
+    "description": "Entdeckt erfolgreiche Website Projekte für Schweizer KMUs und Unternehmen. Professionelles Webdesign, individuelle Web-Entwicklungen und moderne digitale Lösungen."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Erfolgreiche Webseiten Projekte",
+      "subheadline": "Portfolio",
+      "description": "<p>Entdeckt erfolgreiche Website-Projekte für Schweizer KMUs und Unternehmen. Professionelles Webdesign, individuelle Web-Entwicklungen und moderne digitale Lösungen.</p>",
+      "alignment": "center",
+      "rating": {
+        "score": 5,
+        "count": 12,
+        "label": "Google-Bewertungen"
+      }
+    },
+    {
+      "type": "blogGrid",
+      "title": "Unsere Kundenprojekte",
+      "description": "Eine Auswahl unserer erfolgreich umgesetzten Webprojekte.",
+      "filter": {
+        "categories": ["Webseite"]
+      },
+      "limit": 12,
+      "showCategories": true,
+      "showDate": false
+    },
+    {
+      "type": "testimonials",
+      "title": "Das sagen unsere Kunden",
+      "testimonials": [
+        {
+          "content": "Die Zusammenarbeit mit der Noevu GmbH war durchweg positiv. Besonders hervorzuheben ist die schnelle Reaktionszeit – Anliegen wurden stets zügig und zuverlässig bearbeitet.",
+          "author": {
+            "name": "Wohnperspektive GmbH"
+          },
+          "rating": 5
+        },
+        {
+          "content": "Noevu GmbH arbeitet talentiert, effizient und mit einem klaren Blick für durchdachte Lösungen. Die vielseitigen Kompetenzen mit modernen Web-CMS-Tools sind beeindruckend.",
+          "author": {
+            "name": "Martin Künzi"
+          },
+          "rating": 5
+        },
+        {
+          "content": "Ein Profi durch und durch, sehr gutes Preis-Leistungsverhältnis! Wir sind mit dem Resultat äusserst zufrieden.",
+          "author": {
+            "name": "Reto Gerber"
+          },
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "headline": "Bereit für Ihr Projekt?",
+      "description": "Lassen Sie uns gemeinsam Ihre digitale Präsenz auf das nächste Level bringen.",
+      "ctas": [
+        {
+          "label": "Projekt besprechen",
+          "href": "/kontakt"
+        },
+        {
+          "label": "Termin buchen",
+          "href": "https://calendly.com/noevu",
+          "external": true,
+          "variant": "secondary"
+        }
+      ]
+    }
+  ]
+}
