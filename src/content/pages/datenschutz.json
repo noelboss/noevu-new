@@ -1,0 +1,44 @@
+{
+  "slug": "datenschutz-impressum",
+  "locale": "de",
+  "seo": {
+    "title": "Datenschutz & Impressum — Noevu GmbH",
+    "description": "Datenschutzerklärung und Impressum der Noevu GmbH. Informationen zur Datenverarbeitung und rechtliche Angaben."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Datenschutz & Impressum",
+      "subheadline": "Rechtliche Informationen",
+      "description": "",
+      "alignment": "center"
+    },
+    {
+      "type": "textContent",
+      "title": "Impressum",
+      "content": "<h3>Noevu GmbH</h3><p>Zürichstrasse 131<br>8600 Dübendorf<br>Schweiz</p><p><strong>Telefon:</strong> <a href='tel:+41445051020'>+41 44 505 10 20</a><br><strong>E-Mail:</strong> <a href='mailto:hello@noevu.ch'>hello@noevu.ch</a></p><p><strong>Handelsregister:</strong> Kanton Zürich<br><strong>UID:</strong> CHE-XXX.XXX.XXX</p><p><strong>Geschäftsführer:</strong> Noël Bossart</p>",
+      "alignment": "left",
+      "width": "narrow"
+    },
+    {
+      "type": "textContent",
+      "title": "Datenschutzerklärung",
+      "content": "<h3>1. Allgemeine Hinweise</h3><p>Die Noevu GmbH nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p><h3>2. Verantwortliche Stelle</h3><p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p><p>Noevu GmbH<br>Zürichstrasse 131<br>8600 Dübendorf<br>E-Mail: hello@noevu.ch</p><h3>3. Datenerfassung auf unserer Website</h3><h4>Server-Log-Dateien</h4><p>Der Provider der Seiten erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p><ul><li>Browsertyp und Browserversion</li><li>Verwendetes Betriebssystem</li><li>Referrer URL</li><li>Hostname des zugreifenden Rechners</li><li>Uhrzeit der Serveranfrage</li><li>IP-Adresse</li></ul><p>Diese Daten sind nicht bestimmten Personen zuordenbar und werden nicht mit anderen Datenquellen zusammengeführt.</p><h4>Kontaktformular</h4><p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.</p><h3>4. Cookies</h3><p>Unsere Website verwendet Cookies. Das sind kleine Textdateien, die Ihr Webbrowser auf Ihrem Endgerät speichert. Cookies helfen uns dabei, unser Angebot nutzerfreundlicher und effektiver zu machen.</p><h3>5. Analyse-Tools</h3><p>Wir verwenden Google Analytics zur Analyse des Nutzerverhaltens auf unserer Website. Die Verarbeitung erfolgt auf Grundlage unseres berechtigten Interesses an der statistischen Analyse des Nutzerverhaltens zu Optimierungszwecken.</p><h3>6. Ihre Rechte</h3><p>Sie haben das Recht:</p><ul><li>Auskunft über Ihre gespeicherten Daten zu erhalten</li><li>Die Berichtigung unrichtiger Daten zu verlangen</li><li>Die Löschung Ihrer Daten zu verlangen</li><li>Die Einschränkung der Verarbeitung zu verlangen</li><li>Der Verarbeitung zu widersprechen</li></ul><p>Bitte wenden Sie sich dazu an: hello@noevu.ch</p><h3>7. Änderungen</h3><p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.</p><p><em>Stand: Januar 2026</em></p>",
+      "alignment": "left",
+      "width": "narrow"
+    },
+    {
+      "type": "cta",
+      "title": "Fragen?",
+      "description": "Wenn ihr Fragen zum Datenschutz habt, kontaktiert uns gerne.",
+      "ctas": [
+        {
+          "label": "Kontakt aufnehmen",
+          "href": "/kontakt",
+          "variant": "primary"
+        }
+      ],
+      "backgroundColor": "beige"
+    }
+  ]
+}

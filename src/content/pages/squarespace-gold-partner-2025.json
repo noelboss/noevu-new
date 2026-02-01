@@ -1,0 +1,145 @@
+{
+  "slug": "schweizer-squarespace-circle-gold-partner-2025",
+  "locale": "de",
+  "seo": {
+    "title": "Schweizer Squarespace Circle Gold Partner 2026 — Noevu GmbH",
+    "description": "Offizielle Schweizer Squarespace Circle Gold Partner Zertifizierung. Bewiesene Expertise, Stabilität und strategischer Vorsprung."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Schweizer Squarespace Circle Gold Partner 2026",
+      "subheadline": "Offizielle Zertifizierung",
+      "description": "<p>Die höchste Auszeichnung für Squarespace Partner. Der Gold Status bestätigt nachweisbare Expertise, erfolgreiche Projekte und tiefes Plattformwissen. Nur wenige Partner weltweit erreichen dieses Level.</p>",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "Erfolgreiche Projekte",
+          "href": "/projekte",
+          "variant": "primary"
+        },
+        {
+          "label": "Experten-Termin buchen",
+          "href": "/termin",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "comparisonTable",
+      "title": "Warum Schweizer KMUs unsere Experten wählen?",
+      "leftColumn": {
+        "header": "Standard-Agentur",
+        "items": [
+          "Keine offizielle Zertifizierung",
+          "Begrenzte Plattformkenntnisse",
+          "Lernen auf Kosten des Kunden",
+          "Kein direkter Squarespace-Support",
+          "Generische Lösungen"
+        ],
+        "highlighted": false
+      },
+      "rightColumn": {
+        "header": "Noevu (Gold Partner)",
+        "items": [
+          "Offizieller Squarespace Gold Partner",
+          "Tiefgreifende Plattform-Expertise",
+          "Hunderte erfolgreiche Projekte",
+          "Direkter Zugang zu Squarespace-Ressourcen",
+          "Massgeschneiderte Lösungen"
+        ],
+        "highlighted": true
+      }
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "featuresList",
+      "title": "Was der Gold Partner Status bedeutet",
+      "features": [
+        {
+          "title": "Nachweisbarer Erfolg",
+          "description": "Eine signifikante Anzahl erfolgreich umgesetzter, hochwertiger Kundenprojekte pro Jahr."
+        },
+        {
+          "title": "Expertenwissen",
+          "description": "Tiefes Verständnis der gesamten Squarespace-Plattform und aller Funktionen."
+        },
+        {
+          "title": "Strategische Exzellenz",
+          "description": "Die Fähigkeit, komplexe Anforderungen in erfolgreiche Websites zu übersetzen."
+        },
+        {
+          "title": "Direkter Support",
+          "description": "Zugang zu exklusiven Squarespace-Ressourcen und Priority-Support."
+        }
+      ],
+      "columns": "2"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "testimonials",
+      "title": "Kundenstimmen",
+      "rating": {
+        "average": 4.9,
+        "count": 13,
+        "source": "Google"
+      },
+      "testimonials": [
+        {
+          "quote": "Noevu kombiniert Innovation und Experten-Wissen auf beeindruckende Weise. Absolut professionell von Anfang bis Ende.",
+          "author": "Reto Gerber",
+          "company": "Rrevival",
+          "rating": 5
+        },
+        {
+          "quote": "Die Expertise als Gold Partner macht sich bemerkbar. Komplexe Anforderungen wurden souverän umgesetzt.",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "blogGrid",
+      "title": "Erfolgreiche Projekte",
+      "subtitle": "Ausgewählte Referenzen",
+      "limit": 4,
+      "category": "Portfolio"
+    },
+    {
+      "type": "blogGrid",
+      "title": "Experten Insights",
+      "subtitle": "Wissen für euren digitalen Vorsprung",
+      "limit": 3,
+      "category": "Squarespace"
+    },
+    {
+      "type": "cta",
+      "title": "Vom Gold Partner profitieren",
+      "description": "Nutzt unsere zertifizierte Expertise für eure professionelle Website.",
+      "ctas": [
+        {
+          "label": "Kostenlosen Termin buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Kontakt aufnehmen",
+          "href": "/kontakt",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}

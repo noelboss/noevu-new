@@ -1,0 +1,200 @@
+{
+  "slug": "webdesign-agentur",
+  "locale": "de",
+  "seo": {
+    "title": "Schweizer Webdesign & Marketing Agentur Noevu in Zürich — Noevu GmbH",
+    "description": "Schweizer Webdesign Agentur in Zürich: Webseiten Entwicklung und digitale Strategien. Professionell, kundenorientiert und verantwortungsbewusst."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Schweizer Webdesign & Marketing Agentur",
+      "subheadline": "Für digitalen Erfolg mit Verantwortung",
+      "description": "<p>Wir glauben an das Golden Circle Prinzip: Zuerst das WARUM, dann das WIE und zuletzt das WAS. Nur wer weiss, warum er tut was er tut, kann authentisch kommunizieren und Kunden begeistern.</p>",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "Kostenloser Video-Termin",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Unser Team kennenlernen",
+          "href": "#team",
+          "variant": "secondary"
+        }
+      ],
+      "rating": {
+        "score": 4.9,
+        "count": 13,
+        "label": "Bewertungen"
+      }
+    },
+    {
+      "type": "splitContent",
+      "layout": "imageRight",
+      "title": "Warum Schweizer KMUs unsere Zürcher Webdesign Agentur wählen?",
+      "content": "<p>Für Schweizer KMU ist es oft eine Herausforderung, eine moderne und effektive Homepage zu betreiben. Meist fehlt die Zeit, das Know-how oder es bleibt nur die Wahl zwischen teuren Agenturlösungen oder mittelmässigen Standard-Templates.</p><p><strong>Unser Versprechen:</strong> Moderne, kundenzentrierte digitale Lösungen höchster Qualität zu einem Preis, der für KMUs erschwinglich bleibt.</p>",
+      "image": {
+        "src": "/images/about/collaboration.jpg",
+        "alt": "Zusammenarbeit im Webdesign-Prozess"
+      },
+      "cta": {
+        "label": "Projekte ansehen",
+        "href": "/projekte",
+        "variant": "primary"
+      }
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "textContent",
+      "title": "Klarheit von Anfang an",
+      "subtitle": "Unser Vorgehen",
+      "content": "<p>Ihr profitiert von einem agilen, effizienten und sicheren Prozess. Wir arbeiten strukturiert in drei klaren Phasen, damit ihr immer wisst, wo wir stehen.</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "process",
+      "title": "",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Verständnis & Strategie",
+          "description": "Verstehen und Strukturieren. Mit dem Golden Circle Framework entwickeln wir eure einzigartige Positionierung. Was ist eure Botschaft? Wer sind eure Kunden?"
+        },
+        {
+          "number": 2,
+          "title": "Design & Entwicklung",
+          "description": "Nutzerzentriert, professionell, effizient. Basierend auf der Strategie entwickeln wir interaktive Design-Prototypen und setzen diese technisch um."
+        },
+        {
+          "number": 3,
+          "title": "Livegang & Optimierung",
+          "description": "Professioneller Partner an eurer Seite. Nach dem Launch begleiten wir euch weiter mit Support, Wartung und kontinuierlicher Optimierung."
+        }
+      ],
+      "layout": "alternating"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "servicesGrid",
+      "title": "Unsere Leistungen",
+      "subtitle": "Alles aus einer Hand für euren digitalen Erfolg",
+      "services": [
+        {
+          "title": "Webdesign & Entwicklung",
+          "description": "Individuelle Websites mit modernem Design und optimaler User Experience.",
+          "cta": { "label": "Mehr erfahren", "href": "/services/website-erstellen", "variant": "text" }
+        },
+        {
+          "title": "Squarespace Expertise",
+          "description": "Als Gold Partner entwickeln wir professionelle Squarespace-Websites.",
+          "cta": { "label": "Mehr erfahren", "href": "/squarespace-agentur", "variant": "text" }
+        },
+        {
+          "title": "SEO & Marketing",
+          "description": "Suchmaschinenoptimierung und digitale Marketingstrategien.",
+          "cta": { "label": "Mehr erfahren", "href": "/services/beratung", "variant": "text" }
+        },
+        {
+          "title": "AI Beratung",
+          "description": "Künstliche Intelligenz praktisch nutzen für euer KMU.",
+          "cta": { "label": "Mehr erfahren", "href": "/services/ai-beratung", "variant": "text" }
+        }
+      ],
+      "columns": "4"
+    },
+    {
+      "type": "textContent",
+      "id": "team",
+      "title": "Die Menschen hinter Noevu",
+      "content": "<p>Ein eingespieltes Team aus erfahrenen Spezialisten für Webdesign, Entwicklung und digitale Strategie.</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "featuresList",
+      "features": [
+        {
+          "title": "Noël Bossart",
+          "description": "Gründer & CEO – Über 25 Jahre Erfahrung in Webdesign und digitaler Strategie."
+        },
+        {
+          "title": "Tobias Morf",
+          "description": "Creative Director – Spezialist für User Experience und visuelles Design."
+        },
+        {
+          "title": "Michael Karrer",
+          "description": "Senior Developer – Experte für moderne Web-Technologien."
+        },
+        {
+          "title": "Anabel Hafstad",
+          "description": "Content Strategist – Spezialistin für SEO und digitale Kommunikation."
+        }
+      ],
+      "columns": "2"
+    },
+    {
+      "type": "testimonials",
+      "title": "Das sagen unsere Kunden",
+      "rating": {
+        "average": 4.9,
+        "count": 13,
+        "source": "Google"
+      },
+      "testimonials": [
+        {
+          "quote": "Noevu hat unsere Erwartungen übertroffen. Die neue Website ist nicht nur schön, sondern bringt auch messbare Ergebnisse.",
+          "author": "Martin Künzi",
+          "company": "Wohnperspektive GmbH",
+          "rating": 5
+        },
+        {
+          "quote": "Professionell, schnell und unkompliziert. Die Zusammenarbeit mit Noevu war ein Vergnügen.",
+          "author": "Sandra Meier",
+          "company": "Davatz Anwaltskanzlei",
+          "rating": 5
+        },
+        {
+          "quote": "Endlich eine Website, die wir selbst pflegen können. Das CMS ist so einfach zu bedienen!",
+          "author": "Thomas Weber",
+          "company": "Weber Handwerk",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Bereit für euren digitalen Erfolg?",
+      "description": "Lasst uns gemeinsam eure digitale Präsenz auf das nächste Level bringen. Kostenlose Erstberatung – unverbindlich und persönlich.",
+      "ctas": [
+        {
+          "label": "Termin buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Kontakt aufnehmen",
+          "href": "/kontakt",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    },
+    {
+      "type": "blogGrid",
+      "title": "Insights & Ressourcen",
+      "subtitle": "Expertenwissen für euren digitalen Vorsprung",
+      "limit": 3
+    }
+  ]
+}

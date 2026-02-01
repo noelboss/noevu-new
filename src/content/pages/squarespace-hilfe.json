@@ -1,0 +1,137 @@
+{
+  "slug": "squarespace-hilfe",
+  "locale": "de",
+  "seo": {
+    "title": "Squarespace Hilfe & Support für Schweizer KMU — Noevu GmbH",
+    "description": "Braucht ihr Hilfe mit Squarespace? Wir unterstützen Schweizer KMU bei allen Fragen rund um eure Squarespace-Website."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Squarespace Hilfe & Support",
+      "subheadline": "Professionelle Unterstützung für eure Website",
+      "description": "<p>Ihr habt eine Squarespace-Website und braucht Hilfe? Als Gold Partner unterstützen wir euch bei allen Fragen – von kleinen Anpassungen bis zu grösseren Änderungen.</p>",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "Hilfe anfragen",
+          "href": "/kontakt",
+          "variant": "primary"
+        },
+        {
+          "label": "Tipps & Anleitungen",
+          "href": "/squarespace-webseiten-tipps",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "servicesGrid",
+      "title": "Wie wir euch helfen können",
+      "services": [
+        {
+          "title": "Schnelle Hilfe",
+          "description": "Akutes Problem? Wir helfen schnell und unkompliziert bei dringenden Fragen."
+        },
+        {
+          "title": "Design-Anpassungen",
+          "description": "Änderungen am Design, neue Sektionen oder visuelle Optimierungen."
+        },
+        {
+          "title": "Technischer Support",
+          "description": "Custom Code, Integrationen und technische Problemlösung."
+        },
+        {
+          "title": "SEO Optimierung",
+          "description": "Verbesserung der Suchmaschinenplatzierung eurer Website."
+        },
+        {
+          "title": "Schulung & Training",
+          "description": "Wir zeigen euch, wie ihr eure Website selbst pflegen könnt."
+        },
+        {
+          "title": "Laufende Wartung",
+          "description": "Regelmässige Updates, Backups und Überwachung."
+        }
+      ],
+      "columns": "3"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "splitContent",
+      "layout": "imageRight",
+      "title": "Gold Partner Expertise",
+      "content": "<p>Als offizieller Squarespace Circle Gold Partner haben wir hunderte Projekte erfolgreich umgesetzt. Wir kennen die Plattform in- und auswendig und finden für jedes Problem eine Lösung.</p><p><strong>Das bedeutet für euch:</strong></p><ul><li>Direkter Zugang zu Squarespace-Ressourcen</li><li>Erfahrung aus zahllosen Projekten</li><li>Schnelle und kompetente Hilfe</li></ul>",
+      "image": {
+        "src": "/images/badges/squarespace-gold-partner-large.png",
+        "alt": "Squarespace Circle Gold Partner"
+      },
+      "cta": {
+        "label": "Mehr über unsere Expertise",
+        "href": "/squarespace-agentur/gold-partner",
+        "variant": "primary"
+      }
+    },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen zu Squarespace Hilfe",
+      "items": [
+        {
+          "question": "Wie schnell könnt ihr helfen?",
+          "answer": "Bei dringenden Problemen, die eure Website beeinträchtigen, reagieren wir in der Regel innerhalb weniger Stunden. Für reguläre Anfragen bearbeiten wir Tickets innerhalb von 1-2 Werktagen. Wir bieten auch einen Premium-Support mit garantierten Reaktionszeiten an."
+        },
+        {
+          "question": "Was kostet der Support?",
+          "answer": "Für einzelne Anfragen berechnen wir nach Aufwand (CHF 180/Stunde). Für regelmässige Unterstützung und mehrere monatliche Anfragen bieten wir flexible Wartungspakete ab CHF 200/Monat an. Gerne erstellen wir euch ein massgeschneidertes Angebot basierend auf eurem Bedarf."
+        },
+        {
+          "question": "Müsst ihr die Website selbst erstellt haben?",
+          "answer": "Nein, wir helfen auch bei Squarespace-Websites, die ihr selbst oder von anderen erstellt wurden. Egal ob von einer anderen Agentur, einem Freelancer oder selbst gemacht – wir schauen uns eure Situation an und finden eine Lösung für euer Problem."
+        },
+        {
+          "question": "Könnt ihr auch bei Custom Code und Integrationen helfen?",
+          "answer": "Ja, absolut. Wir sind erfahren mit CSS-Anpassungen, JavaScript-Implementierungen und Squarespace-spezifischen Code-Lösungen. Wir setzen auch komplexere Integrationen um – sei es mit Zapier, API-Verbindungen, E-Commerce-Lösungen oder anderen Tools, die ihr braucht."
+        },
+        {
+          "question": "Bietet ihr auch laufende Wartung an?",
+          "answer": "Ja, wir bieten verschiedene Wartungspakete an – von der Basisüberwachung und monatlichen Updates bis zur Vollbetreuung mit regelmässigen Optimierungen, Sicherheitsupdates und technischem Support. So bleibt eure Website immer aktuell und sicher."
+        },
+        {
+          "question": "Welche Probleme und Aufgaben könnt ihr lösen?",
+          "answer": "Wir unterstützen euch bei einer Vielzahl von Aufgaben: Design-Änderungen und Optimierungen, technische Fehlerbehandlung, SEO-Verbesserungen, Integrationen mit anderen Tools, Schulung für euer Team und vieles mehr. Schreibt uns einfach, was ihr braucht – wir finden die Lösung!"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Braucht ihr Hilfe?",
+      "description": "Egal ob kleine Frage oder grösseres Problem – wir sind für euch da. Schreibt uns oder ruft an.",
+      "ctas": [
+        {
+          "label": "Hilfe anfragen",
+          "href": "/kontakt",
+          "variant": "primary"
+        },
+        {
+          "label": "Anrufen: +41 44 505 10 20",
+          "href": "tel:+41445051020",
+          "variant": "secondary",
+          "external": true
+        }
+      ],
+      "backgroundColor": "green"
+    },
+    {
+      "type": "blogGrid",
+      "title": "Squarespace Tipps & Anleitungen",
+      "subtitle": "Hilfe zur Selbsthilfe",
+      "limit": 3,
+      "category": "Squarespace"
+    }
+  ]
+}

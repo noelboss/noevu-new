@@ -1,0 +1,166 @@
+{
+  "slug": "schweizer-squarespace-experte",
+  "locale": "de",
+  "seo": {
+    "title": "Schweizer Squarespace Experten – Circle Gold Partner 2026 — Noevu GmbH",
+    "description": "Schweizer Squarespace Experte und Circle Gold Partner. Professionelle Webseiten Entwicklung mit 25+ Jahren Erfahrung."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Schweizer Squarespace Circle Gold Partner 2026",
+      "subheadline": "Schweizer Squarespace Experte beauftragen",
+      "description": "<p>Als einer von wenigen Schweizer Squarespace Circle Gold Partnern bieten wir nachweisbare Expertise, Stabilität und strategischen Vorsprung. Über 25 Jahre Erfahrung im Web – für eure professionelle Website.</p>",
+      "alignment": "left",
+      "ctas": [
+        {
+          "label": "Erfolgreiche Projekte",
+          "href": "/projekte",
+          "variant": "primary"
+        },
+        {
+          "label": "Experten-Termin buchen",
+          "href": "/termin",
+          "variant": "secondary"
+        }
+      ],
+      "rating": {
+        "score": 4.9,
+        "count": 13,
+        "label": "Google Bewertungen"
+      }
+    },
+    {
+      "type": "textContent",
+      "title": "Warum Schweizer KMUs unsere Squarespace Experten wählen?",
+      "content": "<p>Der Gold Partner Status ist nicht einfach zu erreichen. Er erfordert nachweislich erfolgreiche Projekte, tiefes Plattformwissen und strategische Exzellenz. Das sind die drei Gründe, warum Schweizer Unternehmen uns vertrauen.</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "splitContent",
+      "layout": "imageLeft",
+      "title": "1. Nachweisbarer Erfolg",
+      "content": "<p>Eine bedeutende Anzahl an erfolgreich umgesetzten, hochwertigen Kundenprojekten pro Jahr. Jedes Projekt wird mit höchster Qualität und Sorgfalt realisiert.</p><p>Unsere Kunden reichen von lokalen Handwerkern bis zu schweizweiten Unternehmen – alle mit einer gemeinsamen Erfahrung: Professionalität und Ergebnisse.</p>",
+      "image": {
+        "src": "/images/badges/squarespace-gold-partner-large.png",
+        "alt": "Squarespace Circle Gold Partner"
+      },
+      "cta": {
+        "label": "Zu unseren Projekten",
+        "href": "/projekte",
+        "variant": "primary"
+      }
+    },
+    {
+      "type": "splitContent",
+      "layout": "imageRight",
+      "title": "2. Tiefes Produktwissen",
+      "content": "<p>Ein umfassendes Verständnis der gesamten Squarespace-Plattform, von den Grundlagen bis zu komplexen Custom-Entwicklungen.</p><p>Wir kennen jeden Winkel des Systems und finden für jede Anforderung die intelligenteste Lösung.</p>",
+      "image": {
+        "src": "/images/services/squarespace-expertise.jpg",
+        "alt": "Squarespace Expertise"
+      },
+      "cta": {
+        "label": "Unsere Squarespace Entwicklung",
+        "href": "/squarespace-agentur",
+        "variant": "primary"
+      }
+    },
+    {
+      "type": "splitContent",
+      "layout": "imageLeft",
+      "title": "3. Strategische Exzellenz",
+      "content": "<p>Die Fähigkeit, komplexe Anforderungen zu verstehen und in wachstumsfördernde Websites zu übersetzen.</p><p>Wir denken nicht nur in Websites, sondern in Geschäftszielen. Eure Website wird zum strategischen Asset für nachhaltigen Erfolg.</p>",
+      "image": {
+        "src": "/images/services/strategie.jpg",
+        "alt": "Strategische Planung"
+      },
+      "cta": {
+        "label": "Wie wir Projekte umsetzen",
+        "href": "/squarespace-agentur#erfolg",
+        "variant": "primary"
+      }
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "contactForm",
+      "title": "Kostenlose Squarespace Experten Beratung",
+      "description": "Lasst uns über euer Projekt sprechen – unverbindlich und kostenlos.",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "E-Mail",
+          "type": "email",
+          "required": true
+        },
+        {
+          "name": "message",
+          "label": "Wie können wir helfen?",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "submitLabel": "Anfrage senden"
+    },
+    {
+      "type": "testimonials",
+      "title": "Was unsere Kunden sagen",
+      "testimonials": [
+        {
+          "quote": "Noevu kombiniert Innovation und Experten-Wissen auf beeindruckende Weise. Das Ergebnis: Eine Website, die unsere Erwartungen übertrifft.",
+          "author": "Reto Gerber",
+          "company": "Rrevival",
+          "rating": 5
+        },
+        {
+          "quote": "Unser Projekt wurde dank der Expertise professionell und termingerecht umgesetzt. Klare Empfehlung!",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "blogGrid",
+      "title": "Experten Insights",
+      "subtitle": "Für den digitalen Vorsprung",
+      "limit": 3,
+      "category": "Squarespace"
+    },
+    {
+      "type": "cta",
+      "title": "Bereit für eure professionelle Website?",
+      "description": "Als Squarespace Circle Gold Partner bieten wir euch die Expertise, die ihr verdient.",
+      "ctas": [
+        {
+          "label": "Termin buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Projekte ansehen",
+          "href": "/projekte",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}

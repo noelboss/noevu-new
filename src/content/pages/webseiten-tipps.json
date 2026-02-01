@@ -1,0 +1,127 @@
+{
+  "slug": "webseiten-tipps",
+  "locale": "de",
+  "seo": {
+    "title": "Hilfreiche Tipps, Artikel und Tools für KMU Webseiten — Noevu GmbH",
+    "description": "Tipps, Anleitungen und Tools für Schweizer KMU Webseiten. Was heute digital gut funktioniert, und morgen den Unterschied macht."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Tipps, Artikel und Tools",
+      "subheadline": "Für eure KMU Webseite",
+      "description": "<p>Was heute digital gut funktioniert, und morgen den Unterschied macht. Kostenlose Ressourcen, von Experten zusammengestellt.</p>",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "Alle Artikel",
+          "href": "/blog",
+          "variant": "primary"
+        },
+        {
+          "label": "CMS Check starten",
+          "href": "/blog/cms-evaluation-fuer-schweizer-kmus",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "blogGrid",
+      "title": "Empfohlene Artikel",
+      "subtitle": "Unsere beliebtesten Ressourcen",
+      "limit": 6,
+      "showCategories": true
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "faq",
+      "title": "Die besten Tipps zu häufigen Fragen",
+      "items": [
+        {
+          "question": "Welche Tipps helfen Schweizer KMU, ihre Webseite zu optimieren?",
+          "answer": "Fokussiert auf klare Inhalte, einfache Navigation, Mobile-Optimierung, schnelle Ladezeiten und prominente Call-to-Actions. Diese Grundlagen machen oft den grössten Unterschied."
+        },
+        {
+          "question": "Gibt es Anleitungen, wie wir unsere Homepage selbst erstellen können?",
+          "answer": "Ja! Schaut euch unsere Squarespace Anleitung an – Schritt für Schritt zur eigenen Website. Für individuelle Hilfe stehen wir natürlich auch zur Verfügung."
+        },
+        {
+          "question": "Warum sind regelmässige Updates für unsere Webseite wichtig?",
+          "answer": "Die digitale Welt verändert sich ständig. Regelmässige Updates halten eure Website aktuell, sicher und relevant für Besucher und Suchmaschinen."
+        },
+        {
+          "question": "Was ist die beste Alternative zu WordPress für Schweizer KMU?",
+          "answer": "Squarespace ist intuitiv, modern, wartungsfrei und sicher. Keine Plugin-Updates, keine Sicherheitslücken. Perfekt für KMU, die sich auf ihr Geschäft konzentrieren wollen."
+        },
+        {
+          "question": "Wie kann eine CMS-Evaluation meinem Unternehmen helfen?",
+          "answer": "Eine CMS-Evaluation analysiert eure Anforderungen und vergleicht verschiedene Lösungen. So findet ihr die optimale Plattform für eure Bedürfnisse."
+        },
+        {
+          "question": "Wie verbessert Noevu die SEO eurer Webseite?",
+          "answer": "Wir setzen auf klare Strukturen, SEO-freundliche Inhalte, technische Optimierung und gezielte Keyword-Strategie. Alles für bessere Sichtbarkeit bei Google."
+        },
+        {
+          "question": "Wie sorgt Noevu für Performance und Sicherheit?",
+          "answer": "Wir nutzen moderne Hosting-Lösungen mit CDN, SSL-Verschlüsselung und regelmässigen Backups. Schnell, sicher und zuverlässig."
+        }
+      ]
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "servicesGrid",
+      "title": "Themengebiete",
+      "services": [
+        {
+          "title": "Squarespace",
+          "description": "Anleitungen, Tipps und Best Practices für Squarespace Websites.",
+          "cta": { "label": "Squarespace Tipps", "href": "/squarespace-webseiten-tipps", "variant": "primary" }
+        },
+        {
+          "title": "CMS & Plattformen",
+          "description": "Vergleiche und Entscheidungshilfen für die richtige Plattform.",
+          "cta": { "label": "CMS Vergleich", "href": "/blog/cms-evaluation-fuer-schweizer-kmus", "variant": "primary" }
+        },
+        {
+          "title": "AI & Automation",
+          "description": "Wie AI-Tools euer Unternehmen voranbringen können.",
+          "cta": { "label": "AI Tools", "href": "/blog/ai-tools-kmu-schweiz", "variant": "primary" }
+        },
+        {
+          "title": "SEO & Marketing",
+          "description": "Besser gefunden werden und mehr Kunden gewinnen.",
+          "cta": { "label": "SEO Tipps", "href": "/blog", "variant": "primary" }
+        }
+      ],
+      "columns": "4"
+    },
+    {
+      "type": "cta",
+      "title": "Eure Frage war nicht dabei?",
+      "description": "Kontaktiert uns gerne – wir helfen euch weiter.",
+      "ctas": [
+        {
+          "label": "Kostenlose Video-Beratung",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Kontakt aufnehmen",
+          "href": "/kontakt",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}

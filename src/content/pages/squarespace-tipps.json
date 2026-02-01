@@ -1,0 +1,112 @@
+{
+  "slug": "squarespace-webseiten-tipps",
+  "locale": "de",
+  "seo": {
+    "title": "Squarespace Tipps & Anleitungen für Schweizer KMU — Noevu GmbH",
+    "description": "Praktische Squarespace Tipps, Anleitungen und Best Practices. Von Schweizer Experten für Schweizer KMU."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Squarespace Tipps & Anleitungen",
+      "subheadline": "Expertenwissen für eure Website",
+      "description": "<p>Praktische Tipps, Anleitungen und Best Practices für eure Squarespace-Website. Von den Grundlagen bis zu fortgeschrittenen Techniken.</p>",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "Zur Squarespace Anleitung",
+          "href": "/blog/squarespace-webseite-erstellen-anleitung-2025",
+          "variant": "primary"
+        },
+        {
+          "label": "Professionelle Hilfe",
+          "href": "/squarespace-hilfe",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "featuresList",
+      "title": "Beliebte Themen",
+      "features": [
+        {
+          "title": "Erste Schritte",
+          "description": "Squarespace einrichten, Template wählen, Navigation aufbauen"
+        },
+        {
+          "title": "Design & Layout",
+          "description": "Farben, Schriften, Bilder und responsive Design optimieren"
+        },
+        {
+          "title": "SEO & Marketing",
+          "description": "Bei Google gefunden werden, Analytics einrichten"
+        },
+        {
+          "title": "E-Commerce",
+          "description": "Online-Shop einrichten, Produkte verwalten, Zahlungen"
+        },
+        {
+          "title": "Domains & Hosting",
+          "description": "Domain verbinden, DNS-Einstellungen, SSL-Zertifikat"
+        },
+        {
+          "title": "Fortgeschritten",
+          "description": "Custom Code, Integrationen, Automatisierungen"
+        }
+      ],
+      "columns": "3"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "blogGrid",
+      "title": "Alle Squarespace Artikel",
+      "subtitle": "Anleitungen, Tipps und Best Practices",
+      "limit": 9,
+      "category": "Squarespace"
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "splitContent",
+      "layout": "imageLeft",
+      "title": "Go-Live Checkliste",
+      "content": "<p>Bevor eure Website online geht, gibt es einiges zu beachten. Unsere umfassende Checkliste hilft euch, nichts zu vergessen.</p><ul><li>Inhalte und Texte prüfen</li><li>Bilder optimieren</li><li>SEO-Einstellungen</li><li>Rechtliche Seiten (Impressum, Datenschutz)</li><li>Mobile Ansicht testen</li><li>Formulare testen</li></ul>",
+      "image": {
+        "src": "/images/resources/go-live-checklist.jpg",
+        "alt": "Go-Live Checkliste für Squarespace"
+      },
+      "cta": {
+        "label": "Zur kostenlosen Checkliste",
+        "href": "/blog/squarespace-webseite-online-gehen-checkliste",
+        "variant": "primary"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Braucht ihr Unterstützung?",
+      "description": "Manchmal ist professionelle Hilfe der schnellste Weg zum Ziel. Wir unterstützen euch gerne.",
+      "ctas": [
+        {
+          "label": "Hilfe anfragen",
+          "href": "/squarespace-hilfe",
+          "variant": "primary"
+        },
+        {
+          "label": "Termin buchen",
+          "href": "/termin",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}

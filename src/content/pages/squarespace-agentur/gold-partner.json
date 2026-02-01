@@ -1,0 +1,135 @@
+{
+  "slug": "squarespace-agentur/gold-partner",
+  "locale": "de",
+  "seo": {
+    "title": "Squarespace Gold Partner Schweiz — Noevu GmbH",
+    "description": "Offizieller Squarespace Circle Gold Partner in der Schweiz. Zertifizierte Expertise für professionelle Websites."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Squarespace Gold Partner",
+      "subheadline": "Zertifizierte Expertise aus der Schweiz",
+      "description": "<p>Als offizieller Squarespace Circle Gold Partner bieten wir euch das höchste Level an Expertise. Direkter Zugang zu Squarespace-Ressourcen, Priority-Support und nachweislich erfolgreiche Projekte.</p>",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "Projekte ansehen",
+          "href": "/projekte",
+          "variant": "primary"
+        },
+        {
+          "label": "Termin buchen",
+          "href": "/termin",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "valueProposition",
+      "title": "Was der Gold Partner Status bedeutet",
+      "items": [
+        {
+          "title": "Nachweisbare Erfolge",
+          "description": "Hunderte erfolgreich umgesetzte Projekte. Jedes einzelne mit höchster Qualität."
+        },
+        {
+          "title": "Tiefes Plattformwissen",
+          "description": "Wir kennen Squarespace in- und auswendig – von den Grundlagen bis zu Custom Code."
+        },
+        {
+          "title": "Exklusiver Zugang",
+          "description": "Direkter Draht zu Squarespace für Priority-Support und exklusive Ressourcen."
+        }
+      ]
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "splitContent",
+      "layout": "imageLeft",
+      "title": "Die höchste Auszeichnung",
+      "content": "<p>Der Squarespace Circle Gold Status ist die höchste Auszeichnung, die Squarespace an Partner vergibt. Nur Partner, die kontinuierlich exzellente Arbeit liefern und tiefgreifende Expertise beweisen, erreichen dieses Level.</p><p><strong>Was das für euch bedeutet:</strong></p><ul><li>Zugang zu den erfahrensten Squarespace-Experten der Schweiz</li><li>Schnellere Problemlösung durch Priority-Support</li><li>Innovative Lösungen durch frühzeitigen Zugang zu neuen Features</li></ul>",
+      "image": {
+        "src": "/images/badges/squarespace-gold-partner-large.png",
+        "alt": "Squarespace Circle Gold Partner Badge"
+      }
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "comparisonTable",
+      "title": "Der Unterschied",
+      "leftColumn": {
+        "header": "Standard-Partner",
+        "items": [
+          "Basis-Zertifizierung",
+          "Standard-Support",
+          "Lernkurve bei komplexen Projekten",
+          "Begrenzte Ressourcen"
+        ],
+        "highlighted": false
+      },
+      "rightColumn": {
+        "header": "Gold Partner (Noevu)",
+        "items": [
+          "Höchste Zertifizierungsstufe",
+          "Priority-Support",
+          "Erfahrung aus hunderten Projekten",
+          "Exklusive Squarespace-Ressourcen"
+        ],
+        "highlighted": true
+      }
+    },
+    {
+      "type": "testimonials",
+      "title": "Kundenerfahrungen",
+      "testimonials": [
+        {
+          "quote": "Die Gold Partner Expertise macht sich bemerkbar. Jede Anfrage wird professionell und kompetent bearbeitet.",
+          "author": "Martin Künzi",
+          "company": "Wohnperspektive GmbH",
+          "rating": 5
+        },
+        {
+          "quote": "Komplexe Anforderungen wurden souverän umgesetzt. Man merkt die jahrelange Erfahrung.",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "blogGrid",
+      "title": "Erfolgreiche Squarespace Projekte",
+      "limit": 4,
+      "category": "Squarespace"
+    },
+    {
+      "type": "cta",
+      "title": "Gold Partner Expertise nutzen",
+      "description": "Profitiert von unserer zertifizierten Expertise für eure Website.",
+      "ctas": [
+        {
+          "label": "Kostenlosen Termin buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Mehr erfahren",
+          "href": "/squarespace-agentur",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}
