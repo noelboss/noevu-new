@@ -1,0 +1,231 @@
+---
+/**
+ * Newsletter Signup Section
+ *
+ * Email signup form for blog/marketing pages.
+ * Uses simple form that can be connected to email service.
+ */
+import type { NewsletterSection } from '../../schemas/sections';
+
+interface Props {
+  data: NewsletterSection;
+}
+
+const { data } = Astro.props;
+const {
+  title = 'Insights für euren digitalen Vorsprung',
+  description = 'Erhaltet regelmässig Tipps, News und Strategien rund um Webdesign, AI und digitales Marketing – direkt in euren Posteingang.',
+  buttonText = 'Jetzt anmelden',
+  placeholderText = 'Eure E-Mail-Adresse',
+  privacyText = 'Wir respektieren eure Privatsphäre. Abmeldung jederzeit möglich.',
+  backgroundColor = 'green',
+} = data;
+
+const bgClass = `newsletter--${backgroundColor}`;
+---
+
+<section class={`newsletter section ${bgClass}`}>
+  <div class="newsletter__container container">
+    <div class="newsletter__content">
+      <h2 class="newsletter__title">{title}</h2>
+      {description && <p class="newsletter__description">{description}</p>}
+
+      <form class="newsletter__form" action="/api/newsletter" method="POST" data-newsletter-form>
+        <div class="newsletter__input-group">
+          <input
+            type="email"
+            name="email"
+            placeholder={placeholderText}
+            required
+            class="newsletter__input"
+            aria-label="E-Mail-Adresse"
+          />
+          <button type="submit" class="newsletter__button btn">
+            {buttonText}
+          </button>
+        </div>
+        <p class="newsletter__privacy">{privacyText}</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  .newsletter {
+    text-align: center;
+  }
+
+  .newsletter--green {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverted);
+  }
+
+  .newsletter--beige {
+    background-color: var(--color-bg-beige);
+    color: var(--color-text);
+  }
+
+  .newsletter--orange {
+    background-color: var(--color-accent);
+    color: var(--color-text-inverted);
+  }
+
+  .newsletter__content {
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  .newsletter__title {
+    font-size: var(--text-3xl);
+    font-family: var(--font-display);
+    font-weight: var(--font-normal);
+    margin-bottom: var(--space-4);
+  }
+
+  .newsletter--green .newsletter__title,
+  .newsletter--orange .newsletter__title {
+    color: var(--color-text-inverted);
+  }
+
+  .newsletter__description {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-8);
+    opacity: 0.9;
+    line-height: var(--leading-relaxed);
+  }
+
+  .newsletter__form {
+    max-width: 480px;
+    margin-inline: auto;
+  }
+
+  .newsletter__input-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+
+  @media (min-width: 480px) {
+    .newsletter__input-group {
+      flex-direction: row;
+    }
+  }
+
+  .newsletter__input {
+    flex: 1;
+    padding: var(--space-4) var(--space-5);
+    font-size: var(--text-base);
+    font-family: var(--font-sans);
+    border: 2px solid transparent;
+    border-radius: var(--radius);
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--color-text-inverted);
+    transition: border-color var(--transition-fast), background-color var(--transition-fast);
+  }
+
+  .newsletter--green .newsletter__input,
+  .newsletter--orange .newsletter__input {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--color-text-inverted);
+  }
+
+  .newsletter--green .newsletter__input::placeholder,
+  .newsletter--orange .newsletter__input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .newsletter--beige .newsletter__input {
+    background-color: var(--color-bg-white);
+    color: var(--color-text);
+    border-color: var(--color-neutral-200);
+  }
+
+  .newsletter--beige .newsletter__input::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  .newsletter__input:focus {
+    outline: none;
+    border-color: var(--color-text-inverted);
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+
+  .newsletter--beige .newsletter__input:focus {
+    border-color: var(--color-primary);
+  }
+
+  .newsletter__button {
+    padding: var(--space-4) var(--space-6);
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    white-space: nowrap;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+  }
+
+  .newsletter--green .newsletter__button {
+    background-color: var(--color-accent);
+    color: var(--color-text-inverted);
+  }
+
+  .newsletter--green .newsletter__button:hover {
+    background-color: var(--color-accent-600);
+  }
+
+  .newsletter--orange .newsletter__button {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverted);
+  }
+
+  .newsletter--orange .newsletter__button:hover {
+    background-color: var(--color-primary-600);
+  }
+
+  .newsletter--beige .newsletter__button {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverted);
+  }
+
+  .newsletter--beige .newsletter__button:hover {
+    background-color: var(--color-primary-600);
+  }
+
+  .newsletter__privacy {
+    font-size: var(--text-sm);
+    opacity: 0.7;
+    margin: 0;
+  }
+</style>
+
+<script>
+  // Simple client-side form handling
+  document.addEventListener('DOMContentLoaded', () => {
+    const forms = document.querySelectorAll('[data-newsletter-form]');
+
+    forms.forEach(form => {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData(form as HTMLFormElement);
+        const email = formData.get('email');
+
+        // For now, show a success message (actual integration would go here)
+        const button = form.querySelector('.newsletter__button') as HTMLButtonElement;
+        const originalText = button.textContent;
+        button.textContent = 'Danke!';
+        button.disabled = true;
+
+        // In production, you would send this to your email service
+        console.log('Newsletter signup:', email);
+
+        setTimeout(() => {
+          button.textContent = originalText;
+          button.disabled = false;
+          (form as HTMLFormElement).reset();
+        }, 3000);
+      });
+    });
+  });
+</script>

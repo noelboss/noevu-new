@@ -1,30 +1,32 @@
 /* Global styles - Design tokens as CSS custom properties */
+/* Colors extracted from original noevu.ch Squarespace site */
 
 :root {
-  /* Colors - Primary (Green) */
-  --color-primary-50: #f0f7f4;
-  --color-primary-100: #dcebe4;
-  --color-primary-200: #bcd8cc;
-  --color-primary-300: #91bdab;
-  --color-primary-400: #649c86;
-  --color-primary-500: #286450;
-  --color-primary-600: #225845;
-  --color-primary-700: #1c4a3a;
-  --color-primary-800: #163c2e;
-  --color-primary-900: #143c28;
+  /* Colors - Primary (Green) - from original site */
+  --color-primary-50: #e8f0ee;
+  --color-primary-100: #d1e1dd;
+  --color-primary-200: #a3c3bb;
+  --color-primary-300: #75a599;
+  --color-primary-400: #608980;
+  --color-primary-500: #255a4e;
+  --color-primary-600: #235f52;
+  --color-primary-700: #16362f;
+  --color-primary-800: #0b201c;
+  --color-primary-900: #060f0d;
   --color-primary: var(--color-primary-500);
+  --color-primary-dark: var(--color-primary-700);
 
-  /* Colors - Accent (Orange) */
-  --color-accent-50: #fff7ed;
-  --color-accent-100: #ffedd5;
-  --color-accent-200: #fed7aa;
-  --color-accent-300: #fdba74;
-  --color-accent-400: #fb923c;
-  --color-accent-500: #e87830;
-  --color-accent-600: #ea580c;
-  --color-accent-700: #c2410c;
-  --color-accent-800: #9a3412;
-  --color-accent-900: #7c2d12;
+  /* Colors - Accent (Orange) - from original site */
+  --color-accent-50: #fff5f0;
+  --color-accent-100: #ffe6db;
+  --color-accent-200: #ffcdb8;
+  --color-accent-300: #ffb494;
+  --color-accent-400: #ff9b71;
+  --color-accent-500: #ff6b30;
+  --color-accent-600: #e55a20;
+  --color-accent-700: #cc4a10;
+  --color-accent-800: #993808;
+  --color-accent-900: #662500;
   --color-accent: var(--color-accent-500);
 
   /* Colors - Neutral */
@@ -37,7 +39,7 @@
   --color-neutral-600: #7d6d5e;
   --color-neutral-700: #5f524a;
   --color-neutral-800: #423a35;
-  --color-neutral-900: #252220;
+  --color-neutral-900: #141110;
 
   /* Colors - Background */
   --color-bg: var(--color-neutral-100);
@@ -51,9 +53,10 @@
   --color-text-muted: var(--color-neutral-700);
   --color-text-inverted: #ffffff;
 
-  /* Typography */
-  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-heading: var(--font-sans);
+  /* Typography - from original site: Abril Fatface (display) + Heebo (body) */
+  --font-sans: 'Heebo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Abril Fatface', Georgia, 'Times New Roman', serif;
+  --font-display: 'Abril Fatface', Georgia, 'Times New Roman', serif;
 
   /* Font sizes */
   --text-xs: 0.75rem;
@@ -153,7 +156,7 @@ body {
 /* Typography defaults */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-normal); /* Abril Fatface is always weight 400 */
   line-height: var(--leading-tight);
   color: var(--color-text);
 }

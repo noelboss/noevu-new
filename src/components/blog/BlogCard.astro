@@ -10,6 +10,7 @@ interface Props {
     name: string;
     image?: string;
   };
+  readingTime?: number;
 }
 
 const {
@@ -20,6 +21,7 @@ const {
   categories = [],
   publishedAt,
   author,
+  readingTime,
 } = Astro.props;
 
 // Format date for German locale
@@ -65,9 +67,14 @@ const formattedDate = new Date(publishedAt).toLocaleDateString('de-CH', {
             <span class="blog-card__author-name">{author.name}</span>
           </div>
         )}
-        <time class="blog-card__date" datetime={publishedAt}>
-          {formattedDate}
-        </time>
+        <div class="blog-card__date-reading">
+          <time class="blog-card__date" datetime={publishedAt}>
+            {formattedDate}
+          </time>
+          {readingTime && (
+            <span class="blog-card__reading-time">· {readingTime} Min.</span>
+          )}
+        </div>
       </div>
     </div>
   </a>
@@ -177,7 +184,18 @@ const formattedDate = new Date(publishedAt).toLocaleDateString('de-CH', {
     color: var(--color-text);
   }
 
+  .blog-card__date-reading {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+
   .blog-card__date {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  .blog-card__reading-time {
     font-size: var(--text-sm);
     color: var(--color-text-muted);
   }

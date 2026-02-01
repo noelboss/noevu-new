@@ -1,69 +1,91 @@
 {
   "main": [
     {
-      "label": "Services",
+      "label": "Webdesign",
       "children": [
-        { "label": "Website erstellen lassen", "href": "/services/website-erstellen" },
-        { "label": "Webseiten Beratung", "href": "/services/beratung" },
-        { "label": "Squarespace Agentur", "href": "/services/squarespace" },
-        { "label": "AI Beratung", "href": "/services/ai-beratung" },
+        { "label": "Website erstellen lassen", "href": "/websites-erstellen-lassen" },
+        { "label": "Webdesign Agentur", "href": "/webdesign-agentur" },
+        { "label": "KMU Website", "href": "/webdesign-agentur/kmu-webseite-erstellen-lassen" },
+        { "label": "Webseiten Beratung & Hilfe", "href": "/webseiten-beratung-hilfe" },
         { "label": "Projekte", "href": "/projekte" }
+      ]
+    },
+    {
+      "label": "Squarespace",
+      "children": [
+        { "label": "Squarespace Agentur", "href": "/squarespace-agentur" },
+        { "label": "Squarespace Webdesign", "href": "/squarespace-webdesign" },
+        { "label": "Squarespace Entwicklung", "href": "/squarespace-agentur/webseiten-entwicklung" },
+        { "label": "Squarespace Hilfe", "href": "/squarespace-hilfe" },
+        { "label": "Gold Partner", "href": "/squarespace-agentur/gold-partner" }
+      ]
+    },
+    {
+      "label": "Ressourcen",
+      "children": [
+        { "label": "Blog & Artikel", "href": "/blog" },
+        { "label": "Ressourcen & Tools", "href": "/ressourcen" },
+        { "label": "Webseiten Tipps", "href": "/webseiten-tipps" },
+        { "label": "Squarespace Tipps", "href": "/squarespace-webseiten-tipps" },
+        { "label": "AI Beratung", "href": "/services/ai-beratung" }
       ]
     },
     {
       "label": "Agentur",
       "children": [
         { "label": "Über uns", "href": "/ueber-uns" },
-        { "label": "Team", "href": "/team" },
-        { "label": "Social Responsibility", "href": "/social-responsibility" },
-        { "label": "Squarespace Expert", "href": "/squarespace-expert" }
-      ]
-    },
-    {
-      "label": "Resources",
-      "children": [
-        { "label": "Blog", "href": "/blog" },
-        { "label": "CMS Evaluation", "href": "/cms-check" },
-        { "label": "AI Guides", "href": "/ai-guides" }
+        { "label": "Squarespace Experte", "href": "/schweizer-squarespace-experte" },
+        { "label": "Gold Partner 2026", "href": "/schweizer-squarespace-circle-gold-partner-2025" },
+        { "label": "Kontakt", "href": "/kontakt" }
       ]
     }
   ],
   "footer": {
     "columns": [
       {
-        "title": "Services",
+        "title": "Dienstleistungen",
         "links": [
-          { "label": "Website erstellen", "href": "/services/website-erstellen" },
-          { "label": "Beratung", "href": "/services/beratung" },
-          { "label": "Squarespace", "href": "/services/squarespace" },
-          { "label": "AI Integration", "href": "/services/ai-beratung" }
+          { "label": "Website erstellen lassen", "href": "/websites-erstellen-lassen" },
+          { "label": "KMU Website", "href": "/webdesign-agentur/kmu-webseite-erstellen-lassen" },
+          { "label": "Webseiten Beratung", "href": "/webseiten-beratung-hilfe" },
+          { "label": "AI Beratung", "href": "/services/ai-beratung" }
         ]
       },
       {
-        "title": "Agentur",
+        "title": "Squarespace",
         "links": [
-          { "label": "Über uns", "href": "/ueber-uns" },
-          { "label": "Team", "href": "/team" },
+          { "label": "Squarespace Agentur", "href": "/squarespace-agentur" },
+          { "label": "Squarespace Webdesign", "href": "/squarespace-webdesign" },
+          { "label": "Squarespace Hilfe", "href": "/squarespace-hilfe" },
+          { "label": "Gold Partner", "href": "/squarespace-agentur/gold-partner" }
+        ]
+      },
+      {
+        "title": "Ressourcen",
+        "links": [
           { "label": "Projekte", "href": "/projekte" },
-          { "label": "Kontakt", "href": "/kontakt" }
+          { "label": "Blog & Artikel", "href": "/blog" },
+          { "label": "Webseiten Tipps", "href": "/webseiten-tipps" },
+          { "label": "Squarespace Tipps", "href": "/squarespace-webseiten-tipps" }
         ]
       },
       {
-        "title": "Resources",
+        "title": "Über uns",
         "links": [
-          { "label": "Blog", "href": "/blog" },
-          { "label": "CMS Check", "href": "/cms-check" },
-          { "label": "FAQ", "href": "/faq" }
+          { "label": "Über Noevu", "href": "/ueber-uns" },
+          { "label": "Kontakt", "href": "/kontakt" },
+          { "label": "Termin buchen", "href": "/termin" },
+          { "label": "Datenschutz & Impressum", "href": "/datenschutz-impressum" }
         ]
       }
     ]
   },
   "social": [
-    { "platform": "linkedin", "href": "https://linkedin.com/company/noevu", "label": "LinkedIn" },
-    { "platform": "facebook", "href": "https://facebook.com/noevugmbh", "label": "Facebook" }
+    { "platform": "linkedin", "href": "https://www.linkedin.com/company/noevu-swiss/", "label": "LinkedIn" },
+    { "platform": "facebook", "href": "https://www.facebook.com/people/Noevu-GmbH/", "label": "Facebook" }
   ],
   "cta": {
     "label": "Termin buchen",
-    "href": "/kontakt#termin"
+    "href": "/termin"
   }
 }

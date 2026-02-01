@@ -2,7 +2,7 @@
 title: "Die besten AI-Tools für Schweizer Firmen 2026"
 slug: "ai-tools-kmu-schweiz"
 excerpt: "AI für Schweizer Unternehmen: Erfahren Sie, wie Sie Künstliche Intelligenz  gewinnbringend einsetzen. Von Chatbots bis Bildgenerierung – Ihr Leitfaden  für KMU."
-featuredImage: ""
+featuredImage: "/images/blog/ai-tools-kmu-schweiz.jpg"
 categories:
   - "AI & Künstliche Intelligenz"
   - "Service: KI-Bildwelt"

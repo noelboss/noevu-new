@@ -9,11 +9,15 @@ import Base from './Base.astro';
 import Header from '../components/layout/Header.astro';
 import Footer from '../components/layout/Footer.astro';
 
+import Breadcrumb from '../components/ui/Breadcrumb.astro';
+import RelatedPosts from '../components/blog/RelatedPosts.astro';
+
 import navigationData from '../content/navigation.json';
 import siteData from '../content/site.json';
 
 interface Props {
   title: string;
+  slug: string;
   excerpt: string;
   featuredImage?: string;
   categories?: string[];
@@ -30,6 +34,7 @@ interface Props {
 
 const {
   title,
+  slug,
   excerpt,
   featuredImage,
   categories = [],
@@ -108,6 +113,15 @@ const articleSchema = {
     <article class="article">
       <header class="article__header">
         <div class="container">
+          <Breadcrumb
+            items={[
+              { label: 'Home', href: '/' },
+              { label: 'Blog', href: '/blog' },
+              { label: title },
+            ]}
+            class="article__breadcrumb"
+          />
+
           {categories.length > 0 && (
             <div class="article__categories">
               {categories.map((category) => (
@@ -199,6 +213,12 @@ const articleSchema = {
         </div>
       </footer>
     </article>
+
+    <RelatedPosts
+      currentSlug={slug}
+      categories={categories}
+      limit={3}
+    />
   </main>
 
   <Footer navigation={navigationData as any} site={siteData as any} />
@@ -208,6 +228,10 @@ const articleSchema = {
   .article__header {
     background-color: var(--color-bg-beige);
     padding-block: var(--space-12) var(--space-8);
+  }
+
+  .article__breadcrumb {
+    margin-bottom: var(--space-6);
   }
 
   .article__categories {

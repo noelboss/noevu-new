@@ -206,6 +206,17 @@ export const ContactFormSectionSchema = z.object({
   successMessage: z.string(),
 });
 
+// Section: Newsletter Signup
+export const NewsletterSectionSchema = z.object({
+  type: z.literal('newsletter'),
+  title: z.string().optional(),
+  description: z.string().optional(),
+  buttonText: z.string().default('Jetzt anmelden'),
+  placeholderText: z.string().default('Eure E-Mail-Adresse'),
+  privacyText: z.string().optional(),
+  backgroundColor: z.enum(['green', 'beige', 'orange']).default('green'),
+});
+
 // Discriminated union of all section types
 export const SectionSchema = z.discriminatedUnion('type', [
   HeroSectionSchema,
@@ -223,6 +234,7 @@ export const SectionSchema = z.discriminatedUnion('type', [
   BlogGridSectionSchema,
   WaveDividerSectionSchema,
   ContactFormSectionSchema,
+  NewsletterSectionSchema,
 ]);
 
 // Section reference (for shared/global sections)
@@ -253,3 +265,4 @@ export type FAQSection = z.infer<typeof FAQSectionSchema>;
 export type BlogGridSection = z.infer<typeof BlogGridSectionSchema>;
 export type WaveDividerSection = z.infer<typeof WaveDividerSectionSchema>;
 export type ContactFormSection = z.infer<typeof ContactFormSectionSchema>;
+export type NewsletterSection = z.infer<typeof NewsletterSectionSchema>;
