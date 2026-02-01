@@ -53,6 +53,36 @@
             "name": "Reto Gerber"
           },
           "rating": 5
+        },
+        {
+          "content": "Hervorragende Beratung und Umsetzung unseres Web-Projekts. Das Team hat unsere Vision perfekt verstanden und in eine beeindruckende digitale Lösung umgewandelt. Sehr zu empfehlen!",
+          "author": {
+            "name": "Sarah Fischer, Geschäftsführerin"
+          },
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen",
+      "description": "Erfahren Sie mehr über unseren Projektprozess und wie wir arbeiten.",
+      "items": [
+        {
+          "question": "Wie wählt ihr die Projekte für euer Portfolio aus?",
+          "answer": "Wir präsentieren eine vielfältige Auswahl unserer erfolgreichsten Projekte, die zeigen, wie wir verschiedenste Anforderungen umsetzen. Dabei liegt unser Fokus auf abgeschlossenen Projekten, bei denen unsere Kunden sichtbare Erfolge erreicht haben – sei es durch verbesserte Nutzererfahrung, höhere Konversionen oder eine gestärkte digitale Präsenz."
+        },
+        {
+          "question": "Können wir mehr Beispiele sehen?",
+          "answer": "Absolut! Unsere Projektseite zeigt nur eine Auswahl unserer Arbeiten. Gerne besprechen wir in einem persönlichen Gespräch weitere Projekte, die für Ihre Branche und Ihre spezifischen Anforderungen relevant sind. Kontaktieren Sie uns für mehr Informationen."
+        },
+        {
+          "question": "Wie lange dauern typische Projekte?",
+          "answer": "Die Projektdauer hängt stark vom Umfang und den Anforderungen ab. Eine einfache Website kann in 4-8 Wochen realisiert werden, während komplexere Lösungen mit Custom-Funktionalität 3-6 Monate in Anspruch nehmen können. Wir erstellen für jedes Projekt einen detaillierten Zeitplan und halten Sie regelmässig auf dem Laufenden."
+        },
+        {
+          "question": "Was ist alles in einem Projekt enthalten?",
+          "answer": "Unsere Projektpakete umfassen üblicherweise: Strategische Beratung, UX/UI-Design, responsive Web-Entwicklung, Content-Integration, SEO-Optimierung, Testing und Qualitätssicherung sowie Support nach dem Launch. Die genauen Leistungen besprechen wir individuell basierend auf Ihren Zielen und Anforderungen."
         }
       ]
     },

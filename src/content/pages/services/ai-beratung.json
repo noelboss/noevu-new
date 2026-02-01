@@ -138,6 +138,45 @@
       "theme": "dark"
     },
     {
+      "type": "testimonials",
+      "title": "Das sagen unsere Kunden",
+      "rating": {
+        "average": 4.9,
+        "count": 13,
+        "source": "Google"
+      },
+      "testimonials": [
+        {
+          "quote": "Noevu GmbH arbeitet talentiert, effizient und mit einem klaren Blick für durchdachte Lösungen. Die vielseitigen Kompetenzen mit modernen Web-CMS-Tools sind beeindruckend, und die Zusammenarbeit ist professionell, angenehm und zielführend. Besonders schätze ich den strukturierten Arbeitsstil, der technische Präzision mit einem stimmigen Verständnis für gutes Design verbindet.",
+          "author": "Martin Künzi",
+          "company": "",
+          "rating": 5,
+          "date": "2025-03-01"
+        },
+        {
+          "quote": "Ich lernte die Noevu GmbH und den Geschäftsführer als äusserst kompetent und engagiert kennen. Die langjährige Erfahrung im Bereich digitaler Medien, breites Fachwissen und der Einsatz modernster Tools und Technologien führen zu herausragenden Ergebnissen.",
+          "author": "Tobias Morf",
+          "company": "",
+          "rating": 5,
+          "date": "2024-08-01"
+        },
+        {
+          "quote": "Als Schweizer Werbesprecher bin ich auf eine top Webseite angewiesen. Noevu GmbH zeichnet sich durch eine ganzheitliche und strategische Beratung aus. Dabei zeigen sie sich nicht nur technisch versiert, sondern integrieren auch modernstes Webdesign in Ihre Konzepte.",
+          "author": "Andy Zimmermann",
+          "company": "Schweizer Werbesprecher",
+          "rating": 5,
+          "date": "2024-08-01"
+        },
+        {
+          "quote": "Noevu hat uns hoch professionell, engagiert und termingerecht zu einer tollen neuen online Präsenz verholfen. Die Zusammenarbeit war jederzeit konstruktiv, die Beratung hervorragend.",
+          "author": "Benedikt Vogel",
+          "company": "",
+          "rating": 5,
+          "date": "2024-08-01"
+        }
+      ]
+    },
+    {
       "type": "cta",
       "title": "Bereit für den nächsten Schritt?",
       "description": "Lasst uns gemeinsam entdecken, wie AI Euer Unternehmen voranbringen kann. Kostenloses Erstgespräch – unverbindlich und persönlich.",
