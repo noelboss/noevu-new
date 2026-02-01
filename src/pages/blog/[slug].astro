@@ -8,6 +8,17 @@
 import { getCollection, render } from 'astro:content';
 import Article from '../../layouts/Article.astro';
 
+/**
+ * Calculate reading time from text content
+ * Average reading speed: 200 words per minute (German text)
+ */
+function calculateReadingTime(text: string): number {
+  const wordsPerMinute = 200;
+  const words = text.trim().split(/\s+/).length;
+  const minutes = Math.ceil(words / wordsPerMinute);
+  return Math.max(1, minutes);
+}
+
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
   return posts.map((post) => ({
@@ -19,17 +30,21 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+// Calculate reading time from post body (raw markdown content)
+const readingTime = post.data.readingTime || calculateReadingTime(post.body || '');
 ---
 
 <Article
   title={post.data.title}
+  slug={post.data.slug || post.id.replace(/\.md$/, '')}
   excerpt={post.data.excerpt}
   featuredImage={post.data.featuredImage}
   categories={post.data.categories}
   author={post.data.author}
   publishedAt={post.data.publishedAt}
   updatedAt={post.data.updatedAt}
-  readingTime={post.data.readingTime}
+  readingTime={readingTime}
 >
   <Content />
 </Article>
