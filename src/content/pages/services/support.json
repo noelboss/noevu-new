@@ -1,0 +1,118 @@
+{
+  "slug": "services/support",
+  "locale": "de",
+  "seo": {
+    "title": "Website Support & Hosting für Schweizer KMU | Noevu GmbH",
+    "description": "Zuverlässiger Website-Support und Hosting für Schweizer KMU: Wartung, Sicherheit und technischer Support. Wir kümmern uns, damit ihr euch aufs Geschäft konzentrieren könnt."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Website Support & Hosting",
+      "subheadline": "Wartung, Sicherheit und technischer Support",
+      "description": "<p>Eure Website verdient professionelle Betreuung. Wir kümmern uns um Wartung, Sicherheit und Support – damit ihr euch auf euer Kerngeschäft konzentrieren könnt.</p>",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "Support anfragen",
+          "href": "/kontakt",
+          "variant": "primary"
+        },
+        {
+          "label": "Mehr über uns",
+          "href": "/ueber-uns",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "valueProposition",
+      "title": "Was wir bieten",
+      "items": [
+        {
+          "title": "Zuverlässig",
+          "description": "99.9% Uptime-Garantie. Eure Website ist immer erreichbar, wenn eure Kunden sie brauchen."
+        },
+        {
+          "title": "Sicher",
+          "description": "SSL-Zertifikate, regelmässige Backups und Sicherheits-Updates. Eure Daten sind bei uns sicher."
+        },
+        {
+          "title": "Persönlich",
+          "description": "Direkter Ansprechpartner in der Schweiz. Schnelle Reaktionszeiten und echte Unterstützung."
+        }
+      ]
+    },
+    {
+      "type": "featuresList",
+      "title": "Unsere Support-Leistungen",
+      "features": [
+        {
+          "title": "Technischer Support",
+          "description": "Hilfe bei Fragen und Problemen per E-Mail, Telefon oder Video-Call. Wir sind für euch da."
+        },
+        {
+          "title": "Regelmässige Updates",
+          "description": "Wir halten eure Website aktuell – Software-Updates, Sicherheitspatches und Plugin-Pflege."
+        },
+        {
+          "title": "Backup & Recovery",
+          "description": "Tägliche Backups und schnelle Wiederherstellung im Notfall. Eure Daten sind sicher."
+        },
+        {
+          "title": "Performance-Monitoring",
+          "description": "24/7 Überwachung von Uptime und Ladezeiten. Probleme erkennen wir, bevor sie kritisch werden."
+        },
+        {
+          "title": "Content-Updates",
+          "description": "Kleine Änderungen an Texten, Bildern oder Inhalten? Wir erledigen das für euch."
+        },
+        {
+          "title": "Hosting-Management",
+          "description": "Wir kümmern uns um euer Hosting – ob Squarespace, Vercel oder eigener Server."
+        }
+      ],
+      "columns": "2"
+    },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen zum Support",
+      "items": [
+        {
+          "question": "Wie schnell reagiert ihr auf Support-Anfragen?",
+          "answer": "Wir antworten in der Regel innerhalb von 24 Stunden an Werktagen. Bei dringenden Problemen (Website down) reagieren wir so schnell wie möglich, oft innerhalb weniger Stunden."
+        },
+        {
+          "question": "Was kostet der Support?",
+          "answer": "Support-Pakete beginnen bei CHF 150/Monat für grundlegende Wartung. Für umfangreichere Betreuung bieten wir Pakete ab CHF 300/Monat. Einmalige Support-Anfragen rechnen wir nach Aufwand ab."
+        },
+        {
+          "question": "Unterstützt ihr auch Websites, die ihr nicht erstellt habt?",
+          "answer": "Ja, wir übernehmen auch den Support für bestehende Websites. Nach einer kurzen Analyse können wir die Betreuung übernehmen – egal ob Squarespace, WordPress oder andere Plattformen."
+        },
+        {
+          "question": "Was passiert, wenn meine Website gehackt wird?",
+          "answer": "Wir haben Notfall-Prozeduren für Sicherheitsvorfälle. Bei Kunden mit Support-Vertrag ist die Wiederherstellung und Absicherung im Rahmen des Vertrags enthalten."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Zuverlässiger Support für eure Website",
+      "description": "Lasst uns über eure Anforderungen sprechen. Wir finden das passende Support-Paket für euer Unternehmen.",
+      "ctas": [
+        {
+          "label": "Termin buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Kontakt aufnehmen",
+          "href": "/kontakt",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}

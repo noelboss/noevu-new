@@ -1,0 +1,118 @@
+{
+  "slug": "services/optimierung",
+  "locale": "de",
+  "seo": {
+    "title": "Website Optimierung & SEO für Schweizer KMU | Noevu GmbH",
+    "description": "Professionelle Website-Optimierung für Schweizer KMU: Performance, SEO und Conversion-Optimierung. Damit eure Website gefunden wird und Ergebnisse liefert."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "headline": "Website Optimierung & SEO",
+      "subheadline": "Performance, Sichtbarkeit und Ergebnisse",
+      "description": "<p>Eine schöne Website allein reicht nicht. Wir optimieren eure Website für Geschwindigkeit, Suchmaschinen und Conversions – damit ihr gefunden werdet und Besucher zu Kunden werden.</p>",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "Kostenlose Analyse anfragen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Mehr über uns",
+          "href": "/ueber-uns",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "valueProposition",
+      "title": "Was wir optimieren",
+      "items": [
+        {
+          "title": "Performance",
+          "description": "Schnelle Ladezeiten sind entscheidend. Wir optimieren eure Website für maximale Geschwindigkeit auf allen Geräten."
+        },
+        {
+          "title": "SEO",
+          "description": "Suchmaschinenoptimierung, die funktioniert. Bessere Rankings, mehr organischer Traffic, nachhaltige Sichtbarkeit."
+        },
+        {
+          "title": "Conversion",
+          "description": "Mehr Besucher in Kunden verwandeln. Wir analysieren und optimieren eure User Journey für bessere Ergebnisse."
+        }
+      ]
+    },
+    {
+      "type": "featuresList",
+      "title": "Unsere Optimierungs-Leistungen",
+      "features": [
+        {
+          "title": "Core Web Vitals",
+          "description": "Optimierung der Google-Ranking-Faktoren LCP, FID und CLS für bessere Suchmaschinenplatzierungen."
+        },
+        {
+          "title": "On-Page SEO",
+          "description": "Meta-Tags, Strukturierte Daten, interne Verlinkung und Content-Optimierung für bessere Rankings."
+        },
+        {
+          "title": "Technisches SEO",
+          "description": "Sitemap, Robots.txt, Canonical URLs und technische Fehler beheben."
+        },
+        {
+          "title": "Mobile Optimierung",
+          "description": "Responsive Design und Mobile-First-Ansatz für perfekte Darstellung auf allen Geräten."
+        },
+        {
+          "title": "Conversion Rate Optimierung",
+          "description": "A/B-Testing, Heatmaps und User-Flow-Analyse für höhere Konversionsraten."
+        },
+        {
+          "title": "Analytics & Reporting",
+          "description": "Google Analytics Setup, Custom Dashboards und regelmässige Performance-Reports."
+        }
+      ],
+      "columns": "2"
+    },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen zur Optimierung",
+      "items": [
+        {
+          "question": "Wie lange dauert es, bis SEO-Ergebnisse sichtbar werden?",
+          "answer": "SEO ist eine langfristige Investition. Erste Verbesserungen sind oft nach 4-8 Wochen sichtbar, signifikante Ranking-Veränderungen dauern 3-6 Monate. Wir setzen auf nachhaltige Strategien statt kurzfristiger Tricks."
+        },
+        {
+          "question": "Was kostet eine Website-Optimierung?",
+          "answer": "Die Kosten hängen vom Umfang ab. Ein SEO-Audit mit Handlungsempfehlungen beginnt bei CHF 1'500. Laufende Optimierung gibt es ab CHF 500/Monat. Wir erstellen euch ein individuelles Angebot."
+        },
+        {
+          "question": "Optimiert ihr auch bestehende Websites?",
+          "answer": "Ja, absolut! Wir optimieren sowohl Websites, die wir selbst erstellt haben, als auch bestehende Seiten auf anderen Plattformen wie WordPress, Squarespace oder Shopify."
+        },
+        {
+          "question": "Wie messt ihr den Erfolg der Optimierung?",
+          "answer": "Wir tracken relevante KPIs wie organischen Traffic, Rankings für Ziel-Keywords, Ladezeiten, Conversion-Raten und Bounce-Rates. Ihr erhaltet regelmässige Reports mit konkreten Zahlen."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Bereit für bessere Ergebnisse?",
+      "description": "Lasst uns gemeinsam eure Website auf das nächste Level bringen. Kostenlose Erstanalyse – unverbindlich und persönlich.",
+      "ctas": [
+        {
+          "label": "Termin buchen",
+          "href": "/termin",
+          "variant": "primary"
+        },
+        {
+          "label": "Kontakt aufnehmen",
+          "href": "/kontakt",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "green"
+    }
+  ]
+}
