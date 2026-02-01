@@ -1,0 +1,396 @@
+---
+/**
+ * Article Layout - Blog post template
+ *
+ * Architecture: Pure renderer that receives typed blog post data.
+ * Handles article header, content rendering, author bio, and related posts.
+ */
+import Base from './Base.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+
+import navigationData from '../content/navigation.json';
+import siteData from '../content/site.json';
+
+interface Props {
+  title: string;
+  excerpt: string;
+  featuredImage?: string;
+  categories?: string[];
+  author: {
+    name: string;
+    image?: string;
+    bio?: string;
+    href?: string;
+  };
+  publishedAt: string;
+  updatedAt?: string;
+  readingTime?: number;
+}
+
+const {
+  title,
+  excerpt,
+  featuredImage,
+  categories = [],
+  author,
+  publishedAt,
+  updatedAt,
+  readingTime,
+} = Astro.props;
+
+// Format dates
+const publishedFormatted = new Date(publishedAt).toLocaleDateString('de-CH', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+const updatedFormatted = updatedAt
+  ? new Date(updatedAt).toLocaleDateString('de-CH', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    })
+  : null;
+---
+
+<Base
+  title={`${title} | Noevu Blog`}
+  description={excerpt}
+  image={featuredImage}
+>
+  <Header navigation={navigationData as any} currentPath="/blog" />
+
+  <main id="main-content">
+    <article class="article">
+      <header class="article__header">
+        <div class="container">
+          {categories.length > 0 && (
+            <div class="article__categories">
+              {categories.map((category) => (
+                <a
+                  href={`/blog/category/${encodeURIComponent(category.toLowerCase())}`}
+                  class="article__category"
+                >
+                  {category}
+                </a>
+              ))}
+            </div>
+          )}
+
+          <h1 class="article__title">{title}</h1>
+
+          <p class="article__excerpt">{excerpt}</p>
+
+          <div class="article__meta">
+            <div class="article__author">
+              {author.image && (
+                <img
+                  src={author.image}
+                  alt={author.name}
+                  class="article__author-image"
+                />
+              )}
+              <div class="article__author-info">
+                {author.href ? (
+                  <a href={author.href} class="article__author-name">
+                    {author.name}
+                  </a>
+                ) : (
+                  <span class="article__author-name">{author.name}</span>
+                )}
+                <div class="article__date-info">
+                  <time datetime={publishedAt}>{publishedFormatted}</time>
+                  {readingTime && (
+                    <span class="article__reading-time">
+                      · {readingTime} Min. Lesezeit
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {featuredImage && (
+            <div class="article__featured-image">
+              <img src={featuredImage} alt={title} />
+            </div>
+          )}
+        </div>
+      </header>
+
+      <div class="article__content">
+        <div class="container container--narrow">
+          <slot />
+
+          {updatedFormatted && (
+            <p class="article__updated">
+              <em>Zuletzt aktualisiert am {updatedFormatted}</em>
+            </p>
+          )}
+        </div>
+      </div>
+
+      <footer class="article__footer">
+        <div class="container container--narrow">
+          <div class="article__author-box">
+            {author.image && (
+              <img
+                src={author.image}
+                alt={author.name}
+                class="article__author-box-image"
+              />
+            )}
+            <div class="article__author-box-content">
+              <h3 class="article__author-box-name">
+                Geschrieben von {author.name}
+              </h3>
+              {author.bio && (
+                <p class="article__author-box-bio">{author.bio}</p>
+              )}
+              <a href="/kontakt#termin" class="btn btn--primary">
+                Beratungstermin buchen
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+
+  <Footer navigation={navigationData as any} site={siteData as any} />
+</Base>
+
+<style>
+  .article__header {
+    background-color: var(--color-bg-beige);
+    padding-block: var(--space-12) var(--space-8);
+  }
+
+  .article__categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+  }
+
+  .article__category {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: opacity var(--transition-fast);
+  }
+
+  .article__category:hover {
+    opacity: 0.8;
+  }
+
+  .article__title {
+    font-size: var(--text-4xl);
+    line-height: var(--leading-tight);
+    margin-bottom: var(--space-6);
+    max-width: 900px;
+  }
+
+  @media (min-width: 768px) {
+    .article__title {
+      font-size: var(--text-5xl);
+    }
+  }
+
+  .article__excerpt {
+    font-size: var(--text-xl);
+    color: var(--color-text-muted);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-8);
+    max-width: 700px;
+  }
+
+  .article__meta {
+    margin-bottom: var(--space-8);
+  }
+
+  .article__author {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+
+  .article__author-image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--radius-full);
+    object-fit: cover;
+  }
+
+  .article__author-name {
+    font-weight: var(--font-semibold);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .article__author-name:hover {
+    color: var(--color-primary);
+  }
+
+  .article__date-info {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  .article__reading-time {
+    color: var(--color-text-muted);
+  }
+
+  .article__featured-image {
+    margin-top: var(--space-8);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+  }
+
+  .article__featured-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .article__content {
+    padding-block: var(--space-12);
+  }
+
+  .container--narrow {
+    max-width: 720px;
+  }
+
+  .article__content :global(h2) {
+    font-size: var(--text-2xl);
+    margin-top: var(--space-12);
+    margin-bottom: var(--space-4);
+  }
+
+  .article__content :global(h3) {
+    font-size: var(--text-xl);
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-3);
+  }
+
+  .article__content :global(p) {
+    font-size: var(--text-lg);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-6);
+  }
+
+  .article__content :global(ul),
+  .article__content :global(ol) {
+    font-size: var(--text-lg);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-6);
+    padding-left: var(--space-6);
+  }
+
+  .article__content :global(li) {
+    margin-bottom: var(--space-2);
+  }
+
+  .article__content :global(blockquote) {
+    margin-block: var(--space-8);
+    padding: var(--space-6);
+    background-color: var(--color-bg-cream);
+    border-left: 4px solid var(--color-primary);
+    border-radius: var(--radius);
+    font-size: var(--text-lg);
+    font-style: italic;
+  }
+
+  .article__content :global(blockquote p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .article__content :global(img) {
+    border-radius: var(--radius-lg);
+    margin-block: var(--space-8);
+  }
+
+  .article__content :global(a) {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  .article__content :global(code) {
+    font-family: ui-monospace, monospace;
+    font-size: 0.875em;
+    background-color: var(--color-neutral-100);
+    padding: 0.125em 0.375em;
+    border-radius: var(--radius-sm);
+  }
+
+  .article__content :global(pre) {
+    background-color: var(--color-neutral-900);
+    color: var(--color-neutral-100);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    overflow-x: auto;
+    margin-block: var(--space-8);
+  }
+
+  .article__content :global(pre code) {
+    background: none;
+    padding: 0;
+  }
+
+  .article__updated {
+    margin-top: var(--space-8);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--color-neutral-200);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  .article__footer {
+    background-color: var(--color-bg-cream);
+    padding-block: var(--space-12);
+  }
+
+  .article__author-box {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    text-align: center;
+  }
+
+  @media (min-width: 640px) {
+    .article__author-box {
+      flex-direction: row;
+      text-align: left;
+      align-items: flex-start;
+    }
+  }
+
+  .article__author-box-image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: var(--radius-full);
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-inline: auto;
+  }
+
+  @media (min-width: 640px) {
+    .article__author-box-image {
+      margin-inline: 0;
+    }
+  }
+
+  .article__author-box-name {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-2);
+  }
+
+  .article__author-box-bio {
+    font-size: var(--text-base);
+    color: var(--color-text-muted);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+  }
+</style>

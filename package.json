@@ -5,7 +5,9 @@
   "description": "Noevu.ch website rebuilt with Astro, TinaCMS, and schema-driven architecture",
   "scripts": {
     "dev": "astro dev",
+    "dev:cms": "tinacms dev -c \"astro dev\"",
     "build": "astro build",
+    "build:cms": "tinacms build && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

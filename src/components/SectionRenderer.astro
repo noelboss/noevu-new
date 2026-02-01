@@ -23,6 +23,7 @@ import CTA from './sections/CTA.astro';
 import FAQ from './sections/FAQ.astro';
 import TextContent from './sections/TextContent.astro';
 import WaveDivider from './sections/WaveDivider.astro';
+import BlogGrid from './sections/BlogGrid.astro';
 
 interface Props {
   sections: SectionEntry[];
@@ -56,6 +57,7 @@ const sectionComponents: Record<string, any> = {
   faq: FAQ,
   textContent: TextContent,
   waveDivider: WaveDivider,
+  blogGrid: BlogGrid,
 };
 ---
 

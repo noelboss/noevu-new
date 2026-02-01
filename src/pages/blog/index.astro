@@ -1,0 +1,170 @@
+---
+/**
+ * Blog listing page
+ *
+ * Displays all blog posts in a grid layout with filtering by category.
+ * Content comes from MDX files in src/content/blog/
+ */
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+import BlogCard from '../../components/blog/BlogCard.astro';
+
+import navigationData from '../../content/navigation.json';
+import siteData from '../../content/site.json';
+
+// Get blog posts (will be populated when content exists)
+// For now, using placeholder data
+const posts: any[] = [];
+
+// Get unique categories from all posts
+const allCategories = [...new Set(posts.flatMap(post => post.categories || []))];
+---
+
+<Base
+  title="Blog | Noevu"
+  description="Tipps, Insights und News rund um Webdesign, Squarespace und AI für Schweizer KMU."
+>
+  <Header navigation={navigationData as any} currentPath="/blog" />
+
+  <main id="main-content">
+    <section class="blog-hero section">
+      <div class="container">
+        <h1 class="blog-hero__title">Blog</h1>
+        <p class="blog-hero__subtitle">
+          Tipps, digitale Insights und strategische Geschichten aus dem Schweizer Vorsprung.
+        </p>
+      </div>
+    </section>
+
+    {allCategories.length > 0 && (
+      <section class="blog-filters section--sm">
+        <div class="container">
+          <div class="blog-filters__list">
+            <a href="/blog" class="blog-filters__item blog-filters__item--active">
+              Alle
+            </a>
+            {allCategories.map((category) => (
+              <a
+                href={`/blog/category/${encodeURIComponent(category.toLowerCase())}`}
+                class="blog-filters__item"
+              >
+                {category}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <section class="blog-list section">
+      <div class="container">
+        {posts.length > 0 ? (
+          <div class="blog-list__grid">
+            {posts.map((post) => (
+              <BlogCard
+                title={post.title}
+                slug={post.slug}
+                excerpt={post.excerpt}
+                featuredImage={post.featuredImage}
+                categories={post.categories}
+                publishedAt={post.publishedAt}
+                author={post.author}
+              />
+            ))}
+          </div>
+        ) : (
+          <div class="blog-list__empty">
+            <p>Noch keine Blog-Beiträge vorhanden.</p>
+            <p class="text-muted">Schauen Sie bald wieder vorbei!</p>
+          </div>
+        )}
+      </div>
+    </section>
+  </main>
+
+  <Footer navigation={navigationData as any} site={siteData as any} />
+</Base>
+
+<style>
+  .blog-hero {
+    background-color: var(--color-bg-beige);
+    text-align: center;
+  }
+
+  .blog-hero__title {
+    font-size: var(--text-5xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .blog-hero__subtitle {
+    font-size: var(--text-xl);
+    color: var(--color-text-muted);
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  .blog-filters {
+    background-color: var(--color-bg-beige);
+    border-bottom: 1px solid var(--color-neutral-200);
+  }
+
+  .blog-filters__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: center;
+  }
+
+  .blog-filters__item {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-text-muted);
+    background-color: transparent;
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .blog-filters__item:hover {
+    background-color: var(--color-bg-white);
+    color: var(--color-text);
+  }
+
+  .blog-filters__item--active {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverted);
+  }
+
+  .blog-list {
+    background-color: var(--color-bg-beige);
+  }
+
+  .blog-list__grid {
+    display: grid;
+    gap: var(--space-8);
+  }
+
+  @media (min-width: 640px) {
+    .blog-list__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .blog-list__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .blog-list__empty {
+    text-align: center;
+    padding: var(--space-16);
+  }
+
+  .blog-list__empty p {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-2);
+  }
+</style>
