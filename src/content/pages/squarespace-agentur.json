@@ -38,7 +38,7 @@
       "type": "logoGallery",
       "title": "Squarespace Circle Gold Partner seit 2020",
       "logos": [
-        { "name": "Squarespace Gold Partner", "image": { "src": "/images/badges/squarespace-gold-partner.svg", "alt": "Squarespace Circle Gold Partner Badge" } }
+        { "name": "Squarespace Gold Partner", "image": { "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/1744737599650-S447T9W3ZDJ4KR4T5TTH/Gold+Partner+Badge+Black+Gold.png", "alt": "Squarespace Circle Gold Partner Badge" } }
       ]
     },
     {

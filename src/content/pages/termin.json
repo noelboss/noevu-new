@@ -27,7 +27,7 @@
       "title": "Hallo, ich bin Noël",
       "content": "<p><strong>Gründer & CEO von Noevu</strong></p><p>Mit über 25 Jahren Erfahrung in Webdesign, Marketing und digitaler Strategie helfe ich Schweizer KMUs, Online-Auftritte zu schaffen, die nicht nur gut aussehen, sondern auch Ergebnisse liefern.</p><p>Als Schweizer Squarespace-Experte kombiniere ich Effizienz, Benutzerfreundlichkeit und ästhetisches Design, um Websites zu realisieren, die langfristig funktionieren und Wachstum ermöglichen.</p><p><strong>Kontakt:</strong><br><a href='mailto:noel@noevu.ch'>noel@noevu.ch</a><br><a href='tel:+41445051020'>+41 44 505 10 20</a></p>",
       "image": {
-        "src": "/images/team/noel-bossart.jpg",
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/07f2b4cc-f0cf-43d2-9d80-deebc1763ef5/DSC01533.jpg",
         "alt": "Noël Bossart - Gründer & CEO von Noevu"
       },
       "cta": {

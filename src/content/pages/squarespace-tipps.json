@@ -81,7 +81,7 @@
       "title": "Go-Live Checkliste",
       "content": "<p>Bevor eure Website online geht, gibt es einiges zu beachten. Unsere umfassende Checkliste hilft euch, nichts zu vergessen.</p><ul><li>Inhalte und Texte prüfen</li><li>Bilder optimieren</li><li>SEO-Einstellungen</li><li>Rechtliche Seiten (Impressum, Datenschutz)</li><li>Mobile Ansicht testen</li><li>Formulare testen</li></ul>",
       "image": {
-        "src": "/images/resources/go-live-checklist.jpg",
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/8b838634-5884-4128-9eb3-412d9dcd211e/a-professional-photograph-showcasing-an-_Tq5bIilmQ6urL62wjg0aKw_kNlAfdZ1RYWQiGr8n4LV3w.png",
         "alt": "Go-Live Checkliste für Squarespace"
       },
       "cta": {

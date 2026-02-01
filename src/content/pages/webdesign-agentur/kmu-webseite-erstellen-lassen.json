@@ -12,7 +12,7 @@
       "subheadline": "Eure neue KMU Homepage",
       "description": "<p>Neue Homepage erstellen lassen für Schweizer KMU. Professionelles Webdesign, das gefunden wird, überzeugt und Kunden gewinnt. Responsive, SEO-optimiert und einfach zu pflegen.</p>",
       "backgroundImage": {
-        "src": "/images/services/kmu-website-hero.jpg",
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/ab7285f0-7045-4ba1-a2df-73a211891840/a-sophisticated-lifestyle-advertisement-_v4_Ik5KCT928kAbQ-N-CBw_drGaPECpQRSJC4Ngk0-ckQ.png",
         "alt": "KMU Website erstellen lassen"
       },
       "alignment": "left",

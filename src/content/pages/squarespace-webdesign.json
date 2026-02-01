@@ -12,7 +12,7 @@
       "subheadline": "Professionelle Homepage Entwicklung",
       "description": "<p>Modernes Webdesign mit der einfachsten CMS-Lösung der Welt. Als zertifizierter Squarespace Gold Partner entwickeln wir Websites, die überzeugen und einfach zu pflegen sind.</p>",
       "backgroundImage": {
-        "src": "/images/services/squarespace-webdesign-hero.jpg",
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/5f7ab37f-d748-449b-828d-c5f079d8fb87/a-professional-photograph-of-a-modern-sp_8fhaeee2TKy6gkf2TGGV3g_2XqJZnt7RtuOrSMZ7Vsb7w.png",
         "alt": "Squarespace Webdesign"
       },
       "alignment": "left",
@@ -106,7 +106,7 @@
       "title": "Unsere vier Säulen",
       "content": "<p>Jedes erfolgreiche Webprojekt durchläuft vier Phasen:</p><ul><li><strong>Strategie & Fundament:</strong> Discovery, Positionierung, Content-Strategie</li><li><strong>Webdesign & Marketing:</strong> Visuelles Design, User Experience</li><li><strong>Entwicklung:</strong> Technische Umsetzung mit Squarespace</li><li><strong>Betrieb & Wachstum:</strong> Support, Wartung, Optimierung</li></ul>",
       "image": {
-        "src": "/images/services/squarespace-prozess.jpg",
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/df100f1e-d91e-4f9f-bd3e-b86302aee06f/modern-tablet-floating-in-mid-air-with-t_oulZQSkSTEib2GV67kN1xg_nnyoW0CJQxG8lfT2F5DlYg.png",
         "alt": "Squarespace Entwicklungsprozess"
       },
       "cta": {

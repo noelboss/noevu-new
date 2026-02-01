@@ -12,7 +12,7 @@
       "subheadline": "Professionelle Unterstützung für euren digitalen Erfolg",
       "description": "<p>Ihr habt Fragen zu eurer Website? Wir helfen – von der strategischen Beratung bis zur technischen Problemlösung. Als erfahrene Experten kennen wir die Herausforderungen von Schweizer KMU.</p>",
       "backgroundImage": {
-        "src": "/images/services/beratung-hero.jpg",
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/fe7939f1-df89-4bc9-9254-81828eecffe8/usability.jpeg",
         "alt": "Webseiten Beratung"
       },
       "alignment": "left",
