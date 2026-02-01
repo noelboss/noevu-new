@@ -1,0 +1,269 @@
+---
+import type { ContactFormSection } from '../../schemas/sections';
+
+interface Props {
+  data: ContactFormSection;
+}
+
+const { data } = Astro.props;
+const { title, description, fields, submitLabel = 'Absenden', successMessage } = data;
+
+// Generate unique form ID for accessibility
+const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
+---
+
+<section class="contact-form section">
+  <div class="container">
+    <div class="contact-form__grid">
+      <div class="contact-form__content">
+        {title && <h2 class="contact-form__title">{title}</h2>}
+        {description && <div class="contact-form__description" set:html={description} />}
+      </div>
+
+      <form
+        id={formId}
+        class="contact-form__form"
+        method="POST"
+        action="/api/contact"
+        data-success-message={successMessage}
+      >
+        {fields.map((field) => (
+          <div class="contact-form__field">
+            <label for={`${formId}-${field.name}`} class="contact-form__label">
+              {field.label}
+              {field.required && <span class="contact-form__required" aria-hidden="true">*</span>}
+            </label>
+
+            {field.type === 'textarea' ? (
+              <textarea
+                id={`${formId}-${field.name}`}
+                name={field.name}
+                class="contact-form__input contact-form__textarea"
+                required={field.required}
+                rows="5"
+              />
+            ) : field.type === 'select' && field.options ? (
+              <select
+                id={`${formId}-${field.name}`}
+                name={field.name}
+                class="contact-form__input contact-form__select"
+                required={field.required}
+              >
+                <option value="">Bitte wählen...</option>
+                {field.options.map((option) => (
+                  <option value={option}>{option}</option>
+                ))}
+              </select>
+            ) : (
+              <input
+                id={`${formId}-${field.name}`}
+                type={field.type}
+                name={field.name}
+                class="contact-form__input"
+                required={field.required}
+              />
+            )}
+          </div>
+        ))}
+
+        <div class="contact-form__submit">
+          <button type="submit" class="btn btn--primary contact-form__button">
+            {submitLabel}
+          </button>
+        </div>
+
+        <div class="contact-form__status" aria-live="polite" hidden>
+          <p class="contact-form__success">{successMessage}</p>
+          <p class="contact-form__error">Es gab ein Problem. Bitte versuchen Sie es erneut.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact-form {
+    background-color: var(--color-bg-beige);
+  }
+
+  .contact-form__grid {
+    display: grid;
+    gap: var(--space-12);
+  }
+
+  @media (min-width: 1024px) {
+    .contact-form__grid {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-16);
+      align-items: start;
+    }
+  }
+
+  .contact-form__title {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-6);
+  }
+
+  .contact-form__description {
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    line-height: var(--leading-relaxed);
+  }
+
+  .contact-form__description :global(p) {
+    margin-bottom: var(--space-4);
+  }
+
+  .contact-form__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    background-color: var(--color-bg-white);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-card);
+  }
+
+  .contact-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .contact-form__label {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-text);
+  }
+
+  .contact-form__required {
+    color: var(--color-accent);
+    margin-left: var(--space-1);
+  }
+
+  .contact-form__input {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    color: var(--color-text);
+    background-color: var(--color-bg-cream);
+    border: 2px solid transparent;
+    border-radius: var(--radius);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .contact-form__input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-100);
+  }
+
+  .contact-form__input::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  .contact-form__textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .contact-form__select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 20 20' fill='%235f524a'%3E%3Cpath fill-rule='evenodd' d='M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right var(--space-4) center;
+    padding-right: var(--space-10);
+    cursor: pointer;
+  }
+
+  .contact-form__submit {
+    margin-top: var(--space-4);
+  }
+
+  .contact-form__button {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .contact-form__button {
+      width: auto;
+    }
+  }
+
+  .contact-form__status {
+    text-align: center;
+    padding: var(--space-4);
+    border-radius: var(--radius);
+  }
+
+  .contact-form__success {
+    color: var(--color-primary);
+    font-weight: var(--font-medium);
+  }
+
+  .contact-form__error {
+    color: var(--color-accent-700);
+    font-weight: var(--font-medium);
+    display: none;
+  }
+
+  .contact-form__status.is-error .contact-form__success {
+    display: none;
+  }
+
+  .contact-form__status.is-error .contact-form__error {
+    display: block;
+  }
+
+  /* Validation states */
+  .contact-form__input:invalid:not(:placeholder-shown) {
+    border-color: var(--color-accent-600);
+  }
+
+  .contact-form__input:valid:not(:placeholder-shown) {
+    border-color: var(--color-primary-400);
+  }
+</style>
+
+<script>
+  // Progressive enhancement: Handle form submission with JS
+  document.querySelectorAll('.contact-form__form').forEach((form) => {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formEl = e.target as HTMLFormElement;
+      const submitBtn = formEl.querySelector('.contact-form__button') as HTMLButtonElement;
+      const statusEl = formEl.querySelector('.contact-form__status') as HTMLElement;
+      const successMessage = formEl.dataset.successMessage;
+
+      // Disable button during submission
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Wird gesendet...';
+
+      try {
+        const formData = new FormData(formEl);
+        const data = Object.fromEntries(formData.entries());
+
+        // For now, log to console (replace with actual API call)
+        console.log('Form submitted:', data);
+
+        // Simulate API call
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+
+        // Show success
+        statusEl.hidden = false;
+        statusEl.classList.remove('is-error');
+        formEl.reset();
+      } catch (error) {
+        // Show error
+        statusEl.hidden = false;
+        statusEl.classList.add('is-error');
+        console.error('Form error:', error);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = formEl.querySelector('[type="submit"]')?.textContent || 'Absenden';
+      }
+    });
+  });
+</script>

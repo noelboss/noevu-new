@@ -62,6 +62,19 @@ const { main: navItems, cta } = navigation;
           </li>
         ))}
       </ul>
+
+      {/* Mobile-only CTA and language switcher */}
+      {cta && (
+        <div class="header__mobile-cta">
+          <a href={cta.href} class="btn btn--primary">
+            {cta.label}
+          </a>
+        </div>
+      )}
+      <div class="header__mobile-lang">
+        <a href="/de" class="header__lang-link header__lang-link--active">Deutsch</a>
+        <a href="/en" class="header__lang-link">English</a>
+      </div>
     </nav>
 
     <div class="header__actions">
@@ -289,6 +302,98 @@ const { main: navItems, cta } = navigation;
   .header__mobile-toggle[aria-expanded="true"] .header__close-icon {
     display: block;
   }
+
+  /* Mobile navigation drawer */
+  @media (max-width: 1023px) {
+    .header__nav {
+      position: fixed;
+      top: 4.5rem;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--color-bg-white);
+      padding: var(--space-6);
+      transform: translateX(100%);
+      transition: transform var(--transition);
+      overflow-y: auto;
+      z-index: 99;
+    }
+
+    .header__nav--open {
+      display: block;
+      transform: translateX(0);
+    }
+
+    .header__nav-list {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+
+    .header__nav-item {
+      border-bottom: 1px solid var(--color-neutral-200);
+    }
+
+    .header__nav-link {
+      width: 100%;
+      padding: var(--space-4) 0;
+      font-size: var(--text-base);
+      justify-content: space-between;
+    }
+
+    .header__dropdown {
+      position: static;
+    }
+
+    .header__dropdown-menu {
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      box-shadow: none;
+      padding: 0 0 var(--space-4) var(--space-4);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height var(--transition);
+    }
+
+    .header__dropdown.is-open .header__dropdown-menu {
+      max-height: 500px;
+    }
+
+    .header__dropdown.is-open .header__chevron {
+      transform: rotate(180deg);
+    }
+
+    .header__dropdown-link {
+      padding: var(--space-3) 0;
+    }
+
+    /* Mobile CTA */
+    .header__mobile-cta {
+      display: block;
+      margin-top: var(--space-6);
+      text-align: center;
+    }
+
+    .header__mobile-cta .btn {
+      width: 100%;
+    }
+
+    .header__mobile-lang {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-4);
+      margin-top: var(--space-6);
+      padding-top: var(--space-6);
+      border-top: 1px solid var(--color-neutral-200);
+    }
+  }
+
+  /* Prevent body scroll when menu is open */
+  :global(body.menu-open) {
+    overflow: hidden;
+  }
 </style>
 
 <script>
@@ -296,22 +401,71 @@ const { main: navItems, cta } = navigation;
   const toggle = document.querySelector('.header__mobile-toggle');
   const nav = document.querySelector('.header__nav');
 
+  function closeMenu() {
+    toggle?.setAttribute('aria-expanded', 'false');
+    nav?.classList.remove('header__nav--open');
+    document.body.classList.remove('menu-open');
+  }
+
+  function openMenu() {
+    toggle?.setAttribute('aria-expanded', 'true');
+    nav?.classList.add('header__nav--open');
+    document.body.classList.add('menu-open');
+  }
+
   toggle?.addEventListener('click', () => {
     const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!isExpanded));
-    nav?.classList.toggle('header__nav--open');
+    if (isExpanded) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
   });
 
-  // Dropdown keyboard accessibility
+  // Close menu on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMenu();
+    }
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    if (!target.closest('.header') && nav?.classList.contains('header__nav--open')) {
+      closeMenu();
+    }
+  });
+
+  // Mobile dropdown toggles
   const dropdownTriggers = document.querySelectorAll('.header__dropdown-trigger');
 
   dropdownTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', (e) => {
+      // Only toggle on mobile (check if nav is in mobile mode)
+      if (window.innerWidth < 1024) {
+        e.preventDefault();
+        const dropdown = trigger.closest('.header__dropdown');
+        dropdown?.classList.toggle('is-open');
+      }
+    });
+
     trigger.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
-        trigger.setAttribute('aria-expanded', String(!isExpanded));
+        const dropdown = trigger.closest('.header__dropdown');
+        dropdown?.classList.toggle('is-open');
       }
     });
+  });
+
+  // Close menu on resize to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1024) {
+      closeMenu();
+      document.querySelectorAll('.header__dropdown').forEach((d) => {
+        d.classList.remove('is-open');
+      });
+    }
   });
 </script>
