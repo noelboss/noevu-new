@@ -8,31 +8,31 @@
   "sections": [
     {
       "type": "hero",
-      "headline": "Webseiten Beratung & Hilfe",
-      "subheadline": "Professionelle Unterstützung für euren digitalen Erfolg",
-      "description": "<p>Ihr habt Fragen zu eurer Website? Wir helfen – von der strategischen Beratung bis zur technischen Problemlösung. Als erfahrene Experten kennen wir die Herausforderungen von Schweizer KMU.</p>",
+      "headline": "Professionelle Website Pflege, Beratung und Hilfe",
+      "subheadline": "Euer Weg zur erfolgreichen Homepage.",
+      "description": "<p>Ohne professionelle Homepage Pflege und Beratung von Experten, bleibt das Potenzial eurer Webseite ungenutzt. Mit über 25 Jahren Erfahrung bieten wir Euch Webseiten Hilfe von der ersten Idee bis über den Start Eurer erfolgreichen KMU Website. Wir hören zu, denken mit und entwickeln gemeinsam mit Euch eine Strategie, die wirklich zu Eurer Firma passt.</p>",
       "backgroundImage": {
-        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/fe7939f1-df89-4bc9-9254-81828eecffe8/usability.jpeg",
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/af338102-866a-4474-85b4-349aff7f8ca8/a-carefully-crafted-strategie-framework-_j36cUwEzTvevfdJVZJfCZg_ARsa3RGqToe3INRmID1ZNg.png",
         "alt": "Webseiten Beratung"
       },
       "alignment": "left",
       "ctas": [
         {
-          "label": "Beratung buchen",
-          "href": "/termin",
+          "label": "Jetzt Webseiten Hilfe anfragen",
+          "href": "/kontakt",
           "variant": "primary"
         },
         {
-          "label": "Hilfe anfragen",
-          "href": "/kontakt",
+          "label": "Kostenlose Webseiten-Beratung",
+          "href": "/termin",
           "variant": "secondary"
         }
       ]
     },
     {
       "type": "textContent",
-      "title": "Eure Website als Geschäftswerkzeug",
-      "content": "<p>Eine Website ist mehr als nur eine digitale Visitenkarte. Sie ist ein Verkaufsinstrument, ein Marketing-Kanal und oft der erste Kontaktpunkt mit potenziellen Kunden. Wir helfen euch, das volle Potential auszuschöpfen.</p>",
+      "title": "Mehr als nur eine Webseite: Euer Business-Werkzeug.",
+      "content": "<p>Eine professionelle Webseite ist mehr als ein schönes Design – sie muss für Euer Geschäft arbeiten. Kommt Euch das bekannt vor? Ihr wisst, dass Ihr online präsenter sein müsst, seid aber unsicher über die nächsten Schritte oder die passende Webseiten Pflege? Ohne professionelle Beratung, einer klaren Strategie bleibt die Investition in eine Homepage oft wirkungslos. Danke 25 Jahren Erfahrung helfen wir euch bei eurem Webseiten Projekt – effizient und professionell.</p>",
       "alignment": "center"
     },
     {
@@ -43,23 +43,23 @@
     },
     {
       "type": "featuresList",
-      "title": "Unsere vier Beratungssäulen",
+      "title": "Beratung für eine effektive KMU Homepage",
       "features": [
         {
-          "title": "Eine glasklare Strategie",
-          "description": "Situationsanalyse, Identifikation von Quick Wins, Ausrichtung der digitalen Präsenz auf eure Geschäftsziele."
+          "title": "Eine glasklare Strategie.",
+          "description": "Ihr erhaltet nicht nur Ideen, sondern einen konkreten Fahrplan. Wir analysieren eure Ausgangslage, identifizieren Low-Hanging Fruits und entwickeln eine Strategie, die sicherstellt, dass eure digitale Präsenz perfekt auf eure Unternehmensziele ausgerichtet ist."
         },
         {
-          "title": "Eure Kunden im Fokus",
-          "description": "Zielgruppenanalyse, Verhaltensanalyse, Design-Optimierung für mehr Conversions."
+          "title": "Gezielte Ansprache, die wirkt.",
+          "description": "Ihr wisst genau, wen ihr ansprecht und wie ihr sie erreicht. Wir analysieren eure Zielgruppen, deren Bedürfnisse und Online-Verhalten. Darauf basierend stellen wir sicher, dass Design, Inhalt und Funktion eurer Homepag eure Kunden begeistern und zu den gewünschten Handlungen motivieren."
         },
         {
-          "title": "Eure Effizienz",
-          "description": "CMS-Evaluation, Automatisierungs-Tools (Bexio, HubSpot, Notion, Zapier), Prozessvereinfachung."
+          "title": "Werkzeuge, die für euch arbeiten.",
+          "description": "Ihr bekommt Orientierung im Dschungel der digitalen Tools. Wir evaluieren für euch die passenden CMS Lösungen, intuitive CMS-Systeme und Automations-Möglichkeiten (z.B. mit Bexio, Hubspot, Notion oder Zapier), die euch Arbeit abnehmen, Prozesse vereinfachen und euer Budget schonen."
         },
         {
-          "title": "Eure Zukunftssicherheit",
-          "description": "Digitale Trendanalyse, Best Practices, nachhaltige Entscheidungen für morgen."
+          "title": "Digitale Trends, die euch nützen.",
+          "description": "Ihr müsst nicht jedem Trend hinterherlaufen. Wir helfen euch die relevanten digitalen Entwicklungen und Best Practices heraus zu filtern. So trefft ihr nachhaltige Entscheidungen, die euch auch in Zukunft einen Wettbewerbsvorteil sichern."
         }
       ],
       "columns": "2"
@@ -72,7 +72,7 @@
     },
     {
       "type": "servicesGrid",
-      "title": "Wie wir euch helfen",
+      "title": "Webseiten Pflege & Beratung auf höchstem Noevu.",
       "services": [
         {
           "title": "Strategieberatung",
@@ -103,7 +103,7 @@
     },
     {
       "type": "contactForm",
-      "title": "Beratung anfragen",
+      "title": "Eure unverbindliche Anfrage:",
       "description": "Beschreibt uns kurz eure Situation – wir melden uns innerhalb eines Werktages.",
       "fields": [
         {
@@ -129,7 +129,7 @@
     },
     {
       "type": "faq",
-      "title": "Häufige Fragen zur Beratung",
+      "title": "Die häufigsten Fragen zu Webseiten Beratung und Hilfe für Schweizer KMU.",
       "items": [
         {
           "question": "Was kostet eine Beratung bei Noevu?",
@@ -159,17 +159,17 @@
     },
     {
       "type": "blogGrid",
-      "title": "Hilfreiche Ressourcen",
-      "subtitle": "Tipps und Anleitungen",
+      "title": "Insights für den digitalen Vorsprung.",
+      "subtitle": "Diese Referenzen erfolgreicher KMU Webprojekte und helfen Euch, und zeigen wie professionelle Webseiten Beratung, Umsetzung und Pflege zu nachhaltigem Erfolg führen.",
       "limit": 3
     },
     {
       "type": "cta",
-      "title": "Braucht ihr Hilfe?",
-      "description": "Egal ob kleine Frage oder grösseres Anliegen – wir sind für euch da.",
+      "title": "Bereit für den ersten Schritt zu mehr Klarheit?",
+      "description": "Wenn Ihr eine Beratung sucht, die über oberflächliche Tipps hinausgeht und Euch einen echten strategischen Vorsprung verschafft, dann lasst uns reden. Euer erstes Gespräch ist der Beginn Eures digitalen Erfolgs – von der Beratung über die Erstellung bis zur laufenden Webseiten Pflege.",
       "ctas": [
         {
-          "label": "Kostenlose Beratung",
+          "label": "Kostenlose Webseiten-Beratung",
           "href": "/termin",
           "variant": "primary"
         },
