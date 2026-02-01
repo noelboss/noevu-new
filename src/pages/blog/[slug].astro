@@ -1,0 +1,35 @@
+---
+/**
+ * Dynamic blog post route
+ *
+ * Renders MDX blog posts using the Article layout.
+ * Static generation at build time for all blog posts.
+ */
+import { getCollection, render } from 'astro:content';
+import Article from '../../layouts/Article.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    // Use slug from frontmatter, or derive from filename (remove .md extension)
+    params: { slug: post.data.slug || post.id.replace(/\.md$/, '') },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Article
+  title={post.data.title}
+  excerpt={post.data.excerpt}
+  featuredImage={post.data.featuredImage}
+  categories={post.data.categories}
+  author={post.data.author}
+  publishedAt={post.data.publishedAt}
+  updatedAt={post.data.updatedAt}
+  readingTime={post.data.readingTime}
+>
+  <Content />
+</Article>
