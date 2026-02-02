@@ -1,15 +1,16 @@
 ---
-import type { TestimonialsSection } from '../../schemas/sections';
+import type { TestimonialsSection, Theme } from '../../schemas/sections';
 
 interface Props {
   data: TestimonialsSection;
+  theme?: Theme;
 }
 
-const { data } = Astro.props;
+const { data, theme } = Astro.props;
 const { title, rating, testimonials } = data;
 ---
 
-<section class="testimonials section">
+<section class="testimonials section" data-theme={theme}>
   <div class="container">
     {(title || rating) && (
       <div class="testimonials__header">
@@ -79,6 +80,26 @@ const { title, rating, testimonials } = data;
 <style>
   .testimonials {
     background-color: var(--color-bg-white);
+  }
+
+  /* Theme system styles */
+  .testimonials[data-theme] {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+  }
+
+  .testimonials[data-theme] .testimonials__title {
+    color: var(--theme-heading);
+  }
+
+  .testimonials[data-theme] .testimonials__item {
+    background-color: var(--theme-card-bg, var(--color-bg-cream));
+  }
+
+  .testimonials[data-theme] .testimonials__rating-text,
+  .testimonials[data-theme] .testimonials__source,
+  .testimonials[data-theme] .testimonials__role {
+    color: var(--theme-muted);
   }
 
   .testimonials__header {

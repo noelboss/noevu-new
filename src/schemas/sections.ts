@@ -1,5 +1,21 @@
 import { z } from 'zod';
 
+// Theme system - 10 variants from original noevu.ch site
+export const ThemeSchema = z.enum([
+  'dark',           // Primary content sections (most common)
+  'white',          // Light content areas
+  'white-bold',     // Emphasis with white background
+  'bright-inverse', // Inverted color scheme (orange bg)
+  'bright',         // Accent/highlight sections
+  'light-bold',     // Light background with bold elements
+  'black-bold',     // Hero sections, strong contrast
+  'black',          // Dark sections
+  'light',          // Light backgrounds
+  'dark-bold',      // Bold dark sections
+]);
+
+export type Theme = z.infer<typeof ThemeSchema>;
+
 // Base schemas for common patterns
 const ImageSchema = z.object({
   src: z.string(),
@@ -20,6 +36,7 @@ const RichTextSchema = z.string(); // Markdown content in string field
 // Section: Hero
 export const HeroSectionSchema = z.object({
   type: z.literal('hero'),
+  theme: ThemeSchema.optional(),
   headline: z.string(),
   subheadline: z.string().optional(),
   description: RichTextSchema.optional(),
@@ -37,6 +54,7 @@ export const HeroSectionSchema = z.object({
 // Section: Logo Gallery (Client logos)
 export const LogoGallerySectionSchema = z.object({
   type: z.literal('logoGallery'),
+  theme: ThemeSchema.optional(),
   title: z.string().optional(),
   logos: z.array(z.object({
     name: z.string(),
@@ -48,6 +66,7 @@ export const LogoGallerySectionSchema = z.object({
 // Section: Split Content (Two columns - image + content)
 export const SplitContentSectionSchema = z.object({
   type: z.literal('splitContent'),
+  theme: ThemeSchema.optional(),
   layout: z.enum(['imageLeft', 'imageRight']).default('imageLeft'),
   image: ImageSchema.optional(),
   title: z.string(),
@@ -60,6 +79,7 @@ export const SplitContentSectionSchema = z.object({
 // Section: Value Proposition (Three column cards)
 export const ValuePropositionSectionSchema = z.object({
   type: z.literal('valueProposition'),
+  theme: ThemeSchema.optional(),
   title: z.string().optional(),
   items: z.array(z.object({
     icon: z.string().optional(),
@@ -71,6 +91,7 @@ export const ValuePropositionSectionSchema = z.object({
 // Section: Services Grid
 export const ServicesGridSectionSchema = z.object({
   type: z.literal('servicesGrid'),
+  theme: ThemeSchema.optional(),
   title: z.string().optional(),
   subtitle: z.string().optional(),
   services: z.array(z.object({
@@ -85,6 +106,7 @@ export const ServicesGridSectionSchema = z.object({
 // Section: Comparison Table
 export const ComparisonTableSectionSchema = z.object({
   type: z.literal('comparisonTable'),
+  theme: ThemeSchema.optional(),
   title: z.string().optional(),
   leftColumn: z.object({
     header: z.string(),
@@ -101,6 +123,7 @@ export const ComparisonTableSectionSchema = z.object({
 // Section: Process Steps
 export const ProcessSectionSchema = z.object({
   type: z.literal('process'),
+  theme: ThemeSchema.optional(),
   title: z.string().optional(),
   subtitle: z.string().optional(),
   steps: z.array(z.object({
@@ -115,6 +138,7 @@ export const ProcessSectionSchema = z.object({
 // Section: Features List
 export const FeaturesListSectionSchema = z.object({
   type: z.literal('featuresList'),
+  theme: ThemeSchema.optional(),
   title: z.string().optional(),
   features: z.array(z.object({
     icon: z.string().optional(),
@@ -127,6 +151,7 @@ export const FeaturesListSectionSchema = z.object({
 // Section: Testimonials
 export const TestimonialsSectionSchema = z.object({
   type: z.literal('testimonials'),
+  theme: ThemeSchema.optional(),
   title: z.string().optional(),
   rating: z.object({
     average: z.number(),
@@ -146,6 +171,7 @@ export const TestimonialsSectionSchema = z.object({
 // Section: CTA Banner
 export const CTASectionSchema = z.object({
   type: z.literal('cta'),
+  theme: ThemeSchema.optional(),
   title: z.string(),
   description: RichTextSchema.optional(),
   ctas: z.array(LinkSchema).min(1).max(2),
@@ -156,6 +182,7 @@ export const CTASectionSchema = z.object({
 // Section: Text Content
 export const TextContentSectionSchema = z.object({
   type: z.literal('textContent'),
+  theme: ThemeSchema.optional(),
   title: z.string().optional(),
   content: RichTextSchema,
   alignment: z.enum(['left', 'center', 'right']).default('left'),
@@ -165,6 +192,7 @@ export const TextContentSectionSchema = z.object({
 // Section: FAQ Accordion
 export const FAQSectionSchema = z.object({
   type: z.literal('faq'),
+  theme: ThemeSchema.optional(),
   title: z.string().optional(),
   items: z.array(z.object({
     question: z.string(),
@@ -175,6 +203,7 @@ export const FAQSectionSchema = z.object({
 // Section: Blog Grid
 export const BlogGridSectionSchema = z.object({
   type: z.literal('blogGrid'),
+  theme: ThemeSchema.optional(),
   title: z.string().optional(),
   subtitle: z.string().optional(),
   posts: z.array(z.string()).optional(), // References to blog post slugs, or omit for latest
@@ -185,6 +214,8 @@ export const BlogGridSectionSchema = z.object({
 // Section: Wave Divider
 export const WaveDividerSectionSchema = z.object({
   type: z.literal('waveDivider'),
+  topTheme: ThemeSchema.optional(),
+  bottomTheme: ThemeSchema.optional(),
   topColor: z.enum(['beige', 'white', 'green']).default('beige'),
   bottomColor: z.enum(['beige', 'white', 'green']).default('green'),
   height: z.enum(['small', 'medium', 'large']).default('medium'),
@@ -193,6 +224,7 @@ export const WaveDividerSectionSchema = z.object({
 // Section: Contact Form
 export const ContactFormSectionSchema = z.object({
   type: z.literal('contactForm'),
+  theme: ThemeSchema.optional(),
   title: z.string().optional(),
   description: RichTextSchema.optional(),
   fields: z.array(z.object({
@@ -209,6 +241,7 @@ export const ContactFormSectionSchema = z.object({
 // Section: Newsletter Signup
 export const NewsletterSectionSchema = z.object({
   type: z.literal('newsletter'),
+  theme: ThemeSchema.optional(),
   title: z.string().optional(),
   description: z.string().optional(),
   buttonText: z.string().default('Jetzt anmelden'),

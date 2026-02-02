@@ -1,11 +1,12 @@
 ---
-import type { HeroSection } from '../../schemas/sections';
+import type { HeroSection, Theme } from '../../schemas/sections';
 
 interface Props {
   data: HeroSection;
+  theme?: Theme;
 }
 
-const { data } = Astro.props;
+const { data, theme } = Astro.props;
 const {
   headline,
   subheadline,
@@ -20,7 +21,7 @@ const {
 const alignmentClass = `hero--${alignment}`;
 ---
 
-<section class={`hero ${alignmentClass}`}>
+<section class={`hero ${alignmentClass}`} data-theme={theme}>
   {backgroundImage && (
     <div class="hero__background">
       <img
@@ -93,6 +94,8 @@ const alignmentClass = `hero--${alignment}`;
     position: relative;
     padding-block: var(--section-spacing-lg);
     overflow: hidden;
+    background-color: var(--theme-bg, var(--color-bg));
+    color: var(--theme-text, var(--color-text));
   }
 
   .hero__background {
@@ -153,11 +156,12 @@ const alignmentClass = `hero--${alignment}`;
     font-weight: var(--font-normal); /* Abril Fatface is always 400 */
     line-height: var(--leading-tight);
     margin-bottom: var(--space-6);
+    color: var(--theme-heading, var(--color-text));
   }
 
   .hero__description {
     font-size: var(--text-lg);
-    color: var(--color-text-muted);
+    color: var(--theme-text-muted, var(--color-text-muted));
     margin-bottom: var(--space-8);
   }
 
@@ -199,7 +203,7 @@ const alignmentClass = `hero--${alignment}`;
 
   .hero__rating-text {
     font-size: var(--text-sm);
-    color: var(--color-text-muted);
+    color: var(--theme-text-muted, var(--color-text-muted));
   }
 
   .hero__image img {

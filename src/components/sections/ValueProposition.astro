@@ -1,15 +1,16 @@
 ---
-import type { ValuePropositionSection } from '../../schemas/sections';
+import type { ValuePropositionSection, Theme } from '../../schemas/sections';
 
 interface Props {
   data: ValuePropositionSection;
+  theme?: Theme;
 }
 
-const { data } = Astro.props;
+const { data, theme } = Astro.props;
 const { title, items } = data;
 ---
 
-<section class="value-prop section">
+<section class="value-prop section" data-theme={theme}>
   <div class="container">
     {title && <h2 class="value-prop__title">{title}</h2>}
     <div class="value-prop__grid">
@@ -30,13 +31,15 @@ const { title, items } = data;
 
 <style>
   .value-prop {
-    background-color: var(--color-bg-beige);
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
   }
 
   .value-prop__title {
     text-align: center;
     font-size: var(--text-3xl);
     margin-bottom: var(--space-12);
+    color: var(--theme-heading);
   }
 
   .value-prop__grid {
@@ -70,9 +73,9 @@ const { title, items } = data;
     height: 3.5rem;
     margin-inline: auto;
     margin-bottom: var(--space-4);
-    background-color: var(--color-primary-100);
+    background-color: var(--theme-accent-bg);
     border-radius: var(--radius-lg);
-    color: var(--color-primary);
+    color: var(--theme-accent);
   }
 
   .value-prop__icon :global(svg) {
@@ -84,11 +87,12 @@ const { title, items } = data;
     font-size: var(--text-xl);
     font-weight: var(--font-semibold);
     margin-bottom: var(--space-3);
+    color: var(--theme-heading);
   }
 
   .value-prop__description {
     font-size: var(--text-base);
-    color: var(--color-text-muted);
+    color: var(--theme-text-muted);
     line-height: var(--leading-relaxed);
   }
 </style>

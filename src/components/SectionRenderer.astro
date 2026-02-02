@@ -9,6 +9,7 @@
  * Architecture principle: Pages are orchestration graphs, components are pure renderers.
  */
 import type { SectionEntry, Section } from '../schemas/sections';
+import { resolveTheme } from '../utils/theme';
 
 import Hero from './sections/Hero.astro';
 import LogoGallery from './sections/LogoGallery.astro';
@@ -80,5 +81,8 @@ const sectionComponents: Record<string, any> = {
     return null;
   }
 
-  return <Component data={section} />;
+  // Resolve theme with defaults based on section type
+  const theme = resolveTheme(section.type, (section as any).theme);
+
+  return <Component data={section} theme={theme} />;
 })}

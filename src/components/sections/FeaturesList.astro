@@ -1,17 +1,18 @@
 ---
-import type { FeaturesListSection } from '../../schemas/sections';
+import type { FeaturesListSection, Theme } from '../../schemas/sections';
 
 interface Props {
   data: FeaturesListSection;
+  theme?: Theme;
 }
 
-const { data } = Astro.props;
+const { data, theme } = Astro.props;
 const { title, features, columns = '2' } = data;
 
 const gridClass = `features-list--cols-${columns}`;
 ---
 
-<section class="features-list section">
+<section class="features-list section" data-theme={theme}>
   <div class="container">
     {title && <h2 class="features-list__title">{title}</h2>}
 
@@ -37,13 +38,15 @@ const gridClass = `features-list--cols-${columns}`;
 
 <style>
   .features-list {
-    background-color: var(--color-bg-beige);
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
   }
 
   .features-list__title {
     text-align: center;
     font-size: var(--text-3xl);
     margin-bottom: var(--space-12);
+    color: var(--theme-heading);
   }
 
   .features-list__grid {
@@ -76,9 +79,9 @@ const gridClass = `features-list--cols-${columns}`;
     justify-content: center;
     width: 2.5rem;
     height: 2.5rem;
-    background-color: var(--color-primary);
+    background-color: var(--theme-accent);
     border-radius: var(--radius);
-    color: var(--color-text-inverted);
+    color: var(--theme-accent-contrast);
   }
 
   .features-list__icon :global(svg) {
@@ -90,11 +93,12 @@ const gridClass = `features-list--cols-${columns}`;
     font-size: var(--text-lg);
     font-weight: var(--font-semibold);
     margin-bottom: var(--space-2);
+    color: var(--theme-heading);
   }
 
   .features-list__description {
     font-size: var(--text-base);
-    color: var(--color-text-muted);
+    color: var(--theme-text-muted);
     line-height: var(--leading-relaxed);
   }
 </style>

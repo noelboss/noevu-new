@@ -1,17 +1,18 @@
 ---
-import type { ServicesGridSection } from '../../schemas/sections';
+import type { ServicesGridSection, Theme } from '../../schemas/sections';
 
 interface Props {
   data: ServicesGridSection;
+  theme?: Theme;
 }
 
-const { data } = Astro.props;
+const { data, theme } = Astro.props;
 const { title, subtitle, services, columns = '4' } = data;
 
 const gridClass = `services-grid--cols-${columns}`;
 ---
 
-<section class="services-grid section">
+<section class="services-grid section" data-theme={theme}>
   <div class="container">
     {(title || subtitle) && (
       <div class="services-grid__header">
@@ -51,7 +52,8 @@ const gridClass = `services-grid--cols-${columns}`;
 
 <style>
   .services-grid {
-    background-color: var(--color-bg-white);
+    background-color: var(--theme-bg, var(--color-bg-white));
+    color: var(--theme-text, var(--color-text));
   }
 
   .services-grid__header {
@@ -64,11 +66,12 @@ const gridClass = `services-grid--cols-${columns}`;
   .services-grid__title {
     font-size: var(--text-3xl);
     margin-bottom: var(--space-4);
+    color: var(--theme-heading, var(--color-text));
   }
 
   .services-grid__subtitle {
     font-size: var(--text-lg);
-    color: var(--color-text-muted);
+    color: var(--theme-text-muted, var(--color-text-muted));
   }
 
   .services-grid__grid {
@@ -94,7 +97,7 @@ const gridClass = `services-grid--cols-${columns}`;
 
   .services-grid__item {
     padding: var(--space-6);
-    background-color: var(--color-bg-cream);
+    background-color: var(--theme-surface, var(--color-bg-cream));
     border-radius: var(--radius-lg);
     transition: transform var(--transition), box-shadow var(--transition);
   }
@@ -111,9 +114,9 @@ const gridClass = `services-grid--cols-${columns}`;
     width: 3rem;
     height: 3rem;
     margin-bottom: var(--space-4);
-    background-color: var(--color-primary);
+    background-color: var(--theme-accent, var(--color-primary));
     border-radius: var(--radius);
-    color: var(--color-text-inverted);
+    color: var(--theme-accent-text, var(--color-text-inverted));
   }
 
   .services-grid__icon :global(svg) {
@@ -125,11 +128,12 @@ const gridClass = `services-grid--cols-${columns}`;
     font-size: var(--text-lg);
     font-weight: var(--font-semibold);
     margin-bottom: var(--space-3);
+    color: var(--theme-heading, var(--color-text));
   }
 
   .services-grid__description {
     font-size: var(--text-sm);
-    color: var(--color-text-muted);
+    color: var(--theme-text-muted, var(--color-text-muted));
     line-height: var(--leading-relaxed);
     margin-bottom: var(--space-4);
   }
@@ -140,7 +144,7 @@ const gridClass = `services-grid--cols-${columns}`;
     gap: var(--space-1);
     font-size: var(--text-sm);
     font-weight: var(--font-medium);
-    color: var(--color-primary);
+    color: var(--theme-accent, var(--color-primary));
   }
 
   .services-grid__link svg {

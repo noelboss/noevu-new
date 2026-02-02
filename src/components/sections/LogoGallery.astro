@@ -1,15 +1,16 @@
 ---
-import type { LogoGallerySection } from '../../schemas/sections';
+import type { LogoGallerySection, Theme } from '../../schemas/sections';
 
 interface Props {
   data: LogoGallerySection;
+  theme?: Theme;
 }
 
-const { data } = Astro.props;
+const { data, theme } = Astro.props;
 const { title, logos } = data;
 ---
 
-<section class="logo-gallery section--sm">
+<section class="logo-gallery section--sm" data-theme={theme}>
   <div class="container">
     {title && <p class="logo-gallery__title">{title}</p>}
     <div class="logo-gallery__grid">
@@ -40,13 +41,13 @@ const { title, logos } = data;
 
 <style>
   .logo-gallery {
-    background-color: var(--color-bg-white);
+    background-color: var(--theme-bg);
   }
 
   .logo-gallery__title {
     text-align: center;
     font-size: var(--text-sm);
-    color: var(--color-text-muted);
+    color: var(--theme-text-muted);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: var(--space-8);

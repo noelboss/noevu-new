@@ -1,15 +1,16 @@
 ---
-import type { ComparisonTableSection } from '../../schemas/sections';
+import type { ComparisonTableSection, Theme } from '../../schemas/sections';
 
 interface Props {
   data: ComparisonTableSection;
+  theme?: Theme;
 }
 
-const { data } = Astro.props;
+const { data, theme } = Astro.props;
 const { title, leftColumn, rightColumn } = data;
 ---
 
-<section class="comparison section">
+<section class="comparison section" data-theme={theme}>
   <div class="container">
     {title && <h2 class="comparison__title">{title}</h2>}
 
@@ -58,10 +59,20 @@ const { title, leftColumn, rightColumn } = data;
     background-color: var(--color-bg-beige);
   }
 
+  /* When theme is applied, use theme variables */
+  .comparison[data-theme] {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+  }
+
   .comparison__title {
     text-align: center;
     font-size: var(--text-3xl);
     margin-bottom: var(--space-12);
+  }
+
+  .comparison[data-theme] .comparison__title {
+    color: var(--theme-heading);
   }
 
   .comparison__grid {
@@ -83,9 +94,19 @@ const { title, leftColumn, rightColumn } = data;
     border: 2px solid transparent;
   }
 
+  .comparison[data-theme] .comparison__column {
+    background-color: var(--theme-card-bg);
+    border-color: var(--theme-border);
+  }
+
   .comparison__column--highlighted {
     border-color: var(--color-primary);
     background-color: var(--color-primary-50);
+  }
+
+  .comparison[data-theme] .comparison__column--highlighted {
+    border-color: var(--theme-accent);
+    background-color: var(--theme-accent-subtle);
   }
 
   .comparison__header {
@@ -95,8 +116,16 @@ const { title, leftColumn, rightColumn } = data;
     text-align: center;
   }
 
+  .comparison[data-theme] .comparison__header {
+    color: var(--theme-heading);
+  }
+
   .comparison__column--highlighted .comparison__header {
     color: var(--color-primary);
+  }
+
+  .comparison[data-theme] .comparison__column--highlighted .comparison__header {
+    color: var(--theme-accent);
   }
 
   .comparison__list {
@@ -114,6 +143,10 @@ const { title, leftColumn, rightColumn } = data;
     font-size: var(--text-base);
   }
 
+  .comparison[data-theme] .comparison__item {
+    border-bottom-color: var(--theme-border);
+  }
+
   .comparison__item:last-child {
     border-bottom: none;
   }
@@ -129,7 +162,15 @@ const { title, leftColumn, rightColumn } = data;
     color: var(--color-primary);
   }
 
+  .comparison[data-theme] .comparison__column--highlighted .comparison__icon {
+    color: var(--theme-accent);
+  }
+
   .comparison__column:not(.comparison__column--highlighted) .comparison__icon {
     color: var(--color-neutral-400);
+  }
+
+  .comparison[data-theme] .comparison__column:not(.comparison__column--highlighted) .comparison__icon {
+    color: var(--theme-text-muted);
   }
 </style>

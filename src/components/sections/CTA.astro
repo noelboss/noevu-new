@@ -1,17 +1,20 @@
 ---
-import type { CTASection } from '../../schemas/sections';
+import type { CTASection, Theme } from '../../schemas/sections';
 
 interface Props {
   data: CTASection;
+  theme?: Theme;
 }
 
-const { data } = Astro.props;
+const { data, theme } = Astro.props;
 const { title, description, ctas, backgroundColor = 'green', image } = data;
 
-const bgClass = `cta--${backgroundColor}`;
+// Use theme system when available, fall back to backgroundColor classes for backward compatibility
+const bgClass = theme ? '' : `cta--${backgroundColor}`;
+const useTheme = !!theme;
 ---
 
-<section class={`cta section ${bgClass}`}>
+<section class={`cta section ${bgClass}`} data-theme={theme}>
   <div class="cta__container container">
     {image && (
       <div class="cta__image">
@@ -46,6 +49,17 @@ const bgClass = `cta--${backgroundColor}`;
     text-align: center;
   }
 
+  /* Theme system styles */
+  .cta[data-theme] {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+  }
+
+  .cta[data-theme] .cta__title {
+    color: var(--theme-heading);
+  }
+
+  /* Legacy backgroundColor styles for backward compatibility */
   .cta--green {
     background-color: var(--color-primary);
     color: var(--color-text-inverted);

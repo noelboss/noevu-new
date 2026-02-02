@@ -1,17 +1,18 @@
 ---
-import type { ProcessSection } from '../../schemas/sections';
+import type { ProcessSection, Theme } from '../../schemas/sections';
 
 interface Props {
   data: ProcessSection;
+  theme?: Theme;
 }
 
-const { data } = Astro.props;
+const { data, theme } = Astro.props;
 const { title, subtitle, steps, layout = 'alternating' } = data;
 
 const layoutClass = `process--${layout}`;
 ---
 
-<section class={`process section ${layoutClass}`}>
+<section class={`process section ${layoutClass}`} data-theme={theme}>
   <div class="container">
     {(title || subtitle) && (
       <div class="process__header">
@@ -47,8 +48,8 @@ const layoutClass = `process--${layout}`;
 
 <style>
   .process {
-    background-color: var(--color-primary);
-    color: var(--color-text-inverted);
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
   }
 
   .process__header {
@@ -60,13 +61,13 @@ const layoutClass = `process--${layout}`;
 
   .process__title {
     font-size: var(--text-3xl);
-    color: var(--color-text-inverted);
+    color: var(--theme-heading);
     margin-bottom: var(--space-4);
   }
 
   .process__subtitle {
     font-size: var(--text-lg);
-    color: var(--color-primary-200);
+    color: var(--theme-text-muted);
   }
 
   .process__steps {
@@ -109,21 +110,21 @@ const layoutClass = `process--${layout}`;
     height: 2.5rem;
     font-size: var(--text-lg);
     font-weight: var(--font-bold);
-    background-color: var(--color-accent);
-    color: var(--color-text-inverted);
+    background-color: var(--theme-accent);
+    color: var(--theme-accent-text);
     border-radius: var(--radius-full);
     margin-bottom: var(--space-4);
   }
 
   .process__step-title {
     font-size: var(--text-2xl);
-    color: var(--color-text-inverted);
+    color: var(--theme-heading);
     margin-bottom: var(--space-4);
   }
 
   .process__description {
     font-size: var(--text-lg);
-    color: var(--color-primary-100);
+    color: var(--theme-text-muted);
     line-height: var(--leading-relaxed);
   }
 

@@ -1,0 +1,285 @@
+/* ============================================
+   THEME SYSTEM
+   10 variants from original noevu.ch site
+   Applied via data-theme attribute on sections
+   ============================================ */
+
+/* Theme: dark (most common - primary content sections) */
+[data-theme="dark"] {
+  --theme-bg: var(--color-primary-700);
+  --theme-bg-subtle: var(--color-primary-800);
+  --theme-text: var(--color-text-inverted);
+  --theme-text-muted: var(--color-primary-200);
+  --theme-heading: var(--color-text-inverted);
+  --theme-accent: var(--color-accent);
+  --theme-border: var(--color-primary-600);
+  --theme-card-bg: var(--color-primary-600);
+  --theme-link: var(--color-accent-300);
+  --theme-link-hover: var(--color-accent-200);
+}
+
+/* Theme: white (light content areas) */
+[data-theme="white"] {
+  --theme-bg: var(--color-bg-white);
+  --theme-bg-subtle: var(--color-bg-cream);
+  --theme-text: var(--color-text);
+  --theme-text-muted: var(--color-text-muted);
+  --theme-heading: var(--color-text);
+  --theme-accent: var(--color-primary);
+  --theme-border: var(--color-neutral-200);
+  --theme-card-bg: var(--color-bg-cream);
+  --theme-link: var(--color-primary);
+  --theme-link-hover: var(--color-primary-700);
+}
+
+/* Theme: white-bold (emphasis with white background) */
+[data-theme="white-bold"] {
+  --theme-bg: var(--color-bg-white);
+  --theme-bg-subtle: var(--color-bg-cream);
+  --theme-text: var(--color-text);
+  --theme-text-muted: var(--color-text-muted);
+  --theme-heading: var(--color-primary);
+  --theme-accent: var(--color-accent);
+  --theme-border: var(--color-neutral-300);
+  --theme-card-bg: var(--color-bg-cream);
+  --theme-link: var(--color-primary);
+  --theme-link-hover: var(--color-primary-700);
+}
+
+/* Theme: bright-inverse (inverted color scheme - orange bg) */
+[data-theme="bright-inverse"] {
+  --theme-bg: var(--color-accent);
+  --theme-bg-subtle: var(--color-accent-600);
+  --theme-text: var(--color-text-inverted);
+  --theme-text-muted: var(--color-accent-100);
+  --theme-heading: var(--color-text-inverted);
+  --theme-accent: var(--color-text-inverted);
+  --theme-border: var(--color-accent-400);
+  --theme-card-bg: var(--color-accent-600);
+  --theme-link: var(--color-text-inverted);
+  --theme-link-hover: var(--color-accent-100);
+}
+
+/* Theme: bright (accent/highlight sections) */
+[data-theme="bright"] {
+  --theme-bg: var(--color-bg-beige);
+  --theme-bg-subtle: var(--color-bg-cream);
+  --theme-text: var(--color-text);
+  --theme-text-muted: var(--color-text-muted);
+  --theme-heading: var(--color-accent);
+  --theme-accent: var(--color-accent);
+  --theme-border: var(--color-neutral-200);
+  --theme-card-bg: var(--color-bg-white);
+  --theme-link: var(--color-accent);
+  --theme-link-hover: var(--color-accent-600);
+}
+
+/* Theme: light-bold (light background with bold elements) */
+[data-theme="light-bold"] {
+  --theme-bg: var(--color-bg-beige);
+  --theme-bg-subtle: var(--color-bg-cream);
+  --theme-text: var(--color-text);
+  --theme-text-muted: var(--color-text-muted);
+  --theme-heading: var(--color-primary);
+  --theme-accent: var(--color-primary);
+  --theme-border: var(--color-neutral-200);
+  --theme-card-bg: var(--color-bg-white);
+  --theme-link: var(--color-primary);
+  --theme-link-hover: var(--color-primary-700);
+}
+
+/* Theme: black-bold (hero sections, strong contrast) */
+[data-theme="black-bold"] {
+  --theme-bg: var(--color-neutral-900);
+  --theme-bg-subtle: var(--color-neutral-800);
+  --theme-text: var(--color-text-inverted);
+  --theme-text-muted: var(--color-neutral-300);
+  --theme-heading: var(--color-text-inverted);
+  --theme-accent: var(--color-accent);
+  --theme-border: var(--color-neutral-700);
+  --theme-card-bg: var(--color-neutral-800);
+  --theme-link: var(--color-accent);
+  --theme-link-hover: var(--color-accent-300);
+}
+
+/* Theme: light (light backgrounds - subtle) */
+[data-theme="light"] {
+  --theme-bg: var(--color-bg-cream);
+  --theme-bg-subtle: var(--color-bg-white);
+  --theme-text: var(--color-text);
+  --theme-text-muted: var(--color-text-muted);
+  --theme-heading: var(--color-text);
+  --theme-accent: var(--color-primary);
+  --theme-border: var(--color-neutral-200);
+  --theme-card-bg: var(--color-bg-white);
+  --theme-link: var(--color-primary);
+  --theme-link-hover: var(--color-primary-700);
+}
+
+/* Theme: black (dark sections) */
+[data-theme="black"] {
+  --theme-bg: var(--color-neutral-900);
+  --theme-bg-subtle: var(--color-neutral-800);
+  --theme-text: var(--color-text-inverted);
+  --theme-text-muted: var(--color-neutral-400);
+  --theme-heading: var(--color-text-inverted);
+  --theme-accent: var(--color-accent);
+  --theme-border: var(--color-neutral-700);
+  --theme-card-bg: var(--color-neutral-800);
+  --theme-link: var(--color-accent);
+  --theme-link-hover: var(--color-accent-300);
+}
+
+/* Theme: dark-bold (bold dark sections - CTA) */
+[data-theme="dark-bold"] {
+  --theme-bg: var(--color-primary);
+  --theme-bg-subtle: var(--color-primary-600);
+  --theme-text: var(--color-text-inverted);
+  --theme-text-muted: var(--color-primary-100);
+  --theme-heading: var(--color-text-inverted);
+  --theme-accent: var(--color-accent);
+  --theme-border: var(--color-primary-600);
+  --theme-card-bg: var(--color-primary-600);
+  --theme-link: var(--color-accent);
+  --theme-link-hover: var(--color-accent-300);
+}
+
+/* ============================================
+   THEME-AWARE SECTION BASE STYLES
+   ============================================ */
+
+.section[data-theme] {
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+}
+
+.section[data-theme] h1,
+.section[data-theme] h2,
+.section[data-theme] h3,
+.section[data-theme] h4,
+.section[data-theme] h5,
+.section[data-theme] h6 {
+  color: var(--theme-heading);
+}
+
+.section[data-theme] a:not(.btn) {
+  color: var(--theme-link);
+  transition: color var(--transition);
+}
+
+.section[data-theme] a:not(.btn):hover {
+  color: var(--theme-link-hover);
+}
+
+/* ============================================
+   THEME-AWARE BUTTON STYLES
+   ============================================ */
+
+/* Primary button on dark themes */
+[data-theme="dark"] .btn--primary,
+[data-theme="dark-bold"] .btn--primary,
+[data-theme="black"] .btn--primary,
+[data-theme="black-bold"] .btn--primary {
+  background-color: var(--color-accent);
+  color: var(--color-neutral-900);
+}
+
+[data-theme="dark"] .btn--primary:hover,
+[data-theme="dark-bold"] .btn--primary:hover,
+[data-theme="black"] .btn--primary:hover,
+[data-theme="black-bold"] .btn--primary:hover {
+  background-color: var(--color-accent-400);
+}
+
+/* Secondary button on dark themes */
+[data-theme="dark"] .btn--secondary,
+[data-theme="dark-bold"] .btn--secondary,
+[data-theme="black"] .btn--secondary,
+[data-theme="black-bold"] .btn--secondary {
+  color: var(--color-text-inverted);
+  border-color: var(--color-text-inverted);
+}
+
+[data-theme="dark"] .btn--secondary:hover,
+[data-theme="dark-bold"] .btn--secondary:hover,
+[data-theme="black"] .btn--secondary:hover,
+[data-theme="black-bold"] .btn--secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Primary button on bright-inverse theme */
+[data-theme="bright-inverse"] .btn--primary {
+  background-color: var(--color-text-inverted);
+  color: var(--color-accent);
+}
+
+[data-theme="bright-inverse"] .btn--primary:hover {
+  background-color: var(--color-accent-100);
+}
+
+/* Secondary button on bright-inverse theme */
+[data-theme="bright-inverse"] .btn--secondary {
+  color: var(--color-text-inverted);
+  border-color: var(--color-text-inverted);
+}
+
+/* Primary button on light themes */
+[data-theme="white"] .btn--primary,
+[data-theme="white-bold"] .btn--primary,
+[data-theme="light"] .btn--primary,
+[data-theme="light-bold"] .btn--primary,
+[data-theme="bright"] .btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverted);
+}
+
+[data-theme="white"] .btn--primary:hover,
+[data-theme="white-bold"] .btn--primary:hover,
+[data-theme="light"] .btn--primary:hover,
+[data-theme="light-bold"] .btn--primary:hover,
+[data-theme="bright"] .btn--primary:hover {
+  background-color: var(--color-primary-600);
+}
+
+/* ============================================
+   THEME-AWARE CARD STYLES
+   ============================================ */
+
+.section[data-theme] .card {
+  background-color: var(--theme-card-bg);
+  border-color: var(--theme-border);
+}
+
+/* ============================================
+   THEME-AWARE FORM STYLES
+   ============================================ */
+
+.section[data-theme] input,
+.section[data-theme] textarea,
+.section[data-theme] select {
+  background-color: var(--theme-bg-subtle);
+  border-color: var(--theme-border);
+  color: var(--theme-text);
+}
+
+.section[data-theme] input::placeholder,
+.section[data-theme] textarea::placeholder {
+  color: var(--theme-text-muted);
+}
+
+/* ============================================
+   THEME-AWARE ICON STYLES
+   ============================================ */
+
+.section[data-theme] .icon {
+  color: var(--theme-accent);
+}
+
+/* ============================================
+   THEME-AWARE DIVIDER STYLES
+   ============================================ */
+
+.section[data-theme] hr,
+.section[data-theme] .divider {
+  border-color: var(--theme-border);
+}

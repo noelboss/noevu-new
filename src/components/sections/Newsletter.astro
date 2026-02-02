@@ -5,13 +5,14 @@
  * Email signup form for blog/marketing pages.
  * Uses simple form that can be connected to email service.
  */
-import type { NewsletterSection } from '../../schemas/sections';
+import type { NewsletterSection, Theme } from '../../schemas/sections';
 
 interface Props {
   data: NewsletterSection;
+  theme?: Theme;
 }
 
-const { data } = Astro.props;
+const { data, theme } = Astro.props;
 const {
   title = 'Insights für euren digitalen Vorsprung',
   description = 'Erhaltet regelmässig Tipps, News und Strategien rund um Webdesign, AI und digitales Marketing – direkt in euren Posteingang.',
@@ -21,10 +22,11 @@ const {
   backgroundColor = 'green',
 } = data;
 
-const bgClass = `newsletter--${backgroundColor}`;
+// Use theme system when available, fall back to backgroundColor classes for backward compatibility
+const bgClass = theme ? '' : `newsletter--${backgroundColor}`;
 ---
 
-<section class={`newsletter section ${bgClass}`}>
+<section class={`newsletter section ${bgClass}`} data-theme={theme}>
   <div class="newsletter__container container">
     <div class="newsletter__content">
       <h2 class="newsletter__title">{title}</h2>
@@ -55,6 +57,41 @@ const bgClass = `newsletter--${backgroundColor}`;
     text-align: center;
   }
 
+  /* Theme system styles */
+  .newsletter[data-theme] {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+  }
+
+  .newsletter[data-theme] .newsletter__title {
+    color: var(--theme-heading);
+  }
+
+  .newsletter[data-theme] .newsletter__input {
+    background-color: var(--theme-input-bg, rgba(255, 255, 255, 0.15));
+    color: var(--theme-text);
+    border-color: var(--theme-input-border, transparent);
+  }
+
+  .newsletter[data-theme] .newsletter__input::placeholder {
+    color: var(--theme-text-muted, rgba(255, 255, 255, 0.7));
+  }
+
+  .newsletter[data-theme] .newsletter__input:focus {
+    border-color: var(--theme-input-focus, var(--theme-accent));
+    background-color: var(--theme-input-bg-focus, rgba(255, 255, 255, 0.25));
+  }
+
+  .newsletter[data-theme] .newsletter__button {
+    background-color: var(--theme-accent);
+    color: var(--theme-accent-text, var(--color-text-inverted));
+  }
+
+  .newsletter[data-theme] .newsletter__button:hover {
+    background-color: var(--theme-accent-hover);
+  }
+
+  /* Legacy backgroundColor styles for backward compatibility */
   .newsletter--green {
     background-color: var(--color-primary);
     color: var(--color-text-inverted);

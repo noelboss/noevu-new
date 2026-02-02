@@ -1,18 +1,19 @@
 ---
-import type { ContactFormSection } from '../../schemas/sections';
+import type { ContactFormSection, Theme } from '../../schemas/sections';
 
 interface Props {
   data: ContactFormSection;
+  theme?: Theme;
 }
 
-const { data } = Astro.props;
+const { data, theme } = Astro.props;
 const { title, description, fields, submitLabel = 'Absenden', successMessage } = data;
 
 // Generate unique form ID for accessibility
 const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
 ---
 
-<section class="contact-form section">
+<section class="contact-form section" data-theme={theme}>
   <div class="container">
     <div class="contact-form__grid">
       <div class="contact-form__content">
@@ -83,7 +84,8 @@ const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
 
 <style>
   .contact-form {
-    background-color: var(--color-bg-beige);
+    background-color: var(--theme-bg, var(--color-bg-beige));
+    color: var(--theme-text, var(--color-text));
   }
 
   .contact-form__grid {
@@ -106,7 +108,7 @@ const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
 
   .contact-form__description {
     font-size: var(--text-lg);
-    color: var(--color-text-muted);
+    color: var(--theme-text-muted, var(--color-text-muted));
     line-height: var(--leading-relaxed);
   }
 
@@ -118,7 +120,7 @@ const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
     display: flex;
     flex-direction: column;
     gap: var(--space-5);
-    background-color: var(--color-bg-white);
+    background-color: var(--theme-surface, var(--color-bg-white));
     padding: var(--space-8);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-card);
@@ -133,11 +135,11 @@ const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
   .contact-form__label {
     font-size: var(--text-sm);
     font-weight: var(--font-medium);
-    color: var(--color-text);
+    color: var(--theme-text, var(--color-text));
   }
 
   .contact-form__required {
-    color: var(--color-accent);
+    color: var(--theme-accent, var(--color-accent));
     margin-left: var(--space-1);
   }
 
@@ -146,8 +148,8 @@ const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
     padding: var(--space-3) var(--space-4);
     font-family: var(--font-sans);
     font-size: var(--text-base);
-    color: var(--color-text);
-    background-color: var(--color-bg-cream);
+    color: var(--theme-text, var(--color-text));
+    background-color: var(--theme-input-bg, var(--color-bg-cream));
     border: 2px solid transparent;
     border-radius: var(--radius);
     transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
@@ -155,12 +157,12 @@ const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
 
   .contact-form__input:focus {
     outline: none;
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px var(--color-primary-100);
+    border-color: var(--theme-primary, var(--color-primary));
+    box-shadow: 0 0 0 3px var(--theme-primary-light, var(--color-primary-100));
   }
 
   .contact-form__input::placeholder {
-    color: var(--color-text-muted);
+    color: var(--theme-text-muted, var(--color-text-muted));
   }
 
   .contact-form__textarea {
@@ -198,12 +200,12 @@ const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
   }
 
   .contact-form__success {
-    color: var(--color-primary);
+    color: var(--theme-primary, var(--color-primary));
     font-weight: var(--font-medium);
   }
 
   .contact-form__error {
-    color: var(--color-accent-700);
+    color: var(--theme-error, var(--color-accent-700));
     font-weight: var(--font-medium);
     display: none;
   }
@@ -218,11 +220,11 @@ const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
 
   /* Validation states */
   .contact-form__input:invalid:not(:placeholder-shown) {
-    border-color: var(--color-accent-600);
+    border-color: var(--theme-error, var(--color-accent-600));
   }
 
   .contact-form__input:valid:not(:placeholder-shown) {
-    border-color: var(--color-primary-400);
+    border-color: var(--theme-success, var(--color-primary-400));
   }
 </style>
 

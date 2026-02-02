@@ -1,11 +1,12 @@
 ---
-import type { SplitContentSection } from '../../schemas/sections';
+import type { SplitContentSection, Theme } from '../../schemas/sections';
 
 interface Props {
   data: SplitContentSection;
+  theme?: Theme;
 }
 
-const { data } = Astro.props;
+const { data, theme } = Astro.props;
 const {
   layout = 'imageLeft',
   image,
@@ -16,11 +17,12 @@ const {
   backgroundColor = 'beige',
 } = data;
 
-const bgClass = `bg-${backgroundColor}`;
+// Use theme system when available, fall back to backgroundColor classes for backward compatibility
+const bgClass = theme ? '' : `bg-${backgroundColor}`;
 const layoutClass = `split-content--${layout}`;
 ---
 
-<section class={`split-content section ${bgClass} ${layoutClass}`}>
+<section class={`split-content section ${bgClass} ${layoutClass}`} data-theme={theme}>
   <div class="split-content__container container">
     {image && (
       <div class="split-content__image">
@@ -53,6 +55,28 @@ const layoutClass = `split-content--${layout}`;
 </section>
 
 <style>
+  /* Theme system styles */
+  .split-content[data-theme] {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+  }
+
+  .split-content[data-theme] .split-content__subtitle {
+    color: var(--theme-accent);
+  }
+
+  .split-content[data-theme] .split-content__title {
+    color: var(--theme-heading);
+  }
+
+  .split-content[data-theme] .split-content__content {
+    color: var(--theme-text-muted);
+  }
+
+  .split-content[data-theme] .split-content__content :global(li::before) {
+    color: var(--theme-accent);
+  }
+
   .split-content__container {
     display: grid;
     gap: var(--space-12);
@@ -119,6 +143,7 @@ const layoutClass = `split-content--${layout}`;
     font-weight: var(--font-bold);
   }
 
+  /* Legacy backgroundColor styles for backward compatibility */
   /* Orange background variant */
   .bg-orange {
     background-color: var(--color-accent);

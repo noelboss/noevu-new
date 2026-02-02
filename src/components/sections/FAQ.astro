@@ -1,18 +1,19 @@
 ---
-import type { FAQSection } from '../../schemas/sections';
+import type { FAQSection, Theme } from '../../schemas/sections';
 
 interface Props {
   data: FAQSection;
+  theme?: Theme;
 }
 
-const { data } = Astro.props;
+const { data, theme } = Astro.props;
 const { title, items } = data;
 
 // Generate unique IDs for accessibility
 const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
 ---
 
-<section class="faq section">
+<section class="faq section" data-theme={theme}>
   <div class="container">
     {title && <h2 class="faq__title">{title}</h2>}
 
@@ -44,10 +45,20 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
     background-color: var(--color-bg-cream);
   }
 
+  /* When theme is applied, use theme variables */
+  .faq[data-theme] {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+  }
+
   .faq__title {
     text-align: center;
     font-size: var(--text-3xl);
     margin-bottom: var(--space-12);
+  }
+
+  .faq[data-theme] .faq__title {
+    color: var(--theme-heading);
   }
 
   .faq__list {
@@ -59,8 +70,16 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
     border-bottom: 1px solid var(--color-neutral-200);
   }
 
+  .faq[data-theme] .faq__item {
+    border-bottom-color: var(--theme-border);
+  }
+
   .faq__item:first-child {
     border-top: 1px solid var(--color-neutral-200);
+  }
+
+  .faq[data-theme] .faq__item:first-child {
+    border-top-color: var(--theme-border);
   }
 
   .faq__question {
@@ -75,6 +94,10 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
     text-align: left;
     cursor: pointer;
     list-style: none;
+  }
+
+  .faq[data-theme] .faq__question {
+    color: var(--theme-text);
   }
 
   .faq__question::-webkit-details-marker {
@@ -93,6 +116,10 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
     transition: transform var(--transition);
   }
 
+  .faq[data-theme] .faq__icon {
+    color: var(--theme-accent);
+  }
+
   .faq__item[open] .faq__icon {
     transform: rotate(180deg);
   }
@@ -101,6 +128,10 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
     padding-bottom: var(--space-6);
     color: var(--color-text-muted);
     line-height: var(--leading-relaxed);
+  }
+
+  .faq[data-theme] .faq__answer {
+    color: var(--theme-text-muted);
   }
 
   .faq__answer :global(p) {
@@ -114,6 +145,14 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
   .faq__answer :global(a) {
     color: var(--color-primary);
     text-decoration: underline;
+  }
+
+  .faq[data-theme] .faq__answer :global(a) {
+    color: var(--theme-link);
+  }
+
+  .faq[data-theme] .faq__answer :global(a:hover) {
+    color: var(--theme-link-hover);
   }
 
   .faq__answer :global(ul) {

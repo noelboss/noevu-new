@@ -1,13 +1,29 @@
 ---
-import type { WaveDividerSection } from '../../schemas/sections';
+import type { WaveDividerSection, Theme } from '../../schemas/sections';
 
 interface Props {
   data: WaveDividerSection;
+  theme?: Theme;
 }
 
 const { data } = Astro.props;
-const { topColor = 'beige', bottomColor = 'green', height = 'medium' } = data;
+const { topColor = 'beige', bottomColor = 'green', topTheme, bottomTheme, height = 'medium' } = data;
 
+// Theme to color mapping - maps theme names to CSS custom properties
+const themeColorMap: Record<Theme, string> = {
+  'dark': 'var(--color-primary)',
+  'white': 'var(--color-bg-white)',
+  'white-bold': 'var(--color-bg-white)',
+  'bright-inverse': 'var(--color-accent)',
+  'bright': 'var(--color-accent)',
+  'light-bold': 'var(--color-bg-beige)',
+  'black-bold': 'var(--color-text)',
+  'black': 'var(--color-text)',
+  'light': 'var(--color-bg-beige)',
+  'dark-bold': 'var(--color-primary)',
+};
+
+// Legacy color mapping for backward compatibility
 const colorMap: Record<string, string> = {
   beige: 'var(--color-bg-beige)',
   white: 'var(--color-bg-white)',
@@ -21,8 +37,9 @@ const heightMap: Record<string, string> = {
   large: '150px',
 };
 
-const topColorValue = colorMap[topColor] || colorMap.beige;
-const bottomColorValue = colorMap[bottomColor] || colorMap.green;
+// Use theme values when available, otherwise fall back to color values
+const topColorValue = topTheme ? themeColorMap[topTheme] : (colorMap[topColor] || colorMap.beige);
+const bottomColorValue = bottomTheme ? themeColorMap[bottomTheme] : (colorMap[bottomColor] || colorMap.green);
 const heightValue = heightMap[height] || heightMap.medium;
 ---
 

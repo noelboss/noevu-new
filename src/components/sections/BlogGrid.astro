@@ -1,9 +1,10 @@
 ---
-import type { BlogGridSection } from '../../schemas/sections';
+import type { BlogGridSection, Theme } from '../../schemas/sections';
 import BlogCard from '../blog/BlogCard.astro';
 
 interface Props {
   data: BlogGridSection;
+  theme?: Theme;
   posts?: Array<{
     title: string;
     slug: string;
@@ -18,14 +19,14 @@ interface Props {
   }>;
 }
 
-const { data, posts = [] } = Astro.props;
+const { data, theme, posts = [] } = Astro.props;
 const { title, subtitle, limit = 6, showCategories = true } = data;
 
 // Use provided posts or limit them
 const displayPosts = posts.slice(0, limit);
 ---
 
-<section class="blog-grid section">
+<section class="blog-grid section" data-theme={theme}>
   <div class="container">
     {(title || subtitle) && (
       <div class="blog-grid__header">
@@ -62,7 +63,7 @@ const displayPosts = posts.slice(0, limit);
 
 <style>
   .blog-grid {
-    background-color: var(--color-bg-beige);
+    background-color: var(--theme-bg);
   }
 
   .blog-grid__header {
@@ -75,11 +76,12 @@ const displayPosts = posts.slice(0, limit);
   .blog-grid__title {
     font-size: var(--text-3xl);
     margin-bottom: var(--space-4);
+    color: var(--theme-text);
   }
 
   .blog-grid__subtitle {
     font-size: var(--text-lg);
-    color: var(--color-text-muted);
+    color: var(--theme-text-muted);
   }
 
   .blog-grid__grid {
@@ -101,7 +103,7 @@ const displayPosts = posts.slice(0, limit);
 
   .blog-grid__empty {
     text-align: center;
-    color: var(--color-text-muted);
+    color: var(--theme-text-muted);
     padding: var(--space-12);
   }
 
