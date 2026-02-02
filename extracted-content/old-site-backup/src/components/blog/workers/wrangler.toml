@@ -1,0 +1,12 @@
+name = "blog-html-rewriter"
+main = "src/index.js"
+compatibility_date = "2023-07-24"
+
+[site]
+  bucket = "./public"
+
+[env.production]
+route = "noevu.ch/blog/*"
+
+[env.staging]
+route = "staging.noevu.ch/blog/*"

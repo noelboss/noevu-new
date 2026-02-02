@@ -1,0 +1,52 @@
+@import "./../mixins.less";
+
+/* bright gradients */
+section.white .section-background {
+    background-image: linear-gradient(hsla(@whiteVar, 1),
+            hsla(@beigeVar, 1)) !important;
+}
+
+section.white-bold .section-background {
+    background-image: linear-gradient(hsla(@beigeVar, 1),
+            hsla(@whiteVar, 1)) !important;
+}
+
+#siteWrapper section[id*="gradient-down-green"] {
+    .section-background {
+        background: linear-gradient(0deg, #141110 0%, #235f52 100%);
+    }
+}
+
+#siteWrapper section[id*="gradient-up-green"] {
+    .section-background {
+        background: linear-gradient(0deg, #235f52 0%, #141110 100%);
+        --accent-hsl: 0, 0%, 0%;
+    }
+}
+
+#siteWrapper section[id*="gradient-down-dark"] {
+    .section-background {
+        background: linear-gradient(0deg, #141110 0%, #0b201c 100%);
+    }
+}
+
+#siteWrapper section[id*="gradient-up-dark"] {
+    .section-background {
+        background: linear-gradient(0deg, #0b201c 0%, #141110 100%);
+    }
+}
+
+#siteWrapper section.background-width--inset {
+
+    .section-background,
+    .section-background-canvas {
+        .wideBorderRadius();
+        .defaultBoxShadow(@greenVar, @blackVar);
+    }
+
+    &.bright {
+        .accordion-item {
+            .accordion-item__title {}
+        }
+    }
+}

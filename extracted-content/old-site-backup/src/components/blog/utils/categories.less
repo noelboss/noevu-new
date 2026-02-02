@@ -1,0 +1,59 @@
+@import "../../../mixins.less";
+
+#siteWrapper {
+  .blog-item-wrapper .blog-categories-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .category-list {
+      margin-bottom: 5px;
+      flex-wrap: wrap;
+    }
+  }
+  .blog-categories-container {
+    display: flex;
+    flex-direction: column;
+
+    .blog-basic-grid & {
+      .category-group--service {
+        display: none;
+      }
+    }
+
+    .category-separator {
+      display: none;
+    }
+
+    a {
+      .tags();
+      text-wrap: nowrap;
+    }
+    .category-group {
+      order: 2;
+      margin-right: 10px;
+      .category-group__title {
+        display: none;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 5px;
+      }
+    }
+    .category-group--branche {
+      order: 1;
+      a {
+        background-color: hsla(@greenHex, 0.7);
+        color: @white;
+      }
+      .category-list__item {
+        display: none;
+        &:first-child {
+          display: block;
+        }
+      }
+    }
+  }
+}

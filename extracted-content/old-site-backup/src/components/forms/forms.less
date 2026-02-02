@@ -1,0 +1,23 @@
+@import "../../mixins.less";
+
+#siteWrapper {
+  .form-wrapper {
+    .line-field {
+      margin-bottom: 0.5em !important;
+
+      .title {
+        font-size: 2rem !important;
+      }
+    }
+    .underline {
+      border-bottom-width: 0;
+    }
+  }
+}
+
+#termin .cal-embed {
+  @media screen and (min-width: 769px) {
+    height: 510px;
+    max-height: 510px;
+  }
+}

@@ -1,0 +1,355 @@
+@import "../../mixins.less";
+
+/* ── Dropdown menu makeover 		  (Squarespace 7.1) ───────────── */
+/* tweakables */
+@ddBg: rgba(255, 255, 255, 0.75);
+@ddBlur: 20px;
+@ddRadius: var(--default-border-radius);
+@paddingX: var(--nav-padding-x, 2em);
+@paddingY: var(--nav-padding-y, 0.75em);
+@menuDistance: var(--nav-menu-distance, 1em);
+
+#header {
+  .header-nav-item--folder {
+    position: static;
+
+    /* services */
+    &:nth-child(1) .header-nav-folder-item {
+
+      /* websites */
+      &:nth-child(1)>a {
+        &:before {
+          content: "domain_verification";
+        }
+
+        &:after {
+          content: "Professionelle KMU Webseiten Entwicklungen für jedes Budget";
+
+          html[lang="en"] & {
+            content: "Professional SME website developments for every budget";
+          }
+        }
+      }
+
+      /* beratung */
+      &:nth-child(2)>a {
+        &:before {
+          content: "verified_user";
+        }
+
+        &:after {
+          content: "Kompetente Beratung & Hilfe mit über 25 Jahren Erfahrung";
+
+          html[lang="en"] & {
+            content: "Expert advice & support with over 25 years of experience";
+          }
+        }
+      }
+
+      /* Squarespace Agentur */
+      &:nth-child(3)>a {
+        &:before {
+          content: "square_dot";
+        }
+
+        &:after {
+          content: "Squarespace Experte und Squarespace Circle Gold Partner";
+
+          html[lang="en"] & {
+            content: "Squarespace expert and Squarespace Circle Gold Partner";
+          }
+        }
+      }
+
+      &:nth-child(4)>a {
+        &:before {
+          content: "network_intel_node";
+        }
+
+        &:after {
+          content: "KI Beratung & Strategie, Integration und Support";
+
+          html[lang="en"] & {
+            content: "AI advice & strategy, integration and support";
+          }
+        }
+      }
+    }
+
+    /* Resourcen */
+    &:nth-child(4) .header-nav-folder-item {
+
+      /* Tipps und Tools */
+      &:nth-child(1)>a {
+        &:before {
+          content: "diamond_shine";
+        }
+
+        &:after {
+          content: "Hilfreiche Tools, Artikel und Tipps für Eure KMU Webseite";
+
+          html[lang="en"] & {
+            content: "Helpful tools, articles and tips for your SME website";
+          }
+        }
+      }
+
+      /* CMS Evaluation */
+      &:nth-child(2)>a {
+        &:before {
+          content: "search_check_2";
+        }
+
+        &:after {
+          content: "Kostenloser CMS-Test um das beste CMS für Euren Anforderungen zu finden";
+
+          html[lang="en"] & {
+            content: "Free CMS test to find the best CMS for your requirements";
+          }
+        }
+      }
+
+      /* Squarespace Anleitung */
+      &:nth-child(3)>a {
+        &:before {
+          content: "widgets";
+        }
+
+        &:after {
+          content: "Schritt-für-Schritt Squarespace Anleitung für Schweizer KMU";
+
+          html[lang="en"] & {
+            content: "Step-by-step Squarespace guide for Swiss SME";
+          }
+        }
+      }
+
+      /* AI für KMU */
+      &:nth-child(4)>a {
+        &:before {
+          content: "arrow_split";
+        }
+
+        &:after {
+          content: "Warum KI über die Zukunft Eures KMU entscheidet";
+
+          html[lang="en"] & {
+            content: "Why AI decides the future of your Swiss SME";
+          }
+        }
+      }
+    }
+
+    /* Agentur */
+    &:nth-child(3) .header-nav-folder-item {
+
+      /* über uns */
+      &:nth-child(1)>a {
+        &:before {
+          content: "cognition_2";
+        }
+
+        &:after {
+          content: "Unsere Agentur für KMU Webdesign";
+
+          html[lang="en"] & {
+            content: "Our agency for SME web design";
+          }
+        }
+      }
+
+      /* über uns */
+      &:nth-child(2)>a {
+        &:before {
+          content: "check_circle";
+        }
+
+        &:after {
+          content: "Unser Mehrwert & unser erproptes Vorgehen";
+
+          html[lang="en"] & {
+            content: "Our added value & proven approach";
+          }
+        }
+      }
+
+      /* team */
+      &:nth-child(3)>a {
+        &:before {
+          content: "group";
+        }
+
+        &:after {
+          content: "Die Menschen hinter unseren Projekten";
+
+          html[lang="en"] & {
+            content: "The people behind our projects";
+          }
+        }
+      }
+
+      /* soziale verantwortung */
+      &:nth-child(4)>a {
+        &:before {
+          content: "heart_smile";
+        }
+
+        &:after {
+          content: "Soziale Verantwortung liegt in unserer DNA";
+
+          html[lang="en"] & {
+            content: "Social responsibility lies in our DNA";
+          }
+        }
+      }
+
+      /* Squarespace Gold Partner */
+      &:nth-child(5)>a {
+        &:before {
+          content: "license";
+        }
+
+        &:after {
+          content: "25 Jahre Erfahrung & Squarespace Circle Gold Partner 2025";
+
+          html[lang="en"] & {
+            content: "25 years of experience & Squarespace Circle Gold Partner 2025";
+          }
+        }
+      }
+
+      /* Kontakt */
+      &:nth-child(6)>a {
+        &:before {
+          content: "sms";
+        }
+
+        &:after {
+          content: "Jede gute Idee beginnt mit einem Gespräch.";
+
+          html[lang="en"] & {
+            content: "Every good idea starts with a conversation.";
+          }
+        }
+      }
+    }
+
+    /* setup */
+    .header-nav-folder-item {
+      >a {
+        clear: left;
+        display: block;
+        margin: 0;
+        padding: @paddingY @paddingX @paddingY 40px;
+        text-decoration: none;
+        position: relative;
+        transition: color 0.2s ease-in-out !important;
+        text-align: left;
+
+        &:before {
+          .material-icon(0 0.3em 0 0, 1.75em, 100, 0);
+          float: left;
+          border: 1px solid var(--nav-icon-border);
+          border-radius: calc(@ddRadius / 2);
+          color: var(--icon-color);
+          height: 100%;
+          line-height: auto;
+          vertical-align: middle;
+          padding: 0.1em;
+        }
+
+        &:after {
+          display: block;
+          color: var(--sub-title-color);
+          font-size: 0.75em;
+          opacity: 0.75;
+          overflow: hidden;
+        }
+      }
+    }
+
+    /* dot */
+    .header-nav-folder-item {
+      .dot(0);
+      position: relative;
+
+      &:hover,
+      &.header-nav-item--active {
+        &:before {
+          background: hsla(var(--dot-color-hover), 1);
+        }
+      }
+
+      &--active {
+        .dot(@opacity: 1, @backgroundColor: var(--dot-color-active));
+
+        &:hover {
+          &:before {
+            background: hsla(var(--dot-color-hover), 1);
+            box-shadow: 0 0 5px hsla(var(--dot-color-hover), 1);
+          }
+        }
+      }
+    }
+
+    .header-nav-folder-content {
+      display: none;
+      opacity: 0;
+      transform: translateY(calc(@menuDistance - 5px));
+      font-size: 0.9em;
+
+      .wideBorder();
+      backdrop-filter: blur(var(--nav-blur));
+      background-color: hsla(var(--nav-glass-c3), var(--nav-glass-alpha));
+      box-shadow: inset 0px 0px 10px 1px hsla(var(--nav-glass-c1), 0.15), inset 5px 0 20px 0 hsla(var(--nav-glass-c2), 0.25), inset 0 -30px 30px 0 hsla(var(--nav-glass-c1), 0.25);
+
+      display: block;
+      position: absolute;
+      top: auto;
+      left: 10px;
+      right: 10px;
+
+      padding: @paddingY 0;
+    }
+
+    &:hover {
+      .header-nav-folder-content {
+        display: block;
+        opacity: 1;
+        transform: translateY(@menuDistance);
+      }
+
+      /* Bridge */
+      &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        left: -20px;
+        right: -20px;
+        top: 0;
+        height: calc(100% + @menuDistance * 2);
+        overflow: hidden;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+/* ── Dark dropdown text tweaks when header is black-bold ───────── */
+#header.black-bold {
+  .header-nav-item--folder {
+    .header-nav-folder-item>a {
+      text-shadow: 0 0 2px ~"hsla(var(--blackHsl), 0.75)";
+
+      &:after {
+        color: ~"hsla(var(--whiteHsl), 0.85)";
+        opacity: 0.85;
+      }
+
+      &:before {
+        /* Icon pill border contrast on dark comes from --nav-icon-border override in navigation.less */
+        color: @white;
+      }
+    }
+  }
+}

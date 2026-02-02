@@ -1,0 +1,24 @@
+@import "./../mixins.less";
+
+#siteWrapper .accordion-block {
+
+    // Bugfix
+    &.sqs-background-enabled {
+        height: auto;
+    }
+
+    .accordion-item__title {
+        font-weight: inherit;
+    }
+
+    .accordion-item__description {
+        a {
+            color: @greenVar;
+            text-decoration: underline;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+    }
+}

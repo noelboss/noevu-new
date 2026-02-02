@@ -1,0 +1,32 @@
+body {
+    hyphens: auto; // Deutsche Silbentrennung
+    word-break: normal; // keine harten Wortbrüche
+    overflow-wrap: anywhere; // verhindert Overflow, erlaubt frühe Wraps
+    text-wrap: balance; // ausgewogene Zeilenverteilung
+
+    // Progressive Enhancement
+    @supports (text-wrap: pretty) {
+        text-wrap: pretty;
+    }
+}
+
+// Fließtext
+p,
+li {
+    hanging-punctuation: first allow-end;
+}
+
+// Überschriften: balancierte Umbrüche, sinnvolle Trennungen
+h1,
+h2,
+h3,
+.list-section-title p {
+    text-wrap: balance;
+    hyphens: auto;
+    word-break: normal;
+    overflow-wrap: anywhere;
+
+    @supports (text-wrap: pretty) {
+        text-wrap: pretty;
+    }
+}

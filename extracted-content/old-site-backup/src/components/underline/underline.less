@@ -1,0 +1,27 @@
+@import "../../mixins.less";
+
+// 1) Baseline: alle <strong> in H1–H4 bekommen das Mixin
+
+.gradientUnderlinePseudo(h1, strong);
+.gradientUnderlinePseudo(h2, strong);
+.gradientUnderlinePseudo(h3, strong);
+
+/*// 2) Trigger: sobald das Heading .fadeIn hat,
+//    dehnen wir die Linie über 100% + 2×Overflow und setzen Opazität auf 1
+h1.fadeIn strong::after,
+h2.fadeIn strong::after,
+h3.fadeIn strong::after,
+h4.fadeIn strong::after {
+  width: calc(100% + 2 * 0.25em);
+  opacity: 1;
+}
+h1.fadeIn em::after,
+h2.fadeIn em::after,
+h3.fadeIn em::after,
+h4.fadeIn em::after {
+  width: calc(100% + 2 * 0.25em);
+  opacity: 1;
+}*/
+
+.gradientUnderlinePseudo(~".list-section-title p", em);
+.gradientUnderlinePseudo(~".list-section-title p", strong);

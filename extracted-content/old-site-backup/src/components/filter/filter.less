@@ -1,0 +1,112 @@
+@import "../../mixins.less";
+
+/* search */
+
+#siteWrapper .search-input {
+  .glass(@whiteVar, @beigeVar);
+  .wideBorderRadius();
+  color: #000;
+  border: 1px solid @beige;
+
+  &:focus,
+  &:hover {
+    border: none;
+    .defaultBoxShadow(@orangeVar);
+    .glass();
+  }
+}
+
+#siteWrapper {
+
+  // filter adjustments
+  .items-count-wrapper {
+    display: block;
+    font-size: 2rem;
+    width: 100%;
+    max-width: initial;
+
+    .items-count-inner {
+      text-align: center;
+    }
+  }
+
+  .customFiltersContainer {
+    flex-wrap: wrap;
+  }
+
+  .cf-sticky-position-parent-node .customFiltersWrapper {
+    background: rgba(256, 256, 256, 0.8);
+    backdrop-filter: blur(20px);
+    left: -5vw;
+    right: -5vw;
+  }
+
+  .customFiltersWrapper .archive-block-wrapper {
+    background: transparent;
+
+    .archive-dropdown-toggle-label {
+      .glass();
+      .wideBorder();
+    }
+
+    .archive-dropdown-toggle-checkbox:checked {
+      +.archive-dropdown-toggle-label {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom: none;
+      }
+
+      ~.archive-group-list {
+        .glass();
+        .wideBorder();
+
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+      }
+    }
+  }
+
+  .pagination-loadMore::after {
+    display: none;
+  }
+
+  .custom-items-search {
+    max-width: initial;
+
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+
+    .search-wrap {
+      height: auto;
+    }
+
+    .sqs-block-content {
+      width: 30%;
+      margin: 1em auto 1em;
+
+      input {
+        .glass(@whiteVar, @beigeVar);
+        border-radius: 2em;
+        font-size: 1.3em;
+        text-align: left;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .custom-filter-container.custom-filter-view-dropdowns .sqs-block-archive .archive-group-name-link {
+    font-size: 1.3em;
+  }
+
+  .archive-dropdown-toggle-label {
+    font-size: 1.3em;
+  }
+
+  .filterDropdown {
+    max-width: 25%;
+  }
+
+  // gallery overrides moved to /components/summary-item/summary-item.less
+}

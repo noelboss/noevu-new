@@ -1,0 +1,127 @@
+@import "../../../mixins.less";
+
+/* pagination */
+#itemPagination {
+  max-width: 90vw;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  padding-left: 0;
+  padding-right: 0;
+
+  background: @white;
+
+  @media screen and (min-width: 769px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  box-sizing: border-box;
+
+  .item-pagination-link {
+    justify-content: space-between;
+
+    border: 1px solid;
+    .greenHsla(0.2, border-color);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    gap: 24px;
+    transition: all 0.3s ease-out !important;
+
+    &:hover {
+      .whiteHsla(0.25, background-color);
+
+      box-shadow: 0 0 20px hsla(@greenVar, 0.1);
+    }
+  }
+  .item-pagination-link--prev {
+    margin-left: 0;
+    margin-right: auto;
+    h2 {
+      text-align: right;
+    }
+  }
+  .item-pagination-link--next {
+    margin-right: 0;
+    margin-left: auto;
+    h2 {
+      text-align: left;
+    }
+  }
+  .pagination-title-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    h2 {
+      font-family: var(--body-font-font-family);
+      font-size: 1.3rem;
+      flex-grow: 1;
+    }
+  }
+
+  .item-pagination-icon {
+    display: none !important;
+  }
+
+  .item-pagination-prev-next {
+    display: flex;
+    padding: 6px 12px;
+    margin: 1em;
+    font-weight: 400;
+    font-size: 1rem;
+
+    .whiteHsla(0.25, background-color);
+    border-radius: 100px;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 6px;
+    color: @green;
+    line-height: 1.3em;
+    box-shadow: 0 0 20px hsla(@greenVar, 0.05);
+    transition: all 0.3s ease-out !important;
+    white-space: nowrap;
+    &:hover {
+      box-shadow: none;
+    }
+    .item-pagination-title {
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .item-pagination-link--prev {
+    //grid-column: 1;
+    @media screen and (max-width: 768px) {
+      order: 2;
+    }
+    .item-pagination-title {
+      margin-right: 1em;
+    }
+    .item-pagination-prev-next {
+      &:before {
+        content: "arrow_back";
+        .material-icon();
+      }
+    }
+  }
+  .item-pagination-link--next {
+    //grid-column: 2;
+    .item-pagination-title {
+      margin-left: 1em;
+    }
+    .item-pagination-prev-next {
+      order: 2;
+      &:after {
+        .material-icon();
+        display: inline;
+        content: "arrow_forward";
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "./../mixins.less";
+
+main {
+
+    section[class*="light"],
+    section[class*="bright"],
+    section[class*="white"] {
+        p a {
+            text-decoration-color: hsla(@blackVar, 0.1);
+            transition: text-decoration-color 0.2s ease-in-out;
+
+            &:hover {
+                text-decoration-color: hsla(@orangeVar, 1);
+            }
+        }
+    }
+
+    section[class*="dark"],
+    section[class*="black"] {
+        p a {
+            text-decoration-color: hsla(@whiteVar, 0.1);
+            transition: text-decoration-color 0.2s ease-in-out;
+
+            &:hover {
+                text-decoration-color: hsla(@beigeVar, 1);
+            }
+        }
+    }
+}

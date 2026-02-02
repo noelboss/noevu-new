@@ -1,0 +1,81 @@
+@import "./../mixins.less";
+
+#siteWrapper {
+    .cookie-banner-manager {
+        padding: 5px 4vw;
+        background: hsla(var(--darkAccent-hsl), 1);
+
+        .manage-bar-action {
+            background: color-mix(in oklab, @green 40%, rgba(0, 0, 0, 0.5));
+            padding: 0.3em 1em;
+            border-radius: 2em;
+        }
+    }
+
+    .manage-cookies-overlay-backdrop {
+        background: color-mix(in oklab, @green 40%, rgba(0, 0, 0, 0.5));
+        backdrop-filter: blur(20px);
+        opacity: 1;
+    }
+
+    .manage-cookies-overlay {
+        background: color-mix(in oklab, white 90%, transparent);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+
+        .close-icon {
+            svg>path {
+                fill: @black;
+            }
+        }
+
+        h3,
+        h4,
+        p {
+            color: @black;
+        }
+
+        input {
+            background-color: @black;
+        }
+
+        .sqs-toggle--on {
+            background-color: @green;
+
+            input {
+                background-color: white;
+            }
+        }
+    }
+
+    .cookie-banner-mount-point {
+        section {
+            background: color-mix(in oklab, white 80%, transparent);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            mix-blend-mode: luminosity;
+
+            p {
+                color: @black;
+            }
+
+            .button-group {
+                align-items: center;
+                flex-direction: row-reverse;
+
+
+                button:last-child {
+                    padding: 0 !important;
+                    color: @black;
+                    border-bottom: 0;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: @green;
+                    }
+                }
+            }
+        }
+    }
+}

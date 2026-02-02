@@ -1,0 +1,223 @@
+// Annahme: Die Mixins aus deinem File sind importiert.
+// @import 'mixins.less';
+
+@import "../../mixins.less";
+
+// Visuell verstecktes Element für Screenreader
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+// Hauptcontainer
+.comparison-container {
+    padding: 2vw;
+
+    .comparison-title {
+        text-align: center;
+        font-size: 2.25rem;
+        font-weight: 700;
+        margin-bottom: 3.5rem;
+        .blackHsla();
+    }
+}
+
+// Wrapper für Tabelle & die farbigen Hintergründe
+.comparison-table-wrapper {
+    position: relative;
+
+    // ::before erzeugt den WEISSEN Hintergrund für die 2. Spalte
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 2%;
+        height: 96%;
+        // Positionierung über der 2. Spalte (nach der 25% breiten 1. Spalte)
+        left: 25%;
+        width: 38%;
+        background: hsl(@whiteVar, 0.5);
+        .defaultBorderRadius();
+        .defaultBoxShadow(#999);
+    }
+
+    // ::after erzeugt den ORANGEN Hintergrund für die 3. Spalte
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        height: 100%;
+        // Positionierung ganz rechts
+        right: 0;
+        width: 38%;
+        background: @orangeHex;
+        .defaultBorderRadius();
+        .defaultBoxShadow(@orangeHex, 0.5);
+    }
+}
+
+// Tabellen-Styling
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    position: relative;
+    z-index: 2; // Muss über den Pseudo-Elementen liegen
+}
+
+// Spaltenbreiten
+.col-feature {
+    width: 25%;
+}
+
+.col-classic {
+    width: 37.5%;
+}
+
+.col-noevu {
+    width: 37.5%;
+}
+
+th,
+td {
+    padding: 1.75rem 1.5rem;
+    vertical-align: middle;
+    text-align: left;
+}
+
+thead th {
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 3rem 1.5rem 0;
+
+    &:last-child {
+        color: @white;
+    }
+}
+
+
+tbody {
+    tr {
+        border-bottom: 1px solid hsla(@greyVar, 0.1);
+    }
+
+    tr:last-child {
+        border-bottom: none;
+    }
+
+    th[scope="row"] {
+        font-weight: 600;
+
+    }
+
+    td {
+        line-height: 1.5;
+
+        &:last-child {
+            color: @white;
+        }
+    }
+}
+
+// Textfarbe für "Noevu"-Spalte anpassen
+.col-noevu {
+
+    th,
+    td {
+        .whiteHsla(); // Weisse Schrift auf orangem Grund
+    }
+
+    td {
+        .whiteHsla(0.9);
+    }
+}
+
+//================================
+// Responsive Anpassungen (Mobile)
+//================================
+@media (max-width: 768px) {
+    .comparison-table-wrapper {
+        margin-top: 4vh;
+
+        // Wrapper hat keine Hintergründe mehr auf Mobile
+        &::before, &::after {
+            display: none;
+        }
+    }
+
+    table {
+        // KORREKTUR 1: Die Tabelle selbst wird zum Block-Container.
+        // Das ist der entscheidende Fix, damit width: 100% greift.
+        display: block;
+        
+        // Textumbruch-Regeln für lange Wörter
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+
+    // KORREKTUR 2: Wir stellen sicher, dass ALLE Tabellen-Kindelemente
+    // als Blöcke behandelt werden und die volle Breite einnehmen.
+    table, thead, tbody, tr, th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box; // Stellt sicher, dass Padding die Breite nicht sprengt
+    }
+
+    thead {
+        display: none; // Kopfzeile komplett ausblenden
+    }
+
+    tr {
+        // Jede Reihe wird zur "Karte"
+        margin-bottom: 1.5rem;
+        border-bottom: none !important;
+        .defaultBorderRadius();
+    }
+
+    th[scope="row"] {
+        padding: 0 0 1rem 0;
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+
+    td {
+        padding: 1.25rem;
+        .defaultBorderRadius();
+
+        &::before {
+            content: attr(data-label);
+            display: block;
+            font-weight: 700;
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            .greyHsla(0.6);
+        }
+    }
+
+    td:not(:last-child) {
+        margin-bottom: 0.5em;
+    }
+
+    // Direkte Hintergrundzuweisung auf Mobilgeräten
+    td[data-label="klassische Agentur"] {
+        background: hsl(@whiteVar);
+    }
+
+    td[data-label="Noevu"] {
+        background-color: @orangeHex;
+
+        &::before {
+            .whiteHsla(1);
+        }
+        .defaultBoxShadow(@orangeHex, 0.5);
+    }
+}

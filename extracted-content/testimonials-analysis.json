@@ -1,0 +1,298 @@
+{
+  "summary": {
+    "extractedTestimonials": 66,
+    "extractedPages": 43,
+    "uniqueAuthors": 2,
+    "existingTestimonials": 10,
+    "existingRating": {
+      "average": 4.9,
+      "count": 13,
+      "source": "Google"
+    }
+  },
+  "authors": {
+    "Reto Gerber": {
+      "variationsFound": 14,
+      "inExisting": true,
+      "existingQuote": "Ein Profi durch und durch, sehr gutes Preis-Leistungsverhältnis! Wir sind mit dem Resultat äusserst zufrieden.",
+      "variations": [
+        {
+          "quote": "Noevu kombiniert Innovation und Präzision, und uns zu einer Webseite verholfen, die nicht nur durch ihre Qualität besticht, sondern auch durch einfache Bedienung begeistert. Absolute Empfehlung!“",
+          "author": "Reto Gerber",
+          "company": "Geschäftsführer",
+          "pages": [
+            "de_ai-beratung-kmu-schweiz.md",
+            "de_squarespace-hilfe.md",
+            "de_webseiten-beratung-hilfe.md"
+          ]
+        },
+        {
+          "quote": "The website agency Noevu combines innovation and precision, and has developed a beautiful new company website for us that not only impresses with its quality, but is also easy to use. An absolute recommendation!",
+          "author": "Reto Gerber",
+          "company": "",
+          "pages": [
+            "de_en.md",
+            "en_home.md",
+            "en_index.md",
+            "en_schweizer-kmu-webdesign-und-marketing-agentur-in-zuerich.md",
+            "en_schweizer-marketing-und-webdesign-agentur-in-zuerich.md"
+          ]
+        },
+        {
+          "quote": "Noevu kombiniert Innovation und Experten-Wissen, und hat für uns eine Squarespace Webseite entwickelt, die nicht nur durch ihre Qualität besticht, sondern auch durch einfache Bedienung begeistert. Absolute Empfehlung!“",
+          "author": "Reto Gerber",
+          "company": "Geschäftsführer",
+          "pages": [
+            "de_gold-partner.md",
+            "de_schweizer-squarespace-circle-gold-partner-2025.md",
+            "de_schweizer-squarespace-experte.md"
+          ]
+        },
+        {
+          "quote": "Die Webseiten Agentur Noevu kombiniert Innovation und Präzision, und hat für uns eine schöne neue Firmen-Webseite entwickelt, die nicht nur durch ihre Qualität besticht, sondern auch durch einfache Bedienung begeistert. Absolute Empfehlung!“",
+          "author": "Reto Gerber",
+          "company": "Rrevival",
+          "pages": [
+            "de_home.md",
+            "de_schweizer-kmu-webdesign-und-marketing-agentur-in-zuerich.md",
+            "de_schweizer-marketing-und-webdesign-agentur-in-zuerich.md"
+          ]
+        },
+        {
+          "quote": "Noevu kombiniert Innovation und Präzision. Mit ihnen konnten wir eine neue Homepage in der Schweiz entwickeln lassen, die nicht nur durch ihre Qualität besticht, sondern auch durch einfache Bedienung begeistert. Absolute Empfehlung!“",
+          "author": "Reto Gerber",
+          "company": "",
+          "pages": [
+            "de_kmu-webseite-erstellen-lassen.md",
+            "de_services.md",
+            "de_websites-erstellen-lassen.md"
+          ]
+        },
+        {
+          "quote": "Noevu verbindet Innovation und Squarespace Erfahrung. Sie haben für unser eine neue KMU-Webseite erstellt, die nicht nur hochwertig ist, sondern auch leicht zu bedienen. Sehr empfehlenswert!“",
+          "author": "Reto Gerber",
+          "company": "Rrevival",
+          "pages": [
+            "de_schweizer-squarespace-webdesign-agentur.md",
+            "de_squarespace-agentur.md",
+            "de_squarespcae-webdesign.md"
+          ]
+        },
+        {
+          "quote": "Noevu kombiniert Innovation und Präzision. Mit ihnen konnten wir eine Squarespace Webseite entwickeln lassen, die nicht nur durch ihre Qualität besticht, sondern auch durch einfache Bedienung begeistert. Absolute Empfehlung!“",
+          "author": "Reto Gerber",
+          "company": "",
+          "pages": [
+            "de_squarespace-webdesign.md",
+            "de_squarespace-webseiten-entwicklung.md",
+            "de_webseiten-entwicklung.md"
+          ]
+        },
+        {
+          "quote": "Noevu kombiniert Innovation und Präzision, und hat für uns eine Webseite entwickelt, die nicht nur durch ihre Qualität besticht, sondern auch durch einfache Bedienung begeistert. Absolute Empfehlung!“",
+          "author": "Reto Gerber",
+          "company": "",
+          "pages": [
+            "de_ueber-uns.md",
+            "de_webdesign-agentur.md"
+          ]
+        },
+        {
+          "quote": "Noevu combines innovation and precision, and has helped us to create a website that not only impresses with its quality, but is also easy to use. An absolute recommendation!",
+          "author": "Reto Gerber",
+          "company": "Rrevival - Managing Director",
+          "pages": [
+            "en_ai-beratung-kmu-schweiz.md",
+            "en_squarespace-hilfe.md",
+            "en_webseiten-beratung-hilfe.md"
+          ]
+        },
+        {
+          "quote": "Noevu combines innovation and expert knowledge, and has developed a Squarespace website for us that not only impresses with its quality, but is also easy to use. An absolute recommendation!",
+          "author": "Reto Gerber",
+          "company": "Rrevival - Managing Director",
+          "pages": [
+            "en_schweizer-squarespace-circle-gold-partner-2025.md",
+            "en_schweizer-squarespace-experte.md",
+            "en_squarespace-agentur_gold-partner.md"
+          ]
+        },
+        {
+          "quote": "Noevu combines innovation and Squarespace experience. They have created a new SME website for us that is not only high quality but also easy to use. Highly recommended!",
+          "author": "Reto Gerber",
+          "company": "",
+          "pages": [
+            "en_schweizer-squarespace-webdesign-agentur.md",
+            "en_squarespace-agentur.md",
+            "en_squarespace-agentur_index.md",
+            "en_squarespcae-webdesign.md"
+          ]
+        },
+        {
+          "quote": "Noevu combines innovation and precision. With them, we were able to have a new website developed in Switzerland that not only impresses with its quality, but is also easy to use. An absolute recommendation!",
+          "author": "Reto Gerber",
+          "company": "Rrevival - Managing Director",
+          "pages": [
+            "en_services.md",
+            "en_webdesign-agentur_kmu-webseite-erstellen-lassen.md",
+            "en_websites-erstellen-lassen.md"
+          ]
+        },
+        {
+          "quote": "Noevu combines innovation and precision. With them, we were able to have a Squarespace website developed that not only impresses with its quality, but also with its ease of use. An absolute recommendation!",
+          "author": "Reto Gerber",
+          "company": "Rrevival - Managing Director",
+          "pages": [
+            "en_squarespace-agentur_webseiten-entwicklung.md",
+            "en_squarespace-webdesign.md",
+            "en_squarespace-webseiten-entwicklung.md"
+          ]
+        },
+        {
+          "quote": "Noevu combines innovation and precision, and has developed a website for us that not only impresses with its quality, but is also easy to use. An absolute recommendation!",
+          "author": "Reto Gerber",
+          "company": "Rrevival - Managing Director",
+          "pages": [
+            "en_ueber-uns.md",
+            "en_webdesign-agentur.md"
+          ]
+        }
+      ]
+    },
+    "Benedikt Vogel": {
+      "variationsFound": 7,
+      "inExisting": true,
+      "existingQuote": "Noevu hat uns hoch professionell, engagiert und termingerecht zu einer tollen neuen online Präsenz verholfen. Die Zusammenarbeit war jederzeit konstruktiv, die Beratung hervorragend.",
+      "variations": [
+        {
+          "quote": "Our web project was implemented perfectly thanks to a clear structure and efficient processes. Our new SME website exceeds expectations and gives our customers an attractive showcase for our work.",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH",
+          "pages": [
+            "de_en.md",
+            "en_home.md",
+            "en_index.md",
+            "en_schweizer-kmu-webdesign-und-marketing-agentur-in-zuerich.md",
+            "en_schweizer-marketing-und-webdesign-agentur-in-zuerich.md"
+          ]
+        },
+        {
+          "quote": "Thanks to Noevu's professional advice and help, we were able to implement our website project perfectly. The new homepage exceeds our expectations and opens the doors to our work for our customers.",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH - Managing Director",
+          "pages": [
+            "en_ai-beratung-kmu-schweiz.md",
+            "en_squarespace-hilfe.md",
+            "en_webseiten-beratung-hilfe.md"
+          ]
+        },
+        {
+          "quote": "Our project was implemented perfectly thanks to Noevu's expertise, clear structure and efficient time management. Our new Squarespace homepage exceeds expectations and gives our clients an attractive showcase for our work.",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH - Managing Director",
+          "pages": [
+            "en_schweizer-squarespace-circle-gold-partner-2025.md",
+            "en_schweizer-squarespace-experte.md",
+            "en_squarespace-agentur_gold-partner.md"
+          ]
+        },
+        {
+          "quote": "Our project went perfectly thanks to the expertise of Noevu, and their good planning and time management. Our new Squarespace homepage looks great and clearly shows our work to our clients.",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH",
+          "pages": [
+            "en_schweizer-squarespace-webdesign-agentur.md",
+            "en_squarespace-agentur.md",
+            "en_squarespace-agentur_index.md",
+            "en_squarespcae-webdesign.md"
+          ]
+        },
+        {
+          "quote": "We wanted to have a new website developed. Thanks to a clear structure and efficient time management, Noevu implemented our project perfectly. The new website exceeds our expectations and opens the doors to our work wide for our customers.",
+          "author": "Benedikt Vogel",
+          "company": "",
+          "pages": [
+            "en_services.md",
+            "en_webdesign-agentur_kmu-webseite-erstellen-lassen.md",
+            "en_websites-erstellen-lassen.md"
+          ]
+        },
+        {
+          "quote": "We wanted to have a new Squarespace homepage developed. Thanks to a clear structure and efficient time management, Noevu implemented our project perfectly. The new website exceeds our expectations and opens the doors to our work wide for our customers.",
+          "author": "Benedikt Vogel",
+          "company": "",
+          "pages": [
+            "en_squarespace-agentur_webseiten-entwicklung.md",
+            "en_squarespace-webdesign.md",
+            "en_squarespace-webseiten-entwicklung.md"
+          ]
+        },
+        {
+          "quote": "Our project was implemented perfectly thanks to a clear structure and efficient time management. Our new homepage exceeds expectations and gives our customers an attractive showcase for our work.",
+          "author": "Benedikt Vogel",
+          "company": "",
+          "pages": [
+            "en_ueber-uns.md",
+            "en_webdesign-agentur.md"
+          ]
+        }
+      ]
+    }
+  },
+  "findings": {
+    "testimonialAuthorsMatch": "The extracted testimonials (Reto Gerber, Benedikt Vogel) match 2 of the 10 existing testimonials in testimonials.json",
+    "quoteVariations": "Multiple quote variations were found for both authors across different pages",
+    "newTestimonials": "The existing testimonials.json contains 8 additional testimonials not found in the extracted markdown pages",
+    "recommendation": "The existing testimonials.json is more comprehensive with 10 diverse testimonials. The extracted testimonials show that Reto Gerber and Benedikt Vogel quotes are used extensively across the site with slight variations."
+  },
+  "existingTestimonialsNotInExtracted": [
+    {
+      "author": "Wohnperspektive GmbH",
+      "company": "",
+      "quote": "Die Zusammenarbeit mit der Noevu GmbH war durchweg positiv. Besonders hervorzuheben ist die schnelle...",
+      "rating": 5
+    },
+    {
+      "author": "Martin Künzi",
+      "company": "",
+      "quote": "Noevu GmbH arbeitet talentiert, effizient und mit einem klaren Blick für durchdachte Lösungen. Die v...",
+      "rating": 5
+    },
+    {
+      "author": "Peter Hirning",
+      "company": "",
+      "quote": "Die Qualität und das Preis-Leistungs-Verhältnis der Webdesigns von Noevu GmbH haben mich beeindruckt...",
+      "rating": 5
+    },
+    {
+      "author": "Anabel Hafstad",
+      "company": "Senior SEO-Beraterin",
+      "quote": "Als selbstständige Senior SEO-Beraterin kann ich Noevu meinen eigenen Kunden bei Webentwicklungsbeda...",
+      "rating": 5
+    },
+    {
+      "author": "Dolores Libertas",
+      "company": "",
+      "quote": "Top-Webdesign-Agentur in Zürich. Die Noevu GmbH hat als Webdesign-Agentur meine Erwartungen übertrof...",
+      "rating": 5
+    },
+    {
+      "author": "Tobias Morf",
+      "company": "",
+      "quote": "Ich lernte die Noevu GmbH und den Geschäftsführer als äusserst kompetent und engagiert kennen. Die l...",
+      "rating": 5
+    },
+    {
+      "author": "Andy Zimmermann",
+      "company": "Schweizer Werbesprecher",
+      "quote": "Als Schweizer Werbesprecher bin ich auf eine top Webseite angewiesen. Noevu GmbH zeichnet sich durch...",
+      "rating": 5
+    },
+    {
+      "author": "Rebecca Mantel",
+      "company": "EntdeckerBox",
+      "quote": "Noel hat mir innert 10 Tagen einen super Webauftritt für mein Startup gemacht. Inhaltlich durchdacht...",
+      "rating": 5
+    }
+  ]
+}

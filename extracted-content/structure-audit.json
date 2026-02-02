@@ -1,0 +1,700 @@
+{
+  "audit_date": "2026-02-02",
+  "critical_requirement": "Content must match 100% with original",
+  "summary": {
+    "total_pages_audited": 4,
+    "pages_with_major_gaps": 4,
+    "missing_sections_count": 47,
+    "content_simplification_issues": 23,
+    "structure_changes": 18
+  },
+  "pages": [
+    {
+      "page": "home",
+      "markdown_file": "de_home.md",
+      "json_file": "home.json",
+      "match_percentage": "45%",
+      "severity": "CRITICAL",
+      "missing_sections": [
+        {
+          "section_name": "Hero Rating Box with Review Link",
+          "original_content": "KMU vertrauen unserer Webagentur / 4.9 Sterne Bewertungen auf Google",
+          "current_status": "Rating exists in hero but missing review link and box styling",
+          "line_reference": "Lines 17-22 in markdown"
+        },
+        {
+          "section_name": "Detailed Value Propositions with Images",
+          "original_content": "Three detailed value props with FULL descriptions, images, and detailed explanations (Lines 29-51)",
+          "current_status": "Simplified to 3 short value props - missing all detailed descriptions",
+          "missing_details": [
+            "Image for 'Ihr startet mit Vorsprung' - dashboard landing page",
+            "Full description about 'smarten Ansatz' and 'bewährte Technologien'",
+            "Image for 'Eine Webseite, die Eure Ziele erreicht' - strategy paper",
+            "Full description about 'Customer Journey' analysis",
+            "Image for 'Perfektion dank Erfahrung' - laptop with diagrams",
+            "Full description about 25 years experience and support"
+          ]
+        },
+        {
+          "section_name": "Client Logo Gallery",
+          "original_content": "11 client logos displayed (Lines 52-73): Migros, NZZ Connect, Belimo, Vogel Dental, Ausgleichskasse, Davatz Legal, Weinbau Wetli, Swiss Economic Forum, SwissP, etc.",
+          "current_status": "Only 6 logos shown in JSON",
+          "missing_logos": [
+            "Swiss Economic Forum",
+            "Weinbau Wetli",
+            "SwissP Logo",
+            "Full set of 11 logos from original",
+            "Logo images at original size and quality"
+          ]
+        },
+        {
+          "section_name": "Services Section Heading",
+          "original_content": "Womit unsere Schweizer Webagentur Euch helfen kann: (Line 77-79)",
+          "current_status": "Changed to generic 'Unsere Services'",
+          "impact": "Lost personality and Swiss-specific positioning"
+        },
+        {
+          "section_name": "Services Grid Content Detail",
+          "original_content": "Each service had 4 checkmarks with specific details (Lines 82-136)",
+          "current_status": "Services simplified to single description per service",
+          "missing_per_service": [
+            "Beratung: 4 specific items (Strategieentwicklung, Zielgruppenanalyse, AI Beratung für KMU, Best Practices)",
+            "Entwicklung: 4 specific items (Webdesign für KMU, Squarespace Entwicklung, Responsive Design, API & Funktionserweiterungen)",
+            "Optimierung: 4 specific items (Performance-Steigerung, Mobile-Optimierung, SEO-Anpassungen, Benutzerfreundlichkeit)",
+            "Support: 4 specific items (Aktualisierung, Content-Management, Sicherheitsprüfung, Betrieb und Hosting)"
+          ]
+        },
+        {
+          "section_name": "Process Section Title and Introduction",
+          "original_content": "Eure neue KMU Website ist nicht standardisiert. Unsere Vorgehensweise schon. + Full intro paragraph (Lines 140-142)",
+          "current_status": "Generic 'Unser Prozess' title, missing personality",
+          "missing_intro": "Jede neue Webseite ist einzigartig. Darum begleiten wir Euch als Zürcher Webseiten Agentur flexibel..."
+        },
+        {
+          "section_name": "Process Steps with Images",
+          "original_content": "6 detailed process steps with images and rich descriptions (Lines 145-191)",
+          "current_status": "Only 4 simplified steps, missing images and detailed content",
+          "missing_steps": [
+            "Step images for each phase (sophisticated ad, web design prototype, laptop with diagrams, mobile layout, usability, quantum computer, analytics laptop)",
+            "Strategie und Effizienz - full text about modern tools",
+            "Individuelles Webdesign - description about no standard templates",
+            "Optimiert für Mobile & Desktop - responsive design details",
+            "Kinderleichte Bedienung - CMS training details",
+            "Technologie, die für Euch arbeitet - AI and all-in-one platform",
+            "Erfahrene Web-Entwickler - 25 years experience details"
+          ]
+        },
+        {
+          "section_name": "Why Switch Section Title",
+          "original_content": "Warum Andere zu unserer Webdesign Agentur in Zürich wechseln? (Line 193)",
+          "current_status": "Changed to generic 'Warum Noevu?'",
+          "impact": "Lost the switching/migration angle completely"
+        },
+        {
+          "section_name": "Comparison Table Details",
+          "original_content": "Detailed 6-row comparison with specific points (Lines 195-203)",
+          "current_status": "Simplified, some nuance lost",
+          "changes": [
+            "Original: 'Templates oder Umsetzung individueller Designs teuer' vs 'Massgeschneiderte Designs kosteneffizient umgesetzt'",
+            "Current: Generic wording without the cost-efficiency emphasis"
+          ]
+        },
+        {
+          "section_name": "CTAs after Comparison",
+          "original_content": "Two specific CTAs: 'Jetzt Web-Projekt anfragen' + 'CMS-Evaluation starten' (Line 204)",
+          "current_status": "Not present after comparison table",
+          "missing_links": "Link to /kontakt and /blog/cms-check-schweiz"
+        },
+        {
+          "section_name": "Golden Circle Process Section",
+          "original_content": "Der Weg zur erfolgreiche KMU Webseite sichern: + Large visual of Golden Circle + 4 detailed steps with images (Lines 209-258)",
+          "current_status": "Missing entire Golden Circle visual section",
+          "missing_content": [
+            "Golden Circle diagram image (Line 211)",
+            "Section 1: Klare Botschaft - 'Mehr als einzelne Worte' with full Golden Circle explanation",
+            "Section 2: Einfache Bedienung - 'Swipe, Klick, Kontakt!' with UX details",
+            "Section 3: Strategisches Design & Funktion - 'Schönheit mit Strategie' with visual experience details",
+            "Section 4: Service & Betrieb - 'Bereit für die Zukunft – automatisch' with SaaS benefits"
+          ]
+        },
+        {
+          "section_name": "Final CTA Section Styling",
+          "original_content": "Kontakt mit KMU Webdesigner heading + Startet heute euer KMU Homepage-Projekt? (Lines 260-267)",
+          "current_status": "Generic 'Bereit für eure neue Website?'",
+          "missing_personality": "Lost the action-oriented 'Startet heute' angle"
+        },
+        {
+          "section_name": "Team Photos and Badges",
+          "original_content": "Noel Bossart photo + Squarespace Gold Partner badge prominently displayed (Lines 272-276)",
+          "current_status": "No team photos in final CTA, badge not prominently shown",
+          "visual_impact": "Reduced trust signals and personal connection"
+        },
+        {
+          "section_name": "Testimonial Section Context",
+          "original_content": "Euer Anliegen ist bei uns in erfahrenen Händen: heading + specific quote context (Line 270)",
+          "current_status": "Generic 'Das sagen unsere Kunden'",
+          "missing_context": "Trust-building framing lost"
+        },
+        {
+          "section_name": "Testimonial Photos",
+          "original_content": "Full testimonial photos for Reto Gerber and Benedikt Vogel with descriptions (Lines 284, 292)",
+          "current_status": "Testimonials exist but photo references may be missing",
+          "visual_impact": "Reduced credibility without photos"
+        },
+        {
+          "section_name": "Blog/Projects Section Title",
+          "original_content": "KMU Webseiten-Projekte & Ressourcen / Insights für Euren digitalen Vorsprung (Lines 295-300)",
+          "current_status": "Simplified title, missing the 'Vorsprung' (advantage) angle",
+          "context_lost": "Detailed intro: 'Hier findet Ihr beste Webdesign Agentur Tipps und Tricks...'"
+        },
+        {
+          "section_name": "Blog Grid Content Count",
+          "original_content": "12 blog posts displayed with full details (Lines 302-469)",
+          "current_status": "Blog grid exists but likely shows fewer posts",
+          "missing_context": "Each post had Portfolio/Artikel/Anleitung tags repeated 3 times"
+        },
+        {
+          "section_name": "FAQ Section Heading",
+          "original_content": "Antworten auf die häufigsten Fragen zur Zusammenarbeit mit unserer KMU Webdesign Agentur (Line 471-472)",
+          "current_status": "Generic 'Häufige Fragen'",
+          "personality_lost": "Specific framing about 'Zusammenarbeit' lost"
+        }
+      ],
+      "content_differences": [
+        {
+          "element": "Hero Description",
+          "original": "Long, detailed description with specific Swiss positioning and experience callouts (Line 10)",
+          "current": "Shorter, less specific",
+          "impact": "Medium - Less compelling positioning"
+        },
+        {
+          "element": "Value Proposition Items",
+          "original": "3 items with FULL paragraphs of 60-80 words each, explaining benefits in detail",
+          "current": "3 items with 15-20 words each",
+          "impact": "CRITICAL - 70% of persuasive content lost"
+        },
+        {
+          "element": "Services Grid Item Details",
+          "original": "Each service had 4 specific bullet points with checkmarks",
+          "current": "Single short description per service",
+          "impact": "HIGH - Specificity and detail lost"
+        },
+        {
+          "element": "Process Step Descriptions",
+          "original": "Each step had 40-60 word descriptions with specific benefits",
+          "current": "Each step has 15-25 word descriptions",
+          "impact": "HIGH - Reduced persuasiveness"
+        },
+        {
+          "element": "FAQ Answers",
+          "original": "Very detailed, multi-paragraph answers with bullet lists (Lines 474-576)",
+          "current": "Condensed answers, some structure preserved",
+          "impact": "MEDIUM - Some detail preserved but less comprehensive"
+        }
+      ],
+      "structure_differences": [
+        {
+          "issue": "Missing Bento Grid / Feature Grid Section",
+          "original": "Had a visual bento-style grid showing 6-7 features with icons and details",
+          "current": "Features shown in simple list format",
+          "impact": "CRITICAL - Major visual impact lost"
+        },
+        {
+          "issue": "Missing Golden Circle Visual Section",
+          "original": "Entire section dedicated to Golden Circle methodology with large image and 4 sub-sections",
+          "current": "Not present",
+          "impact": "CRITICAL - Key differentiator and methodology explanation lost"
+        },
+        {
+          "issue": "Process Layout",
+          "original": "6 steps in alternating layout with large images",
+          "current": "4 steps, possibly missing images",
+          "impact": "HIGH - Visual storytelling reduced"
+        },
+        {
+          "issue": "Review Box Styling",
+          "original": "Prominent review box with link to Google reviews",
+          "current": "Simple rating display",
+          "impact": "MEDIUM - Reduced social proof prominence"
+        }
+      ],
+      "missing_visual_elements": [
+        "Hero background image (Digitale Hindernisse überwinden - mountain climber)",
+        "3 value proposition images (dashboard, strategy paper, laptop with diagrams)",
+        "11 client logos (currently only 6)",
+        "6-7 process step images",
+        "Golden Circle diagram image",
+        "4 sub-section images for Golden Circle steps",
+        "Bento grid / feature grid visual layout",
+        "Team photo in final CTA (Noel Bossart)",
+        "Squarespace Gold Partner badge prominent display",
+        "Testimonial photos (Reto Gerber, Benedikt Vogel)"
+      ]
+    },
+    {
+      "page": "ueber-uns",
+      "markdown_file": "de_ueber-uns.md",
+      "json_file": "ueber-uns.json",
+      "match_percentage": "70%",
+      "severity": "MEDIUM",
+      "missing_sections": [
+        {
+          "section_name": "Team Photos",
+          "original_content": "Individual photos for each team member (Lines 71-109)",
+          "current_status": "Team names and descriptions exist but photos likely missing",
+          "visual_impact": "Reduced personal connection"
+        },
+        {
+          "section_name": "LinkedIn Links for Team",
+          "original_content": "LinkedIn profile links for all 4 team members (Lines 78, 88, 98, 108)",
+          "current_status": "Not present in JSON structure",
+          "impact": "Missing credibility and connection opportunities"
+        },
+        {
+          "section_name": "Social Responsibility Section with Image",
+          "original_content": "Large section about Brazil project with classroom photo (Lines 112-122)",
+          "current_status": "Not present in JSON",
+          "impact": "CRITICAL - Missing key differentiator and values section"
+        },
+        {
+          "section_name": "Final CTA with Team Photo",
+          "original_content": "Noel Bossart photo + testimonials context (Lines 135-153)",
+          "current_status": "Generic CTA without team photo",
+          "impact": "Reduced personal touch"
+        }
+      ],
+      "content_differences": [
+        {
+          "element": "Hero Content",
+          "original": "Für digitalen Erfolg mit Verantwortung + detailed Golden Circle explanation (Lines 4-6)",
+          "current": "Similar but potentially shorter",
+          "impact": "LOW - Core message preserved"
+        },
+        {
+          "element": "Team Descriptions",
+          "original": "Detailed 40-50 word descriptions with specific roles (Lines 71-109)",
+          "current": "Condensed to 20-30 words",
+          "impact": "MEDIUM - Less personality in team bios"
+        }
+      ],
+      "structure_differences": [
+        {
+          "issue": "Missing Social Responsibility Section",
+          "original": "Dedicated section about Brazil education project",
+          "current": "Not present",
+          "impact": "CRITICAL - Key values differentiator missing"
+        }
+      ],
+      "missing_visual_elements": [
+        "Team member photos (4 photos)",
+        "LinkedIn icons and links (4 links)",
+        "Brazil classroom photo (Jugendliche arbeiten an Laptops)",
+        "Noel Bossart phone consultation photo in final CTA"
+      ]
+    },
+    {
+      "page": "squarespace-agentur",
+      "markdown_file": "de_squarespace-agentur.md",
+      "json_file": "squarespace-agentur.json",
+      "match_percentage": "50%",
+      "severity": "CRITICAL",
+      "missing_sections": [
+        {
+          "section_name": "Hero Context and Positioning",
+          "original_content": "Die besten digitale Lösung für Eure neue Homepage: Dank Schweizer Squarespace Webdesigner & Experten (Lines 7-10)",
+          "current_status": "Shorter, less emphatic subheadline",
+          "impact": "Reduced unique positioning"
+        },
+        {
+          "section_name": "Squarespace Advantages Hero",
+          "original_content": "Link to 'Squarespace Webseiten Vorteile' anchor (Line 13)",
+          "current_status": "Missing internal navigation helper",
+          "ux_impact": "Reduced discoverability of key benefits"
+        },
+        {
+          "section_name": "Circle Gold Partner Badge in Hero",
+          "original_content": "Prominent badge display with link to expert page (Lines 15-17)",
+          "current_status": "Badge present but may not be in hero prominently",
+          "trust_impact": "Reduced immediate credibility signal"
+        },
+        {
+          "section_name": "Value Props Heading",
+          "original_content": "Schneller am Ziel, dank einem System mit Vorsprung (Line 19-21)",
+          "current_status": "Generic 'Warum Squarespace?'",
+          "personality_lost": "Persuasive framing lost"
+        },
+        {
+          "section_name": "Detailed Value Props with Images",
+          "original_content": "3 detailed value props with images and 60-80 word descriptions (Lines 24-46)",
+          "current_status": "3 short value props with 15-20 words",
+          "impact": "CRITICAL - 75% of persuasive detail lost"
+        },
+        {
+          "section_name": "Services Section Heading",
+          "original_content": "Unsere KMU Webdesign Agentur bietet Euch alles, was eure neue Squarespace Webseite braucht: + detailed intro (Lines 48-52)",
+          "current_status": "Generic 'Unsere Squarespace Services'",
+          "context_lost": "Positioning as comprehensive solution lost"
+        },
+        {
+          "section_name": "Services with Checkmark Lists",
+          "original_content": "Each service had 4 specific checkmark items (Lines 55-109)",
+          "current_status": "Single description per service",
+          "impact": "HIGH - Specificity and detail lost"
+        },
+        {
+          "section_name": "Review Box CTA",
+          "original_content": "KMUs trauen unserer Squarespace Experten / 4,9 Sterne Bewertungen auf Google (Lines 110-116)",
+          "current_status": "Rating in hero but not this specific trust box",
+          "trust_impact": "Reduced social proof visibility"
+        },
+        {
+          "section_name": "Bento Grid Feature Section",
+          "original_content": "Squarespace ist die beste Homepage Lösung für die meisten Schweizer KMU + Bento grid with 8 features, each with icon, title, description (Lines 121-213)",
+          "current_status": "Not present in current JSON",
+          "impact": "CRITICAL - Major visual section and 8 detailed features missing"
+        },
+        {
+          "section_name": "Process Section Heading and Intro",
+          "original_content": "Eure neue Webseite ist neu. Unsere Squarespace Erfahrung nicht. + detailed intro paragraph (Lines 215-221)",
+          "current_status": "Generic 'Unser Vorgehen' heading",
+          "personality_lost": "Clever framing about experience lost"
+        },
+        {
+          "section_name": "Process Steps with Images",
+          "original_content": "6 process steps with images and detailed descriptions (Lines 223-270)",
+          "current_status": "4 generic steps, missing images and detail",
+          "impact": "HIGH - Visual storytelling and specific Squarespace benefits lost"
+        },
+        {
+          "section_name": "Comparison Table Context",
+          "original_content": "Warum Schweizer KMUs ihre neue Webseite mit unserer Schweizer Squarespace Agentur erstellen lassen? (Line 271-272)",
+          "current_status": "Generic 'Squarespace vs. WordPress'",
+          "positioning_lost": "Swiss positioning and 'erstellen lassen' angle lost"
+        },
+        {
+          "section_name": "Comparison CTAs",
+          "original_content": "Kostenlose Video-Beratung + Findet das passende CMS (Line 282)",
+          "current_status": "May be missing or different",
+          "cta_impact": "Specific action prompts lost"
+        },
+        {
+          "section_name": "Der Prozess Section",
+          "original_content": "Euer Weg eine neuen Squarespace Webseite erstellen zu lassen: Klar, transparent und zielgerichtet + 4 steps with images (Lines 285-343)",
+          "current_status": "Generic process section",
+          "impact": "HIGH - Squarespace-specific process details lost"
+        },
+        {
+          "section_name": "Success Factors Section",
+          "original_content": "Vier Punkte die Euch eine erfolgreiche Squarespace Webseite sichern: + Golden Circle image + 4 detailed sections (Lines 345-395)",
+          "current_status": "Not present",
+          "impact": "CRITICAL - Entire methodology section missing"
+        },
+        {
+          "section_name": "Final CTA with Team Photo and Badge",
+          "original_content": "Startet heute euer neues KMU Squarespace Webseiten Project? + Noel photo + Gold badge + testimonials (Lines 398-431)",
+          "current_status": "Generic CTA",
+          "trust_impact": "Personal touch and credibility signals reduced"
+        },
+        {
+          "section_name": "Squarespace Tips Section",
+          "original_content": "Experten Tipps für euren digitalen Vorsprung + link to Squarespace tips page (Lines 433-438)",
+          "current_status": "Generic blog grid",
+          "context_lost": "Squarespace-specific framing and tips link missing"
+        }
+      ],
+      "content_differences": [
+        {
+          "element": "Hero Description",
+          "original": "Very detailed 100+ word description about Squarespace as ideal foundation (Lines 10)",
+          "current": "Shorter description",
+          "impact": "MEDIUM - Less persuasive setup"
+        },
+        {
+          "element": "Value Props Detail",
+          "original": "Each of 3 value props had 60-80 words explaining benefits",
+          "current": "15-20 words each",
+          "impact": "CRITICAL - 75% of detail lost"
+        },
+        {
+          "element": "Bento Grid Features",
+          "original": "8 detailed features with icons, titles, descriptions",
+          "current": "Not present",
+          "impact": "CRITICAL - Major differentiator section missing"
+        },
+        {
+          "element": "Process Steps",
+          "original": "6 detailed steps with Squarespace-specific benefits",
+          "current": "4 generic steps",
+          "impact": "HIGH - Squarespace advantages not highlighted"
+        },
+        {
+          "element": "FAQ Depth",
+          "original": "Very detailed, Squarespace-specific FAQs (Lines 735-836)",
+          "current": "Present but may be condensed",
+          "impact": "MEDIUM - Some Squarespace specificity may be lost"
+        }
+      ],
+      "structure_differences": [
+        {
+          "issue": "Missing Bento Grid Section",
+          "original": "Large visual grid showing 8 Squarespace advantages",
+          "current": "Not present",
+          "impact": "CRITICAL - Key visual differentiator missing"
+        },
+        {
+          "issue": "Missing Success Factors Section",
+          "original": "4-part section with Golden Circle and detailed explanations",
+          "current": "Not present",
+          "impact": "CRITICAL - Methodology explanation missing"
+        },
+        {
+          "issue": "Reduced Process Detail",
+          "original": "6 steps with Squarespace-specific details",
+          "current": "4 generic steps",
+          "impact": "HIGH - Platform advantages not clear"
+        }
+      ],
+      "missing_visual_elements": [
+        "Hero product render image",
+        "Squarespace Circle Gold Partner badge (prominent in hero)",
+        "3 value prop images",
+        "Bento grid layout with 8 feature cards",
+        "Design Grid image",
+        "Squarespace CMS Interface image",
+        "6 process step images",
+        "Golden Circle diagram",
+        "4 success factor images",
+        "Noel Bossart team photo",
+        "Squarespace Gold Partner badge in final CTA"
+      ]
+    },
+    {
+      "page": "webdesign-agentur",
+      "markdown_file": "de_webdesign-agentur.md",
+      "json_file": "webdesign-agentur.json",
+      "match_percentage": "85%",
+      "severity": "LOW",
+      "notes": "This page appears to have DUPLICATE content from ueber-uns.md. The markdown and JSON are very similar - this suggests the markdown extraction may have grabbed content from the wrong page or there's a routing/content mixup.",
+      "missing_sections": [
+        {
+          "section_name": "Social Responsibility Section",
+          "original_content": "Brazil project section with photo (Lines 112-122)",
+          "current_status": "Not present in JSON",
+          "impact": "MEDIUM - Values differentiator missing"
+        }
+      ],
+      "potential_issue": {
+        "description": "webdesign-agentur.md and ueber-uns.md have identical content",
+        "implications": "Either wrong markdown was extracted, or pages are duplicates. Need to verify original HTML source."
+      }
+    }
+  ],
+  "critical_findings": [
+    {
+      "category": "Missing Visual Sections",
+      "severity": "CRITICAL",
+      "findings": [
+        "Home: Missing Golden Circle methodology section with diagram and 4 sub-sections",
+        "Home: Missing Bento Grid / Feature Grid visual layout",
+        "Squarespace-Agentur: Missing entire Bento Grid with 8 Squarespace advantages",
+        "Squarespace-Agentur: Missing Success Factors section with 4 detailed explanations",
+        "Ueber-Uns: Missing Social Responsibility section about Brazil project"
+      ],
+      "impact": "These are major visual differentiators and persuasion elements that explain methodology and values. Without them, the site loses significant uniqueness and persuasiveness."
+    },
+    {
+      "category": "Content Simplification",
+      "severity": "CRITICAL",
+      "findings": [
+        "Value propositions reduced from 60-80 words to 15-20 words (70% content loss)",
+        "Service grid items reduced from 4 checkmarked items to single description",
+        "Process steps reduced from 6 detailed steps to 4 generic steps",
+        "Process step descriptions reduced from 40-60 words to 15-25 words"
+      ],
+      "impact": "Massive loss of persuasive detail. Original was rich with specific benefits and explanations. Current version is too generic and doesn't sell the value effectively."
+    },
+    {
+      "category": "Missing Trust Elements",
+      "severity": "HIGH",
+      "findings": [
+        "Client logo count reduced from 11 to 6",
+        "Team photos not displayed",
+        "LinkedIn links for team missing",
+        "Squarespace Gold Partner badge not prominently displayed",
+        "Review boxes with Google links missing or reduced",
+        "Testimonial photos missing"
+      ],
+      "impact": "Significant reduction in social proof and credibility signals. These elements build trust and the current implementation doesn't showcase credentials effectively."
+    },
+    {
+      "category": "Personality and Positioning Lost",
+      "severity": "HIGH",
+      "findings": [
+        "Headings changed from personality-driven to generic (e.g., 'Warum Andere zu unserer Webdesign Agentur wechseln?' → 'Warum Noevu?')",
+        "Swiss positioning reduced or removed in many places",
+        "Action-oriented framing lost (e.g., 'Startet heute' → generic CTA)",
+        "Specific methodology explanations removed or simplified",
+        "Clever wordplay and framing removed"
+      ],
+      "impact": "Original had strong personality and positioning. Current version is more corporate and generic, losing differentiation."
+    },
+    {
+      "category": "Process and Images",
+      "severity": "HIGH",
+      "findings": [
+        "Home: 6 process steps → 4 steps, missing images",
+        "Squarespace-Agentur: Missing all process step images",
+        "Value prop images missing or not visible",
+        "Feature/benefit images not integrated into sections"
+      ],
+      "impact": "Visual storytelling significantly reduced. Original used images heavily to illustrate each point. Current version is much more text-heavy."
+    },
+    {
+      "category": "Missing Sections/Features",
+      "severity": "CRITICAL",
+      "findings": [
+        "Bento Grid layouts completely missing (2 pages)",
+        "Golden Circle sections missing (2 pages)",
+        "Success Factors sections missing",
+        "Social Responsibility section missing",
+        "Specific CTA boxes and review links missing",
+        "Internal navigation anchors missing"
+      ],
+      "impact": "These were complete sections/features that provided unique value. Without them, pages are significantly less complete and compelling."
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "CRITICAL",
+      "action": "Restore Bento Grid Sections",
+      "pages_affected": ["home.json", "squarespace-agentur.json"],
+      "details": "Create new Bento Grid component type to display 6-8 features in visual grid layout with icons, titles, and descriptions. This is a major visual differentiator."
+    },
+    {
+      "priority": "CRITICAL",
+      "action": "Restore Golden Circle Methodology Sections",
+      "pages_affected": ["home.json", "squarespace-agentur.json"],
+      "details": "Add complete sections explaining the Golden Circle methodology with diagram image and 4 sub-sections with images and detailed explanations."
+    },
+    {
+      "priority": "CRITICAL",
+      "action": "Expand Value Propositions",
+      "pages_affected": ["home.json", "squarespace-agentur.json"],
+      "details": "Expand all value prop descriptions from current 15-20 words to original 60-80 words. Include all images (3 per page). This is massive content loss that needs restoration."
+    },
+    {
+      "priority": "CRITICAL",
+      "action": "Restore Service Grid Detail",
+      "pages_affected": ["home.json", "squarespace-agentur.json"],
+      "details": "Change from single description to 4 checkmarked items per service. This provides specificity and credibility."
+    },
+    {
+      "priority": "HIGH",
+      "action": "Expand Process Sections",
+      "pages_affected": ["home.json", "squarespace-agentur.json"],
+      "details": "Restore 6 process steps (from 4), add all process images, expand descriptions from 15-25 words to 40-60 words."
+    },
+    {
+      "priority": "HIGH",
+      "action": "Add Missing Client Logos",
+      "pages_affected": ["home.json"],
+      "details": "Add 5 missing client logos (Swiss Economic Forum, Weinbau Wetli, SwissP, etc.) to reach original count of 11."
+    },
+    {
+      "priority": "HIGH",
+      "action": "Restore Social Responsibility Section",
+      "pages_affected": ["ueber-uns.json"],
+      "details": "Add complete section about Brazil education project with classroom photo. This is key values differentiator."
+    },
+    {
+      "priority": "HIGH",
+      "action": "Add Team Photos and LinkedIn Links",
+      "pages_affected": ["ueber-uns.json", "webdesign-agentur.json"],
+      "details": "Display team member photos and add LinkedIn profile links. Critical for building personal connection and credibility."
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Restore Original Heading Personality",
+      "pages_affected": ["ALL"],
+      "details": "Replace generic headings with original personality-driven versions. Examples: 'Warum Noevu?' → 'Warum Andere zu unserer Webdesign Agentur wechseln?', 'Häufige Fragen' → 'Antworten auf die häufigsten Fragen zur Zusammenarbeit mit unserer KMU Webdesign Agentur'"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Add Review Boxes and Google Links",
+      "pages_affected": ["home.json", "squarespace-agentur.json"],
+      "details": "Add prominent review boxes with 4.9 star rating and link to Google reviews. Increase social proof visibility."
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Display Gold Partner Badge Prominently",
+      "pages_affected": ["home.json", "squarespace-agentur.json"],
+      "details": "Ensure Squarespace Circle Gold Partner badge is displayed prominently in hero or near top of page, not just in logo gallery."
+    },
+    {
+      "priority": "LOW",
+      "action": "Add Team Photos to Final CTAs",
+      "pages_affected": ["home.json", "squarespace-agentur.json", "ueber-uns.json"],
+      "details": "Add Noel Bossart photo to final CTA sections for personal touch."
+    },
+    {
+      "priority": "LOW",
+      "action": "Restore Specific CTA Wording",
+      "pages_affected": ["ALL"],
+      "details": "Replace generic CTA buttons with specific original wording (e.g., 'Jetzt Web-Projekt anfragen', 'CMS-Evaluation starten', etc.)"
+    }
+  ],
+  "component_gaps": [
+    {
+      "component_name": "BentoGrid",
+      "status": "MISSING",
+      "required_for": ["home.json", "squarespace-agentur.json"],
+      "description": "Visual grid layout for displaying 6-8 features/benefits with icons, titles, and descriptions in a bento-box style layout"
+    },
+    {
+      "component_name": "GoldenCircleSection",
+      "status": "MISSING",
+      "required_for": ["home.json", "squarespace-agentur.json"],
+      "description": "Section type that displays Golden Circle diagram with 4 sub-sections, each with image, title, description, and CTA"
+    },
+    {
+      "component_name": "ReviewBox",
+      "status": "MISSING",
+      "required_for": ["home.json", "squarespace-agentur.json"],
+      "description": "Prominent box displaying star rating, review count, and link to Google reviews"
+    },
+    {
+      "component_name": "TeamGrid",
+      "status": "PARTIAL",
+      "required_for": ["ueber-uns.json", "webdesign-agentur.json"],
+      "description": "Current featuresList needs enhancement to support team photos and LinkedIn links"
+    },
+    {
+      "component_name": "RichValueProposition",
+      "status": "EXISTS_BUT_SIMPLIFIED",
+      "required_for": ["home.json", "squarespace-agentur.json", "ueber-uns.json"],
+      "description": "Current valueProposition component needs to support: large images, 60-80 word descriptions, and more visual prominence"
+    },
+    {
+      "component_name": "ChecklistServiceGrid",
+      "status": "MISSING",
+      "required_for": ["home.json", "squarespace-agentur.json"],
+      "description": "Service grid that displays 4 checkmarked items per service instead of single description"
+    },
+    {
+      "component_name": "SocialResponsibilitySection",
+      "status": "MISSING",
+      "required_for": ["ueber-uns.json"],
+      "description": "Dedicated section type for social responsibility content with image and detailed description"
+    }
+  ],
+  "next_steps": [
+    "1. Create detailed component specifications for missing components (BentoGrid, GoldenCircleSection, etc.)",
+    "2. Update Zod schemas to support enhanced components",
+    "3. Build React components for new section types",
+    "4. Systematically update JSON files page by page, starting with home.json",
+    "5. Add all missing images to proper CDN locations",
+    "6. Test visual layouts match original designs",
+    "7. Verify all content matches 100% with original markdown",
+    "8. QA pass to ensure no regressions"
+  ]
+}

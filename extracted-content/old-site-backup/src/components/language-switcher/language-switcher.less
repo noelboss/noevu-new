@@ -1,0 +1,72 @@
+@import "../../mixins.less";
+
+#multilingual-language-picker-desktop {
+  display: none;
+}
+
+#noevu-language-switcher {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: flex-start;
+  @media screen and (min-width: 769px) {
+    justify-content: flex-end;
+  }
+
+  &:before {
+    .material-icon();
+    content: "translate";
+    margin-right: 0;
+  }
+
+  s {
+    margin-right: 0;
+    pointer-events: none;
+  }
+
+  a {
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 1rem;
+  }
+
+  a:hover {
+    opacity: 1;
+  }
+
+  .weglot-link--active {
+    text-decoration: underline;
+    opacity: 1;
+  }
+
+  .language-switcher-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 0.5em;
+
+    flex-direction: row-reverse; // This reverses the order
+    justify-content: flex-end; // Align to the right
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .language-link {
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: var(--primary-button-text-color);
+    }
+
+    &.active {
+      color: var(--primary-button-text-color);
+      text-decoration: underline;
+      opacity: 1;
+    }
+  }
+}

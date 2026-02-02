@@ -1,0 +1,18 @@
+#siteWrapper {
+
+  .sqs-button-element--primary,
+  .sqs-block-button-element,
+  .sqs-button-element--secondary,
+  .form-submit-button {
+    backdrop-filter: blur(10px);
+
+    &:not(.list-item-content__button) {
+      box-shadow: 0 0 20px 0px color-mix(in oklab, var(--headingMediumColor) 50%, transparent 80%);
+    }
+  }
+}
+
+#siteWrapper .background-pause-button {
+  display: none !important;
+  opacity: 0 !important;
+}

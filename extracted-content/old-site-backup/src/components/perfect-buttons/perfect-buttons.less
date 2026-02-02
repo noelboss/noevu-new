@@ -1,0 +1,81 @@
+@import "../../mixins.less";
+
+/* perfect buttons */
+
+p,
+h4 {
+  &[style*="margin-left: 40px;"],
+  &[style*="margin-left:40px;"] {
+    margin-left: 0px !important;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+    margin-top: 1.75em;
+
+    &[style*="center"] {
+      justify-content: center;
+    }
+    &[style*="right"] {
+      justify-content: flex-end;
+    }
+
+    .sqs-edit-mode-active .fluid-engine & .sqs-block-button-container {
+      width: unset;
+    }
+
+    a:first-child {
+      .button-variant(primary);
+    }
+    a:nth-child(2):not(:last-child) {
+      .button-variant(secondary);
+    }
+
+    a:last-child:not(:first-child) {
+      &:hover {
+        opacity: 0.7;
+      }
+
+      box-shadow: none;
+
+      color: var(--tertiaryButtonBackgroundColor);
+      background-color: transparent;
+      border: none;
+      border-bottom: var(--tertiary-button-stroke) solid
+        var(--tertiaryButtonBackgroundColor);
+      padding: var(--tertiary-button-padding-y) var(--tertiary-button-padding-x);
+      text-decoration: none;
+      border-radius: 0px;
+      line-height: normal;
+      font-size: ~"calc(var(--tertiary-button-font-font-size-value)*1rem)";
+      font-weight: var(--tertiary-button-font-font-weight);
+    }
+  }
+}
+
+#siteWrapper .header-actions-action--cta .btn {
+  .button-variant(primary);
+
+  &:after {
+    content: "calendar_today";
+  }
+}
+
+#siteWrapper .form-submit-button {
+  .button-variant(primary);
+
+  &:after {
+    content: "send";
+  }
+  font-family: var(--body-font-font-family);
+  line-height: var(--body-font-line-height);
+
+  .form-submit-button-state {
+    line-height: var(--body-font-line-height);
+  }
+}
+
+/*.sqs-button-element--primary:not(.form-submit-button) {
+  .button-variant(primary);
+}*/

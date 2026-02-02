@@ -1,0 +1,54 @@
+@import "./../mixins.less";
+
+body {
+    text-decoration-skip-ink: auto;
+
+    p {
+        word-break: normal;
+        overflow-wrap: break-all;
+        hyphens: auto;
+        widows: 2;
+        orphans: 2;
+
+        strong {
+            font-weight: inherit;
+        }
+    }
+
+    &.devmode {
+        a[target="_blank"] {
+            position: relative;
+            text-decoration: underline !important;
+            text-decoration-color: #ff000090 !important;
+            text-decoration-thickness: 2px !important;
+
+            &:hover {
+                text-decoration-color: #ff0000 !important;
+            }
+        }
+    }
+}
+
+// Cookie consent: < probably not?!
+body .video-placeholder-text-normal {
+    font-size: 0.8rem;
+    padding: 0;
+}
+
+#page {
+    background-color: @white;
+}
+
+#siteWrapper {
+    @media screen and (max-width: 768px) {
+
+        .mobile-hidden,
+        img[alt*="mobile-hidden"] {
+            opacity: 0;
+            position: absolute;
+            top: -200vh;
+            left: -200vw;
+            display: none !important;
+        }
+    }
+}

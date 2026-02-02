@@ -1,0 +1,549 @@
+:root {
+  --default-border-radius: 10px;
+}
+
+.this(@color: red, @enabled: true) when (@enabled =true) {
+  border: 1px solid @color !important;
+}
+
+@primary-button-radius: var(--primary-button-rounded-border-top-left-radius);
+@defaultBorderRadius: var(--default-border-radius);
+
+@greenVar: ~"var(--darkAccent-hsl)";
+@orangeVar: ~"var(--white-hsl)";
+@greyVar: ~"var(--black-hsl)";
+@beigeVar: ~"var(--lightAccent-hsl)";
+@whiteVar: ~"var(--accent-hsl)";
+@blackVar: ~"var(--black-hsl)";
+
+@greenHex: #255a4e;
+@orangeHex: #ff6b30;
+@brightGreenVar: 167, 18%, 46%;
+@brightOrangeVar: 17, 100%, 59%;
+
+@green: hsl(@greenVar);
+@orange: hsl(@orangeVar);
+@grey: hsl(@greyVar);
+@beige: hsl(@beigeVar);
+@white: hsl(@whiteVar);
+@black: hsl(@blackVar);
+
+:root {
+  --greenHsl: var(--darkAccent-hsl);
+  --orangeHsl: var(--white-hsl);
+  --greyHsl: var(--black-hsl);
+  --beigeHsl: var(--lightAccent-hsl);
+  --whiteHsl: var(--accent-hsl);
+  --blackHsl: var(--black-hsl);
+}
+
+.greenHsla(@opacity: 1, @property: color) {
+  @{property}:~"hsla(var(--greenHsl), @{opacity})";
+}
+
+.orangeHsla(@opacity: 1, @property: color) {
+  @{property}:~"hsla(var(--orangeHsl), @{opacity})";
+}
+
+.greyHsla(@opacity: 1, @property: color) {
+  @{property}:~"hsla(var(--greyHsl), @{opacity})";
+}
+
+.beigeHsla(@opacity: 1, @property: color) {
+  @{property}:~"hsla(var(--beigeHsl), @{opacity})";
+}
+
+.whiteHsla(@opacity: 1, @property: color) {
+  @{property}:~"hsla(var(--whiteHsl), @{opacity})";
+}
+
+.blackHsla(@opacity: 1, @property: color) {
+  @{property}:~"hsla(var(--blackHsl), @{opacity})";
+}
+
+/*
+- hsla(var(--white-hsl),1)
+- hsla(var(--lightAccent-hsl),1)
+- hsla(var(--accent-hsl),1)
+- hsla(var(--darkAccent-hsl),1)
+- hsla(var(--black-hsl),1)
+*/
+
+.defaultBorderRadius() {
+  border-radius: @defaultBorderRadius;
+}
+
+.defaultBoxShadow(@firstColor: @greenVar, @secondColor: @whiteVar) {
+  box-shadow: 0px 0px 15px hsla(@firstColor, 0.3),
+    8px 8px 40px hsla(@secondColor, 0.5);
+}
+
+// Button mixin with variant parameter
+.button-variant(@variant: primary, @state: default, @button-bg-color: ~"var(--@{variant}ButtonBackgroundColor)") {
+  @icon-offset: 2px;
+  @button-padding-y: 0.75em;
+  @button-padding-x: 1.75em;
+
+  @button-font-size: ~"var(--@{variant}-button-font-font-size)";
+  @button-text-color: ~"var(--@{variant}ButtonTextColor)";
+  @button-font-weight: ~"var(--@{variant}-button-font-font-weight)";
+  @button-radius: ~"var(--@{variant}-button-rounded-border-top-left-radius, @{primary-button-radius})";
+
+  position: relative;
+
+  font-size: @button-font-size !important;
+  line-height: calc(@button-font-size * 1.5) !important;
+  padding: @button-padding-y @button-padding-x !important;
+
+  font-family: var(--body-font-font-family);
+  font-style: var(--body-font-font-style);
+  font-weight: @button-font-weight;
+  letter-spacing: var(--body-font-letter-spacing);
+  text-transform: var(--body-font-text-transform);
+
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  color: @button-text-color !important;
+  background-color: @button-bg-color !important;
+  border-color: @button-text-color;
+  content: "@{variant}";
+
+  // Conditional padding for non-tertiary buttons
+  & when (@variant =primary) or (@variant =secondary) or (@variant ="") {
+    padding-right: calc(@button-padding-x * 2.2) !important;
+  }
+
+  border-radius: @button-radius;
+  text-decoration: none;
+
+  * {
+    color: @button-text-color !important;
+  }
+
+  .form-submit-button-state {
+    line-height: inherit !important;
+  }
+
+  & when (@variant =primary) or (@variant =secondary) {
+
+    &::after,
+    span[style*="text-decoration:underline"],
+    span[style*="text-decoration:line-through"] {
+      .material-icon();
+      position: absolute;
+
+      font-size: inherit;
+      line-height: calc(@button-padding-y * 2 + @button-font-size + @icon-offset * 2);
+      width: calc(@button-padding-y * 2 + @button-font-size + @icon-offset * 2);
+
+      background-color: hsla(@whiteVar, 1);
+      z-index: 1;
+      top: @icon-offset;
+      right: @icon-offset;
+      border-radius: 3em;
+
+      background-color: @button-text-color;
+      color: @button-bg-color !important;
+      text-align: center;
+      margin: 0;
+      transition: all 0.3s ease-in-out;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
+  & when (@variant =primary) {
+    overflow: hidden;
+
+    border: 1px solid hsla(@whiteVar, 0.25);
+    box-shadow: 0px 0px 15px hsla(@whiteVar, 0.3),
+      8px 8px 40px hsla(@orangeVar, 0.5),
+      inset -5px -5px 10px hsla(@whiteVar, 0.15);
+
+    .dark &,
+    .dark-bold &,
+    .black &,
+    .black-bold & {
+      border-color: hsla(@blackVar, 0.25);
+      box-shadow: 0px 0px 15px hsla(@greenVar, 0.3),
+        8px 8px 40px hsla(@greyVar, 0.5);
+
+      &::after,
+      span[style*="text-decoration:underline"],
+      span[style*="text-decoration:line-through"] {
+        background-color: @button-text-color;
+        color: @button-bg-color !important;
+      }
+    }
+  }
+
+  & when (@variant =secondary) {
+    border: 1px solid hsla(@greenVar, 0.25);
+    box-shadow: 0px 0px 15px hsla(@whiteVar, 0.3),
+      8px 8px 40px hsla(@greenVar, 0.5);
+
+    .dark &,
+    .dark-bold &,
+    .black &,
+    .black-bold & {
+      border-color: hsla(@whiteVar, 0.25);
+      box-shadow: 0px 0px 15px hsla(@greenVar, 0.3),
+        8px 8px 40px hsla(@greenVar, 0.5);
+
+      &::after,
+      span[style*="text-decoration:underline"],
+      span[style*="text-decoration:line-through"] {
+        color: hsla(@whiteVar, 1) !important;
+      }
+    }
+  }
+
+  .hover() {
+    color: @button-bg-color !important;
+    background-color: @button-text-color !important;
+    opacity: 1;
+
+    * {
+      color: @button-bg-color !important;
+    }
+
+    & when (@variant =primary) or (@variant =secondary) {
+
+      &::after,
+      span[style*="text-decoration:underline"],
+      span[style*="text-decoration:line-through"] {
+        width: calc(100% - @icon-offset * 2);
+        border-radius: @button-radius;
+      }
+    }
+
+    & when (@variant =primary) {
+      box-shadow: 0px 0px 15px hsla(@whiteVar, 0.5),
+        8px 8px 40px hsla(@orangeVar, 0.7),
+        inset -5px -5px 10px hsla(@orangeVar, 0.15);
+
+      .dark &,
+      .dark-bold &,
+      .black &,
+      .black-bold & {
+        border-color: hsla(@blackVar, 0.5);
+        box-shadow: 0px 0px 15px hsla(@greenVar, 0.3),
+          8px 8px 40px hsla(@greyVar, 0.5),
+          inset -5px -5px 10px hsla(@whiteVar, 0.15);
+      }
+    }
+
+    & when (@variant =secondary) {
+      box-shadow: 0px 0px 15px hsla(@whiteVar, 0.5),
+        8px 8px 40px hsla(@greenVar, 0.7);
+
+      .dark &,
+      .dark-bold &,
+      .black &,
+      .black-bold & {
+        border-color: hsla(@blackVar, 0.25);
+        box-shadow: 0px 0px 15px hsla(@greenVar, 0.3),
+          8px 8px 40px hsla(@greyVar, 0.5),
+          inset -5px -5px 10px hsla(@whiteVar, 0.15);
+      }
+    }
+  }
+
+  & when (@state =hover) {
+    .hover();
+  }
+
+  &:hover {
+    .hover();
+  }
+}
+
+.headingMargins(@tag) {
+  @{tag} {
+
+    &+h1,
+    &+h2,
+    &+h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.dot(@opacity: 1, @backgroundColor: @orangeHex, @position: absolute) {
+  &:before {
+    .dotInner(@opacity, @backgroundColor, @position, left);
+  }
+}
+
+.dotAfter(@opacity: 1, @backgroundColor: @orangeHex, @position: absolute) {
+  &:after {
+    .dotInner(@opacity, @backgroundColor, @position, right);
+  }
+}
+
+.dotInner (@opacity: 1,
+  @backgroundColor: @orangeHex,
+  @position: absolute,
+  @positionX: left,
+  @paddingX: 2em) {
+  transition: all 0.2s ease-in-out !important;
+
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  z-index: 0;
+  visibility: visible;
+  background: hsla(@backgroundColor, @opacity);
+  border-radius: 50%;
+
+  position: @position;
+  box-shadow: 0 0 5px hsla(@backgroundColor, @opacity * 0.75);
+
+  & when (@position =absolute) {
+    top: 50%;
+    @{positionX}: 0;
+
+    & when (@positionX =left) {
+      transform: translateY(-50%) translateX(@paddingX * 0.5);
+    }
+
+    & when (@positionX =right) {
+      transform: translateY(-50%) translateX(-@paddingX * 0.5);
+    }
+  }
+
+  & when (@position =relative) {
+    left: -10px;
+  }
+
+
+  &:hover {
+    background: hsla(@backgroundColor, 1);
+    box-shadow: 0 0 5px hsla(@backgroundColor, 1);
+  }
+}
+
+.tags(@background: @greenVar,
+  @color: @greenVar,
+  @hoverBackground: @greenVar,
+  @hoverColor: @greenVar,
+  @opacity: 0.1,
+  @colorOpacity: 0.75,
+  @hover: true, @display: inline-flex) {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3em;
+
+  padding: 4px 12px;
+  border-radius: 100px;
+  display: @display;
+
+  &[style*="center"] {
+    display: flex;
+  }
+
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+
+  color: hsla(@color, @colorOpacity);
+  background-color: hsla(@background, @opacity);
+  transition: background 0.25s ease-in-out,
+  box-shadow 0.25s ease-in-out;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+
+  & when (@hover =true) {
+    &:hover {
+      background-color: hsla(@hoverBackground, @opacity * 2);
+      color: hsla(@hoverColor, 1);
+    }
+  }
+}
+
+.wideBorderRadius(@radius: @defaultBorderRadius) {
+  border-radius: calc(@radius * 2);
+
+  .list-item-media-inner {
+    border-radius: calc(@radius * 2);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.wideBorder(@color: @whiteVar, @opacity: 0.5, @width: 10px) {
+  .wideBorderRadius();
+  padding: @width;
+}
+
+.cardsBackgroundAndBorder(@color: @whiteVar, @opacity: 0.5, @width: 10px) {
+  .wideBorder(@color, @opacity, @width);
+  .glass();
+
+  transition: all 0.3s ease-out !important;
+  border-color: transparent;
+
+  border-width: 0;
+
+  .list-item-content {
+    background-color: hsla(@color, 0.75);
+    color: @black;
+  }
+
+  .blog-basic-grid--text,
+  .summary-content {
+    background-color: hsla(@color, @opacity * 1.5);
+  }
+
+  &:hover {
+    background-color: hsla(@color, @opacity * 1.75);
+    backdrop-filter: blur(10px);
+
+    .blog-basic-grid--text,
+    .summary-content {
+      background-color: hsla(@color, @opacity * 1.75);
+    }
+  }
+}
+
+.glass(@glowColor: @whiteVar,
+  @backroundColor: @whiteVar,
+  @backroundOpacity: 0.75,
+  @blur: 5px,
+  @borderWidth: 0,
+  @hoverOpacity: @backroundOpacity) {
+  /* Allow @blur to be a CSS var; use @{blur} and calc() for hover */
+  backdrop-filter:~"blur(@{blur})";
+
+  /* Use escaped hsla strings so CSS variables work */
+  background-color:~"hsla(@{backroundColor}, @{backroundOpacity})";
+
+  /* Simulated borders via outer box-shadows to avoid layout shifts */
+  box-shadow:
+  /* Outer border rings */
+  0 0 0 @borderWidth ~"hsla(@{glowColor}, 0.5)",
+  0 0 0 calc(@borderWidth * 2)~"hsla(@{glowColor}, 0.15)",
+  /* Inner richness */
+  inset 5px 0 20px 0~"hsla(@{glowColor}, 0.5)",
+  inset 0 -30px 30px 0~"hsla(@{glowColor}, 0.5)";
+
+  transition: box-shadow 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out,
+    background-color 0.5s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 0 @borderWidth ~"hsla(@{glowColor}, 0.6)",
+    0 0 0 calc(@borderWidth * 2)~"hsla(@{glowColor}, 0.2)",
+    inset 0 0px 20px 0~"hsla(@{glowColor}, 0.75)",
+    inset 10px -30px 20px 0~"hsla(@{glowColor}, 0.5)";
+    backdrop-filter:~"blur(calc(@{blur} * 1.25))";
+    background-color:~"hsla(@{backroundColor}, @{hoverOpacity})";
+  }
+}
+
+// Mixin für den Gradient-Underline
+.gradientUnderlinePseudo(@parent,
+  @child,
+  @color: @orangeVar,
+  @thickness: 0.3em,
+  @overflow: 0.1em,
+  @dur: 0.6s,
+  @delay: 0.6s) {
+  @{parent} {
+    @{child}:hover {
+      background-image: linear-gradient(60deg, @black 0%, @black 100%),
+        linear-gradient(to right, hsla(var(--white-hsl), 1) 0%, transparent 100%); // Underline gradient
+
+      .black &,
+      .black-bold &,
+      .dark &,
+      .dark-bold & {
+        background-image: linear-gradient(60deg, @white 50%, @white 100%),
+          linear-gradient(to right, hsla(var(--white-hsl), 1) 0%, transparent 100%); // Underline gradient
+      }
+    }
+  }
+
+  @{parent} @{child} {
+    font-style: normal;
+    font-weight: inherit;
+    // Multiple backgrounds
+    background-image: linear-gradient(60deg, @black 0%, @green 120%),
+      // Text gradient
+      linear-gradient(to right, hsla(var(--white-hsl), 1) 0%, transparent 100%); // Underline gradient
+
+
+    .black &,
+    .black-bold &,
+    .dark &,
+    .dark-bold & {
+      // Multiple backgrounds
+      background-image: linear-gradient(60deg, @beige 0%, @white 120%), // Text gradient
+        linear-gradient(to right, hsla(var(--white-hsl), 1) 0%, transparent 100%); // Underline gradient
+    }
+
+    text-decoration: none;
+
+
+    background-repeat: no-repeat;
+
+    // Position for both gradients
+    background-position: 0 0,
+    // Text gradient position
+    0 calc(100% - @thickness/2); // Underline gradient position
+
+    // Size for both gradients
+    background-size: 100% 100%,
+    // Text gradient size
+    0% @thickness; // Underline gradient size
+
+    // Clipping for each background
+    -webkit-background-clip: text,
+    padding-box;
+    background-clip: text,
+    padding-box;
+
+    padding-left: @thickness/2;
+    padding-right: @thickness/2;
+
+    transition: background-image @dur @delay ease-in-out,
+    background-size @dur @delay*2 ease-in-out,
+    -webkit-text-fill-color 0.3s @delay*3 ease-in-out;
+  }
+
+  @{parent}.fadeIn {
+    @{child} {
+      // Size for both gradients
+      background-size: 100% 100%,
+        // Text gradient size
+        100% @thickness; // Underline gradient size
+    }
+  }
+}
+
+
+// Material Design Icons on strikethrough
+.material-icon(@align: 0 0.25em 0 0, @size: 1.2em, @weight: 300, @grading: 200, @fill: 0) {
+  font-family: "Material Symbols Outlined";
+  font-variation-settings: "FILL"@fill, "wght"@weight, "GRAD"@grading,
+    "opsz" 48;
+
+  font-weight: @weight;
+  font-style: normal;
+  font-size: @size;
+  line-height: 1em;
+  color: inherit;
+  letter-spacing: normal;
+  text-transform: none;
+  text-decoration: none !important;
+  text-decoration-line: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+  margin: @align;
+  pointer-events: none;
+}

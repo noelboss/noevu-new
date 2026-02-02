@@ -1,0 +1,8 @@
+@import "../../mixins.less";
+@import "./global/components/cards3d/cards3d.less";
+
+#siteWrapper [id*="cards3d"] {
+  .user-items-list-item-container[data-current-context*='"isCardEnabled": true'] {
+    .cards3d();
+  }
+}

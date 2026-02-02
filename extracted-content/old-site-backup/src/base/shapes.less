@@ -1,0 +1,40 @@
+@import "./../mixins.less";
+
+.fluid-image-container:not([style*="-radius"]) {
+    .content-fill {
+        .defaultBorderRadius();
+        overflow: hidden;
+    }
+}
+
+.sqs-shape-block-container[data-shape-name="rectangle"]>div {
+    backdrop-filter: blur(20px);
+}
+
+section[id^="bento-grid"] {
+    .sqs-block-code .sqs-block-content {
+        position: static;
+    }
+
+    .material-icon {
+        .material-icon();
+
+        font-size: clamp(35px, 2.4vw, 40px);
+
+        background: linear-gradient(330deg, @white 20%, @beige 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        margin: 0;
+        max-width: 100%;
+        padding: 0;
+        position: absolute;
+        top: 0.5em;
+
+        &.right {
+            right: 0.5em;
+            text-align: right;
+        }
+    }
+}

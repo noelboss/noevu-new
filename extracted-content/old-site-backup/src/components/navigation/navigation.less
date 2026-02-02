@@ -1,0 +1,179 @@
+@import "../../mixins.less";
+
+/* ── Dropdown menu makeover 		  (Squarespace 7.1) ───────────── */
+/* tweakables */
+@ddBg: rgba(255, 255, 255, 0.75);
+@ddBlur: 20px;
+@ddRadius: var(--default-border-radius);
+@paddingX: 2.5vw;
+@paddingY: 0.55em;
+@ddOffset: 2em;
+
+#header {
+  background-color: transparent;
+  /* Nav theme knobs (light defaults) */
+  --nav-glass-c1: var(--beigeHsl);
+  --nav-glass-c2: var(--whiteHsl);
+  --nav-glass-c3: var(--whiteHsl);
+  --nav-glass-alpha: 0.55;
+  --nav-glass-alpha-hover: 0.85;
+  --nav-blur: 30px;
+  --nav-icon-border: hsla(var(--greyHsl), 0.25);
+  --nav-padding-x: 2.5vw;
+  --nav-padding-y: 0.55em;
+  --nav-menu-distance: 1em;
+  --text-shadow-color: var(--whiteHsl);
+
+  --dot-color: var(--greenHsl);
+  --dot-color-active: 167, 18%, 46%;
+  --dot-color-hover: var(--orangeHsl);
+
+  --sub-title-color: var(--blackHsl);
+  --icon-color: var(--greenHsl);
+
+  &.black-bold {
+    --nav-glass-c1: 167, 74%, 6%;
+    --nav-glass-c2: 167, 74%, 6%;
+    --nav-glass-c3: 0, 0%, 0%;
+    --nav-glass-alpha: 0.75;
+    --nav-glass-alpha-hover: 0.8;
+    --nav-blur: 10px;
+    --nav-icon-border: ~"hsla(var(--whiteHsl), 0.5)";
+    --text-shadow-color: var(--blackHsl);
+
+    --dot-color: var(--orangeHsl);
+    --dot-color-hover: var(--whiteHsl);
+    --dot-color-active: var(--orangeHsl);
+
+    --sub-title-color: var(--beigeHsl);
+    --icon-color: var(--whiteHsl);
+
+    --primaryButtonBackgroundColor: hsla(var(--orangeHsl), 1);
+
+    .btn {
+      --primaryButtonBackgroundColor: hsla(var(--orangeHsl), 1);
+
+      box-shadow: 0px 0px 15px hsla(@orangeVar, 0.3),
+        8px 8px 40px hsla(@orangeVar, 0.2),
+        inset -5px -5px 10px hsla(@whiteVar, 0);
+    }
+
+    .btn:hover {
+      box-shadow: 0px 0px 15px hsla(@orangeVar, 0.8),
+        8px 8px 40px hsla(@orangeVar, 0.5),
+        inset -5px -5px 10px hsla(@orangeVar, 0.05);
+    }
+  }
+
+  .header-background,
+  .header-border,
+  .header-dropshadow {
+    display: none !important;
+  }
+
+  /* hide first llms info link */
+  nav>.header-nav-item:last-child,
+  .header-menu-nav-wrapper>.header-menu-nav-item:last-child {
+    display: none;
+  }
+
+  .header-nav-item {
+    padding: 0;
+    position: relative;
+
+    &.header-nav-item--active {
+
+      button,
+      button span,
+      a,
+      a span {
+        background-image: none;
+      }
+    }
+
+    >button,
+    >a {
+      .dot(@opacity: 0, @position: relative);
+
+
+      padding-left: var(--nav-padding-x);
+      padding-right: calc(var(--nav-padding-x) * 0.6);
+      padding-top: var(--nav-padding-y);
+      padding-bottom: var(--nav-padding-y);
+
+      position: relative;
+      transition: color 0.2s ease-in-out !important;
+
+      &:hover {
+        .dot(@opacity: 1, var(--dot-color-hover), @position: relative);
+      }
+    }
+
+
+    &.header-nav-item--active {
+
+      >button,
+      >a {
+        .dot(@opacity: 1, @backgroundColor: var(--dot-color-active), @position: relative);
+
+        &:hover {
+          &:before {
+            background: hsla(var(--dot-color-hover), 1);
+            box-shadow: 0 0 5px hsla(var(--dot-color-hover), 1);
+          }
+        }
+      }
+    }
+
+    &:hover {
+      &:before {
+        background: hsla(@orangeVar, 1);
+      }
+    }
+  }
+
+  /* adjust sitze */
+  .header-title-nav-wrapper {
+    flex: 1 0 80%;
+  }
+
+  .header-title {
+    transition: all 0.2s ease-in-out;
+    flex: 0 1 20%;
+  }
+
+  .header-actions {
+    width: 20%;
+  }
+
+  .header-nav-list {
+    position: relative;
+
+    /* background */
+    &:after {
+      .wideBorderRadius();
+      border-radius: 3em;
+      backdrop-filter: blur(var(--nav-blur));
+      background-color: hsla(var(--nav-glass-c3), var(--nav-glass-alpha));
+      box-shadow: inset 0px 0px 10px 1px hsla(var(--nav-glass-c1), 0.15), inset 5px 0 20px 0 hsla(var(--nav-glass-c2), 0.25), inset 0 -30px 30px 0 hsla(var(--nav-glass-c1), 0.25);
+
+      content: "";
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+
+      a {
+        text-shadow: 0px 0px 2px ~"hsla(var(--text-shadow-color), 0.75)";
+      }
+    }
+
+    /* hover effects handled by .glass mixin */
+
+    .header-background-solid {
+      display: none;
+    }
+  }
+}

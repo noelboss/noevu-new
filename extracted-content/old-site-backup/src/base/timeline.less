@@ -1,0 +1,36 @@
+@import "./../mixins.less";
+
+.right-of-timeline,
+.left-of-timeline {
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+
+    h3 {
+        +p {
+            padding-top: 1em;
+        }
+
+        span {
+            vertical-align: -1px;
+        }
+    }
+}
+
+.timeline-stop-activated {
+    opacity: 1;
+}
+
+.timeline-stop-activated h3 {
+    &::after {
+        width: calc(100% + 2 * 0.25em);
+        opacity: 1;
+    }
+}
+
+.left-of-timeline h3 {
+    float: right;
+
+    +p {
+        clear: right;
+    }
+}

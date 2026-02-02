@@ -1,0 +1,402 @@
+@import "../../../mixins.less";
+
+@deviceColor: #000;
+
+.notch(@height: 20px) {
+  background: radial-gradient(circle at 50% 5px,
+      #667 0px,
+      #222 2px,
+      #222 5px,
+      #000 5px,
+      #000 100%);
+  position: absolute;
+  content: "";
+  display: block;
+  opacity: 1;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: @height;
+  width: 70%;
+  max-width: 100px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  bottom: auto;
+  z-index: 1;
+}
+
+.sqs-block-image .image-block-wrapper:after {
+  display: none;
+}
+
+#siteWrapper .blog-item-wrapper .blog-item-inner-wrapper {
+
+  /* make sure wider items are visible */
+  .row .col {
+    overflow: visible;
+  }
+
+  /* inline images */
+  .layout-caption-hidden {
+    .sqs-image-shape-container-element {
+      img[data-stretch="false"] {
+        object-fit: contain !important;
+        background-color: @white;
+      }
+
+      img[data-stretch="true"] {
+        .wideBorderRadius();
+        border: 10px solid hsla(@whiteVar, 0.5);
+        width: calc(100% - 2 * 10px) !important;
+        height: calc(100% - 2 * 10px) !important;
+        object-fit: cover !important;
+      }
+    }
+  }
+
+  .layout-caption-below {
+
+    /* Since it is not within Fluid Engine,
+    it should not be affected by change https: //forum.squarespace.com/news-announcements/changes-to-text-and-image-blocks-that-will-affect-custom-code-r472/ */
+    .sqs-image-shape-container-element {
+      .glass();
+      border-width: 10px;
+      .wideBorderRadius();
+
+      img {
+        .defaultBorderRadius();
+      }
+    }
+
+    .image-caption-wrapper {
+      position: relative;
+      top: -2.5em;
+      left: 7.5%;
+      margin-bottom: -2.5em;
+      width: calc(85% - 2em);
+      padding: 0 1em;
+
+      .glass();
+      .defaultBorderRadius();
+    }
+  }
+
+  .design-layout-collage {
+    &:not(.sqs-narrow-width) {
+      align-items: center;
+    }
+
+    .intrinsic {
+      width: 100%;
+
+      @media screen and (min-width: 769px) {
+        width: 80%;
+      }
+    }
+
+    .sqs-image-shape-container-element {
+      .wideBorderRadius();
+    }
+
+    .image-card-wrapper {
+      width: 100%;
+
+      @media screen and (max-width: 768px) {
+        float: none;
+      }
+
+      .image-card {
+        .wideBorder();
+        .glass();
+        .defaultBorderRadius();
+        padding: 2em;
+
+        .image-button-inner,
+        .image-subtitle-wrapper p {
+          margin: 1em 0;
+          display: flex;
+
+          a {
+            .button-variant(primary);
+
+            &:after {
+              content: "arrow_forward";
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Side by side phone view */
+  .sqs-gallery-block-stacked {
+    .sqs-gallery {
+      display: flex;
+      gap: 20px;
+
+      >.image-wrapper {
+        flex: 1 1 0%;
+        min-width: 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      .image-wrapper {
+        border-radius: 25px;
+        border: 10px solid black;
+        box-shadow: 10px 10px 20px hsla(@blackVar, 0.25);
+        overflow: hidden;
+        position: relative;
+        height: 70vmin;
+        background-color: #fff;
+
+        &:before {
+          .notch();
+        }
+
+        .image-block-wrapper {
+          position: relative;
+          overflow-y: scroll;
+          height: 100%;
+
+          img {
+            width: 100%;
+            object-fit: contain;
+            object-position: top left;
+            min-height: 100%;
+          }
+
+          .meta {
+            position: sticky;
+            bottom: 0;
+            padding: 0;
+            z-index: 1;
+            margin-top: -25%;
+
+            .meta-inside {
+
+              //position: absolute;
+              bottom: 0;
+              margin: 0;
+              padding: 1em;
+
+              h3 {
+                margin-top: 0;
+              }
+
+              .glass();
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  /* laptop phone preview */
+  .layout-caption-overlay-hover {
+    overflow: hidden;
+    margin: 4vw 0;
+
+    @media screen and (min-width: 769px) {
+      padding: 1vw 4vw 0vw;
+
+      margin-left: -1.5vw;
+      margin-right: -1.5vw;
+      .defaultBorderRadius();
+      .greenHsla(0.25, background-color);
+
+      box-shadow: 10px 0px 40px hsla(@blackVar, 0.25);
+    }
+
+    .sqs-block-image-figure {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .image-caption-wrapper {
+      background-color: transparent;
+      margin: 0em !important;
+      padding: 0em !important;
+
+      position: relative;
+      color: @greenVar;
+      order: 1;
+      opacity: 1;
+
+      .image-caption {
+        margin: 0em !important;
+        padding: 1vw 0 2vw !important;
+        visibility: visible;
+
+        .gradientUnderlinePseudo(p, em);
+
+        p {
+          font-family: var(--heading-font-font-family);
+          font-size: calc((var(--heading-3-size-value) - 1) * 1.2vw + 1.5rem);
+          font-weight: var(--heading-font-font-weight);
+          line-height: var(--heading-font-line-height);
+          letter-spacing: var(--heading-font-letter-spacing);
+          text-transform: var(--heading-font-text-transform);
+          color: var(--heading-font-color);
+          text-align: center;
+        }
+      }
+    }
+
+    .image-block-wrapper {
+      order: 2;
+    }
+
+    /* laptop or phone */
+    .intrinsic {
+      @media screen and (min-width: 767px) {
+        padding: 1vw 0vw 0vw;
+      }
+
+      .image-block-wrapper {
+        position: sticky;
+
+        /* notch */
+        &:before {
+          .notch();
+        }
+
+        box-shadow: 10px 0px 20px hsla(@blackVar, 0.5);
+        border-radius: 25px;
+        border: 6px solid black;
+        background: lighten(black, 20%);
+        height: 123vw;
+
+        @media screen and (min-width: 769px) {
+          padding-bottom: 0;
+          margin-bottom: 0;
+          border-bottom: 0px solid black;
+          border-bottom-right-radius: 0px;
+          border-bottom-left-radius: 0px;
+          height: clamp(37vw, 45vw, 45vmax);
+        }
+
+        .sqs-image-shape-container-element {
+          position: relative !important;
+          overflow-y: auto !important;
+          padding-bottom: 0px !important; // SQSP bug
+          height: 100% !important;
+          max-height: 85vh;
+
+          img {
+            position: absolute !important;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100% !important;
+            height: auto !important;
+          }
+        }
+      }
+    }
+  }
+
+  .image-overlay {
+    display: none;
+  }
+
+  /* cards image top or side*/
+  .design-layout-card,
+  .design-layout-stack {
+    border-radius: var(--default-border-radius);
+    overflow: hidden;
+    background-color: hsla(@greenVar, 0.25);
+    backdrop-filter: blur(20px);
+    border: 5px solid hsla(@greenVar, 0.4);
+
+    .sqs-button-element--primary {
+      margin-top: 1em;
+
+      .button-variant(primary);
+
+      &:after {
+        content: "arrow_forward";
+      }
+
+      &[href*="termin"] {
+        &:after {
+          content: "calendar_today";
+        }
+      }
+    }
+
+    .sqs-image-content::after {
+      background: none;
+    }
+
+    .sqs-image-shape-container-element {
+      img {
+        object-fit: cover !important;
+      }
+    }
+
+    // CTA Button
+    .image-subtitle a[href^="/"] {
+      .button-variant(primary);
+      display: inline-block;
+    }
+
+    &:hover {
+      border-color: hsla(@greenVar, 0.9);
+      box-shadow: 0 0 20px hsla(@greenVar, 0.5);
+    }
+
+    .sqs-image-content {
+      border-radius: 0;
+    }
+
+    .image-card-wrapper {
+      @media screen and (min-width: 769px) {
+        padding: 1em 0 0.5em;
+      }
+
+      margin: 0 !important;
+
+      .image-card {
+        padding: 0 1em 1em;
+      }
+    }
+  }
+
+  /* cards image side */
+  .design-layout-card {
+    >div:first-child {
+      display: flex;
+
+      .sqs-image {
+        height: 100%;
+        display: flex;
+      }
+
+      .sqs-image-shape-container-element,
+      .content-fit,
+      .sqs-block-image-link,
+      .sqs-image-content {
+        display: flex;
+        height: 100%;
+      }
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .image-card-wrapper {
+      padding: 1em 0 0.5em;
+
+      margin: 0 !important;
+
+      @media screen and (min-width: 769px) {
+        width: 60% !important;
+      }
+    }
+  }
+}

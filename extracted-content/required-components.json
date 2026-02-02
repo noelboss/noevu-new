@@ -1,0 +1,261 @@
+{
+  "existing_components": [
+    "hero",
+    "logoGallery",
+    "splitContent",
+    "valueProposition",
+    "servicesGrid",
+    "comparisonTable",
+    "process",
+    "featuresList",
+    "testimonials",
+    "cta",
+    "textContent",
+    "faq",
+    "blogGrid",
+    "waveDivider",
+    "contactForm",
+    "newsletter"
+  ],
+  "new_components_needed": [
+    {
+      "name": "teamGrid",
+      "purpose": "Display team member profiles with photos, roles, descriptions, and social links",
+      "fields": {
+        "title": "string (optional)",
+        "members": [
+          {
+            "name": "string",
+            "role": "string",
+            "image": "ImageSchema",
+            "bio": "RichTextSchema",
+            "linkedin": "string (optional)",
+            "email": "string (optional)"
+          }
+        ],
+        "layout": "enum ['2-column', '3-column', '4-column']"
+      },
+      "layout": "Grid layout with cards for each team member",
+      "used_in": [
+        "de_webdesign-agentur.md (lines 70-109)",
+        "de_ueber-uns.md (lines 71-108)",
+        "de_schweizer-squarespace-experte.md"
+      ],
+      "priority": "high",
+      "notes": "Shows 4 team members: Noel Bossart, Tobias Morf, Michael Karrer, Anabel Hafstad with photos, roles, bios and LinkedIn links"
+    },
+    {
+      "name": "socialResponsibility",
+      "purpose": "Showcase company's social responsibility initiatives and values",
+      "fields": {
+        "eyebrow": "string (optional)",
+        "title": "string",
+        "description": "RichTextSchema",
+        "image": "ImageSchema",
+        "cta": "LinkSchema (optional)"
+      },
+      "layout": "Full-width section with large image and text content",
+      "used_in": [
+        "de_webdesign-agentur.md (lines 112-122)",
+        "de_ueber-uns.md (lines 112-122)"
+      ],
+      "priority": "medium",
+      "notes": "Describes social engagement in Brazil (familyboss.art project)"
+    },
+    {
+      "name": "bentoGrid",
+      "purpose": "Multi-column feature grid with icons, titles, descriptions - modern bento-box style layout",
+      "fields": {
+        "title": "string (optional)",
+        "subtitle": "string (optional)",
+        "items": [
+          {
+            "icon": "string (Material Icons name)",
+            "iconDisplay": "enum ['icon', 'emoji', 'none']",
+            "title": "string",
+            "subtitle": "string (optional)",
+            "description": "RichTextSchema",
+            "size": "enum ['small', 'medium', 'large']"
+          }
+        ],
+        "columns": "enum ['2', '3', '4']"
+      },
+      "layout": "Asymmetric grid with varying card sizes",
+      "used_in": [
+        "de_squarespace-agentur.md (lines 128-201 - 6 feature cards)",
+        "de_ai-beratung-kmu-schweiz.md (lines 42-64 - AI services)"
+      ],
+      "priority": "high",
+      "notes": "Different from featuresList - has icons, varied sizing, and more visual hierarchy. Includes Material Icons (web_traffic, ads_click, mobile_layout, phone, add_shopping_cart, 3p, data_loss_prevention)"
+    },
+    {
+      "name": "statsBanner",
+      "purpose": "Display key statistics/numbers with labels",
+      "fields": {
+        "title": "string (optional)",
+        "backgroundColor": "enum ['green', 'orange', 'beige', 'white']",
+        "stats": [
+          {
+            "value": "string (e.g., '4.9', '25+', '100%')",
+            "label": "string",
+            "icon": "string (optional)"
+          }
+        ],
+        "layout": "enum ['horizontal', 'grid']"
+      },
+      "layout": "Horizontal or grid layout of large numbers with labels",
+      "used_in": [
+        "Multiple pages showing '4.9 stars on Google', '25 years experience'"
+      ],
+      "priority": "medium",
+      "notes": "Used for trust signals and social proof"
+    },
+    {
+      "name": "imageTextAlternating",
+      "purpose": "Alternating image-text sections for process steps or features",
+      "fields": {
+        "title": "string (optional)",
+        "items": [
+          {
+            "eyebrow": "string (optional)",
+            "title": "string",
+            "description": "RichTextSchema",
+            "image": "ImageSchema",
+            "imagePosition": "enum ['left', 'right', 'auto']",
+            "cta": "LinkSchema (optional)"
+          }
+        ]
+      },
+      "layout": "Sections alternate between image-left and image-right",
+      "used_in": [
+        "de_webdesign-agentur.md (lines 211-257 - 4 steps: Botschaft, Bedienung, Design, Service)",
+        "de_ai-beratung-kmu-schweiz.md (lines 119-157 - 4 AI transformation steps)",
+        "de_squarespace-agentur.md (lines 294-340 - 4 process steps)"
+      ],
+      "priority": "high",
+      "notes": "Different from process section - has full images, more detailed descriptions, alternating layout"
+    },
+    {
+      "name": "iconGrid",
+      "purpose": "Simple grid of icons with short labels (checkmarks, features)",
+      "fields": {
+        "title": "string (optional)",
+        "columns": "enum ['2', '3', '4']",
+        "items": [
+          {
+            "icon": "string (e.g., 'check', Material Icons)",
+            "label": "string"
+          }
+        ]
+      },
+      "layout": "Simple grid layout",
+      "used_in": [
+        "Service offering sections with checkmarks",
+        "Feature lists with icons"
+      ],
+      "priority": "low",
+      "notes": "Simpler version of featuresList, just icon + short text"
+    },
+    {
+      "name": "ratingDisplay",
+      "purpose": "Display rating/review score with source",
+      "fields": {
+        "score": "number (e.g., 4.9)",
+        "maxScore": "number (default 5)",
+        "reviewCount": "number",
+        "source": "string (e.g., 'Google', 'Trustpilot')",
+        "label": "string",
+        "cta": "LinkSchema (optional)"
+      },
+      "layout": "Inline or card display of rating information",
+      "used_in": [
+        "Hero sections (e.g., home.md line 19-22)",
+        "Throughout pages as trust signal"
+      ],
+      "priority": "medium",
+      "notes": "Shows '4.9 Sterne Bewertungen auf Google' - trust signal"
+    },
+    {
+      "name": "certificationBadge",
+      "purpose": "Display certification or partner badges",
+      "fields": {
+        "badge": "ImageSchema",
+        "title": "string (optional)",
+        "description": "string (optional)",
+        "link": "string (optional)",
+        "inline": "boolean (default false)"
+      },
+      "layout": "Badge image with optional text",
+      "used_in": [
+        "Squarespace Gold Partner badge throughout site",
+        "Various pages showing certifications"
+      ],
+      "priority": "medium",
+      "notes": "Used for Gold Partner badge, can be inline with content or standalone"
+    },
+    {
+      "name": "timelineProcess",
+      "purpose": "Numbered timeline showing process steps with detailed descriptions",
+      "fields": {
+        "title": "string (optional)",
+        "subtitle": "string (optional)",
+        "steps": [
+          {
+            "number": "number or string",
+            "eyebrow": "string (optional)",
+            "title": "string",
+            "description": "RichTextSchema",
+            "image": "ImageSchema (optional)"
+          }
+        ],
+        "layout": "enum ['vertical', 'horizontal']"
+      },
+      "layout": "Timeline with numbered steps",
+      "used_in": [
+        "de_webdesign-agentur.md (4 numbered steps)",
+        "de_squarespace-agentur.md (4 numbered steps with images)"
+      ],
+      "priority": "medium",
+      "notes": "Different from process section - more detailed, numbered explicitly"
+    },
+    {
+      "name": "contentShowcase",
+      "purpose": "Showcase content with large background image and overlay text",
+      "fields": {
+        "backgroundImage": "ImageSchema",
+        "eyebrow": "string (optional)",
+        "title": "string",
+        "description": "RichTextSchema (optional)",
+        "ctas": "array of LinkSchema",
+        "overlay": "boolean (default true)",
+        "textPosition": "enum ['left', 'center', 'right']"
+      },
+      "layout": "Full-width section with background image",
+      "used_in": [
+        "Various showcase sections throughout site"
+      ],
+      "priority": "low",
+      "notes": "Similar to hero but for mid-page content highlights"
+    }
+  ],
+  "analysis": {
+    "total_existing_components": 16,
+    "total_new_components_needed": 10,
+    "high_priority": 3,
+    "medium_priority": 5,
+    "low_priority": 2,
+    "notes": [
+      "The original site uses a mix of standard and custom content blocks",
+      "Team member display is critical and appears on multiple pages",
+      "Bento grid is a key differentiator and used extensively",
+      "Process/timeline sections appear in multiple variations",
+      "Social responsibility section is unique to company values",
+      "Rating displays are used as trust signals throughout"
+    ]
+  },
+  "coverage_estimate": {
+    "with_existing_components": "65%",
+    "with_high_priority_new": "85%",
+    "with_all_new_components": "100%"
+  }
+}

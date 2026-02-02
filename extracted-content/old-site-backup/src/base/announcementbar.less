@@ -1,0 +1,95 @@
+@import "./../mixins.less";
+
+#header .sqs-announcement-bar-dropzone {
+    min-height: auto;
+
+    .sqs-announcement-bar {
+        padding: 0;
+
+        .sqs-announcement-bar-close {
+            height: 100%;
+
+            @media screen and (max-width: 769px) {
+                height: 50%;
+                width: 2.5em;
+            }
+
+            &:after {
+                .material-icon();
+                content: "close";
+                position: absolute;
+                right: 0.5em;
+                top: 50%;
+                transform: translateY(-50%);
+                margin: 0;
+                font-size: 1.5em;
+            }
+
+            &:hover {
+                &:after {
+                    color: @orange;
+                }
+            }
+        }
+
+        .sqs-announcement-bar-content {
+            display: inline-block;
+            margin: 5px auto;
+
+            @media screen and (max-width: 768px) {
+                margin: 0;
+
+                .sqs-announcement-bar-text {
+                    padding: 5px 0;
+
+                    strong {
+                        margin: 0;
+                    }
+                }
+            }
+
+            strong {
+                &:before {
+                    display: block;
+                    content: "";
+                    width: 0.75em;
+                    height: 0.75em;
+                    font-size: 0.75em;
+                    background-image: radial-gradient(hsla(#608980, 1) 28%,
+                            hsla(#608980, 1) 70%);
+                    border-radius: 50%;
+
+                    background-repeat: no-repeat;
+
+                    box-shadow: #608980 0 0 5px;
+                }
+            }
+
+            &:hover {
+                .sqs-announcement-bar-text {
+                    strong {
+                        box-shadow: hsl(@orangeHex) 0 0 10px;
+                        background-color: hsl(@orangeHex);
+
+                        &:before {
+                            background-image: radial-gradient(hsla(darken(@greenHex, 10%), 1) 28%,
+                                    hsla(@greenHex, 1) 70%);
+                            box-shadow: hsl(darken(@greenHex, 10%)) 0 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sqs-announcement-bar-text {
+            padding: 5px;
+
+            strong {
+                margin-left: 1em;
+                .tags(darken(@greenHex, 10%), @whiteVar, @orangeVar, @whiteVar, 0.7, 1);
+                font-size: inherit;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+}
