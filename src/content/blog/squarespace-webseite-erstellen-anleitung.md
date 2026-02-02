@@ -24,12 +24,12 @@ Ihr habt eine klare Vision: eine professionelle, ästhetisch ansprechende Websit
 
 Squarespace bietet genau das: Eine Plattform, die tolles Design mit einfacher Bedienung verbindet. Sie ist eine All-in-One-Lösung, die Kreativen, Unternehmern und Selbstständigen hilft, ohne Technikkenntnisse eine starke Online-Präsenz zu erstellen.
 
-Diese Squarespace Anleitung für 2026 ist Euer umfassendes Tutorial für eure neue Squarespace-Website. Wir führen Euch Schritt für Schritt durch den gesamten Prozess: von der Auswahl des richtigen Tarifs und der Analyse der tatsächlichen Kosten über die detaillierte Gestaltung Eurer Seiten bis hin zur finalen Veröffentlichung und den entscheidenden Schritten, um bei Google gefunden zu werden. Am Ende dieses Leitfadens werdet Ihr nicht nur eine fertige Website haben, sondern auch das Wissen, sie selbstbewusst zu verwalten und auszubauen.
+Diese **Squarespace Anleitung für 2026** ist Euer umfassendes Tutorial für eure neue Squarespace-Website. Wir führen Euch Schritt für Schritt durch den gesamten Prozess: von der Auswahl des richtigen Tarifs und der Analyse der tatsächlichen Kosten über die detaillierte Gestaltung Eurer Seiten bis hin zur finalen Veröffentlichung und den entscheidenden Schritten, um bei Google gefunden zu werden. Am Ende dieses Leitfadens werdet Ihr nicht nur eine fertige Website haben, sondern auch das Wissen, sie selbstbewusst zu verwalten und auszubauen.
 
 
 ## Wer sollte eine Squarespace Website erstellen?
 
-Bevor wir in die Details eintauchen, ist es wichtig, das Kernkonzept von Squarespace zu verstehen. Im Gegensatz zu Systemen wie WordPress, bei denen Ihr Euch separat um Hosting, Sicherheit und Updates kümmern müsst, ist Squarespace ein geschlossenes Ökosystem, eine sogenannte "All-in-One-Plattform". Das bedeutet, dass Hosting, Sicherheitspatches, technische Wartung und der Website-Builder selbst in einem einzigen, nahtlosen Paket von Squarespace bereitgestellt und verwaltet werden.
+Bevor wir in die Details eintauchen, ist es wichtig, das Kernkonzept von Squarespace zu verstehen. Im [Gegensatz zu Systemen wie WordPress](/blog/beste-alternative-zu-wordpress), bei denen Ihr Euch separat um Hosting, Sicherheit und Updates kümmern müsst, ist Squarespace ein geschlossenes Ökosystem, eine sogenannte "All-in-One-Plattform". Das bedeutet, dass Hosting, Sicherheitspatches, technische Wartung und der Website-Builder selbst in einem einzigen, nahtlosen Paket von Squarespace bereitgestellt und verwaltet werden.
 
 Diese grundlegende Architektur ist der Schlüssel zu den grössten Stärken und auch den bewussten Einschränkungen der Plattform. Sie führt zu einer aussergewöhnlichen Benutzerfreundlichkeit und Zuverlässigkeit, da alle Komponenten perfekt aufeinander abgestimmt sind. Gleichzeitig bedeutet es aber auch, dass Ihr in Bezug auf tiefgreifende technische Anpassungen und die Auswahl an Erweiterungen an das gebunden seid, was Squarespace zur Verfügung stellt. Es ist der fundamentale Kompromiss zwischen geführter Einfachheit und grenzenloser, aber anspruchsvollerer Flexibilität.
 
@@ -38,18 +38,13 @@ Diese grundlegende Architektur ist der Schlüssel zu den grössten Stärken und 
 
 Aus diesem Kernkonzept ergibt sich eine klare Zielgruppe. Squarespace ist die ideale Wahl für:
 
-- Kreative und Künstler: Fotografen, Designer, Musiker und Autoren, die eine visuell beeindruckende Portfolio-Website benötigen, um ihre Arbeiten optimal zu präsentieren.
-- Kleine und mittlere Unternehmen (KMU): Start-Ups, Handwerker, Dienstleister, Berater, Anwälte, lokale Geschäfte, Cafés und Restaurants, die eine professionelle, markenkonsistente Online-Visitenkarte benötigen, die sie leicht selbst pflegen können.
-- Blogger und Content-Ersteller: Personen, die einen stilvollen Blog starten möchten und Wert auf Ästhetik und Lesbarkeit legen, ohne sich mit der technischen Wartung eines Systems wie WordPress auseinandersetzen zu wollen.
-- Selbstständige und Freelancer: Alle, die sich auf ihr Kerngeschäft konzentrieren wollen und eine wartungsarme, zuverlässige Website benötigen, die "einfach funktioniert".
+*  **Kreative und Künstler:** Fotografen, Designer, Musiker und Autoren, die eine visuell beeindruckende Portfolio-Website benötigen, um ihre Arbeiten optimal zu präsentieren.
 
-Kreative und Künstler: Fotografen, Designer, Musiker und Autoren, die eine visuell beeindruckende Portfolio-Website benötigen, um ihre Arbeiten optimal zu präsentieren.
+*  **Kleine und mittlere Unternehmen (KMU):** Start-Ups, Handwerker, Dienstleister, Berater, Anwälte, lokale Geschäfte, Cafés und Restaurants, die eine professionelle, markenkonsistente Online-Visitenkarte benötigen, die sie leicht selbst pflegen können.
 
-Kleine und mittlere Unternehmen (KMU): Start-Ups, Handwerker, Dienstleister, Berater, Anwälte, lokale Geschäfte, Cafés und Restaurants, die eine professionelle, markenkonsistente Online-Visitenkarte benötigen, die sie leicht selbst pflegen können.
+*  **Blogger und Content-Ersteller:** Personen, die einen stilvollen Blog starten möchten und Wert auf Ästhetik und Lesbarkeit legen, ohne sich mit der technischen Wartung eines Systems wie WordPress auseinandersetzen zu wollen.
 
-Blogger und Content-Ersteller: Personen, die einen stilvollen Blog starten möchten und Wert auf Ästhetik und Lesbarkeit legen, ohne sich mit der technischen Wartung eines Systems wie WordPress auseinandersetzen zu wollen.
-
-Selbstständige und Freelancer: Alle, die sich auf ihr Kerngeschäft konzentrieren wollen und eine wartungsarme, zuverlässige Website benötigen, die "einfach funktioniert".
+*  **Selbstständige und Freelancer:** Alle, die sich auf ihr Kerngeschäft konzentrieren wollen und eine wartungsarme, zuverlässige Website benötigen, die "einfach funktioniert".
 
 Der gemeinsame Nenner dieser Gruppen ist der Wunsch nach einer professionellen, designorientierten Website, bei der die Benutzerfreundlichkeit und die Reduzierung des technischen Aufwands im Vordergrund stehen.
 
@@ -58,12 +53,21 @@ Der gemeinsame Nenner dieser Gruppen ist der Wunsch nach einer professionellen, 
 
 Findet heraus, welches CMS das beste für Eure Bedürfnisse ist. Unser interaktive online Test führt Euch durch die entscheidenden strategischen Fragen. Wir übersetzen den technischen Vergleich in Eure unternehmerische Realität.
 
-Jetzt Test starten
+[Jetzt Test starten](/blog/cms-evaluation-fuer-schweizer-kmus)
 
 
 ### Welche Vor- und Nachteile hat eine Squarespace Website?
 
 Für eine schnelle Übersicht fasst die folgende Tabelle die wichtigsten Stärken und Schwächen von Squarespace zusammen. So könnt Ihr auf einen Blick erkennen, ob die Plattform zu Euren Prioritäten passt.
+
+| Vorteile (Pros) | Nachteile (Cons) |
+| --- | --- |
+| Herausragendes Design & Templates: Professionelle, ästhetische Vorlagen, die kaum ein schlechtes Design zulassen. | Weniger Flexibilität als WordPress: Die Design-Anpassungen sind stark, aber nicht so grenzenlos wie bei Open-Source-Systemen. |
+| Extrem benutzerfreundlich: Intuitive Drag-and-Drop-Editoren machen die Erstellung auch für absolute Anfänger einfach. | Begrenzte Erweiterbarkeit: Deutlich weniger Plugins/Apps von Drittanbietern im Vergleich zu WordPress oder Shopify. |
+| All-in-One-System: Hosting, Sicherheit, SSL-Zertifikat und Updates sind im Preis inbegriffen und werden von Squarespace verwaltet. | Kosten können sich summieren: Während der Einstiegspreis fair ist, können Add-ons und höhere Tarife die Gesamtkosten steigern. |
+| Keine manuelle Wartung: Ihr müsst Euch nie um technische Updates, Serverprobleme oder Plugin-Konflikte kümmern. | Eingeschränkter Datenexport: Ein vollständiger Export aller Website-Daten (z. B. für einen Umzug) ist nicht möglich. |
+| Starke integrierte SEO-Tools: Alle wichtigen SEO-Funktionen sind direkt in die Plattform integriert, ohne dass Plugins erforderlich sind. | Transaktionsgebühren im Business-Tarif: Beim Verkauf von Produkten im Business-Tarif fällt eine Gebühr von 3% an. |
+| Guter Kundensupport: 24/7-Support per E-Mail und Live-Chat (auf Deutsch per E-Mail). | Kein dauerhaft kostenloser Plan: Nach der 14-tägigen Testphase ist ein kostenpflichtiges Abo erforderlich. |
 
 
 ## Was kostet eine Squarespace Website wirklich?
@@ -71,7 +75,7 @@ Für eine schnelle Übersicht fasst die folgende Tabelle die wichtigsten Stärke
 
 ### Squarespace Kosten und Pläne:
 
-Eine der wichtigsten Fragen bei der Wahl einer Plattform sind die Kosten. Squarespace bietet eine transparente Preisstruktur mit zwei Zahlungsmodellen: eine flexible monatliche Zahlung oder eine günstigere jährliche Zahlung, bei der Ihr deutlich sparen könnt. Jedes Projekt beginnt mit einer kostenlosen 14-tägigen Testphase, für die keine Kreditkarte erforderlich ist. So könnt Ihr die Plattform ausgiebig testen, bevor Ihr Euch entscheidet.
+[Eine der wichtigsten Fragen bei der Wahl einer Plattform sind die Kosten](/blog/beste-alternative-zu-wordpress). Squarespace bietet eine transparente Preisstruktur mit zwei Zahlungsmodellen: eine flexible monatliche Zahlung oder eine günstigere jährliche Zahlung, bei der Ihr deutlich sparen könnt. Jedes Projekt beginnt mit einer kostenlosen 14-tägigen Testphase, für die keine Kreditkarte erforderlich ist. So könnt Ihr die Plattform ausgiebig testen, bevor Ihr Euch entscheidet.
 
 Die Preisgestaltung von Squarespace ist jedoch mehr als nur eine Liste von Tarifen. Sie ist strategisch so aufgebaut, dass sie mit den Bedürfnissen eines wachsenden Unternehmens skaliert. Während die Einstiegstarife attraktiv sind, sind bestimmte Schlüsselfunktionen, die für den Erfolg entscheidend sein können, bewusst in höheren Tarifen platziert oder als separate Add-ons konzipiert. Ein klassisches Beispiel ist die Transaktionsgebühr von 3% im beliebten Business-Tarif. Sobald Euer Online-Verkauf an Fahrt aufnimmt, wird diese Gebühr zu einem starken Anreiz, in einen der E-Commerce-Tarife zu wechseln, wo sie entfällt. Ähnlich verhält es sich mit professionellen E-Mail-Adressen oder fortgeschrittenem E-Mail-Marketing, die als zusätzliche Abonnements angeboten werden. Dieses Modell stellt sicher, dass Squarespace am Erfolg seiner Nutzer partizipiert – ein wichtiger Aspekt bei der Kalkulation der langfristigen Kosten.
 
@@ -80,38 +84,48 @@ Die Preisgestaltung von Squarespace ist jedoch mehr als nur eine Liste von Tarif
 
 Die folgende Tabelle gibt Euch einen detaillierten Überblick über die vier Haupttarife von Squarespace, deren Kosten (bei jährlicher Zahlung, zzgl. MwSt.) und die wichtigsten enthaltenen Funktionen, damit Ihr die beste Wahl für Euer Projekt treffen könnt.
 
+| Feature | Persönlich | Business | E-Commerce Basis | E-Commerce Erweitert |
+| --- | --- | --- | --- | --- |
+| Preis (jährlich, pro Monat) | ab CHF 15.– | ab CHF 21.– | ab CHF 25.– | ab CHF 45.– |
+| Preis (monatlich) | ab CHF 21.– | ab CHF 30.– | ab CHF 33.– | ab CHF 60.– |
+| Ideal für | Persönliche Websites, Portfolios, Blogs ohne Verkaufsabsicht | Professionelle Unternehmens-Websites, Dienstleister, Start des E-Commerce | Wachsende Onlineshops, die keine Transaktionsgebühren wünschen | Onlineshops mit Fokus auf Marketing, Abos und erweiterte Versandoptionen |
+| Kostenlose Domain (1. Jahr) | ✓ | ✓ | ✓ | ✓ |
+| SSL-Sicherheit | ✓ | ✓ | ✓ | ✓ |
+| Unbegr. Bandbreite & Speicher | ✓ | ✓ | ✓ | ✓ |
+| Anzahl Mitwirkende | 2 | Unbegrenzt | Unbegrenzt | Unbegrenzt |
+| Transaktionsgebühren | Keine E-Commerce-Funktion | 3% | 0% | 0% |
+| Benutzerdefiniertes CSS & JS | ✗ | ✓ | ✓ | ✓ |
+| Werbe-Pop-ups & Banner | ✗ | ✓ | ✓ | ✓ |
+| Vollständige E-Commerce-Funktionen | ✗ | ✓ (mit Gebühren) | ✓ | ✓ |
+| Kundenkonten | ✗ | ✗ | ✓ | ✓ |
+| Produktbewertungen | ✗ | ✗ | ✓ | ✓ |
+| Warenkorb-Wiederherstellung | ✗ | ✗ | ✗ | ✓ |
+| Verkauf von Abonnements | ✗ | ✗ | ✗ | ✓ |
+| Google Ads-Guthaben | ✗ | ✓ | ✓ | ✓ |
+
 
 ### Versteckte und zusätzliche Kosten analysieren
 
 Ein "All-in-One"-System bedeutet nicht, dass absolut alles inklusive ist. Achtet auf folgende potenzielle Zusatzkosten:
 
-- Domain-Kosten nach dem ersten Jahr: Die kostenlose Domain (keine .CH) gilt nur für das erste Jahr bei jährlicher Zahlung. Danach fallen je nach Domain-Endung (TLD) Kosten zwischen ca. CHF 20.– bis ca. CHF 70.– pro Jahr an. Eine Alternative ist der Kauf einer Domain bei einem externen Anbieter wie Hostpoint oder Infomaniak, was oft günstiger ist und meist E-Mail-Postfächer inkludiert.
-- Professionelle E-Mail-Adresse: Eine E-Mail-Adresse wie info@euredomain.ch ist nicht standardmässig enthalten. Sie muss über eine Partnerschaft mit Google Workspace separat erworben werden, was nach einem kostenlosen Jahr zusätzliche monatliche Kosten pro Nutzer von ca. CHF 6.– bis CHF 12.– verursacht.
-- Squarespace E-Mail-Kampagnen: Wenn Ihr professionelles E-Mail-Marketing direkt über Squarespace betreiben möchtet, ist dies ein separates Abonnement mit eigenen Preisstufen, beginnend bei ca. 5 CHF pro Monat für das kleinste Paket.
-- Weitere mögliche Kosten: Je nach Bedarf können Kosten für den Kauf von Premium-Stockfotos von Getty, die Lizenzierung spezieller Schriftarten oder die Beauftragung eines zertifizierten Squarespace-Experten für Design oder Programmierung anfallen.
+*  **Domain-Kosten nach dem ersten Jahr:** Die kostenlose Domain (keine .CH) gilt nur für das erste Jahr bei jährlicher Zahlung. Danach fallen je nach Domain-Endung (TLD) Kosten zwischen ca. CHF 20.– bis ca. CHF 70.– pro Jahr an. Eine Alternative ist der Kauf einer Domain bei einem externen Anbieter wie Hostpoint oder Infomaniak, was oft günstiger ist und meist E-Mail-Postfächer inkludiert.
 
-Domain-Kosten nach dem ersten Jahr: Die kostenlose Domain (keine .CH) gilt nur für das erste Jahr bei jährlicher Zahlung. Danach fallen je nach Domain-Endung (TLD) Kosten zwischen ca. CHF 20.– bis ca. CHF 70.– pro Jahr an. Eine Alternative ist der Kauf einer Domain bei einem externen Anbieter wie Hostpoint oder Infomaniak, was oft günstiger ist und meist E-Mail-Postfächer inkludiert.
+*  **Professionelle E-Mail-Adresse:** Eine E-Mail-Adresse wie info@euredomain.ch ist nicht standardmässig enthalten. Sie muss über eine Partnerschaft mit Google Workspace separat erworben werden, was nach einem kostenlosen Jahr zusätzliche monatliche Kosten pro Nutzer von ca. CHF 6.– bis CHF 12.– verursacht.
 
-Professionelle E-Mail-Adresse: Eine E-Mail-Adresse wie info@euredomain.ch ist nicht standardmässig enthalten. Sie muss über eine Partnerschaft mit Google Workspace separat erworben werden, was nach einem kostenlosen Jahr zusätzliche monatliche Kosten pro Nutzer von ca. CHF 6.– bis CHF 12.– verursacht.
+*  **Squarespace E-Mail-Kampagnen:** Wenn Ihr professionelles E-Mail-Marketing direkt über Squarespace betreiben möchtet, ist dies ein separates Abonnement mit eigenen Preisstufen, beginnend bei ca. 5 CHF pro Monat für das kleinste Paket.
 
-Squarespace E-Mail-Kampagnen: Wenn Ihr professionelles E-Mail-Marketing direkt über Squarespace betreiben möchtet, ist dies ein separates Abonnement mit eigenen Preisstufen, beginnend bei ca. 5 CHF pro Monat für das kleinste Paket.
-
-Weitere mögliche Kosten: Je nach Bedarf können Kosten für den Kauf von Premium-Stockfotos von Getty, die Lizenzierung spezieller Schriftarten oder die Beauftragung eines zertifizierten Squarespace-Experten für Design oder Programmierung anfallen.
+*  **Weitere mögliche Kosten:** Je nach Bedarf können Kosten für den Kauf von Premium-Stockfotos von Getty, die Lizenzierung spezieller Schriftarten oder die Beauftragung eines zertifizierten Squarespace-Experten für Design oder Programmierung anfallen.
 
 
 ### Rabatte und Sparmöglichkeiten
 
 Es gibt mehrere Wege, bei Eurem Squarespace-Abo zu sparen:
 
-- Rabattcodes: Squarespace bietet häufig Rabattcodes für 10% auf das erste Jahr an.
-- Studentenrabatt: Studenten und kürzliche Absolventen erhalten einen grosszügigen Rabatt von 50% auf ihr erstes Jahresabo.
-- Designer-Rabatte: Viele offizielle Squarespace-Designer bieten im Rahmen ihrer Dienstleistungen exklusive Rabatte von 20% oder 25% sowie eine verlängerte Testphase an. Bei Noevu sind die Kosten für Squarespace sogar schon in unseren Service-Paketen schon enthalten.
+*  **Rabattcodes:** Squarespace bietet häufig Rabattcodes für 10% auf das erste Jahr an.
 
-Rabattcodes: Squarespace bietet häufig Rabattcodes für 10% auf das erste Jahr an.
+*  **Studentenrabatt:** Studenten und kürzliche Absolventen erhalten einen grosszügigen Rabatt von 50% auf ihr erstes Jahresabo.
 
-Studentenrabatt: Studenten und kürzliche Absolventen erhalten einen grosszügigen Rabatt von 50% auf ihr erstes Jahresabo.
-
-Designer-Rabatte: Viele offizielle Squarespace-Designer bieten im Rahmen ihrer Dienstleistungen exklusive Rabatte von 20% oder 25% sowie eine verlängerte Testphase an. Bei Noevu sind die Kosten für Squarespace sogar schon in unseren Service-Paketen schon enthalten.
+*  **Designer-Rabatte:** Viele offizielle Squarespace-Designer bieten im Rahmen ihrer Dienstleistungen exklusive Rabatte von 20% oder 25% sowie eine verlängerte Testphase an. Bei Noevu sind die Kosten für Squarespace sogar schon in unseren Service-Paketen schon enthalten.
 
 
 ## Wie erstelle ich eine neue Squarespace Webseite?
@@ -126,18 +140,18 @@ Jetzt geht es ans Eingemachte. Mit dieser detaillierten Anleitung für Squarespa
 
 Der erste Schritt ist die Anmeldung und die Auswahl Eures Startpunkts.
 
+[![Suqarespace Seite > Direkt Loslegen](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1722371793-34ce99d4605b636737a1e92794c1d2dc)](https://de.squarespace.com/templates/direkt-loslegen)
+
 
 #### Tipps Design zur Auswahl:
 
-Durchstöbert den Template-Shop: Nutzt die Vorschau-Funktion, um ein Gefühl für das Layout und die Struktur der verschiedenen Designs zu bekommen.
+**Durchstöbert den [Template-Shop](https://de.squarespace.com/templates):** Nutzt die Vorschau-Funktion, um ein Gefühl für das Layout und die Struktur der verschiedenen Designs zu bekommen.
 
-- Fokussiert Euch auf das Layout, nicht auf die Inhalte: Ignoriert die Demobilder, Farben und Texte. Diese werdet Ihr ohnehin ersetzen. Achtet stattdessen darauf, welche Struktur am besten zu Euren geplanten Inhalten passt.
+![Squarespace Template Auswahl](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1722371847-4ed946847b7f1040fc386213)
 
-Fokussiert Euch auf das Layout, nicht auf die Inhalte: Ignoriert die Demobilder, Farben und Texte. Diese werdet Ihr ohnehin ersetzen. Achtet stattdessen darauf, welche Struktur am besten zu Euren geplanten Inhalten passt.
+*  **Fokussiert Euch auf das Layout, nicht auf die Inhalte:** Ignoriert die Demobilder, Farben und Texte. Diese werdet Ihr ohnehin ersetzen. Achtet stattdessen darauf, welche Struktur am besten zu Euren geplanten Inhalten passt.
 
-- Definiert Eure Ziele: Sucht Ihr ein Template, das ideal für ein bildlastiges Portfolio ist? Oder braucht Ihr eine Struktur, die sich gut für einen Blog mit viel Text eignet? Eure Ziele bestimmen die beste Ausgangsstruktur.
-
-Definiert Eure Ziele: Sucht Ihr ein Template, das ideal für ein bildlastiges Portfolio ist? Oder braucht Ihr eine Struktur, die sich gut für einen Blog mit viel Text eignet? Eure Ziele bestimmen die beste Ausgangsstruktur.
+*  **Definiert Eure Ziele:** Sucht Ihr ein Template, das ideal für ein bildlastiges Portfolio ist? Oder braucht Ihr eine Struktur, die sich gut für einen Blog mit viel Text eignet? Eure Ziele bestimmen die beste Ausgangsstruktur.
 
 
 ### Schritt 2: Das Cockpit von Squarespace – Der Editor im Detail
@@ -149,30 +163,42 @@ Nach der Template-Auswahl landet Ihr im Squarespace-Dashboard, Eurem Kontrollzen
 
 Auf der linken Seite findet Ihr das Hauptmenü mit den Reitern: Seiten 1, Design 2, E-Commerce 3, Marketing 4, Analytics 5 und Einstellungen 6. Dies ist Eure Kommandozentrale für alle Aspekte Eurer Website:
 
+![Squarespace Dashboard Übersicht](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1722372993-5bfd33bc-29d7-4165-b7b7)
+
 
 #### Der Kreative Editor (Fluid Engine):
 
 Der moderne Editor von Squarespace heisst "Fluid Engine" und ist ein entscheidender Fortschritt gegenüber älteren Versionen. Er bietet Euch ein hohes Mass an gestalterischer Freiheit.
+
+![Squarespace Fluid Engine Editor](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1722373196-5878bdab-6b8b-4afc-af4c)
 
 
 #### Drag-and-Drop auf einem Raster:
 
 Ihr könnt Inhaltsblöcke (Texte, Bilder etc.) frei auf der Seite platzieren. Ein feines Raster im Hintergrund hilft Euch dabei, alles sauber und professionell auszurichten.
 
+![Squarespace Drag and Drop Raster](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1722373253-a794cff9-b659-4806-9f79)
+
 
 #### Überlappende Elemente:
 
 Im Gegensatz zum klassischen Editor könnt Ihr Blöcke nun auch überlappen lassen, was für dynamische und moderne Layouts sorgt.
+
+![Squarespace überlappende Elemente](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1722373307-b9c0c32f-e6ba-4b1d-873a)
 
 
 #### Neue Blöcke:
 
 Die Fluid Engine hat neue, leistungsstarke Blöcke wie den Akkordeon-Block (für ausklappbare FAQs), den Scrolling-Block (für Laufschriften) oder den Form-Block (für visuelle Formen) eingeführt.
 
+![Squarespace neue Blöcke](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1722373373-65e62822-03e8-4109-9240)
+
 
 ### Schritt 3: Das Grundgerüst: Seiten anlegen und Navigation aufbauen
 
 Eine klare Struktur ist das A und O einer guten Website. Diese legt Ihr im Seiten-Panel an:
+
+![Squarespace Seiten Panel](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1722373517-b20c8550-c642-46a3-8d89)
 
 
 #### Das Squarespace Seiten-Panel verstehen:
@@ -180,81 +206,66 @@ Eine klare Struktur ist das A und O einer guten Website. Diese legt Ihr im Seite
 Dieses Panel ist in zwei entscheidende Bereiche unterteilt, deren Funktion Ihr unbedingt kennen solltet.
 
 
-#### 1. Hauptnavigation:
+#### **1.** Hauptnavigation:
 
 Alle Seiten, die Ihr hier platziert, erscheinen automatisch im Hauptmenü Eurer Website (z. B. "Home", "Über uns", "Dienstleistungen", "Kontakt"). Dies sind die Seiten, die Eure Besucher leicht finden sollen.
 
 
-#### 2. Nicht verlinkt:
+#### **2.** Nicht verlinkt:
 
-Seiten in diesem Bereich sind live und für jeden mit dem direkten Link erreichbar, aber sie erscheinen nicht in Eurer Navigation. Dieser Bereich ist perfekt für:
+Seiten in diesem Bereich sind **live und für jeden mit dem direkten Link erreichbar**, aber sie erscheinen **nicht** in Eurer Navigation. Dieser Bereich ist perfekt für:
 
-- Rechtliche Seiten (Impressum, Datenschutzerklärung)
-- Spezielle Landingpages für Werbekampagnen
-- "Danke"-Seiten nach einer Formular-Anmeldung
-- Seiten, die Ihr gerade bearbeitet und noch nicht veröffentlichen wollt.
+*  Rechtliche Seiten (Impressum, Datenschutzerklärung)
 
-Rechtliche Seiten (Impressum, Datenschutzerklärung)
+*  Spezielle Landingpages für Werbekampagnen
 
-Spezielle Landingpages für Werbekampagnen
+*  "Danke"-Seiten nach einer Formular-Anmeldung
 
-"Danke"-Seiten nach einer Formular-Anmeldung
-
-Seiten, die Ihr gerade bearbeitet und noch nicht veröffentlichen wollt.
+*  Seiten, die Ihr gerade bearbeitet und noch nicht veröffentlichen wollt.
 
 
-#### 3. Seiten hinzufügen:
+#### **3.** Seiten hinzufügen:
 
 Klickt auf das +-Symbol in dem jeweiligen Bereich, um eine neue Seite hinzuzufügen. Ihr habt die Wahl:
 
-- Leere Seite: Beginnt mit einer komplett leeren Leinwand.
-- Seiten-Layouts: Wählt aus vordefinierten Layouts für typische Seiten wie "Kontakt", "Über uns" oder "Team", um Zeit zu sparen.
-- Sammlungs-Seiten: Dies sind spezielle Seiten, die eine Sammlung von Unterseiten organisieren, z. B. eine Blog-Seite (sammelt Blogeinträge) oder eine Portfolio-Seite (sammelt Projekte).
+*  **Leere Seite:** Beginnt mit einer komplett leeren Leinwand.
 
-Leere Seite: Beginnt mit einer komplett leeren Leinwand.
+*  **Seiten-Layouts:** Wählt aus vordefinierten Layouts für typische Seiten wie "Kontakt", "Über uns" oder "Team", um Zeit zu sparen.
 
-Seiten-Layouts: Wählt aus vordefinierten Layouts für typische Seiten wie "Kontakt", "Über uns" oder "Team", um Zeit zu sparen.
+*  **Sammlungs-Seiten:** Dies sind spezielle Seiten, die eine Sammlung von Unterseiten organisieren, z. B. eine Blog-Seite (sammelt Blogeinträge) oder eine Portfolio-Seite (sammelt Projekte).
 
-Sammlungs-Seiten: Dies sind spezielle Seiten, die eine Sammlung von Unterseiten organisieren, z. B. eine Blog-Seite (sammelt Blogeinträge) oder eine Portfolio-Seite (sammelt Projekte).
-
-Seiten verwalten: Ihr könnt die Reihenfolge der Seiten per Drag-and-Drop ändern. Um ein Drop-down-Menü zu erstellen, zieht einfach eine Seite leicht nach rechts unter eine andere Seite. Über das Zahnrad-Symbol neben jeder Seite gelangt Ihr zu den wichtigen Seiteneinstellungen, wo Ihr den Titel, den URL-Slug und die SEO-Einstellungen anpassen könnt.
+**Seiten verwalten:** Ihr könnt die Reihenfolge der Seiten per Drag-and-Drop ändern. Um ein Drop-down-Menü zu erstellen, zieht einfach eine Seite leicht nach rechts unter eine andere Seite. Über das Zahnrad-Symbol neben jeder Seite gelangt Ihr zu den wichtigen Seiteneinstellungen, wo Ihr den Titel, den URL-Slug und die SEO-Einstellungen anpassen könnt.
 
 
 ### Schritt 4: Inhalte zum Leben erwecken mit Abschnitten und Blöcken
 
 Jede Seite Eurer Website besteht aus horizontalen Abschnitten, die wiederum mit Blöcken gefüllt werden.
 
+![Squarespace Abschnitte und Blöcke](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1722373745-3f7d1c85-96d6-4240-9369)
+
 
 #### Abschnitte (Sections):
 
-Klickt im Bearbeitungsmodus zwischen zwei Abschnitten auf Abschnitt hinzufügen, um einen neuen Bereich zu erstellen. Ihr könnt aus leeren Abschnitten oder vordefinierten Layouts wählen. Jeder Abschnitt kann einen eigenen Hintergrund (Farbe, Bild oder Video) und ein eigenes Layout haben.
+Klickt im Bearbeitungsmodus zwischen zwei Abschnitten auf `Abschnitt hinzufügen`, um einen neuen Bereich zu erstellen. Ihr könnt aus leeren Abschnitten oder vordefinierten Layouts wählen. Jeder Abschnitt kann einen eigenen Hintergrund (Farbe, Bild oder Video) und ein eigenes Layout haben.
 
 
 #### Blöcke (Blocks):
 
-Blöcke sind die Bausteine Eurer Inhalte. Klickt in einem Abschnitt auf Block hinzufügen, um das Block-Menü zu öffnen. Die wichtigsten Blöcke sind:
+Blöcke sind die Bausteine Eurer Inhalte. Klickt in einem Abschnitt auf `Block hinzufügen`, um das Block-Menü zu öffnen. Die wichtigsten Blöcke sind:
 
-- Text: Für Absätze, Überschriften und Listen.
-- Bild: Zum Hochladen einzelner Bilder.
-- Galerie: Für ansprechende Präsentationen mehrerer Bilder.
-- Button: Für klare Handlungsaufforderungen (Call-to-Actions).
-- Formular: Um Kontaktanfragen, Anmeldungen etc. zu sammeln.
-- Video & Audio: Zum Einbetten von Medien von Plattformen wie YouTube oder für Podcasts.
-- Übersichts-Block: Ein sehr mächtiger Block, der Inhalte von anderen Seiten (z. B. die neuesten Blogbeiträge oder Produkte) an einer Stelle zusammenfasst und anzeigt.
+*  **Text:** Für Absätze, Überschriften und Listen.
 
-Text: Für Absätze, Überschriften und Listen.
+*  **Bild:** Zum Hochladen einzelner Bilder.
 
-Bild: Zum Hochladen einzelner Bilder.
+*  **Galerie:** Für ansprechende Präsentationen mehrerer Bilder.
 
-Galerie: Für ansprechende Präsentationen mehrerer Bilder.
+*  **Button:** Für klare Handlungsaufforderungen (Call-to-Actions).
 
-Button: Für klare Handlungsaufforderungen (Call-to-Actions).
+*  **Formular:** Um Kontaktanfragen, Anmeldungen etc. zu sammeln.
 
-Formular: Um Kontaktanfragen, Anmeldungen etc. zu sammeln.
+*  **Video & Audio:** Zum Einbetten von Medien von Plattformen wie YouTube oder für Podcasts.
 
-Video & Audio: Zum Einbetten von Medien von Plattformen wie YouTube oder für Podcasts.
-
-Übersichts-Block: Ein sehr mächtiger Block, der Inhalte von anderen Seiten (z. B. die neuesten Blogbeiträge oder Produkte) an einer Stelle zusammenfasst und anzeigt.
+*  **Übersichts-Block:** Ein sehr mächtiger Block, der Inhalte von anderen Seiten (z. B. die neuesten Blogbeiträge oder Produkte) an einer Stelle zusammenfasst und anzeigt.
 
 
 #### Layouts erstellen:
@@ -264,25 +275,27 @@ Indem Ihr Blöcke per Drag-and-Drop verschiebt, könnt Ihr sie nebeneinander pla
 
 ### Schritt 5: Euer Design, Eure Marke – Farben, Schriften und Stile anpassen
 
-
-#### 1. Das Design-Panel
-
-ist Euer zentrales Werkzeug, um Eurer Website einen einheitlichen und professionellen Look zu geben. Klickt im Hauptmenü auf Design und dann auf Website-Stile, um die globalen Einstellungen zu öffnen.
+![Squarespace Design Panel](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1722373860-9f5ed6d8-c360-4a0a-ba0c)
 
 
-#### 2. Schriften:
+#### **1.** Das Design-Panel
+
+ist Euer zentrales Werkzeug, um Eurer Website einen einheitlichen und professionellen Look zu geben. Klickt im Hauptmenü auf `Design` und dann auf `Website-Stile`, um die globalen Einstellungen zu öffnen.
+
+
+#### **2.** Schriften:
 
 Wählt ein Schriftarten-Paket, das gut zu Eurer Marke passt. Anschliessend könnt Ihr die Schriftart, Grösse und Stärke für jede Textebene (Überschriften H1-H4, Absätze, Buttons) individuell anpassen.
 
-Squarespace Experten Tipp infoEigene Schriften hochladen: Für maximale Markenkonsistenz könnt Ihr eigene Schriftdateien (z. B. .ttf, .woff) hochladen. Dies geschieht über Design > Benutzerdefiniertes CSS > Benutzerdefinierte Dateien. Nach dem Hochladen müsst Ihr einen kleinen CSS-Code hinzufügen, um die Schriftart den gewünschten Elementen zuzuweisen. Eine Vorlage dafür findet Ihr oft in der Squarespace-Hilfe oder in spezialisierten Blogs.
+**Squarespace Experten Tipp** ***info*** **Eigene Schriften hochladen:** Für maximale Markenkonsistenz könnt Ihr eigene Schriftdateien (z. B. .ttf, .woff) hochladen. Dies geschieht über `Design > Benutzerdefiniertes CSS > Benutzerdefinierte Dateien`. Nach dem Hochladen müsst Ihr einen kleinen CSS-Code hinzufügen, um die Schriftart den gewünschten Elementen zuzuweisen. Eine Vorlage dafür findet Ihr oft in der Squarespace-Hilfe oder in spezialisierten Blogs.
 
 
-#### 3. Farben:
+#### **3.** Farben:
 
 Hier könnt Ihr eine vordefinierte Farbpalette auswählen oder Eure eigene Palette mit Euren Markenfarben erstellen. Diese Palette wird dann auf verschiedene "Themen" angewendet (z. B. Hell, Dunkel, Akzent), die Ihr einzelnen Abschnitten zuweisen könnt, um visuelle Abwechslung zu schaffen.
 
 
-#### 4. Weitere globale Stile:
+#### **4.** Weitere globale Stile:
 
 Im Website-Stile-Panel könnt Ihr auch Animationen für das Laden von Elementen, die Abstände zwischen Elementen und das Design Eurer Buttons (Form, Füllung, Umrandung) global festlegen.
 
@@ -292,12 +305,12 @@ Im Website-Stile-Panel könnt Ihr auch Animationen für das Laden von Elementen,
 Eine eigene Domain ist unerlässlich für einen professionellen Auftritt. Ihr habt zwei Möglichkeiten:
 
 
-#### Option 1 Domain bei Squarespace registrieren:
+#### **Option 1** Domain bei Squarespace registrieren:
 
-Dies ist der einfachste Weg – das geht aber leider noch nicht für Schweizer Domains mit der .ch oder .swiss Endung. Dazu benötigt ihr Option 2. Wenn Ihr einen Jahresplan abschliesst, ist die Domain im ersten Jahr kostenlos. Ihr könnt sie direkt im Einstellungen > Domains-Panel suchen und registrieren.
+Dies ist der einfachste Weg – das geht aber leider noch nicht für Schweizer Domains mit der .ch oder .swiss Endung. Dazu benötigt ihr Option 2. Wenn Ihr einen Jahresplan abschliesst, ist die Domain im ersten Jahr kostenlos. Ihr könnt sie direkt im `Einstellungen > Domains`-Panel suchen und registrieren.
 
 
-#### Option 2 Externe Domain verbinden:
+#### **Option 2** Externe Domain verbinden:
 
 Wenn Ihr bereits eine Domain bei einem anderen Anbieter wie Hospoint, Infomaniak oder Green besitzt, könnt Ihr diese mit Eurer Squarespace-Website verbinden. Dies ist oft die günstigere und flexiblere Option.
 
@@ -306,92 +319,67 @@ Wenn Ihr bereits eine Domain bei einem anderen Anbieter wie Hospoint, Infomaniak
 
 Der Prozess ist bei den meisten Anbietern ähnlich und erfordert die Änderung der DNS-Einträge.
 
-In Squarespace: Geht zu Einstellungen > Domains > Externe Domain verwenden und gebt Eure Domain ein. Squarespace zeigt Euch nun die DNS-Einträge an, die Ihr bei Eurem Anbieter eintragen müsst:
+**In Squarespace:** Geht zu `Einstellungen > Domains > Externe Domain verwenden` und gebt Eure Domain ein. Squarespace zeigt Euch nun die DNS-Einträge an, die Ihr bei Eurem Anbieter eintragen müsst:
 
-Bei Hostpoint: Loggt Euch mit Euer Hostpoint-ID ein und navigiert zur DNS-Verwaltung Eurer Domain.
+![Squarespace DNS Einstellungen](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1722373969-f96fa281-7c83-4acc-aa62)
 
-Erstellt folgende Einträge (kopiert die Werte exakt aus Eurem Squarespace-Panel):
+**Bei Hostpoint:** Loggt Euch mit Euer Hostpoint-ID ein und navigiert zur DNS-Verwaltung Eurer Domain.
 
-- Erster CNAME-Eintrag: Ein einzigartiger Code (Host 1), der auf verify.squarespace.com (Daten 2) verweist. Dies dient zur Verifizierung, dass Euch die Domain gehört.
-- Zweiter CNAME-Eintrag: Der Host (Name 1)  www muss auf ext-cust.squarespace.com (Daten 2) verweisen.
-- A-Einträge: Löscht eventuell vorhandene A-Einträge für Eure Hauptdomain (@) und erstellt vier neue A-Einträge, die auf die vier von Squarespace angegebenen IP-Adressen verweisen.
+![Hostpoint DNS Verwaltung](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1722374630-ed6cac15-fa5a-4022-87d5)
 
-Erster CNAME-Eintrag: Ein einzigartiger Code (Host 1), der auf verify.squarespace.com (Daten 2) verweist. Dies dient zur Verifizierung, dass Euch die Domain gehört.
+**Erstellt folgende Einträge** (kopiert die Werte exakt aus Eurem Squarespace-Panel):
 
-Zweiter CNAME-Eintrag: Der Host (Name 1)  www muss auf ext-cust.squarespace.com (Daten 2) verweisen.
+![DNS Einträge erstellen](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1722374997-63df80ec-de34-4a50-9c6b)
 
-A-Einträge: Löscht eventuell vorhandene A-Einträge für Eure Hauptdomain (@) und erstellt vier neue A-Einträge, die auf die vier von Squarespace angegebenen IP-Adressen verweisen.
+*  **Erster CNAME-Eintrag:** Ein einzigartiger Code (Host 1), der auf `verify.squarespace.com` (Daten 2) verweist. Dies dient zur Verifizierung, dass Euch die Domain gehört.
 
-Warten: Nachdem Ihr die Einträge gespeichert (4) habt, kann es zwischen 24 und 48 Stunden dauern, bis die Verbindung weltweit aktiv ist.
+*  **Zweiter CNAME-Eintrag:** Der Host (Name 1) `www` muss auf `ext-cust.squarespace.com` (Daten 2) verweisen.
+
+*  **A-Einträge:** Löscht eventuell vorhandene A-Einträge für Eure Hauptdomain (@) und erstellt vier neue A-Einträge, die auf die vier von Squarespace angegebenen IP-Adressen verweisen.
+
+![Hostpoint A-Einträge](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1722374860-ad5c0948-66dc-40e2-a23f)
+
+**Warten:** Nachdem Ihr die Einträge gespeichert (4) habt, kann es zwischen 24 und 48 Stunden dauern, bis die Verbindung weltweit aktiv ist.
 
 
 ### Schritt 7: Go-Live! Eure Website veröffentlichen
 
 Der letzte Schritt ist der aufregendste: Eure Website der Welt zu präsentieren.
 
-- Checkliste vor dem Launch: Geht sicher, dass alles perfekt ist.Überprüft jede Seite auf mobilen Geräten (Smartphone, Tablet).Klickt auf jeden Link und jeden Button, um sicherzustellen, dass sie funktionieren.Füllt testweise Euer Kontaktformular aus.Lest alle Texte noch einmal Korrektur.
-- Überprüft jede Seite auf mobilen Geräten (Smartphone, Tablet).
-- Klickt auf jeden Link und jeden Button, um sicherzustellen, dass sie funktionieren.
-- Füllt testweise Euer Kontaktformular aus.
-- Lest alle Texte noch einmal Korrektur.
-- Von "Privat" auf "Öffentlich" schalten:Navigiert zu Einstellungen > Website-Verfügbarkeit.Hier seht Ihr die verschiedenen Sichtbarkeitsoptionen:Privat: Der Standard für Test-Websites. Nur eingeladene Mitwirkende können die Seite sehen.Passwortgeschützt: Die gesamte Website ist durch ein einziges Passwort geschützt. Ideal, um sie vor dem Launch ausgewählten Personen zu zeigen.Öffentlich: Eure Website ist für alle im Internet sichtbar und kann von Suchmaschinen indexiert werden.Um "Öffentlich" auszuwählen, müsst Ihr zuerst ein kostenpflichtiges Abo abschliessen.Wählt Öffentlich und klickt auf Speichern. Herzlichen Glückwunsch, Eure Website ist jetzt live!
-- Navigiert zu Einstellungen > Website-Verfügbarkeit.
-- Hier seht Ihr die verschiedenen Sichtbarkeitsoptionen:Privat: Der Standard für Test-Websites. Nur eingeladene Mitwirkende können die Seite sehen.Passwortgeschützt: Die gesamte Website ist durch ein einziges Passwort geschützt. Ideal, um sie vor dem Launch ausgewählten Personen zu zeigen.Öffentlich: Eure Website ist für alle im Internet sichtbar und kann von Suchmaschinen indexiert werden.
-- Privat: Der Standard für Test-Websites. Nur eingeladene Mitwirkende können die Seite sehen.
-- Passwortgeschützt: Die gesamte Website ist durch ein einziges Passwort geschützt. Ideal, um sie vor dem Launch ausgewählten Personen zu zeigen.
-- Öffentlich: Eure Website ist für alle im Internet sichtbar und kann von Suchmaschinen indexiert werden.
-- Um "Öffentlich" auszuwählen, müsst Ihr zuerst ein kostenpflichtiges Abo abschliessen.
-- Wählt Öffentlich und klickt auf Speichern. Herzlichen Glückwunsch, Eure Website ist jetzt live!
+*  [**Checkliste vor dem Launch**](/blog/squarespace-webseite-online-gehen-checkliste): Geht sicher, dass alles perfekt ist.
 
-Checkliste vor dem Launch: Geht sicher, dass alles perfekt ist.
+  *  Überprüft jede Seite auf mobilen Geräten (Smartphone, Tablet).
 
-- Überprüft jede Seite auf mobilen Geräten (Smartphone, Tablet).
-- Klickt auf jeden Link und jeden Button, um sicherzustellen, dass sie funktionieren.
-- Füllt testweise Euer Kontaktformular aus.
-- Lest alle Texte noch einmal Korrektur.
+  *  Klickt auf jeden Link und jeden Button, um sicherzustellen, dass sie funktionieren.
 
-Überprüft jede Seite auf mobilen Geräten (Smartphone, Tablet).
+  *  Füllt testweise Euer Kontaktformular aus.
 
-Klickt auf jeden Link und jeden Button, um sicherzustellen, dass sie funktionieren.
+  *  Lest alle Texte noch einmal Korrektur.
 
-Füllt testweise Euer Kontaktformular aus.
+*  **Von "Privat" auf "Öffentlich" schalten:**
 
-Lest alle Texte noch einmal Korrektur.
+  *  Navigiert zu `Einstellungen > Website-Verfügbarkeit`.
 
-Von "Privat" auf "Öffentlich" schalten:
+  *  Hier seht Ihr die verschiedenen Sichtbarkeitsoptionen:
 
-- Navigiert zu Einstellungen > Website-Verfügbarkeit.
-- Hier seht Ihr die verschiedenen Sichtbarkeitsoptionen:Privat: Der Standard für Test-Websites. Nur eingeladene Mitwirkende können die Seite sehen.Passwortgeschützt: Die gesamte Website ist durch ein einziges Passwort geschützt. Ideal, um sie vor dem Launch ausgewählten Personen zu zeigen.Öffentlich: Eure Website ist für alle im Internet sichtbar und kann von Suchmaschinen indexiert werden.
-- Privat: Der Standard für Test-Websites. Nur eingeladene Mitwirkende können die Seite sehen.
-- Passwortgeschützt: Die gesamte Website ist durch ein einziges Passwort geschützt. Ideal, um sie vor dem Launch ausgewählten Personen zu zeigen.
-- Öffentlich: Eure Website ist für alle im Internet sichtbar und kann von Suchmaschinen indexiert werden.
-- Um "Öffentlich" auszuwählen, müsst Ihr zuerst ein kostenpflichtiges Abo abschliessen.
-- Wählt Öffentlich und klickt auf Speichern. Herzlichen Glückwunsch, Eure Website ist jetzt live!
+  *  **Privat:** Der Standard für Test-Websites. Nur eingeladene Mitwirkende können die Seite sehen.
 
-Navigiert zu Einstellungen > Website-Verfügbarkeit.
+  *  **Passwortgeschützt:** Die gesamte Website ist durch ein einziges Passwort geschützt. Ideal, um sie vor dem Launch ausgewählten Personen zu zeigen.
 
-Hier seht Ihr die verschiedenen Sichtbarkeitsoptionen:
+  *  **Öffentlich:** Eure Website ist für alle im Internet sichtbar und kann von Suchmaschinen indexiert werden.
 
-- Privat: Der Standard für Test-Websites. Nur eingeladene Mitwirkende können die Seite sehen.
-- Passwortgeschützt: Die gesamte Website ist durch ein einziges Passwort geschützt. Ideal, um sie vor dem Launch ausgewählten Personen zu zeigen.
-- Öffentlich: Eure Website ist für alle im Internet sichtbar und kann von Suchmaschinen indexiert werden.
+  *  Um "Öffentlich" auszuwählen, müsst Ihr zuerst ein kostenpflichtiges Abo abschliessen.
 
-Privat: Der Standard für Test-Websites. Nur eingeladene Mitwirkende können die Seite sehen.
+  *  Wählt `Öffentlich` und klickt auf `Speichern`. Herzlichen Glückwunsch, Eure Website ist jetzt live!
 
-Passwortgeschützt: Die gesamte Website ist durch ein einziges Passwort geschützt. Ideal, um sie vor dem Launch ausgewählten Personen zu zeigen.
-
-Öffentlich: Eure Website ist für alle im Internet sichtbar und kann von Suchmaschinen indexiert werden.
-
-Um "Öffentlich" auszuwählen, müsst Ihr zuerst ein kostenpflichtiges Abo abschliessen.
-
-Wählt Öffentlich und klickt auf Speichern. Herzlichen Glückwunsch, Eure Website ist jetzt live!
+[![Ausführliche Squarespace-Go-Live Checkliste](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1752769409372-JMZO2GWN11US7WS6NNDF)](/blog/squarespace-webseite-online-gehen-checkliste)
 
 
 ### Neue Squarespace Webseite online schalten – Die ultimative Go-Live-Checkliste!
 
 Ihr wollt eure neue Squarespace Webseite online schalten? Mit unserer ultimativen Go-Live-Checkliste für Schweizer KMU stellt Ihr sicher, dass es nicht zu bösen Überraschungen kommt sondern der Klick ein Grund zum Feiern ist!
 
-Zur kostenlosen Checkliste
+[Zur kostenlosen Checkliste](/blog/squarespace-webseite-online-gehen-checkliste)
 
 
 ## Vertiefung: Beliebte Anwendungsfälle meistern
@@ -403,265 +391,129 @@ Mit den Grundlagen könnt Ihr bereits eine beeindruckende Website erstellen. Hie
 
 Squarespace ist eine exzellente Plattform für Blogger, die Wert auf Design legen.
 
-- Blog-Seite hinzufügen: Erstellt eine neue Seite vom Typ Blog aus dem Seiten-Menü. Dies dient als Eure Blog-Übersichtsseite.
-- Beiträge erstellen: Klickt im Seiten-Panel auf Eure Blog-Seite. Dort seht Ihr einen +-Button, um neue Beiträge zu erstellen. Jeder Beitrag ist wie eine eigene kleine Seite, die Ihr mit Text-, Bild- und anderen Blöcken füllen könnt.
-- Organisation mit Kategorien & Tags: Nutzt in den Beitragseinstellungen die Felder für Kategorien (für die grobe Einteilung, z.B. "Marketing", "Design") und Tags (für spezifische Schlagwörter, z.B. "SEO", "Farbtheorie"). Dies hilft Euren Lesern, relevante Inhalte zu finden.
-- Blog-Design anpassen: Klickt im Bearbeitungsmodus auf Eurer Blog-Übersichtsseite auf Abschnitt bearbeiten. Hier könnt Ihr das Layout ändern (z.B. Raster, Liste), festlegen, ob ein Auszug (Excerpt) angezeigt werden soll, und einen "Weiterlesen"-Link aktivieren.
+*  **Blog-Seite hinzufügen:** Erstellt eine neue Seite vom Typ `Blog` aus dem Seiten-Menü. Dies dient als Eure Blog-Übersichtsseite.
 
-Blog-Seite hinzufügen: Erstellt eine neue Seite vom Typ Blog aus dem Seiten-Menü. Dies dient als Eure Blog-Übersichtsseite.
+*  **Beiträge erstellen:** Klickt im Seiten-Panel auf Eure Blog-Seite. Dort seht Ihr einen +-Button, um neue Beiträge zu erstellen. Jeder Beitrag ist wie eine eigene kleine Seite, die Ihr mit Text-, Bild- und anderen Blöcken füllen könnt.
 
-Beiträge erstellen: Klickt im Seiten-Panel auf Eure Blog-Seite. Dort seht Ihr einen +-Button, um neue Beiträge zu erstellen. Jeder Beitrag ist wie eine eigene kleine Seite, die Ihr mit Text-, Bild- und anderen Blöcken füllen könnt.
+*  **Organisation mit Kategorien & Tags:** Nutzt in den Beitragseinstellungen die Felder für Kategorien (für die grobe Einteilung, z.B. "Marketing", "Design") und Tags (für spezifische Schlagwörter, z.B. "SEO", "Farbtheorie"). Dies hilft Euren Lesern, relevante Inhalte zu finden.
 
-Organisation mit Kategorien & Tags: Nutzt in den Beitragseinstellungen die Felder für Kategorien (für die grobe Einteilung, z.B. "Marketing", "Design") und Tags (für spezifische Schlagwörter, z.B. "SEO", "Farbtheorie"). Dies hilft Euren Lesern, relevante Inhalte zu finden.
-
-Blog-Design anpassen: Klickt im Bearbeitungsmodus auf Eurer Blog-Übersichtsseite auf Abschnitt bearbeiten. Hier könnt Ihr das Layout ändern (z.B. Raster, Liste), festlegen, ob ein Auszug (Excerpt) angezeigt werden soll, und einen "Weiterlesen"-Link aktivieren.
+*  **Blog-Design anpassen:** Klickt im Bearbeitungsmodus auf Eurer Blog-Übersichtsseite auf `Abschnitt bearbeiten`. Hier könnt Ihr das Layout ändern (z.B. Raster, Liste), festlegen, ob ein Auszug (Excerpt) angezeigt werden soll, und einen "Weiterlesen"-Link aktivieren.
 
 
 ### Exkurs 2: Einen Onlineshop einrichten und Produkte verkaufen
 
-Mit den Business- und E-Commerce-Tarifen wird Eure Website zu einem leistungsstarken Onlineshop.
+Mit den Business- und E-Commerce-Tarifen wird Eure Website zu einem [leistungsstarken Onlineshop](/blog/neue-webseite-fuer-schweizer-weingut).
 
-- Grundlagen: Stellt sicher, dass Ihr mindestens den Business-Tarif gewählt habt. Für den provisionsfreien Verkauf ist ein E-Commerce-Tarif erforderlich.
-- Shop-Seite und Produkte hinzufügen: Fügt eine Seite vom Typ Shop hinzu. Klickt dann auf +, um Euer erstes Produkt anzulegen. Ihr könnt zwischen physischen Produkten, digitalen Downloads, Dienstleistungen und Geschenkgutscheinen wählen. Ladet Bilder hoch, schreibt eine überzeugende Beschreibung und legt einen Preis fest.
-- Zahlungsanbieter verbinden: Geht zu Einstellungen > Zahlungen und verbindet Euer Konto mit Stripe (für Kreditkartenzahlungen, Apple Pay etc.) und/oder PayPal. Dies ist mit wenigen Klicks erledigt.
-- Versand und Steuern einrichten: Unter Einstellungen > Versand könnt Ihr Versandzonen und -kosten definieren (z.B. Pauschalpreis, nach Gewicht). Unter Einstellungen > Steuern könnt Ihr die Mehrwertsteuersätze für verschiedene Länder hinterlegen.
-- Der erste Verkauf: Sobald alles eingerichtet ist, ist Euer Shop bereit. Macht auf Eure Produkte aufmerksam, indem Ihr sie auf Social Media teilt oder Rabattaktionen über die Marketing-Tools von Squarespace erstellt.
+*  **Grundlagen:** Stellt sicher, dass Ihr mindestens den Business-Tarif gewählt habt. Für den provisionsfreien Verkauf ist ein E-Commerce-Tarif erforderlich.
 
-Grundlagen: Stellt sicher, dass Ihr mindestens den Business-Tarif gewählt habt. Für den provisionsfreien Verkauf ist ein E-Commerce-Tarif erforderlich.
+*  **Shop-Seite und Produkte hinzufügen:** Fügt eine Seite vom Typ `Shop` hinzu. Klickt dann auf `+`, um Euer erstes Produkt anzulegen. Ihr könnt zwischen physischen Produkten, digitalen Downloads, Dienstleistungen und Geschenkgutscheinen wählen. Ladet Bilder hoch, schreibt eine überzeugende Beschreibung und legt einen Preis fest.
 
-Shop-Seite und Produkte hinzufügen: Fügt eine Seite vom Typ Shop hinzu. Klickt dann auf +, um Euer erstes Produkt anzulegen. Ihr könnt zwischen physischen Produkten, digitalen Downloads, Dienstleistungen und Geschenkgutscheinen wählen. Ladet Bilder hoch, schreibt eine überzeugende Beschreibung und legt einen Preis fest.
+*  **Zahlungsanbieter verbinden:** Geht zu `Einstellungen > Zahlungen` und verbindet Euer Konto mit Stripe (für Kreditkartenzahlungen, Apple Pay etc.) und/oder PayPal. Dies ist mit wenigen Klicks erledigt.
 
-Zahlungsanbieter verbinden: Geht zu Einstellungen > Zahlungen und verbindet Euer Konto mit Stripe (für Kreditkartenzahlungen, Apple Pay etc.) und/oder PayPal. Dies ist mit wenigen Klicks erledigt.
+*  **Versand und Steuern einrichten:** Unter `Einstellungen > Versand` könnt Ihr Versandzonen und -kosten definieren (z.B. Pauschalpreis, nach Gewicht). Unter `Einstellungen > Steuern` könnt Ihr die Mehrwertsteuersätze für verschiedene Länder hinterlegen.
 
-Versand und Steuern einrichten: Unter Einstellungen > Versand könnt Ihr Versandzonen und -kosten definieren (z.B. Pauschalpreis, nach Gewicht). Unter Einstellungen > Steuern könnt Ihr die Mehrwertsteuersätze für verschiedene Länder hinterlegen.
+*  **Der erste Verkauf:** Sobald alles eingerichtet ist, ist Euer Shop bereit. Macht auf Eure Produkte aufmerksam, indem Ihr sie auf Social Media teilt oder Rabattaktionen über die Marketing-Tools von Squarespace erstellt.
 
-Der erste Verkauf: Sobald alles eingerichtet ist, ist Euer Shop bereit. Macht auf Eure Produkte aufmerksam, indem Ihr sie auf Social Media teilt oder Rabattaktionen über die Marketing-Tools von Squarespace erstellt.
+[![SEO Erfolg für Bieler Wohnbegleitung](https://images.squarespace-cdn.com/content/v1/5d8e8b1d84c8d40001c6f4a4/1752166760927-QRCUFCL6WDWJS5B08FUC)](/blog/squarespace-webseite-fuer-sozialbetrieb)
 
 
 ### SEO-Erfolgsgeschichte von Wohnperspektive
 
 Der Erfolg spricht für sich: Durch die konsequente Umsetzung unserer Strategie und die Erstellung von SEO optimiertem Inhalt hat die Wohnperspektive GmbH ein herausragendes Ergebnis erzielt. Nach nur wenigen Monaten ist die Webseite auf den ersten Rängen bei Google für relevante Suchanfragen in der Region Biel.
 
-Mehr über das Squarespace Projekt
+[Mehr über das Squarespace Projekt](/blog/squarespace-webseite-fuer-sozialbetrieb)
 
 
 ## Nach dem Launch: So wird Eure Website bei Google gefunden (SEO-Checkliste)
 
-Ein weit verbreiteter Mythos besagt, dass Baukastensysteme wie Squarespace schlecht für die Suchmaschinenoptimierung (SEO) seien. Das ist veraltet und schlichtweg falsch. Tatsächlich bietet Squarespace eine hervorragende technische Grundlage für SEO und integriert alle wichtigen Werkzeuge direkt in die Benutzeroberfläche – ganz ohne zusätzliche Plugins wie bei WordPress. Die Plattform kümmert sich automatisch um eine saubere HTML-Struktur, die Erstellung einer sitemap.xml, SSL-Verschlüsselung und mobilfreundliche Designs, allesamt wichtige Rankingfaktoren.
+Ein weit verbreiteter Mythos besagt, dass Baukastensysteme wie Squarespace schlecht für die Suchmaschinenoptimierung (SEO) seien. Das ist veraltet und schlichtweg falsch. Tatsächlich bietet Squarespace eine hervorragende technische Grundlage für SEO und integriert alle wichtigen Werkzeuge direkt in die Benutzeroberfläche – ganz ohne zusätzliche Plugins wie bei WordPress. Die Plattform kümmert sich automatisch um eine saubere HTML-Struktur, die Erstellung einer `sitemap.xml`, SSL-Verschlüsselung und mobilfreundliche Designs, allesamt wichtige Rankingfaktoren.
 
 Der integrierte Ansatz von Squarespace ist dabei eine bewusste Designentscheidung. Anstatt Euch mit der Auswahl und Konfiguration Dutzender SEO-Plugins zu überfordern, sind die 80% der Funktionen, die 90% der Nutzer benötigen, bereits vorhanden und leicht zugänglich. Für die Zielgruppe von Squarespace ist diese geführte Einfachheit ein enormer Vorteil.
 
 Hier ist Eure Checkliste, um das Beste aus den SEO-Funktionen von Squarespace herauszuholen:
 
-- Globale Website-Einstellungen (Website-Ebene):Seitentitel und SEO-Beschreibung der Website: Geht zu Marketing > SEO-Checkliste. Hier könnt Ihr den globalen Website-Titel (erscheint im Browser-Tab) und die SEO-Beschreibung für Eure Startseite festlegen. Formuliert beides ansprechend und baut Eure wichtigsten Keywords ein.Google Search Console verbinden: Im selben Menü findet Ihr die Option, Eure Website mit der Google Search Console zu verifizieren. Das ist unerlässlich, um zu sehen, wie Google Eure Seite wahrnimmt und für welche Keywords Ihr rankt.Favicon hinzufügen: Ladet unter Design > Browser-Symbol ein kleines Logo hoch. Dieses Icon erscheint im Browser-Tab und stärkt Eure Marke.
-- Seitentitel und SEO-Beschreibung der Website: Geht zu Marketing > SEO-Checkliste. Hier könnt Ihr den globalen Website-Titel (erscheint im Browser-Tab) und die SEO-Beschreibung für Eure Startseite festlegen. Formuliert beides ansprechend und baut Eure wichtigsten Keywords ein.
-- Google Search Console verbinden: Im selben Menü findet Ihr die Option, Eure Website mit der Google Search Console zu verifizieren. Das ist unerlässlich, um zu sehen, wie Google Eure Seite wahrnimmt und für welche Keywords Ihr rankt.
-- Favicon hinzufügen: Ladet unter Design > Browser-Symbol ein kleines Logo hoch. Dieses Icon erscheint im Browser-Tab und stärkt Eure Marke.
-- Optimierung jeder einzelnen Seite (Seiten-Ebene):SEO-Titel und -Beschreibung pro Seite: Geht im Seiten-Panel auf das Zahnrad-Symbol neben einer Seite. Im SEO-Tab könnt Ihr einen individuellen SEO-Titel und eine SEO-Beschreibung für diese spezifische Seite eingeben. Dies ist eine der wichtigsten On-Page-SEO-Massnahmen! Der SEO-Titel muss nicht identisch mit dem Navigationstitel sein und sollte das Hauptkeyword der Seite enthalten.Social-Sharing-Bilder: Im Tab Social Media könnt Ihr ein Bild hochladen, das angezeigt wird, wenn diese Seite auf Plattformen wie Facebook oder LinkedIn geteilt wird.
-- SEO-Titel und -Beschreibung pro Seite: Geht im Seiten-Panel auf das Zahnrad-Symbol neben einer Seite. Im SEO-Tab könnt Ihr einen individuellen SEO-Titel und eine SEO-Beschreibung für diese spezifische Seite eingeben. Dies ist eine der wichtigsten On-Page-SEO-Massnahmen! Der SEO-Titel muss nicht identisch mit dem Navigationstitel sein und sollte das Hauptkeyword der Seite enthalten.
-- Social-Sharing-Bilder: Im Tab Social Media könnt Ihr ein Bild hochladen, das angezeigt wird, wenn diese Seite auf Plattformen wie Facebook oder LinkedIn geteilt wird.
-- Optimierung Eurer Inhalte (Inhalts-Ebene):Keyword-Strategie: Recherchiert, welche Begriffe Eure Zielgruppe bei Google eingibt, und verwendet diese Keywords auf natürliche Weise in Euren Texten und Überschriften.Überschriften-Struktur: Nutzt Überschriften (H1, H2, H3) hierarchisch. Jede Seite sollte nur eine H1 (meist der Seitentitel) haben. Verwendet H2 für Hauptabschnitte und H3 für Unterpunkte. Dies hilft sowohl Lesern als auch Suchmaschinen, Eure Inhalte zu strukturieren.Alt-Text für Bilder: Klickt im Bild-Block auf Bearbeiten und füllt das Feld Alternativtext aus. Beschreibt kurz, was auf dem Bild zu sehen ist. Dies ist wichtig für die Barrierefreiheit und hilft Google, Eure Bilder zu verstehen.
-- Keyword-Strategie: Recherchiert, welche Begriffe Eure Zielgruppe bei Google eingibt, und verwendet diese Keywords auf natürliche Weise in Euren Texten und Überschriften.
-- Überschriften-Struktur: Nutzt Überschriften (H1, H2, H3) hierarchisch. Jede Seite sollte nur eine H1 (meist der Seitentitel) haben. Verwendet H2 für Hauptabschnitte und H3 für Unterpunkte. Dies hilft sowohl Lesern als auch Suchmaschinen, Eure Inhalte zu strukturieren.
-- Alt-Text für Bilder: Klickt im Bild-Block auf Bearbeiten und füllt das Feld Alternativtext aus. Beschreibt kurz, was auf dem Bild zu sehen ist. Dies ist wichtig für die Barrierefreiheit und hilft Google, Eure Bilder zu verstehen.
-- Lokale SEO für lokale Unternehmen:Wenn Ihr ein lokales Geschäft habt, geht zu Marketing > Standortmanagement und verbindet Eure Website mit Eurem Google Business Profile. So werden Eure Adresse und Öffnungszeiten synchronisiert und Eure Sichtbarkeit in lokalen Suchen verbessert.
-- Wenn Ihr ein lokales Geschäft habt, geht zu Marketing > Standortmanagement und verbindet Eure Website mit Eurem Google Business Profile. So werden Eure Adresse und Öffnungszeiten synchronisiert und Eure Sichtbarkeit in lokalen Suchen verbessert.
+*  **Globale Website-Einstellungen (Website-Ebene):**
 
-Globale Website-Einstellungen (Website-Ebene):
+  *  **Seitentitel und SEO-Beschreibung der Website:** Geht zu `Marketing > SEO-Checkliste`. Hier könnt Ihr den globalen Website-Titel (erscheint im Browser-Tab) und die SEO-Beschreibung für Eure Startseite festlegen. Formuliert beides ansprechend und baut Eure wichtigsten Keywords ein.
 
-- Seitentitel und SEO-Beschreibung der Website: Geht zu Marketing > SEO-Checkliste. Hier könnt Ihr den globalen Website-Titel (erscheint im Browser-Tab) und die SEO-Beschreibung für Eure Startseite festlegen. Formuliert beides ansprechend und baut Eure wichtigsten Keywords ein.
-- Google Search Console verbinden: Im selben Menü findet Ihr die Option, Eure Website mit der Google Search Console zu verifizieren. Das ist unerlässlich, um zu sehen, wie Google Eure Seite wahrnimmt und für welche Keywords Ihr rankt.
-- Favicon hinzufügen: Ladet unter Design > Browser-Symbol ein kleines Logo hoch. Dieses Icon erscheint im Browser-Tab und stärkt Eure Marke.
+  *  **Google Search Console verbinden:** Im selben Menü findet Ihr die Option, Eure Website mit der Google Search Console zu verifizieren. Das ist unerlässlich, um zu sehen, wie Google Eure Seite wahrnimmt und für welche Keywords Ihr rankt.
 
-Seitentitel und SEO-Beschreibung der Website: Geht zu Marketing > SEO-Checkliste. Hier könnt Ihr den globalen Website-Titel (erscheint im Browser-Tab) und die SEO-Beschreibung für Eure Startseite festlegen. Formuliert beides ansprechend und baut Eure wichtigsten Keywords ein.
+  *  **Favicon hinzufügen:** Ladet unter `Design > Browser-Symbol` ein kleines Logo hoch. Dieses Icon erscheint im Browser-Tab und stärkt Eure Marke.
 
-Google Search Console verbinden: Im selben Menü findet Ihr die Option, Eure Website mit der Google Search Console zu verifizieren. Das ist unerlässlich, um zu sehen, wie Google Eure Seite wahrnimmt und für welche Keywords Ihr rankt.
+*  **Optimierung jeder einzelnen Seite (Seiten-Ebene):**
 
-Favicon hinzufügen: Ladet unter Design > Browser-Symbol ein kleines Logo hoch. Dieses Icon erscheint im Browser-Tab und stärkt Eure Marke.
+  *  **SEO-Titel und -Beschreibung pro Seite:** Geht im Seiten-Panel auf das Zahnrad-Symbol neben einer Seite. Im `SEO`-Tab könnt Ihr einen individuellen SEO-Titel und eine SEO-Beschreibung für diese spezifische Seite eingeben. Dies ist eine der wichtigsten On-Page-SEO-Massnahmen! Der SEO-Titel muss nicht identisch mit dem Navigationstitel sein und sollte das Hauptkeyword der Seite enthalten.
 
-Optimierung jeder einzelnen Seite (Seiten-Ebene):
+  *  **Social-Sharing-Bilder:** Im Tab `Social Media` könnt Ihr ein Bild hochladen, das angezeigt wird, wenn diese Seite auf Plattformen wie Facebook oder LinkedIn geteilt wird.
 
-- SEO-Titel und -Beschreibung pro Seite: Geht im Seiten-Panel auf das Zahnrad-Symbol neben einer Seite. Im SEO-Tab könnt Ihr einen individuellen SEO-Titel und eine SEO-Beschreibung für diese spezifische Seite eingeben. Dies ist eine der wichtigsten On-Page-SEO-Massnahmen! Der SEO-Titel muss nicht identisch mit dem Navigationstitel sein und sollte das Hauptkeyword der Seite enthalten.
-- Social-Sharing-Bilder: Im Tab Social Media könnt Ihr ein Bild hochladen, das angezeigt wird, wenn diese Seite auf Plattformen wie Facebook oder LinkedIn geteilt wird.
+*  **Optimierung Eurer Inhalte (Inhalts-Ebene):**
 
-SEO-Titel und -Beschreibung pro Seite: Geht im Seiten-Panel auf das Zahnrad-Symbol neben einer Seite. Im SEO-Tab könnt Ihr einen individuellen SEO-Titel und eine SEO-Beschreibung für diese spezifische Seite eingeben. Dies ist eine der wichtigsten On-Page-SEO-Massnahmen! Der SEO-Titel muss nicht identisch mit dem Navigationstitel sein und sollte das Hauptkeyword der Seite enthalten.
+  *  **Keyword-Strategie:** Recherchiert, welche Begriffe Eure Zielgruppe bei Google eingibt, und verwendet diese Keywords auf natürliche Weise in Euren Texten und Überschriften.
 
-Social-Sharing-Bilder: Im Tab Social Media könnt Ihr ein Bild hochladen, das angezeigt wird, wenn diese Seite auf Plattformen wie Facebook oder LinkedIn geteilt wird.
+  *  **Überschriften-Struktur:** Nutzt Überschriften (H1, H2, H3) hierarchisch. Jede Seite sollte nur eine H1 (meist der Seitentitel) haben. Verwendet H2 für Hauptabschnitte und H3 für Unterpunkte. Dies hilft sowohl Lesern als auch Suchmaschinen, Eure Inhalte zu strukturieren.
 
-Optimierung Eurer Inhalte (Inhalts-Ebene):
+  *  **Alt-Text für Bilder:** Klickt im Bild-Block auf `Bearbeiten` und füllt das Feld `Alternativtext` aus. Beschreibt kurz, was auf dem Bild zu sehen ist. Dies ist wichtig für die Barrierefreiheit und hilft Google, Eure Bilder zu verstehen.
 
-- Keyword-Strategie: Recherchiert, welche Begriffe Eure Zielgruppe bei Google eingibt, und verwendet diese Keywords auf natürliche Weise in Euren Texten und Überschriften.
-- Überschriften-Struktur: Nutzt Überschriften (H1, H2, H3) hierarchisch. Jede Seite sollte nur eine H1 (meist der Seitentitel) haben. Verwendet H2 für Hauptabschnitte und H3 für Unterpunkte. Dies hilft sowohl Lesern als auch Suchmaschinen, Eure Inhalte zu strukturieren.
-- Alt-Text für Bilder: Klickt im Bild-Block auf Bearbeiten und füllt das Feld Alternativtext aus. Beschreibt kurz, was auf dem Bild zu sehen ist. Dies ist wichtig für die Barrierefreiheit und hilft Google, Eure Bilder zu verstehen.
+*  **Lokale SEO für lokale Unternehmen:**
 
-Keyword-Strategie: Recherchiert, welche Begriffe Eure Zielgruppe bei Google eingibt, und verwendet diese Keywords auf natürliche Weise in Euren Texten und Überschriften.
-
-Überschriften-Struktur: Nutzt Überschriften (H1, H2, H3) hierarchisch. Jede Seite sollte nur eine H1 (meist der Seitentitel) haben. Verwendet H2 für Hauptabschnitte und H3 für Unterpunkte. Dies hilft sowohl Lesern als auch Suchmaschinen, Eure Inhalte zu strukturieren.
-
-Alt-Text für Bilder: Klickt im Bild-Block auf Bearbeiten und füllt das Feld Alternativtext aus. Beschreibt kurz, was auf dem Bild zu sehen ist. Dies ist wichtig für die Barrierefreiheit und hilft Google, Eure Bilder zu verstehen.
-
-Lokale SEO für lokale Unternehmen:
-
-- Wenn Ihr ein lokales Geschäft habt, geht zu Marketing > Standortmanagement und verbindet Eure Website mit Eurem Google Business Profile. So werden Eure Adresse und Öffnungszeiten synchronisiert und Eure Sichtbarkeit in lokalen Suchen verbessert.
-
-Wenn Ihr ein lokales Geschäft habt, geht zu Marketing > Standortmanagement und verbindet Eure Website mit Eurem Google Business Profile. So werden Eure Adresse und Öffnungszeiten synchronisiert und Eure Sichtbarkeit in lokalen Suchen verbessert.
+  *  Wenn Ihr ein lokales Geschäft habt, geht zu `Marketing > Standortmanagement` und verbindet Eure Website mit Eurem Google Business Profile. So werden Eure Adresse und Öffnungszeiten synchronisiert und Eure Sichtbarkeit in lokalen Suchen verbessert.
 
 
-## Squarespace im Wettbewerb: Ein Vergleich mit der Alternative WordPress und Wix
+## Squarespace im Wettbewerb: Ein [Vergleich mit der Alternative WordPress](/blog/beste-alternative-zu-wordpress) und Wix
 
-Die Wahl des richtigen Website-Baukastens ist eine Grundsatzentscheidung. Es gibt nicht "die beste" Plattform, sondern nur die, die am besten zu Euren Zielen, Fähigkeiten und Eurem Budget passt. Die folgende Tabelle vergleicht Squarespace mit seinen Hauptkonkurrenten WordPress und Wix.
+Die Wahl des richtigen Website-Baukastens ist eine Grundsatzentscheidung. Es gibt nicht "die beste" Plattform, sondern nur die, [die am besten zu Euren Zielen, Fähigkeiten und Eurem Budget passt](/blog/cms-evaluation-fuer-schweizer-kmus). Die folgende Tabelle vergleicht [Squarespace mit seinen Hauptkonkurrenten WordPress](/blog/beste-alternative-zu-wordpress) und Wix.
+
+| Kriterium | Squarespace | Wix | WordPress.org |
+| --- | --- | --- | --- |
+| Benutzerfreundlichkeit | Sehr hoch. Der kuratierte Editor macht es einfach, professionelle Ergebnisse zu erzielen. | Hoch. Sehr anfängerfreundlicher Drag-and-Drop-Editor, kann aber durch viele Optionen überfordern. | Mittel. Erfordert Einarbeitung, da Hosting, Themes und Plugins selbst verwaltet werden müssen. |
+| Design & Flexibilität | Hohe Qualität. Preisgekrönte Templates, mit Fluid Engine sehr gut anpassbar. | Sehr hohe Flexibilität. Fast jedes Element ist frei platzierbar, aber ein einmal gewähltes Template kann nicht gewechselt werden. | Unbegrenzt. Vollständige Kontrolle über Code und Design durch tausende Themes und Page Builder. |
+| E-Commerce | Gut integriert. Nahtlose Shop-Funktionen, aber Transaktionsgebühren im Business-Tarif. | Stark. Bietet umfassende E-Commerce-Pläne und viele branchenspezifische Tools. | Am leistungsstärksten. Mit dem WooCommerce-Plugin sind komplexe Shops möglich, erfordert aber mehr Konfiguration. |
+| Blogging | Sehr gut. Starke Blogging-Funktionen mit Fokus auf Design und Organisation. | Gut. Bietet alle grundlegenden Blogging-Funktionen. | Der Goldstandard. Ursprünglich als Blogging-Plattform konzipiert, bietet die grösste Tiefe und Flexibilität. |
+| SEO | Sehr Gut. Alle wichtigen Tools sind fest integriert und anfängerfreundlich und dank AI Unterstützung effizient. | Gut. Bietet einen geführten SEO-Plan ("Wix SEO Wiz") und gute On-Page-Optionen. | Am leistungsstärksten. Mit Plugins wie Yoast oder Rank Math sind fortgeschrittenste Optimierungen möglich. |
+| Wartung & Sicherheit | Wird von Squarespace übernommen. Ihr müsst Euch um nichts kümmern. Wir setzen zusätzlich Cloudflare als Schutz- und Performance-Boost ein. | Wird von Wix übernommen. Ein weiterer Vorteil des geschlossenen Systems. | Liegt in der Verantwortung des Nutzers. Updates für Core, Themes und Plugins müssen selbst durchgeführt werden. |
+| Kosten (ca.) | Mittleres Preissegment. Klare Abopreise, aber Add-ons können Kosten erhöhen. | Günstiger Einstieg. Bietet einen kostenlosen Plan, aber Premium-Pläne können teuer werden. | Potenziell am günstigsten. Die Software ist kostenlos, aber die Kosten für Hosting, Premium-Themes und Plugins sind variabel. |
 
 
 ### Fazit des Vergleichs:
 
-- Wählt Squarespace, wenn Ihr höchsten Wert auf erstklassiges, professionelles Design, eine einfache Bedienung und ein Rundum-sorglos-Paket legt. Es ist die beste Wahl für Kreative und qualitätsbewusste Unternehmen, die sich nicht um die Technik kümmern wollen.
-- Wählt Wix, wenn Ihr eine extrem anfängerfreundliche Plattform mit der grösstmöglichen Auswahl an Vorlagen und integrierten Business-Tools sucht und maximale Drag-and-Drop-Freiheit wünscht.
-- Wählt WordPress.org, wenn Ihr maximale Flexibilität, volle Kontrolle über jeden Aspekt Eurer Website und unbegrenzte Skalierbarkeit für grosse, komplexe Projekte benötigt und bereit seid, Euch technisch mehr einzuarbeiten und die Verantwortung für Wartung und Sicherheit zu übernehmen.
+*  **Wählt Squarespace, wenn** Ihr höchsten Wert auf erstklassiges, professionelles Design, eine einfache Bedienung und ein Rundum-sorglos-Paket legt. Es ist die beste Wahl für Kreative und qualitätsbewusste Unternehmen, die sich nicht um die Technik kümmern wollen.
 
-Wählt Squarespace, wenn Ihr höchsten Wert auf erstklassiges, professionelles Design, eine einfache Bedienung und ein Rundum-sorglos-Paket legt. Es ist die beste Wahl für Kreative und qualitätsbewusste Unternehmen, die sich nicht um die Technik kümmern wollen.
+*  **Wählt Wix, wenn** Ihr eine extrem anfängerfreundliche Plattform mit der grösstmöglichen Auswahl an Vorlagen und integrierten Business-Tools sucht und maximale Drag-and-Drop-Freiheit wünscht.
 
-Wählt Wix, wenn Ihr eine extrem anfängerfreundliche Plattform mit der grösstmöglichen Auswahl an Vorlagen und integrierten Business-Tools sucht und maximale Drag-and-Drop-Freiheit wünscht.
-
-Wählt WordPress.org, wenn Ihr maximale Flexibilität, volle Kontrolle über jeden Aspekt Eurer Website und unbegrenzte Skalierbarkeit für grosse, komplexe Projekte benötigt und bereit seid, Euch technisch mehr einzuarbeiten und die Verantwortung für Wartung und Sicherheit zu übernehmen.
+*  **Wählt WordPress.org, wenn** Ihr maximale Flexibilität, volle Kontrolle über jeden Aspekt Eurer Website und unbegrenzte Skalierbarkeit für grosse, komplexe Projekte benötigt und bereit seid, Euch technisch mehr einzuarbeiten und die Verantwortung für Wartung und Sicherheit zu übernehmen.
 
 
 ## Häufig gestellte Fragen zur Anleitung für Squarespace
 
 Hier beantworten wir einige der häufigsten Fragen, die im Zusammenhang mit Squarespace aufkommen.
 
-- Ist Squarespace wirklich kostenlos?
-          
-          
-            
-              
-                
-                
-              
-            
-          
-        
-      
-      
-        
-          Nein. Squarespace bietet eine 14-tägige kostenlose Testphase, in der Ihr alles ausprobieren könnt. Um Eure Website jedoch zu veröffentlichen und online zu stellen, benötigt Ihr ein kostenpflichtiges Abonnement. Es gibt keinen dauerhaft kostenlosen Plan.
-- Kann ich meine Domain von einem anderen Anbieter (z.B. Hostpoint, Infomaniak) mit Squarespace nutzen? 
-          
-          
-            
-              
-                
-                
-              
-            
-          
-        
-      
-      
-        
-          Ja, absolut. Ihr müsst Eure Domain nicht bei Squarespace kaufen. Ihr könnt eine bestehende Domain von jedem beliebigen Anbieter über die DNS-Einstellungen mit Eurer Squarespace-Website verbinden. Unsere Anleitung in Schritt 6 zeigt Euch, wie das geht.
-- Bekomme ich eine E-Mail-Adresse zu meiner Domain? 
-          
-          
-            
-              
-                
-                
-              
-            
-          
-        
-      
-      
-        
-          Nein, eine professionelle E-Mail-Adresse (z.B. info@euredomain.ch) ist in den Squarespace-Plänen nicht enthalten. Ihr könnt sie jedoch als Add-on über eine Partnerschaft mit Google Workspace erwerben, was zusätzliche monatliche Kosten verursacht.
-- Wie gut ist der Kundenservice von Squarespace? 
-          
-          
-            
-              
-                
-                
-              
-            
-          
-        
-      
-      
-        
-          Der Kundenservice von Squarespace geniesst einen guten Ruf. Er ist rund um die Uhr per Live-Chat (Englisch) und E-Mail erreichbar. Der E-Mail-Support wird auch auf Deutsch angeboten.
-- Kann ich mein Template später wechseln? 
-          
-          
-            
-              
-                
-                
-              
-            
-          
-        
-      
-      
-        
-          In der aktuellen Version 7.1 ist ein "Wechsel" des Templates nicht mehr notwendig, da alle Designs die gleichen Funktionen haben und vollständig anpassbar sind. Ihr könnt den Look Eurer Seite jederzeit über das Website-Stile-Panel komplett verändern. In der älteren Version 7.0 war ein Wechsel möglich, aber oft mit Nacharbeit verbunden.
-- Ist Squarespace DSGVO-konform? 
-          
-          
-            
-              
-                
-                
-              
-            
-          
-        
-      
-      
-        
-          Squarespace als US-Unternehmen stellt die technischen Werkzeuge zur Verfügung, um eine DSGVO-konforme Website zu betreiben (z.B. Cookie-Banner, SSL-Verschlüsselung). Die Verantwortung für die korrekte Umsetzung – wie das Erstellen eines korrekten Impressums und einer Datenschutzerklärung sowie die Einholung von Einwilligungen – liegt jedoch bei Euch als Website-Betreiber.
-- Kann ich von Squarespace zu WordPress wechseln? 
-          
-          
-            
-              
-                
-                
-              
-            
-          
-        
-      
-      
-        
-          Ja, ein Wechsel ist prinzipiell möglich. Allerdings sind die Exportfunktionen von Squarespace begrenzt. Ihr könnt Eure Blogbeiträge, Seiten und Kommentare als XML-Datei exportieren, aber Elemente wie Produkte, Design-Einstellungen oder spezielle Blöcke können nicht direkt übertragen werden und müssen manuell neu erstellt werden. Das ist aber bei praktische jedem CMS Wechsel der Fall.
+*  Ist Squarespace wirklich kostenlos?
 
-Ist Squarespace wirklich kostenlos?
+  Nein. Squarespace bietet eine 14-tägige kostenlose Testphase, in der Ihr alles ausprobieren könnt. Um Eure Website jedoch zu veröffentlichen und online zu stellen, benötigt Ihr ein kostenpflichtiges Abonnement. Es gibt keinen dauerhaft kostenlosen Plan.
 
-Nein. Squarespace bietet eine 14-tägige kostenlose Testphase, in der Ihr alles ausprobieren könnt. Um Eure Website jedoch zu veröffentlichen und online zu stellen, benötigt Ihr ein kostenpflichtiges Abonnement. Es gibt keinen dauerhaft kostenlosen Plan.
+*  Kann ich meine Domain von einem anderen Anbieter (z. B. Hostpoint, Infomaniak) mit Squarespace nutzen?
 
-Kann ich meine Domain von einem anderen Anbieter (z.B. Hostpoint, Infomaniak) mit Squarespace nutzen?
+  Ja, absolut. Ihr müsst Eure Domain nicht bei Squarespace kaufen. Ihr könnt eine bestehende Domain von jedem beliebigen Anbieter über die DNS-Einstellungen mit Eurer Squarespace-Website verbinden. Unsere Anleitung in Schritt 6 zeigt Euch, wie das geht.
 
-Ja, absolut. Ihr müsst Eure Domain nicht bei Squarespace kaufen. Ihr könnt eine bestehende Domain von jedem beliebigen Anbieter über die DNS-Einstellungen mit Eurer Squarespace-Website verbinden. Unsere Anleitung in Schritt 6 zeigt Euch, wie das geht.
+*  Bekomme ich eine E-Mail-Adresse zu meiner Domain?
 
-Bekomme ich eine E-Mail-Adresse zu meiner Domain?
+  Nein, eine professionelle E-Mail-Adresse (z. B. info@euredomain.ch) ist in den Squarespace-Plänen nicht enthalten. Ihr könnt sie jedoch als Add-on über eine Partnerschaft mit Google Workspace erwerben, was zusätzliche monatliche Kosten verursacht.
 
-Nein, eine professionelle E-Mail-Adresse (z.B. info@euredomain.ch) ist in den Squarespace-Plänen nicht enthalten. Ihr könnt sie jedoch als Add-on über eine Partnerschaft mit Google Workspace erwerben, was zusätzliche monatliche Kosten verursacht.
+*  Wie gut ist der Kundenservice von Squarespace?
 
-Wie gut ist der Kundenservice von Squarespace?
+  Der Kundenservice von Squarespace geniesst einen guten Ruf. Er ist rund um die Uhr per Live-Chat (Englisch) und E-Mail erreichbar. Der E-Mail-Support wird auch auf Deutsch angeboten.
 
-Der Kundenservice von Squarespace geniesst einen guten Ruf. Er ist rund um die Uhr per Live-Chat (Englisch) und E-Mail erreichbar. Der E-Mail-Support wird auch auf Deutsch angeboten.
+*  Kann ich mein Template später wechseln?
 
-Kann ich mein Template später wechseln?
+  In der aktuellen Version 7.1 ist ein "Wechsel" des Templates nicht mehr notwendig, da alle Designs die gleichen Funktionen haben und vollständig anpassbar sind. Ihr könnt den Look Eurer Seite jederzeit über das Website-Stile-Panel komplett verändern. In der älteren Version 7.0 war ein Wechsel möglich, aber oft mit Nacharbeit verbunden.
 
-In der aktuellen Version 7.1 ist ein "Wechsel" des Templates nicht mehr notwendig, da alle Designs die gleichen Funktionen haben und vollständig anpassbar sind. Ihr könnt den Look Eurer Seite jederzeit über das Website-Stile-Panel komplett verändern. In der älteren Version 7.0 war ein Wechsel möglich, aber oft mit Nacharbeit verbunden.
+*  Ist Squarespace DSGVO-konform?
 
-Ist Squarespace DSGVO-konform?
+  Squarespace als US-Unternehmen stellt die technischen Werkzeuge zur Verfügung, um eine DSGVO-konforme Website zu betreiben (z. B. Cookie-Banner, SSL-Verschlüsselung). Die Verantwortung für die korrekte Umsetzung – wie das Erstellen eines korrekten Impressums und einer Datenschutzerklärung sowie die Einholung von Einwilligungen – liegt jedoch bei Euch als Website-Betreiber.
 
-Squarespace als US-Unternehmen stellt die technischen Werkzeuge zur Verfügung, um eine DSGVO-konforme Website zu betreiben (z.B. Cookie-Banner, SSL-Verschlüsselung). Die Verantwortung für die korrekte Umsetzung – wie das Erstellen eines korrekten Impressums und einer Datenschutzerklärung sowie die Einholung von Einwilligungen – liegt jedoch bei Euch als Website-Betreiber.
+*  Kann ich von Squarespace zu WordPress wechseln?
 
-Kann ich von Squarespace zu WordPress wechseln?
-
-Ja, ein Wechsel ist prinzipiell möglich. Allerdings sind die Exportfunktionen von Squarespace begrenzt. Ihr könnt Eure Blogbeiträge, Seiten und Kommentare als XML-Datei exportieren, aber Elemente wie Produkte, Design-Einstellungen oder spezielle Blöcke können nicht direkt übertragen werden und müssen manuell neu erstellt werden. Das ist aber bei praktische jedem CMS Wechsel der Fall.
+  Ja, ein Wechsel ist prinzipiell möglich. Allerdings sind die Exportfunktionen von Squarespace begrenzt. Ihr könnt Eure Blogbeiträge, Seiten und Kommentare als XML-Datei exportieren, aber Elemente wie Produkte, Design-Einstellungen oder spezielle Blöcke können nicht direkt übertragen werden und müssen manuell neu erstellt werden. Das ist aber bei praktische jedem CMS Wechsel der Fall.
 
 
 ## Fazit Euer Weg zur professionellen Website mit Squarespace
@@ -672,17 +524,19 @@ Die Plattform bietet ein bemerkenswertes Rundum-sorglos-Paket, das Euch die tech
 
 Mit dem Wissen aus diesem umfassenden Leitfaden seid Ihr nun bestens gerüstet. Ihr kennt die Stärken und Schwächen der Plattform, versteht die Kostenstruktur und habt eine detaillierte Schritt-für-Schritt-Anleitung, um Eure Vision in die Realität umzusetzen. Der Weg zu Eurer professionellen, schönen und erfolgreichen Website ist geebnet. Jetzt seid Ihr an der Reihe: Startet Eure kostenlose Testphase und beginnt Eure kreative Reise mit Squarespace.
 
-Solltet Ihr trotzdem Unterstützung brauchen, stehen helfen unsere Squarespace Experten Euch gerne weiter.
+Solltet Ihr trotzdem Unterstützung brauchen, stehen helfen unsere [Squarespace Experten](/squarespace-agentur) Euch gerne weiter.
 
 
 ### Sucht Ihr professionelle Unterstützung für Eure Squarespace neue Webseite?
 
 Sicht ihr einen Partner, der euch professionelle Webseiten-Beratung bietet, strategisch denkt, effizient handelt und Verantwortung übernimmt? Dann lasst uns reden. Wir freuen uns darauf, eure Vision kennenzulernen und gemeinsam euer digitales Projekt zu meistern.
 
-Kostenloser Video-Termin calendar_today
+[Kostenloser Video-Termin](/termin)
 
 Für Schweizer KMU ist es oft eine Herausforderung, eine moderne und effektive Homepage zu betreiben. Meist fehlt die Zeit, das Know-how oder es bleibt nur die Wahl zwischen teuren Agenturlösungen oder mittelmässigen Standard-Templates. Mein Ziel ist es, Schweizer KMUs dank smarten Tools und effizienten Prozessen mit modernen, kundenzentrierten digitalen Lösungen höchster Qualität zu unterstützen – zu einem Preis, der für KMUs erschwinglich bleibt.
 
-Mit über 25 Jahren Erfahrung in Webdesign, Marketing und digitaler Strategie helfe ich, Online-Auftritte zu schaffen, die nicht nur gut aussehen, sondern auch Ergebnisse liefern. Als Schweizer Squarespace-Experte kombiniere ich Effizienz, Benutzerfreundlichkeit und ästhetisches Design, um Websites zu realisieren, die langfristig funktionieren und Wachstum ermöglichen.
+Mit über 25 Jahren Erfahrung in Webdesign, Marketing und digitaler Strategie helfe ich, Online-Auftritte zu schaffen, die nicht nur gut aussehen, sondern auch Ergebnisse liefern. Als [Schweizer Squarespace-Experte](/squarespace-webdesign) kombiniere ich Effizienz, Benutzerfreundlichkeit und ästhetisches Design, um Websites zu realisieren, die langfristig funktionieren und Wachstum ermöglichen.
 
-link LinkedInemail E-Mailcalendar_today Termin buchen
+[LinkedIn](https://www.linkedin.com/in/noeiboßs/)
+[E-Mail](mailto:hello+authorbox@noevu.ch)
+[Termin buchen](https://cal.com/noevu/15min)
