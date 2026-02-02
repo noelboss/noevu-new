@@ -45,7 +45,28 @@
 ### Content Sections Updated
 - [x] Testimonials sections updated on home.json, ueber-uns.json, ai-beratung.json
 - [x] SEO meta descriptions verified - current versions are optimal (no emojis)
-- [ ] Update hero sections with extracted headlines where different
+- [x] Hero sections aligned with extracted reference (18 pages updated)
+
+### Phase 6: Content Alignment (Completed)
+Pages updated to match original reference exactly:
+- [x] squarespace-agentur.json - Subheadline and description
+- [x] squarespace-hilfe.json - Full hero update
+- [x] squarespace-webdesign.json - Full hero update
+- [x] websites-erstellen-lassen.json - Full hero update
+- [x] webseiten-beratung-hilfe.json - Comprehensive update
+- [x] schweizer-kmu-webdesign-agentur-zuerich.json - Hero aligned
+- [x] schweizer-marketing-webdesign-agentur-zuerich.json - Hero aligned
+- [x] ueber-uns.json - Description extended
+- [x] termin.json - Subheadline and description
+- [x] schweizer-squarespace-experte.json - Description expanded
+- [x] webdesign-agentur.json - Description updated
+- [x] kontakt.json - Full hero update
+- [x] webseiten-tipps.json - Full hero update
+- [x] projekte.json - Full hero update
+- [x] squarespace-agentur/gold-partner.json - 2026 content
+- [x] squarespace-agentur/webseiten-entwicklung.json - Hero aligned
+- [x] squarespace-tipps.json - Full hero update
+- [x] schweizer-squarespace-webdesign-agentur.json - Full hero update
 
 ### Technical Tasks
 - [x] Verify all page JSON files validate against Zod schemas - PASSED
