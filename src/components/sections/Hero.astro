@@ -45,13 +45,13 @@ const avatars = [
   <div class="hero__container container">
     <div class="hero__content">
       {subheadline && (
-        <p class="hero__subheadline">
+        <h1 class="hero__subheadline">
           {subheadline}
           <span class="hero__subheadline-dot"></span>
-        </p>
+        </h1>
       )}
 
-      <h1 class="hero__headline" set:html={parsedHeadline} />
+      <h2 class="hero__headline" set:html={parsedHeadline} />
 
       {description && <div class="hero__description" set:html={description} />}
 
@@ -192,16 +192,18 @@ const avatars = [
   }
 
   /* ═══════════════════════════════════════════════════════════════
-     SUBHEADLINE
+     SUBHEADLINE (h1 - SEO title, styled small)
+     Matches live site: 14px Heebo, muted primary color
      ═══════════════════════════════════════════════════════════════ */
   .hero__subheadline {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
-    font-size: 0.875rem;
-    color: var(--color-text-muted);
+    font-family: var(--font-sans, 'Heebo', sans-serif);
+    font-size: 0.875rem; /* 14px */
     font-weight: 400;
+    color: hsla(var(--color-primary-hsl, 163, 46%, 26%), 0.75);
     margin-bottom: 1rem;
     line-height: 1.5;
   }
