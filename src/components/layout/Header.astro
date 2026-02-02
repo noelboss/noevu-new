@@ -232,8 +232,10 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
 <style>
   /* ═══════════════════════════════════════════════════════════════
      HEADER VARIABLES
+     Matching original noevu.ch navigation design
      ═══════════════════════════════════════════════════════════════ */
   .header {
+    /* Glass effect colors (light theme defaults) */
     --nav-glass-c1: var(--color-beige-hsl, 38, 35%, 90%);
     --nav-glass-c2: var(--color-white-hsl, 0, 0%, 100%);
     --nav-glass-c3: var(--color-white-hsl, 0, 0%, 100%);
@@ -241,26 +243,54 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     --nav-glass-alpha-hover: 0.85;
     --nav-blur: 30px;
     --nav-icon-border: hsla(var(--color-grey-hsl, 0, 0%, 40%), 0.25);
-    --nav-padding-x: 1.5rem;
+    --nav-padding-x: 2.5vw;
     --nav-padding-y: 0.55em;
     --nav-menu-distance: 1em;
+    --text-shadow-color: var(--color-white-hsl, 0, 0%, 100%);
 
+    /* Dot indicator colors */
     --dot-color: var(--color-green-hsl, 163, 41%, 25%);
     --dot-color-active: 167, 18%, 46%;
     --dot-color-hover: var(--color-orange-hsl, 17, 100%, 59%);
 
+    /* Dropdown styling */
     --sub-title-color: var(--color-black-hsl, 0, 0%, 10%);
     --icon-color-hsl: var(--color-green-hsl, 163, 41%, 25%);
+
+    /* Orange button shadow colors */
+    --orange-hsl: 17, 100%, 59%;
+    --white-hsl: 0, 0%, 100%;
+    --green-hsl: 163, 41%, 25%;
 
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    background-color: transparent;
+  }
+
+  /* Dark theme variant */
+  .header[data-theme="dark"],
+  .header.black-bold {
+    --nav-glass-c1: 167, 74%, 6%;
+    --nav-glass-c2: 167, 74%, 6%;
+    --nav-glass-c3: 0, 0%, 0%;
+    --nav-glass-alpha: 0.75;
+    --nav-glass-alpha-hover: 0.8;
+    --nav-blur: 10px;
+    --nav-icon-border: hsla(var(--color-white-hsl, 0, 0%, 100%), 0.5);
+    --text-shadow-color: var(--color-black-hsl, 0, 0%, 0%);
+    --dot-color: var(--color-orange-hsl, 17, 100%, 59%);
+    --dot-color-hover: var(--color-white-hsl, 0, 0%, 100%);
+    --dot-color-active: var(--color-orange-hsl, 17, 100%, 59%);
+    --sub-title-color: var(--color-beige-hsl, 38, 35%, 90%);
+    --icon-color-hsl: var(--color-white-hsl, 0, 0%, 100%);
   }
 
   /* ═══════════════════════════════════════════════════════════════
      TOP ANNOUNCEMENT BAR
+     Glass effect with 3-layer shadow CTA button
      ═══════════════════════════════════════════════════════════════ */
   .header__topbar {
     background-color: var(--color-green, #255a4e);
@@ -274,10 +304,12 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    position: relative;
   }
 
   .header__topbar-text {
     opacity: 0.9;
+    text-shadow: 0 0 2px hsla(var(--green-hsl), 0.5);
   }
 
   .header__topbar-cta {
@@ -290,8 +322,15 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     border-radius: 2rem;
     font-weight: 500;
     font-size: 0.8125rem;
-    transition: all 0.2s ease;
     text-decoration: none;
+    border: 1px solid hsla(var(--white-hsl), 0.25);
+    backdrop-filter: blur(10px);
+    /* 3-layer shadow pattern from Hero.astro */
+    box-shadow:
+      0 0 15px hsla(var(--orange-hsl), 0.3),
+      8px 8px 40px hsla(var(--orange-hsl), 0.2),
+      inset -5px -5px 10px hsla(var(--white-hsl), 0);
+    transition: all 0.3s ease;
   }
 
   .header__topbar-cta .material-symbols-outlined {
@@ -299,7 +338,11 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
   }
 
   .header__topbar-cta:hover {
-    background: var(--color-orange-dark, #e55a20);
+    /* Enhanced shadow on hover */
+    box-shadow:
+      0 0 15px hsla(var(--orange-hsl), 0.8),
+      8px 8px 40px hsla(var(--orange-hsl), 0.5),
+      inset -5px -5px 10px hsla(var(--orange-hsl), 0.05);
     transform: translateY(-1px);
   }
 
@@ -334,6 +377,7 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
   .header__main {
     background: transparent;
     padding: 0.75rem 0;
+    transition: all 0.2s ease-in-out;
   }
 
   .header__container {
@@ -347,16 +391,19 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
      LOGO
      ═══════════════════════════════════════════════════════════════ */
   .header__logo {
+    flex: 0 1 20%;
     flex-shrink: 0;
     text-decoration: none;
     display: flex;
     align-items: center;
+    transition: all 0.2s ease-in-out;
   }
 
   .header__logo-img {
     height: 2.25rem;
     width: auto;
     display: block;
+    transition: height 0.2s ease-in-out;
   }
 
   @media (min-width: 768px) {
@@ -367,10 +414,11 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
 
   /* ═══════════════════════════════════════════════════════════════
      DESKTOP NAVIGATION - GLASS PILL
+     Matching original noevu.ch navigation with glass effect
      ═══════════════════════════════════════════════════════════════ */
   .header__nav {
     display: none;
-    flex: 1;
+    flex: 1 0 80%;
     justify-content: center;
   }
 
@@ -387,9 +435,9 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     margin: 0;
     padding: 0.25rem;
     position: relative;
-    border-radius: 3rem;
+    border-radius: 3em;
 
-    /* Glass effect background */
+    /* Glass effect background - matching original navigation.less */
     backdrop-filter: blur(var(--nav-blur));
     background-color: hsla(var(--nav-glass-c3), var(--nav-glass-alpha));
     box-shadow:
@@ -400,13 +448,17 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
 
   .header__nav-item {
     position: relative;
+    padding: 0;
   }
 
   .header__nav-link {
     display: flex;
     align-items: center;
     gap: 0.25rem;
-    padding: var(--nav-padding-y) var(--nav-padding-x);
+    padding-left: var(--nav-padding-x);
+    padding-right: calc(var(--nav-padding-x) * 0.6);
+    padding-top: var(--nav-padding-y);
+    padding-bottom: var(--nav-padding-y);
     font-size: 0.9375rem;
     font-weight: 500;
     color: var(--color-text, #1a1a1a);
@@ -414,11 +466,12 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     border: none;
     cursor: pointer;
     position: relative;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease-in-out;
     text-decoration: none;
+    text-shadow: 0 0 2px hsla(var(--text-shadow-color), 0.75);
   }
 
-  /* Dot indicator */
+  /* Dot indicator - positioned relative like original */
   .header__nav-link::before {
     content: "";
     display: inline-block;
@@ -428,18 +481,29 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     border-radius: 50%;
     box-shadow: 0 0 5px hsla(var(--dot-color), 0);
     position: relative;
-    left: -0.5rem;
-    transition: all 0.2s ease;
+    left: -10px;
+    transition: all 0.2s ease-in-out;
   }
 
   .header__nav-link:hover::before {
     background: hsla(var(--dot-color-hover), 1);
-    box-shadow: 0 0 5px hsla(var(--dot-color-hover), 0.75);
+    box-shadow: 0 0 5px hsla(var(--dot-color-hover), 1);
   }
 
   .header__nav-item--active > .header__nav-link::before {
     background: hsla(var(--dot-color-active), 1);
     box-shadow: 0 0 5px hsla(var(--dot-color-active), 0.75);
+  }
+
+  .header__nav-item--active:hover > .header__nav-link::before {
+    background: hsla(var(--dot-color-hover), 1);
+    box-shadow: 0 0 5px hsla(var(--dot-color-hover), 1);
+  }
+
+  /* Remove background-image from active items */
+  .header__nav-item--active .header__nav-link,
+  .header__nav-item--active .header__nav-link span {
+    background-image: none;
   }
 
   .header__chevron {
@@ -454,38 +518,47 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
 
   /* ═══════════════════════════════════════════════════════════════
      DROPDOWN MENU
+     Matching original sub-navigation.less with glass effect
      ═══════════════════════════════════════════════════════════════ */
   .header__dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%) translateY(calc(var(--nav-menu-distance) - 5px));
-    min-width: 320px;
-    padding: var(--nav-padding-y) 0;
+    display: block;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.25s ease;
+    transform: translateY(calc(var(--nav-menu-distance) - 5px));
+    position: absolute;
+    top: auto;
+    left: 10px;
+    right: 10px;
+    min-width: 320px;
+    padding: var(--nav-padding-y) 0;
+    font-size: 0.9em;
     z-index: 100;
+    transition: all 0.25s ease;
 
-    /* Glass effect */
+    /* Glass effect - matching original */
     border-radius: calc(var(--radius-lg, 1rem) * 2);
     backdrop-filter: blur(var(--nav-blur));
     background-color: hsla(var(--nav-glass-c3), var(--nav-glass-alpha));
     box-shadow:
       inset 0 0 10px 1px hsla(var(--nav-glass-c1), 0.15),
       inset 5px 0 20px 0 hsla(var(--nav-glass-c2), 0.25),
-      inset 0 -30px 30px 0 hsla(var(--nav-glass-c1), 0.25),
-      0 10px 40px rgba(0, 0, 0, 0.1);
+      inset 0 -30px 30px 0 hsla(var(--nav-glass-c1), 0.25);
+  }
+
+  /* Position dropdown to span across nav for folder items */
+  .header__nav-item--folder {
+    position: static;
   }
 
   .header__nav-item--folder:hover .header__dropdown-menu,
   .header__nav-item--folder:focus-within .header__dropdown-menu {
+    display: block;
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) translateY(var(--nav-menu-distance));
+    transform: translateY(var(--nav-menu-distance));
   }
 
-  /* Hover bridge */
+  /* Hover bridge - prevents dropdown from closing when moving mouse */
   .header__nav-item--folder::after {
     content: "";
     position: absolute;
@@ -494,6 +567,8 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     top: 0;
     height: calc(100% + var(--nav-menu-distance) * 2);
     display: none;
+    overflow: hidden;
+    z-index: -1;
   }
 
   .header__nav-item--folder:hover::after {
@@ -523,12 +598,13 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     left: 1rem;
     top: 50%;
     transform: translateY(-50%);
-    transition: all 0.2s ease;
+    transition: all 0.2s ease-in-out;
   }
 
-  .header__dropdown-item:hover::before {
+  .header__dropdown-item:hover::before,
+  .header__dropdown-item--active::before {
     background: hsla(var(--dot-color-hover), 1);
-    box-shadow: 0 0 5px hsla(var(--dot-color-hover), 0.75);
+    box-shadow: 0 0 5px hsla(var(--dot-color-hover), 1);
   }
 
   .header__dropdown-item--active::before {
@@ -536,13 +612,21 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     box-shadow: 0 0 5px hsla(var(--dot-color-active), 0.75);
   }
 
+  .header__dropdown-item--active:hover::before {
+    background: hsla(var(--dot-color-hover), 1);
+    box-shadow: 0 0 5px hsla(var(--dot-color-hover), 1);
+  }
+
   .header__dropdown-link {
+    clear: left;
     display: flex;
     align-items: flex-start;
     gap: 0.75rem;
+    margin: 0;
     padding: var(--nav-padding-y) var(--nav-padding-x) var(--nav-padding-y) 2.5rem;
     text-decoration: none;
-    transition: background-color 0.2s ease;
+    text-align: left;
+    transition: color 0.2s ease-in-out;
   }
 
   .header__dropdown-link:hover {
@@ -554,14 +638,18 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    float: left;
     border: 1px solid var(--nav-icon-border);
-    border-radius: 0.5rem;
-    padding: 0.25rem;
+    border-radius: calc(var(--radius-lg, 1rem) / 2);
+    padding: 0.1em;
     color: hsla(var(--icon-color-hsl), 1);
+    height: 100%;
+    line-height: auto;
+    vertical-align: middle;
   }
 
   .header__dropdown-icon .material-symbols-outlined {
-    font-size: 1.5rem;
+    font-size: 1.75em;
     font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 48;
   }
 
@@ -575,12 +663,33 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     font-size: 0.9375rem;
     font-weight: 500;
     color: var(--color-text, #1a1a1a);
+    text-shadow: 0 0 2px hsla(var(--text-shadow-color), 0.75);
   }
 
   .header__dropdown-desc {
-    font-size: 0.75rem;
+    display: block;
+    font-size: 0.75em;
     color: hsla(var(--sub-title-color), 0.75);
     line-height: 1.3;
+    opacity: 0.75;
+    overflow: hidden;
+  }
+
+  /* Dark theme dropdown text tweaks */
+  .header[data-theme="dark"] .header__dropdown-link,
+  .header.black-bold .header__dropdown-link {
+    text-shadow: 0 0 2px hsla(var(--color-black-hsl, 0, 0%, 0%), 0.75);
+  }
+
+  .header[data-theme="dark"] .header__dropdown-desc,
+  .header.black-bold .header__dropdown-desc {
+    color: hsla(var(--color-white-hsl, 0, 0%, 100%), 0.85);
+    opacity: 0.85;
+  }
+
+  .header[data-theme="dark"] .header__dropdown-icon,
+  .header.black-bold .header__dropdown-icon {
+    color: white;
   }
 
   /* ═══════════════════════════════════════════════════════════════
@@ -590,6 +699,8 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     display: flex;
     align-items: center;
     gap: 1rem;
+    width: 20%;
+    justify-content: flex-end;
   }
 
   /* Language Switcher - Hidden as per original design */
@@ -623,25 +734,27 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     color: var(--color-neutral-300, #ccc);
   }
 
-  /* CTA Button */
+  /* CTA Button - 3-layer shadow pattern matching Hero.astro */
   .header__cta {
     display: none;
     position: relative;
     background-color: var(--color-orange, #ff6b30);
     color: white;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75em 1.75em;
     padding-right: 3.5rem;
     border-radius: 3rem;
     font-weight: 500;
     font-size: 0.9375rem;
     text-decoration: none;
-    border: 1px solid hsla(255, 255, 255, 0.25);
-    box-shadow:
-      0 0 15px hsla(17, 100%, 59%, 0.3),
-      8px 8px 40px hsla(17, 100%, 59%, 0.2),
-      inset -5px -5px 10px hsla(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
     overflow: hidden;
+    /* Border matching original button-variant mixin */
+    border: 1px solid hsla(var(--white-hsl), 0.25);
+    /* 3-layer shadow pattern from Hero.astro buttons */
+    box-shadow:
+      0 0 15px hsla(var(--orange-hsl), 0.3),
+      8px 8px 40px hsla(var(--orange-hsl), 0.5),
+      inset -5px -5px 10px hsla(var(--white-hsl), 0.15);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease;
   }
 
   @media (min-width: 768px) {
@@ -652,11 +765,12 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
   }
 
   .header__cta:hover {
+    /* Enhanced shadow on hover - matching Hero.astro hover state */
     box-shadow:
-      0 0 15px hsla(17, 100%, 59%, 0.5),
-      8px 8px 40px hsla(17, 100%, 59%, 0.4),
-      inset -5px -5px 10px hsla(17, 100%, 59%, 0.1);
-    transform: translateY(-1px);
+      0 0 15px hsla(var(--orange-hsl), 0.5),
+      8px 8px 40px hsla(var(--orange-hsl), 0.7),
+      inset -5px -5px 10px hsla(var(--orange-hsl), 0.15);
+    transform: translateY(-2px);
   }
 
   .header__cta-text {
@@ -675,7 +789,10 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     background: white;
     border-radius: 50%;
     color: var(--color-orange, #ff6b30);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 1;
   }
 
   .header__cta-icon .material-symbols-outlined {
@@ -687,17 +804,43 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     border-radius: 3rem;
   }
 
-  /* Mobile Toggle */
+  /* Dark theme CTA button */
+  .header[data-theme="dark"] .header__cta,
+  .header.black-bold .header__cta {
+    border-color: hsla(var(--color-black-hsl, 0, 0%, 0%), 0.25);
+    box-shadow:
+      0 0 15px hsla(var(--orange-hsl), 0.3),
+      8px 8px 40px hsla(var(--orange-hsl), 0.2),
+      inset -5px -5px 10px hsla(var(--white-hsl), 0);
+  }
+
+  .header[data-theme="dark"] .header__cta:hover,
+  .header.black-bold .header__cta:hover {
+    box-shadow:
+      0 0 15px hsla(var(--orange-hsl), 0.8),
+      8px 8px 40px hsla(var(--orange-hsl), 0.5),
+      inset -5px -5px 10px hsla(var(--orange-hsl), 0.05);
+  }
+
+  /* Mobile Toggle - Glass effect hamburger button */
   .header__mobile-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.75rem;
+    height: 2.75rem;
     background: none;
-    border: none;
+    border: 1px solid var(--nav-icon-border);
+    border-radius: 0.75rem;
     cursor: pointer;
     color: var(--color-text, #1a1a1a);
+    backdrop-filter: blur(10px);
+    background-color: hsla(var(--nav-glass-c3), 0.3);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .header__mobile-toggle:hover {
+    background-color: hsla(var(--nav-glass-c3), 0.5);
   }
 
   @media (min-width: 1024px) {
@@ -725,6 +868,7 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
 
   /* ═══════════════════════════════════════════════════════════════
      MOBILE DRAWER
+     Glass effect mobile menu with proper shadows
      ═══════════════════════════════════════════════════════════════ */
   .header__mobile-drawer {
     position: fixed;
@@ -732,12 +876,14 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     left: 0;
     right: 0;
     bottom: 0;
-    background: white;
     z-index: 999;
     transform: translateX(100%);
     transition: transform 0.3s ease;
     overflow-y: auto;
     padding: 5rem 1.5rem 2rem;
+    /* Glass effect background */
+    backdrop-filter: blur(var(--nav-blur));
+    background-color: hsla(var(--nav-glass-c3), 0.95);
   }
 
   .header--mobile-open .header__mobile-drawer {
@@ -751,7 +897,7 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
   }
 
   .header__mobile-item {
-    border-bottom: 1px solid var(--color-neutral-200, #e5e5e5);
+    border-bottom: 1px solid hsla(var(--nav-glass-c1), 0.3);
   }
 
   .header__mobile-link {
@@ -768,6 +914,29 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     cursor: pointer;
     text-decoration: none;
     text-align: left;
+    position: relative;
+    transition: color 0.2s ease-in-out;
+  }
+
+  /* Dot indicator for mobile links */
+  .header__mobile-link::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: hsla(var(--dot-color), 0);
+    border-radius: 50%;
+    box-shadow: 0 0 5px hsla(var(--dot-color), 0);
+    position: absolute;
+    left: -1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .header__mobile-link:hover::before {
+    background: hsla(var(--dot-color-hover), 1);
+    box-shadow: 0 0 5px hsla(var(--dot-color-hover), 1);
   }
 
   .header__mobile-chevron {
@@ -797,7 +966,30 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     align-items: flex-start;
     gap: 0.75rem;
     padding: 0.75rem 0;
+    padding-left: 0.5rem;
     text-decoration: none;
+    position: relative;
+    transition: color 0.2s ease-in-out;
+  }
+
+  /* Dot indicator for mobile sublinks */
+  .header__mobile-sublink::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: hsla(var(--dot-color), 0);
+    border-radius: 50%;
+    box-shadow: 0 0 5px hsla(var(--dot-color), 0);
+    position: absolute;
+    left: -0.75rem;
+    top: 1.25rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .header__mobile-sublink:hover::before {
+    background: hsla(var(--dot-color-hover), 1);
+    box-shadow: 0 0 5px hsla(var(--dot-color-hover), 1);
   }
 
   .header__mobile-subicon {
@@ -806,9 +998,9 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     justify-content: center;
     flex-shrink: 0;
     border: 1px solid var(--nav-icon-border);
-    border-radius: 0.5rem;
-    padding: 0.25rem;
-    color: var(--color-green, #255a4e);
+    border-radius: calc(var(--radius-lg, 1rem) / 2);
+    padding: 0.1em;
+    color: hsla(var(--icon-color-hsl), 1);
   }
 
   .header__mobile-subicon .material-symbols-outlined {
@@ -830,8 +1022,9 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
 
   .header__mobile-subdesc {
     font-size: 0.8125rem;
-    color: var(--color-text-muted, #666);
+    color: hsla(var(--sub-title-color), 0.75);
     line-height: 1.3;
+    opacity: 0.75;
   }
 
   .header__mobile-cta {
@@ -841,6 +1034,18 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
   .header__mobile-cta .btn {
     width: 100%;
     justify-content: center;
+    /* 3-layer shadow for mobile CTA */
+    box-shadow:
+      0 0 15px hsla(var(--orange-hsl), 0.3),
+      8px 8px 40px hsla(var(--orange-hsl), 0.5),
+      inset -5px -5px 10px hsla(var(--white-hsl), 0.15);
+  }
+
+  .header__mobile-cta .btn:hover {
+    box-shadow:
+      0 0 15px hsla(var(--orange-hsl), 0.5),
+      8px 8px 40px hsla(var(--orange-hsl), 0.7),
+      inset -5px -5px 10px hsla(var(--orange-hsl), 0.15);
   }
 
   .header__mobile-lang {
@@ -850,7 +1055,7 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     gap: 1rem;
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid var(--color-neutral-200, #e5e5e5);
+    border-top: 1px solid hsla(var(--nav-glass-c1), 0.3);
   }
 
   .header__mobile-lang .material-symbols-outlined {
@@ -861,6 +1066,11 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     color: var(--color-text-muted, #666);
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .header__mobile-lang-link:hover {
+    color: hsla(var(--dot-color-hover), 1);
   }
 
   .header__mobile-lang-link--active {

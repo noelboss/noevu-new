@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import '../styles/themes.css';
+import CookieBanner from '../components/ui/CookieBanner.astro';
 
 interface Props {
   title: string;
@@ -145,6 +146,7 @@ const localBusinessSchema = {
   <body>
     <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
     <slot />
+    <CookieBanner />
   </body>
 </html>
 
