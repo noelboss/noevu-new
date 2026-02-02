@@ -1,5 +1,6 @@
 ---
 import type { ComparisonTableSection, Theme } from '../../schemas/sections';
+import { parseInlineMarkdown } from '../../utils/markdown';
 
 interface Props {
   data: ComparisonTableSection;
@@ -8,15 +9,16 @@ interface Props {
 
 const { data, theme } = Astro.props;
 const { title, leftColumn, rightColumn } = data;
+const parsedTitle = parseInlineMarkdown(title);
 ---
 
 <section class="comparison section" data-theme={theme}>
   <div class="container">
-    {title && <h2 class="comparison__title">{title}</h2>}
+    {parsedTitle && <h2 class="comparison__title" set:html={parsedTitle} />}
 
     <div class="comparison__grid">
       <div class={`comparison__column ${leftColumn.highlighted ? 'comparison__column--highlighted' : ''}`}>
-        <h3 class="comparison__header">{leftColumn.header}</h3>
+        <h3 class="comparison__header" set:html={parseInlineMarkdown(leftColumn.header)} />
         <ul class="comparison__list">
           {leftColumn.items.map((item) => (
             <li class="comparison__item">

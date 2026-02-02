@@ -1,5 +1,6 @@
 ---
 import type { BentoGridSection, Theme } from '../../schemas/sections';
+import { parseInlineMarkdown } from '../../utils/markdown';
 
 interface Props {
   data: BentoGridSection;
@@ -10,20 +11,22 @@ const { data, theme } = Astro.props;
 const { title, subtitle, items, columns = '3' } = data;
 
 const gridClass = `bento-grid--cols-${columns}`;
+const parsedTitle = parseInlineMarkdown(title);
+const parsedSubtitle = parseInlineMarkdown(subtitle);
 ---
 
 <section class="bento-grid section" data-theme={theme}>
   <div class="container">
-    {(title || subtitle) && (
+    {(parsedTitle || parsedSubtitle) && (
       <div class="bento-grid__header">
-        {title && <h2 class="bento-grid__title">{title}</h2>}
-        {subtitle && <p class="bento-grid__subtitle">{subtitle}</p>}
+        {parsedTitle && <h2 class="bento-grid__title" set:html={parsedTitle} />}
+        {parsedSubtitle && <p class="bento-grid__subtitle" set:html={parsedSubtitle} />}
       </div>
     )}
 
     <div class={`bento-grid__grid ${gridClass}`}>
       {items.map((item) => (
-        <div class={`bento-grid__card bento-grid__card--${item.size}`}>
+        <div class={`bento-grid__card bento-grid__card--${item.size || 'medium'}`}>
           {item.iconDisplay !== 'none' && (
             <div class="bento-grid__icon">
               {item.iconDisplay === 'emoji' ? (
@@ -35,10 +38,10 @@ const gridClass = `bento-grid--cols-${columns}`;
           )}
           <div class="bento-grid__content">
             {item.subtitle && (
-              <p class="bento-grid__subtitle-text">{item.subtitle}</p>
+              <p class="bento-grid__subtitle-text" set:html={parseInlineMarkdown(item.subtitle)} />
             )}
-            <h3 class="bento-grid__card-title">{item.title}</h3>
-            <div class="bento-grid__description" set:html={item.description} />
+            <h3 class="bento-grid__card-title" set:html={parseInlineMarkdown(item.title)} />
+            <div class="bento-grid__description" set:html={parseInlineMarkdown(item.description)} />
           </div>
         </div>
       ))}

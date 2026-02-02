@@ -1,5 +1,6 @@
 ---
 import type { FeaturesListSection, Theme } from '../../schemas/sections';
+import { parseInlineMarkdown } from '../../utils/markdown';
 
 interface Props {
   data: FeaturesListSection;
@@ -10,11 +11,12 @@ const { data, theme } = Astro.props;
 const { title, features, columns = '2' } = data;
 
 const gridClass = `features-list--cols-${columns}`;
+const parsedTitle = parseInlineMarkdown(title);
 ---
 
 <section class="features-list section" data-theme={theme}>
   <div class="container">
-    {title && <h2 class="features-list__title">{title}</h2>}
+    {parsedTitle && <h2 class="features-list__title" set:html={parsedTitle} />}
 
     <div class={`features-list__grid ${gridClass}`}>
       {features.map((feature) => (
@@ -25,9 +27,9 @@ const gridClass = `features-list--cols-${columns}`;
             </div>
           )}
           <div class="features-list__content">
-            <h3 class="features-list__item-title">{feature.title}</h3>
+            <h3 class="features-list__item-title" set:html={parseInlineMarkdown(feature.title)} />
             {feature.description && (
-              <p class="features-list__description">{feature.description}</p>
+              <p class="features-list__description" set:html={parseInlineMarkdown(feature.description)} />
             )}
           </div>
         </div>

@@ -1,5 +1,6 @@
 ---
 import type { TextContentSection, Theme } from '../../schemas/sections';
+import { parseInlineMarkdown } from '../../utils/markdown';
 
 interface Props {
   data: TextContentSection;
@@ -12,6 +13,8 @@ const { title, content, alignment = 'left', maxWidth = 'medium' } = data;
 
 const alignmentClass = `text-content--${alignment}`;
 const widthClass = `text-content--${maxWidth}`;
+const parsedTitle = parseInlineMarkdown(title);
+const parsedContent = parseInlineMarkdown(content);
 ---
 
 <section
@@ -21,8 +24,8 @@ const widthClass = `text-content--${maxWidth}`;
 >
   <div class="container">
     <div class="text-content__inner">
-      {title && <h2 class="text-content__title">{title}</h2>}
-      <div class="text-content__body" set:html={content} />
+      {parsedTitle && <h2 class="text-content__title" set:html={parsedTitle} />}
+      <div class="text-content__body" set:html={parsedContent} />
     </div>
   </div>
 </section>

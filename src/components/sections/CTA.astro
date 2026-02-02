@@ -1,5 +1,6 @@
 ---
 import type { CTASection, Theme } from '../../schemas/sections';
+import { parseInlineMarkdown } from '../../utils/markdown';
 
 interface Props {
   data: CTASection;
@@ -15,6 +16,8 @@ const bgClass = theme ? '' : `cta--${backgroundColor}`;
 
 // Determine if this is a dark background (for button styling)
 const isDarkBg = backgroundColor === 'green' || backgroundColor === 'orange';
+const parsedTitle = parseInlineMarkdown(title);
+const parsedDescription = parseInlineMarkdown(description);
 ---
 
 <section class={`cta section ${bgClass}`} data-theme={theme} id={id}>
@@ -29,8 +32,8 @@ const isDarkBg = backgroundColor === 'green' || backgroundColor === 'orange';
       </div>
     )}
     <div class="cta__content">
-      <h2 class="cta__title">{title}</h2>
-      {description && <div class="cta__description" set:html={description} />}
+      <h2 class="cta__title" set:html={parsedTitle} />
+      {parsedDescription && <div class="cta__description" set:html={parsedDescription} />}
       <div class="cta__buttons">
         {ctas.map((cta, index) => (
           index === 0 ? (

@@ -1,5 +1,6 @@
 ---
 import type { FAQSection, Theme } from '../../schemas/sections';
+import { parseInlineMarkdown } from '../../utils/markdown';
 
 interface Props {
   data: FAQSection;
@@ -8,6 +9,7 @@ interface Props {
 
 const { data, theme } = Astro.props;
 const { title, items } = data;
+const parsedTitle = parseInlineMarkdown(title);
 
 // Generate unique IDs for accessibility
 const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
@@ -15,7 +17,7 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
 
 <section class="faq section" data-theme={theme}>
   <div class="container">
-    {title && <h2 class="faq__title">{title}</h2>}
+    {parsedTitle && <h2 class="faq__title" set:html={parsedTitle} />}
 
     <div class="faq__grid" role="list">
       {items.map((item, index) => {
@@ -29,7 +31,7 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
               aria-controls={`answer-${itemId}`}
               type="button"
             >
-              <span class="faq__question-text">{item.question}</span>
+              <span class="faq__question-text" set:html={parseInlineMarkdown(item.question)} />
               <span class="faq__icon-wrapper">
                 <span class="faq__icon" aria-hidden="true">
                   <span class="faq__icon-line faq__icon-line--h"></span>

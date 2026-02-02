@@ -1,5 +1,6 @@
 ---
 import type { ValuePropositionSection, Theme } from '../../schemas/sections';
+import { parseInlineMarkdown } from '../../utils/markdown';
 
 interface Props {
   data: ValuePropositionSection;
@@ -8,14 +9,16 @@ interface Props {
 
 const { data, theme } = Astro.props;
 const { title, subtitle, items } = data;
+const parsedTitle = parseInlineMarkdown(title);
+const parsedSubtitle = parseInlineMarkdown(subtitle);
 ---
 
 <section class="value-prop section" data-theme={theme}>
   <div class="container">
-    {(title || subtitle) && (
+    {(parsedTitle || parsedSubtitle) && (
       <header class="value-prop__header">
-        {title && <h2 class="value-prop__title">{title}</h2>}
-        {subtitle && <p class="value-prop__subtitle">{subtitle}</p>}
+        {parsedTitle && <h2 class="value-prop__title" set:html={parsedTitle} />}
+        {parsedSubtitle && <p class="value-prop__subtitle" set:html={parsedSubtitle} />}
       </header>
     )}
     <div class="value-prop__grid">
@@ -41,9 +44,9 @@ const { title, subtitle, items } = data;
           <div class="value-prop__content">
             <h3 class="value-prop__card-title">
               <span class="value-prop__dot" aria-hidden="true"></span>
-              {item.title}
+              <span set:html={parseInlineMarkdown(item.title)} />
             </h3>
-            <div class="value-prop__description" set:html={item.description} />
+            <div class="value-prop__description" set:html={parseInlineMarkdown(item.description)} />
           </div>
         </article>
       ))}

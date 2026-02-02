@@ -1,5 +1,6 @@
 ---
 import type { SplitContentSection, Theme } from '../../schemas/sections';
+import { parseInlineMarkdown } from '../../utils/markdown';
 
 interface Props {
   data: SplitContentSection;
@@ -20,6 +21,9 @@ const {
 // Use theme system when available, fall back to backgroundColor classes for backward compatibility
 const bgClass = theme ? '' : `bg-${backgroundColor}`;
 const layoutClass = `split-content--${layout}`;
+const parsedTitle = parseInlineMarkdown(title);
+const parsedSubtitle = parseInlineMarkdown(subtitle);
+const parsedContent = parseInlineMarkdown(content);
 ---
 
 <section class={`split-content section ${bgClass} ${layoutClass}`} data-theme={theme}>
@@ -37,9 +41,9 @@ const layoutClass = `split-content--${layout}`;
     )}
 
     <div class="split-content__text">
-      {subtitle && <p class="split-content__subtitle">{subtitle}</p>}
-      <h2 class="split-content__title">{title}</h2>
-      <div class="split-content__content" set:html={content} />
+      {parsedSubtitle && <p class="split-content__subtitle" set:html={parsedSubtitle} />}
+      {parsedTitle && <h2 class="split-content__title" set:html={parsedTitle} />}
+      <div class="split-content__content" set:html={parsedContent} />
       {cta && (
         <a
           href={cta.href}

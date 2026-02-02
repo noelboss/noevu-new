@@ -1,5 +1,6 @@
 ---
 import type { ProcessSection, Theme } from '../../schemas/sections';
+import { parseInlineMarkdown } from '../../utils/markdown';
 
 interface Props {
   data: ProcessSection;
@@ -10,14 +11,16 @@ const { data, theme } = Astro.props;
 const { title, subtitle, steps, layout = 'alternating' } = data;
 
 const layoutClass = `process--${layout}`;
+const parsedTitle = parseInlineMarkdown(title);
+const parsedSubtitle = parseInlineMarkdown(subtitle);
 ---
 
 <section class={`process section ${layoutClass}`} data-theme={theme}>
   <div class="container">
-    {(title || subtitle) && (
+    {(parsedTitle || parsedSubtitle) && (
       <div class="process__header">
-        {title && <h2 class="process__title">{title}</h2>}
-        {subtitle && <p class="process__subtitle">{subtitle}</p>}
+        {parsedTitle && <h2 class="process__title" set:html={parsedTitle} />}
+        {parsedSubtitle && <p class="process__subtitle" set:html={parsedSubtitle} />}
       </div>
     )}
 
@@ -25,8 +28,8 @@ const layoutClass = `process--${layout}`;
       {steps.map((step, index) => (
         <div class={`process__step ${index % 2 === 1 && layout === 'alternating' ? 'process__step--reverse' : ''}`}>
           <div class="process__content">
-            <h3 class="process__step-title">{step.title}</h3>
-            <div class="process__description" set:html={step.description} />
+            <h3 class="process__step-title" set:html={parseInlineMarkdown(step.title)} />
+            <div class="process__description" set:html={parseInlineMarkdown(step.description)} />
           </div>
           <div class="process__number">
             {step.number || index + 1}

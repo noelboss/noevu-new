@@ -1,5 +1,6 @@
 ---
 import type { TestimonialsSection, Theme } from '../../schemas/sections';
+import { parseInlineMarkdown } from '../../utils/markdown';
 
 interface Props {
   data: TestimonialsSection;
@@ -8,6 +9,7 @@ interface Props {
 
 const { data, theme } = Astro.props;
 const { title, rating, testimonials } = data;
+const parsedTitle = parseInlineMarkdown(title);
 ---
 
 <section class="testimonials section" data-theme={theme}>
@@ -15,7 +17,7 @@ const { title, rating, testimonials } = data;
   <div class="container testimonials__container">
     {(title || rating) && (
       <div class="testimonials__header">
-        {title && <h2 class="testimonials__title">{title}</h2>}
+        {parsedTitle && <h2 class="testimonials__title" set:html={parsedTitle} />}
         {rating && (
           <div class="testimonials__rating">
             <div class="testimonials__rating-content">
@@ -59,7 +61,7 @@ const { title, rating, testimonials } = data;
           )}
           <p class="testimonials__quote">
             <span class="testimonials__quote-mark">&bdquo;</span>
-            {testimonial.quote}
+            <span set:html={parseInlineMarkdown(testimonial.quote)} />
             <span class="testimonials__quote-mark">&ldquo;</span>
           </p>
           <footer class="testimonials__footer">

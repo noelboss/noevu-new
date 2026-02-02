@@ -1,5 +1,6 @@
 ---
 import type { HeroSection, Theme } from '../../schemas/sections';
+import { parseInlineMarkdown } from '../../utils/markdown';
 
 interface Props {
   data: HeroSection;
@@ -19,6 +20,7 @@ const {
 } = data;
 
 const alignmentClass = `hero--${alignment}`;
+const parsedHeadline = parseInlineMarkdown(headline);
 
 // Avatar images for social proof (placeholder)
 const avatars = [
@@ -49,7 +51,7 @@ const avatars = [
         </p>
       )}
 
-      <h1 class="hero__headline" set:html={headline} />
+      <h1 class="hero__headline" set:html={parsedHeadline} />
 
       {description && <div class="hero__description" set:html={description} />}
 
@@ -230,23 +232,27 @@ const avatars = [
     -webkit-text-fill-color: transparent;
   }
 
-  /* Emphasized text in headline - simple orange highlight underline
-     Inherits gradient text from themes.css, adds subtle highlight */
+  /* Emphasized text in headline - orange highlight underline
+     Using pseudo-element since parent uses background-clip: text */
   .hero__headline :global(strong),
   .hero__headline :global(em) {
     font-style: normal;
-    font-weight: inherit;
-    /* Override theme gradient for hero - use simple highlight */
-    background-image:
-      linear-gradient(330deg, var(--color-primary, #255a4e) 20%, var(--color-neutral-700, #5f524a) 100%),
-      linear-gradient(transparent calc(100% - 0.35em), hsla(var(--color-orange-hsl), 0.35) 0.35em);
-    background-repeat: no-repeat;
-    background-position: 0 0, 0 0;
-    background-size: 100% 100%, 100% 100%;
-    -webkit-background-clip: text, padding-box;
-    background-clip: text, padding-box;
-    -webkit-text-fill-color: transparent;
-    padding-inline: 0.1em;
+    font-weight: inherit; /* Abril Fatface only has one weight */
+    position: relative;
+    display: inline;
+  }
+
+  .hero__headline :global(strong)::after,
+  .hero__headline :global(em)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.1em;
+    height: 0.3em;
+    background: hsla(var(--color-orange-hsl, 17, 100%, 59%), 0.3);
+    z-index: -1;
+    border-radius: 2px;
   }
 
   /* ═══════════════════════════════════════════════════════════════
