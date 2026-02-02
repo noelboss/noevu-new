@@ -147,6 +147,20 @@ const parsedSubtitle = parseInlineMarkdown(subtitle);
   .services-grid__item {
     display: flex;
     flex-direction: column;
+    /* Card-like styling with hover effect */
+    background-color: hsla(0, 0%, 100%, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    transition: all 0.3s ease-out;
+    border: 1px solid hsla(0, 0%, 0%, 0.05);
+  }
+
+  .services-grid__item:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 12px 40px -8px hsla(0, 0%, 0%, 0.1),
+      0 8px 20px -6px hsla(17, 100%, 59%, 0.08);
   }
 
   .services-grid__item-title {

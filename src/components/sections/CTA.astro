@@ -224,10 +224,11 @@ const parsedDescription = parseInlineMarkdown(description);
     font-size: 0.9375rem;
     text-decoration: none;
     border: 1px solid hsla(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
     box-shadow:
       0 0 15px hsla(17, 100%, 59%, 0.3),
-      8px 8px 40px hsla(17, 100%, 59%, 0.2),
-      inset -5px -5px 10px hsla(255, 255, 255, 0.1);
+      8px 8px 40px hsla(17, 100%, 59%, 0.5),
+      inset -5px -5px 10px hsla(255, 255, 255, 0.15);
     transition: all 0.3s ease;
     overflow: hidden;
   }
@@ -236,8 +237,8 @@ const parsedDescription = parseInlineMarkdown(description);
     color: white;
     box-shadow:
       0 0 15px hsla(17, 100%, 59%, 0.5),
-      8px 8px 40px hsla(17, 100%, 59%, 0.4),
-      inset -5px -5px 10px hsla(17, 100%, 59%, 0.1);
+      8px 8px 40px hsla(17, 100%, 59%, 0.7),
+      inset -5px -5px 10px hsla(17, 100%, 59%, 0.15);
     transform: translateY(-2px);
   }
 

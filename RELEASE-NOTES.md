@@ -3,7 +3,31 @@
 ## Date: 2026-02-02
 
 ## Summary
-Added inline markdown parsing support across all section components to properly render `**bold**` as `<strong>` and `*italic*` as `<em>` HTML tags.
+1. Added inline markdown parsing support across all section components
+2. Applied critical styling fixes to match original noevu.ch design
+
+## Styling Fixes Applied (This Session)
+
+### Hero.astro
+- **Primary button**: Increased box-shadow opacity (0.2→0.5, 0.1→0.15), added backdrop-filter blur(10px)
+- **Primary button hover**: Increased shadow intensity, changed inset shadow to orange
+- **Secondary button**: Added border, 2-layer box-shadow, backdrop-filter, padding, border-radius
+- **Subheadline**: Added tag-style glass effect (backdrop-filter, background, padding, border-radius)
+- **Subheadline dot**: Added hover animation
+- **CTA gap**: Increased from 1.5rem to 2rem
+
+### ValueProposition.astro
+- **Cards**: Added 3D perspective transforms, 3-layer shadow with orange glow
+- **Card hover**: Added rotateX/rotateY/translateZ transforms, brightness/saturation filters
+- **Icons**: Added glass effect (backdrop-filter, border, inset shadows)
+- **Image hover**: Enhanced to scale(1.08) rotate(-1deg) with brightness filter
+
+### ServicesGrid.astro
+- **Items**: Added card-like styling with background, backdrop-filter, border-radius, padding
+- **Item hover**: Added translateY(-4px) with shadow effect
+
+### CTA.astro
+- **Primary button**: Same fixes as Hero.astro (shadow opacity, backdrop-filter)
 
 ## Changes Made
 
