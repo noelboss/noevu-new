@@ -27,6 +27,26 @@ const linkFields: TinaField[] = [
   { type: 'boolean', name: 'external', label: 'Externer Link' },
 ];
 
+// Theme options matching Zod ThemeSchema
+const themeField: TinaField = {
+  type: 'string',
+  name: 'theme',
+  label: 'Farbschema',
+  description: 'Bestimmt Hintergrund- und Textfarben der Sektion',
+  options: [
+    { label: 'Dunkel (Grün)', value: 'dark' },
+    { label: 'Weiss', value: 'white' },
+    { label: 'Weiss (Bold)', value: 'white-bold' },
+    { label: 'Hell Invertiert (Orange)', value: 'bright-inverse' },
+    { label: 'Hell (Akzent)', value: 'bright' },
+    { label: 'Hell (Bold)', value: 'light-bold' },
+    { label: 'Schwarz (Bold)', value: 'black-bold' },
+    { label: 'Schwarz', value: 'black' },
+    { label: 'Hell', value: 'light' },
+    { label: 'Dunkel (Bold)', value: 'dark-bold' },
+  ],
+};
+
 // Section templates that mirror Zod discriminated union
 const heroSection: TinaField = {
   type: 'object',
@@ -34,6 +54,7 @@ const heroSection: TinaField = {
   label: 'Hero',
   fields: [
     { type: 'string', name: 'type', label: 'Type', required: true, ui: { component: 'hidden' } },
+    themeField,
     { type: 'string', name: 'headline', label: 'Headline', required: true },
     { type: 'string', name: 'subheadline', label: 'Subheadline' },
     { type: 'rich-text', name: 'description', label: 'Beschreibung' },
@@ -65,6 +86,7 @@ const logoGallerySection: TinaField = {
   label: 'Logo Gallery',
   fields: [
     { type: 'string', name: 'type', label: 'Type', required: true, ui: { component: 'hidden' } },
+    themeField,
     { type: 'string', name: 'title', label: 'Titel' },
     {
       type: 'object',
@@ -86,6 +108,7 @@ const valuePropositionSection: TinaField = {
   label: 'Value Proposition',
   fields: [
     { type: 'string', name: 'type', label: 'Type', required: true, ui: { component: 'hidden' } },
+    themeField,
     { type: 'string', name: 'title', label: 'Titel' },
     {
       type: 'object',
@@ -107,6 +130,7 @@ const servicesGridSection: TinaField = {
   label: 'Services Grid',
   fields: [
     { type: 'string', name: 'type', label: 'Type', required: true, ui: { component: 'hidden' } },
+    themeField,
     { type: 'string', name: 'title', label: 'Titel' },
     { type: 'string', name: 'subtitle', label: 'Untertitel' },
     {
@@ -136,6 +160,7 @@ const comparisonTableSection: TinaField = {
   label: 'Vergleichstabelle',
   fields: [
     { type: 'string', name: 'type', label: 'Type', required: true, ui: { component: 'hidden' } },
+    themeField,
     { type: 'string', name: 'title', label: 'Titel' },
     {
       type: 'object',
@@ -166,6 +191,7 @@ const processSection: TinaField = {
   label: 'Prozess',
   fields: [
     { type: 'string', name: 'type', label: 'Type', required: true, ui: { component: 'hidden' } },
+    themeField,
     { type: 'string', name: 'title', label: 'Titel' },
     { type: 'string', name: 'subtitle', label: 'Untertitel' },
     {
@@ -195,6 +221,7 @@ const ctaSection: TinaField = {
   label: 'Call to Action',
   fields: [
     { type: 'string', name: 'type', label: 'Type', required: true, ui: { component: 'hidden' } },
+    themeField,
     { type: 'string', name: 'title', label: 'Titel', required: true },
     { type: 'rich-text', name: 'description', label: 'Beschreibung' },
     { type: 'object', name: 'ctas', label: 'Buttons', list: true, fields: linkFields },
@@ -214,16 +241,18 @@ const waveDividerSection: TinaField = {
   label: 'Wave Divider',
   fields: [
     { type: 'string', name: 'type', label: 'Type', required: true, ui: { component: 'hidden' } },
+    { ...themeField, name: 'topTheme', label: 'Oberes Farbschema' },
+    { ...themeField, name: 'bottomTheme', label: 'Unteres Farbschema' },
     {
       type: 'string',
       name: 'topColor',
-      label: 'Obere Farbe',
+      label: 'Obere Farbe (Legacy)',
       options: ['beige', 'white', 'green'],
     },
     {
       type: 'string',
       name: 'bottomColor',
-      label: 'Untere Farbe',
+      label: 'Untere Farbe (Legacy)',
       options: ['beige', 'white', 'green'],
     },
     {
@@ -241,6 +270,7 @@ const testimonialsSection: TinaField = {
   label: 'Testimonials',
   fields: [
     { type: 'string', name: 'type', label: 'Type', required: true, ui: { component: 'hidden' } },
+    themeField,
     { type: 'string', name: 'title', label: 'Titel' },
     {
       type: 'object',
@@ -275,6 +305,7 @@ const featuresListSection: TinaField = {
   label: 'Features Liste',
   fields: [
     { type: 'string', name: 'type', label: 'Type', required: true, ui: { component: 'hidden' } },
+    themeField,
     { type: 'string', name: 'title', label: 'Titel' },
     {
       type: 'object',
@@ -302,6 +333,7 @@ const faqSection: TinaField = {
   label: 'FAQ',
   fields: [
     { type: 'string', name: 'type', label: 'Type', required: true, ui: { component: 'hidden' } },
+    themeField,
     { type: 'string', name: 'title', label: 'Titel' },
     {
       type: 'object',
