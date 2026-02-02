@@ -10,7 +10,7 @@
       "type": "hero",
       "headline": "Webdesign Agentur in Zürich – Webagentur für professionelles digitales Marketing für Schweizer KMU",
       "subheadline": "Wir entwickeln, was Euch einzigartig macht.",
-      "description": "<p>Ihr braucht nicht nur eine schöne KMU-Webseite, sondern praktische digitale Lösungen, die Euer Unternehmen voranbringen. Als eine der besten Schweizer Webdesign Agentur in Zürich unterstützen wir Firmen und Organisationen mit 25 Jahren Erfahrung kompetent mit Webseiten Beratung und Hilfe eine neue Firmenhomepage zu erstellen.</p>",
+      "description": "<p>Ihr braucht nicht nur eine schöne KMU-Webseite, sondern praktische digitale Lösungen, die Euer Unternehmen voranbringen. Als eine der besten Schweizer Webdesign Agentur in Zürich unterstützen wir Firmen und Organisationen mit 25 Jahren Erfahrung kompetent mit <a href=\"/webseiten-beratung-hilfe\">Webseiten Beratung und Hilfe</a> eine <a href=\"/websites-erstellen-lassen\">neue Firmenhomepage zu erstellen</a>.</p>",
       "backgroundImage": {
         "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/8fdefc91-30ca-452f-8d17-e040896ae902/Web_design_prototype_displays.png",
         "alt": "Webdesign Agentur Zürich"
@@ -46,15 +46,15 @@
       "features": [
         {
           "title": "Ihr startet mit Vorsprung",
-          "description": "25+ Jahre Erfahrung, hunderte erfolgreiche Projekte. Euer Projekt ist von Tag 1 in den richtigen Händen."
+          "description": "Ihr profitiert von einem smarten Ansatz, der euch schneller ans Ziel bringt. Anstatt das Rad neu zu erfinden, setzen wir als **Schweizer Webagentur und Squarespace Experten in Zürich** auf bewährte, moderne Technologien und KI-gestützte Tools. **Für euch bedeutet das:** Euer Budget und unsere Zeit fliessen direkt in das, was den grössten Wert schafft – eine glasklare Strategie, überzeugendes Design und eine Botschaft, die ankommt."
         },
         {
           "title": "Eine Webseite, die Eure Ziele erreicht",
-          "description": "Strategisches Design für messbare Ergebnisse. Jede Entscheidung dient euren Geschäftszielen."
+          "description": "Ihr erhaltet mehr als nur ein schönes KMU Webdesign. Ihr bekommt eine digitale Grundlage, die für Euch arbeitet. Als Webdesign Webagentur in Zürich analysieren wir zuerst Eure Ziele, eure Kunden und deren Weg (Customer Journey). Das Resultat**:** Eine **schöne KMU Webseite**, die Eure Besucher gezielt führt, Eure Stärken wirkungsvoll auf den Punkt bringt und so Besucher zu Kunden macht."
         },
         {
           "title": "Perfektion dank Erfahrung",
-          "description": "Von lokalen Handwerkern bis zu nationalen Unternehmen. Wir wissen, was für Schweizer KMU funktioniert."
+          "description": "Mit über 25 Jahre Erfahrung als **Schweizer Website Entwickler** wissen wir, was funktioniert – und was nicht. Das bedeutet für Euch**:** Wir bringen Euer Projekt nicht nur schnell und sauber ins Ziel, sondern denken mit. Wir hinterfragen Euer Briefing, um das bestmögliche Ergebnis zu erzielen. Auch nach dem Livegang seid Ihr nicht allein – mit integriertem Support, Hosting und Weiterentwicklung aus einer Hand bleibt Ihr zukunftssicher."
         }
       ],
       "columns": "3"
@@ -71,19 +71,19 @@
       "services": [
         {
           "title": "Beratung von Profis",
-          "description": "Strategische Beratung für eure digitale Präsenz. Von der Analyse bis zur Umsetzung."
+          "description": "- Strategieentwicklung\n- Zielgruppenanalyse\n- AI Beratung für KMU\n- Best Practices"
         },
         {
           "title": "KMU Webseiten Entwicklung",
-          "description": "Professionelle Website-Entwicklung mit Squarespace – dem einfachsten CMS der Welt."
+          "description": "- Webdesign für KMU\n- Squarespace Entwicklung\n- Responsive Design\n- API & Funktionserweiterungen"
         },
         {
           "title": "Webseiten Optimierung",
-          "description": "SEO, Performance und Conversion-Optimierung für bestehende Websites."
+          "description": "- Performance-Steigerung\n- Mobile-Optimierung\n- SEO-Anpassungen\n- Beutzerfreundlichkeit"
         },
         {
           "title": "Pflege & Support",
-          "description": "Laufende Betreuung, Updates und ein Ansprechpartner für alle Fragen."
+          "description": "- Aktualisierung\n- Content-Management\n- Sicherheitsprüfung\n- Betrieb und Hosting"
         }
       ],
       "columns": "4"
@@ -96,28 +96,28 @@
     },
     {
       "type": "comparisonTable",
-      "title": "Warum andere zu uns wechseln",
+      "title": "Warum Andere zu unserer Webdesign Agentur in Zürich wechseln?",
       "leftColumn": {
-        "header": "Herkömmliche Agentur",
+        "header": "herkömmliche Agentur",
         "items": [
-          "Template-basierte Designs",
-          "Kompliziertes CMS",
-          "Hoher Wartungsaufwand",
-          "Lange Entwicklungszeiten",
-          "Unklare Preisstrukturen",
-          "Nach Launch allein"
+          "Templates oder Umsetzung individueller Designs teuer",
+          "Komplizierte CMS wie WordPress oder Typo3",
+          "Regelmässige Updates mittels externer Plugins",
+          "Monate",
+          "Kompliziertes Dienstleistungsangebot",
+          "Gleicher Ansatz wie vor 10 Jahren"
         ],
         "highlighted": false
       },
       "rightColumn": {
         "header": "Noevu",
         "items": [
-          "Individuelles Design für eure Marke",
-          "Einfachstes CMS der Welt",
-          "Minimaler Wartungsaufwand",
-          "Effiziente Prozesse",
-          "Transparente Festpreise",
-          "Laufende Betreuung & Support"
+          "Massgeschneiderte Designs kosteneffizient umgesetzt",
+          "Einfache Bedienung Eurer Website z. B. mit Squarespace",
+          "Keine Wartung erforderlich",
+          "Ein paar Wochen",
+          "Ein klarer Fokus: Eure neue Website",
+          "Einsatz von AI und modernster Technologie für mehr Effizienz"
         ],
         "highlighted": true
       }
@@ -152,23 +152,23 @@
       "steps": [
         {
           "number": 1,
-          "title": "Verstehen",
-          "description": "Wir lernen euer Unternehmen, eure Ziele und Zielgruppe kennen."
+          "title": "Klare Botschaft",
+          "description": "Menschen kaufen nicht, was Ihr tut – sondern warum Ihr es tut. Mit dem Golden Circle kommt Eure wahre Stärke auf den Punkt: Warum Ihr existiert, wie Ihr Mehrwert schafft und was Ihr konkret bietet. So entsteht eine klare Botschaft, die emotional verbindet und rational überzeugt – direkt sichtbar auf Eurer Startseite."
         },
         {
           "number": 2,
-          "title": "Konzipieren",
-          "description": "Struktur, Inhalte und User Experience werden gemeinsam entwickelt."
+          "title": "Einfache Bedienung",
+          "description": "Gute Nutzerführung entscheidet über Erfolg oder Absprung. Ihr braucht eine Webseite, die Eure Besucher gezielt ans Ziel führt – mit klaren Call-to-Actions, bewährten Design-Patterns und einer intuitiven Struktur. Jede Interaktion wird leicht, logisch und selbstverständlich – damit Eure Kunden den Weg zur Kontaktaufnahme fast automatisch gehen."
         },
         {
           "number": 3,
-          "title": "Gestalten",
-          "description": "Interaktive Prototypen zeigen euch das künftige Design."
+          "title": "Strategisches Design & Funktion",
+          "description": "Ihr braucht mehr als eine schöne neue Webseite: Das Webdesign muss Eure Botschaft klar unterstützen und zugleich zum Handeln motivieren. Als Zügestalten ein visuelles Erlebnis, das Eure Inhalte wirkungsvoll und ansprechend inszeniert."
         },
         {
           "number": 4,
-          "title": "Entwickeln",
-          "description": "Technische Umsetzung und Go-Live eurer Website."
+          "title": "Service & Betrieb",
+          "description": "Normale Webseiten werden alt. Eure neue KMU Webseite verbessert sich ständig. Mit modernen SaaS-Lösungen erhält sie laufend neue Funktionen. Durch gezielte Optimierungen, höchste Sicherheitsstandards und clevere Performance-Verbesserungen (z. B. mit Cloudflare) bleibt sie schnell, stabil und immer aktuell. Dank integrierten Service-Stunden reagiert unsere Webagentur in Zürich flexibel auf Eure Wünsche. Wenn einmal ein Problem auftaucht, finden und lösen wir es schnell."
         }
       ],
       "layout": "horizontal"
@@ -178,23 +178,31 @@
       "title": "Was ihr bekommt",
       "features": [
         {
-          "title": "Einfache Bedienung",
-          "description": "Drag & Drop Editor. Inhalte ändern ohne IT-Kenntnisse."
+          "title": "Strategie und Effizienz",
+          "description": "Mit modernen Tools wie **Squarespace** und klaren Prozessen setzen wir Euer **schöne neue Webseite** schnell und budgetbewusst um. Unsere Energie fliesst gezielt in Strategie, Inhalt und Design – für maximalen Wert."
         },
         {
-          "title": "Modernes Design",
-          "description": "Zeitgemässe Ästhetik, die eure Marke perfekt repräsentiert."
+          "title": "Individuelles Webdesign",
+          "description": "Ihr erhaltet keine Standard-Templates, sondern wir entwickeln für euch ein professionelles KMU Webdesign, das Eure Marke perfekt widerspiegelt. Mit einer visuellen Sprache, die Eure Botschaft auf den Punkt bringt und Eure Besucher leitet."
         },
         {
-          "title": "Messbare Resultate",
-          "description": "Analytics und Tracking für datenbasierte Entscheidungen."
+          "title": "Optimiert für Mobile & Desktop",
+          "description": "Ob Smartphone, Tablet oder Desktop: Wir sorgen für ein nahtloses und überzeugendes Erlebnis. Mit responsivem **Webdesign** erreicht Ihr Eure Kunden optimal – wo auch immer sie gerade sind."
         },
         {
-          "title": "SEO optimiert",
-          "description": "Bessere Platzierungen bei Google. Gefunden werden, wenn es zählt."
+          "title": "Kinderleichte Bedienung",
+          "description": "Nach dem Launch habt Ihr die volle Kontrolle. Wir schulen euch, damit Ihr Inhalte und Bilder mit dem **intuitiven CMS** mühelos und ohne Code selbst verwalten könnt – für maximale Flexibilität."
+        },
+        {
+          "title": "Technologie, die für Euch arbeitet",
+          "description": "Vergesst mühsame Bedienung, teure Wartung und Sicherheitslücken. Entdeckt eine modernen All-in-one-Plattform, die **Künstliche Intelligenz**, SEO, Hosting, Sicherheit und Updates bündelt."
+        },
+        {
+          "title": "Erfahrene Web-Entwickler",
+          "description": "Wir sind mehr als nur Euer **Webdesigner** – wir sind Euer strategischer Partner. Mit über 25 Jahren Erfahrung als **Webseiten Entwickler** beraten wir euch proaktiv und begleiten euch auch nach dem Start der Webseite."
         }
       ],
-      "columns": "4"
+      "columns": "3"
     },
     {
       "type": "faq",
@@ -202,35 +210,35 @@
       "items": [
         {
           "question": "Was kostet eine Webseite bei Euch?",
-          "answer": "Ihr bekommt bei uns keine KMU Webseite von der Stange, sondern eine fundierte Investition in Eure digitale Zukunft. Effiziente Starter-Lösungen starten bei CHF 4'500. Individuelles, strategisches Webdesign beginnt bei CHF 10'000. Für jedes Projekt erhaltet Ihr ein klares Fixpreis-Angebot für volle Kostenkontrolle."
+          "answer": "Ihr bekommt bei uns keine KMU Webseite von der Stange, sondern eine fundierte Investition in Eure digitale Zukunft. Transparenz ist dabei die Basis unserer Partnerschaft.\n\n**Effiziente Starter-Lösungen:** Für Startups und klare Projekte, bei denen es auf eine schnelle und professionelle Umsetzung ankommt, starten unsere Webdesign-Pakete bei CHF 4'500.\n\n**Individuelles, strategisches Webdesign:** Für umfassende Projekte, die eine tiefgehende Strategie, ein einzigartiges Design und individuelle Funktionen erfordern, beginnen die Investitionen bei CHF 10'000.\n\nFür jedes Projekt erhaltet Ihr von uns ein klares Fixpreis-Angebot. So habt Ihr von Anfang an volle Kostenkontrolle und Planungssicherheit."
         },
         {
           "question": "Wie lange dauert die Entwicklung einer Webseite?",
-          "answer": "Die meisten Projekte realisieren wir in 8 bis 10 Wochen vom strategischen Kick-off bis zum Go-Live. Wenn es schnell gehen muss, auch in 7 Tagen. Der schnelle Fortschritt hängt von Eurer Entscheidungsfreudigkeit und unserem klaren Prozess ab."
+          "answer": "Unser Prozess ist auf Effizienz und höchste Qualität ausgelegt. Die meisten Webseiten-Projekte realisieren wir innerhalb von **8 bis 10 Wochen** vom strategischen Kick-off bis zum Go-Live. Aber wenn es schnell gehen muss auch mal in 7 Tagen.\n\nFür Euch bedeutet das: Wir investieren unsere Energie nicht in endlose technische Setups, sondern dank dem smarten Einsatz von Squarespace direkt in das, was zählt: Eure Strategie, Eure Botschaft und Euer Design. Der Schlüssel zu einem schnellen Fortschritt liegt in Eurer Entscheidungsfreudigkeit und unserem bewährten, klaren Prozess."
         },
         {
           "question": "Könnt Ihr uns auch bei den Texten helfen?",
-          "answer": "Ja. Eine klare Botschaft ist zentral. Ihr liefert uns Stichworte und Gespräche; wir erstellen SEO-optimierten Content, der informiert und überzeugt. Das ist Bestandteil unserer Webseiten Beratung."
+          "answer": "Absolut. Eine klare Botschaft ist das Herzstück jeder erfolgreichen KMU Homepage. Wenn Euch die Worte fehlen, springen wir ein.\n\nIhr liefert uns Euer Expertenwissen in Form von Stichworten und Gesprächen. Wir verwandeln diese Essenz in **SEO-optimierten Content**, der Eure Zielgruppe nicht nur informiert, sondern auch überzeugt. Das ist ein zentraler Teil unserer **Webseiten Beratung**."
         },
         {
           "question": "Uns fehlen professionelle Bilder. Was nun?",
-          "answer": "Wir bieten drei Optionen: KI-gestützte Bildwelten für einzigartige, konsistente Visuals; Vermittlung an professionelle Fotografen; kuratierte und lizenzierte Stockbilder passend zu Eurer Marke."
+          "answer": "Die visuelle Gestaltung ist entscheidend für den ersten Eindruck und die emotionale Wirkung Eurer erfolgreichen Firmen Webseite. Auch hier lassen wir Euch nicht allein.\n\nWir finden gemeinsam die perfekte Lösung für Euch:\n\n**KI-gestützte Bildwelten:** Wir schaffen einzigartige und konsistente Bilderwelten, die Eure Einzigartigkeit visuell unterstreichen.\n\n**Professionelle Fotografie:** Wir verbinden Euch mit erfahrenen Fotografen aus unserem Netzwerk.\n\n**Kuratierte Stockbilder:** Wir recherchieren und lizenzieren hochwertige Bilder, die zu Eurer Marke passen."
         },
         {
           "question": "Wie starten wir ein Projekt mit Euch?",
-          "answer": "Der Start ist klar definiert: 1) Strategisches Erstgespräch zur Vision, Zielen und Kundenbedürfnissen. 2) Interaktive, digitale Offerte mit modularen Optionen und transparenter Investition. 3) Kick-off und Vorbereitungs-Workshop zur User Journey und strategischem Fundament."
+          "answer": "Der Start Eurer neuen KMI Webseite ist bei uns ein klar definierter und partnerschaftlicher Prozess. Wir überlassen nichts dem Zufall, damit wir Eure Ziele nicht nur erreichen, sondern übertreffen.\n\nSo legen wir gemeinsam die Grundlage für Euren Erfolg:\n\n**Das strategische Erstgespräch:** Alles beginnt damit, dass wir Euch zuhören. In einem ersten Gespräch wollen wir Eure Vision, Eure unternehmerischen Ziele und die Bedürfnisse Eurer Kunden verstehen. Das ist die Basis für alles Weitere.\n\n**Die massgeschneiderte digitale Offerte:** Statt eines starren PDFs erhaltet Ihr von uns eine interaktive, digitale Offerte. Hier könnt Ihr verschiedene Optionen und Module dynamisch auswählen und seht transparent, wie sich Eure Entscheidungen auf die Gesamtinvestition auswirken. Diese Offerte besprechen wir gemeinsam, um das perfekte Paket für Euch zu schnüren.\n\n**Kick-off & Vorbereitungs-Workshop:** Nach Eurer Zusage starten wir offiziell mit einem Kick-off-Gespräch. Direkt im Anschluss folgt der wichtigste Teil: der gemeinsame Vorbereitungs-Workshop. Hier tauchen wir tief in die Details ein, definieren die User Journey, schärfen die Kernbotschaften und legen das strategische Fundament für das gesamte Projekt.\n\nFür Euch bedeutet das: Ein transparenter, nachvollziehbarer Prozess, bei dem Ihr von Anfang an aktiv mitgestaltet und die Gewissheit habt, dass Euer Projekt auf einem soliden, strategischen Fundament steht."
         },
         {
           "question": "Welche Art von Webseiten entwickelt Ihr?",
-          "answer": "Wir entwickeln umfassende Firmen-Webseiten, strategische Landingpages, mehrsprachige Portale und moderne Portfolio-Seiten. Je nach Anforderungen setzen wir auf Squarespace, WordPress oder Shopify – immer mit ehrlicher, zielführender Beratung."
+          "answer": "Wir entwickeln nicht einfach nur **neue Firmen Webseiten** – wir schaffen die digitale Grundlage für Euren Erfolg. Als Euer **Schweizer Webdesign Agentur in Zürich** konzipieren und realisieren wir digitale Erlebnisse, die Eure Ziele erreichen.\n\nDazu gehören:\n\n**Umfassende Firmen-Webseiten:** Die Eure Marke stärken und Eure Expertise auf den Punkt bringen.\n\n**Strategische Landingpages:** Die Besucher gezielt zu einer Handlung führen und Eure Kampagnen unterstützen.\n\n**Mehrsprachige Portale:** Um Eure Zielgruppen über die Sprachgrenzen hinaus zu erreichen.\n\n**Moderne Portfolio-Seiten:** Die Eure Arbeit eindrucksvoll präsentieren.\n\nFür euch entwickeln wir **neue Webseiten** mit dem CMS-System, dass am besten zu Euren Anforderungen passt, egal ob **Squarespace**, **WordPress** oder **Shopify**.\n\nWir sind Euer strategischer Partner. Deshalb sagen wir Euch auch ehrlich, wenn eine Idee nicht zielführend ist, und schlagen stattdessen einen besseren Weg vor."
         },
         {
           "question": "Auf welche Technologie setzt Ihr?",
-          "answer": "Wenn Squarespace Eure Anforderungen erfüllt, nutzen wir die Plattform aus strategischen Gründen: Fokus auf Design und Strategie, einfache Verwaltung ohne Code, hohe Sicherheit und Wartungsfreiheit sowie starke SEO-Grundlage."
+          "answer": "Wir setzen auf Technologie, die Euch Freiraum schafft. Wenn Squarespace Eure Anforderungen erfüllt, nutzen wir als **Squarespace Agentur und Experten** die Plattform aus strategischen Gründen, die direkt Euch zugutekommen:\n\n**Fokus auf Design & Strategie:** Squarespace gibt uns als Webdesigner die Freiheit, Eure Einzigartigkeit in ein beeindruckendes Webdesign zu giessen, ohne uns in technischen Details zu verlieren.\n\n**Einfache Verwaltung für Euch:** Nach dem Launch könnt Ihr Inhalte wie Texte, Bilder oder Blogartikel einfach und intuitiv selbst verwalten – ganz ohne Code.\n\n**Sicherheit und Wartungsfreiheit:** Keine ständigen Plugin-Updates, keine geschlossenen Türen wegen Wartungsarbeiten. Die Plattform ist sicher, stabil und immer aktuell. So könnt Ihr Euch voll auf Euer Kerngeschäft konzentrieren.\n\n**Starke SEO-Grundlage:** Squarespace bietet von Haus aus eine hervorragende technische Basis für die Suchmaschinenoptimierung. Den Rest erledigen wir mit strategisch aufbereitetem Inhalt."
         },
         {
           "question": "Können wir unsere alte Webseite erneuern lassen?",
-          "answer": "Ja. Wir analysieren die bestehende Seite und planen den Umzug strategisch (z. B. von WordPress, Typo3 oder Squarespace 7.0) auf eine moderne, pflegeleichte Plattform. Der Übergang erfolgt nahtlos, SEO-Rankings bleiben erhalten."
+          "answer": "Ja, das ist eine unserer Kernkompetenzen. Viele unserer Kunden kommen zu uns, um ihre veraltete oder schwer zu bedienende KMU Webseite (z. B. von WordPress, Typo3 oder Squarespace 7.0) auf eine moderne und pflegeleichte Plattform zu heben.\n\nAls erfahrener **Schweizer Webdesign Agentur in Dübendorf, Zürich** analysieren wir Eure bestehende Seite, planen den Umzug strategisch und sorgen für einen nahtlosen Übergang – damit Eure SEO-Rankings erhalten bleiben und Eure digitale Präsenz gestärkt wird."
         }
       ]
     },

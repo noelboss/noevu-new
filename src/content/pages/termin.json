@@ -2,14 +2,14 @@
   "slug": "termin",
   "locale": "de",
   "seo": {
-    "title": "Termin mit KMU Webseiten und Squarespace Experten — Noevu GmbH",
-    "description": "Kostenloser Video-Termin buchen. Bucht ein unverbindliches 15-Minuten-Gespräch mit unserem Webseiten-Experten."
+    "title": "Termin mit Schweizer Webdesigner & Entwickler — Noevu GmbH",
+    "description": "Ihr wollt direkt über Euer Webseiten Projekt, eure Ziele und Ideen sprechen? Jetzt kostenloses und unverbindliches 15-Minuten-Gespräch buchen."
   },
   "sections": [
     {
       "type": "hero",
       "headline": "Termin mit KMU Webseiten und Squarespace Experten",
-      "subheadline": "Kostenloser Video-Termin buchen. Ganz einfach…",
+      "subheadline": "**Kostenloser** Video-Termin buchen. Ganz **einfach**…",
       "description": "<p>Ihr wollt direkt über Euer Web-Projekt, Eure Ziele und Ideen sprechen? Bucht hier ein kostenloses und unverbindliches 15-Minuten-Gespräch direkt im Kalender von Noel Bossart. So finden wir ohne langes E-Mail-Ping-Pong den perfekten Zeitpunkt für ein erstes Kennenlernen.</p>",
       "alignment": "center",
       "ctas": [
@@ -25,16 +25,10 @@
       "type": "splitContent",
       "layout": "imageLeft",
       "title": "Hallo, ich bin Noël",
-      "content": "<p><strong>Gründer & CEO von Noevu</strong></p><p>Mit über 25 Jahren Erfahrung in Webdesign, Marketing und digitaler Strategie helfe ich Schweizer KMUs, Online-Auftritte zu schaffen, die nicht nur gut aussehen, sondern auch Ergebnisse liefern.</p><p>Als Schweizer Squarespace-Experte kombiniere ich Effizienz, Benutzerfreundlichkeit und ästhetisches Design, um Websites zu realisieren, die langfristig funktionieren und Wachstum ermöglichen.</p><p><strong>Kontakt:</strong><br><a href='mailto:noel@noevu.ch'>noel@noevu.ch</a><br><a href='tel:+41445051020'>+41 44 505 10 20</a></p>",
+      "content": "<p><strong>Gründer & CEO von Noevu GmbH</strong></p><p>Ihr wollt direkt über Euer Web-Projekt, Eure Ziele und Ideen sprechen? Bucht hier ein kostenloses und unverbindliches 15-Minuten-Gespräch direkt im Kalender von Noel Bossart. So finden wir ohne langes E-Mail-Ping-Pong den perfekten Zeitpunkt für ein erstes Kennenlernen.</p><p>Ich möchte euch kennenlernen und euch dabei unterstützen, eure Ziele zu erreichen.</p><p><a href='mailto:noel@noevu.ch'>noel@noevu.ch</a><br><a href='tel:+41445051020'>+41 44 505 10 20</a><br><a href='#termin'>Direkt online Termin vereinbaren</a><br><a href='https://www.linkedin.com/company/noevu-swiss/'>Linkedin</a></p><p style='margin-left:40px;'><a href='/kontakt'>Zum online Formular</a></p>",
       "image": {
         "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/07f2b4cc-f0cf-43d2-9d80-deebc1763ef5/DSC01533.jpg",
         "alt": "Noël Bossart - Gründer & CEO von Noevu"
-      },
-      "cta": {
-        "label": "LinkedIn Profil",
-        "href": "https://www.linkedin.com/in/noelbossart/",
-        "variant": "secondary",
-        "external": true
       }
     },
     {

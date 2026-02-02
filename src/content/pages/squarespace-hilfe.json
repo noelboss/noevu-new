@@ -10,57 +10,138 @@
       "type": "hero",
       "headline": "Professionelle Website Pflege, Beratung und Hilfe",
       "subheadline": "Euer Weg zur erfolgreichen Homepage.",
-      "description": "<p>Ohne professionelle Homepage Pflege und Beratung von Experten, bleibt das Potenzial eurer Webseite ungenutzt. Mit über 25 Jahren Erfahrung bieten wir Euch Webseiten Hilfe von der ersten Idee bis über den Start Eurer erfolgreichen KMU Website. Wir hören zu, denken mit und entwickeln gemeinsam mit Euch eine Strategie, die wirklich zu Eurer Firma passt.</p>",
+      "description": "<p>Ohne professionelle Homepage Pflege und Beratung von Experten, bleibt das Potenzial eurer Webseite ungenutzt. Mit über 25 Jahren Erfahrung bieten wir Euch Webseiten Hilfe von der ersten Idee bis über den Start Eurer <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">erfolgreichen KMU Website</a>. Wir hören zu, denken mit und entwickeln gemeinsam mit Euch eine Strategie, die wirklich zu Eurer Firma passt.</p>",
       "alignment": "center",
       "ctas": [
         {
-          "label": "Hilfe anfragen",
-          "href": "/kontakt",
-          "variant": "primary"
+          "label": "Webseiten-Beratung buchen",
+          "href": "https://noevu.ch/termin",
+          "variant": "primary",
+          "external": true
         },
         {
-          "label": "Tipps & Anleitungen",
-          "href": "/squarespace-webseiten-tipps",
-          "variant": "secondary"
+          "label": "Braucht Ihr Webseiten Hilfe?",
+          "href": "https://noevu.ch/termin",
+          "variant": "secondary",
+          "external": true
         }
       ]
     },
     {
-      "type": "servicesGrid",
-      "title": "Wie wir euch helfen können",
-      "services": [
-        {
-          "title": "Schnelle Hilfe",
-          "description": "Akutes Problem? Wir helfen schnell und unkompliziert bei dringenden Fragen."
-        },
-        {
-          "title": "Design-Anpassungen",
-          "description": "Änderungen am Design, neue Sektionen oder visuelle Optimierungen."
-        },
-        {
-          "title": "Technischer Support",
-          "description": "Custom Code, Integrationen und technische Problemlösung."
-        },
-        {
-          "title": "SEO Optimierung",
-          "description": "Verbesserung der Suchmaschinenplatzierung eurer Website."
-        },
-        {
-          "title": "Schulung & Training",
-          "description": "Wir zeigen euch, wie ihr eure Website selbst pflegen könnt."
-        },
-        {
-          "title": "Laufende Wartung",
-          "description": "Regelmässige Updates, Backups und Überwachung."
-        }
-      ],
-      "columns": "3"
+      "type": "splitContent",
+      "layout": "imageLeft",
+      "title": "Hilfe & Squarespace Beratung",
+      "content": "",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/1744737599650-S447T9W3ZDJ4KR4T5TTH/Gold+Partner+Badge+Black+Gold.png",
+        "alt": "Schweizer Squarespace Circle Gold Partner 2025"
+      },
+      "cta": {
+        "label": "",
+        "href": "/squarespace-agentur/gold-partner"
+      }
     },
     {
-      "type": "waveDivider",
-      "topColor": "white",
-      "bottomColor": "beige",
-      "height": "medium"
+      "type": "textContent",
+      "title": "Webseiten **Pflege** & **Beratung** auf höchstem Noevu.",
+      "content": "<p>Ihr denkt vielleicht, man kann <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">neue Websites erstellen lassen</a> und damit ist es getan. Aber eine Homepage ist kein statisches Medium. Internetseiten brauchen kontinuierliche Pflege, sonst veralten sie. Die Technik entwickelt sich weiter und Ihr müsst immer am Ball bleiben. Mit unserer Beratung und Webseiten Pflege bleibt Eure Seite technisch und inhaltlich aktuell, sicher und leistungsfähig – ohne Euch zu belasten. Wir übernehmen Updates, Wartung und Optimierung, damit Ihr Euch auf Euer Kerngeschäft konzentrieren könnt.</p>",
+      "alignment": "center",
+      "cta": {
+        "label": "Jetzt Webseiten Hilfe anfragen",
+        "href": "https://noevu.ch/termin",
+        "variant": "primary",
+        "external": true
+      }
+    },
+    {
+      "type": "textContent",
+      "title": "Mehr als nur eine Webseite: Euer Business-**Werkzeug**.",
+      "content": "<p>Eine professionelle Webseite ist mehr als ein schönes Design – sie muss für Euer Geschäft arbeiten. Kommt Euch das bekannt vor? Ihr wisst, dass Ihr online präsenter sein müsst, seid aber unsicher über die nächsten Schritte oder die passende Webseiten Pflege? Ohne professionelle Beratung, einer klaren Strategie bleibt die Investition in eine Homepage oft wirkungslos. Danke 25 Jahren Erfahrung **helfen wir euch bei eurem Webseiten Projekt** – effizient und professionell.</p>",
+      "alignment": "center",
+      "cta": {
+        "label": "Was sind eure Ziele?",
+        "href": "#kontakt",
+        "variant": "primary"
+      }
+    },
+    {
+      "type": "featuresList",
+      "title": "",
+      "features": [
+        {
+          "title": "**Euer Fundament**",
+          "headline": "Eine glasklare Strategie.",
+          "description": "Ihr erhaltet nicht nur Ideen, sondern einen konkreten Fahrplan. Wir analysieren eure Ausgangslage, identifizieren Low-Hanging Fruits und entwickeln eine Strategie, die sicherstellt, dass eure digitale Präsenz perfekt auf eure Unternehmensziele ausgerichtet ist.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/9b1eb194-7eac-4e46-9b42-5131cedfc155/a-render-of-a-macbook-pro-like-laptop-di_E74U8zM-RVm7moaCW9LddQ_mOWRABLGTju6z-WQGxMRnA.png",
+            "alt": "Laptop mit einem Diagramm aus gestapelten Bergen und einem aufsteigenden Pfeil"
+          }
+        },
+        {
+          "title": "**Eure Kunden im Fokus**",
+          "headline": "Gezielte Ansprache, die wirkt.",
+          "description": "Ihr wisst genau, wen ihr ansprecht und wie ihr sie erreicht. Wir analysieren eure Zielgruppen, deren Bedürfnisse und Online-Verhalten. Darauf basierend stellen wir sicher, dass Design, Inhalt und Funktion eurer Homepag eure Kunden begeistern und zu den gewünschten Handlungen motivieren.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/c05970b1-5470-4f7d-8651-56fd6618b181/a-stylized-infographic-illustration-depi_Ue2kIKlVSsK4-Pbstil1gg_8o1E1Ia4RMGOAUlLdR1tUA.png",
+            "alt": "Diagramm mit WHY in der Mitte, umgeben von Kreisen mit WHAT und HOW"
+          }
+        },
+        {
+          "title": "**Eure Effizienz**",
+          "headline": "Werkzeuge, die für euch arbeiten.",
+          "description": "Ihr bekommt Orientierung im Dschungel der digitalen Tools. Wir <a href=\"/blog/cms-evaluation-fuer-schweizer-kmus\">evaluieren für euch die passenden CMS Lösungen</a>, intuitive CMS-Systeme und Automations-Möglichkeiten (z. B. mit Bexio, Hubspot, <a href=\"https://noevu.ch/blog/notion-ideales-intranet-fuer-schweizer-kmus\">Notion</a> oder Zapier), die euch Arbeit abnehmen, Prozesse vereinfachen und euer Budget schonen.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/bc27e016-7409-4f60-abb9-a5eca59b00e2/a-photograph-of-a-large-holographic-scre_M7IXz0YpRg-INAyZla9b0A_gt4SxOExT7Cah_Q-i40ayQ.png",
+            "alt": "Künstlerische Darstellung einer API mit Bergen, Stadtszene und Computer-Code"
+          }
+        },
+        {
+          "title": "**Eure Zukunftssicherheit**",
+          "headline": "Digitale Trends, die euch nützen.",
+          "description": "Ihr müsst nicht jedem Trend hinterherlaufen. Wir helfen euch die relevanten digitalen Entwicklungen und Best Practices heraus zu filtern. So trefft ihr nachhaltige Entscheidungen, die euch auch in Zukunft einen Wettbewerbsvorteil sichern.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/6884ea7c-68b1-4a9d-86e3-797469320890/a-professional-render-of-a-tablet-device_m5o3-uTgQvOnnAIlJBJcYg_FyUaemYmQaGJ2Pr1pTI3mA.png",
+            "alt": "Digitales Tablet mit der Aufschrift Level Up, umgeben von bunten geometrischen Formen"
+          },
+          "cta": {
+            "label": "Kostenlose CMS-Evaluation",
+            "href": "/blog/cms-evaluation-fuer-schweizer-kmus",
+            "variant": "primary"
+          }
+        }
+      ]
+    },
+    {
+      "type": "textContent",
+      "title": "Bereit für den ersten Schritt zu mehr **Klarheit**?",
+      "content": "<p>Wenn Ihr eine Beratung sucht, die über oberflächliche Tipps hinausgeht und Euch einen echten strategischen Vorsprung verschafft, dann lasst uns reden. Euer erstes Gespräch ist der Beginn Eures digitalen Erfolgs – von der Beratung über die Erstellung bis zur laufenden Webseiten Pflege.</p>",
+      "alignment": "center",
+      "cta": {
+        "label": "Kostenlose Webseiten-Beratung",
+        "href": "https://noevu.ch/termin",
+        "variant": "primary",
+        "external": true
+      }
+    },
+    {
+      "type": "testimonials",
+      "title": "Eure unverbindliche Anfrage:",
+      "testimonials": [
+        "reto-gerber",
+        "benedikt-vogel"
+      ]
+    },
+    {
+      "type": "textContent",
+      "title": "**Insights** für den digitalen **Vorsprung**.",
+      "content": "<p>Diese <a href=\"https://noevu.ch/webseiten-projekte\">Referenzen erfolgreicher KMU Webprojekte</a> und helfen Euch, und zeigen wie professionelle Webseiten Beratung, Umsetzung und Pflege zu nachhaltigem Erfolg führen.</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "blogGrid",
+      "title": "**Hilfreiche Tipps, Artikel und Projekte**",
+      "subtitle": "",
+      "limit": 20
     },
     {
       "type": "splitContent",
@@ -79,59 +160,53 @@
     },
     {
       "type": "faq",
-      "title": "Häufige Fragen zu Squarespace Hilfe",
+      "title": "Die häufigsten Fragen zu Webseiten Beratung und Hilfe für Schweizer KMU.",
       "items": [
         {
-          "question": "Wie schnell könnt ihr helfen?",
-          "answer": "Bei dringenden Problemen, die eure Website beeinträchtigen, reagieren wir in der Regel innerhalb weniger Stunden. Für reguläre Anfragen bearbeiten wir Tickets innerhalb von 1-2 Werktagen. Wir bieten auch einen Premium-Support mit garantierten Reaktionszeiten an."
+          "question": "Wie läuft die Unterstützung bei bestehenden Webseiten ab?",
+          "answer": "Wir bieten gezielte Hilfe bei technischen, inhaltlichen oder strategischen Fragen rund um Eure bestehende Webseite. Ob Performance-Probleme, Design-Optimierung oder Integration neuer Funktionen: Unsere Experten analysieren die Situation und setzen gemeinsam mit Euch die passenden Massnahmen um – effizient, verständlich und immer mit Blick auf Eure Ziele."
         },
         {
-          "question": "Was kostet der Support?",
-          "answer": "Für einzelne Anfragen berechnen wir nach Aufwand (CHF 180/Stunde). Für regelmässige Unterstützung und mehrere monatliche Anfragen bieten wir flexible Wartungspakete ab CHF 200/Monat an. Gerne erstellen wir euch ein massgeschneidertes Angebot basierend auf eurem Bedarf."
+          "question": "Übernehmt Ihr auch die laufende Pflege und Wartung unserer Webseite?",
+          "answer": "Ja, wir kümmern uns um Updates, Sicherheit, Content-Anpassungen und technische Optimierungen. Mit unserem Support bleibt Eure Webseite immer aktuell, leistungsfähig und sicher – damit Ihr Euch auf Euer Kerngeschäft konzentrieren könnt."
         },
         {
-          "question": "Müsst ihr die Website selbst erstellt haben?",
-          "answer": "Nein, wir helfen auch bei Squarespace-Websites, die ihr selbst oder von anderen erstellt wurden. Egal ob von einer anderen Agentur, einem Freelancer oder selbst gemacht – wir schauen uns eure Situation an und finden eine Lösung für euer Problem."
+          "question": "Beratet Ihr auch zu Squarespace-spezifischen Themen?",
+          "answer": "Als Schweizer Squarespace Gold Partner beraten wir Euch zu allen Fragen rund um Squarespace – von der Auswahl und Einrichtung bis zur Optimierung und Erweiterung. Wir zeigen Euch, wie Ihr das volle Potenzial der Plattform nutzt und Eure Webseite einfach selbst verwalten könnt."
         },
         {
-          "question": "Könnt ihr auch bei Custom Code und Integrationen helfen?",
-          "answer": "Ja, absolut. Wir sind erfahren mit CSS-Anpassungen, JavaScript-Implementierungen und Squarespace-spezifischen Code-Lösungen. Wir setzen auch komplexere Integrationen um – sei es mit Zapier, API-Verbindungen, E-Commerce-Lösungen oder anderen Tools, die ihr braucht."
+          "question": "Können wir auch kurzfristig Hilfe bei akuten Problemen erhalten?",
+          "answer": "Natürlich. Bei dringenden Anliegen oder technischen Problemen stehen wir Euch schnell und unkompliziert zur Seite. Kontaktiert uns einfach – wir finden rasch eine Lösung, damit Eure Webseite zuverlässig läuft."
         },
         {
-          "question": "Bietet ihr auch laufende Wartung an?",
-          "answer": "Ja, wir bieten verschiedene Wartungspakete an – von der Basisüberwachung und monatlichen Updates bis zur Vollbetreuung mit regelmässigen Optimierungen, Sicherheitsupdates und technischem Support. So bleibt eure Website immer aktuell und sicher."
+          "question": "Wie hilft Noevu bei der Optimierung unserer bestehenden Webseite?",
+          "answer": "Wir analysieren Eure aktuelle Webseite, identifizieren Schwachstellen und zeigen konkrete Verbesserungsmöglichkeiten auf – von der Nutzerführung über das Design bis zu SEO und Performance. Ihr profitiert von klaren Empfehlungen und einer praxisnahen Umsetzung, damit Eure Seite noch erfolgreicher wird."
         },
         {
-          "question": "Welche Probleme und Aufgaben könnt ihr lösen?",
-          "answer": "Wir unterstützen euch bei einer Vielzahl von Aufgaben: Design-Änderungen und Optimierungen, technische Fehlerbehandlung, SEO-Verbesserungen, Integrationen mit anderen Tools, Schulung für euer Team und vieles mehr. Schreibt uns einfach, was ihr braucht – wir finden die Lösung!"
+          "question": "Was unterscheidet die Squarespace Beratung von Noevu von anderen Anbietern?",
+          "answer": "Ihr erhaltet keine Standardlösungen, sondern individuelle Beratung, die sich an Euren Zielen und Anforderungen orientiert. Wir kombinieren langjährige Erfahrung mit tiefem Squarespace-Know-how und begleiten Euch von der Strategie bis zur Umsetzung – verständlich, transparent und immer auf Augenhöhe."
+        },
+        {
+          "question": "Können wir bei Euch auch eine Schulung für das CMS bekommen?",
+          "answer": "Ja, wir bieten praxisnahe Schulungen für Squarespace und andere CMS an – individuell auf Euer Team zugeschnitten. Ihr lernt, wie Ihr Inhalte sicher und effizient selbst verwaltet und Eure Webseite optimal nutzt."
+        },
+        {
+          "question": "Unterstützt Noevu auch bei der Migration von anderen Systemen zu Squarespace?",
+          "answer": "Gerne übernehmen wir die komplette Migration, egal ob von WordPress, Typo3 oder einem anderen System. Wir planen den Umzug strategisch, sorgen für einen reibungslosen Ablauf und achten darauf, dass SEO-Rankings und wichtige Inhalte erhalten bleiben."
         }
       ]
     },
     {
-      "type": "cta",
-      "title": "Braucht ihr Hilfe?",
-      "description": "Egal ob kleine Frage oder grösseres Problem – wir sind für euch da. Schreibt uns oder ruft an.",
-      "ctas": [
-        {
-          "label": "Hilfe anfragen",
-          "href": "/kontakt",
-          "variant": "primary"
-        },
-        {
-          "label": "Anrufen: +41 44 505 10 20",
-          "href": "tel:+41445051020",
-          "variant": "secondary",
-          "external": true
-        }
-      ],
-      "backgroundColor": "green"
-    },
-    {
-      "type": "blogGrid",
-      "title": "Squarespace Tipps & Anleitungen",
-      "subtitle": "Hilfe zur Selbsthilfe",
-      "limit": 3,
-      "category": "Squarespace"
+      "type": "textContent",
+      "title": "Eure Frage war nicht dabei?",
+      "content": "<p>Kein Problem. Schreibt uns eine E-Mail oder ruft uns an. Wir freuen uns darauf, Eure Vision zu verstehen und gemeinsam die nächste Stufe für Euer Unternehmen zu zünden.</p>",
+      "alignment": "center",
+      "cta": {
+        "label": "Kostenlose Video-Beratung",
+        "href": "https://noevu.ch/termin",
+        "variant": "primary",
+        "external": true
+      }
     }
   ]
 }

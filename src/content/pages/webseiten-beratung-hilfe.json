@@ -31,9 +31,25 @@
     },
     {
       "type": "textContent",
+      "title": "Webseiten Pflege & Beratung auf höchstem Noevu.",
+      "content": "<p>Ihr denkt vielleicht, man kann <a href=\"/services\">neue Websites erstellen lassen</a> und damit ist es getan. Aber eine Homepage ist kein statisches Medium. Internetseiten brauchen kontinuierliche Pflege, sonst veralten sie. Die Technik entwickelt sich weiter und Ihr müsst immer am Ball bleiben. Mit unserer Beratung und Webseiten Pflege bleibt Eure Seite technisch und inhaltlich aktuell, sicher und leistungsfähig – ohne Euch zu belasten. Wir übernehmen Updates, Wartung und Optimierung, damit Ihr Euch auf Euer Kerngeschäft konzentrieren könnt.</p>",
+      "alignment": "center",
+      "cta": {
+        "label": "Jetzt Webseiten Hilfe anfragen",
+        "href": "/termin",
+        "variant": "primary"
+      }
+    },
+    {
+      "type": "textContent",
       "title": "Mehr als nur eine Webseite: Euer Business-Werkzeug.",
-      "content": "<p>Eine professionelle Webseite ist mehr als ein schönes Design – sie muss für Euer Geschäft arbeiten. Kommt Euch das bekannt vor? Ihr wisst, dass Ihr online präsenter sein müsst, seid aber unsicher über die nächsten Schritte oder die passende Webseiten Pflege? Ohne professionelle Beratung, einer klaren Strategie bleibt die Investition in eine Homepage oft wirkungslos. Danke 25 Jahren Erfahrung helfen wir euch bei eurem Webseiten Projekt – effizient und professionell.</p>",
-      "alignment": "center"
+      "content": "<p>Eine professionelle Webseite ist mehr als ein schönes Design – sie muss für Euer Geschäft arbeiten. Kommt Euch das bekannt vor? Ihr wisst, dass Ihr online präsenter sein müsst, seid aber unsicher über die nächsten Schritte oder die passende Webseiten Pflege? Ohne professionelle Beratung, einer klaren Strategie bleibt die Investition in eine Homepage oft wirkungslos. Danke 25 Jahren Erfahrung **helfen wir euch bei eurem Webseiten Projekt** – effizient und professionell.</p>",
+      "alignment": "center",
+      "cta": {
+        "label": "Was sind eure Ziele?",
+        "href": "/kontakt",
+        "variant": "primary"
+      }
     },
     {
       "type": "waveDivider",
@@ -55,11 +71,16 @@
         },
         {
           "title": "Werkzeuge, die für euch arbeiten.",
-          "description": "Ihr bekommt Orientierung im Dschungel der digitalen Tools. Wir evaluieren für euch die passenden CMS Lösungen, intuitive CMS-Systeme und Automations-Möglichkeiten (z.B. mit Bexio, Hubspot, Notion oder Zapier), die euch Arbeit abnehmen, Prozesse vereinfachen und euer Budget schonen."
+          "description": "Ihr bekommt Orientierung im Dschungel der digitalen Tools. Wir <a href=\"/blog/cms-evaluation-fuer-schweizer-kmus\">evaluieren für euch die passenden CMS Lösungen</a>, intuitive CMS-Systeme und Automations-Möglichkeiten (z. B. mit Bexio, Hubspot, <a href=\"/blog/notion-ideales-intranet-fuer-schweizer-kmus\">Notion</a> oder Zapier), die euch Arbeit abnehmen, Prozesse vereinfachen und euer Budget schonen."
         },
         {
           "title": "Digitale Trends, die euch nützen.",
-          "description": "Ihr müsst nicht jedem Trend hinterherlaufen. Wir helfen euch die relevanten digitalen Entwicklungen und Best Practices heraus zu filtern. So trefft ihr nachhaltige Entscheidungen, die euch auch in Zukunft einen Wettbewerbsvorteil sichern."
+          "description": "Ihr müsst nicht jedem Trend hinterherlaufen. Wir helfen euch die relevanten digitalen Entwicklungen und Best Practices heraus zu filtern. So trefft ihr nachhaltige Entscheidungen, die euch auch in Zukunft einen Wettbewerbsvorteil sichern.",
+          "cta": {
+            "label": "Kostenlose CMS-Evaluation",
+            "href": "/blog/cms-check-schweiz",
+            "variant": "primary"
+          }
         }
       ],
       "columns": "2"
@@ -71,35 +92,17 @@
       "height": "medium"
     },
     {
-      "type": "servicesGrid",
-      "title": "Webseiten Pflege & Beratung auf höchstem Noevu.",
-      "services": [
+      "type": "cta",
+      "title": "Bereit für den ersten Schritt zu mehr Klarheit?",
+      "description": "Wenn Ihr eine Beratung sucht, die über oberflächliche Tipps hinausgeht und Euch einen echten strategischen Vorsprung verschafft, dann lasst uns reden. Euer erstes Gespräch ist der Beginn Eures digitalen Erfolgs – von der Beratung über die Erstellung bis zur laufenden Webseiten Pflege.",
+      "ctas": [
         {
-          "title": "Strategieberatung",
-          "description": "Von der Zielgruppenanalyse bis zur Content-Strategie. Wir entwickeln einen klaren Plan."
-        },
-        {
-          "title": "Website-Audit",
-          "description": "Umfassende Analyse eurer bestehenden Website mit konkreten Verbesserungsvorschlägen."
-        },
-        {
-          "title": "SEO-Beratung",
-          "description": "Bessere Platzierungen bei Google. Wir zeigen euch, was funktioniert."
-        },
-        {
-          "title": "Technischer Support",
-          "description": "Probleme mit der Website? Wir finden und lösen sie schnell."
-        },
-        {
-          "title": "Schulung & Training",
-          "description": "Lernt, eure Website selbst zu pflegen. Individuell oder im Team."
-        },
-        {
-          "title": "Laufende Betreuung",
-          "description": "Regelmässige Wartung, Updates und ein Ansprechpartner für alle Fragen."
+          "label": "Kostenlose Webseiten-Beratung",
+          "href": "/termin",
+          "variant": "primary"
         }
       ],
-      "columns": "3"
+      "backgroundColor": "white"
     },
     {
       "type": "contactForm",
@@ -128,32 +131,65 @@
       "submitLabel": "Anfrage senden"
     },
     {
+      "type": "testimonials",
+      "testimonials": [
+        {
+          "quote": "Noevu kombiniert Innovation und Präzision, und uns zu einer Webseite verholfen, die nicht nur durch ihre Qualität besticht, sondern auch durch einfache Bedienung begeistert. Absolute Empfehlung!",
+          "author": "Reto Gerber",
+          "company": "Rrevival",
+          "companyUrl": "https://rrevival.ch/?utm_source=noevu",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/8e7a85f8-1e6a-48dd-a850-4d5d56914ae3/Reto.png",
+            "alt": "Reto Gerber"
+          }
+        },
+        {
+          "quote": "Dank der professionellen Beratung und Hilfe von Noevu konnten wir unser Webseiten Projekt perfekt umsetzen. Die neue Homepage übertrifft unsere Erwartungen und öffnet unseren Kunden die Türen zu unserer Arbeit.",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH",
+          "companyUrl": "https://vogel-dental.ch/?utm_source=noevu",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/d00ee46d-7165-406d-a7c0-f884dbcc5e23/Vogel-Dentaltechnik-04.jpg",
+            "alt": "Benedikt Vogel"
+          }
+        }
+      ]
+    },
+    {
       "type": "faq",
       "title": "Die häufigsten Fragen zu Webseiten Beratung und Hilfe für Schweizer KMU.",
       "items": [
         {
-          "question": "Was kostet eine Beratung bei Noevu?",
-          "answer": "Ein erstes Gespräch ist kostenlos und unverbindlich. Danach berechnen wir CHF 180/Stunde oder bieten Pauschalangebote für grössere Projekte. So habt ihr volle Kostenkontrolle."
+          "question": "Wie läuft die Unterstützung bei bestehenden Webseiten ab?",
+          "answer": "Wir bieten gezielte Hilfe bei technischen, inhaltlichen oder strategischen Fragen rund um Eure bestehende Webseite. Ob Performance-Probleme, Design-Optimierung oder Integration neuer Funktionen: Unsere Experten analysieren die Situation und setzen gemeinsam mit Euch die passenden Massnahmen um – effizient, verständlich und immer mit Blick auf Eure Ziele."
         },
         {
-          "question": "Wie schnell könnt ihr bei Problemen helfen?",
-          "answer": "Bei dringenden Problemen reagieren wir in der Regel innerhalb weniger Stunden. Für Beratungstermine findet ihr oft schon in der gleichen Woche einen Slot. Wir verstehen, dass Website-Probleme euer Geschäft beeinträchtigen können."
+          "question": "Übernehmt Ihr auch die laufende Pflege und Wartung unserer Webseite?",
+          "answer": "Ja, wir kümmern uns um Updates, Sicherheit, Content-Anpassungen und technische Optimierungen. Mit unserem Support bleibt Eure Webseite immer aktuell, leistungsfähig und sicher – damit Ihr Euch auf Euer Kerngeschäft konzentrieren könnt."
         },
         {
-          "question": "Beratet ihr auch zu anderen Plattformen als Squarespace?",
-          "answer": "Ja, wir beraten plattformunabhängig. Ob WordPress, Shopify oder eine andere Lösung – wir helfen euch, die beste Plattform für eure spezifischen Anforderungen zu finden. Ehrliche Beratung steht bei uns an erster Stelle."
+          "question": "Beratet Ihr auch zu Squarespace-spezifischen Themen?",
+          "answer": "Als Schweizer Squarespace Gold Partner beraten wir Euch zu allen Fragen rund um Squarespace – von der Auswahl und Einrichtung bis zur Optimierung und Erweiterung. Wir zeigen Euch, wie Ihr das volle Potenzial der Plattform nutzt und Eure Webseite einfach selbst verwalten könnt."
         },
         {
-          "question": "Können wir auch remote beraten werden?",
-          "answer": "Absolut! Die meisten Beratungen führen wir per Video-Call durch. So spart ihr Zeit, wir können Bildschirme teilen und direkt an euren Themen arbeiten. Persönliche Meetings in Zürich sind natürlich auch möglich."
+          "question": "Können wir auch kurzfristig Hilfe bei akuten Problemen erhalten?",
+          "answer": "Natürlich. Bei dringenden Anliegen oder technischen Problemen stehen wir Euch schnell und unkompliziert zur Seite. Kontaktiert uns einfach – wir finden rasch eine Lösung, damit Eure Webseite zuverlässig läuft."
         },
         {
-          "question": "Was beinhaltet eine strategische Webseiten-Beratung?",
-          "answer": "Wir analysieren eure aktuelle Situation, verstehen eure Ziele und Zielgruppe, und entwickeln konkrete Empfehlungen für Strategie, Design, Inhalte und Technik. Ihr erhaltet einen klaren Fahrplan für euren digitalen Erfolg."
+          "question": "Wie hilft Noevu bei der Optimierung unserer bestehenden Webseite?",
+          "answer": "Wir analysieren Eure aktuelle Webseite, identifizieren Schwachstellen und zeigen konkrete Verbesserungsmöglichkeiten auf – von der Nutzerführung über das Design bis zu SEO und Performance. Ihr profitiert von klaren Empfehlungen und einer praxisnahen Umsetzung, damit Eure Seite noch erfolgreicher wird."
         },
         {
-          "question": "Bietet ihr auch laufende Betreuung an?",
-          "answer": "Ja, wir bieten verschiedene Support-Pakete an: Von der technischen Wartung über Content-Updates bis zur strategischen Weiterentwicklung. Ihr entscheidet, wie viel Unterstützung ihr braucht."
+          "question": "Was unterscheidet die Squarespace Beratung von Noevu von anderen Anbietern?",
+          "answer": "Ihr erhaltet keine Standardlösungen, sondern individuelle Beratung, die sich an Euren Zielen und Anforderungen orientiert. Wir kombinieren langjährige Erfahrung mit tiefem Squarespace-Know-how und begleiten Euch von der Strategie bis zur Umsetzung – verständlich, transparent und immer auf Augenhöhe."
+        },
+        {
+          "question": "Können wir bei Euch auch eine Schulung für das CMS bekommen?",
+          "answer": "Ja, wir bieten praxisnahe Schulungen für Squarespace und andere CMS an – individuell auf Euer Team zugeschnitten. Ihr lernt, wie Ihr Inhalte sicher und effizient selbst verwaltet und Eure Webseite optimal nutzt."
+        },
+        {
+          "question": "Unterstützt Noevu auch bei der Migration von anderen Systemen zu Squarespace?",
+          "answer": "Gerne übernehmen wir die komplette Migration, egal ob von WordPress, Typo3 oder einem anderen System. Wir planen den Umzug strategisch, sorgen für einen reibungslosen Ablauf und achten darauf, dass SEO-Rankings und wichtige Inhalte erhalten bleiben."
         }
       ]
     },
@@ -162,25 +198,6 @@
       "title": "Insights für den digitalen Vorsprung.",
       "subtitle": "Diese Referenzen erfolgreicher KMU Webprojekte und helfen Euch, und zeigen wie professionelle Webseiten Beratung, Umsetzung und Pflege zu nachhaltigem Erfolg führen.",
       "limit": 3
-    },
-    {
-      "type": "cta",
-      "title": "Bereit für den ersten Schritt zu mehr Klarheit?",
-      "description": "Wenn Ihr eine Beratung sucht, die über oberflächliche Tipps hinausgeht und Euch einen echten strategischen Vorsprung verschafft, dann lasst uns reden. Euer erstes Gespräch ist der Beginn Eures digitalen Erfolgs – von der Beratung über die Erstellung bis zur laufenden Webseiten Pflege.",
-      "ctas": [
-        {
-          "label": "Kostenlose Webseiten-Beratung",
-          "href": "/termin",
-          "variant": "primary"
-        },
-        {
-          "label": "Anrufen: +41 44 505 10 20",
-          "href": "tel:+41445051020",
-          "variant": "secondary",
-          "external": true
-        }
-      ],
-      "backgroundColor": "green"
     }
   ]
 }
