@@ -1,0 +1,230 @@
+---
+import type { IconGridSection, Theme } from '../../schemas/sections';
+
+interface Props {
+  data: IconGridSection;
+  theme?: Theme;
+}
+
+const { data, theme } = Astro.props;
+const { title, subtitle, columns = '3', items } = data;
+
+const gridClass = `icon-grid--cols-${columns}`;
+---
+
+<section class="icon-grid section" data-theme={theme}>
+  <div class="container">
+    {(title || subtitle) && (
+      <div class="icon-grid__header">
+        {title && <h2 class="icon-grid__title">{title}</h2>}
+        {subtitle && <p class="icon-grid__subtitle">{subtitle}</p>}
+      </div>
+    )}
+
+    <div class={`icon-grid__grid ${gridClass}`}>
+      {items.map((item) => (
+        <div class="icon-grid__item">
+          <div class="icon-grid__icon" aria-hidden="true">
+            {item.icon === 'check' ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon-grid__check"
+              >
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+            ) : (
+              <span class="material-symbols-outlined">{item.icon}</span>
+            )}
+          </div>
+          <span class="icon-grid__label">{item.label}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ═══════════════════════════════════════════════════════════════
+     ICON GRID SECTION
+     Simple grid of icons with labels - checkmarks, features
+     ═══════════════════════════════════════════════════════════════ */
+  .icon-grid {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     HEADER
+     ═══════════════════════════════════════════════════════════════ */
+  .icon-grid__header {
+    text-align: center;
+    max-width: 700px;
+    margin-inline: auto;
+    margin-bottom: var(--space-12);
+  }
+
+  .icon-grid__title {
+    font-size: var(--text-3xl);
+    color: var(--theme-heading);
+    margin-bottom: var(--space-4);
+    font-weight: var(--font-semibold);
+    line-height: var(--leading-tight);
+  }
+
+  .icon-grid__subtitle {
+    font-size: var(--text-lg);
+    color: var(--theme-text-muted);
+    line-height: var(--leading-relaxed);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     GRID LAYOUT
+     ═══════════════════════════════════════════════════════════════ */
+  .icon-grid__grid {
+    display: grid;
+    gap: var(--space-6);
+    grid-template-columns: 1fr;
+  }
+
+  /* 2 column layout */
+  @media (min-width: 640px) {
+    .icon-grid--cols-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* 3 column layout */
+  @media (min-width: 640px) {
+    .icon-grid--cols-3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .icon-grid--cols-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* 4 column layout */
+  @media (min-width: 640px) {
+    .icon-grid--cols-4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .icon-grid--cols-4 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .icon-grid--cols-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     GRID ITEMS
+     ═══════════════════════════════════════════════════════════════ */
+  .icon-grid__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+
+  .icon-grid__item:hover {
+    transform: translateY(-2px);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     ICON CONTAINER
+     ═══════════════════════════════════════════════════════════════ */
+  .icon-grid__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--theme-accent, var(--color-accent));
+    color: var(--theme-accent-text, white);
+    border-radius: var(--radius-lg);
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+  }
+
+  .icon-grid__item:hover .icon-grid__icon {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 107, 48, 0.3);
+  }
+
+  .icon-grid__icon .material-symbols-outlined {
+    font-size: 1.75rem;
+  }
+
+  /* Check icon SVG */
+  .icon-grid__check {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     LABEL
+     ═══════════════════════════════════════════════════════════════ */
+  .icon-grid__label {
+    font-size: var(--text-base);
+    color: var(--theme-text);
+    font-weight: var(--font-medium);
+    line-height: var(--leading-snug);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     RESPONSIVE
+     ═══════════════════════════════════════════════════════════════ */
+  @media (max-width: 639px) {
+    .icon-grid__header {
+      margin-bottom: var(--space-8);
+    }
+
+    .icon-grid__title {
+      font-size: var(--text-2xl);
+    }
+
+    .icon-grid__grid {
+      gap: var(--space-4);
+    }
+
+    .icon-grid__item {
+      padding: var(--space-3);
+    }
+
+    .icon-grid__icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    .icon-grid__icon .material-symbols-outlined {
+      font-size: 1.5rem;
+    }
+
+    .icon-grid__check {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    .icon-grid__label {
+      font-size: var(--text-sm);
+    }
+  }
+</style>

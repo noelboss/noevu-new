@@ -1,0 +1,373 @@
+---
+import type { ContentShowcaseSection, Theme } from '../../schemas/sections';
+
+interface Props {
+  data: ContentShowcaseSection;
+  theme?: Theme;
+}
+
+const { data, theme } = Astro.props;
+const {
+  backgroundImage,
+  eyebrow,
+  title,
+  description,
+  ctas = [],
+  overlay = true,
+  textPosition = 'center',
+} = data;
+
+const positionClass = `content-showcase--${textPosition}`;
+---
+
+<section class={`content-showcase section ${positionClass}`} data-theme={theme}>
+  <div class="content-showcase__background">
+    <img
+      src={backgroundImage.src}
+      alt={backgroundImage.alt}
+      loading="lazy"
+      class="content-showcase__background-image"
+    />
+    {overlay && <div class="content-showcase__overlay"></div>}
+  </div>
+
+  <div class="content-showcase__container container">
+    <div class="content-showcase__content">
+      {eyebrow && <p class="content-showcase__eyebrow">{eyebrow}</p>}
+
+      <h2 class="content-showcase__title">{title}</h2>
+
+      {description && (
+        <div class="content-showcase__description" set:html={description} />
+      )}
+
+      {ctas.length > 0 && (
+        <div class="content-showcase__ctas">
+          {ctas.map((cta, index) => (
+            index === 0 ? (
+              <a
+                href={cta.href}
+                class="content-showcase__cta-primary"
+                target={cta.external ? '_blank' : undefined}
+                rel={cta.external ? 'noopener noreferrer' : undefined}
+              >
+                <span class="content-showcase__cta-text">{cta.label}</span>
+                <span class="content-showcase__cta-icon">
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </span>
+              </a>
+            ) : (
+              <a
+                href={cta.href}
+                class="content-showcase__cta-secondary"
+                target={cta.external ? '_blank' : undefined}
+                rel={cta.external ? 'noopener noreferrer' : undefined}
+              >
+                {cta.label}
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            )
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ═══════════════════════════════════════════════════════════════
+     CONTENT SHOWCASE SECTION
+     Showcase content with large background image and overlay text
+     Similar to hero but for mid-page content highlights
+     ═══════════════════════════════════════════════════════════════ */
+  .content-showcase {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: white;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     BACKGROUND IMAGE
+     ═══════════════════════════════════════════════════════════════ */
+  .content-showcase__background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .content-showcase__background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     OVERLAY
+     ═══════════════════════════════════════════════════════════════ */
+  .content-showcase__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    pointer-events: none;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     CONTAINER
+     ═══════════════════════════════════════════════════════════════ */
+  .content-showcase__container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     CONTENT POSITIONING
+     ═══════════════════════════════════════════════════════════════ */
+  .content-showcase__content {
+    max-width: 700px;
+  }
+
+  /* Center alignment */
+  .content-showcase--center {
+    text-align: center;
+  }
+
+  .content-showcase--center .content-showcase__content {
+    margin-inline: auto;
+  }
+
+  .content-showcase--center .content-showcase__ctas {
+    justify-content: center;
+  }
+
+  /* Left alignment */
+  .content-showcase--left {
+    text-align: left;
+  }
+
+  .content-showcase--left .content-showcase__content {
+    margin-right: auto;
+  }
+
+  .content-showcase--left .content-showcase__ctas {
+    justify-content: flex-start;
+  }
+
+  /* Right alignment */
+  .content-showcase--right {
+    text-align: right;
+  }
+
+  .content-showcase--right .content-showcase__content {
+    margin-left: auto;
+  }
+
+  .content-showcase--right .content-showcase__ctas {
+    justify-content: flex-end;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     EYEBROW TEXT
+     ═══════════════════════════════════════════════════════════════ */
+  .content-showcase__eyebrow {
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-accent, #ff6b30);
+    margin-bottom: var(--space-3);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     TITLE - Abril Fatface display font
+     ═══════════════════════════════════════════════════════════════ */
+  .content-showcase__title {
+    font-family: var(--font-display, 'Abril Fatface', serif);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: var(--font-normal);
+    line-height: 1.2;
+    color: white;
+    margin-bottom: var(--space-6);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     DESCRIPTION
+     ═══════════════════════════════════════════════════════════════ */
+  .content-showcase__description {
+    font-size: var(--text-lg);
+    line-height: var(--leading-relaxed);
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--space-8);
+  }
+
+  .content-showcase__description :global(p) {
+    margin-bottom: var(--space-4);
+  }
+
+  .content-showcase__description :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .content-showcase__description :global(a) {
+    color: var(--color-accent, #ff6b30);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .content-showcase__description :global(a:hover) {
+    color: white;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     CTA BUTTONS
+     ═══════════════════════════════════════════════════════════════ */
+  .content-showcase__ctas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  /* Primary CTA - Orange button with icon pill */
+  .content-showcase__cta-primary {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-orange, #ff6b30);
+    color: white;
+    padding: 0.875rem 1.75rem;
+    padding-right: 4rem;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    text-decoration: none;
+    border: 1px solid hsla(255, 255, 255, 0.25);
+    box-shadow:
+      0 0 15px hsla(17, 100%, 59%, 0.3),
+      8px 8px 40px hsla(17, 100%, 59%, 0.2),
+      inset -5px -5px 10px hsla(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  .content-showcase__cta-primary:hover {
+    box-shadow:
+      0 0 15px hsla(17, 100%, 59%, 0.5),
+      8px 8px 40px hsla(17, 100%, 59%, 0.4),
+      inset -5px -5px 10px hsla(17, 100%, 59%, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .content-showcase__cta-text {
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+
+  .content-showcase__cta-icon {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    color: var(--color-orange, #ff6b30);
+    transition: all 0.3s ease;
+  }
+
+  .content-showcase__cta-icon .material-symbols-outlined {
+    font-size: 1.25rem;
+  }
+
+  .content-showcase__cta-primary:hover .content-showcase__cta-icon {
+    width: calc(100% - 6px);
+    border-radius: 3rem;
+  }
+
+  /* Secondary CTA - Text link with arrow */
+  .content-showcase__cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    color: white;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.2s ease;
+  }
+
+  .content-showcase__cta-secondary .material-symbols-outlined {
+    font-size: 1.25rem;
+    transition: transform 0.2s ease;
+  }
+
+  .content-showcase__cta-secondary:hover {
+    color: var(--color-accent, #ff6b30);
+  }
+
+  .content-showcase__cta-secondary:hover .material-symbols-outlined {
+    transform: translateX(4px);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     RESPONSIVE
+     ═══════════════════════════════════════════════════════════════ */
+  @media (max-width: 767px) {
+    .content-showcase {
+      min-height: 50vh;
+      padding-block: var(--space-12);
+    }
+
+    .content-showcase__title {
+      font-size: clamp(1.75rem, 8vw, 2.5rem);
+      margin-bottom: var(--space-4);
+    }
+
+    .content-showcase__description {
+      font-size: var(--text-base);
+      margin-bottom: var(--space-6);
+    }
+
+    .content-showcase__ctas {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+    }
+
+    .content-showcase__cta-primary {
+      width: 100%;
+      justify-content: center;
+    }
+
+    /* Override alignment on mobile for better UX */
+    .content-showcase--right .content-showcase__ctas,
+    .content-showcase--left .content-showcase__ctas {
+      align-items: stretch;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .content-showcase {
+      min-height: 55vh;
+    }
+
+    .content-showcase__title {
+      font-size: clamp(2.25rem, 6vw, 3rem);
+    }
+  }
+</style>

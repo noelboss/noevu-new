@@ -1,0 +1,150 @@
+---
+import type { StatsBannerSection, Theme } from '../../schemas/sections';
+
+interface Props {
+  data: StatsBannerSection;
+  theme?: Theme;
+}
+
+const { data, theme } = Astro.props;
+const { title, backgroundColor = 'green', stats, layout = 'horizontal' } = data;
+
+const bgClass = theme ? '' : `stats-banner--${backgroundColor}`;
+const layoutClass = `stats-banner--${layout}`;
+---
+
+<section class={`stats-banner section ${bgClass} ${layoutClass}`} data-theme={theme}>
+  <div class="container">
+    {title && <h2 class="stats-banner__title">{title}</h2>}
+
+    <div class="stats-banner__grid">
+      {stats.map((stat) => (
+        <div class="stats-banner__item">
+          {stat.icon && (
+            <div class="stats-banner__icon" aria-hidden="true">
+              <span class="material-icons">{stat.icon}</span>
+            </div>
+          )}
+          <div class="stats-banner__value">{stat.value}</div>
+          <div class="stats-banner__label">{stat.label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .stats-banner {
+    text-align: center;
+  }
+
+  /* Theme system styles */
+  .stats-banner[data-theme] {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+  }
+
+  .stats-banner[data-theme] .stats-banner__title {
+    color: var(--theme-heading);
+  }
+
+  .stats-banner[data-theme] .stats-banner__value {
+    color: var(--theme-heading);
+  }
+
+  .stats-banner[data-theme] .stats-banner__label {
+    color: var(--theme-text-muted);
+  }
+
+  /* Legacy backgroundColor styles for backward compatibility */
+  .stats-banner--green {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverted);
+  }
+
+  .stats-banner--orange {
+    background-color: var(--color-accent);
+    color: var(--color-text-inverted);
+  }
+
+  .stats-banner--beige {
+    background-color: var(--color-bg-beige);
+    color: var(--color-text);
+  }
+
+  .stats-banner--white {
+    background-color: var(--color-bg-white);
+    color: var(--color-text);
+  }
+
+  .stats-banner__title {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-8);
+  }
+
+  .stats-banner--green .stats-banner__title,
+  .stats-banner--orange .stats-banner__title {
+    color: var(--color-text-inverted);
+  }
+
+  .stats-banner__grid {
+    display: grid;
+    gap: var(--space-8);
+  }
+
+  /* Horizontal layout */
+  @media (min-width: 768px) {
+    .stats-banner--horizontal .stats-banner__grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-12);
+    }
+  }
+
+  /* Grid layout */
+  @media (min-width: 768px) {
+    .stats-banner--grid .stats-banner__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-8);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .stats-banner--grid .stats-banner__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .stats-banner__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .stats-banner__icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-2);
+    opacity: 0.9;
+  }
+
+  .stats-banner__value {
+    font-size: var(--text-4xl);
+    font-weight: var(--font-bold);
+    line-height: 1;
+  }
+
+  .stats-banner--green .stats-banner__value,
+  .stats-banner--orange .stats-banner__value {
+    color: var(--color-text-inverted);
+  }
+
+  .stats-banner__label {
+    font-size: var(--text-base);
+    opacity: 0.9;
+  }
+
+  .stats-banner--green .stats-banner__label,
+  .stats-banner--orange .stats-banner__label {
+    color: var(--color-text-inverted);
+  }
+</style>

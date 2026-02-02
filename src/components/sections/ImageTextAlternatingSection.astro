@@ -1,0 +1,279 @@
+---
+import type { ImageTextAlternatingSection, Theme } from '../../schemas/sections';
+
+interface Props {
+  data: ImageTextAlternatingSection;
+  theme?: Theme;
+}
+
+const { data, theme } = Astro.props;
+const { title, subtitle, items } = data;
+---
+
+<section class="image-text-alternating section" data-theme={theme}>
+  <div class="container">
+    {(title || subtitle) && (
+      <div class="image-text-alternating__header">
+        {title && <h2 class="image-text-alternating__title">{title}</h2>}
+        {subtitle && <p class="image-text-alternating__subtitle">{subtitle}</p>}
+      </div>
+    )}
+
+    <div class="image-text-alternating__items">
+      {items.map((item, index) => {
+        // Determine image position
+        const position = item.imagePosition === 'auto'
+          ? (index % 2 === 0 ? 'left' : 'right')
+          : item.imagePosition;
+
+        const reverseClass = position === 'right' ? 'image-text-alternating__item--reverse' : '';
+
+        return (
+          <div class={`image-text-alternating__item ${reverseClass}`}>
+            <div class="image-text-alternating__image">
+              <img
+                src={item.image.src}
+                alt={item.image.alt}
+                width={item.image.width}
+                height={item.image.height}
+                loading="lazy"
+              />
+            </div>
+
+            <div class="image-text-alternating__content">
+              {item.eyebrow && (
+                <p class="image-text-alternating__eyebrow">{item.eyebrow}</p>
+              )}
+              <h3 class="image-text-alternating__item-title">{item.title}</h3>
+              <div class="image-text-alternating__description" set:html={item.description} />
+              {item.cta && (
+                <a
+                  href={item.cta.href}
+                  class={`btn btn--${item.cta.variant || 'primary'}`}
+                  target={item.cta.external ? '_blank' : undefined}
+                  rel={item.cta.external ? 'noopener noreferrer' : undefined}
+                >
+                  {item.cta.label}
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              )}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+<style>
+  .image-text-alternating {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+  }
+
+  .image-text-alternating__header {
+    text-align: center;
+    max-width: 700px;
+    margin-inline: auto;
+    margin-bottom: var(--space-16);
+  }
+
+  .image-text-alternating__title {
+    font-size: var(--text-3xl);
+    color: var(--theme-heading);
+    margin-bottom: var(--space-4);
+  }
+
+  .image-text-alternating__subtitle {
+    font-size: var(--text-lg);
+    color: var(--theme-text-muted);
+    line-height: var(--leading-relaxed);
+  }
+
+  .image-text-alternating__items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-20);
+  }
+
+  .image-text-alternating__item {
+    display: grid;
+    gap: var(--space-8);
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .image-text-alternating__item {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-16);
+    }
+
+    .image-text-alternating__item--reverse .image-text-alternating__image {
+      order: 2;
+    }
+
+    .image-text-alternating__item--reverse .image-text-alternating__content {
+      order: 1;
+    }
+  }
+
+  .image-text-alternating__image {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .image-text-alternating__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-xl);
+  }
+
+  .image-text-alternating__content {
+    padding-block: var(--space-4);
+  }
+
+  .image-text-alternating__eyebrow {
+    font-size: var(--text-sm);
+    color: var(--theme-accent);
+    font-weight: var(--font-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-3);
+  }
+
+  .image-text-alternating__item-title {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    color: var(--theme-heading);
+    margin-bottom: var(--space-4);
+    line-height: var(--leading-tight);
+  }
+
+  @media (min-width: 768px) {
+    .image-text-alternating__item-title {
+      font-size: var(--text-3xl);
+    }
+  }
+
+  .image-text-alternating__description {
+    font-size: var(--text-lg);
+    color: var(--theme-text-muted);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-6);
+  }
+
+  .image-text-alternating__description :global(p) {
+    margin-bottom: var(--space-4);
+  }
+
+  .image-text-alternating__description :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .image-text-alternating__description :global(ul) {
+    list-style: none;
+    padding: 0;
+    margin-bottom: var(--space-4);
+  }
+
+  .image-text-alternating__description :global(li) {
+    position: relative;
+    padding-left: var(--space-6);
+    margin-bottom: var(--space-3);
+    line-height: var(--leading-relaxed);
+  }
+
+  .image-text-alternating__description :global(li::before) {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--theme-accent);
+    font-weight: var(--font-bold);
+  }
+
+  .image-text-alternating__description :global(strong) {
+    color: var(--theme-heading);
+    font-weight: var(--font-semibold);
+  }
+
+  .image-text-alternating__description :global(a) {
+    color: var(--theme-accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .image-text-alternating__description :global(a:hover) {
+    color: var(--theme-heading);
+  }
+
+  /* CTA Button styling */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-6);
+    border-radius: var(--radius-full);
+    font-weight: var(--font-medium);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+  }
+
+  .btn--primary {
+    background-color: var(--theme-accent, var(--color-orange));
+    color: white;
+  }
+
+  .btn--primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .btn--secondary {
+    background-color: transparent;
+    border-color: var(--theme-accent, var(--color-orange));
+    color: var(--theme-accent, var(--color-orange));
+  }
+
+  .btn--secondary:hover {
+    background-color: var(--theme-accent, var(--color-orange));
+    color: white;
+  }
+
+  .btn--text {
+    background-color: transparent;
+    color: var(--theme-text);
+    padding-left: 0;
+  }
+
+  .btn--text:hover {
+    color: var(--theme-accent);
+  }
+
+  .btn .material-symbols-outlined {
+    font-size: 1.25rem;
+    transition: transform 0.2s ease;
+  }
+
+  .btn:hover .material-symbols-outlined {
+    transform: translateX(4px);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .image-text-alternating__items {
+      gap: var(--space-12);
+    }
+
+    .image-text-alternating__item-title {
+      font-size: var(--text-xl);
+    }
+
+    .image-text-alternating__description {
+      font-size: var(--text-base);
+    }
+  }
+</style>

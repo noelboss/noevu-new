@@ -1,0 +1,243 @@
+---
+import type { TimelineProcessSection, Theme } from '../../schemas/sections';
+
+interface Props {
+  data: TimelineProcessSection;
+  theme?: Theme;
+}
+
+const { data, theme } = Astro.props;
+const { title, subtitle, steps, layout = 'vertical' } = data;
+
+const layoutClass = `timeline-process--${layout}`;
+---
+
+<section class={`timeline-process section ${layoutClass}`} data-theme={theme}>
+  <div class="container">
+    {(title || subtitle) && (
+      <div class="timeline-process__header">
+        {title && <h2 class="timeline-process__title">{title}</h2>}
+        {subtitle && <p class="timeline-process__subtitle">{subtitle}</p>}
+      </div>
+    )}
+
+    <div class="timeline-process__steps">
+      {steps.map((step, index) => (
+        <div class="timeline-process__step">
+          <div class="timeline-process__step-indicator">
+            <div class="timeline-process__number">
+              {step.number}
+            </div>
+            {index < steps.length - 1 && (
+              <div class="timeline-process__line" aria-hidden="true"></div>
+            )}
+          </div>
+
+          <div class="timeline-process__step-content">
+            {step.eyebrow && (
+              <p class="timeline-process__eyebrow">{step.eyebrow}</p>
+            )}
+            <h3 class="timeline-process__step-title">{step.title}</h3>
+            <div class="timeline-process__description" set:html={step.description} />
+            {step.image && (
+              <div class="timeline-process__image">
+                <img
+                  src={step.image.src}
+                  alt={step.image.alt}
+                  loading="lazy"
+                />
+              </div>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .timeline-process {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+  }
+
+  .timeline-process__header {
+    text-align: center;
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: var(--space-16);
+  }
+
+  .timeline-process__title {
+    font-size: var(--text-3xl);
+    color: var(--theme-heading);
+    margin-bottom: var(--space-4);
+  }
+
+  .timeline-process__subtitle {
+    font-size: var(--text-lg);
+    color: var(--theme-text-muted);
+  }
+
+  /* Vertical layout (default) */
+  .timeline-process--vertical .timeline-process__steps {
+    max-width: 900px;
+    margin-inline: auto;
+  }
+
+  .timeline-process--vertical .timeline-process__step {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-6);
+    position: relative;
+  }
+
+  .timeline-process--vertical .timeline-process__step:not(:last-child) {
+    margin-bottom: var(--space-12);
+  }
+
+  @media (min-width: 768px) {
+    .timeline-process--vertical .timeline-process__step {
+      gap: var(--space-8);
+    }
+  }
+
+  .timeline-process__step-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .timeline-process__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    min-height: 3rem;
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    background-color: var(--theme-accent);
+    color: var(--theme-accent-text);
+    border-radius: var(--radius-full);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: 768px) {
+    .timeline-process__number {
+      min-width: 3.5rem;
+      min-height: 3.5rem;
+      font-size: var(--text-2xl);
+    }
+  }
+
+  .timeline-process__line {
+    width: 2px;
+    flex: 1;
+    background-color: var(--theme-border);
+    margin-top: var(--space-2);
+  }
+
+  .timeline-process__step-content {
+    padding-bottom: var(--space-4);
+  }
+
+  .timeline-process__eyebrow {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--theme-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-2);
+  }
+
+  .timeline-process__step-title {
+    font-size: var(--text-2xl);
+    color: var(--theme-heading);
+    margin-bottom: var(--space-4);
+  }
+
+  .timeline-process__description {
+    font-size: var(--text-lg);
+    color: var(--theme-text-muted);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-6);
+  }
+
+  .timeline-process__description :global(p) {
+    margin-bottom: var(--space-4);
+  }
+
+  .timeline-process__description :global(ul) {
+    list-style: none;
+    padding: 0;
+    margin-bottom: var(--space-4);
+  }
+
+  .timeline-process__description :global(li) {
+    position: relative;
+    padding-left: var(--space-6);
+    margin-bottom: var(--space-2);
+  }
+
+  .timeline-process__description :global(li::before) {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--theme-accent);
+    font-weight: var(--font-bold);
+  }
+
+  .timeline-process__image {
+    margin-top: var(--space-6);
+  }
+
+  .timeline-process__image img {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Horizontal layout */
+  @media (min-width: 1024px) {
+    .timeline-process--horizontal .timeline-process__steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-8);
+    }
+
+    .timeline-process--horizontal .timeline-process__step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .timeline-process--horizontal .timeline-process__step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 1.75rem;
+      right: calc(-1 * var(--space-8) / 2);
+      width: var(--space-8);
+      height: 2px;
+      background-color: var(--theme-border);
+      z-index: 0;
+    }
+
+    .timeline-process--horizontal .timeline-process__step-indicator {
+      margin-bottom: var(--space-4);
+    }
+
+    .timeline-process--horizontal .timeline-process__line {
+      display: none;
+    }
+
+    .timeline-process--horizontal .timeline-process__step-content {
+      padding-bottom: 0;
+    }
+  }
+</style>

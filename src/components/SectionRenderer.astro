@@ -27,6 +27,16 @@ import WaveDivider from './sections/WaveDivider.astro';
 import BlogGrid from './sections/BlogGrid.astro';
 import ContactForm from './sections/ContactForm.astro';
 import Newsletter from './sections/Newsletter.astro';
+import TeamGridSection from './sections/TeamGridSection.astro';
+import BentoGridSection from './sections/BentoGridSection.astro';
+import ImageTextAlternatingSection from './sections/ImageTextAlternatingSection.astro';
+import SocialResponsibilitySection from './sections/SocialResponsibilitySection.astro';
+import StatsBannerSection from './sections/StatsBannerSection.astro';
+import RatingDisplaySection from './sections/RatingDisplaySection.astro';
+import CertificationBadgeSection from './sections/CertificationBadgeSection.astro';
+import TimelineProcessSection from './sections/TimelineProcessSection.astro';
+import IconGridSection from './sections/IconGridSection.astro';
+import ContentShowcaseSection from './sections/ContentShowcaseSection.astro';
 
 interface Props {
   sections: SectionEntry[];
@@ -63,6 +73,16 @@ const sectionComponents: Record<string, any> = {
   blogGrid: BlogGrid,
   contactForm: ContactForm,
   newsletter: Newsletter,
+  teamGrid: TeamGridSection,
+  bentoGrid: BentoGridSection,
+  imageTextAlternating: ImageTextAlternatingSection,
+  socialResponsibility: SocialResponsibilitySection,
+  statsBanner: StatsBannerSection,
+  ratingDisplay: RatingDisplaySection,
+  certificationBadge: CertificationBadgeSection,
+  timelineProcess: TimelineProcessSection,
+  iconGrid: IconGridSection,
+  contentShowcase: ContentShowcaseSection,
 };
 ---
 

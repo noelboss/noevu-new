@@ -1,15 +1,20 @@
 import { z } from 'zod';
 
+// Recursive type definition for nested navigation
+export type NavItem = {
+  label: string;
+  href?: string;
+  external?: boolean;
+  children?: NavItem[];
+};
+
 // Navigation item (can be nested)
-export const NavItemSchema = z.object({
+export const NavItemSchema: z.ZodType<NavItem> = z.object({
   label: z.string(),
   href: z.string().optional(),
   external: z.boolean().default(false),
   children: z.array(z.lazy(() => NavItemSchema)).optional(),
 });
-
-// Recursive type definition for nested navigation
-export type NavItem = z.infer<typeof NavItemSchema>;
 
 // Main navigation schema
 export const NavigationSchema = z.object({
