@@ -8,8 +8,8 @@
   "sections": [
     {
       "type": "hero",
-      "headline": "Vom strategischen Konzept zur digitalen Exzellenz",
-      "subheadline": "**Erfolgreiche** Website-Projekte für Schweizer Unternehmen",
+      "headline": "**Erfolgreiche** Website-Projekte für Schweizer Unternehmen",
+      "subheadline": "Vom strategischen Konzept zur digitalen Exzellenz",
       "description": "<p>Wir schaffen digitale Erlebnisse, die Eure Einzigartigkeit sichtbar machen und Eure Ziele erreichen. Als Webdesign Agentur in Zürich gestalten wir die Grundlage für Eure neue Website. Überzeugt Euch selbst!</p>",
       "alignment": "center",
       "rating": {
@@ -23,7 +23,9 @@
       "title": "Entdeckt das **umfassende Portfolio** unserer Schweizer Webagentur:",
       "description": "",
       "filter": {
-        "categories": ["Webseite"]
+        "categories": [
+          "Webseite"
+        ]
       },
       "limit": 12,
       "showCategories": true,

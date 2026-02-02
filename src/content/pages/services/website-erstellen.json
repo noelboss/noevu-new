@@ -8,104 +8,275 @@
   "sections": [
     {
       "type": "hero",
-      "headline": "Website erstellen lassen",
-      "subheadline": "Professionelles Webdesign",
-      "description": "<p>Eine professionelle Website ist das Fundament eurer digitalen Präsenz. Wir erstellen moderne, schnelle und SEO-optimierte Websites, die Besucher zu Kunden machen.</p>",
+      "headline": "Websites erstellen lassen in der Schweiz – Eure neue KMU Homepage",
+      "subheadline": "Neue Homepage erstellen lassen für Schweizer KMU: Schnell online, messbar mehr Anfragen",
+      "description": "<p>Ihr möchten eine Website erstellen lassen – in der Schweiz, schnell und professionell? Unser Lösung: Homepages für Schweizer KMU, mit modernem Design, SEO und einfachem CMS. Als Schweizer Webdesign Agentur in Zürich übernehmen wir die Internetseiten-Erstellung vom Konzept bis zum Go‑Live. Mit Fixpreis, effizient, messbare Resultate.</p>",
       "alignment": "left",
       "ctas": [
         {
-          "label": "Projekt besprechen",
-          "href": "/kontakt"
+          "label": "Termin für neue Webseite",
+          "href": "/termin"
         },
         {
-          "label": "Projekte ansehen",
-          "href": "/projekte",
+          "label": "Vorteile einer neuen Webseite",
+          "href": "/services#bento-grid-1",
           "variant": "secondary"
         }
       ],
       "rating": {
-        "score": 5,
+        "score": 4.9,
         "count": 12,
-        "label": "Google-Bewertungen"
+        "label": "Sterne Bewertungen auf Google"
       }
     },
     {
-      "type": "valueProposition",
+      "type": "splitContent",
+      "title": "Erstellen einer Internetseite: Leistungen & Preise",
       "items": [
         {
-          "title": "Massgeschneidert",
-          "description": "Keine Templates von der Stange. Jede Website wird individuell für eure Marke gestaltet."
+          "description": "**Website erstellen lassen für KMU:** Individuelles Design, SEO, einfache Bedienung, Fixpreis ab CHF 4'500."
         },
         {
-          "title": "Schnell & SEO-optimiert",
-          "description": "Blitzschnelle Ladezeiten und beste Voraussetzungen für Google-Rankings."
+          "description": "**Internetseite erstellen mit einfachem CMS:** Inhalte selbst pflegen, keine Vorkenntnisse nötig, schnelle Umsetzung."
         },
         {
-          "title": "Einfach zu pflegen",
-          "description": "Ihr könnt Inhalte selbst aktualisieren. Wir schulen euch und stehen für Fragen bereit."
+          "description": "**Webseiten Designer in Zürich:** Persönliche Beratung, 25 Jahre Erfahrung, zertifizierter [Squarespace Gold Partner](/schweizer-squarespace-circle-gold-partner-2025)."
+        },
+        {
+          "description": "**Websites erstellen lassen in Zürich, mit Beratung vor Ort:** Strategie, Prototyp, Entwicklung, Go-Live & Support."
+        },
+        {
+          "description": "**Preise & Angebote:** Transparente Fixpreise, digitale Offerte, keine versteckten Kosten."
         }
       ]
     },
     {
-      "type": "servicesGrid",
-      "title": "Unsere Leistungen",
-      "services": [
+      "type": "featuresList",
+      "title": "Unsere Lösung für Eure KMU Webseite",
+      "description": "Eine moderne **Firmenwebsite**, die auf Resultate ausgelegt ist und die ihr einfach selber verwalten könnt.",
+      "features": [
         {
-          "title": "Unternehmenswebsite",
-          "description": "Professionelle Präsenz für euer Unternehmen mit Leistungsübersicht, Team und Kontakt.",
-          "icon": "building"
+          "icon": "web_traffic",
+          "label": "Keine Standard-Themes",
+          "title": "Individuelles Webdesign.",
+          "description": "Statt starrer Themes bekommt ihr eine massgeschneiderte Lösung, die überzeugt, mit einem individuellem Design, das eure Marke perfekt inszeniert und eure Einzigartigkeit unterstreicht."
         },
         {
-          "title": "Landing Pages",
-          "description": "Conversion-optimierte Seiten für Kampagnen, Produktlaunches oder Lead-Generierung.",
-          "icon": "target"
+          "icon": "ads_click",
+          "label": "Design erleben",
+          "title": "Interaktive Prototypen.",
+          "description": "Mit klickbaren Prototypen erlebt ihr euer neues Design, bevor die Entwicklung startet. Das gibt Euch volle Transparenz und die Sicherheit, dass das Ergebnis genau eurer Vision entspricht."
         },
         {
-          "title": "E-Commerce",
-          "description": "Online-Shops für physische und digitale Produkte mit sicherer Zahlungsabwicklung.",
-          "icon": "shopping-cart"
+          "icon": "mobile_layout",
+          "label": "Einfache Bedienung",
+          "title": "Internetseite erstellen mit einfachem CMS.",
+          "description": "Dank dem intuitivsten CMS am Markt behaltet ihr die volle Kontrolle über Eure Inhalte. Eure neue Webseite könnt ihr einfach per Drag & Drop pflehem – auch ohne unsere Hilfe und technische Kenntnisse."
         },
         {
-          "title": "Blog & Content",
-          "description": "Content-Plattformen für regelmässige Veröffentlichungen und SEO-Traffic.",
-          "icon": "edit"
+          "icon": "phone",
+          "label": "Newsletter & Marketing",
+          "title": "Marketing & Kommunikation.",
+          "description": "Vernetzt verschiedene Marketing-Kanäle und Kundenkommunikation nahtlos und effizient. Neue Inhalte werden mit einem Klick zu E-Mail-Kampagnen, was Euch wertvolle Zeit im Marketing und in der Administration spart."
+        },
+        {
+          "icon": "add_shopping_cart",
+          "label": "Integriertes E-Commerce",
+          "title": "Online-Shop leicht gemacht.",
+          "description": "Ein Online-Shop muss nicht komplitiert sein. Dank der integrierte E-Commerce-Lösung von Squarespace könnt ihr einfach und damit starten, eure Produke und Dienstleistungen online zu verkaufen. Sicher, leicht zu bedienen und mit schönem Design."
+        },
+        {
+          "icon": "3p",
+          "label": "Mehrsprachigkeit mit AI",
+          "title": "Hello, Bonjours, Ciao!",
+          "description": "Ihr erreicht mühelos ein internationales Publikum. Dank smarter KI-Integration wird eure Webseite mehrsprachig, ohne dass für Euch manueller Übersetzungsaufwand entsteht."
+        },
+        {
+          "icon": "data_loss_prevention",
+          "label": "Suchmaschinenoptimierung mit AI",
+          "title": "Auf Google sichtbar.",
+          "description": "Mit Hilfe von integrierten AI-Tolls werdet ihr bei Google besser gefunden und dank integrierter Analytics erfahrt ihr, was funktioniert. Diese SEO Funktionen bringen Euch relevante Besucher und verständliche Analysen für nachhaltiges Wachstum."
+        },
+        {
+          "icon": "verified",
+          "label": "Professionelle Webentwickler",
+          "title": "[Erfahrener Webseiten Designer in Zürich](/)",
+          "description": "Eure Sicherheit für ein erstklassiges Webentwicklung und eine strategische Umsetzung, die nachweislich funktioniert: Ihr arbeitet mit [Schweizer Homepage Profi und Squarespace old-Partner](/schweizer-squarespace-circle-gold-partner-2025) mit 25 Jahren Erfahrung in der Branche."
+        }
+      ]
+    },
+    {
+      "type": "bentoGrid",
+      "title": "Umfassendes Angebot für neue Webseiten",
+      "description": "Eine professionelle neue Webseite für Unternehmen, die mehr wollen\n\nWir bieten einen Komplettservice von A-Z. Das Ergebnis ist nicht nur ein schönes Design, sondern ein leistungsstarkes Marketinginstrument, das euer Wachstum fördert.",
+      "items": [
+        {
+          "icon": "right_click",
+          "title": "Einfache Bedienung",
+          "description": "Mit einer neuen Webseite könnt Ihr Texte und Bilder jederzeit selbst anpassen – schnell, unkompliziert und ohne Wartezeiten."
+        },
+        {
+          "icon": "diamond_shine",
+          "title": "Modernes Design",
+          "description": "Eure Homepage überzeugt mit einem zeitgemässen Look, funktioniert perfekt auf allen Geräten und sorgt für einen professionellen ersten Eindruck."
+        },
+        {
+          "icon": "finance_mode",
+          "title": "Messbare Resultate",
+          "description": "Dank einer optimierten Webseite generiert Ihr regelmässig neue Anfragen – das Telefon klingelt öfter, das E-Mail-Postfach füllt sich mit echten Interessenten."
+        }
+      ]
+    },
+    {
+      "type": "comparisonTable",
+      "title": "Warum Schweizer Firmen mit uns eine neue **Webseite** erstellen lassen?",
+      "leftColumn": {
+        "header": "herkömmliche Agentur",
+        "items": [
+          "Templates oder Umsetzung individueller Designs teuer",
+          "Komplizierte CMS wie WordPress oder Typo3",
+          "Regelmässige Updates mittels externer Plugins",
+          "Monate",
+          "Kompliziertes Dienstleistungsangebot",
+          "Gleicher Ansatz wie vor 10 Jahren"
+        ],
+        "highlighted": false
+      },
+      "rightColumn": {
+        "header": "Noevu",
+        "items": [
+          "Massgeschneiderte Designs kosteneffizient umgesetzt",
+          "Einfache Bedienung Eurer Website z. B. mit Squarespace",
+          "Keine Wartung erforderlich",
+          "Ein paar Wochen",
+          "Ein klarer Fokus: Eure neue Website",
+          "Einsatz von AI und modernster Technologie für mehr Effizienz"
+        ],
+        "highlighted": true
+      },
+      "rowLabels": [
+        "Individuelle Designs",
+        "CMS",
+        "Websitewartung",
+        "Projektdauer",
+        "Fokus",
+        "Effizienz"
+      ],
+      "ctas": [
+        {
+          "label": "Jetzt Web-Projekt anfragen",
+          "href": "/kontakt"
+        },
+        {
+          "label": "CMS-Evaluation starten",
+          "href": "/blog/cms-check-schweiz",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "process",
+      "title": "In 4 Schritten zu eurer neuen Website",
+      "description": "Unser Prozess ist auf maximale Effizienz und Transparenz für euer KMU ausgelegt.",
+      "cta": {
+        "label": "Was sind eure Ziele?",
+        "href": "/services#kontakt"
+      },
+      "steps": [
+        {
+          "label": "Vorbereitung & Analyse",
+          "title": "Zuhören. Verstehen. Strukturieren.",
+          "description": "Eine neue KMU Websites entwickeln zu lassen beginnt damit, dass wir zuhören und ein tiefes Verständnis für Eure Welt und die Eurer Kunden entwickeln. Das Resultat ist eine klare Struktur und ein zielgerichtetes Konzept. **Ihr erhaltet die Gewissheit,** dass eure neue Website auf einem soliden, strategischen Fundament steht."
+        },
+        {
+          "label": "Design Prototypen",
+          "title": "Aus Erkenntnissen wird erlebbares Design.",
+          "description": "Aus der Strategie entstehen lebendige, klickbare Prototypen. **Ihr könnt so spüren,** was zu Euch passt, und sehen, was eure Kunden begeistern wird, bevor Entwicklungsaufwand entsteht. Ihr entscheidet, welche Richtung perfektioniert wird."
+        },
+        {
+          "label": "Entwicklung",
+          "title": "Effizienz trifft Exzellenz.",
+          "description": "In dieser Phase wird der Wunsch, eine neue Webseite erstellen zu lassen Realität. **Ihr profitiert von** über 25 Jahren Erfahrung, kombiniert mit der Effizienz smarter Tools. Das Ergebnis ist eine **professionelle Homepage mit** responsivem Webdesign und erstklassiger Funktion. Und einer Bedienung, die eure Kunden begeistert – und Euch den Alltag erleichtert."
+        },
+        {
+          "label": "Betrieb & Support",
+          "title": "Go-Live ist nur der Anfang.",
+          "description": "Der Livegang ist nur der Anfang eurer Reise. **Ihr bleibt nicht allein** – eure Internetseite wird weiter betreut. Dank einem einfachen All-in-One-Paket aus Hosting, Wartung und Support seid ihr jederzeit sicher abgedeckt. Unkompliziert, verlässlich und schnell erreichbar."
+        }
+      ]
+    },
+    {
+      "type": "textContent",
+      "title": "Bereit, Eure neue Homepage entwickeln zu lassen?",
+      "description": "Vergesst den traditionellen Weg, der oft mit komplexen Systemen wie WordPress oder Drupal verbunden ist. Diese sind komplex und erfordern häufig teure, laufende Wartungsverträge, nur um sie sicher und aktuell zu halten. Im Gegensatz dazu erhaltet Ihr bei uns inklusive Website-Service, der die Homepage nicht nur am Leben hält, sondern sie immer leistungsfähiger macht.",
+      "cta": {
+        "label": "Anruf vereinbaren",
+        "href": "/termin"
+      }
+    },
+    {
+      "type": "testimonials",
+      "title": "Unverbindliche Anfrage um Eure neue Homepage erstellen zu lassen:",
+      "testimonials": [
+        {
+          "id": "reto-gerber"
+        },
+        {
+          "id": "benedikt-vogel"
         }
       ]
     },
     {
       "type": "faq",
-      "title": "Häufige Fragen zum Website erstellen",
+      "title": "Die häufigsten Fragen zur Entwicklung einer neuen KMU Homepage:",
       "items": [
         {
-          "question": "Was kostet es, eine Website erstellen zu lassen?",
-          "answer": "Effiziente Starter-Lösungen starten bei CHF 4'500. Individuelles, strategisches Webdesign beginnt bei CHF 10'000. Für jedes Projekt erhaltet Ihr ein klares Fixpreis-Angebot mit voller Kostenkontrolle und Planungssicherheit."
+          "question": "Wie können KMU in der Schweiz professionell Websites erstellen lassen – und was kostet das?",
+          "answer": "Ihr bekommt bei uns keine KMU Webseite von der Stange, sondern eine fundierte Investition in Eure digitale Zukunft. Transparenz ist dabei die Basis unserer Partnerschaft.\n\n**Effiziente Starter-Lösungen:** Für Startups und klare Projekte, bei denen es auf eine schnelle und professionelle Umsetzung ankommt, starten unsere Webdesign-Pakete bei CHF 4'500.\n\n**Individuelles, strategisches Webdesign:** Für umfassende Projekte, die eine tiefgehende Strategie, ein einzigartiges Design und individuelle Funktionen erfordern, beginnen die Investitionen bei CHF 10'000.\n\nWenn Ihr mit uns eine **neuen Squarespace Webseite erstellen lasst**, erhaltet Ihr von uns ein klares Fixpreis-Angebot. So habt Ihr von Anfang an volle Kostenkontrolle und Planungssicherheit."
         },
         {
-          "question": "Wie lange dauert es, eine Website erstellen zu lassen?",
-          "answer": "Die meisten Projekte realisieren wir in 8 bis 10 Wochen vom strategischen Kick-off bis zum Go-Live. Wenn es schnell gehen muss, auch in 7 Tagen. Der Zeitrahmen hängt von Umfang und eurer Entscheidungsfreudigkeit ab."
+          "question": "Wie lange dauert die Internetseiten-Erstellung für mein KMU?",
+          "answer": "Unser Prozess ist auf Effizienz und höchste Qualität ausgelegt. Die meisten Webseiten-Projekte realisieren wir innerhalb von **8 bis 10 Wochen** vom strategischen Kick-off bis zum Go-Live. Aber wenn es schnell gehen muss auch mal [in 7 Tagen](/blog/squarespace-webseite-fuer-ferienwohnung).\n\nFür Euch bedeutet das: Wir investieren unsere Energie nicht in endlose technische Setups, sondern dank dem smarten Einsatz von Squarespace direkt in das, was zählt: Eure Strategie, Eure Botschaft und Euer Design. Der Schlüssel zu einem schnellen Fortschritt liegt in Eurer Entscheidungsfreudigkeit und unserem bewährten, klaren Prozess."
         },
         {
-          "question": "Kann ich meine Website später selbst bearbeiten?",
-          "answer": "Ja! Wir setzen auf benutzerfreundliche CMS wie Squarespace. Nach dem Launch könnt Ihr Texte, Bilder und Inhalte intuitiv selbst verwalten – ganz ohne Code. Wir schulen euch gründlich."
+          "question": "Könnt ihr uns auch bei den Texten helfen?",
+          "answer": "Absolut. Eine klare Botschaft ist das Herzstück jeder erfolgreicher Firmen Webseite der Schweiz. Wenn Euch die Worte fehlen, springen wir ein.\n\nIhr liefert uns Euer Expertenwissen in Form von Stichworten und Gesprächen. Wir verwandeln diese Essenz in **SEO-optimierten Content**, der Eure Zielgruppe nicht nur informiert, sondern auch überzeugt. Das ist ein zentraler Teil unserer **Webseiten Beratung**."
         },
         {
-          "question": "Was braucht ihr von mir für den Start?",
-          "answer": "Wir starten mit einem strategischen Erstgespräch zu eurer Vision und euren Zielen. Texte und Bilder können wir gemeinsam entwickeln – ihr müsst nicht alles fertig haben."
+          "question": "Uns fehlen professionelle Bilder. Was nun?",
+          "answer": "Die visuelle Gestaltung ist entscheidend für den ersten Eindruck und die emotionale Wirkung Eurer KMU Homepage. Auch hier lassen wir Euch nicht allein.\n\nWir finden gemeinsam die perfekte Lösung für Euch:\n\n**KI-gestützte Bildwelten:** Wir schaffen einzigartige und konsistente Bilderwelten, die Eure Einzigartigkeit visuell unterstreichen.\n\n**Professionelle Fotografie:** Wir verbinden Euch mit erfahrenen Fotografen aus unserem Netzwerk.\n\n**Kuratierte Stockbilder:** Wir recherchieren und lizenzieren hochwertige Bilder, die zu Eurer Marke passen."
         },
         {
-          "question": "Wird meine Website für Google optimiert?",
-          "answer": "Ja. SEO ist integraler Bestandteil unserer Arbeit. Wir legen das technische Fundament und optimieren alle On-Page-Faktoren für bessere Sichtbarkeit bei Google."
+          "question": "Wie erhalte ich ein Angebot für \"Website erstellen lassen Kosten Schweiz\"?",
+          "answer": "Der Start Eurer neuen Homepage ist bei uns ein klar definierter und partnerschaftlicher Prozess. Wir überlassen nichts dem Zufall, damit wir Eure Ziele nicht nur erreichen, sondern übertreffen.\n\nSo legen wir gemeinsam die Grundlage für Euren Erfolg:\n\n[**Das strategische Erstgespräch**](/termin)**:** Alles beginnt damit, dass wir Euch zuhören. In einem ersten Gespräch wollen wir Eure Vision, Eure unternehmerischen Ziele und die Bedürfnisse Eurer Kunden verstehen. Das ist die Basis für alles Weitere.\n\n**Die massgeschneiderte digitale Offerte:** Statt eines starren PDFs erhaltet Ihr von uns eine interaktive, digitale Offerte. Hier könnt Ihr verschiedene Optionen und Module dynamisch auswählen und seht transparent, wie sich Eure Entscheidungen auf die Gesamtinvestition auswirken. Diese Offerte besprechen wir gemeinsam, um das perfekte Paket für Euch zu schnüren.\n\n**Kick-off & Vorbereitungs-Workshop:** Nach Eurer Zusage starten wir offiziell mit einem Kick-off-Gespräch. Direkt im Anschluss folgt der wichtigste Teil: der gemeinsame Vorbereitungs-Workshop. Hier tauchen wir tief in die Details ein, definieren die User Journey, schärfen die Kernbotschaften und legen das strategische Fundament für das gesamte Projekt.\n\nFür Euch bedeutet das: Ein transparenter, nachvollziehbarer Prozess, bei dem Ihr von Anfang an aktiv mitgestaltet und die Gewissheit habt, dass Euer Projekt auf einem soliden, strategischen Fundament steht."
         },
         {
-          "question": "Was passiert nach dem Launch?",
-          "answer": "Wir bieten verschiedene Support-Pakete an: Von der technischen Wartung bis zur laufenden Weiterentwicklung. Ihr seid nach dem Go-Live nicht allein."
+          "question": "Welche Art von Websiten entwickelt ihr?",
+          "answer": "Wir entwickeln nicht einfach nur schöne KMU Webseiten – wir schaffen die digitale Grundlage für Euren Erfolg. Als [**Schweizer Webdesign Agentur in Zürich**](/) konzipieren und realisieren wir digitale Erlebnisse, die Eure Ziele erreichen.\n\nDazu gehören:\n\n**Umfassende Unternehmens-Webseiten:** Die Eure Marke stärken und Eure Expertise auf den Punkt bringen.\n\n**Strategische Landingpages:** Die Besucher gezielt zu einer Handlung führen und Eure Kampagnen unterstützen.\n\n**Mehrsprachige Portale:** Um Eure Zielgruppen über die Sprachgrenzen hinaus zu erreichen.\n\n**Moderne Portfolio-Seiten:** Die Eure Arbeit eindrucksvoll präsentieren.\n\nFür euch **entwickeln wir auch neue Webseiten** auf anderen Systemen, wie zum Beispiel **WordPress** oder **Shopify**, [wenn sie besser zu eure Anforderungen passen](/blog/cms-evaluation-fuer-schweizer-kmus).\n\nWir sind Euer strategischer Partner. Deshalb sagen wir Euch auch ehrlich, wenn eine Idee nicht zielführend ist, und schlagen stattdessen einen besseren Weg vor."
+        },
+        {
+          "question": "Warum setzt ihr auf Squarespace?",
+          "answer": "Wir setzen auf Technologie, die Euch Freiraum schafft. Als [**Schweizer Squarespace Gold Partner**](/schweizer-squarespace-circle-gold-partner-2025) nutzen wir die Plattform aus strategischen Gründen, die direkt Euch zugutekommen:\n\n**Fokus auf Design & Strategie:** Squarespace gibt uns als Webdesigner die Freiheit, Eure Einzigartigkeit in ein beeindruckendes Webdesign zu giessen, ohne uns in technischen Details zu verlieren.\n\n**Einfache Verwaltung für Euch:** Nach dem Launch könnt Ihr Inhalte wie Texte, Bilder oder Blogartikel einfach und intuitiv selbst verwalten – ganz ohne Code.\n\n**Sicherheit und Wartungsfreiheit:** Keine ständigen Plugin-Updates, keine geschlossenen Türen wegen Wartungsarbeiten. Die Plattform ist sicher, stabil und immer aktuell. So könnt Ihr Euch voll auf Euer Kerngeschäft konzentrieren.\n\n**Starke SEO-Grundlage:** Squarespace bietet von Haus aus eine hervorragende technische Basis für die Suchmaschinenoptimierung. Den Rest erledigen wir mit strategisch aufbereitetem Inhalt."
+        },
+        {
+          "question": "Können wir unsere alte Firmen Webseite erneuern?",
+          "answer": "Ja, das ist eine unserer Kernkompetenzen. Viele unserer Kunden kommen zu uns, um ihre **veraltete oder schwer zu bedienende Webseite erneuern wollen** (z. B. von WordPress, aber auch Squarespace 7.0) Wir helfen diese auf die moderne und pflegeleichte Squarespace-Plattform zu heben.\n\nAls erfahrene [**Webseiten Experten in Zürich**](/) analysieren wir Eure alte Webseite, planen den Umzug strategisch und sorgen für einen nahtlosen Übergang – damit Eure SEO-Rankings erhalten bleiben und Eure digitale Präsenz gestärkt wird."
         }
       ]
     },
     {
+      "type": "textContent",
+      "title": "Eure Frage war nicht dabei?",
+      "description": "Kein Problem. Schreibt uns eine E-Mail oder ruft uns an. Wir freuen uns darauf, Eure Vision zu verstehen und gemeinsam die nächste Stufe für Euere KMU Webseite zu zünden.",
+      "cta": {
+        "label": "Kostenlose Video-Termin",
+        "href": "/termin"
+      }
+    },
+    {
       "type": "cta",
-      "title": "Startet euer Website-Projekt",
-      "description": "Ob Neuaufbau oder Relaunch - wir freuen uns auf euer Projekt.",
+      "title": "Neue Website erstellen lassen?",
+      "description": "Wir freuen uns auf euer Projekt.",
       "ctas": [
         {
           "label": "Kostenloses Gespräch buchen",
