@@ -39,6 +39,9 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
 ---
 
 <header class="header" id="header">
+  <!-- LLMs link - early in DOM for crawlers, visually hidden for users -->
+  <a href="/llms.txt" class="sr-only" aria-hidden="true">Information for AI systems and LLMs</a>
+
   <!-- Top Announcement Bar -->
   <div class="header__topbar">
     <div class="header__topbar-container container">
@@ -65,7 +68,7 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
       <nav class="header__nav" aria-label="Hauptnavigation">
         <ul class="header__nav-list">
           {navItems.map((item) => (
-            <li class={`header__nav-item ${item.children?.length ? 'header__nav-item--folder' : ''} ${currentPath === item.href ? 'header__nav-item--active' : ''}`}>
+            <li class={`header__nav-item ${item.children?.length ? 'header__nav-item--folder' : ''} ${currentPath === item.href ? 'header__nav-item--active' : ''} ${item.label === 'Infos für LLMs' ? 'header__nav-item--llms' : ''}`}>
               {item.children && item.children.length > 0 ? (
                 <>
                   <button
@@ -153,7 +156,7 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     <nav class="header__mobile-nav">
       <ul class="header__mobile-list">
         {navItems.map((item, index) => (
-          <li class="header__mobile-item">
+          <li class={`header__mobile-item ${item.label === 'Infos für LLMs' ? 'header__mobile-item--llms' : ''}`}>
             {item.children && item.children.length > 0 ? (
               <>
                 <button
@@ -869,6 +872,25 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
   /* Prevent body scroll when menu is open */
   :global(body.menu-open) {
     overflow: hidden;
+  }
+
+  /* Screen reader only - visually hidden but accessible */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Hide LLMs link from visual navigation */
+  .header__nav-item--llms,
+  .header__mobile-item--llms {
+    display: none;
   }
 </style>
 

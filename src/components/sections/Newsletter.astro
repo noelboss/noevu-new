@@ -6,6 +6,7 @@
  * Uses simple form that can be connected to email service.
  */
 import type { NewsletterSection, Theme } from '../../schemas/sections';
+import { parseInlineMarkdown } from '../../utils/markdown';
 
 interface Props {
   data: NewsletterSection;
@@ -29,8 +30,8 @@ const bgClass = theme ? '' : `newsletter--${backgroundColor}`;
 <section class={`newsletter section ${bgClass}`} data-theme={theme}>
   <div class="newsletter__container container">
     <div class="newsletter__content">
-      <h2 class="newsletter__title">{title}</h2>
-      {description && <p class="newsletter__description">{description}</p>}
+      <h2 class="newsletter__title" set:html={parseInlineMarkdown(title)} />
+      {description && <p class="newsletter__description" set:html={parseInlineMarkdown(description)} />}
 
       <form class="newsletter__form" action="/api/newsletter" method="POST" data-newsletter-form>
         <div class="newsletter__input-group">
