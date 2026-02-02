@@ -9,53 +9,103 @@
     {
       "type": "hero",
       "headline": "Professionelle Schweizer Squarespace Webdesign Agentur",
-      "subheadline": "Die besten digitale Lösung für Eure neue Homepage: Dank Schweizer Squarespace Webdesigner & Experten",
+      "subheadline": "Die **besten** digitale Lösung für Eure **neue** Homepage: Dank Schweizer Squarespace Webdesigner & Experten",
       "description": "Squarespace bietet die Ideale Grundlage für Eure neue KMU Webseite. Denn Ihr braucht nicht nur eine schöne Webseite, sondern praktische digitale Lösungen, die Euer KMU voranbringen. Als eine der besten Schweizer Squarespace Webagenturen unterstützen wir Firmen und Organisationen mit 25 Jahren Erfahrung. Wir bieten Squarespace Beratung & Hilfe und können für Euch eine leicht zu bedienende professionelle neue Firmenhomepage erstellen – die wirkt.",
       "backgroundImage": {
-        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/6878fab822913208288e40a6/squarespace-product-render.png",
-        "alt": "Squarespace Webdesign Agentur"
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/90d2b6eb-3db5-4852-8a4b-a3814c778a02/a-professional-3d-render-showcasing-a-dy_P82 TiaRDRk-QcMJ7XL8 DyQ_-Wge1csfSyS0 PhN_r0 Hpkw.png",
+        "alt": "Professionelle Schweizer Squarespace Webdesign Agentur"
       },
       "alignment": "left",
       "ctas": [
         {
-          "label": "Kostenloser Video-Termin",
+          "label": "Kostenlose Video-Beratung",
           "href": "/termin",
           "variant": "primary"
         },
         {
-          "label": "Squarespace Hilfe",
-          "href": "/squarespace-hilfe",
+          "label": "Squarespace Webseiten Vorteile",
+          "href": "#bento-grid-1",
           "variant": "secondary"
         }
-      ],
-      "rating": {
-        "score": 4.9,
-        "count": 13,
-        "label": "Bewertungen"
-      }
-    },
-    {
-      "type": "logoGallery",
-      "title": "Squarespace Circle Gold Partner seit 2020",
-      "logos": [
-        { "name": "Squarespace Gold Partner", "image": { "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/1744737599650-S447T9W3ZDJ4KR4T5TTH/Gold+Partner+Badge+Black+Gold.png", "alt": "Squarespace Circle Gold Partner Badge" } }
       ]
     },
     {
-      "type": "valueProposition",
-      "title": "Warum Squarespace?",
-      "items": [
+      "type": "logoGallery",
+      "title": "Schweizer Squarespace Experte und Squarespace Circle Goldpartner",
+      "logos": [
         {
-          "title": "All-in-One Plattform",
-          "description": "Hosting, Design, CMS und Support aus einer Hand. Kein Plugin-Chaos, keine Sicherheitslücken."
+          "name": "Squarespace Gold Partner",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/1744737599650-S447T9W3ZDJ4KR4T5TTH/Gold+Partner+Badge+Black+Gold.png",
+            "alt": "Schweizer Squarespace Experte und Squarespace Circle Goldpartner – Noevu GmbH"
+          },
+          "link": "/schweizer-squarespace-experte"
+        }
+      ]
+    },
+    {
+      "type": "textContent",
+      "title": "Schneller am **Ziel**, dank einem **System** mit Vorsprung.",
+      "description": "Der Markt ist voll von Webdesignern, die euch alles bauen. Als Schweizer Squarespace Spezialisten konzentrieren wir uns auf das, was euch wirklich wachsen lässt:",
+      "alignment": "center"
+    },
+    {
+      "type": "splitContent",
+      "title": "",
+      "alignment": "left",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/d1db9936-d57e-4a9e-aad6-4d4553638bc8/a-dashboard-landing-page-for-a-data-anal_QOtAy4-hTbWrzox8I8dwqw_CXbu8hLuQyiDtM6HZCeM5w.png",
+        "alt": "Squarespace Dashboard Interface"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Boost dank All-in-one CMS"
         },
         {
-          "title": "Einfache Bedienung",
-          "description": "Inhalte selbst bearbeiten ohne technisches Know-how. Drag & Drop Editor für alle."
+          "type": "paragraph",
+          "text": "Als **Schweizer Squarespace Experte** setzen wir auf eine der modernsten und sichersten All-in-one-Plattformen der Welt. Für Euch bedeutet das: Keine Kosten wird für aufwändige Eigenentwicklungen, Plugin-Updates oder teure Wartungsverträge. Eure Investition fliesst in das, was den Unterschied macht: eine glasklare Strategie, überzeugendes Webdesign und Inhalte, die Kunden gewinnen."
+        }
+      ]
+    },
+    {
+      "type": "splitContent",
+      "title": "",
+      "alignment": "right",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/5a0a11da-85d2-44b0-8008-2f8c3a368222/strategy-paper-with-the-title-strategie_PeuFSOT0RBKpNprLOvBWjg_iksrybLaSXupfDR_vOxK5Q.png",
+        "alt": "Strategie Papier"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Eine Webseite, die eure Ziele erreicht"
         },
         {
-          "title": "Professionelles Design",
-          "description": "Award-prämierte Templates als Basis für individuelle Anpassungen. Responsive auf allen Geräten."
+          "type": "paragraph",
+          "text": "Ein schönes Webdesign ist nur der Anfang. Wir nutzen die leistungsstarken Werkzeuge von **Squarespace**, um eure Kunden gezielt zu führen. **Das Resultat:** Eine [**neue Squarespace Webseite**](/squarespace-agentur/webseiten-entwicklung), die Eure Besucher leitet, Eure Stärken auf den Punkt bringt und so Anfragen und Verkäufe systematisch steigert. Und dank integriertem SEO wird Eure Webseite auf Google gefunden."
+        }
+      ]
+    },
+    {
+      "type": "splitContent",
+      "title": "",
+      "alignment": "left",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/c09ee9e4-0bec-4534-834a-c1035bccae8d/a-minimalist-product-photography-setup-f_85VMykPqQ7 OtRpkPhnYpoQ_RrPolxUHRXW6c6e1IGh8SA.png",
+        "alt": "Laptop mit Diagrammen auf Schreibtisch"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Perfektion dank Erfahrung"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mit über [25 Jahren Erfahrung im KMU Webdesign](/) und als [**Squarespace Circle Gold Partner 2025**](/schweizer-squarespace-circle-gold-partner-2025) wissen wir, wie man das Maximum aus der Plattform herausholt. Euer **Web-Projekt** bringen wir als **Schweizer Squarespace Spezialisten** nicht nur schnell ins Ziel, sondern denken strategisch mit. Ihr profitiert von [Experten Beratung](/webseiten-beratung-hilfe) einer sorgenfreien Gesamtlösung, bei der Hosting, Sicherheit und Support zusammen kommen."
         }
       ]
     },
@@ -66,169 +116,630 @@
       "height": "medium"
     },
     {
-      "type": "servicesGrid",
-      "title": "Unsere Squarespace Services",
-      "subtitle": "Was wir für euch tun können",
-      "services": [
+      "type": "textContent",
+      "title": "**Professionelle Webseiten Services**",
+      "subtitle": "Unsere [KMU Webdesign Agentur](/) bietet Euch alles, was eure neue Squarespace Webseite braucht:",
+      "description": "Ihr braucht mehr als nur einen **Schweizer Squarespace Webdesigner**; Ihr braucht einen strategischen Partner, der das **CMS als Squarespace Profi** meisterhaft beherrscht und [Eure neue Webseite](/squarespace-agentur/webseiten-entwicklung) in ein wertvolles Werkzeug für Euer Wachstum verwandelt.",
+      "alignment": "center"
+    },
+    {
+      "type": "featuresList",
+      "title": "",
+      "columns": "4",
+      "features": [
         {
-          "title": "Webdesign & Entwicklung",
-          "description": "Individuelle Squarespace-Websites mit massgeschneidertem Design.",
-          "cta": { "label": "Details", "href": "/squarespace-agentur/webseiten-entwicklung", "variant": "text" }
+          "title": "Beratung von Squarespace Profis",
+          "description": "Strategieentwicklung, Zielgruppenanalyse, Digitale Trends, Best Practices"
         },
         {
-          "title": "E-Commerce Setup",
-          "description": "Online-Shop Einrichtung mit Squarespace Commerce.",
-          "cta": { "label": "Details", "href": "/services/website-erstellen", "variant": "text" }
+          "title": "Squarespace Webseiten Entwicklung",
+          "description": "Strategisches Webdesign, Responsive Design, System-Integration, Funktionserweiterungen"
         },
         {
-          "title": "SEO Optimierung",
-          "description": "Suchmaschinenoptimierung für bessere Google-Rankings.",
-          "cta": { "label": "Details", "href": "/services/beratung", "variant": "text" }
+          "title": "Webseiten Optimierung",
+          "description": "Performance-Steigerung, Mobile-Optimierung, SEO-Optimierung, Beutzerfreundlichkeit"
         },
         {
-          "title": "Wartung & Support",
-          "description": "Laufende Betreuung und technischer Support.",
-          "cta": { "label": "Details", "href": "/squarespace-hilfe", "variant": "text" }
+          "title": "Pflege & Support",
+          "description": "Aktualisierung, Content-Management, Sicherheitsprüfung, Betrieb und Hosting"
         }
-      ],
-      "columns": "4"
+      ]
+    },
+    {
+      "type": "textContent",
+      "title": "**KMUs trauen unserer Squarespace Experten**",
+      "description": "4,9 Sterne Bewertungen auf Google",
+      "alignment": "center",
+      "backgroundImage": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/0865dc1f-4fff-437e-a363-106b0b0c07cd/Fade-Gradient-4-imgg-gi3-wv3jdmww.png",
+        "alt": "Gradient Background"
+      },
+      "ctas": [
+        {
+          "label": "Google Bewertungen ansehen",
+          "href": "https://go.noevu.ch/review",
+          "variant": "primary"
+        }
+      ]
     },
     {
       "type": "waveDivider",
       "topColor": "green",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "textContent",
+      "title": "**Unsere Erfahrung zeigt**",
+      "subtitle": "Squarespace ist die **beste** Homepage Lösung für die **meisten** Schweizer KMU.",
+      "description": "Und mit uns als erfahrene Webdesign Experten profitiert Ihr noch von:",
+      "alignment": "center"
+    },
+    {
+      "type": "bentoGrid",
+      "items": [
+        {
+          "icon": "web_traffic",
+          "iconDisplay": "icon",
+          "title": "**Keine Standard-Themes**",
+          "subtitle": "Individuelles Design.",
+          "description": "Ihr erhaltet ein individuelles Design, das eure Marke perfekt inszeniert und eure Einzigartigkeit unterstreicht. Statt starrer Themes bekommt ihr eine massgeschneiderte Lösung, die überzeugt.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/f52efc4c-7579-47e9-9c9f-1197be2cc124/the-same-low-fidelity-grey-box-wireframe_PAWfAcj8S7-LCJJnrxB3JQ_J-aBH_3BTZG3N8 ThPDqPuw.png",
+            "alt": "Design Grid"
+          },
+          "size": "large"
+        },
+        {
+          "icon": "ads_click",
+          "iconDisplay": "icon",
+          "title": "**Design erleben**",
+          "subtitle": "Interaktive Prototypen.",
+          "description": "Ihr erlebt euer neues Design in einem klickbaren Prototypen, bevor die Entwicklung startet. Das gibt Euch volle Transparenz und die Sicherheit, dass das Ergebnis genau eurer Vision entspricht.",
+          "size": "medium"
+        },
+        {
+          "icon": "mobile_layout",
+          "iconDisplay": "icon",
+          "title": "**Keine Standard-Themes**",
+          "subtitle": "Das einfachste CMS das es gibt.",
+          "description": "Ihr erhaltet die volle Kontrolle über eure Inhalte. Mit dem intuitivsten CMS am Markt pflegt ihr eure Webseite einfach per Drag & Drop – ganz ohne unsere Hilfe und technische Kenntnisse.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/3a7f41e1-196b-4be9-a0c3-3612f0d8405c/a-dashboard-interface-for-a-web-developm_gGjJ6girTxaz30tJ7sFhsw_mnp-Sq4fRqGyahZeQYbiPA.png",
+            "alt": "Squarespace CMS Interface"
+          },
+          "size": "medium"
+        },
+        {
+          "icon": "phone",
+          "iconDisplay": "icon",
+          "title": "**Newsletter & Marketing**",
+          "subtitle": "Marketing & Kommunikation.",
+          "description": "Ihr vernetzt eure Kundenkommunikation nahtlos und effizient. Neue Inhalte werden mit einem Klick zu E-Mail-Kampagnen, was Euch wertvolle Zeit im Marketing und in der Administration spart.",
+          "size": "medium"
+        },
+        {
+          "icon": "add_shopping_cart",
+          "iconDisplay": "icon",
+          "title": "**Integriertes E-Commerce**",
+          "subtitle": "Online-Shop leicht gemacht.",
+          "description": "Ihr startet euren Online-Verkauf einfach und professionell. Die integrierte E-Commerce-Lösung von Squarespace ist sicher, leicht zu bedienen und präsentiert euer Angebot optimal.",
+          "size": "medium"
+        },
+        {
+          "icon": "3p",
+          "iconDisplay": "icon",
+          "title": "**Mehrsprachigkeit mit AI**",
+          "subtitle": "Hello, Bonjours, Ciao!",
+          "description": "Ihr erreicht mühelos ein internationales Publikum. Dank smarter KI-Integration wird eure Webseite mehrsprachig, ohne dass für Euch manueller Übersetzungsaufwand entsteht.",
+          "size": "medium"
+        },
+        {
+          "icon": "data_loss_prevention",
+          "iconDisplay": "icon",
+          "title": "**Suchmaschinenoptimierung mit AI**",
+          "subtitle": "Auf Google sichtbar.",
+          "description": "Ihr werdet bei Google gefunden und wisst, was funktioniert. Eine fundierte SEO Optimierung bringt Euch relevante Besucher und verständliche Analysen für nachhaltiges Wachstum.",
+          "size": "medium"
+        }
+      ]
+    },
+    {
+      "type": "splitContent",
+      "title": "",
+      "alignment": "right",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/e868c7be-8196-452e-850f-893092f9ebb6/Gold+Partner+Badge+White+Gold.png",
+        "alt": "Squarespace Gold Partner Badge"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "**Professionelle Webdentwickler**"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "[Zertifizierter Squarespace Gold Partner](/schweizer-squarespace-circle-gold-partner-2025)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Eure Sicherheit für ein erstklassiges Webentwicklung und eine strategische Umsetzung, die nachweislich funktioniert. Ihr arbeitet mit [Schweizer Squarespace Profi und Gold-Partner](/schweizer-squarespace-circle-gold-partner-2025) mit 25 Jahren Erfahrung in der Branche."
+        }
+      ]
+    },
+    {
+      "type": "textContent",
+      "title": "**Unterstützung vom Squarespace Profi**",
+      "subtitle": "Eure neue Webseite ist neu. Unsere Squarespace **Erfahrung** nicht.",
+      "description": "Seit über 25 Jahren bauen wir nun schon digitale Lösungen. Keine ist wie die andere, denn jedes Unternehmen ist einzigartig. Deshalb ist auch jede [**neue Squarespace Webseite** die Ihr bei uns entwickeln lasst](/squarespace-agentur/webseiten-entwicklung), ein Unikat. Dank der intelligenten Struktur von Squarespace und unserer etablierten Prozesse setzen wir Euer Projekt jedoch mit maximaler Effizienz um.",
+      "alignment": "center"
+    },
+    {
+      "type": "splitContent",
+      "title": "",
+      "alignment": "left",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/ab7285f0-7045-4ba1-a2df-73a211891840/a-sophisticated-lifestyle-advertisement-_v4_Ik5KCT928kAbQ-N-CBw_drGaPECpQRSJC4 Ngk0-ckQ.png",
+        "alt": "Strategie und Effizienz"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Strategie und Effizienz"
+        },
+        {
+          "type": "paragraph",
+          "text": "Wir verschwenden keine Zeit mit dem Programmieren von Standardfunktionen. Wir nutzen die erstklassige Technologie von Squarespace, damit unsere Energie gezielt in Strategie, Inhalt und Design fliesst – für maximalen Wert."
+        }
+      ]
+    },
+    {
+      "type": "splitContent",
+      "title": "",
+      "alignment": "right",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/8fdefc91-30ca-452f-8d17-e040896ae902/Web_design_prototype_displays.png",
+        "alt": "Web Design Prototypen"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Live-Design Prototypen"
+        },
+        {
+          "type": "paragraph",
+          "text": "Wir nutzen keine Standard-Templates. Als erfahrene **Webdesigner** schaffen wir eine einzigartige visuelle Sprache, die Eure Marke auf der flexiblen Basis von Squarespace perfekt widerspiegelt und Eure Botschaft auf den Punkt bringt."
+        }
+      ]
+    },
+    {
+      "type": "splitContent",
+      "title": "",
+      "alignment": "left",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/5f7ab37f-d748-449b-828d-c5f079d8fb87/a-professional-photograph-of-a-modern-sp_8fhaeee2TKy6gkf2TGGV3g_2 XqJZnt7 RtuOrSMZ7 Vsb7w.png",
+        "alt": "Laptop und Smartphone mit responsivem Design"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Optimiert für Mobile & Desktop"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mit dem von Grund auf responsiven Design von Squarespace stellen wir sicher, dass **Eure neue Webseite** auf Smartphones und Desktops überzeugt. Ihr erreicht Eure Kunden optimal – egal, wo sie gerade sind."
+        }
+      ]
+    },
+    {
+      "type": "splitContent",
+      "title": "",
+      "alignment": "right",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/fe7939f1-df89-4bc9-9254-81828eecffe8/usability.jpeg",
+        "alt": "Person mit Smartphone und CMS-Interface"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Kinderleichte Bedienung"
+        },
+        {
+          "type": "paragraph",
+          "text": "Nach dem Start Euerer [neuen Squarespace Webseite](/webdesign-agentur/kmu-webseite-erstellen-lassen) habt Ihr die volle Kontrolle. Dank des intuitivsten Systems auf dem Markt – Squarespace – könnt Ihr Inhalte und Bilder mühelos und ohne Code selbst verwalten. Als Squarespace Profis [beraten und helfen wir Euch bei allen Fragen zur Webseite](/webseiten-beratung-hilfe) – auch nach dem Launch."
+        }
+      ]
+    },
+    {
+      "type": "splitContent",
+      "title": "",
+      "alignment": "left",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/8b838634-5884-4128-9eb3-412d9dcd211e/a-professional-photograph-showcasing-an-_Tq5bIilmQ6urL62wjg0aKw_kNlAfdZ1RYWQiGr8n4LV3w.png",
+        "alt": "Quantencomputer auf leuchtendem Sockel"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Technologie, die für Euch arbeitet"
+        },
+        {
+          "type": "paragraph",
+          "text": "Vergesst Plugin-Chaos, Update-Stress und Sicherheitslücken. Ihr profitiert von der All-in-one-Stärke von Squarespace: Hosting, Sicherheit und modernste Features sind immer inklusive und aktuell. **Für Euch bedeutet das:** absolute Sorgenfreiheit und planbare Kosten."
+        }
+      ]
+    },
+    {
+      "type": "splitContent",
+      "title": "",
+      "alignment": "right",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/43abad7d-c039-4716-b84c-f5b1b9574ba2/Noevu+Squarespace+Experte+und+Circle+Gold+Partner.png",
+        "alt": "Noevu Squarespace Experte und Circle Gold Partner"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Erfahrene Squarespace Experten"
+        },
+        {
+          "type": "paragraph",
+          "text": "Als führende [**Squarespace Gold Partner 2025**](/schweizer-squarespace-experte) in der Schweiz sind wir mehr als Euer Webdesigner. Wir sind Euer [**Squarespace Experte**](/schweizer-squarespace-experte), der Euer KMU proaktiv begleitet und auch nach dem Go-Live [kompetente Squarespace Beratung und Hilfe bietet](/schweizer-squarespace-circle-gold-partner-2025) – damit Eure Homepage ein Erfolg bleibt."
+        }
+      ]
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
       "bottomColor": "beige",
       "height": "medium"
     },
     {
-      "type": "process",
-      "title": "Unser Vorgehen",
-      "subtitle": "Vom Konzept zur fertigen Webseite",
-      "steps": [
-        {
-          "number": 1,
-          "title": "Beratungsgespräch",
-          "description": "Kostenlos und unverbindlich. Wir lernen eure Ziele kennen und prüfen, ob Squarespace die richtige Wahl ist."
-        },
-        {
-          "number": 2,
-          "title": "Strategie & Konzept",
-          "description": "Gemeinsam entwickeln wir die Struktur, Inhalte und das visuelle Konzept eurer Website."
-        },
-        {
-          "number": 3,
-          "title": "Design & Entwicklung",
-          "description": "Wir setzen eure Website um – mit individuellem Design und allen gewünschten Funktionen."
-        },
-        {
-          "number": 4,
-          "title": "Launch & Schulung",
-          "description": "Nach dem Go-Live zeigen wir euch, wie ihr Inhalte selbst pflegen könnt."
-        }
-      ],
-      "layout": "horizontal"
+      "type": "textContent",
+      "title": "Warum Schweizer KMUs ihre [**neue Webseite**](/squarespace-agentur/webseiten-entwicklung) mit unserer Schweizer **Squarespace Agentur** erstellen lassen?",
+      "alignment": "center"
     },
     {
       "type": "comparisonTable",
-      "title": "Squarespace vs. WordPress",
-      "subtitle": "Welche Plattform passt zu euch?",
+      "title": "",
       "leftColumn": {
-        "header": "WordPress",
+        "header": "herkömmliche Agentur",
         "items": [
-          "Open Source – kostenlose Basis",
-          "Unbegrenzte Anpassungsmöglichkeiten",
-          "Grosses Plugin-Ökosystem",
-          "Selbst um Hosting kümmern",
-          "Regelmässige Updates nötig",
-          "Sicherheit eigenverantwortlich"
+          "Templates oder Umsetzung individueller Designs teuer",
+          "Komplizierte CMS wie WordPress oder Typo3",
+          "Regelmässige Updates mittels externer Plugins",
+          "Monate",
+          "Kompliziertes Dienstleistungsangebot",
+          "Gleicher Ansatz wie vor 10 Jahren"
         ],
         "highlighted": false
       },
       "rightColumn": {
-        "header": "Squarespace",
+        "header": "Noevu Squarespace Agentur",
         "items": [
-          "All-in-One Lösung mit Hosting",
-          "Professionelle Design-Templates",
-          "Integrierte Funktionen ohne Plugins",
-          "Hosting inklusive (schnell & sicher)",
-          "Automatische Updates",
-          "Enterprise-Grade Sicherheit"
+          "Massgeschneiderte Designs kosteneffizient umgesetzt",
+          "Einfache Bedienung eurer Website mit Squarespace",
+          "Keine Wartung erforderlich",
+          "Ein paar Wochen",
+          "Ein klarer Fokus: Eure Website",
+          "Einsatz von AI und modernster Technologie für mehr Effizienz"
         ],
         "highlighted": true
-      }
-    },
-    {
-      "type": "testimonials",
-      "title": "Das sagen unsere Squarespace-Kunden",
-      "rating": {
-        "average": 4.9,
-        "count": 13,
-        "source": "Google"
       },
-      "testimonials": [
-        {
-          "quote": "Die Squarespace-Website von Noevu ist genau das, was wir gesucht haben: professionell, einfach zu bedienen und wunderschön.",
-          "author": "Reto Gerber",
-          "company": "Rrevival",
-          "rating": 5
-        },
-        {
-          "quote": "Als Dentaltechniker brauchten wir einen Partner, der unser Handwerk versteht. Noevu hat unsere Expertise perfekt digital übersetzt.",
-          "author": "Benedikt Vogel",
-          "company": "Vogel Dental GmbH",
-          "rating": 5
-        }
-      ]
-    },
-    {
-      "type": "faq",
-      "title": "Häufige Fragen zu Squarespace",
-      "items": [
-        {
-          "question": "Was ist ein Squarespace Gold Partner und warum ist das wichtig?",
-          "answer": "Als Squarespace Circle Gold Partner gehören wir zu den weltweit zertifizierten und anerkannten Top-Agenturen. Das bedeutet: Wir haben umfangreiche Erfahrung mit hunderten von Squarespace-Projekten, direkten Zugang zu Squarespace-Experten, early Access zu neuen Features und regelmässige Schulungen. Für Sie als Kunde heisst das eine garantierte hohe Qualität, professionelle Unterstützung und dass Ihr Projekt in Expertenhänden ist. Seit 2020 arbeiten wir auf dieser Stufe und haben kontinuierlich die höchsten Qualitätsstandards erfüllt."
-        },
-        {
-          "question": "Was kostet eine Squarespace-Website bei Noevu?",
-          "answer": "Wir bieten verschiedene Preispakete je nach Umfang und Anforderungen: Ein Starter-Paket für kleinere Websites beginnt bei CHF 4'500, während ein Strategic-Paket mit umfangreichen Features, E-Commerce-Integration oder komplexeren Anforderungen ca. CHF 10'000 kostet. Der genaue Preis hängt von der Anzahl der Seiten, den gewünschten Funktionen (z.B. Shop, Buchungssystem, Membership), dem Grad der individuellen Anpassung und den Design-Requirements ab. Wir erstellen Ihnen vor Projektstart eine transparente, detaillierte Offerte ohne versteckte Kosten. Hinzu kommt die monatliche Squarespace-Lizenz ab ca. CHF 20/Monat (je nach Funktionen)."
-        },
-        {
-          "question": "Wie lange dauert die Entwicklung einer Squarespace-Website?",
-          "answer": "Eine Standard-Webseite dauert normalerweise 8-10 Wochen vom Kick-off bis zum Launch. Das umfasst: Beratung und Strategie (1-2 Wochen), Design und Konzept (2-3 Wochen), Entwicklung und Integration (3-4 Wochen), und finale Tests sowie Schulung (1-2 Wochen). Falls Sie unter Zeitdruck sind, bieten wir auch einen Express-Service mit 7 Tagen Lieferzeit an – allerdings mit etwas höheren Kosten und in diesem Fall mit eingeschränktem Scope. Der genaue Timeline wird individuell besprochen und ist abhängig von Ihrer Verfügbarkeit für Feedback und Content-Bereitstellung."
-        },
-        {
-          "question": "Kann ich die Website selbst bearbeiten und brauche ich dafür technisches Know-how?",
-          "answer": "Ja, absolut! Das ist einer der grossen Vorteile von Squarespace. Die Plattform ist explizit für Nicht-Techniker entwickelt worden und verwendet einen intuitiven Drag-and-Drop-Editor. Sie können einfach Texte bearbeiten, Bilder austauschen, neue Seiten hinzufügen und Inhalte aktualisieren – ohne jegliches technisches Wissen oder Programmier-Kenntnisse. Nach dem Launch führen wir Sie in einer umfassenden Schulungs-Session ein, zeigen Ihnen alle wichtigen Funktionen und geben Ihnen eine detaillierte Dokumentation mit. Bei Fragen unterstützen wir Sie auch weiterhin. So bleiben Sie unabhängig bei Änderungen und sparen langfristig Kosten für laufende Anpassungen."
-        },
-        {
-          "question": "Warum sollte ich Squarespace wählen statt WordPress?",
-          "answer": "Squarespace bietet entscheidende Vorteile gegenüber WordPress: (1) Wartungsfrei: Keine Updates, Patches oder Sicherheits-Fixes nötig – Squarespace macht das automatisch. (2) Sichere Plattform: Enterprise-Grade Sicherheit aus dem Hause Squarespace, keine Sicherheitslücken durch veraltete Plugins. (3) Keine Plugins nötig: WordPress erfordert oft dutzende Plugins, was zu Performance-Problemen und Sicherheitsrisiken führt. Squarespace hat alle wichtigen Funktionen integriert. (4) All-in-One: Hosting, Backup, SSL, CDN, SEO-Tools – alles ist inklusive. Bei WordPress müssen Sie selbst ein Hosting wählen und konfigurieren. (5) Bessere Performance: Squarespace ist extrem schnell optimiert und lädt überall auf der Welt schnell. (6) Weniger Komplexität: Keine PHP, keine Datenbank-Verwaltung, kein technischer Overhead. Ideal für KMU, die eine solide Website brauchen, ohne sich um Technik kümmern zu müssen."
-        }
-      ]
-    },
-    {
-      "type": "cta",
-      "title": "Bereit für eure Squarespace-Website?",
-      "description": "Lasst uns in einem kostenlosen Gespräch herausfinden, ob Squarespace die richtige Wahl für euer Projekt ist.",
       "ctas": [
         {
-          "label": "Kostenlos beraten lassen",
-          "href": "/termin",
+          "label": "Kostenlose Video-Beratung",
+          "href": "/kontakt",
           "variant": "primary"
         },
         {
-          "label": "Projekte ansehen",
-          "href": "/projekte",
+          "label": "Findet das passende CMS",
+          "href": "/blog/cms-check-schweiz",
           "variant": "secondary"
         }
-      ],
-      "backgroundColor": "green"
+      ]
+    },
+    {
+      "type": "textContent",
+      "title": "**Der Prozess**",
+      "subtitle": "Euer Weg eine **neuen Squarespace Webseite** erstellen zu lassen: Klar, transparent und **zielgerichtet**.",
+      "description": "Am Anfang steht die Klarheit über Eure Ziele und die Eurer Kunden. Ihr erhaltet einen klaren Prozess, bei dem Ihr Eure Webseite sorgenfrei entwickeln lassen könnt – schnell, effizient und mit überzeugendem Design sowie reibungsloser Funktion. Auch nach dem Launch bleibt Ihr sorgenfrei: Dank Hosting und Support von Noevu könnt Ihr Euch jederzeit auf uns verlassen.",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "Was sind eure Ziele?",
+          "href": "/kontakt",
+          "variant": "primary"
+        }
+      ]
+    },
+    {
+      "type": "splitContent",
+      "title": "**Vorbereitung & Analyse**",
+      "subtitle": "Zuhören. Verstehen. Strukturieren.",
+      "description": "Eine neue Squarespace Webseiten entwickeln zu lassen beginnt damit, dass wir zuhören und ein tiefes Verständnis für Eure Welt und die Eurer Kunden entwickeln. Das Resultat ist eine klare Struktur und ein zielgerichtetes Konzept. **Ihr erhaltet die Gewissheit,** dass eure neue Webseite auf einem soliden, strategischen Fundament steht.",
+      "alignment": "left",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/4a175b8b-5836-44f3-857a-2d84d8016ef2/the-same-low-fidelity-grey-box-wireframe_8Q9IYDS8QSmERcNq93 Ly2A_69ERi7-_TSOH4e9 EyrHUnA.png",
+        "alt": "Wir nutzen keine Standard Squarespace Themes, sondern entwickeln individuelle Webdesigns"
+      },
+      "content": []
+    },
+    {
+      "type": "splitContent",
+      "title": "**Design Prototypen**",
+      "subtitle": "Aus Erkenntnissen wird erlebbares Design.",
+      "description": "Aus der Strategie entstehen lebendige, klickbare Prototypen. **Ihr könnt so spüren,** was zu Euch passt, und sehen, was eure Kunden begeistern wird, bevor Entwicklungsaufwand entsteht. Ihr entscheidet, welche Richtung perfektioniert wird.",
+      "alignment": "right",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/55e92916-452c-4ec9-affd-c0234c1dc79f/a-direct-frontal-product-photography-of-_anB4IVyFRG6RFy703 Jy_Gw_7 CyRI8RETZye6B3 IzbbTOw.png",
+        "alt": "Mehrere Design-Prototypen basierend auf Squarespace"
+      },
+      "content": []
+    },
+    {
+      "type": "splitContent",
+      "title": "**Entwicklung**",
+      "subtitle": "Effizienz trifft Exzellenz.",
+      "description": "In dieser Phase wird der Wunsch, eine neue Webseite erstellen zu lassen Realität. **Ihr profitiert von** über 25 Jahren Erfahrung, kombiniert mit der Effizienz smarter Tools. Das Ergebnis ist eine **professionelle Webseite** mit erstklassiger Funktion und einer Bedienung, die eure Kunden begeistert – und Euch den Alltag erleichtert.",
+      "alignment": "left",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/3093755f-ad25-47f5-9b01-4dd4ba1da91e/image-that-conveys-the-following-partner_MSDYydBZQrO7REUdXr27eQ_Vy1 YyQY7S-yQ_X29-18jCQ.png",
+        "alt": "Individuelle Squarespace-Webseiten mit Spezialfunktionen"
+      },
+      "content": []
+    },
+    {
+      "type": "splitContent",
+      "title": "**Betrieb & Support**",
+      "subtitle": "Go-Live ist nur der Anfang.",
+      "description": "Der Livegang ist nur der Anfang eurer Reise. **Ihr bleibt nicht allein** – eure Webseite wird weiter betreut. Dank einem einfachen All-in-One-Paket aus Hosting, Wartung und Support seid ihr jederzeit sicher abgedeckt. Unkompliziert, verlässlich und schnell erreichbar.",
+      "alignment": "right",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/c024652b-0050-4a29-a1c8-9fa674f91189/website-expanding-beyond-the-screen-to-s__U2lz-sHSSaUubT5f7b4OQ_Zett5ctnSpmhgBAAcfjO3w.png",
+        "alt": "Integrierter Squarespace Support"
+      },
+      "content": [],
+      "ctas": [
+        {
+          "label": "Kostenlose Video-Beratung",
+          "href": "/termin",
+          "variant": "primary"
+        }
+      ]
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "textContent",
+      "title": "**Der Weg zur erfolgreichen Squarespace Webseite**",
+      "subtitle": "Vier Punkte die Euch eine **erfolgreiche** Squarespace Webseite sichern:",
+      "alignment": "center",
+      "backgroundImage": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/df100f1e-d91e-4f9f-bd3e-b86302aee06f/modern-tablet-floating-in-mid-air-with-t_oulZQSkSTEib2GV67kN1xg_nnyoW0CJQxG8lfT2F5 DlYg.png",
+        "alt": "Golden Circle Tablet"
+      }
+    },
+    {
+      "type": "splitContent",
+      "title": "**1. Effektive Botschaft**",
+      "subtitle": "**Mehr** als einzelne Worte.",
+      "description": "Menschen kaufen nicht, was Ihr tut – sondern warum Ihr es tut. Wir helfen Euch, Eure Kernbotschaft auf den Punkt zu bringen. So entsteht eine klare Kommunikation, die emotional verbindet und rational überzeugt.",
+      "alignment": "left",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/df100f1e-d91e-4f9f-bd3e-b86302aee06f/modern-tablet-floating-in-mid-air-with-t_oulZQSkSTEib2GV67kN1xg_nnyoW0CJQxG8lfT2F5 DlYg.png",
+        "alt": "Golden Circle Methodology"
+      },
+      "content": [],
+      "ctas": [
+        {
+          "label": "Was ist Eure Botschaft?",
+          "href": "/termin",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "splitContent",
+      "title": "**2. Einfache Bedienung**",
+      "subtitle": "Eine Reise, die zum **Ziel** führt!",
+      "description": "Gute Usability ist kein Zufall, sondern das Ergebnis jahrelanger Erfahrung, sorgfältiger Planung und durchdachter Gestaltung. Wir entwickeln eine intuitive Struktur und setzen klare, gut sichtbare Handlungsaufforderungen (Call-to-Actions) ein, damit Eure Webseitenbesucher problemlos und fast automatisch den richtigen Weg zur Kontaktaufnahme finden können.",
+      "alignment": "right",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/6884ea7c-68b1-4a9d-86e3-797469320890/a-professional-render-of-a-tablet-device_m5o3-uTgQvOnnAIlJBJcYg_FyUaemYmQaGJ2 Pr1pTI3mA.png",
+        "alt": "Einfache Bedienung Squarespace"
+      },
+      "content": [],
+      "ctas": [
+        {
+          "label": "Wer sind Eure Kunden?",
+          "href": "/termin",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "splitContent",
+      "title": "**3. Wirksames Design & Funktion**",
+      "subtitle": "Schönheit mit **Strategie**.",
+      "description": "Euer Webdesign muss mehr können als nur schön aussehen: Es soll Eure Botschaft klar unterstützen, Emotionen wecken und die Besucher aktiv zum Handeln motivieren. Wir gestalten ein durchdachtes visuelles Erlebnis, das auf der leistungsstarken und flexiblen Basis von Squarespace Eure Inhalte optimal präsentiert und perfekt inszeniert.",
+      "alignment": "left",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/9b1eb194-7eac-4e46-9b42-5131cedfc155/a-render-of-a-macbook-pro-like-laptop-di_E74U8zM-RVm7moaCW9 LddQ_mOWRABLGTju6z-WQGxMRnA.png",
+        "alt": "Wirksames Webdesign mit hoher CRO"
+      },
+      "content": [],
+      "ctas": [
+        {
+          "label": "Was sind Eure Wünsche",
+          "href": "/termin",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "splitContent",
+      "title": "[**4. Reibungsloser Service & Betrieb**](/webseiten-beratung-hilfe)",
+      "subtitle": "Bereit für die Zukunft – **automatisch**.",
+      "description": "Alte Webseiten veralten und verursachen Aufwand. Eure **neue Squarespace Webseite** entwickelt sich weiter. Für Euch bedeutet das: Ihr profitiert automatisch von neuen Features, höchsten Sicherheitsstandards und Performance-Optimierungen, ohne einen Finger zu rühren. Als [Euer Schweizer Squarespace Experte stehen wir Euch aktiv mit Hilfe und Beratung](/webseiten-beratung-hilfe) zur Seite.",
+      "alignment": "right",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/543dad37-8791-49d6-84ec-fbd29c8a98dd/a-product-photograph-of-a-modern-air-pur_URzbQ1iARwCAbgzsqEgxbA_u2D5L9fmR_6C3 CncP2fTNg.png",
+        "alt": "Zukunftssicherheit und Zuverlässigkeit"
+      },
+      "content": [],
+      "ctas": [
+        {
+          "label": "Wie können wir Euch helfen?",
+          "href": "/termin",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "green",
+      "height": "medium"
+    },
+    {
+      "type": "textContent",
+      "title": "**Kontakt mit Squarespace Experten**",
+      "subtitle": "**Startet** heute euer neues KMU Squarespace Webseiten Project?",
+      "description": "Bereit für eine individuelle und dennoch effiziente neue Squarespace Webseite die nicht nur professionelles Webesign bietet – sondern eure Botschaft effektiv transportiert und Besucher zu Kunden macht?",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "Kostenlose Video-Beratung",
+          "href": "/termin",
+          "variant": "primary"
+        }
+      ]
+    },
+    {
+      "type": "textContent",
+      "title": "**Kostenloser** Video-Termin mit unseren Squarespace Experten:",
+      "alignment": "center"
+    },
+    {
+      "type": "testimonials",
+      "title": "",
+      "testimonials": [
+        {
+          "quote": "Noevu verbindet Innovation und Squarespace Erfahrung. Sie haben für unser eine neue KMU-Webseite erstellt, die nicht nur hochwertig ist, sondern auch leicht zu bedienen. Sehr empfehlenswert!",
+          "author": "Reto Gerber",
+          "company": "Rrevival",
+          "role": "Geschäftsführer",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/8e7a85f8-1e6a-48dd-a850-4d5d56914ae3/Reto.png",
+            "alt": "Reto Gerber CEO Rrevival"
+          },
+          "rating": 5
+        },
+        {
+          "quote": "Unser Projekt lief dank der Expertiese von Noevu, und deren guter Planung und Zeitmanagement perfekt ab. Unsere neue Squarespace-Homepage sieht toll aus und zeigt unseren Kunden klar unsere Arbeit.",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH",
+          "role": "Geschäftsführer",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/5ce28d434d546e00015f6595/d00ee46d-7165-406d-a7c0-f884dbcc5e23/Vogel-Dentaltechnik-04.jpg",
+            "alt": "Benedikt Vogel Geschäftsführer Vogel Dental"
+          },
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "green",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "textContent",
+      "title": "[**Erfolgreiche Squarespace Projekte**](/webseiten-projekte)",
+      "subtitle": "**Experten** Tipps für euren digitalen Vorsprung.",
+      "description": "Entdeckt [Squarespace Experten-Tipps](/squarespace-webseiten-tipps) die zeigen, was heute funktioniert – und morgen den Unterschied macht. [Erfolgreiche Squarespace Projekte und Hilfreiche Tipps, für Schweizer KMU](/webseiten-projekte), die nicht nur mitlaufen, sondern vorangehen wollen.",
+      "alignment": "center"
     },
     {
       "type": "blogGrid",
-      "title": "Squarespace Tipps & Ressourcen",
-      "subtitle": "Anleitungen und Best Practices",
-      "limit": 3,
-      "category": "Squarespace"
+      "title": "",
+      "limit": 12,
+      "tags": [
+        "Portfolio",
+        "Artikel",
+        "Anleitung"
+      ]
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
+      "type": "faq",
+      "title": "**Antworten** auf Fragen zum Squarespace Webseite ertsellen lassen:",
+      "items": [
+        {
+          "question": "Was kostet eine Webseite bei Euch?",
+          "answer": "Ihr bekommt bei uns keine Webseite von der Stange, sondern eine fundierte Investition in Eure digitale Zukunft. Transparenz ist dabei die Basis unserer Partnerschaft.\n\n• **Effiziente Starter-Lösungen:** Für Startups und klare Projekte, bei denen es auf eine schnelle und professionelle Umsetzung ankommt, starten unsere Webdesign-Pakete bei CHF 4'500.\n\n• **Individuelles, strategisches Webdesign:** Für umfassende Projekte, die eine tiefgehende Strategie, ein einzigartiges Design und individuelle Funktionen erfordern, beginnen die Investitionen bei CHF 10'000.\n\nFür jedes Projekt erhaltet Ihr von uns ein klares Fixpreis-Angebot. So habt Ihr von Anfang an volle Kostenkontrolle und Planungssicherheit."
+        },
+        {
+          "question": "Wie lange dauert die Entwicklung einer Webseite?",
+          "answer": "Unser Prozess ist auf Effizienz und höchste Qualität ausgelegt. Die meisten Webseiten-Projekte realisieren wir innerhalb von **8 bis 10 Wochen** vom strategischen Kick-off bis zum Go-Live. Aber wenn es schnell gehen muss auch mal [in 7 Tagen](/blog/squarespace-webseite-fuer-ferienwohnung).\n\nFür Euch bedeutet das: Wir investieren unsere Energie nicht in endlose technische Setups, sondern dank dem smarten Einsatz von Squarespace direkt in das, was zählt: Eure Strategie, Eure Botschaft und Euer Design. Der Schlüssel zu einem schnellen Fortschritt liegt in Eurer Entscheidungsfreudigkeit und unserem bewährten, klaren Prozess."
+        },
+        {
+          "question": "Könnt ihr uns auch bei den Texten helfen?",
+          "answer": "Absolut. Eine klare Botschaft ist das Herzstück jeder erfolgreichen Webseite. Wenn Euch die Worte fehlen, springen wir ein.\n\nIhr liefert uns Euer Expertenwissen in Form von Stichworten und Gesprächen. Wir verwandeln diese Essenz in **SEO-optimierten Content**, der Eure Zielgruppe nicht nur informiert, sondern auch überzeugt. Das ist ein zentraler Teil unserer **Webseiten Beratung**."
+        },
+        {
+          "question": "Uns fehlen professionelle Bilder. Was nun?",
+          "answer": "Die visuelle Gestaltung ist entscheidend für den ersten Eindruck und die emotionale Wirkung Eurer Marke. Auch hier lassen wir Euch nicht allein.\n\nWir finden gemeinsam die perfekte Lösung für Euch:\n\n• **KI-gestützte Bildwelten:** Wir schaffen einzigartige und konsistente Bilderwelten, die Eure Einzigartigkeit visuell unterstreichen.\n\n• **Professionelle Fotografie:** Wir verbinden Euch mit erfahrenen Fotografen aus unserem Netzwerk.\n\n• **Kuratierte Stockbilder:** Wir recherchieren und lizenzieren hochwertige Bilder, die zu Eurer Marke passen."
+        },
+        {
+          "question": "Wie starten wir ein Projekt mit Euch?",
+          "answer": "Der Start Eurer neuen Webseite ist bei uns ein klar definierter und partnerschaftlicher Prozess. Wir überlassen nichts dem Zufall, damit wir Eure Ziele nicht nur erreichen, sondern übertreffen.\n\nSo legen wir gemeinsam die Grundlage für Euren Erfolg:\n\n• [**Das strategische Erstgespräch**](/termin): Alles beginnt damit, dass wir Euch zuhören. In einem ersten Gespräch wollen wir Eure Vision, Eure unternehmerischen Ziele und die Bedürfnisse Eurer Kunden verstehen. Das ist die Basis für alles Weitere.\n\n• **Die massgeschneiderte digitale Offerte:** Statt eines starren PDFs erhaltet Ihr von uns eine interaktive, digitale Offerte. Hier könnt Ihr verschiedene Optionen und Module dynamisch auswählen und seht transparent, wie sich Eure Entscheidungen auf die Gesamtinvestition auswirken. Diese Offerte besprechen wir gemeinsam, um das perfekte Paket für Euch zu schnüren.\n\n• **Kick-off & Vorbereitungs-Workshop:** Nach Eurer Zusage starten wir offiziell mit einem Kick-off-Gespräch. Direkt im Anschluss folgt der wichtigste Teil: der gemeinsame Vorbereitungs-Workshop. Hier tauchen wir tief in die Details ein, definieren die User Journey, schärfen die Kernbotschaften und legen das strategische Fundament für das gesamte Projekt.\n\nFür Euch bedeutet das: Ein transparenter, nachvollziehbarer Prozess, bei dem Ihr von Anfang an aktiv mitgestaltet und die Gewissheit habt, dass Euer Projekt auf einem soliden, strategischen Fundament steht."
+        },
+        {
+          "question": "Welche Art von Webseiten entwickelt ihr?",
+          "answer": "Wir entwickeln nicht einfach nur **neue Webseiten** – wir schaffen die digitale Grundlage für Euren Erfolg. Als Euer **Schweizer Webdesign Agentur in Zürich** konzipieren und realisieren wir digitale Erlebnisse, die Eure Ziele erreichen.\n\nDazu gehören:\n\n• **Umfassende Firmen-Webseiten:** Die Eure Marke stärken und Eure Expertise auf den Punkt bringen.\n\n• **Strategische Landingpages:** Die Besucher gezielt zu einer Handlung führen und Eure Kampagnen unterstützen.\n\n• **Mehrsprachige Portale:** Um Eure Zielgruppen über die Sprachgrenzen hinaus zu erreichen.\n\n• **Moderne Portfolio-Seiten:** Die Eure Arbeit eindrucksvoll präsentieren.\n\nFür euch entwickeln wir **neue Webseiten** mit dem CMS-System, [dass am besten zu Euren Anforderungen passt](/blog/cms-evaluation-fuer-schweizer-kmus), egal ob **Squarespace**, **WordPress** oder **Shopify**.\n\nWir sind Euer strategischer Partner. Deshalb sagen wir Euch auch ehrlich, wenn eine Idee nicht zielführend ist, und schlagen stattdessen einen besseren Weg vor."
+        },
+        {
+          "question": "Auf welche Technologie setzt ihr?",
+          "answer": "Wir setzen auf Technologie, die Euch Freiraum schafft. [Wenn Squarespace Eure Anforderungen erfüllt](/blog/cms-evaluation-fuer-schweizer-kmus), nutzen wir als **Squarespace Gold Partner** die Plattform aus strategischen Gründen, die direkt Euch zugutekommen:\n\n• **Fokus auf Design & Strategie:** Squarespace gibt uns als Webdesigner die Freiheit, Eure Einzigartigkeit in ein beeindruckendes Webdesign zu giessen, ohne uns in technischen Details zu verlieren.\n\n• **Einfache Verwaltung für Euch:** Nach dem Launch könnt Ihr Inhalte wie Texte, Bilder oder Blogartikel einfach und intuitiv selbst verwalten – ganz ohne Code.\n\n• **Sicherheit und Wartungsfreiheit:** Keine ständigen Plugin-Updates, keine geschlossenen Türen wegen Wartungsarbeiten. Die Plattform ist sicher, stabil und immer aktuell. So könnt Ihr Euch voll auf Euer Kerngeschäft konzentrieren.\n\n• **Starke SEO-Grundlage:** Squarespace bietet von Haus aus eine hervorragende technische Basis für die Suchmaschinenoptimierung. Den Rest erledigen wir mit strategisch aufbereitetem Inhalt."
+        },
+        {
+          "question": "Können wir unsere alte Webseite erneuern lassen?",
+          "answer": "Ja, das ist eine unserer Kernkompetenzen. Viele unserer Kunden kommen zu uns, um ihre veraltete oder schwer zu bedienende Webseite (z. B. von WordPress, Typo3 oder Squarespace 7.0) auf eine moderne und pflegeleichte Plattform zu heben.\n\nAls erfahrener **Squarespace Experte** analysieren wir Eure bestehende Seite, planen den Umzug strategisch und sorgen für einen nahtlosen Übergang – damit Eure SEO-Rankings erhalten bleiben und Eure digitale Präsenz gestärkt wird."
+        }
+      ]
+    },
+    {
+      "type": "textContent",
+      "title": "Eure Frage war nicht dabei?",
+      "description": "Kein Problem. Schreibt uns eine E-Mail oder ruft uns an. Wir freuen uns darauf, Eure Vision zu verstehen und gemeinsam die nächste Stufe für Euer Unternehmen zu zünden.",
+      "alignment": "center",
+      "ctas": [
+        {
+          "label": "Kostenlose Video-Beratung",
+          "href": "/termin",
+          "variant": "primary"
+        }
+      ]
     }
   ]
 }

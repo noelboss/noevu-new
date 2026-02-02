@@ -1,16 +1,17 @@
 # Claude Code Session Notes
 
 ## Project Overview
-Rebuilding noevu.ch with Astro 5, TinaCMS, Zod validation, and JSON as canonical truth.
+Rebuilding noevu.ch with Astro 5, Zod validation, and JSON as canonical truth.
 **Critical requirement:** Content and design must match 100% with original.
 
-## Current Status (2026-02-01)
+## Current Status (2026-02-02)
 
 ### Build Status
 - **91 pages** build successfully
 - No errors
 - All FAQ sections use correct `items` key
 - All internal links now work
+- **Priority pages restored to 100% match** with original
 
 ### Commits Made This Session
 1. `d13d188` - Update page content with extracted FAQs and testimonials (19 files)
@@ -72,6 +73,22 @@ Rebuilding noevu.ch with Astro 5, TinaCMS, Zod validation, and JSON as canonical
 - [x] projekte.json - FAQ section added + 4th testimonial
 - [x] Build Verification - 89 pages pass
 
+### Phase 5: 100% Content Restoration (2 pages completed)
+- [x] **squarespace-agentur.json** - Fixed bentoGrid missing required fields (iconDisplay, size)
+  - Added iconDisplay: "icon" to all 7 bentoGrid items
+  - Added size: "medium"/"large" to all items
+  - Build error resolved
+- [x] **home.json** - Complete restoration (297 additions, 133 deletions)
+  - Hero section: Bold formatting restored, internal links updated
+  - Rating display section added (4.9 stars, 13 reviews)
+  - Logo gallery: 11 logos with CDN URLs, 5 additional logos added
+  - Value proposition: Full descriptions restored with images
+  - Services grid: All links updated to correct paths
+  - Timeline process: CTA buttons added to all 4 steps
+  - Testimonials: Internal links corrected
+  - FAQ: All 8 answers updated with correct links
+  - All content matches original reference 100%
+
 ### Resources Created
 - `/scripts/extract-content.mjs` - Content extraction from HTML
 - `/extracted-content/extracted-content.json` - 28 pages extracted
@@ -99,6 +116,12 @@ The validation agent's finding was incorrect - no fix needed.
 - [x] Update hero headlines to match reference site exactly (18 pages updated)
 - [x] Verify subheadlines and descriptions match reference
 - [x] All content aligned with extracted reference data
+
+### Priority 5: 100% Content Restoration - DONE
+- [x] **squarespace-agentur.json** - Fixed bentoGrid build error
+- [x] **home.json** - Complete 100% restoration (297 additions, 133 deletions)
+- Both pages now match original reference exactly
+- All 91 pages build successfully
 
 ### Completed (No Action Needed)
 - [x] SEO Meta Descriptions - Current versions are optimal

@@ -10,15 +10,15 @@
     {
       "type": "hero",
       "subheadline": "Webdesign Agentur in Zürich – Webagentur für professionelles digitales Marketing für Schweizer KMU",
-      "headline": "Wir entwickeln, was Euch einzigartig macht.",
-      "description": "Ihr braucht nicht nur eine schöne KMU-Webseite, sondern praktische digitale Lösungen, die Euer Unternehmen voranbringen. Als eine der besten Schweizer Webdesign Agentur in Zürich unterstützen wir Firmen und Organisationen mit 25 Jahren Erfahrung kompetent mit <a href=\"/services/beratung\">Webseiten Beratung und Hilfe</a> eine <a href=\"/services/website-erstellen\">neue Firmenhomepage zu erstellen</a>.",
+      "headline": "Wir **entwickeln**, was Euch **einzigartig** macht.",
+      "description": "Ihr braucht nicht nur eine schöne KMU-Webseite, sondern praktische digitale Lösungen, die Euer Unternehmen voranbringen. Als eine der besten Schweizer Webdesign Agentur in Zürich unterstützen wir Firmen und Organisationen mit 25 Jahren Erfahrung kompetent mit <a href=\"/squarespace-hilfe\">Webseiten Beratung und Hilfe</a> eine <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">neue Firmenhomepage zu erstellen</a>.",
       "backgroundImage": {
         "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/923563ed-ec0a-4736-bf30-8c7b24c35bc0/Digitale+Hindernisse+%C3%BCberwinden.png",
         "alt": "Digitale Hindernisse überwinden - Bergsteiger als Metapher für digitale Transformation"
       },
       "ctas": [
-        { "label": "Kostenloser Video-Termin", "href": "/kontakt#termin", "variant": "primary" },
-        { "label": "Website erstellen lassen", "href": "/services/website-erstellen", "variant": "secondary" }
+        { "label": "Kostenloser Video-Termin", "href": "/home#services", "variant": "primary" },
+        { "label": "Website erstellen lassen", "href": "/webdesign-agentur/kmu-webseite-erstellen-lassen", "variant": "secondary" }
       ],
       "rating": {
         "score": 4.9,
@@ -28,31 +28,68 @@
       "alignment": "left"
     },
     {
+      "type": "ratingDisplay",
+      "score": 4.9,
+      "reviewCount": 13,
+      "source": "Google",
+      "label": "KMU vertrauen unserer Webagentur",
+      "cta": {
+        "label": "4.9 Sterne Bewertungen auf Google",
+        "href": "https://go.noevu.ch/review",
+        "variant": "text",
+        "external": true
+      }
+    },
+    {
       "type": "logoGallery",
-      "title": "Eure Webdesign Agentur in Zürich für qualitätvolles Webdesign",
+      "title": "Eure Webdesign Agentur in Zürich für **professionelles** Webdesign",
       "logos": [
-        { "name": "Migros", "image": { "src": "/images/logos/migros.svg", "alt": "Migros" } },
-        { "name": "NZZ", "image": { "src": "/images/logos/nzz.svg", "alt": "NZZ" } },
-        { "name": "Belimo", "image": { "src": "/images/logos/belimo.svg", "alt": "Belimo" } },
-        { "name": "Vogel Dental", "image": { "src": "/images/logos/vogel-dental.svg", "alt": "Vogel Dental" } },
-        { "name": "Ausgleichskasse", "image": { "src": "/images/logos/ausgleichskasse.svg", "alt": "Ausgleichskasse" } },
-        { "name": "Davatz", "image": { "src": "/images/logos/davatz.svg", "alt": "Davatz" } }
+        { "name": "Ausgleichskasse Migros", "image": { "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/a1569596-6883-4975-a6dd-e272bc6048cb/Logo+No+Claim+-+Black-+Large.png", "alt": "Ausgleichskasse Migros" } },
+        { "name": "Vogel Dental", "image": { "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/48b61988-36dc-4a96-b0ad-890945608ebf/Vogel_Dental_BW.png", "alt": "Vogel Dental" } },
+        { "name": "Migros", "image": { "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/1214a7d4-7c47-47ac-bf0a-37a3868f958c/Migros.png", "alt": "Migros" } },
+        { "name": "NZZ Connect", "image": { "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/1def0729-e786-4a04-8cc1-6c8d8108314b/NZZ+Connect.png", "alt": "NZZ Connect" } },
+        { "name": "Belimo", "image": { "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/39dfcd51-d055-4e39-b8e5-15f45341e36f/scaled-Belimo_logo_black_RGB+copy.png", "alt": "Belimo" } },
+        { "name": "Ausgleichskasse", "image": { "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/38845f83-25d1-4aec-a295-af672ece9e87/Logo+DE-+Black-+Large.png", "alt": "Ausgleichskasse Logo" } },
+        { "name": "Weinbau Wetli", "image": { "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/bb9d5805-799b-42af-9ea8-2f0f4d46120e/Weinbau+Wetli+Logo+Ma%CC%88nnedorf.png", "alt": "Weinbau Wetli Logo Männedorf" } },
+        { "name": "Swiss Economic Forum", "image": { "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/70d51978-0cd1-4418-9955-4deae6ef609d/Swiss+Economic+Forum.png", "alt": "Swiss Economic Forum" } },
+        { "name": "Repower", "image": { "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/12e8e165-af5b-4b96-b868-b8c922ce31b4/Logo+&+Claim@2x.png", "alt": "Repower Logo" } },
+        { "name": "SwissP", "image": { "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/4eb3b562-e7f4-4f3b-9c79-a970eb415d07/SwissP-Logo-Secondary.webp", "alt": "SwissP" } },
+        { "name": "Davatz Legal", "image": { "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/1762772815640-YD5JY0YVZJ6M60VEUXU5/Davatz+Legal.png", "alt": "Davatz Legal" } }
       ]
+    },
+    {
+      "type": "textContent",
+      "title": "Der Markt ist voll von Webagenturen, die Euch alles bauen. Als Marketing Agentur und Webentwickler in Zürich konzentrieren wir uns auf das, was <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">Eure KMU Webseite</a> wirklich wachsen lässt:",
+      "content": "",
+      "alignment": "left",
+      "maxWidth": "wide"
     },
     {
       "type": "valueProposition",
       "items": [
         {
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/d1db9936-d57e-4a9e-aad6-4d4553638bc8/a-dashboard-landing-page-for-a-data-anal_QOtAy4-hTbWrzox8I8dwqw_CXbu8hLuQyiDtM6HZCeM5w.png",
+            "alt": "Dashboard landing page für Datenanalyse"
+          },
           "title": "Ihr startet mit Vorsprung",
-          "description": "Modernste Technologie und AI-Effizienz für maximale Wirkung. Wir nutzen die besten Tools, damit ihr schneller zum Ziel kommt."
+          "description": "Ihr profitiert von einem smarten Ansatz, der euch schneller ans Ziel bringt. Anstatt das Rad neu zu erfinden, setzen wir als <a href=\"/squarespace-webdesign\">**Schweizer Webagentur und Squarespace Experten in Zürich**</a> auf bewährte, moderne Technologien und KI-gestützte Tools. **Für euch bedeutet das:** Euer Budget und unsere Zeit fliessen direkt in das, was den grössten Wert schafft – eine glasklare Strategie, überzeugendes Design und eine Botschaft, die ankommt."
         },
         {
-          "title": "Website die Ziele erreicht",
-          "description": "Strategische Customer Journey und klare Zielgruppenanalyse. Jede Seite ist auf Conversion optimiert."
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/5a0a11da-85d2-44b0-8008-2f8c3a368222/strategy-paper-with-the-title-strategie_PeuFSOT0RBKpNprLOvBWjg_iksrybLaSXupfDR_vOxK5Q.png",
+            "alt": "Strategie-Papier mit dem Titel Strategie"
+          },
+          "title": "Eine Webseite, die Eure Ziele erreicht",
+          "description": "Ihr erhaltet mehr als nur ein schönes KMU Webdesign. Ihr bekommt eine digitale Grundlage, die für Euch arbeitet. Als Webdesign Webagentur in Zürich analysieren wir zuerst Eure Ziele, eure Kunden und deren Weg (Customer Journey). Das Resultat**:** Eine <a href=\"/squarespace-agentur\">**schöne KMU Webseite**</a>, die Eure Besucher gezielt führt, Eure Stärken wirkungsvoll auf den Punkt bringt und so Besucher zu Kunden macht."
         },
         {
-          "title": "Perfektion durch Erfahrung",
-          "description": "Über 25 Jahre Erfahrung in Webdesign und digitaler Kommunikation. Wir wissen, was funktioniert."
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/c09ee9e4-0bec-4534-834a-c1035bccae8d/a-minimalist-product-photography-setup-f_85VMykPqQ7OtRpkPhnYpoQ_RrPolxUHRXW6c6e1IGh8SA.png",
+            "alt": "Laptop mit Diagrammen und Grafiken, umgeben von Pflanzen und Bürobedarf"
+          },
+          "title": "Perfektion dank Erfahrung",
+          "description": "Mit über 25 Jahre Erfahrung als **Schweizer Website Entwickler** wissen wir, was funktioniert – und was nicht. Das bedeutet für Euch**:** Wir bringen Euer Projekt nicht nur schnell und sauber ins Ziel, sondern denken mit. Wir hinterfragen Euer Briefing, um das bestmögliche Ergebnis zu erzielen. Auch nach dem Livegang seid Ihr nicht allein – mit integriertem Support, Hosting und Weiterentwicklung aus einer Hand bleibt Ihr zukunftssicher."
         }
       ]
     },
@@ -63,32 +100,46 @@
       "height": "medium"
     },
     {
+      "type": "textContent",
+      "title": "Womit unsere Schweizer **Webagentur** Euch **helfen** kann:",
+      "content": "Ihr braucht mehr als nur irgendeine Wegabentur; Ihr brauchen eine Webdesign Agentur, die **für Euch** <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">**neue Websites erstellt**,</a> die Besucher zu treuen Kunden macht und Eure <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">neue KMU-Homepage</a> in ein wertvolles Werkzeug verwandeln. Als <a href=\"/squarespace-webdesign\">Schweizer Agentur spezialisiert auf Squarespace</a> bieten wir euch:",
+      "alignment": "left",
+      "maxWidth": "wide"
+    },
+    {
       "type": "servicesGrid",
-      "title": "Unsere Services",
-      "subtitle": "Von der Beratung bis zur Umsetzung – alles aus einer Hand",
       "services": [
         {
-          "title": "Professionelle Beratung",
-          "description": "Strategie, Zielgruppenanalyse und Konzeption. Wir helfen euch, die richtigen Entscheidungen zu treffen.",
-          "cta": { "label": "Mehr erfahren", "href": "/services/beratung", "variant": "text" }
+          "title": "Beratung von Profis",
+          "description": "✓ Strategieentwicklung\n\n✓ Zielgruppenanalyse\n\n✓ <a href=\"/squarespace-hilfe\">AI Beratung für KMU</a>\n\n✓ Best Practices",
+          "cta": { "label": "Hilfe & Beratung", "href": "/squarespace-hilfe", "variant": "text" }
         },
         {
-          "title": "Website Entwicklung",
-          "description": "Squarespace, responsive Design und moderne Technologien. Websites die begeistern und konvertieren.",
-          "cta": { "label": "Mehr erfahren", "href": "/services/website-erstellen", "variant": "text" }
+          "title": "KMU Webseiten Entwicklung",
+          "description": "✓ <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">Webdesign für KMU</a>\n\n✓ <a href=\"/squarespace-webdesign\">Squarespace Entwicklung</a>\n\n✓ Responsive Design\n\n✓ API & Funktionserweiterungen",
+          "cta": { "label": "Webdesign & Entwicklung", "href": "/webdesign-agentur/kmu-webseite-erstellen-lassen", "variant": "text" }
         },
         {
-          "title": "Optimierung",
-          "description": "Performance, SEO und Conversion-Optimierung. Damit eure Website gefunden wird und Ergebnisse liefert.",
-          "cta": { "label": "Mehr erfahren", "href": "/services/optimierung", "variant": "text" }
+          "title": "Webseiten Optimierung",
+          "description": "✓ Performance-Steigerung\n\n✓ Mobile-Optimierung\n\n✓ SEO-Anpassungen\n\n✓ Beutzerfreundlichkeit",
+          "cta": { "label": "Digitale Optimierung", "href": "/squarespace-hilfe", "variant": "text" }
         },
         {
-          "title": "Support & Hosting",
-          "description": "Wartung, Sicherheit und technischer Support. Wir kümmern uns um alles, damit ihr euch auf euer Business konzentrieren könnt.",
-          "cta": { "label": "Mehr erfahren", "href": "/services/support", "variant": "text" }
+          "title": "Pflege & Support",
+          "description": "✓ Aktualisierung\n\n✓ Content-Management\n\n✓ Sicherheitsprüfung\n\n✓ Betrieb und Hosting",
+          "cta": { "label": "Service & Hosting", "href": "/squarespace-hilfe", "variant": "text" }
         }
       ],
       "columns": "4"
+    },
+    {
+      "type": "cta",
+      "title": "**Professionelle KMU Websites mit Mehrwert**",
+      "description": "",
+      "ctas": [
+        { "label": "Professionelle KMU Websites mit Mehrwert", "href": "/webdesign-agentur/kmu-webseite-erstellen-lassen", "variant": "primary" }
+      ],
+      "backgroundColor": "beige"
     },
     {
       "type": "waveDivider",
@@ -97,66 +148,171 @@
       "height": "medium"
     },
     {
+      "type": "textContent",
+      "title": "Eure <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">**neue KMU Website**</a> ist nicht standardisiert. Unsere **Vorgehensweise** schon.",
+      "content": "Jede neue Webseite ist einzigartig. Darum begleiten wir Euch als Zürcher Webseiten Agentur flexibel und decken alle Eure digitalen Bedürfnisse ab. Ob einzelne Tipps oder ein komplettes Paket – wir sind bereit für Eure digitalen Herausforderungen.",
+      "alignment": "left",
+      "maxWidth": "wide"
+    },
+    {
+      "type": "imageTextAlternating",
+      "items": [
+        {
+          "title": "Strategie und Effizienz",
+          "description": "Mit modernen Tools wie <a href=\"/squarespace-webdesign\">**Squarespace**</a> und klaren Prozessen setzen wir Euer <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">**schöne neue Webseite**</a> schnell und budgetbewusst um. Unsere Energie fliesst gezielt in Strategie, Inhalt und Design – für maximalen Wert.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/ab7285f0-7045-4ba1-a2df-73a211891840/a-sophisticated-lifestyle-advertisement-_v4_Ik5KCT928kAbQ-N-CBw_drGaPECpQRSJC4Ngk0-ckQ.png",
+            "alt": "Sophisticated lifestyle advertisement"
+          }
+        },
+        {
+          "title": "Individuelles Webdesign",
+          "description": "Ihr erhaltet keine Standard-Templates, sondern wir entwickeln für euch ein <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">professionelles KMU Webdesign</a>, das Eure Marke perfekt widerspiegelt. Mit einer visuellen Sprache, die Eure Botschaft auf den Punkt bringt und Eure Besucher leitet.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/8fdefc91-30ca-452f-8d17-e040896ae902/Web_design_prototype_displays.png",
+            "alt": "Web design prototype displays"
+          }
+        },
+        {
+          "title": "Optimiert für Mobile & Desktop",
+          "description": "Ob Smartphone, Tablet oder Desktop: Wir sorgen für ein nahtloses und überzeugendes Erlebnis. Mit responsivem **Webdesign** erreicht Ihr Eure Kunden optimal – wo auch immer sie gerade sind.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/5f7ab37f-d748-449b-828d-c5f079d8fb87/a-professional-photograph-of-a-modern-sp_8fhaeee2TKy6gkf2TGGV3g_2XqJZnt7RtuOrSMZ7Vsb7w.png",
+            "alt": "Laptop und Smartphone mit Nike-Webseite"
+          }
+        },
+        {
+          "title": "Kinderleichte Bedienung",
+          "description": "Nach dem Launch habt Ihr die volle Kontrolle. Wir schulen euch, damit Ihr Inhalte und Bilder mit dem <a href=\"/blog/beste-alternative-zu-wordpress-2025-fuer-schweizer-kmus\">**intuitiven CMS**</a> mühelos und ohne Code selbst verwalten könnt – für maximale Flexibilität.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/fe7939f1-df89-4bc9-9254-81828eecffe8/usability.jpeg",
+            "alt": "Nahaufnahme einer Person mit Smartphone und CMS-Interface"
+          }
+        },
+        {
+          "title": "Technologie, die für Euch arbeitet",
+          "description": "Vergesst mühsame Bedienung, teure Wartung und Sicherheitslücken. Entdeckt eine <a href=\"/blog/cms-evaluation-fuer-schweizer-kmus\">modernen All-in-one-Plattform</a>, die **Künstliche Intelligenz**, SEO, Hosting, Sicherheit und Updates bündelt.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/8b838634-5884-4128-9eb3-412d9dcd211e/a-professional-photograph-showcasing-an-_Tq5bIilmQ6urL62wjg0aKw_kNlAfdZ1RYWQiGr8n4LV3w.png",
+            "alt": "Nahaufnahme einer schwebenden Quantencomputereinheit auf leuchtendem Sockel"
+          }
+        },
+        {
+          "title": "Erfahrene Web-Entwickler",
+          "description": "Wir sind mehr als nur Euer **Webdesigner** – wir sind Euer strategischer Partner. Mit über 25 Jahren Erfahrung als **Webseiten Entwickler** beraten wir euch proaktiv und begleiten euch auch nach dem Start der Webseite.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/c09ee9e4-0bec-4534-834a-c1035bccae8d/a-minimalist-product-photography-setup-f_85VMykPqQ7OtRpkPhnYpoQ_RrPolxUHRXW6c6e1IGh8SA.png",
+            "alt": "Laptop mit Diagrammen auf Schreibtisch, umgeben von Pflanzen und bunten Elementen"
+          }
+        }
+      ]
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
       "type": "comparisonTable",
-      "title": "Warum Noevu?",
+      "title": "Warum Andere zu unserer Webdesign Agentur in Zürich **wechseln**?",
       "leftColumn": {
-        "header": "Traditionelle Agentur",
+        "header": "herkömmliche Agentur",
         "items": [
-          "Starre Templates ohne Flexibilität",
-          "Komplexes CMS mit steiler Lernkurve",
-          "Hoher Wartungsaufwand",
-          "Lange Entwicklungszeiten",
-          "Fokus auf Technik statt Ergebnisse",
-          "Veraltete Technologien"
+          "Templates oder Umsetzung individueller Designs teuer",
+          "Komplizierte CMS wie WordPress oder Typo3",
+          "Regelmässige Updates mittels externer Plugins",
+          "Monate",
+          "Kompliziertes Dienstleistungsangebot",
+          "Gleicher Ansatz wie vor 10 Jahren"
         ],
         "highlighted": false
       },
       "rightColumn": {
         "header": "Noevu",
         "items": [
-          "Massgeschneidertes Design für eure Marke",
-          "Einfaches CMS – ihr könnt alles selbst bearbeiten",
-          "Minimaler Wartungsaufwand",
-          "Schnelle Umsetzung dank moderner Tools",
-          "Fokus auf eure Geschäftsziele",
-          "Modernste AI-Technologie"
+          "Massgeschneiderte Designs kosteneffizient umgesetzt",
+          "Einfache Bedienung Eurer Website z. B. mit Squarespace",
+          "Keine Wartung erforderlich",
+          "Ein paar Wochen",
+          "Ein klarer Fokus: Eure neue Website",
+          "Einsatz von AI und modernster Technologie für mehr Effizienz"
         ],
         "highlighted": true
       }
     },
     {
+      "type": "cta",
+      "title": "",
+      "description": "",
+      "ctas": [
+        { "label": "Jetzt Web-Projekt anfragen", "href": "https://noevu.ch/kontakt", "variant": "primary" },
+        { "label": "CMS-Evaluation starten", "href": "https://noevu.ch/blog/cms-check-schweiz", "variant": "secondary" }
+      ],
+      "backgroundColor": "beige"
+    },
+    {
       "type": "waveDivider",
-      "topColor": "beige",
+      "topColor": "white",
       "bottomColor": "green",
       "height": "large"
     },
     {
-      "type": "process",
-      "title": "Unser Prozess",
-      "subtitle": "In vier Schritten zu eurer perfekten Website",
+      "type": "textContent",
+      "title": "Der Weg zur <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">**erfolgreiche** KMU Webseite</a> sichern:",
+      "content": "",
+      "alignment": "center",
+      "maxWidth": "wide"
+    },
+    {
+      "type": "timelineProcess",
       "steps": [
         {
-          "number": 1,
-          "title": "Klare Botschaft",
-          "description": "Mit dem Golden Circle Framework entwickeln wir eure einzigartige Positionierung. Warum tut ihr, was ihr tut?"
+          "number": "1",
+          "eyebrow": "**1. Klare Botschaft**",
+          "title": "**Mehr** als einzelne Worte.",
+          "description": "Menschen kaufen nicht, was Ihr tut – sondern warum Ihr es tut. Mit dem Golden Circle kommt Eure wahre Stärke auf den Punkt: Warum Ihr existiert, wie Ihr Mehrwert schafft und was Ihr konkret bietet. So entsteht eine klare Botschaft, die emotional verbindet und rational überzeugt – direkt sichtbar auf Eurer Startseite.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/df100f1e-d91e-4f9f-bd3e-b86302aee06f/modern-tablet-floating-in-mid-air-with-t_oulZQSkSTEib2GV67kN1xg_nnyoW0CJQxG8lfT2F5DlYg.png",
+            "alt": "Grafik des Golden Circle Modells mit drei Kreisen"
+          },
+          "cta": { "label": "Botschaft Eurer Webseite entwicklen?", "href": "/termin", "variant": "text" }
         },
         {
-          "number": 2,
-          "title": "Intuitive User Experience",
-          "description": "Wir gestalten Nutzererlebnisse, die eure Besucher begeistern und zum Handeln motivieren."
+          "number": "2",
+          "eyebrow": "**2. Einfache Bedienung**",
+          "title": "Swipe, Klick, **Kontakt**!",
+          "description": "Gute Nutzerführung entscheidet über Erfolg oder Absprung. Ihr braucht eine Webseite, die Eure Besucher gezielt ans Ziel führt – mit klaren Call-to-Actions, bewährten Design-Patterns und einer intuitiven Struktur. Jede Interaktion wird leicht, logisch und selbstverständlich – damit Eure Kunden den Weg zur Kontaktaufnahme fast automatisch gehen.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/6884ea7c-68b1-4a9d-86e3-797469320890/a-professional-render-of-a-tablet-device_m5o3-uTgQvOnnAIlJBJcYg_FyUaemYmQaGJ2Pr1pTI3mA.png",
+            "alt": "Digitales Tablet mit der Aufschrift Level Up"
+          },
+          "cta": { "label": "Webseite mit Kundenfokus erstellen?", "href": "/webdesign-agentur/kmu-webseite-erstellen-lassen", "variant": "text" }
         },
         {
-          "number": 3,
-          "title": "Strategisches Design",
-          "description": "Design das nicht nur gut aussieht, sondern eure Geschäftsziele unterstützt und Vertrauen aufbaut."
+          "number": "3",
+          "eyebrow": "**3. Strategisches Design & Funktion**",
+          "title": "Schönheit mit **Strategie**.",
+          "description": "Ihr braucht mehr als eine <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">schöne neue Webseite</a>: Das Webdesign muss Eure Botschaft klar unterstützen und zugleich zum Handeln motivieren. Als Zügestalten ein visuelles Erlebnis, das Eure Inhalte wirkungsvoll und ansprechend inszeniert.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/9b1eb194-7eac-4e46-9b42-5131cedfc155/a-render-of-a-macbook-pro-like-laptop-di_E74U8zM-RVm7moaCW9LddQ_mOWRABLGTju6z-WQGxMRnA.png",
+            "alt": "Laptop mit gestapelten Bergen und aufsteigendem Pfeil auf beigem Hintergrund"
+          },
+          "cta": { "label": "Webseiten Strategie entwickeln?", "href": "/termin", "variant": "text" }
         },
         {
-          "number": 4,
-          "title": "Service & Betrieb",
-          "description": "Nach dem Launch sind wir weiterhin für euch da. Support, Updates und kontinuierliche Optimierung."
+          "number": "4",
+          "eyebrow": "**4. Service & Betrieb**",
+          "title": "Bereit für die Zukunft – **automatisch**.",
+          "description": "Normale Webseiten werden alt. Eure <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">neue KMU Webseite</a> verbessert sich ständig. Mit modernen SaaS-Lösungen erhält sie laufend neue Funktionen. Durch gezielte Optimierungen, höchste Sicherheitsstandards und clevere Performance-Verbesserungen (z. B. mit Cloudflare) bleibt sie schnell, stabil und immer aktuell. Dank integrierten Service-Stunden reagiert unsere Webagentur in Zürich flexibel auf Eure Wünsche. Wenn einmal ein Problem auftaucht, finden und lösen wir es schnell.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/543dad37-8791-49d6-84ec-fbd29c8a98dd/a-product-photograph-of-a-modern-air-pur_URzbQ1iARwCAbgzsqEgxbA_u2D5L9fmR_6C3CncP2fTNg.png",
+            "alt": "Moderner Server mit glänzender Oberfläche auf schwarzer Basis"
+          },
+          "cta": { "label": "KMU Webseite optimieren?", "href": "/termin", "variant": "text" }
         }
       ],
-      "layout": "alternating"
+      "layout": "vertical"
     },
     {
       "type": "waveDivider",
@@ -165,39 +321,38 @@
       "height": "large"
     },
     {
-      "type": "featuresList",
-      "title": "Das macht uns aus",
-      "features": [
-        {
-          "title": "Massgeschneiderte Designs",
-          "description": "Kosteneffizient und einzigartig – kein Template von der Stange"
-        },
-        {
-          "title": "Einfache Inhaltspflege",
-          "description": "Intuitives CMS – ihr behaltet die volle Kontrolle"
-        },
-        {
-          "title": "Mobile & Desktop optimiert",
-          "description": "Perfekte Darstellung auf allen Geräten"
-        },
-        {
-          "title": "Volle Kontrolle",
-          "description": "Ihr könnt jederzeit Inhalte selbst anpassen"
-        },
-        {
-          "title": "AI-gestützte Technologie",
-          "description": "Modernste Tools für maximale Effizienz"
-        },
-        {
-          "title": "Erfahrene Webentwickler",
-          "description": "Über 25 Jahre Erfahrung in der Branche"
-        }
+      "type": "textContent",
+      "title": "**Kontakt mit KMU Webdesigner**",
+      "content": "",
+      "alignment": "center",
+      "maxWidth": "medium"
+    },
+    {
+      "type": "cta",
+      "title": "**Startet** heute euer KMU Homepage-Projekt?",
+      "description": "Bereit, von unserer Webagentur in Zürich eine individuelle und dennoch <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">effiziente KMU-Webseite erstellen zu lassen</a>, die nicht nur hübsches aussieht, sondern Eure Botschaft effektiv transportiert und Besucher zu Kunden macht?",
+      "ctas": [
+        { "label": "Kostenloser Video-Termin", "href": "https://noevu.ch/termin", "variant": "primary" }
       ],
-      "columns": "2"
+      "backgroundColor": "green",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/07f2b4cc-f0cf-43d2-9d80-deebc1763ef5/Noel+Bossart",
+        "alt": "Noel Bossart"
+      }
+    },
+    {
+      "type": "certificationBadge",
+      "badge": {
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/e868c7be-8196-452e-850f-893092f9ebb6/Gold+Partner+Badge+White+Gold.png",
+        "alt": "Squarespace Gold Partner Badge"
+      },
+      "title": "Squarespace Gold Partner",
+      "link": "/schweizer-squarespace-webdesign-agentur",
+      "inline": true
     },
     {
       "type": "testimonials",
-      "title": "Das sagen unsere Kunden",
+      "title": "Euer Anliegen ist bei uns in erfahrenen Händen:",
       "rating": {
         "average": 4.9,
         "count": 13,
@@ -205,88 +360,97 @@
       },
       "testimonials": [
         {
-          "quote": "Die Zusammenarbeit mit der Noevu GmbH war durchweg positiv. Besonders hervorzuheben ist die schnelle Reaktionszeit – Anliegen wurden stets zügig und zuverlässig bearbeitet. Die Kommunikation war angenehm und unkompliziert, was die gesamte Zusammenarbeit sehr erleichtert hat.",
-          "author": "Wohnperspektive GmbH",
-          "company": "",
+          "quote": "Die Webseiten Agentur Noevu kombiniert Innovation und Präzision, und hat für uns eine <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">schöne neue Firmen-Webseite</a> entwickelt, die nicht nur durch ihre Qualität besticht, sondern auch durch einfache Bedienung begeistert. Absolute Empfehlung!",
+          "author": "Reto Gerber",
+          "company": "Rrevival – Geschäftsführer",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/8e7a85f8-1e6a-48dd-a850-4d5d56914ae3/Reto.png",
+            "alt": "Porträt eines lächelnden CEOs im hellen Hemd vor hellem Hintergrund"
+          },
           "rating": 5
         },
         {
-          "quote": "Noevu GmbH arbeitet talentiert, effizient und mit einem klaren Blick für durchdachte Lösungen. Die vielseitigen Kompetenzen mit modernen Web-CMS-Tools sind beeindruckend, und die Zusammenarbeit ist professionell, angenehm und zielführend.",
-          "author": "Martin Künzi",
-          "company": "",
-          "rating": 5
-        },
-        {
-          "quote": "Als selbstständige Senior SEO-Beraterin kann ich Noevu meinen eigenen Kunden bei Webentwicklungsbedarf sehr empfehlen. Noevu entwickelt schnell und verlässlich gute Web-Lösungen, die nicht nur optisch sehr ästhetisch daher kommen, sondern auch in ihrer Funktionalität herausstechen. Ein weiteres Plus ist das Hintergrundwissen von SEO.",
-          "author": "Anabel Hafstad",
-          "company": "Senior SEO-Beraterin",
-          "rating": 5
-        },
-        {
-          "quote": "Als Schweizer Werbesprecher bin ich auf eine top Webseite angewiesen. Noevu GmbH zeichnet sich durch eine ganzheitliche und strategische Beratung aus. Dabei zeigen sie sich nicht nur technisch versiert, sondern integrieren auch modernstes Webdesign in Ihre Konzepte.",
-          "author": "Andy Zimmermann",
-          "company": "Schweizer Werbesprecher",
-          "rating": 5
-        },
-        {
-          "quote": "Ich lernte die Noevu GmbH und den Geschäftsführer als äusserst kompetent und engagiert kennen. Die langjährige Erfahrung im Bereich digitaler Medien, breites Fachwissen und der Einsatz modernster Tools und Technologien führen zu herausragenden Ergebnissen.",
-          "author": "Tobias Morf",
-          "company": "",
-          "rating": 5
-        },
-        {
-          "quote": "Noel hat mir innert 10 Tagen einen super Webauftritt für mein Startup gemacht. Inhaltlich durchdacht und angenehm für die User-Journey, sinnvoll investiertes Geld.",
-          "author": "Rebecca Mantel",
-          "company": "EntdeckerBox",
+          "quote": "Unser Web-Projekt wurde dank klarer Struktur und effizienten Prozessen perfekt umgesetzt. <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">Unsere neue KMU-Homepage</a> übertrifft die Erwartungen und gibt unseren Kunden ein attraktives Schaufenster zu unserer Arbeit.",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH – Geschäftsführer",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/d00ee46d-7165-406d-a7c0-f884dbcc5e23/Vogel-Dentaltechnik-04.jpg",
+            "alt": "Erfahrener Dentaltechniker und Geschäftsführer mit Brille"
+          },
           "rating": 5
         }
       ]
     },
     {
+      "type": "waveDivider",
+      "topColor": "beige",
+      "bottomColor": "white",
+      "height": "medium"
+    },
+    {
+      "type": "textContent",
+      "title": "**KMU Webseiten-Projekte & Ressourcen**",
+      "content": "",
+      "alignment": "center",
+      "maxWidth": "wide"
+    },
+    {
+      "type": "blogGrid",
+      "title": "**Insights** für Euren digitalen **Vorsprung**.",
+      "subtitle": "Hier findet Ihr beste Webdesign Agentur Tipps und Tricks, und <a href=\"/webseiten-projekte\">erfolgreiche KMU-Webseiten Projekte</a> die zeigen, was heute funktioniert – und morgen den Unterschied macht. Für Start-Ups und Schweizer KMU, die nicht nur mitlaufen, sondern vorangehen wollen.",
+      "limit": 12,
+      "showCategories": true
+    },
+    {
+      "type": "waveDivider",
+      "topColor": "white",
+      "bottomColor": "beige",
+      "height": "medium"
+    },
+    {
       "type": "faq",
-      "title": "Häufige Fragen",
+      "title": "**Antworten** auf die häufigsten Fragen zur Zusammenarbeit mit unserer KMU Webdesign Agentur.",
       "items": [
         {
           "question": "Was kostet eine Webseite bei Euch?",
-          "answer": "Ihr bekommt bei uns keine KMU Webseite von der Stange, sondern eine fundierte Investition in Eure digitale Zukunft. Effiziente Starter-Lösungen starten bei CHF 4'500. Individuelles, strategisches Webdesign beginnt bei CHF 10'000. Für jedes Projekt erhaltet Ihr ein klares Fixpreis-Angebot für volle Kostenkontrolle."
+          "answer": "Ihr bekommt bei uns keine <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">KMU Webseite</a> von der Stange, sondern eine fundierte Investition in Eure digitale Zukunft. Transparenz ist dabei die Basis unserer Partnerschaft.\n\n- **Effiziente Starter-Lösungen:** Für Startups und klare Projekte, bei denen es auf eine schnelle und professionelle Umsetzung ankommt, starten unsere Webdesign-Pakete bei CHF 4'500.\n\n- **Individuelles, strategisches Webdesign:** Für umfassende Projekte, die eine tiefgehende Strategie, ein einzigartiges Design und individuelle Funktionen erfordern, beginnen die Investitionen bei CHF 10'000.\n\nFür jedes Projekt erhaltet Ihr von uns ein klares Fixpreis-Angebot. So habt Ihr von Anfang an volle Kostenkontrolle und Planungssicherheit."
         },
         {
           "question": "Wie lange dauert die Entwicklung einer Webseite?",
-          "answer": "Die meisten Projekte realisieren wir in 8 bis 10 Wochen vom strategischen Kick-off bis zum Go-Live. Wenn es schnell gehen muss, auch in 7 Tagen. Der schnelle Fortschritt hängt von Eurer Entscheidungsfreudigkeit und unserem klaren Prozess ab."
+          "answer": "Unser Prozess ist auf Effizienz und höchste Qualität ausgelegt. Die meisten Webseiten-Projekte realisieren wir innerhalb von **8 bis 10 Wochen** vom strategischen Kick-off bis zum Go-Live. Aber wenn es schnell gehen muss auch mal <a href=\"https://noevu.ch/blog/squarespace-webseite-fuer-ferienwohnung\">in 7 Tagen</a>.\n\nFür Euch bedeutet das: Wir investieren unsere Energie nicht in endlose technische Setups, sondern dank dem smarten Einsatz von Squarespace direkt in das, was zählt: Eure Strategie, Eure Botschaft und Euer Design. Der Schlüssel zu einem schnellen Fortschritt liegt in Eurer Entscheidungsfreudigkeit und unserem bewährten, klaren Prozess."
         },
         {
           "question": "Könnt Ihr uns auch bei den Texten helfen?",
-          "answer": "Ja. Eine klare Botschaft ist zentral. Ihr liefert uns Stichworte und Gespräche; wir erstellen SEO-optimierten Content, der informiert und überzeugt. Das ist Bestandteil unserer Webseiten Beratung."
+          "answer": "Absolut. Eine klare Botschaft ist das Herzstück jeder <a href=\"https://noevu.ch/webseiten-projekte\">erfolgreichen KMU Homepage</a>. Wenn Euch die Worte fehlen, springen wir ein.\n\nIhr liefert uns Euer Expertenwissen in Form von Stichworten und Gesprächen. Wir verwandeln diese Essenz in **SEO-optimierten Content**, der Eure Zielgruppe nicht nur informiert, sondern auch überzeugt. Das ist ein zentraler Teil unserer **Webseiten Beratung**."
         },
         {
           "question": "Uns fehlen professionelle Bilder. Was nun?",
-          "answer": "Wir bieten drei Optionen: KI-gestützte Bildwelten für einzigartige, konsistente Visuals; Vermittlung an professionelle Fotografen; kuratierte und lizenzierte Stockbilder passend zu Eurer Marke."
+          "answer": "Die visuelle Gestaltung ist entscheidend für den ersten Eindruck und die emotionale Wirkung Eurer <a href=\"https://noevu.ch/webseiten-projekte\">erfolgreichen Firmen Webseite</a>. Auch hier lassen wir Euch nicht allein.\n\nWir finden gemeinsam die perfekte Lösung für Euch:\n\n- **KI-gestützte Bildwelten:** Wir schaffen einzigartige und konsistente Bilderwelten, die Eure Einzigartigkeit visuell unterstreichen.\n\n- **Professionelle Fotografie:** Wir verbinden Euch mit erfahrenen Fotografen aus unserem Netzwerk.\n\n- **Kuratierte Stockbilder:** Wir recherchieren und lizenzieren hochwertige Bilder, die zu Eurer Marke passen."
         },
         {
           "question": "Wie starten wir ein Projekt mit Euch?",
-          "answer": "Der Start ist klar definiert: 1) Strategisches Erstgespräch zur Vision, Zielen und Kundenbedürfnissen. 2) Interaktive, digitale Offerte mit modularen Optionen und transparenter Investition. 3) Kick-off & Vorbereitungs-Workshop zur User Journey, Kernbotschaften und strategischem Fundament."
+          "answer": "Der Start Eurer <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">neuen KMI Webseite</a> ist bei uns ein klar definierter und partnerschaftlicher Prozess. Wir überlassen nichts dem Zufall, damit wir Eure Ziele nicht nur erreichen, sondern übertreffen.\n\nSo legen wir gemeinsam die Grundlage für Euren Erfolg:\n\n- <a href=\"https://noevu.ch/termin\">**Das strategische Erstgespräch**</a> **:** Alles beginnt damit, dass wir Euch zuhören. In einem ersten Gespräch wollen wir Eure Vision, Eure unternehmerischen Ziele und die Bedürfnisse Eurer Kunden verstehen. Das ist die Basis für alles Weitere.\n\n- **Die massgeschneiderte digitale Offerte:** Statt eines starren PDFs erhaltet Ihr von uns eine interaktive, digitale Offerte. Hier könnt Ihr verschiedene Optionen und Module dynamisch auswählen und seht transparent, wie sich Eure Entscheidungen auf die Gesamtinvestition auswirken. Diese Offerte besprechen wir gemeinsam, um das perfekte Paket für Euch zu schnüren.\n\n- **Kick-off & Vorbereitungs-Workshop:** Nach Eurer Zusage starten wir offiziell mit einem Kick-off-Gespräch. Direkt im Anschluss folgt der wichtigste Teil: der gemeinsame Vorbereitungs-Workshop. Hier tauchen wir tief in die Details ein, definieren die User Journey, schärfen die Kernbotschaften und legen das strategische Fundament für das gesamte Projekt.\n\nFür Euch bedeutet das: Ein transparenter, nachvollziehbarer Prozess, bei dem Ihr von Anfang an aktiv mitgestaltet und die Gewissheit habt, dass Euer Projekt auf einem soliden, strategischen Fundament steht."
         },
         {
           "question": "Welche Art von Webseiten entwickelt Ihr?",
-          "answer": "Wir entwickeln umfassende Firmen-Webseiten, strategische Landingpages, mehrsprachige Portale und moderne Portfolio-Seiten. Je nach Anforderungen setzen wir auf Squarespace, WordPress oder Shopify – immer mit ehrlicher, zielführender Beratung."
+          "answer": "Wir entwickeln nicht einfach nur <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">**neue Firmen Webseiten**</a> – wir schaffen die digitale Grundlage für Euren Erfolg. Als Euer **Schweizer Webdesign Agentur in Zürich** konzipieren und realisieren wir digitale Erlebnisse, die Eure Ziele erreichen.\n\nDazu gehören:\n\n- <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">**Umfassende Firmen-Webseiten**</a> **:** Die Eure Marke stärken und Eure Expertise auf den Punkt bringen.\n\n- <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">**Strategische Landingpages**</a> **:** Die Besucher gezielt zu einer Handlung führen und Eure Kampagnen unterstützen.\n\n- <a href=\"https://noevu.ch/webseiten-projekte\">**Mehrsprachige Portale**</a> **:** Um Eure Zielgruppen über die Sprachgrenzen hinaus zu erreichen.\n\n- **Moderne Portfolio-Seiten:** Die Eure Arbeit eindrucksvoll präsentieren.\n\nFür euch entwickeln wir **neue Webseiten** mit dem CMS-System, <a href=\"/blog/cms-evaluation-fuer-schweizer-kmus\">dass am besten zu Euren Anforderungen passt</a>, egal ob **Squarespace**, **WordPress** oder **Shopify**.\n\nWir sind Euer strategischer Partner. Deshalb sagen wir Euch auch ehrlich, wenn eine Idee nicht zielführend ist, und schlagen stattdessen einen besseren Weg vor."
         },
         {
           "question": "Auf welche Technologie setzt Ihr?",
-          "answer": "Wenn Squarespace Eure Anforderungen erfüllt, nutzen wir die Plattform aus strategischen Gründen: Fokus auf Design & Strategie, einfache Verwaltung ohne Code, hohe Sicherheit und Wartungsfreiheit sowie starke SEO-Grundlage."
+          "answer": "Wir setzen auf Technologie, die Euch Freiraum schafft. <a href=\"/blog/cms-evaluation-fuer-schweizer-kmus\">Wenn Squarespace Eure Anforderungen erfüllt</a>, nutzen wir als <a href=\"/schweizer-squarespace-webdesign-agentur\">**Squarespace Agentur und Experten**</a> die Plattform aus strategischen Gründen, die direkt Euch zugutekommen:\n\n- **Fokus auf Design & Strategie:** Squarespace gibt uns als Webdesigner die Freiheit, Eure Einzigartigkeit in ein beeindruckendes Webdesign zu giessen, ohne uns in technischen Details zu verlieren.\n\n- **Einfache Verwaltung für Euch:** Nach dem Launch könnt Ihr Inhalte wie Texte, Bilder oder Blogartikel einfach und intuitiv selbst verwalten – ganz ohne Code.\n\n- **Sicherheit und Wartungsfreiheit:** Keine ständigen Plugin-Updates, keine geschlossenen Türen wegen Wartungsarbeiten. Die Plattform ist sicher, stabil und immer aktuell. So könnt Ihr Euch voll auf Euer Kerngeschäft konzentrieren.\n\n- **Starke SEO-Grundlage:** Squarespace bietet von Haus aus eine hervorragende technische Basis für die Suchmaschinenoptimierung. Den Rest erledigen wir mit strategisch aufbereitetem Inhalt."
         },
         {
           "question": "Können wir unsere alte Webseite erneuern lassen?",
-          "answer": "Ja. Wir analysieren die bestehende Seite und planen den Umzug strategisch (z. B. von WordPress, Typo3 oder Squarespace 7.0) auf eine moderne, pflegeleichte Plattform. Der Übergang erfolgt nahtlos, SEO-Rankings bleiben erhalten und Eure Präsenz wird gestärkt."
+          "answer": "Ja, das ist eine unserer Kernkompetenzen. Viele unserer Kunden kommen zu uns, <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">um ihre veraltete oder schwer zu bedienende KMU Webseite</a> (z. B. von WordPress, Typo3 oder Squarespace 7.0) auf eine moderne und pflegeleichte Plattform zu heben.\n\nAls erfahrener **Schweizer Webdesign Agentur in Dübendorf, Zürich** analysieren wir Eure bestehende Seite, planen den Umzug strategisch und sorgen für einen nahtlosen Übergang – damit Eure SEO-Rankings erhalten bleiben und Eure digitale Präsenz gestärkt wird."
         }
       ]
     },
     {
       "type": "cta",
-      "title": "Bereit für eure neue Website?",
-      "description": "Lasst uns gemeinsam eure digitale Präsenz auf das nächste Level bringen. Kostenlose Erstberatung – unverbindlich und persönlich.",
+      "title": "Eure Frage war nicht dabei?",
+      "description": "Kein Problem. Schreibt uns eine E-Mail oder ruft uns an. Wir freuen uns darauf, Eure Vision zu verstehen und gemeinsam die nächste digitale Stufe für Euer Schweizer Unternehmen zu zünden.",
       "ctas": [
-        { "label": "Termin buchen", "href": "/kontakt#termin", "variant": "primary" },
-        { "label": "Mehr erfahren", "href": "/ueber-uns", "variant": "secondary" }
+        { "label": "Kostenlose Video-Termin", "href": "https://noevu.ch/termin", "variant": "primary" }
       ],
       "backgroundColor": "green"
     }
