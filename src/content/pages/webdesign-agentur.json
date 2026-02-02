@@ -10,7 +10,7 @@
       "type": "hero",
       "headline": "Schweizer Webdesign & Marketing Agentur",
       "subheadline": "Für digitalen Erfolg mit Verantwortung.",
-      "description": "<p>Was macht euer Unternehmen besonders? Erfolg liegt nicht nur in dem, was ihr anbietet, sondern warum und wie ihr es tut. Nach diesem \"Golden Circle\"-Prinzip gestalten wir eure digitale Präsenz als strategisches Werkzeug, das Botschaft klar kommuniziert und Besucher zu Kunden macht. Dazu setzen wir gerne auf ein CMS, das sehr leicht zu bedienen ist, und alle wichtigen Funktionen für Euer KMU bereit hält.</p>",
+      "description": "<p>Was macht euer Unternehmen besonders? Erfolg liegt nicht nur in dem, was ihr anbietet, sondern warum und wie ihr es tut. Nach diesem \"Golden Circle\"-Prinzip gestalten wir eure digitale Präsenz als strategisches Werkzeug, das Botschaft klar kommuniziert und Besucher zu Kunden macht. Dazu setzen wir gerne auf <a href=\"/squarespace-agentur/webseiten-entwicklung\">ein CMS, das sehr leicht zu bedienen ist</a>, und alle wichtigen Funktionen für Euer KMU bereit hält.</p>",
       "alignment": "center",
       "ctas": [
         {
@@ -19,8 +19,8 @@
           "variant": "primary"
         },
         {
-          "label": "Unser Team kennenlernen",
-          "href": "#team",
+          "label": "Erfahrenes Team an Eurer Seite",
+          "href": "/ueber-uns#team",
           "variant": "secondary"
         }
       ],
@@ -31,170 +31,267 @@
       }
     },
     {
-      "type": "splitContent",
-      "layout": "imageRight",
-      "title": "Warum Schweizer KMUs unsere Zürcher Webdesign Agentur wählen?",
-      "content": "<p>Für Schweizer KMU ist es oft eine Herausforderung, eine moderne und effektive Homepage zu betreiben. Meist fehlt die Zeit, das Know-how oder es bleibt nur die Wahl zwischen teuren Agenturlösungen oder mittelmässigen Standard-Templates.</p><p><strong>Unser Versprechen:</strong> Moderne, kundenzentrierte digitale Lösungen höchster Qualität zu einem Preis, der für KMUs erschwinglich bleibt.</p>",
-      "image": {
-        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/d8bb5dd5-add6-41a1-a7db-7e07f09a67ad/Woman_interacting_with_digital_interface.jpg",
-        "alt": "Zusammenarbeit im Webdesign-Prozess"
-      },
-      "cta": {
-        "label": "Projekte ansehen",
-        "href": "/projekte",
-        "variant": "primary"
-      }
-    },
-    {
-      "type": "waveDivider",
-      "topColor": "white",
-      "bottomColor": "beige",
-      "height": "medium"
-    },
-    {
       "type": "textContent",
-      "title": "Klarheit von Anfang an",
-      "subtitle": "Unser Vorgehen",
-      "content": "<p>Ihr profitiert von einem agilen, effizienten und sicheren Prozess. Wir arbeiten strukturiert in drei klaren Phasen, damit ihr immer wisst, wo wir stehen.</p>",
+      "title": "Warum Schweizer KMUs unsere Zürcher Webdesign Agentur wählen?",
+      "content": "",
       "alignment": "center"
     },
     {
-      "type": "process",
+      "type": "comparisonTable",
+      "leftColumn": {
+        "header": "klassische Agentur",
+        "items": [
+          "Templates oder Umsetzung individueller Designs teuer",
+          "Komplizierte CMS wie WordPress oder Typo3",
+          "Regelmässige Updates mittels externer Plugins",
+          "Monate",
+          "Kompliziertes Dienstleistungsangebot",
+          "Gleicher Ansatz wie vor 10 Jahren"
+        ],
+        "highlighted": false
+      },
+      "rightColumn": {
+        "header": "Noevu",
+        "items": [
+          "Massgeschneiderte Designs kosteneffizient umgesetzt",
+          "Einfache Bedienung eurer Website z. B. mit Squarespace",
+          "Keine Wartung erforderlich",
+          "Ein paar Wochen",
+          "Ein klarer Fokus: Eure Website",
+          "Einsatz von AI und modernster Technologie für mehr Effizienz"
+        ],
+        "highlighted": true
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Bereit durchzustarten?",
+      "description": "",
+      "ctas": [
+        {
+          "label": "Jetzt Webseiten Projekt starten",
+          "href": "/kontakt",
+          "variant": "primary"
+        },
+        {
+          "label": "CMS-Evaluation starten",
+          "href": "/blog/cms-check-schweiz",
+          "variant": "secondary"
+        }
+      ],
+      "backgroundColor": "orange"
+    },
+    {
+      "type": "textContent",
+      "subtitle": "Unser Vorgehen",
+      "title": "Klarheit von Anfang an.",
+      "content": "<p>Ihr profitiert von einem agilen, effizienten und sicheren Prozess und klarer Webseiten Beratung in drei Phasen:</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "splitContent",
+      "layout": "imageLeft",
       "title": "",
-      "steps": [
-        {
-          "number": 1,
-          "title": "Verständnis & Strategie",
-          "description": "Verstehen und Strukturieren. Mit dem Golden Circle Framework entwickeln wir eure einzigartige Positionierung. Was ist eure Botschaft? Wer sind eure Kunden?"
-        },
-        {
-          "number": 2,
-          "title": "Design & Entwicklung",
-          "description": "Nutzerzentriert, professionell, effizient. Basierend auf der Strategie entwickeln wir interaktive Design-Prototypen und setzen diese technisch um."
-        },
-        {
-          "number": 3,
-          "title": "Livegang & Optimierung",
-          "description": "Professioneller Partner an eurer Seite. Nach dem Launch begleiten wir euch weiter mit Support, Wartung und kontinuierlicher Optimierung."
-        }
-      ],
-      "layout": "alternating"
+      "content": "<p>Diagramm mit WHY in der Mitte, umgeben von Kreisen mit WHAT links und HOW rechts, farbige Segmente stehen für verschiedene Analysebereiche – symbolisiert klare Strategie und zielgerichtete Umsetzung.</p>",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/e46c9bfd-2f1e-465b-8dd5-9b8a9d43ac97/a-stylized-infographic-illustration-depi_Ue2kIKlVSsK4-Pbstil1gg_8o1E1+Ia4RMGOAUlLdR1tUA.png",
+        "alt": "Golden Circle Diagramm - WHY, HOW, WHAT"
+      }
     },
     {
-      "type": "waveDivider",
-      "topColor": "beige",
-      "bottomColor": "white",
-      "height": "medium"
-    },
-    {
-      "type": "servicesGrid",
-      "title": "Unsere Leistungen",
-      "subtitle": "Alles aus einer Hand für euren digitalen Erfolg",
-      "services": [
+      "type": "imageTextAlternating",
+      "title": "",
+      "items": [
         {
-          "title": "Webdesign & Entwicklung",
-          "description": "Individuelle Websites mit modernem Design und optimaler User Experience.",
-          "cta": { "label": "Mehr erfahren", "href": "/services/website-erstellen", "variant": "text" }
+          "eyebrow": "1. Verständnis & Strategie",
+          "title": "Verstehen und Strukturieren.",
+          "description": "<p>Zuerst schaffen wir ein tiefes Verständnis für eure Ziele und die Bedürfnisse eurer Kunden. Daraus entwickeln wir eine klare Struktur und Botschaft, damit eure neue Webseite nicht nur schön, sondern vor allem erfolgreich wird.</p>",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/6ee6bbce-9d42-4cda-9f24-c1fe32e39c5f/image-that-conveys-the-following-partner_MSDYydBZQrO7REUdXr27eQ_Vy1+YyQY7S-yQ_X29-18jCQ.png",
+            "alt": "Digitale Illustration eines Computers mit geöffneten Webseiten und Anwendungen"
+          },
+          "cta": {
+            "label": "Was ist eure Botschaft?",
+            "href": "/ueber-uns#kontakt",
+            "variant": "text"
+          }
         },
         {
-          "title": "Squarespace Expertise",
-          "description": "Als Gold Partner entwickeln wir professionelle Squarespace-Websites.",
-          "cta": { "label": "Mehr erfahren", "href": "/squarespace-agentur", "variant": "text" }
+          "eyebrow": "2. Webdesign & Entwicklung",
+          "title": "Nutzerzentriert, professionell, effizient.",
+          "description": "<p>Wir nutzen moderne, benutzerfreundliche Systeme, um eure Webseite effizient zu realisieren. Ihr erhaltet ein professionelles Design und erstklassige Funktionalität, die eure Kunden auf jedem Gerät begeistert.</p>",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/d53a9b4e-b7a3-4dcb-92d6-f3edae3c15b7/a-render-of-a-macbook-pro-like-laptop-di_E74U8zM-RVm7moaCW9+LddQ_mOWRABLGTju6z-WQGxMRnA.png",
+            "alt": "Laptop mit einem Diagramm, das auf dem Bildschirm einen steigenden Trend zeigt"
+          },
+          "cta": {
+            "label": "Findet Euer passendes CMS",
+            "href": "/blog/cms-check-schweiz",
+            "variant": "text"
+          }
         },
         {
-          "title": "SEO & Marketing",
-          "description": "Suchmaschinenoptimierung und digitale Marketingstrategien.",
-          "cta": { "label": "Mehr erfahren", "href": "/services/beratung", "variant": "text" }
-        },
-        {
-          "title": "AI Beratung",
-          "description": "Künstliche Intelligenz praktisch nutzen für euer KMU.",
-          "cta": { "label": "Mehr erfahren", "href": "/services/ai-beratung", "variant": "text" }
+          "eyebrow": "3. Betrieb & Unterstützung",
+          "title": "Professioneller Partner an eurer Seite.",
+          "description": "<p>Der Startschuss ist erst der Anfang. Mit unserem Rundum-Sorglos-Paket aus Hosting, Sicherheit und Support stehen wir euch auch nach dem Launch jederzeit zuverlässig und unkompliziert zur Seite.</p>",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/d8bb5dd5-add6-41a1-a7db-7e07f09a67ad/Woman_interacting_with_digital_interface.jpg",
+            "alt": "Zusammenarbeit und Support"
+          },
+          "cta": {
+            "label": "Kostenloses Erstgespräch buchen",
+            "href": "/termin",
+            "variant": "text"
+          }
         }
-      ],
-      "columns": "4"
+      ]
     },
     {
       "type": "textContent",
       "id": "team",
-      "title": "Die Menschen hinter Noevu",
-      "content": "<p>Ein eingespieltes Team aus erfahrenen Spezialisten für Webdesign, Entwicklung und digitale Strategie.</p>",
+      "title": "Die Menschen hinter Noevu.",
+      "content": "",
       "alignment": "center"
     },
     {
-      "type": "featuresList",
-      "features": [
+      "type": "teamGrid",
+      "members": [
         {
-          "title": "Noël Bossart",
-          "description": "Gründer & CEO – Über 25 Jahre Erfahrung in Webdesign und digitaler Strategie."
+          "name": "Noel Bossart",
+          "role": "Gründer & Digital-Stratege",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/placeholder-team-noel.jpg",
+            "alt": "Noel Bossart, Gründer von Noevu"
+          },
+          "bio": "<p>Mit über 27 Jahren Erfahrung ist Noel der strategische Kopf von Noevu. Er erkennt die Einzigartigkeit eures Unternehmens und übersetzt sie in überzeugende digitale Lösungen. Als euer Ansprechpartner sorgt er dafür, dass eure Vision übertroffen wird.</p>",
+          "linkedin": "https://www.linkedin.com/in/noeibožs/"
         },
         {
-          "title": "Tobias Morf",
-          "description": "Creative Director – Spezialist für User Experience und visuelles Design."
+          "name": "Tobias Morf",
+          "role": "Mitgründer und strategischer Berater",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/placeholder-team-tobias.jpg",
+            "alt": "Tobias Morf, Mitgründer von Noevu"
+          },
+          "bio": "<p>Als erfahrener Partner, verbindet Tobias seine Faszination für neue Technologien mit der Liebe zu innovativen Lösungen. Ihr profitiert von einem Weitblick, der technisches Potenzial in echten unternehmerischen Mehrwert verwandelt.</p>",
+          "linkedin": "https://www.linkedin.com/in/tobiasmorf/"
         },
         {
-          "title": "Michael Karrer",
-          "description": "Senior Developer – Experte für moderne Web-Technologien."
+          "name": "Michael Karrer",
+          "role": "Mitgründer und Sales & Beratung",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/placeholder-team-michael.jpg",
+            "alt": "Michael Karrer, Mitgründer von Noevu"
+          },
+          "bio": "<p>Michaels Begeisterung gilt den innovativen Machern und erstklassigen Web-Applikationen. Seine Leidenschaft für Qualität stellt sicher, dass Projekt nicht nur funktionieren, sondern begeistert.</p>",
+          "linkedin": "https://www.linkedin.com/in/michaelkarrer/"
         },
         {
-          "title": "Anabel Hafstad",
-          "description": "Content Strategist – Spezialistin für SEO und digitale Kommunikation."
+          "name": "Anabel Hafstad",
+          "role": "Senior SEO-Expertin",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/placeholder-team-anabel.jpg",
+            "alt": "Anabel Hafstad, Senior SEO-Expertin"
+          },
+          "bio": "<p>Anabel ist unsere Spezialistin, wenn es darum geht, euch bei Google nach vorne zu bringen. Mit ihrer Expertise stellt sie sicher, dass eure neue Webseite nicht nur gut aussieht, sondern auch von den richtigen Kunden gefunden wird – die Grundlage für nachhaltiges Wachstum.</p>",
+          "linkedin": "https://www.linkedin.com/in/anabel-hafstad/"
         }
       ],
-      "columns": "2"
+      "layout": "4-column"
+    },
+    {
+      "type": "cta",
+      "title": "Termin vereinbaren",
+      "description": "",
+      "ctas": [
+        {
+          "label": "Termin vereinbaren",
+          "href": "/kontakt#termin",
+          "variant": "primary"
+        }
+      ],
+      "backgroundColor": "green"
+    },
+    {
+      "type": "socialResponsibility",
+      "eyebrow": "Social Responsibility",
+      "title": "Soziale Verantwortung. Liegt in unserer DNA.",
+      "description": "<p>Mit Noevu wählt Ihr nicht nur Qualität und Effizienz, sondern auch ein Unternehmen, das soziale Verantwortung lebt. Wir engagieren uns aktiv in Brasilien, um Kindern und Jugendlichen durch Bildungsprojekte zu helfen, dem Kreislauf von Armut und Gewalt zu entkommen.</p>",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/94b3c506-0906-4dbb-8e4a-da75f82ebb8c/a-cinematic-photograph-of-a-group-of-div_huHsvqbyQ3m7t_vuPQki8w_3kk50VDkSEGd7he5uM8+Zrw.png",
+        "alt": "Jugendliche arbeiten an Laptops in einem Klassenraum mit Wandbild CODING FUTURE"
+      },
+      "cta": {
+        "label": "Mehr über das Projekt",
+        "href": "https://familyboss.art/#more",
+        "variant": "primary",
+        "external": true
+      }
+    },
+    {
+      "type": "textContent",
+      "eyebrow": "Kontakt",
+      "title": "Bereit, eure Geschichte zu erzählen?",
+      "content": "<p>Sucht ihr einen Partner, der euch professionelle Webseiten-Beratung bietet, strategisch denkt, effizient handelt und Verantwortung übernimmt? Dann lasst uns reden. Wir freuen uns darauf, eure Vision kennenzulernen und gemeinsam euer digitales Projekt zu meistern.</p>",
+      "alignment": "center"
+    },
+    {
+      "type": "cta",
+      "title": "Sichert euch eure kostenlose Beratung:",
+      "description": "",
+      "ctas": [
+        {
+          "label": "Anruf vereinbaren",
+          "href": "/termin",
+          "variant": "primary"
+        }
+      ],
+      "backgroundColor": "green"
     },
     {
       "type": "testimonials",
-      "title": "Das sagen unsere Kunden",
-      "rating": {
-        "average": 4.9,
-        "count": 13,
-        "source": "Google"
-      },
+      "title": "",
       "testimonials": [
         {
-          "quote": "Noevu hat unsere Erwartungen übertroffen. Die neue Website ist nicht nur schön, sondern bringt auch messbare Ergebnisse.",
-          "author": "Martin Künzi",
-          "company": "Wohnperspektive GmbH",
+          "quote": "Noevu kombiniert Innovation und Präzision, und hat für uns eine Webseite entwickelt, die nicht nur durch ihre Qualität besticht, sondern auch durch einfache Bedienung begeistert. Absolute Empfehlung!",
+          "author": "Reto Gerber",
+          "company": "Rrevival – Geschäftsführer",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/c3e98caf-9c07-4a4e-9c9e-8fc1b7f8aa3c/Reto.png",
+            "alt": "Reto Gerber, Geschäftsführer Rrevival"
+          },
           "rating": 5
         },
         {
-          "quote": "Professionell, schnell und unkompliziert. Die Zusammenarbeit mit Noevu war ein Vergnügen.",
-          "author": "Sandra Meier",
-          "company": "Davatz Anwaltskanzlei",
-          "rating": 5
-        },
-        {
-          "quote": "Endlich eine Website, die wir selbst pflegen können. Das CMS ist so einfach zu bedienen!",
-          "author": "Thomas Weber",
-          "company": "Weber Handwerk",
+          "quote": "Unser Projekt wurde dank klarer Struktur und effizientem Zeitmanagement perfekt umgesetzt. Unsere neue Homepage übertrifft die Erwartungen und gibt unseren Kunden ein attraktives Schaufenster zu unserer Arbeit.",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH – Geschäftsführer",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/49b7a3f2-c64f-4ff5-9ccf-9f8e08eb1ac3/Vogel-Dentaltechnik-04.jpg",
+            "alt": "Benedikt Vogel, Geschäftsführer Vogel Dental GmbH"
+          },
           "rating": 5
         }
       ]
     },
     {
       "type": "cta",
-      "title": "Bereit für euren digitalen Erfolg?",
-      "description": "Lasst uns gemeinsam eure digitale Präsenz auf das nächste Level bringen. Kostenlose Erstberatung – unverbindlich und persönlich.",
+      "title": "Erfolgreiche Webseiten Projekte",
+      "description": "",
       "ctas": [
         {
-          "label": "Termin buchen",
-          "href": "/termin",
+          "label": "Projekte ansehen",
+          "href": "/projekte",
           "variant": "primary"
-        },
-        {
-          "label": "Kontakt aufnehmen",
-          "href": "/kontakt",
-          "variant": "secondary"
         }
       ],
-      "backgroundColor": "green"
+      "backgroundColor": "beige"
     },
     {
       "type": "blogGrid",
-      "title": "Insights & Ressourcen",
-      "subtitle": "Expertenwissen für euren digitalen Vorsprung",
-      "limit": 3
+      "title": "Insights für den digitalen Vorsprung.",
+      "subtitle": "Hier findet Ihr, was heute funktioniert – und morgen den Unterschied macht. Für alle, die nicht nur mitlaufen, sondern vorangehen wollen.",
+      "limit": 12
     }
   ]
 }

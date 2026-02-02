@@ -1,80 +1,81 @@
 {
   "main": [
     {
-      "label": "Webdesign",
+      "label": "Services",
+      "href": "/services",
       "children": [
-        { "label": "Website erstellen lassen", "href": "/websites-erstellen-lassen" },
-        { "label": "Webdesign Agentur", "href": "/webdesign-agentur" },
-        { "label": "KMU Website", "href": "/webdesign-agentur/kmu-webseite-erstellen-lassen" },
-        { "label": "Webseiten Beratung & Hilfe", "href": "/webseiten-beratung-hilfe" },
-        { "label": "Projekte", "href": "/projekte" }
+        { "label": "Website erstellen lassen", "href": "/webdesign-agentur/kmu-webseite-erstellen-lassen" },
+        { "label": "Webseiten Beratung und Hilfe", "href": "/squarespace-hilfe" },
+        { "label": "Squarespace Agentur", "href": "/squarespace-webdesign" },
+        { "label": "AI Beratung für Schweizer KMU", "href": "/services/ai-beratung" }
       ]
     },
     {
-      "label": "Squarespace",
+      "label": "Projekte",
+      "href": "/projekte"
+    },
+    {
+      "label": "Agentur",
+      "href": "/ueber-uns",
       "children": [
-        { "label": "Squarespace Agentur", "href": "/squarespace-agentur" },
-        { "label": "Squarespace Webdesign", "href": "/squarespace-webdesign" },
-        { "label": "Squarespace Entwicklung", "href": "/squarespace-agentur/webseiten-entwicklung" },
-        { "label": "Squarespace Hilfe", "href": "/squarespace-hilfe" },
-        { "label": "Gold Partner", "href": "/squarespace-agentur/gold-partner" }
+        { "label": "Über uns", "href": "/webdesign-agentur" },
+        { "label": "Warum Noevu?", "href": "/webdesign-agentur#why" },
+        { "label": "Unser Team", "href": "/webdesign-agentur#team" },
+        { "label": "Soziale Verantwortung", "href": "/webdesign-agentur#social" },
+        { "label": "Squarespace Experte & Circle Gold Partner", "href": "/schweizer-squarespace-circle-gold-partner-2025" },
+        { "label": "Kontakt", "href": "/kontakt" }
       ]
     },
     {
       "label": "Ressourcen",
+      "href": "/ressourcen",
       "children": [
-        { "label": "Blog & Artikel", "href": "/blog" },
-        { "label": "Ressourcen & Tools", "href": "/ressourcen" },
-        { "label": "Webseiten Tipps", "href": "/webseiten-tipps" },
-        { "label": "Squarespace Tipps", "href": "/squarespace-webseiten-tipps" },
-        { "label": "AI Beratung", "href": "/services/ai-beratung" }
+        { "label": "Webseiten Tipps & Insights", "href": "/squarespace-webseiten-tipps" },
+        { "label": "Squarespace Anleitung", "href": "/blog/squarespace-webseite-erstellen-anleitung-2025" },
+        { "label": "Kostenlose online CMS-Evaluation", "href": "/blog/cms-evaluation-fuer-schweizer-kmus" },
+        { "label": "AI für KMU – Jetzt loslegen", "href": "/blog/warum-schweizer-kmu-jetzt-ai-brauchen" }
       ]
     },
     {
-      "label": "Agentur",
-      "children": [
-        { "label": "Über uns", "href": "/ueber-uns" },
-        { "label": "Squarespace Experte", "href": "/schweizer-squarespace-experte" },
-        { "label": "Gold Partner 2026", "href": "/schweizer-squarespace-circle-gold-partner-2025" },
-        { "label": "Kontakt", "href": "/kontakt" }
-      ]
+      "label": "Infos für LLMs",
+      "href": "/llms.txt"
     }
   ],
   "footer": {
     "columns": [
       {
-        "title": "Dienstleistungen",
+        "title": "Services",
         "links": [
-          { "label": "Website erstellen lassen", "href": "/websites-erstellen-lassen" },
-          { "label": "KMU Website", "href": "/webdesign-agentur/kmu-webseite-erstellen-lassen" },
-          { "label": "Webseiten Beratung", "href": "/webseiten-beratung-hilfe" },
-          { "label": "AI Beratung", "href": "/services/ai-beratung" }
+          { "label": "Website erstellen lassen", "href": "/webdesign-agentur/kmu-webseite-erstellen-lassen" },
+          { "label": "Webseiten Beratung und Hilfe", "href": "/squarespace-hilfe" },
+          { "label": "Squarespace Agentur", "href": "/squarespace-webdesign" },
+          { "label": "AI Beratung für Schweizer KMU", "href": "/services/ai-beratung" }
         ]
       },
       {
-        "title": "Squarespace",
+        "title": "Agentur",
         "links": [
-          { "label": "Squarespace Agentur", "href": "/squarespace-agentur" },
-          { "label": "Squarespace Webdesign", "href": "/squarespace-webdesign" },
-          { "label": "Squarespace Hilfe", "href": "/squarespace-hilfe" },
-          { "label": "Gold Partner", "href": "/squarespace-agentur/gold-partner" }
+          { "label": "Über uns", "href": "/webdesign-agentur" },
+          { "label": "Projekte", "href": "/projekte" },
+          { "label": "Squarespace Gold Partner", "href": "/schweizer-squarespace-circle-gold-partner-2025" },
+          { "label": "Kontakt", "href": "/kontakt" }
         ]
       },
       {
         "title": "Ressourcen",
         "links": [
-          { "label": "Projekte", "href": "/projekte" },
+          { "label": "Webseiten Tipps & Insights", "href": "/squarespace-webseiten-tipps" },
           { "label": "Blog & Artikel", "href": "/blog" },
-          { "label": "Webseiten Tipps", "href": "/webseiten-tipps" },
-          { "label": "Squarespace Tipps", "href": "/squarespace-webseiten-tipps" }
+          { "label": "Squarespace Anleitung", "href": "/blog/squarespace-webseite-erstellen-anleitung-2025" },
+          { "label": "CMS-Evaluation", "href": "/blog/cms-evaluation-fuer-schweizer-kmus" }
         ]
       },
       {
-        "title": "Über uns",
+        "title": "Kontakt",
         "links": [
-          { "label": "Über Noevu", "href": "/ueber-uns" },
-          { "label": "Kontakt", "href": "/kontakt" },
-          { "label": "Termin buchen", "href": "/termin" },
+          { "label": "Termin buchen", "href": "/kontakt#termin" },
+          { "label": "Kontaktformular", "href": "/kontakt" },
+          { "label": "Infos für LLMs", "href": "/llms.txt" },
           { "label": "Datenschutz & Impressum", "href": "/datenschutz-impressum" }
         ]
       }
@@ -86,6 +87,6 @@
   ],
   "cta": {
     "label": "Termin buchen",
-    "href": "/termin"
+    "href": "/kontakt#termin"
   }
 }

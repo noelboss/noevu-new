@@ -9,7 +9,7 @@
     {
       "type": "hero",
       "headline": "AI-Beratung und Implementierung für Schweizer KMU",
-      "subheadline": "Künstliche Intelligenz für Schweizer KMU – Euer Weg in die Zukunft beginnt hier.",
+      "subheadline": "Künstliche **Intelligenz** für Schweizer KMU – Euer Weg in die **Zukunft** beginnt hier.",
       "description": "Entdeckt, wie Künstliche Intelligenz Euch als Schweizer KMU voranbringt – mehr Effizienz, neue Chancen und konkrete Resultate für Euer Geschäft.",
       "backgroundImage": {
         "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/fe21b5e6-ecb3-475c-903a-1b18b80f9b69/a-high-quality-digital-render-without-an_J9KvaV4pQ2SQPAjXj6B98A_709s_ZBpSR6LLgLftUnAmg.png",
@@ -19,63 +19,165 @@
       "theme": "black-bold",
       "ctas": [
         {
-          "label": "Schulung oder Potenzialanalyse anfragen",
+          "label": "AI-Beratung buchen",
           "href": "/termin",
           "variant": "primary"
         }
-      ]
+      ],
+      "trustBadge": {
+        "text": "Schweizer KMU vertrauen auf Noevu",
+        "subtext": "4.9 Sterne Bewertungen auf Google",
+        "link": "https://go.noevu.ch/review"
+      }
     },
     {
       "type": "splitContent",
+      "eyebrow": "Wie können KMU mit AI beginnen?",
       "headline": "Wie Schweizer KMU AI im Firmenalltag effektiv einsetzen können?",
       "content": "Ihr kennt den Druck, laufend innovativ zu bleiben und gleichzeitig Kosten sowie Fachkräftemangel im Griff zu haben. Die Digitalisierung verlangt schnelle, kluge Entscheidungen – doch der Weg zu Künstlicher Intelligenz wirkt oft kompliziert und undurchsichtig. Wie könnt Ihr AI nutzen, ohne Euch im Technik-Dschungel zu verlieren?",
       "theme": "black-bold"
     },
     {
       "type": "splitContent",
+      "eyebrow": "AI Lösungen für KMU",
       "headline": "So startet Euere Firma mit AI durch",
-      "content": "Der Markt ist voll von AI-Beratern, die Euch alles versprechen. Wir sind anders. Mit über 25 Jahren Erfahrung in digitalen Lösungen und Prozessen begleiten wir Euch Schritt für Schritt. Gemeinsam entdecken wir das Potenzial von AI für Eure Abläufe. Und wir implementieren die passenden Lösungen – pragmatisch, sicher und messbar.",
+      "content": "Der Markt ist voll von AI‑Beratern, die Euch alles versprechen. Wir sind anders. Mit über 25 Jahren Erfahrung in digitalen Lösungen und Prozessen begleiten wir Euch Schritt für Schritt. Gemeinsam entdecken wir das Potenzial von AI für Eure Abläufe. Und wir implementieren die passenden Lösungen – pragmatisch, sicher und messbar.",
       "theme": "black"
     },
     {
-      "type": "servicesGrid",
-      "title": "Unsere AI-Services",
-      "services": [
+      "type": "bentoGrid",
+      "items": [
         {
           "title": "AI Schulung für Mitarbeitende",
-          "description": "Praxisnahe KI-Schulung: Mitarbeitende lernen sichere, effiziente Workflows mit modernen AI-Tools – direkt an euren Use-Cases. Produktivität, Qualität & Maturität steigen.",
+          "description": "Praxisnahe KI‑Schulung: Mitarbeitende lernen sichere, effiziente Workflows mit modernen AI‑Tools – direkt an euren Use‑Cases. Produktivität, Qualität & Maturität steigen.",
           "image": {
             "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/931d0650-8d12-49af-942d-cb39c25bc150/AI-Schulung_fuer_Mitarbeitende.png",
-            "alt": "AI Schulung für Mitarbeitende"
+            "alt": "Laptop mit Diagrammen und Grafiken, umgeben von Pflanzen und Bürobedarf – steht für Noevus Lösungen, die Euch Klarheit und Erfolg durch datenbasierte Analysen bieten."
           }
         },
         {
           "title": "AI Potenzialanalyse für KMU",
           "description": "Wir identifizieren rentable AI-Use-Cases, Automatisierungspotenzial und Datenquellen. Klarer Fahrplan mit Quick Wins, ROI-Schätzung und Risiken.",
           "image": {
-            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/5a0a11da-85d2-44b0-8008-2f8c3a368222/strategy-paper-with-the-title-strategie.png",
-            "alt": "AI Potenzialanalyse"
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/5a0a11da-85d2-44b0-8008-2f8c3a368222/strategy-paper-with-the-title-strategie_PeuFSOT0RBKpNprLOvBWjg_iksrybLaSXupfDR_vOxK5Q.png",
+            "alt": "Strategy paper with AI potential analysis"
           }
         },
         {
           "title": "AI im KMU implementieren",
           "description": "Wir planen, bauen und integrieren sichere AI-Lösungen in Ihre Systeme. Von MVP bis Rollout – messbare Effizienz, Compliance und Betreuung.",
           "image": {
-            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/d1db9936-d57e-4a9e-aad6-4d4553638bc8/a-dashboard-landing-page-for-a-data-anal.png",
-            "alt": "AI Implementation"
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/d1db9936-d57e-4a9e-aad6-4d4553638bc8/a-dashboard-landing-page-for-a-data-anal_QOtAy4-hTbWrzox8I8dwqw_CXbu8hLuQyiDtM6HZCeM5w.png",
+            "alt": "AI dashboard for data analysis"
           }
         }
       ],
-      "columns": "3",
+      "ctas": [
+        {
+          "label": "Schulung oder Potentzialanalyse anfragen",
+          "href": "/termin",
+          "variant": "primary"
+        }
+      ],
       "theme": "black"
     },
     {
       "type": "splitContent",
-      "headline": "AI, die für Euch arbeitet.",
+      "eyebrow": "Warum KMU AI brauchen",
+      "headline": "AI, die für Euch **arbeitet**.",
       "content": "Wir übersetzen komplexe KI-Konzepte in einfache, wirkungsvolle Lösungen, die direkt auf Eure Bedürfnisse als Schweizer KMU zugeschnitten sind. Mit uns bekommt Ihr nicht nur eine Strategie, sondern konkrete Ergebnisse: Automatisierte Abläufe, bessere Entscheidungen und spürbare Entlastung für Euer Team. Wir begleiten Euch von der ersten Idee bis zur erfolgreichen Umsetzung und machen AI zum echten Vorteil – nicht zum Buzzword.",
+      "theme": "black"
+    },
+    {
+      "type": "bentoGrid",
+      "items": [
+        {
+          "title": "Mehr Zeit & weniger Kosten",
+          "description": "Ihr automatisiert Routinetätigkeiten wie Dateneingabe oder Kundenanfragen und spart bis zu 30% der Betriebskosten. So bleibt Euch mehr Raum für die wichtigen Aufgaben.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/c09ee9e4-0bec-4534-834a-c1035bccae8d/a-minimalist-product-photography-setup-f_85VMykPqQ7OtRpkPhnYpoQ_RrPolxUHRXW6c6e1IGh8SA.png",
+            "alt": "AI Bringt Kosten- und Zeitersparnis"
+          }
+        },
+        {
+          "title": "Bessere Entscheidungen",
+          "description": "Ihr nutzt Eure Daten gezielt, erkennt Trends frühzeitig und trefft fundierte, zukunftsweisende Entscheidungen. Das sichert Euch den Vorsprung am Markt.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/ab7285f0-7045-4ba1-a2df-73a211891840/a-sophisticated-lifestyle-advertisement-_v4_Ik5KCT928kAbQ-N-CBw_drGaPECpQRSJC4Ngk0-ckQ.png",
+            "alt": "AI kann dabei helfen, datenbasierte Entscheidungen zu fällen."
+          }
+        },
+        {
+          "title": "Stärkeres Marketing & Sales",
+          "description": "Ihr erreicht Eure Zielgruppe präziser, steigert die Produktivität im Marketing und Vertrieb um über 20% und generiert mehr Umsatz – mit weniger Aufwand.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/5f7ab37f-d748-449b-828d-c5f079d8fb87/a-professional-photograph-of-a-modern-sp_8fhaeee2TKy6gkf2TGGV3g_2XqJZnt7RtuOrSMZ7Vsb7w.png",
+            "alt": "Starkes Marketing mit AI und Automatisierung"
+          }
+        },
+        {
+          "title": "Kundenservice, der begeistert",
+          "description": "Mit Al-basierten Chatbots reagiert Ihr schneller und per- sönlicher. Das freut Eure Kunden und entlastet Euer Team spürbar.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/fe7939f1-df89-4bc9-9254-81828eecffe8/usability.jpeg",
+            "alt": "Mit AI den Kundenservice revolutionieren"
+          }
+        },
+        {
+          "title": "Wettbewerbsvorsprung sichern",
+          "description": "Ihr integriert Al in Eure Unternehmensstrategie und positioniert Euch als Innovatoren in Eurer Branche. So bleibt Ihr vorne und gestaltet die Zukunft aktiv mit.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/d8bb5dd5-add6-41a1-a7db-7e07f09a67ad/Woman_interacting_with_digital_interface.jpg",
+            "alt": "Mit AI als KMU bereit für die Zukunft."
+          }
+        }
+      ],
+      "theme": "black-bold"
+    },
+    {
+      "type": "process",
+      "headline": "So einfach funktioniert Euer Weg zur AI-**Transformation**",
+      "steps": [
+        {
+          "eyebrow": "Kennenlernen",
+          "title": "Kostenlose Erstberatung",
+          "description": "Wir hören Euch zu, verstehen Eure Bedürfnisse und zeigen mögliche Lösungsansätze für AI in Eurem KMU.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/e77ece4d-f42a-41f6-b0e0-ef566baf6a99/AI+Beratung+f%C3%BCr+Schweizer+KMU,+Z%C3%BCrich,+KI%E2%80%91Potentialanalyse+%E2%80%94+Frau+mit+Helm+vor+Bergkulisse+bei+Sonnenuntergang,+symbolisch+f%C3%BCr+Digitalisierung+und+Automatisierung",
+            "alt": "Symbolbild KI‑Potentialanalyse für Schweizer KMU, AI Beratung ZürichSchweizer KMU, AI Implementierung, Zürich — Person im Raumanzug mit Helm vor Alpenpanorama, Metapher für Innovationsfähigkeit und datengetriebene Prozesse"
+          }
+        },
+        {
+          "eyebrow": "Eure Ziele im Fokus",
+          "title": "KI Potenzialanalyse & Individuelle AI-Strategieentwicklung.",
+          "description": "Wir analysieren Eure Geschäftsmodelle und identifizieren gemeinsam die vielversprechendsten AI-Anwendungsfälle für Euer KMU. Mit diesen Erkenntnissen und Euren Zielen entwickeln wir eine klare, umsetzbare **AI-Roadmap**, die Eure Ressourcen optimal nutzt und messbare Ergebnisse liefert.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/a86c94ca-55cf-4430-97a1-b59d442551d3/Snowy_mountain_with_green_slopes.jpg",
+            "alt": "KI Implementierung und Effizienzsteigerung für KMU, Schweiz — Weite Bergkulisse mit hellen Wolken und grünen Hängen, Fokus auf nachhaltige Optimierung"
+          }
+        },
+        {
+          "eyebrow": "Prozesse mit AI",
+          "title": "KI Implementierung für KMU",
+          "description": "Basierend auf eurer individuellen Strategie und euren Zielen implementieren wir strategisch künstliche Intelligenz in eure Prozesse und Aufgaben, damit diese schneller, effizienter und müheloser ablaufen.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/4c0897cd-903c-4fc8-a76b-a7b5c79ccc98/Modern_minimalist_computer_server_design.jpg",
+            "alt": "Digitalisierung und AI‑Prozesse für Schweizer KMU, Skalierbarkeit, Sicherheit — Minimalistischer Server auf neutralem Hintergrund, Hardware für produktive KI‑Workloads"
+          }
+        },
+        {
+          "eyebrow": "AI-Coaching & kontinuierliche Verbesserung",
+          "title": "AI Training & Weiterentwicklung",
+          "description": "Nach der initialen Implementierung der AI überwachen wir die Prozesse und nehmen laufend Verbesserungen vor. Parallel wird das Team in der Nutzung der künstlichen Intelligenz geschult.",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/b1f4e71a-a3d7-43dc-9348-d559afc4de67/Robot_on_mountain_peak.jpg",
+            "alt": "Ein humanoider Roboter mit einem Rucksack schreitet auf einem Felsen in den Bergen. Im Hintergrund sind schneebedeckte Gipfel und Wolken am Himmel sichtbar."
+          }
+        }
+      ],
       "ctas": [
         {
-          "label": "Schulung oder Potenzialanalyse anfragen",
+          "label": "Kostenlose AI-Beratung buchen",
           "href": "/termin",
           "variant": "primary"
         }
@@ -83,116 +185,95 @@
       "theme": "black"
     },
     {
-      "type": "featuresList",
-      "title": "Das bringt AI Eurem Unternehmen",
-      "features": [
-        {
-          "title": "Mehr Zeit & weniger Kosten",
-          "description": "Ihr automatisiert Routinetätigkeiten wie Dateneingabe oder Kundenanfragen und spart bis zu 30% der Betriebskosten. So bleibt Euch mehr Raum für die wichtigen Aufgaben."
-        },
-        {
-          "title": "Bessere Entscheidungen",
-          "description": "Ihr nutzt Eure Daten gezielt, erkennt Trends frühzeitig und trefft fundierte, zukunftsweisende Entscheidungen. Das sichert Euch den Vorsprung am Markt."
-        },
-        {
-          "title": "Stärkeres Marketing & Sales",
-          "description": "Ihr erreicht Eure Zielgruppe präziser, steigert die Produktivität im Marketing und Vertrieb um über 20% und generiert mehr Umsatz – mit weniger Aufwand."
-        },
-        {
-          "title": "Kundenservice, der begeistert",
-          "description": "Mit AI-basierten Chatbots reagiert Ihr schneller und persönlicher. Das freut Eure Kunden und entlastet Euer Team spürbar."
-        },
-        {
-          "title": "Wettbewerbsvorsprung sichern",
-          "description": "Ihr integriert AI in Eure Unternehmensstrategie und positioniert Euch als Innovatoren in Eurer Branche. So bleibt Ihr vorne und gestaltet die Zukunft aktiv mit."
-        }
-      ],
-      "columns": "2",
+      "type": "splitContent",
+      "eyebrow": "AI Beratung, KI Hilfe & Kontakt",
+      "headline": "Bereit, Euer Schweizer KMU mit AI zu stärken?",
+      "content": "Lasst uns gemeinsam die Potenziale der Künstlichen Intelligenz für Euer Unternehmen entdecken. Noevu ist Euer vertrauenswürdiger Partner für AI-Beratung und Implementierung in der Schweiz.",
+      "subheading": "Eure unverbindliche Anfrage zu AI:",
       "theme": "black-bold"
     },
     {
+      "type": "testimonials",
+      "testimonials": [
+        {
+          "quote": "Noevu kombiniert Innovation und Präzision, und uns zu einer Webseite verholfen, die nicht nur durch ihre Qualität besticht, sondern auch durch einfache Bedienung begeistert. Absolute Empfehlung!",
+          "author": "Reto Gerber",
+          "company": "Rrevival – Geschäftsführer",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/8e7a85f8-1e6a-48dd-a850-4d5d56914ae3/Reto.png",
+            "alt": "Porträt eines lächelnden CEOs im hellen Hemd vor hellem Hintergrund – steht für authentische Kundenerfahrungen und das Vertrauen, das Noevu durch erfolgreiche Projekte und positive Reviews schafft."
+          }
+        },
+        {
+          "quote": "Dank der professionellen Beratung und Hilfe von Noevu konnten wir unser Webseiten Projekt perfekt umsetzen. Die neue Homepage übertrifft unsere Erwartungen und öffnet unseren Kunden die Türen zu unserer Arbeit.",
+          "author": "Benedikt Vogel",
+          "company": "Vogel Dental GmbH –Geschäftsführer",
+          "image": {
+            "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/d00ee46d-7165-406d-a7c0-f884dbcc5e23/Vogel-Dentaltechnik-04.jpg",
+            "alt": "Erfahrener Dentaltechniker und Geschäftsführer mit Brille, grauem Haar und Bart im Poloshirt mit Vogel Dentaltechnik-Logo vor hellem Hintergrund – steht für Vertrauen, Expertise und erfolgreiche Zusammenarbeit mit Noevu."
+          }
+        }
+      ],
+      "theme": "black"
+    },
+    {
+      "type": "splitContent",
+      "eyebrow": "Hilfreiche Tipps, Artikel und Projekte",
+      "headline": "**Insights** für den digitalen **Vorsprung**.",
+      "content": "Diese [Referenzen erfolgreicher KMU Webprojekte](/projekte) und zeigen wie professionelle Webseiten Beratung, Umsetzung und Pflege zu nachhaltigem Erfolg führen.",
+      "theme": "black-bold"
+    },
+    {
+      "type": "blogPostsGrid",
+      "posts": [
+        "neue-website-fuer-ausgleichskasse-und-sozialversicherung",
+        "bexio-tools-mit-ai-fuer-kmu",
+        "warum-schweizer-kmu-jetzt-ai-brauchen",
+        "ai-tools-kmu-schweiz",
+        "webdesign-fuer-schweizer-tourismus-unternehmen",
+        "neue-webseite-fuer-handwerker",
+        "squarespace-webseite-fuer-sozialbetrieb",
+        "squarespace-webseite-fuer-interimsmanagement",
+        "squarespace-webseite-fuer-zuercher-sicherheitsfirma"
+      ],
+      "limit": 9,
+      "theme": "black"
+    },
+    {
       "type": "faq",
-      "title": "Häufige Fragen zur AI-Beratung",
+      "title": "Häufig gestellte Fragen zur AI-Beratung für Schweizer KMU.",
+      "subtitle": "Eure Frage war nicht dabei?",
+      "description": "Kein Problem. Schreibt uns eine E-Mail oder ruft uns an. Wir freuen uns darauf, Eure Vision zu verstehen und gemeinsam die nächste Stufe für Euer Unternehmen zu zünden.",
       "items": [
         {
-          "question": "Was sind die ersten Schritte bei einer AI-Implementierung?",
-          "answer": "Wir starten mit einer Potenzialanalyse, um zu verstehen, wo AI in Eurem Unternehmen den grössten Mehrwert bringen kann. Danach definieren wir Quick Wins und entwickeln einen klaren Fahrplan."
+          "question": "Was sind die grössten Vorteile von AI für mein Schweizer KMU?",
+          "answer": "AI bietet Euch zahlreiche Vorteile, darunter Effizienzsteigerung durch Automatisierung (bis zu 30% Reduktion der Arbeitslast im Kundenservice), Kostenersparnis, verbesserte datengestützte Entscheidungsfindung, optimiertes Marketing und Sales (über 20% Produktivitätssteigerung) sowie einen innovativen Kundenservice."
         },
         {
-          "question": "Wie lange dauert eine AI-Schulung?",
-          "answer": "Unsere praxisnahen Schulungen dauern in der Regel einen halben bis ganzen Tag. Die Mitarbeitenden lernen dabei direkt an Euren Use-Cases und können das Gelernte sofort anwenden."
+          "question": "Welche Herausforderungen gibt es bei der AI-Implementierung in KMU und wie kann Noevu helfen?",
+          "answer": "Herausforderungen sind oft mangelnde AI-Fähigkeiten im Team, fehlende Spezialisten und unzureichende Datenqualität. Noevu unterstützt Euch mit massgeschneiderter Strategieentwicklung, praxisnaher Implementierung und gezielten Schulungen, um diese Hürden zu überwinden."
         },
         {
-          "question": "Ist AI für mein kleines Unternehmen überhaupt relevant?",
-          "answer": "Absolut! Gerade KMU können von AI profitieren, weil sie flexibler sind und schneller neue Prozesse implementieren können. Viele AI-Tools sind heute auch für kleinere Budgets erschwinglich."
+          "question": "Wie finde ich die passende AI-Lösung für mein Unternehmen?",
+          "answer": "In unserer kostenlosen Erstberatung analysieren wir Eure spezifischen Bedürfnisse und Geschäftsprozesse. Basierend darauf empfehlen wir Euch die AI-Lösungen, die den grössten Mehrwert für Euer KMU versprechen und sich nahtlos integrieren lassen."
         },
         {
-          "question": "Wie steht es um den Datenschutz bei AI-Lösungen?",
-          "answer": "Datenschutz hat bei uns höchste Priorität. Wir setzen auf Lösungen, die DSGVO-konform sind und beraten Euch, wie Ihr AI-Tools sicher einsetzen könnt."
+          "question": "Ist AI auch für kleine Schweizer Unternehmen erschwinglich?",
+          "answer": "Ja, absolut. Viele AI-Lösungen sind heute skalierbar und können auch mit kleineren Budgets implementiert werden. Wir legen Wert auf kosteneffiziente Ansätze und zeigen Euch, wie Ihr mit gezielten AI-Investitionen einen hohen Return on Investment erzielt."
         },
         {
-          "question": "Welche AI-Tools setzt ihr ein?",
-          "answer": "Wir arbeiten mit einer Vielzahl von Tools – von ChatGPT und Claude für Textarbeit über Midjourney für Bildgenerierung bis hin zu Automatisierungsplattformen wie Make oder n8n. Die Auswahl richtet sich immer nach Euren spezifischen Anforderungen."
+          "question": "Wie wirkt sich AI auf die Arbeitsplätze in meinem KMU aus?",
+          "answer": "AI ist kein Ersatz für Eure Mitarbeiter, sondern ein mächtiges Werkzeug, das sie unterstützt. AI automatisiert repetitive Aufgaben, wodurch Euer Team sich auf kreativere und strategischere Tätigkeiten konzentrieren kann. Wir begleiten Euch bei der Integration und bieten Schulungen an, um Eure Mitarbeiter fit für die AI-Zukunft zu machen."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Kostenlose AI-Beratung",
+          "href": "/termin",
+          "variant": "primary"
         }
       ],
       "theme": "dark"
-    },
-    {
-      "type": "testimonials",
-      "title": "Das sagen unsere Kunden",
-      "rating": {
-        "average": 4.9,
-        "count": 13,
-        "source": "Google"
-      },
-      "testimonials": [
-        {
-          "quote": "Noevu GmbH arbeitet talentiert, effizient und mit einem klaren Blick für durchdachte Lösungen. Die vielseitigen Kompetenzen mit modernen Web-CMS-Tools sind beeindruckend, und die Zusammenarbeit ist professionell, angenehm und zielführend. Besonders schätze ich den strukturierten Arbeitsstil, der technische Präzision mit einem stimmigen Verständnis für gutes Design verbindet.",
-          "author": "Martin Künzi",
-          "company": "",
-          "rating": 5,
-          "date": "2025-03-01"
-        },
-        {
-          "quote": "Ich lernte die Noevu GmbH und den Geschäftsführer als äusserst kompetent und engagiert kennen. Die langjährige Erfahrung im Bereich digitaler Medien, breites Fachwissen und der Einsatz modernster Tools und Technologien führen zu herausragenden Ergebnissen.",
-          "author": "Tobias Morf",
-          "company": "",
-          "rating": 5,
-          "date": "2024-08-01"
-        },
-        {
-          "quote": "Als Schweizer Werbesprecher bin ich auf eine top Webseite angewiesen. Noevu GmbH zeichnet sich durch eine ganzheitliche und strategische Beratung aus. Dabei zeigen sie sich nicht nur technisch versiert, sondern integrieren auch modernstes Webdesign in Ihre Konzepte.",
-          "author": "Andy Zimmermann",
-          "company": "Schweizer Werbesprecher",
-          "rating": 5,
-          "date": "2024-08-01"
-        },
-        {
-          "quote": "Noevu hat uns hoch professionell, engagiert und termingerecht zu einer tollen neuen online Präsenz verholfen. Die Zusammenarbeit war jederzeit konstruktiv, die Beratung hervorragend.",
-          "author": "Benedikt Vogel",
-          "company": "",
-          "rating": 5,
-          "date": "2024-08-01"
-        }
-      ]
-    },
-    {
-      "type": "cta",
-      "title": "Bereit für den nächsten Schritt?",
-      "description": "Lasst uns gemeinsam entdecken, wie AI Euer Unternehmen voranbringen kann. Kostenloses Erstgespräch – unverbindlich und persönlich.",
-      "ctas": [
-        {
-          "label": "Termin buchen",
-          "href": "/termin",
-          "variant": "primary"
-        },
-        {
-          "label": "Kontakt aufnehmen",
-          "href": "/kontakt",
-          "variant": "secondary"
-        }
-      ],
-      "backgroundColor": "green"
     }
   ]
 }
