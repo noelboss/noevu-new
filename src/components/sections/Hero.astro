@@ -193,45 +193,21 @@ const avatars = [
 
   /* ═══════════════════════════════════════════════════════════════
      SUBHEADLINE (h1 - SEO title, styled small)
-     Matches live site: 14px Heebo, muted primary color
+     Matches live site: 14px Heebo, muted primary color, plain text
      ═══════════════════════════════════════════════════════════════ */
   .hero__subheadline {
-    display: inline-flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.375rem;
+    display: block;
     font-family: var(--font-sans, 'Heebo', sans-serif);
     font-size: 0.875rem; /* 14px */
     font-weight: 400;
-    color: hsla(var(--color-primary-hsl, 163, 46%, 26%), 0.75);
+    color: var(--color-primary, #255a4e);
+    opacity: 0.8;
     margin-bottom: 1rem;
     line-height: 1.5;
-    /* Tag-style glass effect */
-    backdrop-filter: blur(10px);
-    background-color: hsla(163, 46%, 26%, 0.1);
-    padding: 4px 12px;
-    border-radius: 100px;
-    transition: background-color 0.25s ease-in-out;
-  }
-
-  .hero__subheadline:hover {
-    background-color: hsla(163, 46%, 26%, 0.2);
   }
 
   .hero__subheadline-dot {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    background: hsla(17, 100%, 59%, 0.8);
-    border-radius: 50%;
-    box-shadow: 0 0 5px hsla(17, 100%, 59%, 0.6);
-    flex-shrink: 0;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .hero__subheadline:hover .hero__subheadline-dot {
-    background: hsla(17, 100%, 59%, 1);
-    box-shadow: 0 0 8px hsla(17, 100%, 59%, 1);
+    display: none; /* Hidden to match live site */
   }
 
   /* ═══════════════════════════════════════════════════════════════
