@@ -10,16 +10,16 @@
       "type": "hero",
       "headline": "Schweizer Squarespace Circle Gold Partner 2026",
       "subheadline": "Schweizer Squarespace Experte beauftragen",
-      "description": "<p>Wir freuen uns, 2026 als Squarespace Circle Gold Partner ausgezeichnet worden zu sein. Doch was bedeutet dieser Titel für Euch und Euer Projekt? Bewiesene Expertise, Stabilität und strategischer Vorsprung. Kurz gesagt: Es ist weit mehr als ein Logo auf unserer Webseite. Es ist unser offizielles Versprechen an Euch für höchste Qualität, strategischen Weitblick und einen exklusiven Vorteil. Und aber noch wertvoller als jedes Zertifikat? Über 25 Jahre Experten-Erfahrung in der Entwicklung digitaler Lösungen für Schweizer KMU.</p>",
+      "description": "<p>Wir freuen uns, 2026 als Squarespace Circle Gold Partner ausgezeichnet worden zu sein. Doch was bedeutet dieser Titel für Euch und Euer Projekt? Bewiesene Expertise, Stabilität und strategischer Vorsprung. Kurz gesagt: Es ist weit mehr als ein Logo auf unserer Webseite. Es ist unser offizielles Versprechen an Euch für höchste Qualität, strategischen Weitblick und einen exklusiven Vorteil. Und aber noch wertvoller als jedes Zertifikat? [Über 25 Jahre Experten-Erfahrung in der Entwicklung](/squarespace-agentur/webseiten-entwicklung) digitaler Lösungen für Schweizer KMU.</p>",
       "alignment": "left",
       "ctas": [
         {
-          "label": "Erfolgreiche Projekte",
+          "label": "Erfolgreiche Webseiten Projekte",
           "href": "/projekte",
           "variant": "primary"
         },
         {
-          "label": "Experten-Termin buchen",
+          "label": "Kostenloser Experten-Termin buchen",
           "href": "/termin",
           "variant": "secondary"
         }
@@ -32,8 +32,51 @@
     },
     {
       "type": "textContent",
-      "title": "Warum Schweizer KMUs unsere Squarespace Experten wählen?",
-      "content": "<p>Der Gold Partner Status ist nicht einfach zu erreichen. Er erfordert nachweislich erfolgreiche Projekte, tiefes Plattformwissen und strategische Exzellenz. Das sind die drei Gründe, warum Schweizer Unternehmen uns vertrauen.</p>",
+      "title": "Warum Schweizer KMUs unsere Squarespace Experten **wählen**?",
+      "content": "",
+      "alignment": "center"
+    },
+    {
+      "type": "featuresList",
+      "title": "Vergleich: Klassische Agentur vs. Noevu Squarespace Experten",
+      "features": [
+        {
+          "title": "Individuelle Designs",
+          "description": "**Klassische Agentur:** Templates oder Umsetzung individueller Designs teuer\n\n**Noevu:** Massgeschneiderte Designs kosteneffizient umgesetzt"
+        },
+        {
+          "title": "CMS",
+          "description": "**Klassische Agentur:** Komplizierte CMS wie WordPress oder Typo3\n\n**Noevu:** Einfache Bedienung eurer Website mit Squarespace"
+        },
+        {
+          "title": "Websitewartung",
+          "description": "**Klassische Agentur:** Regelmässige Updates mittels externer Plugins\n\n**Noevu:** Keine Wartung erforderlich"
+        },
+        {
+          "title": "Projektdauer",
+          "description": "**Klassische Agentur:** Monate\n\n**Noevu:** Ein paar Wochen"
+        },
+        {
+          "title": "Fokus",
+          "description": "**Klassische Agentur:** Kompliziertes Dienstleistungsangebot\n\n**Noevu:** Ein klarer Fokus: Eure Website"
+        },
+        {
+          "title": "Effizienz",
+          "description": "**Klassische Agentur:** Gleicher Ansatz wie vor 10 Jahren\n\n**Noevu:** Einsatz von AI und modernster Technologie für mehr Effizienz"
+        }
+      ],
+      "columns": "2"
+    },
+    {
+      "type": "textContent",
+      "title": "**Vorteile für Euer KMU**",
+      "content": "",
+      "alignment": "center"
+    },
+    {
+      "type": "textContent",
+      "title": "Was der Suqarespace Gold-Status für Euer Projekt bedeutet",
+      "content": "<p>Die Wahl des richtigen Experten für Eure digitale Präsenz ist ein strategischer Entscheid. Unsere Zertifizierung als **Squarespace Circle Gold Partner** 2026 gibt Euch die Sicherheit, auf einen der führenden Schweizer Experten zu setzen. Für Euch bedeutet das eine Zusammenarbeit, die auf einem geprüften Fundament aus Erfahrung und Erfolg steht. Ihr profitiert von einem Profi, der nicht nur die technischen Möglichkeiten von Squarespace beherrscht, sondern auch die strategische Tiefe besitzt, um Eure unternehmerischen Ziele in ein überzeugendes digitales Erlebnis zu übersetzen. Das ist der Massstab für echte **Qualität im Webdesign**.</p>",
       "alignment": "center"
     },
     {
@@ -45,14 +88,15 @@
     {
       "type": "splitContent",
       "layout": "imageLeft",
-      "title": "1. Nachweisbarer Erfolg",
-      "content": "<p>Eine bedeutende Anzahl an erfolgreich umgesetzten, hochwertigen Kundenprojekten pro Jahr. Jedes Projekt wird mit höchster Qualität und Sorgfalt realisiert.</p><p>Unsere Kunden reichen von lokalen Handwerkern bis zu schweizweiten Unternehmen – alle mit einer gemeinsamen Erfahrung: Professionalität und Ergebnisse.</p>",
+      "title": "Nachweisbarer Erfolg",
+      "subtitle": "**1. Grund**",
+      "content": "<p>Eine bedeutende Anzahl an erfolgreich umgesetzten, hochwertigen Kundenprojekten pro Jahr.</p>",
       "image": {
-        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/1744737599650-S447T9W3ZDJ4KR4T5TTH/Gold+Partner+Badge+Black+Gold.png",
-        "alt": "Squarespace Circle Gold Partner"
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/9b1eb194-7eac-4e46-9b42-5131cedfc155/a-render-of-a-macbook-pro-like-laptop-di_E74U8zM-RVm7moaCW9+LddQ_mOWRABLGTju6z-WQGxMRnA.png",
+        "alt": "Laptop mit einem Diagramm, das auf dem Bildschirm einen steigenden Trend zeigt"
       },
       "cta": {
-        "label": "Zu unseren Projekten",
+        "label": "Zu unseren Squarespace Projekten",
         "href": "/projekte",
         "variant": "primary"
       }
@@ -60,26 +104,28 @@
     {
       "type": "splitContent",
       "layout": "imageRight",
-      "title": "2. Tiefes Produktwissen",
-      "content": "<p>Ein umfassendes Verständnis der gesamten Squarespace-Plattform, von den Grundlagen bis zu komplexen Custom-Entwicklungen.</p><p>Wir kennen jeden Winkel des Systems und finden für jede Anforderung die intelligenteste Lösung.</p>",
+      "title": "Tiefef Produktwissen:",
+      "subtitle": "**2. Grund**",
+      "content": "<p>Ein umfassendes Verständnis der gesamten Squarespace-Plattform, um für jede Herausforderung die smarteste und effizienteste Lösung zu finden.</p>",
       "image": {
-        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/e868c7be-8196-452e-850f-893092f9ebb6/Schweizer+Squarespace+Experte+und+Gold+Partner.png",
-        "alt": "Squarespace Expertise"
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/3093755f-ad25-47f5-9b01-4dd4ba1da91e/image-that-conveys-the-following-partner_MSDYydBZQrO7REUdXr27eQ_Vy1+YyQY7S-yQ_X29-18jCQ.png",
+        "alt": "Digitale Illustration eines Computers mit geöffneten Webseiten und Anwendungen"
       },
       "cta": {
         "label": "Unsere Squarespace Entwicklung",
-        "href": "/squarespace-agentur",
+        "href": "/squarespace-agentur/webseiten-entwicklung",
         "variant": "primary"
       }
     },
     {
       "type": "splitContent",
       "layout": "imageLeft",
-      "title": "3. Strategische Exzellenz",
-      "content": "<p>Die Fähigkeit, komplexe Anforderungen zu verstehen und in wachstumsfördernde Websites zu übersetzen.</p><p>Wir denken nicht nur in Websites, sondern in Geschäftszielen. Eure Website wird zum strategischen Asset für nachhaltigen Erfolg.</p>",
+      "title": "Strategische Exzellenz",
+      "subtitle": "**2. Grund**",
+      "content": "<p>Die Fähigkeit, komplexe Anforderungen zu verstehen und Webseiten zu schaffen, die nicht nur gut aussehen, sondern als strategisches Werkzeug für Wachstum dienen.</p>",
       "image": {
-        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/5a0a11da-85d2-44b0-8008-2f8c3a368222/strategy-paper-with-the-title-strategie_PeuFSOT0RBKpNprLOvBWjg_iksrybLaSXupfDR_vOxK5Q.png",
-        "alt": "Strategische Planung"
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/c05970b1-5470-4f7d-8651-56fd6618b181/a-stylized-infographic-illustration-depi_Ue2kIKlVSsK4-Pbstil1gg_8o1E1+Ia4RMGOAUlLdR1tUA.png",
+        "alt": "Diagramm mit 'WHY' in der Mitte, umgeben von Kreisen mit 'WHAT' und 'HOW'"
       },
       "cta": {
         "label": "Wie wir Projekte umsetzen",
@@ -94,9 +140,27 @@
       "height": "medium"
     },
     {
+      "type": "splitContent",
+      "layout": "imageRight",
+      "title": "Exklusive Vorteile der Gold-Partnerschaft – direkt für Euch.",
+      "subtitle": "**Vorteile**",
+      "content": "<p>Als **zertifizierter Squarespace Experte** mit Gold-Status haben wir einen direkten Draht zu Squarespace, von dem Euer Projekt unmittelbar profitiert. Das sind keine leeren Worte, sondern handfeste Vorteile:</p><ul><li>**Priorisierter Support direkt von Squarespace:** Sollte eine technische Herausforderung auftreten, die tief im System liegt, erhalten wir beschleunigten Zugang zu den Entwicklern. Für Euch bedeutet das: Kürzere Wartezeiten und schnellere, verlässliche Lösungen, damit Euer Business ohne Unterbruch weiterläuft.</li><li>**Exklusiver Zugang zu neuen Features:** Wir erhalten oft vor allen anderen Zugriff auf neue Beta-Funktionen. Das ermöglicht uns, Eure Webseite mit den neusten technologischen Möglichkeiten auszustatten und Euch so einen klaren Vorsprung im Markt zu sichern.</li><li>**Strategische Einblicke aus erster Hand:** Wir sind Teil einer Community der besten Squarespace-Experten weltweit und stehen im direkten Austausch mit dem Produktteam. Dieses Wissen fliesst direkt in die strategische Planung Eures Projekts ein.</li></ul>",
+      "image": {
+        "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/43abad7d-c039-4716-b84c-f5b1b9574ba2/Noevu+Squarespace+Experte+und+Circle+Gold+Partner.png",
+        "alt": "Schweizer Squarespace Experte und Circle Gold Partner 2025 Noevu GmbH"
+      }
+    },
+    {
+      "type": "textContent",
+      "title": "Bereit, eure **Geschichte** zu erzählen?",
+      "subtitle": "**Squarespace Experte kontaktieren**",
+      "content": "<p>Ihr sucht nicht einfach eine Webseite. Ihr sucht einen digitalen Grundstein für Euren zukünftigen Erfolg, eine klare Botschaft an Eure Kunden und einen Partner, der Eure Vision versteht und teilt. Die Zusammenarbeit mit einem Squarespace Circle Gold Partner wie uns gibt Euch die Gewissheit, dass jeder Aspekt Eures Projekts – von der ersten strategischen Frage bis zum finalen Go-Live – auf höchstem Niveau umgesetzt wird.</p>",
+      "alignment": "center"
+    },
+    {
       "type": "contactForm",
-      "title": "Kostenlose Squarespace Experten Beratung",
-      "description": "Lasst uns über euer Projekt sprechen – unverbindlich und kostenlos.",
+      "title": "Sichert euch eure **kostenlose** Squarespace Experten Beratung:",
+      "description": "",
       "fields": [
         {
           "name": "name",
@@ -124,24 +188,25 @@
       "title": "Was unsere Kunden sagen",
       "testimonials": [
         {
-          "quote": "Noevu kombiniert Innovation und Experten-Wissen auf beeindruckende Weise. Das Ergebnis: Eine Website, die unsere Erwartungen übertrifft.",
+          "quote": "Noevu kombiniert Innovation und Experten-Wissen, und hat für uns [eine Squarespace Webseite entwickelt](/squarespace-agentur/webseiten-entwicklung), die nicht nur durch ihre Qualität besticht, sondern auch durch einfache Bedienung begeistert. Absolute Empfehlung!",
           "author": "Reto Gerber",
-          "company": "Rrevival",
+          "company": "Rrevival – Geschäftsführer",
           "rating": 5
         },
         {
-          "quote": "Unser Projekt wurde dank der Expertise professionell und termingerecht umgesetzt. Klare Empfehlung!",
+          "quote": "Unser Projekt wurde dank der Expertise von Noevu und klarer Struktur und effizientem Zeitmanagement perfekt umgesetzt. Unsere [neue Squarespace Homepage](/squarespace-agentur/webseiten-entwicklung) übertrifft die Erwartungen und gibt unseren Kunden ein attraktives Schaufenster zu unserer Arbeit.",
           "author": "Benedikt Vogel",
-          "company": "Vogel Dental GmbH",
+          "company": "Vogel Dental GmbH –Geschäftsführer",
           "rating": 5
         }
       ]
     },
     {
       "type": "blogGrid",
-      "title": "Experten Insights",
-      "subtitle": "Für den digitalen Vorsprung",
-      "limit": 3,
+      "title": "Experten **Insights** für den digitalen **Vorsprung**.",
+      "subtitle": "**Profi-Ressourcen**",
+      "description": "Hier findet Ihr, was heute funktioniert – und morgen den Unterschied macht. Für alle, die nicht nur mitlaufen, sondern vorangehen wollen.",
+      "limit": 12,
       "category": "Squarespace"
     },
     {
