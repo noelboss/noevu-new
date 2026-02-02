@@ -233,26 +233,16 @@ const avatars = [
   }
 
   /* Emphasized text in headline - orange highlight underline
-     Using pseudo-element since parent uses background-clip: text */
+     Using text-decoration for underline that properly follows text baseline */
   .hero__headline :global(strong),
   .hero__headline :global(em) {
     font-style: normal;
     font-weight: inherit; /* Abril Fatface only has one weight */
-    position: relative;
-    display: inline;
-  }
-
-  .hero__headline :global(strong)::after,
-  .hero__headline :global(em)::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0.1em;
-    height: 0.3em;
-    background: hsla(var(--color-orange-hsl, 17, 100%, 59%), 0.3);
-    z-index: -1;
-    border-radius: 2px;
+    text-decoration: underline;
+    text-decoration-color: hsla(var(--color-orange-hsl, 17, 100%, 59%), 0.6);
+    text-decoration-thickness: 0.15em;
+    text-underline-offset: 0.05em;
+    text-decoration-skip-ink: none;
   }
 
   /* ═══════════════════════════════════════════════════════════════
