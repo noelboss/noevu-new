@@ -62,53 +62,111 @@ const displayPosts = posts.slice(0, limit);
 </section>
 
 <style>
+  /* Blog Grid Section - matching original noevu.ch design */
   .blog-grid {
-    background-color: var(--theme-bg);
+    background-color: var(--color-bg-beige);
+    position: relative;
   }
 
+  /* Section Header */
   .blog-grid__header {
     text-align: center;
-    max-width: 600px;
+    max-width: 700px;
     margin-inline: auto;
-    margin-bottom: var(--space-12);
+    margin-bottom: var(--space-16);
   }
 
   .blog-grid__title {
-    font-size: var(--text-3xl);
-    margin-bottom: var(--space-4);
-    color: var(--theme-text);
+    font-family: var(--font-heading);
+    font-size: clamp(var(--text-3xl), 5vw, var(--text-5xl));
+    font-weight: var(--font-normal);
+    line-height: var(--leading-tight);
+    margin-bottom: var(--space-6);
+    /* Gradient text effect matching original */
+    background: linear-gradient(120deg, var(--color-primary) 0%, var(--color-neutral-700) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .blog-grid__subtitle {
+    font-family: var(--font-sans);
     font-size: var(--text-lg);
-    color: var(--theme-text-muted);
+    line-height: var(--leading-relaxed);
+    color: var(--color-text-muted);
+    max-width: 540px;
+    margin-inline: auto;
   }
 
+  /* Blog Grid Layout - 1 -> 2 -> 3 columns responsive */
   .blog-grid__grid {
     display: grid;
+    grid-template-columns: 1fr;
     gap: var(--space-8);
   }
 
+  /* 2 columns on tablet */
   @media (min-width: 640px) {
     .blog-grid__grid {
       grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-6);
     }
   }
 
+  /* 3 columns on desktop */
   @media (min-width: 1024px) {
     .blog-grid__grid {
       grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-8);
     }
   }
 
+  /* Empty state message */
   .blog-grid__empty {
     text-align: center;
-    color: var(--theme-text-muted);
-    padding: var(--space-12);
+    color: var(--color-text-muted);
+    font-size: var(--text-lg);
+    padding: var(--space-16) var(--space-8);
+    /* Glass effect for empty state */
+    background-color: hsla(var(--color-white-hsl), 0.5);
+    border-radius: var(--radius-xl);
+    backdrop-filter: blur(5px);
   }
 
+  /* Footer with CTA button */
   .blog-grid__footer {
     text-align: center;
-    margin-top: var(--space-12);
+    margin-top: var(--space-16);
+    padding-top: var(--space-8);
+  }
+
+  .blog-grid__footer .btn--secondary {
+    /* Enhanced button styling */
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--text-base);
+    font-weight: var(--font-medium);
+    border-radius: var(--radius-lg);
+    border-width: 2px;
+    transition: all var(--transition-slow);
+    /* Subtle shadow on button */
+    box-shadow: 0 0 15px hsla(var(--color-white-hsl), 0.3),
+                8px 8px 40px hsla(var(--color-green-hsl), 0.15);
+  }
+
+  .blog-grid__footer .btn--secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px hsla(var(--color-white-hsl), 0.4),
+                8px 8px 50px hsla(var(--color-green-hsl), 0.25);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .blog-grid__header {
+      margin-bottom: var(--space-10);
+    }
+
+    .blog-grid__footer {
+      margin-top: var(--space-10);
+    }
   }
 </style>

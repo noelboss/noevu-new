@@ -2,6 +2,23 @@
 /* Colors extracted from original noevu.ch Squarespace site */
 
 :root {
+  /* Header dimensions for sticky nav offset */
+  --header-topbar-height: 2.5rem;
+  --header-main-height: 4rem;
+  --header-height: calc(var(--header-topbar-height) + var(--header-main-height));
+  /* HSL Color Values for glass effects and transparency */
+  --color-green-hsl: 163, 41%, 25%;
+  --color-orange-hsl: 17, 100%, 59%;
+  --color-beige-hsl: 38, 35%, 92%;
+  --color-white-hsl: 0, 0%, 100%;
+  --color-grey-hsl: 0, 0%, 40%;
+  --color-black-hsl: 0, 0%, 8%;
+
+  /* Semantic color aliases */
+  --color-green: #255a4e;
+  --color-orange: #ff6b30;
+  --color-orange-dark: #e55a20;
+
   /* Colors - Primary (Green) - from original site */
   --color-primary-50: #e8f0ee;
   --color-primary-100: #d1e1dd;
@@ -153,6 +170,8 @@ body {
   background-color: var(--color-bg);
 }
 
+/* Hero flows under sticky header - no offset needed */
+
 /* Typography defaults */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
@@ -268,6 +287,25 @@ img {
 .btn--accent:hover {
   background-color: var(--color-accent-600);
   color: var(--color-text-inverted);
+}
+
+.btn--full {
+  width: 100%;
+}
+
+.btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Material Symbols configuration */
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24;
 }
 
 /* Focus styles for accessibility */

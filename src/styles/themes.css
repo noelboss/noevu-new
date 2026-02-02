@@ -162,6 +162,163 @@
   color: var(--theme-heading);
 }
 
+/* ============================================
+   HEADING GRADIENT TEXT EFFECTS
+   Matching original noevu.ch gradient overlays
+   ============================================ */
+
+/* Light themes: green-to-grey gradient (330deg) */
+[data-theme="white"] h1,
+[data-theme="white"] h2,
+[data-theme="white"] h3,
+[data-theme="white-bold"] h1,
+[data-theme="white-bold"] h2,
+[data-theme="white-bold"] h3,
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light-bold"] h1,
+[data-theme="light-bold"] h2,
+[data-theme="light-bold"] h3,
+[data-theme="bright"] h1,
+[data-theme="bright"] h2,
+[data-theme="bright"] h3 {
+  background: linear-gradient(330deg, var(--color-primary, #255a4e) 20%, var(--color-neutral-700, #5f524a) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Dark themes: beige-to-white gradient (140deg) */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark-bold"] h1,
+[data-theme="dark-bold"] h2,
+[data-theme="dark-bold"] h3,
+[data-theme="black"] h1,
+[data-theme="black"] h2,
+[data-theme="black"] h3,
+[data-theme="black-bold"] h1,
+[data-theme="black-bold"] h2,
+[data-theme="black-bold"] h3 {
+  background: linear-gradient(140deg, #eddac6 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* bright-inverse theme: white text (no gradient needed) */
+[data-theme="bright-inverse"] h1,
+[data-theme="bright-inverse"] h2,
+[data-theme="bright-inverse"] h3 {
+  color: var(--color-text-inverted);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+/* ============================================
+   STRONG/EM GRADIENT UNDERLINE EFFECT
+   Animated underline that expands on hover
+   ============================================ */
+
+/* Light themes: green/black underline */
+[data-theme="white"] strong,
+[data-theme="white"] em,
+[data-theme="white-bold"] strong,
+[data-theme="white-bold"] em,
+[data-theme="light"] strong,
+[data-theme="light"] em,
+[data-theme="light-bold"] strong,
+[data-theme="light-bold"] em,
+[data-theme="bright"] strong,
+[data-theme="bright"] em {
+  font-style: normal;
+  font-weight: inherit;
+  background-image:
+    linear-gradient(60deg, var(--color-neutral-900) 0%, var(--color-primary) 120%),
+    linear-gradient(to right, var(--color-primary) 0%, transparent 100%);
+  background-repeat: no-repeat;
+  background-position: 0 0, 0 calc(100% - 0.15em);
+  background-size: 100% 100%, 0% 0.3em;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  -webkit-text-fill-color: transparent;
+  padding-inline: 0.15em;
+  transition: background-size 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+[data-theme="white"] strong:hover,
+[data-theme="white"] em:hover,
+[data-theme="white-bold"] strong:hover,
+[data-theme="white-bold"] em:hover,
+[data-theme="light"] strong:hover,
+[data-theme="light"] em:hover,
+[data-theme="light-bold"] strong:hover,
+[data-theme="light-bold"] em:hover,
+[data-theme="bright"] strong:hover,
+[data-theme="bright"] em:hover {
+  background-size: 100% 100%, 100% 0.3em;
+}
+
+/* Dark themes: beige/white underline */
+[data-theme="dark"] strong,
+[data-theme="dark"] em,
+[data-theme="dark-bold"] strong,
+[data-theme="dark-bold"] em,
+[data-theme="black"] strong,
+[data-theme="black"] em,
+[data-theme="black-bold"] strong,
+[data-theme="black-bold"] em {
+  font-style: normal;
+  font-weight: inherit;
+  background-image:
+    linear-gradient(60deg, #eddac6 0%, #ffffff 120%),
+    linear-gradient(to right, #ffffff 0%, transparent 100%);
+  background-repeat: no-repeat;
+  background-position: 0 0, 0 calc(100% - 0.15em);
+  background-size: 100% 100%, 0% 0.3em;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  -webkit-text-fill-color: transparent;
+  padding-inline: 0.15em;
+  transition: background-size 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+[data-theme="dark"] strong:hover,
+[data-theme="dark"] em:hover,
+[data-theme="dark-bold"] strong:hover,
+[data-theme="dark-bold"] em:hover,
+[data-theme="black"] strong:hover,
+[data-theme="black"] em:hover,
+[data-theme="black-bold"] strong:hover,
+[data-theme="black-bold"] em:hover {
+  background-size: 100% 100%, 100% 0.3em;
+}
+
+/* bright-inverse: white underline on orange bg */
+[data-theme="bright-inverse"] strong,
+[data-theme="bright-inverse"] em {
+  font-style: normal;
+  font-weight: inherit;
+  background-image:
+    linear-gradient(60deg, #ffffff 0%, #ffffff 100%),
+    linear-gradient(to right, #ffffff 0%, transparent 100%);
+  background-repeat: no-repeat;
+  background-position: 0 0, 0 calc(100% - 0.15em);
+  background-size: 100% 100%, 0% 0.3em;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  -webkit-text-fill-color: transparent;
+  padding-inline: 0.15em;
+  transition: background-size 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+[data-theme="bright-inverse"] strong:hover,
+[data-theme="bright-inverse"] em:hover {
+  background-size: 100% 100%, 100% 0.3em;
+}
+
 .section[data-theme] a:not(.btn) {
   color: var(--theme-link);
   transition: color var(--transition);

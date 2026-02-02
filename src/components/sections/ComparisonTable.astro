@@ -75,80 +75,105 @@ const { title, leftColumn, rightColumn } = data;
     color: var(--theme-heading);
   }
 
+  @media (min-width: 768px) {
+    .comparison__title {
+      font-size: var(--text-4xl);
+    }
+  }
+
   .comparison__grid {
-    display: grid;
-    gap: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    max-width: 900px;
+    margin-inline: auto;
   }
 
   @media (min-width: 768px) {
     .comparison__grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: var(--space-6);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
     }
   }
 
   .comparison__column {
     background-color: var(--color-bg-white);
-    border-radius: var(--radius-xl);
-    padding: var(--space-8);
-    border: 2px solid transparent;
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
   }
 
   .comparison[data-theme] .comparison__column {
     background-color: var(--theme-card-bg);
-    border-color: var(--theme-border);
+  }
+
+  @media (min-width: 768px) {
+    .comparison__column {
+      border-radius: 0;
+      padding: var(--space-8);
+    }
   }
 
   .comparison__column--highlighted {
-    border-color: var(--color-primary);
-    background-color: var(--color-primary-50);
+    background-color: var(--color-accent);
+    color: var(--color-text-inverted);
   }
 
   .comparison[data-theme] .comparison__column--highlighted {
-    border-color: var(--theme-accent);
-    background-color: var(--theme-accent-subtle);
+    background-color: var(--theme-accent, var(--color-accent));
+    color: var(--color-text-inverted);
+  }
+
+  @media (min-width: 768px) {
+    .comparison__column--highlighted {
+      border-radius: var(--radius-lg);
+      position: relative;
+      z-index: 1;
+      margin: calc(-1 * var(--space-3)) 0;
+      padding-block: calc(var(--space-8) + var(--space-3));
+      box-shadow: var(--shadow-lg);
+    }
   }
 
   .comparison__header {
-    font-size: var(--text-xl);
-    font-weight: var(--font-bold);
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     margin-bottom: var(--space-6);
-    text-align: center;
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--color-neutral-200);
   }
 
   .comparison[data-theme] .comparison__header {
     color: var(--theme-heading);
+    border-bottom-color: var(--theme-border);
   }
 
   .comparison__column--highlighted .comparison__header {
-    color: var(--color-primary);
-  }
-
-  .comparison[data-theme] .comparison__column--highlighted .comparison__header {
-    color: var(--theme-accent);
+    color: var(--color-text-inverted);
+    border-bottom-color: rgba(255, 255, 255, 0.3);
   }
 
   .comparison__list {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
   }
 
   .comparison__item {
     display: flex;
     align-items: flex-start;
     gap: var(--space-3);
-    padding-block: var(--space-3);
-    border-bottom: 1px solid var(--color-neutral-200);
-    font-size: var(--text-base);
-  }
-
-  .comparison[data-theme] .comparison__item {
-    border-bottom-color: var(--theme-border);
-  }
-
-  .comparison__item:last-child {
-    border-bottom: none;
+    font-size: var(--text-sm);
+    line-height: var(--leading-relaxed);
   }
 
   .comparison__icon {
@@ -163,7 +188,7 @@ const { title, leftColumn, rightColumn } = data;
   }
 
   .comparison[data-theme] .comparison__column--highlighted .comparison__icon {
-    color: var(--theme-accent);
+    color: var(--color-primary);
   }
 
   .comparison__column:not(.comparison__column--highlighted) .comparison__icon {
@@ -171,6 +196,22 @@ const { title, leftColumn, rightColumn } = data;
   }
 
   .comparison[data-theme] .comparison__column:not(.comparison__column--highlighted) .comparison__icon {
-    color: var(--theme-text-muted);
+    color: var(--theme-text-muted, var(--color-neutral-400));
+  }
+
+  /* Mobile horizontal scroll layout */
+  @media (max-width: 767px) {
+    .comparison__grid {
+      flex-direction: row;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: var(--space-4);
+    }
+
+    .comparison__column {
+      flex: 0 0 85%;
+      scroll-snap-align: start;
+    }
   }
 </style>

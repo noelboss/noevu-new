@@ -17,28 +17,92 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
   <div class="container">
     {title && <h2 class="faq__title">{title}</h2>}
 
-    <div class="faq__list" role="list">
+    <div class="faq__grid" role="list">
       {items.map((item, index) => {
         const itemId = `${sectionId}-${index}`;
         return (
-          <details class="faq__item" name={sectionId}>
-            <summary class="faq__question" id={`question-${itemId}`}>
-              {item.question}
-              <svg class="faq__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-              </svg>
-            </summary>
+          <div class="faq__item" data-faq-item>
+            <button
+              class="faq__question"
+              id={`question-${itemId}`}
+              aria-expanded="false"
+              aria-controls={`answer-${itemId}`}
+              type="button"
+            >
+              <span class="faq__question-text">{item.question}</span>
+              <span class="faq__icon-wrapper">
+                <span class="faq__icon" aria-hidden="true">
+                  <span class="faq__icon-line faq__icon-line--h"></span>
+                  <span class="faq__icon-line faq__icon-line--v"></span>
+                </span>
+              </span>
+            </button>
             <div
-              class="faq__answer"
+              class="faq__answer-wrapper"
               id={`answer-${itemId}`}
-              set:html={item.answer}
-            />
-          </details>
+              aria-labelledby={`question-${itemId}`}
+              hidden
+            >
+              <div class="faq__answer" set:html={item.answer} />
+            </div>
+          </div>
         );
       })}
     </div>
   </div>
 </section>
+
+<script>
+  function initFAQAccordion() {
+    const faqItems = document.querySelectorAll('[data-faq-item]');
+
+    faqItems.forEach((item) => {
+      const button = item.querySelector('.faq__question') as HTMLButtonElement;
+      const answerWrapper = item.querySelector('.faq__answer-wrapper') as HTMLElement;
+
+      if (!button || !answerWrapper) return;
+
+      button.addEventListener('click', () => {
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Close all other items (accordion behavior)
+        faqItems.forEach((otherItem) => {
+          if (otherItem !== item) {
+            const otherButton = otherItem.querySelector('.faq__question') as HTMLButtonElement;
+            const otherWrapper = otherItem.querySelector('.faq__answer-wrapper') as HTMLElement;
+            if (otherButton && otherWrapper) {
+              otherButton.setAttribute('aria-expanded', 'false');
+              otherWrapper.hidden = true;
+              otherWrapper.style.maxHeight = '0';
+            }
+          }
+        });
+
+        // Toggle current item
+        if (isExpanded) {
+          button.setAttribute('aria-expanded', 'false');
+          answerWrapper.style.maxHeight = '0';
+          // Wait for animation to complete before hiding
+          setTimeout(() => {
+            answerWrapper.hidden = true;
+          }, 300);
+        } else {
+          button.setAttribute('aria-expanded', 'true');
+          answerWrapper.hidden = false;
+          // Force reflow for animation
+          answerWrapper.offsetHeight;
+          answerWrapper.style.maxHeight = answerWrapper.scrollHeight + 'px';
+        }
+      });
+    });
+  }
+
+  // Initialize on page load
+  initFAQAccordion();
+
+  // Re-initialize on Astro page transitions
+  document.addEventListener('astro:page-load', initFAQAccordion);
+</script>
 
 <style>
   .faq {
@@ -55,33 +119,37 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
     text-align: center;
     font-size: var(--text-3xl);
     margin-bottom: var(--space-12);
+    color: var(--color-primary);
   }
 
   .faq[data-theme] .faq__title {
     color: var(--theme-heading);
   }
 
-  .faq__list {
-    max-width: 800px;
+  /* Two-column grid layout matching original design */
+  .faq__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 var(--space-12);
+    max-width: 1100px;
     margin-inline: auto;
   }
 
+  @media (max-width: 768px) {
+    .faq__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
   .faq__item {
-    border-bottom: 1px solid var(--color-neutral-200);
+    border-bottom: 1px solid var(--color-neutral-300);
   }
 
   .faq[data-theme] .faq__item {
     border-bottom-color: var(--theme-border);
   }
 
-  .faq__item:first-child {
-    border-top: 1px solid var(--color-neutral-200);
-  }
-
-  .faq[data-theme] .faq__item:first-child {
-    border-top-color: var(--theme-border);
-  }
-
+  /* Question button */
   .faq__question {
     display: flex;
     justify-content: space-between;
@@ -89,45 +157,122 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
     gap: var(--space-4);
     width: 100%;
     padding: var(--space-5) 0;
-    font-size: var(--text-lg);
-    font-weight: var(--font-semibold);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    font-weight: var(--font-medium);
     text-align: left;
     cursor: pointer;
-    list-style: none;
+    background: none;
+    border: none;
+    color: var(--color-text);
+    transition: color var(--transition);
+  }
+
+  .faq__question:hover {
+    color: var(--color-primary);
   }
 
   .faq[data-theme] .faq__question {
     color: var(--theme-text);
   }
 
-  .faq__question::-webkit-details-marker {
-    display: none;
-  }
-
-  .faq__question::marker {
-    display: none;
-  }
-
-  .faq__icon {
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    color: var(--color-primary);
-    transition: transform var(--transition);
-  }
-
-  .faq[data-theme] .faq__icon {
+  .faq[data-theme] .faq__question:hover {
     color: var(--theme-accent);
   }
 
-  .faq__item[open] .faq__icon {
-    transform: rotate(180deg);
+  .faq__question-text {
+    flex: 1;
+    line-height: var(--leading-snug);
+  }
+
+  /* Icon wrapper with orange dot accent */
+  .faq__icon-wrapper {
+    position: relative;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Orange dot accent on hover/active */
+  .faq__icon-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    top: -2px;
+    right: -2px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity var(--transition), transform var(--transition);
+    box-shadow: 0 0 6px hsla(var(--color-orange-hsl), 0.6);
+  }
+
+  .faq__question:hover .faq__icon-wrapper::before,
+  .faq__question[aria-expanded="true"] .faq__icon-wrapper::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Plus/minus icon using CSS */
+  .faq__icon {
+    position: relative;
+    width: 14px;
+    height: 14px;
+  }
+
+  .faq__icon-line {
+    position: absolute;
+    background-color: var(--color-primary);
+    transition: transform var(--transition-slow), opacity var(--transition-slow);
+  }
+
+  .faq[data-theme] .faq__icon-line {
+    background-color: var(--theme-accent);
+  }
+
+  .faq__icon-line--h {
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .faq__icon-line--v {
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Rotate to minus when expanded */
+  .faq__question[aria-expanded="true"] .faq__icon-line--v {
+    transform: translateX(-50%) rotate(90deg);
+    opacity: 0;
+  }
+
+  /* Answer wrapper for smooth animation */
+  .faq__answer-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .faq__answer-wrapper[hidden] {
+    display: block;
   }
 
   .faq__answer {
     padding-bottom: var(--space-6);
     color: var(--color-text-muted);
     line-height: var(--leading-relaxed);
+    font-size: var(--text-base);
   }
 
   .faq[data-theme] .faq__answer {
@@ -145,6 +290,11 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
   .faq__answer :global(a) {
     color: var(--color-primary);
     text-decoration: underline;
+    transition: color var(--transition-fast);
+  }
+
+  .faq__answer :global(a:hover) {
+    color: var(--color-primary-700);
   }
 
   .faq[data-theme] .faq__answer :global(a) {
@@ -163,5 +313,20 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
 
   .faq__answer :global(li) {
     margin-bottom: var(--space-2);
+  }
+
+  .faq__answer :global(strong) {
+    font-weight: var(--font-semibold);
+  }
+
+  /* Focus styles for accessibility */
+  .faq__question:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  .faq[data-theme] .faq__question:focus-visible {
+    outline-color: var(--theme-accent);
   }
 </style>

@@ -11,9 +11,14 @@ const { title, logos } = data;
 ---
 
 <section class="logo-gallery section--sm" data-theme={theme}>
-  <div class="container">
-    {title && <p class="logo-gallery__title">{title}</p>}
-    <div class="logo-gallery__grid">
+  {title && (
+    <div class="container">
+      <p class="logo-gallery__title">{title}</p>
+    </div>
+  )}
+  <div class="logo-gallery__wrapper">
+    <div class="logo-gallery__track">
+      {/* First set of logos */}
       {logos.map((logo) => (
         <div class="logo-gallery__item">
           {logo.href ? (
@@ -35,6 +40,28 @@ const { title, logos } = data;
           )}
         </div>
       ))}
+      {/* Duplicate set for seamless infinite scroll */}
+      {logos.map((logo) => (
+        <div class="logo-gallery__item" aria-hidden="true">
+          {logo.href ? (
+            <a href={logo.href} target="_blank" rel="noopener noreferrer" tabindex="-1">
+              <img
+                src={logo.image.src}
+                alt=""
+                loading="lazy"
+                class="logo-gallery__logo"
+              />
+            </a>
+          ) : (
+            <img
+              src={logo.image.src}
+              alt=""
+              loading="lazy"
+              class="logo-gallery__logo"
+            />
+          )}
+        </div>
+      ))}
     </div>
   </div>
 </section>
@@ -42,6 +69,7 @@ const { title, logos } = data;
 <style>
   .logo-gallery {
     background-color: var(--theme-bg);
+    overflow: hidden;
   }
 
   .logo-gallery__title {
@@ -49,28 +77,74 @@ const { title, logos } = data;
     font-size: var(--text-sm);
     color: var(--theme-text-muted);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
     margin-bottom: var(--space-8);
+    font-weight: var(--font-medium);
   }
 
-  .logo-gallery__grid {
+  .logo-gallery__wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* Fade edges - gradient masks on left and right */
+  .logo-gallery__wrapper::before,
+  .logo-gallery__wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .logo-gallery__wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, var(--theme-bg, var(--color-bg)) 0%, transparent 100%);
+  }
+
+  .logo-gallery__wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, var(--theme-bg, var(--color-bg)) 0%, transparent 100%);
+  }
+
+  .logo-gallery__track {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: var(--space-8) var(--space-12);
+    gap: var(--space-12);
+    width: max-content;
+    animation: marquee 30s linear infinite;
+  }
+
+  /* Pause animation on hover for better UX */
+  .logo-gallery__wrapper:hover .logo-gallery__track {
+    animation-play-state: paused;
   }
 
   .logo-gallery__item {
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--space-4);
+  }
+
+  .logo-gallery__item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .logo-gallery__logo {
-    max-height: 2.5rem;
+    height: 2rem;
     width: auto;
-    opacity: 0.7;
+    max-width: 140px;
+    object-fit: contain;
+    opacity: 0.6;
     filter: grayscale(100%);
-    transition: all var(--transition);
+    transition: opacity var(--transition), filter var(--transition);
   }
 
   .logo-gallery__item:hover .logo-gallery__logo {
@@ -78,9 +152,66 @@ const { title, logos } = data;
     filter: grayscale(0%);
   }
 
+  /* Marquee keyframes animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Responsive adjustments */
   @media (min-width: 768px) {
+    .logo-gallery__wrapper::before,
+    .logo-gallery__wrapper::after {
+      width: 150px;
+    }
+
+    .logo-gallery__track {
+      gap: var(--space-16);
+    }
+
     .logo-gallery__logo {
-      max-height: 3rem;
+      height: 2.5rem;
+      max-width: 180px;
+    }
+
+    .logo-gallery__item {
+      padding: 0 var(--space-6);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .logo-gallery__wrapper::before,
+    .logo-gallery__wrapper::after {
+      width: 200px;
+    }
+
+    .logo-gallery__logo {
+      height: 3rem;
+      max-width: 200px;
+    }
+  }
+
+  /* Reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .logo-gallery__track {
+      animation: none;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 0 var(--space-8);
+    }
+
+    .logo-gallery__item[aria-hidden="true"] {
+      display: none;
+    }
+
+    .logo-gallery__wrapper::before,
+    .logo-gallery__wrapper::after {
+      display: none;
     }
   }
 </style>

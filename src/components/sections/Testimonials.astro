@@ -11,27 +11,36 @@ const { title, rating, testimonials } = data;
 ---
 
 <section class="testimonials section" data-theme={theme}>
-  <div class="container">
+  <div class="testimonials__background"></div>
+  <div class="container testimonials__container">
     {(title || rating) && (
       <div class="testimonials__header">
         {title && <h2 class="testimonials__title">{title}</h2>}
         {rating && (
           <div class="testimonials__rating">
-            <div class="testimonials__stars" aria-label={`${rating.average} von 5 Sternen`}>
-              {Array.from({ length: 5 }).map((_, i) => (
-                <svg
-                  class={`testimonials__star ${i < Math.floor(rating.average) ? 'testimonials__star--filled' : ''}`}
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
+            <div class="testimonials__rating-content">
+              <span class="testimonials__rating-value">{rating.average}</span>
+              <div class="testimonials__stars" aria-label={`${rating.average} von 5 Sternen`}>
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <span
+                    class={`material-symbols-outlined testimonials__star ${i < Math.floor(rating.average) ? 'testimonials__star--filled' : ''}`}
+                    aria-hidden="true"
+                  >star</span>
+                ))}
+              </div>
+              {rating.source && (
+                <div class="testimonials__source">
+                  <span class="testimonials__source-text">auf</span>
+                  <img
+                    src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+                    alt="Google"
+                    class="testimonials__google-logo"
+                  />
+                </div>
+              )}
             </div>
-            <span class="testimonials__rating-text">
-              {rating.average} Sterne ({rating.count} Bewertungen)
-              {rating.source && <span class="testimonials__source">auf {rating.source}</span>}
+            <span class="testimonials__rating-count">
+              ({rating.count} Bewertungen)
             </span>
           </div>
         )}
@@ -39,18 +48,20 @@ const { title, rating, testimonials } = data;
     )}
 
     <div class="testimonials__grid">
-      {testimonials.map((testimonial) => (
-        <blockquote class="testimonials__item">
+      {testimonials.map((testimonial, index) => (
+        <blockquote class={`testimonials__item ${index % 2 === 1 ? 'testimonials__item--offset' : ''}`}>
           {testimonial.rating && (
             <div class="testimonials__item-stars">
               {Array.from({ length: testimonial.rating }).map(() => (
-                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
+                <span class="material-symbols-outlined" aria-hidden="true">star</span>
               ))}
             </div>
           )}
-          <p class="testimonials__quote">{testimonial.quote}</p>
+          <p class="testimonials__quote">
+            <span class="testimonials__quote-mark">&bdquo;</span>
+            {testimonial.quote}
+            <span class="testimonials__quote-mark">&ldquo;</span>
+          </p>
           <footer class="testimonials__footer">
             {testimonial.image && (
               <img
@@ -64,9 +75,9 @@ const { title, rating, testimonials } = data;
               <cite class="testimonials__name">{testimonial.author}</cite>
               {(testimonial.role || testimonial.company) && (
                 <span class="testimonials__role">
-                  {testimonial.role}
-                  {testimonial.role && testimonial.company && ', '}
                   {testimonial.company}
+                  {testimonial.role && testimonial.company && ' – '}
+                  {testimonial.role}
                 </span>
               )}
             </div>
@@ -79,7 +90,27 @@ const { title, rating, testimonials } = data;
 
 <style>
   .testimonials {
-    background-color: var(--color-bg-white);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .testimonials__background {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 180, 148, 0.4) 0%,
+      rgba(255, 220, 200, 0.3) 30%,
+      rgba(245, 240, 235, 0.5) 50%,
+      rgba(200, 230, 220, 0.4) 70%,
+      rgba(160, 210, 195, 0.35) 100%
+    );
+    z-index: 0;
+  }
+
+  .testimonials__container {
+    position: relative;
+    z-index: 1;
   }
 
   /* Theme system styles */
@@ -88,16 +119,20 @@ const { title, rating, testimonials } = data;
     color: var(--theme-text);
   }
 
+  .testimonials[data-theme] .testimonials__background {
+    opacity: 0.5;
+  }
+
   .testimonials[data-theme] .testimonials__title {
     color: var(--theme-heading);
   }
 
   .testimonials[data-theme] .testimonials__item {
-    background-color: var(--theme-card-bg, var(--color-bg-cream));
+    background-color: var(--theme-card-bg, rgba(255, 255, 255, 0.85));
   }
 
-  .testimonials[data-theme] .testimonials__rating-text,
-  .testimonials[data-theme] .testimonials__source,
+  .testimonials[data-theme] .testimonials__rating-count,
+  .testimonials[data-theme] .testimonials__source-text,
   .testimonials[data-theme] .testimonials__role {
     color: var(--theme-muted);
   }
@@ -109,7 +144,8 @@ const { title, rating, testimonials } = data;
 
   .testimonials__title {
     font-size: var(--text-3xl);
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-6);
+    color: var(--color-primary);
   }
 
   .testimonials__rating {
@@ -119,77 +155,130 @@ const { title, rating, testimonials } = data;
     gap: var(--space-2);
   }
 
+  .testimonials__rating-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .testimonials__rating-value {
+    font-family: var(--font-heading);
+    font-size: var(--text-4xl);
+    color: var(--color-text);
+    line-height: 1;
+  }
+
   .testimonials__stars {
     display: flex;
-    gap: var(--space-1);
+    gap: 0.125rem;
   }
 
   .testimonials__star {
-    width: 1.5rem;
-    height: 1.5rem;
+    font-size: 1.5rem;
     color: var(--color-neutral-300);
   }
 
   .testimonials__star--filled {
     color: var(--color-accent);
+    font-variation-settings: 'FILL' 1;
   }
 
-  .testimonials__rating-text {
+  .testimonials__source {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .testimonials__source-text {
     font-size: var(--text-base);
     color: var(--color-text-muted);
   }
 
-  .testimonials__source {
+  .testimonials__google-logo {
+    height: 1.25rem;
+    width: auto;
+  }
+
+  .testimonials__rating-count {
+    font-size: var(--text-sm);
     color: var(--color-text-muted);
   }
 
   .testimonials__grid {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: var(--space-8);
+    max-width: 1100px;
+    margin-inline: auto;
   }
 
   @media (min-width: 768px) {
     .testimonials__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .testimonials__grid {
-      grid-template-columns: repeat(3, 1fr);
+      flex-direction: row;
+      align-items: flex-start;
+      gap: var(--space-8);
     }
   }
 
   .testimonials__item {
-    background-color: var(--color-bg-cream);
-    border-radius: var(--radius-lg);
-    padding: var(--space-6);
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
     margin: 0;
+    box-shadow:
+      0 4px 20px -4px rgba(0, 0, 0, 0.08),
+      0 8px 32px -8px rgba(0, 0, 0, 0.06);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+
+  .testimonials__item:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 8px 30px -4px rgba(0, 0, 0, 0.1),
+      0 16px 48px -8px rgba(0, 0, 0, 0.08);
+  }
+
+  @media (min-width: 768px) {
+    .testimonials__item--offset {
+      margin-top: var(--space-16);
+    }
   }
 
   .testimonials__item-stars {
     display: flex;
-    gap: var(--space-1);
+    gap: 0.125rem;
     margin-bottom: var(--space-4);
-    color: var(--color-accent);
   }
 
-  .testimonials__item-stars svg {
-    width: 1rem;
-    height: 1rem;
+  .testimonials__item-stars .material-symbols-outlined {
+    font-size: 1.125rem;
+    color: var(--color-accent);
+    font-variation-settings: 'FILL' 1;
   }
 
   .testimonials__quote {
     font-size: var(--text-base);
     line-height: var(--leading-relaxed);
     margin-bottom: var(--space-6);
-    font-style: italic;
+    color: var(--color-primary);
+    font-style: normal;
+    font-weight: var(--font-medium);
+  }
+
+  .testimonials__quote-mark {
+    color: var(--color-primary);
   }
 
   .testimonials__footer {
     display: flex;
     align-items: center;
     gap: var(--space-3);
+    padding-top: var(--space-4);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
   }
 
   .testimonials__avatar {
@@ -197,21 +286,35 @@ const { title, rating, testimonials } = data;
     height: 3rem;
     border-radius: var(--radius-full);
     object-fit: cover;
+    flex-shrink: 0;
   }
 
   .testimonials__author {
     display: flex;
     flex-direction: column;
+    gap: 0.125rem;
   }
 
   .testimonials__name {
     font-style: normal;
     font-weight: var(--font-semibold);
     font-size: var(--text-sm);
+    color: var(--color-text);
   }
 
   .testimonials__role {
-    font-size: var(--text-sm);
+    font-size: var(--text-xs);
     color: var(--color-text-muted);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .testimonials__item {
+      padding: var(--space-6);
+    }
+
+    .testimonials__rating-value {
+      font-size: var(--text-3xl);
+    }
   }
 </style>

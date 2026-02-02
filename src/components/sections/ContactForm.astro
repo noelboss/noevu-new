@@ -7,103 +7,164 @@ interface Props {
 }
 
 const { data, theme } = Astro.props;
-const { title, description, fields, submitLabel = 'Absenden', successMessage } = data;
+const {
+  title,
+  description,
+  formTitle,
+  image,
+  imagePosition = 'left',
+  fields,
+  submitLabel = 'Absenden',
+  submitIcon = 'send',
+  successMessage
+} = data;
 
 // Generate unique form ID for accessibility
 const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
+const hasImage = !!image;
 ---
 
 <section class="contact-form section" data-theme={theme}>
   <div class="container">
-    <div class="contact-form__grid">
-      <div class="contact-form__content">
+    {/* Section Header */}
+    {(title || description) && (
+      <div class="contact-form__header">
         {title && <h2 class="contact-form__title">{title}</h2>}
         {description && <div class="contact-form__description" set:html={description} />}
       </div>
+    )}
 
-      <form
-        id={formId}
-        class="contact-form__form"
-        method="POST"
-        action="/api/contact"
-        data-success-message={successMessage}
-      >
-        {fields.map((field) => (
-          <div class="contact-form__field">
-            <label for={`${formId}-${field.name}`} class="contact-form__label">
-              {field.label}
-              {field.required && <span class="contact-form__required" aria-hidden="true">*</span>}
-            </label>
+    {/* Form Grid with optional image */}
+    <div class:list={[
+      'contact-form__grid',
+      { 'contact-form__grid--with-image': hasImage },
+      { 'contact-form__grid--image-right': hasImage && imagePosition === 'right' }
+    ]}>
+      {/* Image Column */}
+      {hasImage && (
+        <div class="contact-form__image-wrapper">
+          <img
+            src={image.src}
+            alt={image.alt}
+            width={image.width}
+            height={image.height}
+            class="contact-form__image"
+            loading="lazy"
+          />
+        </div>
+      )}
 
-            {field.type === 'textarea' ? (
-              <textarea
-                id={`${formId}-${field.name}`}
-                name={field.name}
-                class="contact-form__input contact-form__textarea"
-                required={field.required}
-                rows="5"
-              />
-            ) : field.type === 'select' && field.options ? (
-              <select
-                id={`${formId}-${field.name}`}
-                name={field.name}
-                class="contact-form__input contact-form__select"
-                required={field.required}
-              >
-                <option value="">Bitte wählen...</option>
-                {field.options.map((option) => (
-                  <option value={option}>{option}</option>
-                ))}
-              </select>
-            ) : (
-              <input
-                id={`${formId}-${field.name}`}
-                type={field.type}
-                name={field.name}
-                class="contact-form__input"
-                required={field.required}
-              />
-            )}
+      {/* Form Column */}
+      <div class="contact-form__form-wrapper">
+        {formTitle && <h3 class="contact-form__form-title">{formTitle}</h3>}
+
+        <form
+          id={formId}
+          class="contact-form__form"
+          method="POST"
+          action="/api/contact"
+          data-success-message={successMessage}
+        >
+          <div class="contact-form__fields">
+            {fields.map((field) => (
+              <div class:list={[
+                'contact-form__field',
+                { 'contact-form__field--half': field.width === 'half' },
+                { 'contact-form__field--checkbox': field.type === 'checkbox' }
+              ]}>
+                {field.type === 'checkbox' ? (
+                  <label class="contact-form__checkbox-label">
+                    <input
+                      id={`${formId}-${field.name}`}
+                      type="checkbox"
+                      name={field.name}
+                      class="contact-form__checkbox"
+                      required={field.required}
+                    />
+                    <span class="contact-form__checkbox-text">{field.label}</span>
+                  </label>
+                ) : (
+                  <>
+                    <label for={`${formId}-${field.name}`} class="contact-form__label">
+                      {field.label}
+                      {field.required && <span class="contact-form__required">(erforderlich)</span>}
+                    </label>
+
+                    {field.type === 'textarea' ? (
+                      <textarea
+                        id={`${formId}-${field.name}`}
+                        name={field.name}
+                        class="contact-form__input contact-form__textarea"
+                        required={field.required}
+                        rows="5"
+                      />
+                    ) : field.type === 'select' && field.options ? (
+                      <select
+                        id={`${formId}-${field.name}`}
+                        name={field.name}
+                        class="contact-form__input contact-form__select"
+                        required={field.required}
+                      >
+                        <option value="">Bitte wahlen...</option>
+                        {field.options.map((option) => (
+                          <option value={option}>{option}</option>
+                        ))}
+                      </select>
+                    ) : (
+                      <input
+                        id={`${formId}-${field.name}`}
+                        type={field.type}
+                        name={field.name}
+                        class="contact-form__input"
+                        required={field.required}
+                      />
+                    )}
+                  </>
+                )}
+              </div>
+            ))}
           </div>
-        ))}
 
-        <div class="contact-form__submit">
-          <button type="submit" class="btn btn--primary contact-form__button">
-            {submitLabel}
-          </button>
-        </div>
+          <div class="contact-form__submit">
+            <button type="submit" class="contact-form__button">
+              <span class="contact-form__button-text">{submitLabel}</span>
+              <span class="contact-form__button-icon">
+                <span class="material-symbols-outlined">{submitIcon}</span>
+              </span>
+            </button>
+          </div>
 
-        <div class="contact-form__status" aria-live="polite" hidden>
-          <p class="contact-form__success">{successMessage}</p>
-          <p class="contact-form__error">Es gab ein Problem. Bitte versuchen Sie es erneut.</p>
-        </div>
-      </form>
+          <div class="contact-form__status" aria-live="polite" hidden>
+            <p class="contact-form__success">{successMessage}</p>
+            <p class="contact-form__error">Es gab ein Problem. Bitte versuchen Sie es erneut.</p>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </section>
 
 <style>
+  /* Section Container */
   .contact-form {
     background-color: var(--theme-bg, var(--color-bg-beige));
     color: var(--theme-text, var(--color-text));
   }
 
-  .contact-form__grid {
-    display: grid;
-    gap: var(--space-12);
-  }
-
-  @media (min-width: 1024px) {
-    .contact-form__grid {
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-16);
-      align-items: start;
-    }
+  /* Section Header */
+  .contact-form__header {
+    text-align: center;
+    max-width: 800px;
+    margin-inline: auto;
+    margin-bottom: var(--space-12);
   }
 
   .contact-form__title {
-    font-size: var(--text-3xl);
+    font-family: var(--font-heading);
+    font-size: var(--text-4xl);
+    line-height: var(--leading-tight);
     margin-bottom: var(--space-6);
+    color: var(--color-primary);
   }
 
   .contact-form__description {
@@ -116,60 +177,179 @@ const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
     margin-bottom: var(--space-4);
   }
 
+  .contact-form__description :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .contact-form__description :global(a) {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+  }
+
+  .contact-form__description :global(a:hover) {
+    color: var(--color-primary-700);
+  }
+
+  /* Grid Layout */
+  .contact-form__grid {
+    display: grid;
+    gap: var(--space-8);
+  }
+
+  .contact-form__grid--with-image {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  @media (min-width: 768px) {
+    .contact-form__grid--with-image {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-12);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .contact-form__grid--with-image {
+      gap: var(--space-16);
+    }
+  }
+
+  .contact-form__grid--image-right .contact-form__image-wrapper {
+    order: 2;
+  }
+
+  .contact-form__grid--image-right .contact-form__form-wrapper {
+    order: 1;
+  }
+
+  /* Image */
+  .contact-form__image-wrapper {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    min-height: 400px;
+  }
+
+  .contact-form__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Form Wrapper */
+  .contact-form__form-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form__form-title {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    line-height: var(--leading-snug);
+    margin-bottom: var(--space-8);
+    color: var(--color-primary);
+  }
+
+  @media (min-width: 768px) {
+    .contact-form__form-title {
+      font-size: var(--text-3xl);
+    }
+  }
+
+  /* Form */
   .contact-form__form {
     display: flex;
     flex-direction: column;
-    gap: var(--space-5);
-    background-color: var(--theme-surface, var(--color-bg-white));
-    padding: var(--space-8);
-    border-radius: var(--radius-xl);
-    box-shadow: var(--shadow-card);
+    gap: var(--space-6);
   }
 
+  /* Fields Grid */
+  .contact-form__fields {
+    display: grid;
+    gap: var(--space-5);
+  }
+
+  @media (min-width: 640px) {
+    .contact-form__fields {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-form__field {
+      grid-column: span 2;
+    }
+
+    .contact-form__field--half {
+      grid-column: span 1;
+    }
+  }
+
+  /* Field */
   .contact-form__field {
     display: flex;
     flex-direction: column;
     gap: var(--space-2);
   }
 
+  .contact-form__field--checkbox {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  /* Label */
   .contact-form__label {
     font-size: var(--text-sm);
     font-weight: var(--font-medium);
     color: var(--theme-text, var(--color-text));
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
   }
 
   .contact-form__required {
-    color: var(--theme-accent, var(--color-accent));
-    margin-left: var(--space-1);
+    font-size: var(--text-xs);
+    font-weight: var(--font-normal);
+    color: var(--theme-text-muted, var(--color-text-muted));
   }
 
+  /* Inputs */
   .contact-form__input {
     width: 100%;
     padding: var(--space-3) var(--space-4);
     font-family: var(--font-sans);
     font-size: var(--text-base);
     color: var(--theme-text, var(--color-text));
-    background-color: var(--theme-input-bg, var(--color-bg-cream));
-    border: 2px solid transparent;
+    background-color: var(--color-bg-white);
+    border: 1px solid var(--color-neutral-300);
     border-radius: var(--radius);
     transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
   }
 
+  .contact-form__input:hover {
+    border-color: var(--color-neutral-400);
+  }
+
   .contact-form__input:focus {
     outline: none;
-    border-color: var(--theme-primary, var(--color-primary));
-    box-shadow: 0 0 0 3px var(--theme-primary-light, var(--color-primary-100));
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px hsla(var(--color-green-hsl), 0.15);
   }
 
   .contact-form__input::placeholder {
-    color: var(--theme-text-muted, var(--color-text-muted));
+    color: var(--color-neutral-400);
   }
 
+  /* Textarea */
   .contact-form__textarea {
     resize: vertical;
     min-height: 120px;
   }
 
+  /* Select */
   .contact-form__select {
     appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 20 20' fill='%235f524a'%3E%3Cpath fill-rule='evenodd' d='M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z' clip-rule='evenodd'/%3E%3C/svg%3E");
@@ -179,35 +359,166 @@ const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
     cursor: pointer;
   }
 
+  /* Checkbox */
+  .contact-form__checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    cursor: pointer;
+    font-size: var(--text-sm);
+    line-height: var(--leading-relaxed);
+  }
+
+  .contact-form__checkbox {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 0.125rem;
+    border: 1px solid var(--color-neutral-400);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    appearance: none;
+    background-color: var(--color-bg-white);
+    transition: all var(--transition-fast);
+  }
+
+  .contact-form__checkbox:checked {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+    background-size: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .contact-form__checkbox:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px hsla(var(--color-green-hsl), 0.15);
+  }
+
+  .contact-form__checkbox-text {
+    color: var(--theme-text-muted, var(--color-text-muted));
+  }
+
+  /* Submit Button - Orange primary with icon pill */
   .contact-form__submit {
     margin-top: var(--space-4);
   }
 
   .contact-form__button {
-    width: 100%;
+    --button-padding-y: 0.75em;
+    --button-padding-x: 1.75em;
+    --icon-offset: 3px;
+
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--space-2);
+
+    padding: var(--button-padding-y) var(--button-padding-x);
+    padding-right: calc(var(--button-padding-x) * 2.5);
+
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    font-weight: var(--font-medium);
+    line-height: 1.5;
+
+    color: var(--color-text-inverted);
+    background-color: var(--color-accent);
+
+    border: 1px solid hsla(var(--color-white-hsl), 0.25);
+    border-radius: var(--radius-lg);
+
+    cursor: pointer;
+    overflow: hidden;
+
+    box-shadow:
+      0 0 15px hsla(var(--color-white-hsl), 0.3),
+      8px 8px 40px hsla(var(--color-orange-hsl), 0.5),
+      inset -5px -5px 10px hsla(var(--color-white-hsl), 0.15);
+
+    transition: all 0.3s ease-in-out;
   }
 
-  @media (min-width: 640px) {
-    .contact-form__button {
-      width: auto;
-    }
+  .contact-form__button-text {
+    position: relative;
+    z-index: 2;
   }
 
+  .contact-form__button-icon {
+    position: absolute;
+    top: var(--icon-offset);
+    right: var(--icon-offset);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(var(--button-padding-y) * 2 + 1.5em + var(--icon-offset) * 2);
+    height: calc(var(--button-padding-y) * 2 + 1.5em + var(--icon-offset) * 2);
+
+    background-color: var(--color-text-inverted);
+    color: var(--color-accent);
+
+    border-radius: var(--radius-full);
+
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  .contact-form__button-icon .material-symbols-outlined {
+    font-size: 1.25rem;
+  }
+
+  .contact-form__button:hover {
+    color: var(--color-accent);
+    background-color: var(--color-text-inverted);
+
+    box-shadow:
+      0 0 15px hsla(var(--color-white-hsl), 0.5),
+      8px 8px 40px hsla(var(--color-orange-hsl), 0.7),
+      inset -5px -5px 10px hsla(var(--color-orange-hsl), 0.15);
+  }
+
+  .contact-form__button:hover .contact-form__button-icon {
+    width: calc(100% - var(--icon-offset) * 2);
+    border-radius: var(--radius-lg);
+  }
+
+  .contact-form__button:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  .contact-form__button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  /* Status Messages */
   .contact-form__status {
     text-align: center;
     padding: var(--space-4);
     border-radius: var(--radius);
+    background-color: hsla(var(--color-green-hsl), 0.1);
   }
 
   .contact-form__success {
-    color: var(--theme-primary, var(--color-primary));
+    color: var(--color-primary);
     font-weight: var(--font-medium);
+    margin: 0;
   }
 
   .contact-form__error {
-    color: var(--theme-error, var(--color-accent-700));
+    color: var(--color-accent-700);
     font-weight: var(--font-medium);
     display: none;
+    margin: 0;
+  }
+
+  .contact-form__status.is-error {
+    background-color: hsla(var(--color-orange-hsl), 0.1);
   }
 
   .contact-form__status.is-error .contact-form__success {
@@ -218,13 +529,20 @@ const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
     display: block;
   }
 
-  /* Validation states */
-  .contact-form__input:invalid:not(:placeholder-shown) {
-    border-color: var(--theme-error, var(--color-accent-600));
-  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-form__title {
+      font-size: var(--text-3xl);
+    }
 
-  .contact-form__input:valid:not(:placeholder-shown) {
-    border-color: var(--theme-success, var(--color-primary-400));
+    .contact-form__image-wrapper {
+      min-height: 300px;
+    }
+
+    .contact-form__grid--image-right .contact-form__image-wrapper,
+    .contact-form__grid--image-right .contact-form__form-wrapper {
+      order: unset;
+    }
   }
 </style>
 
@@ -236,12 +554,14 @@ const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
 
       const formEl = e.target as HTMLFormElement;
       const submitBtn = formEl.querySelector('.contact-form__button') as HTMLButtonElement;
+      const buttonText = submitBtn.querySelector('.contact-form__button-text') as HTMLElement;
       const statusEl = formEl.querySelector('.contact-form__status') as HTMLElement;
       const successMessage = formEl.dataset.successMessage;
+      const originalText = buttonText.textContent;
 
       // Disable button during submission
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Wird gesendet...';
+      buttonText.textContent = 'Wird gesendet...';
 
       try {
         const formData = new FormData(formEl);
@@ -264,7 +584,7 @@ const formId = `contact-form-${Math.random().toString(36).slice(2, 9)}`;
         console.error('Form error:', error);
       } finally {
         submitBtn.disabled = false;
-        submitBtn.textContent = formEl.querySelector('[type="submit"]')?.textContent || 'Absenden';
+        buttonText.textContent = originalText;
       }
     });
   });

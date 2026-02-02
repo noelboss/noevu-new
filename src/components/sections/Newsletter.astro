@@ -42,8 +42,11 @@ const bgClass = theme ? '' : `newsletter--${backgroundColor}`;
             class="newsletter__input"
             aria-label="E-Mail-Adresse"
           />
-          <button type="submit" class="newsletter__button btn">
-            {buttonText}
+          <button type="submit" class="newsletter__button">
+            <span class="newsletter__button-text">{buttonText}</span>
+            <span class="newsletter__button-icon">
+              <span class="material-symbols-outlined">mail</span>
+            </span>
           </button>
         </div>
         <p class="newsletter__privacy">{privacyText}</p>
@@ -53,11 +56,16 @@ const bgClass = theme ? '' : `newsletter--${backgroundColor}`;
 </section>
 
 <style>
+  /* ═══════════════════════════════════════════════════════════════
+     BASE STYLES
+     ═══════════════════════════════════════════════════════════════ */
   .newsletter {
     text-align: center;
   }
 
-  /* Theme system styles */
+  /* ═══════════════════════════════════════════════════════════════
+     THEME SYSTEM STYLES
+     ═══════════════════════════════════════════════════════════════ */
   .newsletter[data-theme] {
     background-color: var(--theme-bg);
     color: var(--theme-text);
@@ -82,16 +90,9 @@ const bgClass = theme ? '' : `newsletter--${backgroundColor}`;
     background-color: var(--theme-input-bg-focus, rgba(255, 255, 255, 0.25));
   }
 
-  .newsletter[data-theme] .newsletter__button {
-    background-color: var(--theme-accent);
-    color: var(--theme-accent-text, var(--color-text-inverted));
-  }
-
-  .newsletter[data-theme] .newsletter__button:hover {
-    background-color: var(--theme-accent-hover);
-  }
-
-  /* Legacy backgroundColor styles for backward compatibility */
+  /* ═══════════════════════════════════════════════════════════════
+     BACKGROUND COLOR VARIANTS
+     ═══════════════════════════════════════════════════════════════ */
   .newsletter--green {
     background-color: var(--color-primary);
     color: var(--color-text-inverted);
@@ -107,15 +108,27 @@ const bgClass = theme ? '' : `newsletter--${backgroundColor}`;
     color: var(--color-text-inverted);
   }
 
+  .newsletter--white {
+    background-color: var(--color-bg-white);
+    color: var(--color-text);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     CONTENT CONTAINER
+     ═══════════════════════════════════════════════════════════════ */
   .newsletter__content {
-    max-width: 600px;
+    max-width: 640px;
     margin-inline: auto;
   }
 
+  /* ═══════════════════════════════════════════════════════════════
+     TITLE
+     ═══════════════════════════════════════════════════════════════ */
   .newsletter__title {
-    font-size: var(--text-3xl);
+    font-size: clamp(1.75rem, 4vw, var(--text-4xl));
     font-family: var(--font-display);
     font-weight: var(--font-normal);
+    line-height: var(--leading-tight);
     margin-bottom: var(--space-4);
   }
 
@@ -124,18 +137,43 @@ const bgClass = theme ? '' : `newsletter--${backgroundColor}`;
     color: var(--color-text-inverted);
   }
 
-  .newsletter__description {
-    font-size: var(--text-lg);
-    margin-bottom: var(--space-8);
-    opacity: 0.9;
-    line-height: var(--leading-relaxed);
+  .newsletter--beige .newsletter__title,
+  .newsletter--white .newsletter__title {
+    color: var(--color-text);
   }
 
-  .newsletter__form {
-    max-width: 480px;
+  /* ═══════════════════════════════════════════════════════════════
+     DESCRIPTION
+     ═══════════════════════════════════════════════════════════════ */
+  .newsletter__description {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-8);
+    line-height: var(--leading-relaxed);
+    max-width: 520px;
     margin-inline: auto;
   }
 
+  .newsletter--green .newsletter__description,
+  .newsletter--orange .newsletter__description {
+    opacity: 0.9;
+  }
+
+  .newsletter--beige .newsletter__description,
+  .newsletter--white .newsletter__description {
+    color: var(--color-text-muted);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     FORM
+     ═══════════════════════════════════════════════════════════════ */
+  .newsletter__form {
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     INPUT GROUP (Input + Button Row)
+     ═══════════════════════════════════════════════════════════════ */
   .newsletter__input-group {
     display: flex;
     flex-direction: column;
@@ -143,28 +181,38 @@ const bgClass = theme ? '' : `newsletter--${backgroundColor}`;
     margin-bottom: var(--space-4);
   }
 
-  @media (min-width: 480px) {
+  @media (min-width: 540px) {
     .newsletter__input-group {
       flex-direction: row;
+      align-items: stretch;
+      gap: var(--space-4);
     }
   }
 
+  /* ═══════════════════════════════════════════════════════════════
+     INPUT FIELD
+     ═══════════════════════════════════════════════════════════════ */
   .newsletter__input {
     flex: 1;
-    padding: var(--space-4) var(--space-5);
+    padding: 0.875rem 1.25rem;
     font-size: var(--text-base);
     font-family: var(--font-sans);
     border: 2px solid transparent;
-    border-radius: var(--radius);
+    border-radius: var(--radius-full);
     background-color: rgba(255, 255, 255, 0.15);
     color: var(--color-text-inverted);
-    transition: border-color var(--transition-fast), background-color var(--transition-fast);
+    transition:
+      border-color var(--transition-fast),
+      background-color var(--transition-fast),
+      box-shadow var(--transition-fast);
   }
 
+  /* Dark background variants (green, orange) */
   .newsletter--green .newsletter__input,
   .newsletter--orange .newsletter__input {
     background-color: rgba(255, 255, 255, 0.15);
     color: var(--color-text-inverted);
+    border-color: rgba(255, 255, 255, 0.2);
   }
 
   .newsletter--green .newsletter__input::placeholder,
@@ -172,68 +220,148 @@ const bgClass = theme ? '' : `newsletter--${backgroundColor}`;
     color: rgba(255, 255, 255, 0.7);
   }
 
-  .newsletter--beige .newsletter__input {
+  .newsletter--green .newsletter__input:focus,
+  .newsletter--orange .newsletter__input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
+  }
+
+  /* Light background variants (beige, white) */
+  .newsletter--beige .newsletter__input,
+  .newsletter--white .newsletter__input {
     background-color: var(--color-bg-white);
     color: var(--color-text);
     border-color: var(--color-neutral-200);
   }
 
-  .newsletter--beige .newsletter__input::placeholder {
+  .newsletter--beige .newsletter__input::placeholder,
+  .newsletter--white .newsletter__input::placeholder {
     color: var(--color-text-muted);
   }
 
-  .newsletter__input:focus {
+  .newsletter--beige .newsletter__input:focus,
+  .newsletter--white .newsletter__input:focus {
     outline: none;
-    border-color: var(--color-text-inverted);
-    background-color: rgba(255, 255, 255, 0.25);
-  }
-
-  .newsletter--beige .newsletter__input:focus {
     border-color: var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(37, 90, 78, 0.1);
   }
 
+  /* ═══════════════════════════════════════════════════════════════
+     SUBSCRIBE BUTTON (Orange with Icon Pill - Hero CTA Style)
+     ═══════════════════════════════════════════════════════════════ */
   .newsletter__button {
-    padding: var(--space-4) var(--space-6);
-    font-size: var(--text-base);
-    font-weight: var(--font-semibold);
-    white-space: nowrap;
-    border: none;
-    border-radius: var(--radius);
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-orange, #ff6b30);
+    color: white;
+    padding: 0.875rem 1.5rem;
+    padding-right: 3.5rem;
+    border-radius: var(--radius-full);
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 0.9375rem;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow:
+      0 0 15px hsla(17, 100%, 59%, 0.3),
+      8px 8px 40px hsla(17, 100%, 59%, 0.2),
+      inset -5px -5px 10px rgba(255, 255, 255, 0.1);
     cursor: pointer;
-    transition: background-color var(--transition-fast);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
-  .newsletter--green .newsletter__button {
-    background-color: var(--color-accent);
-    color: var(--color-text-inverted);
+  .newsletter__button:hover {
+    box-shadow:
+      0 0 15px hsla(17, 100%, 59%, 0.5),
+      8px 8px 40px hsla(17, 100%, 59%, 0.4),
+      inset -5px -5px 10px hsla(17, 100%, 59%, 0.1);
+    transform: translateY(-2px);
   }
 
-  .newsletter--green .newsletter__button:hover {
-    background-color: var(--color-accent-600);
+  .newsletter__button:active {
+    transform: translateY(0);
   }
 
+  .newsletter__button-text {
+    color: white;
+  }
+
+  .newsletter__button-icon {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    color: var(--color-orange, #ff6b30);
+    transition: all 0.3s ease;
+  }
+
+  .newsletter__button-icon .material-symbols-outlined {
+    font-size: 1.125rem;
+  }
+
+  .newsletter__button:hover .newsletter__button-icon {
+    width: calc(100% - 8px);
+    border-radius: var(--radius-full);
+  }
+
+  /* Button variant for orange background */
   .newsletter--orange .newsletter__button {
     background-color: var(--color-primary);
-    color: var(--color-text-inverted);
+    box-shadow:
+      0 0 15px hsla(163, 41%, 25%, 0.3),
+      8px 8px 40px hsla(163, 41%, 25%, 0.2),
+      inset -5px -5px 10px rgba(255, 255, 255, 0.1);
   }
 
   .newsletter--orange .newsletter__button:hover {
-    background-color: var(--color-primary-600);
+    box-shadow:
+      0 0 15px hsla(163, 41%, 25%, 0.5),
+      8px 8px 40px hsla(163, 41%, 25%, 0.4),
+      inset -5px -5px 10px hsla(163, 41%, 25%, 0.1);
   }
 
-  .newsletter--beige .newsletter__button {
-    background-color: var(--color-primary);
-    color: var(--color-text-inverted);
+  .newsletter--orange .newsletter__button-icon {
+    color: var(--color-primary);
   }
 
-  .newsletter--beige .newsletter__button:hover {
-    background-color: var(--color-primary-600);
-  }
-
+  /* ═══════════════════════════════════════════════════════════════
+     PRIVACY TEXT
+     ═══════════════════════════════════════════════════════════════ */
   .newsletter__privacy {
     font-size: var(--text-sm);
-    opacity: 0.7;
     margin: 0;
+  }
+
+  .newsletter--green .newsletter__privacy,
+  .newsletter--orange .newsletter__privacy {
+    opacity: 0.7;
+  }
+
+  .newsletter--beige .newsletter__privacy,
+  .newsletter--white .newsletter__privacy {
+    color: var(--color-text-muted);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     RESPONSIVE ADJUSTMENTS
+     ═══════════════════════════════════════════════════════════════ */
+  @media (max-width: 539px) {
+    .newsletter__button {
+      width: 100%;
+      justify-content: center;
+      padding-right: 3.5rem;
+    }
   }
 </style>
 

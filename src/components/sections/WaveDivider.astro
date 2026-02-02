@@ -11,15 +11,15 @@ const { topColor = 'beige', bottomColor = 'green', topTheme, bottomTheme, height
 
 // Theme to color mapping - maps theme names to CSS custom properties
 const themeColorMap: Record<Theme, string> = {
-  'dark': 'var(--color-primary)',
+  'dark': 'var(--color-primary-700)',
   'white': 'var(--color-bg-white)',
   'white-bold': 'var(--color-bg-white)',
   'bright-inverse': 'var(--color-accent)',
-  'bright': 'var(--color-accent)',
+  'bright': 'var(--color-bg-beige)',
   'light-bold': 'var(--color-bg-beige)',
-  'black-bold': 'var(--color-text)',
-  'black': 'var(--color-text)',
-  'light': 'var(--color-bg-beige)',
+  'black-bold': 'var(--color-neutral-900)',
+  'black': 'var(--color-neutral-900)',
+  'light': 'var(--color-bg-cream)',
   'dark-bold': 'var(--color-primary)',
 };
 
@@ -29,18 +29,30 @@ const colorMap: Record<string, string> = {
   white: 'var(--color-bg-white)',
   green: 'var(--color-primary)',
   cream: 'var(--color-bg-cream)',
+  orange: 'var(--color-accent)',
 };
 
-const heightMap: Record<string, string> = {
-  small: '60px',
-  medium: '100px',
-  large: '150px',
+// Height configurations with responsive vw-based values
+const heightConfig: Record<string, { height: string; viewBox: string }> = {
+  small: { height: '4vw', viewBox: '0 0 1440 60' },
+  medium: { height: '6vw', viewBox: '0 0 1440 100' },
+  large: { height: '8vw', viewBox: '0 0 1440 140' },
 };
 
 // Use theme values when available, otherwise fall back to color values
 const topColorValue = topTheme ? themeColorMap[topTheme] : (colorMap[topColor] || colorMap.beige);
 const bottomColorValue = bottomTheme ? themeColorMap[bottomTheme] : (colorMap[bottomColor] || colorMap.green);
-const heightValue = heightMap[height] || heightMap.medium;
+const { height: heightValue, viewBox } = heightConfig[height] || heightConfig.medium;
+
+// Wavy SVG path that creates smooth sine-wave transitions
+// Matches the Squarespace "wavy" divider style
+const wavePaths: Record<string, string> = {
+  small: 'M0,60 L0,30 Q180,60 360,30 T720,30 T1080,30 T1440,30 L1440,60 Z',
+  medium: 'M0,100 L0,50 Q180,100 360,50 T720,50 T1080,50 T1440,50 L1440,100 Z',
+  large: 'M0,140 L0,70 Q180,140 360,70 T720,70 T1080,70 T1440,70 L1440,140 Z',
+};
+
+const wavePath = wavePaths[height] || wavePaths.medium;
 ---
 
 <div
@@ -49,14 +61,14 @@ const heightValue = heightMap[height] || heightMap.medium;
   aria-hidden="true"
 >
   <svg
-    viewBox="0 0 1440 100"
+    class="wave-divider__svg"
+    viewBox={viewBox}
     preserveAspectRatio="none"
-    fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="M0 100V20C240 60 480 80 720 60C960 40 1200 0 1440 20V100H0Z"
-      fill="currentColor"
+      class="wave-divider__path"
+      d={wavePath}
     />
   </svg>
 </div>
@@ -66,17 +78,41 @@ const heightValue = heightMap[height] || heightMap.medium;
     position: relative;
     width: 100%;
     height: var(--wave-height);
+    min-height: 40px;
+    max-height: 120px;
     background-color: var(--wave-top);
     overflow: hidden;
     line-height: 0;
+    /* Negative margin to ensure seamless overlap with adjacent sections */
+    margin-top: -1px;
+    margin-bottom: -1px;
   }
 
-  .wave-divider svg {
+  .wave-divider__svg {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    color: var(--wave-bottom);
+    display: block;
+  }
+
+  .wave-divider__path {
+    fill: var(--wave-bottom);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .wave-divider {
+      min-height: 30px;
+      max-height: 80px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .wave-divider {
+      min-height: 24px;
+      max-height: 60px;
+    }
   }
 </style>

@@ -16,7 +16,7 @@ const gridClass = `services-grid--cols-${columns}`;
   <div class="container">
     {(title || subtitle) && (
       <div class="services-grid__header">
-        {title && <h2 class="services-grid__title">{title}</h2>}
+        {title && <h2 class="services-grid__title" set:html={title} />}
         {subtitle && <p class="services-grid__subtitle">{subtitle}</p>}
       </div>
     )}
@@ -24,11 +24,6 @@ const gridClass = `services-grid--cols-${columns}`;
     <div class={`services-grid__grid ${gridClass}`}>
       {services.map((service) => (
         <div class="services-grid__item">
-          {service.icon && (
-            <div class="services-grid__icon" aria-hidden="true">
-              <Fragment set:html={service.icon} />
-            </div>
-          )}
           <h3 class="services-grid__item-title">{service.title}</h3>
           <div class="services-grid__description" set:html={service.description} />
           {service.cta && (
@@ -39,8 +34,17 @@ const gridClass = `services-grid--cols-${columns}`;
               rel={service.cta.external ? 'noopener noreferrer' : undefined}
             >
               {service.cta.label}
-              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+              <svg
+                class="services-grid__link-arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
             </a>
           )}
@@ -52,26 +56,49 @@ const gridClass = `services-grid--cols-${columns}`;
 
 <style>
   .services-grid {
-    background-color: var(--theme-bg, var(--color-bg-white));
+    background-color: var(--theme-bg, var(--color-bg-beige));
     color: var(--theme-text, var(--color-text));
+    padding-block: var(--section-spacing-md);
   }
 
   .services-grid__header {
     text-align: center;
-    max-width: 600px;
+    max-width: 800px;
     margin-inline: auto;
-    margin-bottom: var(--space-12);
+    margin-bottom: var(--space-16);
   }
 
   .services-grid__title {
-    font-size: var(--text-3xl);
-    margin-bottom: var(--space-4);
+    font-family: var(--font-heading);
+    font-size: var(--text-4xl);
+    font-weight: var(--font-normal);
+    line-height: var(--leading-tight);
+    margin-bottom: var(--space-6);
     color: var(--theme-heading, var(--color-text));
   }
 
+  /* Support for highlighted text in title */
+  .services-grid__title :global(strong),
+  .services-grid__title :global(em),
+  .services-grid__title :global(mark) {
+    background: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--color-accent) 50%,
+      var(--color-accent) 85%,
+      transparent 85%
+    );
+    color: inherit;
+    font-style: normal;
+    font-weight: inherit;
+  }
+
   .services-grid__subtitle {
-    font-size: var(--text-lg);
+    font-size: var(--text-base);
     color: var(--theme-text-muted, var(--color-text-muted));
+    line-height: var(--leading-relaxed);
+    max-width: 700px;
+    margin-inline: auto;
   }
 
   .services-grid__grid {
@@ -79,13 +106,32 @@ const gridClass = `services-grid--cols-${columns}`;
     gap: var(--space-8);
   }
 
-  @media (min-width: 640px) {
+  /* Mobile: 1 column */
+  @media (max-width: 639px) {
     .services-grid__grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+      gap: var(--space-10);
     }
   }
 
+  /* Tablet: 2 columns */
+  @media (min-width: 640px) {
+    .services-grid__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-8) var(--space-10);
+    }
+  }
+
+  /* Desktop: 4 columns (or as specified) */
   @media (min-width: 1024px) {
+    .services-grid__grid {
+      gap: var(--space-8) var(--space-12);
+    }
+
+    .services-grid--cols-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     .services-grid--cols-3 {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -96,64 +142,130 @@ const gridClass = `services-grid--cols-${columns}`;
   }
 
   .services-grid__item {
-    padding: var(--space-6);
-    background-color: var(--theme-surface, var(--color-bg-cream));
-    border-radius: var(--radius-lg);
-    transition: transform var(--transition), box-shadow var(--transition);
-  }
-
-  .services-grid__item:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
-  }
-
-  .services-grid__icon {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3rem;
-    height: 3rem;
-    margin-bottom: var(--space-4);
-    background-color: var(--theme-accent, var(--color-primary));
-    border-radius: var(--radius);
-    color: var(--theme-accent-text, var(--color-text-inverted));
-  }
-
-  .services-grid__icon :global(svg) {
-    width: 1.5rem;
-    height: 1.5rem;
+    flex-direction: column;
   }
 
   .services-grid__item-title {
+    font-family: var(--font-sans);
     font-size: var(--text-lg);
     font-weight: var(--font-semibold);
-    margin-bottom: var(--space-3);
+    line-height: var(--leading-snug);
+    margin-bottom: var(--space-4);
     color: var(--theme-heading, var(--color-text));
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid hsla(var(--color-grey-hsl), 0.15);
   }
 
   .services-grid__description {
-    font-size: var(--text-sm);
-    color: var(--theme-text-muted, var(--color-text-muted));
-    line-height: var(--leading-relaxed);
+    flex: 1;
     margin-bottom: var(--space-4);
+  }
+
+  /* Description list styling with checkmarks */
+  .services-grid__description :global(ul) {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .services-grid__description :global(li) {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: var(--space-3);
+    font-size: var(--text-sm);
+    line-height: var(--leading-relaxed);
+    color: var(--theme-text-muted, var(--color-text-muted));
+  }
+
+  .services-grid__description :global(li)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.35em;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff6b30' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  /* Paragraph styling in description */
+  .services-grid__description :global(p) {
+    font-size: var(--text-sm);
+    line-height: var(--leading-relaxed);
+    color: var(--theme-text-muted, var(--color-text-muted));
+    margin-bottom: var(--space-3);
+  }
+
+  .services-grid__description :global(p:last-child) {
+    margin-bottom: 0;
   }
 
   .services-grid__link {
     display: inline-flex;
     align-items: center;
-    gap: var(--space-1);
+    gap: var(--space-2);
     font-size: var(--text-sm);
     font-weight: var(--font-medium);
-    color: var(--theme-accent, var(--color-primary));
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color var(--transition-fast), gap var(--transition-fast);
+    margin-top: auto;
+    padding-top: var(--space-2);
   }
 
-  .services-grid__link svg {
-    width: 1rem;
-    height: 1rem;
+  .services-grid__link:hover {
+    color: var(--color-accent-600);
+    gap: var(--space-3);
+  }
+
+  .services-grid__link-arrow {
+    width: 1.125rem;
+    height: 1.125rem;
     transition: transform var(--transition-fast);
+    flex-shrink: 0;
   }
 
-  .services-grid__link:hover svg {
+  .services-grid__link:hover .services-grid__link-arrow {
     transform: translateX(4px);
+  }
+
+  /* Theme variations */
+  [data-theme="dark"] .services-grid,
+  [data-theme="dark-bold"] .services-grid {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverted);
+  }
+
+  [data-theme="dark"] .services-grid__title,
+  [data-theme="dark-bold"] .services-grid__title,
+  [data-theme="dark"] .services-grid__item-title,
+  [data-theme="dark-bold"] .services-grid__item-title {
+    color: var(--color-text-inverted);
+  }
+
+  [data-theme="dark"] .services-grid__subtitle,
+  [data-theme="dark-bold"] .services-grid__subtitle,
+  [data-theme="dark"] .services-grid__description :global(li),
+  [data-theme="dark-bold"] .services-grid__description :global(li),
+  [data-theme="dark"] .services-grid__description :global(p),
+  [data-theme="dark-bold"] .services-grid__description :global(p) {
+    color: hsla(var(--color-white-hsl), 0.8);
+  }
+
+  [data-theme="dark"] .services-grid__item-title,
+  [data-theme="dark-bold"] .services-grid__item-title {
+    border-bottom-color: hsla(var(--color-white-hsl), 0.2);
+  }
+
+  [data-theme="dark"] .services-grid__description :global(li)::before,
+  [data-theme="dark-bold"] .services-grid__description :global(li)::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff6b30' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+  }
+
+  /* White background variant */
+  [data-theme="light"] .services-grid {
+    background-color: var(--color-bg-white);
   }
 </style>

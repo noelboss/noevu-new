@@ -4,17 +4,20 @@ import type { CTASection, Theme } from '../../schemas/sections';
 interface Props {
   data: CTASection;
   theme?: Theme;
+  id?: string;
 }
 
-const { data, theme } = Astro.props;
+const { data, theme, id } = Astro.props;
 const { title, description, ctas, backgroundColor = 'green', image } = data;
 
 // Use theme system when available, fall back to backgroundColor classes for backward compatibility
 const bgClass = theme ? '' : `cta--${backgroundColor}`;
-const useTheme = !!theme;
+
+// Determine if this is a dark background (for button styling)
+const isDarkBg = backgroundColor === 'green' || backgroundColor === 'orange';
 ---
 
-<section class={`cta section ${bgClass}`} data-theme={theme}>
+<section class={`cta section ${bgClass}`} data-theme={theme} id={id}>
   <div class="cta__container container">
     {image && (
       <div class="cta__image">
@@ -30,14 +33,29 @@ const useTheme = !!theme;
       {description && <div class="cta__description" set:html={description} />}
       <div class="cta__buttons">
         {ctas.map((cta, index) => (
-          <a
-            href={cta.href}
-            class={`btn ${index === 0 ? (backgroundColor === 'green' ? 'btn--accent' : 'btn--primary') : 'btn--secondary'}`}
-            target={cta.external ? '_blank' : undefined}
-            rel={cta.external ? 'noopener noreferrer' : undefined}
-          >
-            {cta.label}
-          </a>
+          index === 0 ? (
+            <a
+              href={cta.href}
+              class="cta__btn-primary"
+              target={cta.external ? '_blank' : undefined}
+              rel={cta.external ? 'noopener noreferrer' : undefined}
+            >
+              <span class="cta__btn-text">{cta.label}</span>
+              <span class="cta__btn-icon">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </span>
+            </a>
+          ) : (
+            <a
+              href={cta.href}
+              class="cta__btn-secondary"
+              target={cta.external ? '_blank' : undefined}
+              rel={cta.external ? 'noopener noreferrer' : undefined}
+            >
+              {cta.label}
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          )
         ))}
       </div>
     </div>
@@ -45,11 +63,17 @@ const useTheme = !!theme;
 </section>
 
 <style>
+  /* ═══════════════════════════════════════════════════════════════
+     CTA SECTION
+     Full-width call-to-action with centered content
+     ═══════════════════════════════════════════════════════════════ */
   .cta {
     text-align: center;
   }
 
-  /* Theme system styles */
+  /* ═══════════════════════════════════════════════════════════════
+     THEME SYSTEM STYLES
+     ═══════════════════════════════════════════════════════════════ */
   .cta[data-theme] {
     background-color: var(--theme-bg);
     color: var(--theme-text);
@@ -59,27 +83,37 @@ const useTheme = !!theme;
     color: var(--theme-heading);
   }
 
-  /* Legacy backgroundColor styles for backward compatibility */
+  /* ═══════════════════════════════════════════════════════════════
+     BACKGROUND COLOR VARIANTS (Legacy support)
+     ═══════════════════════════════════════════════════════════════ */
   .cta--green {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary, #255a4e);
     color: var(--color-text-inverted);
   }
 
   .cta--orange {
-    background-color: var(--color-accent);
+    background-color: var(--color-accent, #ff6b30);
     color: var(--color-text-inverted);
   }
 
   .cta--beige {
-    background-color: var(--color-bg-beige);
+    background-color: var(--color-bg-beige, #f5f0eb);
     color: var(--color-text);
   }
 
+  .cta--white {
+    background-color: var(--color-bg-white, #ffffff);
+    color: var(--color-text);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     CONTAINER LAYOUT
+     ═══════════════════════════════════════════════════════════════ */
   .cta__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-8);
+    gap: var(--space-10);
   }
 
   @media (min-width: 1024px) {
@@ -93,22 +127,34 @@ const useTheme = !!theme;
     }
   }
 
+  /* ═══════════════════════════════════════════════════════════════
+     IMAGE
+     ═══════════════════════════════════════════════════════════════ */
   .cta__image {
-    max-width: 300px;
+    max-width: 320px;
+    flex-shrink: 0;
   }
 
   .cta__image img {
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
   }
 
+  /* ═══════════════════════════════════════════════════════════════
+     CONTENT
+     ═══════════════════════════════════════════════════════════════ */
   .cta__content {
-    max-width: 600px;
+    max-width: 650px;
   }
 
+  /* ═══════════════════════════════════════════════════════════════
+     TITLE - Abril Fatface display font
+     ═══════════════════════════════════════════════════════════════ */
   .cta__title {
-    font-size: var(--text-3xl);
-    font-family: var(--font-display);
+    font-family: var(--font-display, 'Abril Fatface', serif);
+    font-size: clamp(1.875rem, 4vw, 2.75rem);
     font-weight: var(--font-normal);
+    line-height: 1.2;
     margin-bottom: var(--space-4);
   }
 
@@ -117,17 +163,39 @@ const useTheme = !!theme;
     color: var(--color-text-inverted);
   }
 
+  .cta--beige .cta__title,
+  .cta--white .cta__title {
+    color: var(--color-text);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     DESCRIPTION
+     ═══════════════════════════════════════════════════════════════ */
   .cta__description {
-    font-size: var(--text-lg);
+    font-size: 1.0625rem;
+    line-height: 1.7;
     margin-bottom: var(--space-8);
     opacity: 0.9;
   }
 
+  .cta__description :global(p) {
+    margin-bottom: 0;
+  }
+
+  .cta--beige .cta__description,
+  .cta--white .cta__description {
+    color: var(--color-text-muted);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     BUTTONS CONTAINER
+     ═══════════════════════════════════════════════════════════════ */
   .cta__buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: var(--space-4);
+    align-items: center;
+    gap: 1.5rem;
   }
 
   @media (min-width: 1024px) {
@@ -136,16 +204,182 @@ const useTheme = !!theme;
     }
   }
 
-  /* Button overrides for dark backgrounds */
-  .cta--green .btn--secondary,
-  .cta--orange .btn--secondary {
-    color: var(--color-text-inverted);
-    border-color: var(--color-text-inverted);
+  /* ═══════════════════════════════════════════════════════════════
+     PRIMARY BUTTON - Orange with icon pill animation
+     Same style as Hero CTA
+     ═══════════════════════════════════════════════════════════════ */
+  .cta__btn-primary {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-orange, #ff6b30);
+    color: white;
+    padding: 0.875rem 1.75rem;
+    padding-right: 4rem;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    text-decoration: none;
+    border: 1px solid hsla(255, 255, 255, 0.25);
+    box-shadow:
+      0 0 15px hsla(17, 100%, 59%, 0.3),
+      8px 8px 40px hsla(17, 100%, 59%, 0.2),
+      inset -5px -5px 10px hsla(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
   }
 
-  .cta--green .btn--secondary:hover,
-  .cta--orange .btn--secondary:hover {
-    background-color: var(--color-text-inverted);
+  .cta__btn-primary:hover {
+    color: white;
+    box-shadow:
+      0 0 15px hsla(17, 100%, 59%, 0.5),
+      8px 8px 40px hsla(17, 100%, 59%, 0.4),
+      inset -5px -5px 10px hsla(17, 100%, 59%, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .cta__btn-text {
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta__btn-icon {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    color: var(--color-orange, #ff6b30);
+    transition: all 0.3s ease;
+  }
+
+  .cta__btn-icon .material-symbols-outlined {
+    font-size: 1.25rem;
+  }
+
+  .cta__btn-primary:hover .cta__btn-icon {
+    width: calc(100% - 6px);
+    border-radius: 3rem;
+  }
+
+  /* Green background variant - white button */
+  .cta--green .cta__btn-primary {
+    background-color: white;
+    color: var(--color-primary, #255a4e);
+    border-color: hsla(163, 41%, 25%, 0.2);
+    box-shadow:
+      0 0 15px hsla(0, 0%, 100%, 0.3),
+      8px 8px 40px hsla(0, 0%, 100%, 0.15);
+  }
+
+  .cta--green .cta__btn-primary:hover {
+    color: var(--color-primary, #255a4e);
+    box-shadow:
+      0 0 15px hsla(0, 0%, 100%, 0.5),
+      8px 8px 40px hsla(0, 0%, 100%, 0.25);
+  }
+
+  .cta--green .cta__btn-text {
+    color: var(--color-primary, #255a4e);
+  }
+
+  .cta--green .cta__btn-icon {
+    background: var(--color-primary, #255a4e);
+    color: white;
+  }
+
+  /* Beige/white background - use orange button */
+  .cta--beige .cta__btn-primary,
+  .cta--white .cta__btn-primary {
+    background-color: var(--color-orange, #ff6b30);
+    color: white;
+  }
+
+  .cta--beige .cta__btn-text,
+  .cta--white .cta__btn-text {
+    color: white;
+  }
+
+  .cta--beige .cta__btn-icon,
+  .cta--white .cta__btn-icon {
+    background: white;
+    color: var(--color-orange, #ff6b30);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     SECONDARY BUTTON - Text link with arrow
+     ═══════════════════════════════════════════════════════════════ */
+  .cta__btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    color: var(--color-text-inverted);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.2s ease;
+  }
+
+  .cta__btn-secondary .material-symbols-outlined {
+    font-size: 1.25rem;
+    transition: transform 0.2s ease;
+  }
+
+  .cta__btn-secondary:hover {
+    color: var(--color-text-inverted);
+    opacity: 0.85;
+  }
+
+  .cta__btn-secondary:hover .material-symbols-outlined {
+    transform: translateX(4px);
+  }
+
+  /* Light backgrounds - darker text */
+  .cta--beige .cta__btn-secondary,
+  .cta--white .cta__btn-secondary {
     color: var(--color-text);
+  }
+
+  .cta--beige .cta__btn-secondary:hover,
+  .cta--white .cta__btn-secondary:hover {
+    color: var(--color-primary, #255a4e);
+  }
+
+  /* Green background - white text */
+  .cta--green .cta__btn-secondary {
+    color: white;
+  }
+
+  /* Orange background - white text */
+  .cta--orange .cta__btn-secondary {
+    color: white;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     RESPONSIVE
+     ═══════════════════════════════════════════════════════════════ */
+  @media (max-width: 640px) {
+    .cta__buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .cta__btn-primary {
+      width: 100%;
+      max-width: 280px;
+      justify-content: center;
+    }
+
+    .cta__image {
+      max-width: 250px;
+    }
   }
 </style>
