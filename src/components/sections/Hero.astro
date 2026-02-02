@@ -233,16 +233,30 @@ const avatars = [
   }
 
   /* Emphasized text in headline - orange highlight underline
-     Using text-decoration for underline that properly follows text baseline */
+     Dual background: text gradient + highlight gradient at bottom
+     Highlight animates in when element enters viewport */
   .hero__headline :global(strong),
   .hero__headline :global(em) {
     font-style: normal;
     font-weight: inherit; /* Abril Fatface only has one weight */
-    text-decoration: underline;
-    text-decoration-color: hsla(var(--color-orange-hsl, 17, 100%, 59%), 0.6);
-    text-decoration-thickness: 0.15em;
-    text-underline-offset: 0.05em;
-    text-decoration-skip-ink: none;
+    /* Dual background: text gradient + orange highlight that fades right */
+    background:
+      linear-gradient(330deg, var(--color-primary, #255a4e) 20%, var(--color-neutral-700, #5f524a) 100%),
+      linear-gradient(to right, var(--color-orange, #ff6b30) 0%, transparent 100%);
+    background-size: 100% 100%, 0% 0.35em; /* Highlight starts at 0% width */
+    background-position: 0 0, 0 calc(100% - 0.15em);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 0.1em;
+    transition: background-size 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  /* Animate highlight when hero is visible */
+  .hero.is-visible .hero__headline :global(strong),
+  .hero.is-visible .hero__headline :global(em) {
+    background-size: 100% 100%, 100% 0.35em; /* Highlight grows to full width */
   }
 
   /* ═══════════════════════════════════════════════════════════════
@@ -472,3 +486,21 @@ const avatars = [
     }
   }
 </style>
+
+<script>
+  // Add 'is-visible' class when hero enters viewport for highlight animation
+  const heroes = document.querySelectorAll('.hero');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  heroes.forEach((hero) => observer.observe(hero));
+</script>
