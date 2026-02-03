@@ -535,10 +535,10 @@ function getDropdownMeta(parentLabel: string, childLabel: string) {
     z-index: 100;
     transition: all 0.25s ease;
 
-    /* Glass effect - matching original */
-    border-radius: calc(var(--radius-lg, 1rem) * 2);
-    backdrop-filter: blur(var(--nav-blur));
-    background-color: hsla(var(--nav-glass-c3), var(--nav-glass-alpha));
+    /* Glass effect - matching live site exactly */
+    border-radius: 20px; /* Live site: 20px */
+    backdrop-filter: blur(var(--nav-blur)); /* Live site: blur(30px) */
+    background-color: hsla(var(--nav-glass-c3), var(--nav-glass-alpha)); /* Live site: rgba(255, 255, 255, 0.55) */
     box-shadow:
       inset 0 0 10px 1px hsla(var(--nav-glass-c1), 0.15),
       inset 5px 0 20px 0 hsla(var(--nav-glass-c2), 0.25),

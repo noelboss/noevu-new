@@ -124,12 +124,12 @@
   --container-padding: 1.5rem;
   --container-max: 1280px;
 
-  /* Border radius */
+  /* Border radius - matching live noevu.ch */
   --radius-sm: 0.25rem;
   --radius: 0.5rem;
   --radius-md: 0.75rem;
   --radius-lg: 1rem;
-  --radius-xl: 1.5rem;
+  --radius-xl: 1.25rem; /* 20px - matches live site cards */
   --radius-2xl: 2rem;
   --radius-full: 9999px;
 
