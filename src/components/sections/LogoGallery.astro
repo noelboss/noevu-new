@@ -108,7 +108,8 @@ const { title, logos } = data;
     display: flex;
     align-items: center;
     width: max-content;
-    animation: logo-marquee 40s linear infinite;
+    /* Faster animation matching original pacing */
+    animation: logo-marquee 30s linear infinite;
     will-change: transform;
   }
 
@@ -136,20 +137,23 @@ const { title, logos } = data;
     width: auto;
     max-width: 140px;
     object-fit: contain;
-    opacity: 0.7;
-    filter: grayscale(100%);
+    /* Matching original logoslider.less --logo-opacity: 0.75 */
+    opacity: 0.75;
+    filter: grayscale(50%);
+    /* Matching original 200ms ease-in-out transition */
     transition:
-      opacity 0.3s ease,
-      filter 0.3s ease,
-      transform 0.3s ease;
+      opacity 200ms ease-in-out,
+      filter 200ms ease-in-out,
+      transform 200ms ease-in-out;
   }
 
   .logo-gallery__item:hover .logo-gallery__logo,
   .logo-gallery__item a:hover .logo-gallery__logo,
   .logo-gallery__item a:focus .logo-gallery__logo {
+    /* Matching original hover: opacity 1 */
     opacity: 1;
     filter: grayscale(0%);
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 
   /* Smooth infinite marquee animation */
@@ -236,7 +240,8 @@ const { title, logos } = data;
 
   @media (min-width: 1280px) {
     .logo-gallery__track {
-      animation-duration: 50s;
+      /* Matching original logoslider.less --scroll-speed: 70s for smoother scroll on large screens */
+      animation-duration: 70s;
     }
 
     .logo-gallery__logo {

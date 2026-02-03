@@ -415,21 +415,22 @@ const hasImage = !!image;
 
   .contact-form__checkbox {
     flex-shrink: 0;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem; /* 20px - matching original */
+    height: 1.25rem;
     margin-top: 0.125rem;
     cursor: pointer;
     appearance: none;
 
     /* Glass effect */
-    background-color: hsla(var(--color-white-hsl, 0, 0%, 100%), 0.75);
+    background-color: hsla(0, 0%, 100%, 0.8);
     backdrop-filter: blur(5px);
-    border: 1px solid hsla(var(--color-beige-hsl, 35, 27%, 94%), 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid hsla(35, 27%, 94%, 0.5);
     border-radius: var(--radius);
 
     box-shadow:
-      inset 2px 0 10px 0 hsla(var(--color-white-hsl, 0, 0%, 100%), 0.5),
-      inset 0 -10px 15px 0 hsla(var(--color-white-hsl, 0, 0%, 100%), 0.5);
+      inset 2px 0 10px 0 hsla(0, 0%, 100%, 0.5),
+      inset 0 -10px 15px 0 hsla(0, 0%, 100%, 0.5);
 
     transition: all 0.3s ease-in-out;
   }
@@ -446,12 +447,12 @@ const hasImage = !!image;
     background-color: var(--color-primary);
     border-color: var(--color-primary);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
-    background-size: 16px;
+    background-size: 14px; /* Smaller to fit 20px checkbox */
     background-position: center;
     background-repeat: no-repeat;
     box-shadow:
-      0 0 15px hsla(var(--color-green-hsl, 163, 46%, 26%), 0.4),
-      8px 8px 20px hsla(var(--color-green-hsl, 163, 46%, 26%), 0.3);
+      0 0 15px hsla(163, 46%, 26%, 0.4),
+      8px 8px 20px hsla(163, 46%, 26%, 0.3);
   }
 
   .contact-form__checkbox:focus {

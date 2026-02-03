@@ -1,0 +1,547 @@
+---
+/**
+ * HorizontalScroll - Transforms vertical scroll into horizontal panel movement
+ * Ported from original noevu.ch Squarespace implementation
+ *
+ * Features:
+ * - Sticky container that slides panels horizontally on scroll
+ * - Full viewport width panels with image + text
+ * - Falls back to vertical stacking on mobile
+ * - Progress indicator showing current panel
+ */
+import type { Theme } from '../../schemas/sections';
+import { parseInlineMarkdown } from '../../utils/markdown';
+
+interface HorizontalScrollItem {
+  eyebrow?: string;
+  number?: string;
+  title: string;
+  description: string;
+  image?: {
+    src: string;
+    alt: string;
+  };
+  cta?: {
+    label: string;
+    href: string;
+    variant?: string;
+  };
+}
+
+interface Props {
+  data: {
+    headline?: string;
+    steps?: HorizontalScrollItem[];
+    items?: HorizontalScrollItem[];
+    theme?: Theme;
+  };
+  theme?: Theme;
+}
+
+const { data, theme: propTheme } = Astro.props;
+const { headline } = data;
+const items = data.steps || data.items || [];
+const theme = data.theme || propTheme || 'dark';
+const parsedHeadline = headline ? parseInlineMarkdown(headline) : null;
+---
+
+<section class="horizontal-scroll-section" data-theme={theme}>
+  {parsedHeadline && (
+    <div class="horizontal-scroll__header container">
+      <h2 class="horizontal-scroll__title" set:html={parsedHeadline} />
+    </div>
+  )}
+
+  <div class="horizontal-scroll__wrapper" data-panel-count={items.length}>
+    <div class="horizontal-scroll__sticky">
+      <div class="horizontal-scroll__container">
+        {items.map((item, index) => {
+          const eyebrow = item.eyebrow || (item.number ? `${item.number}.` : '');
+          return (
+            <div class="horizontal-scroll__panel" data-panel-index={index} id={`scroll-${index + 1}`}>
+              <div class="horizontal-scroll__panel-inner">
+                {item.image && (
+                  <div class="horizontal-scroll__image">
+                    <img
+                      src={item.image.src}
+                      alt={item.image.alt}
+                      loading={index === 0 ? 'eager' : 'lazy'}
+                    />
+                  </div>
+                )}
+
+                <div class="horizontal-scroll__content">
+                  {eyebrow && (
+                    <span class="horizontal-scroll__eyebrow" set:html={parseInlineMarkdown(eyebrow)} />
+                  )}
+                  <h3 class="horizontal-scroll__item-title" set:html={parseInlineMarkdown(item.title)} />
+                  <div class="horizontal-scroll__description" set:html={parseInlineMarkdown(item.description)} />
+
+                  {item.cta && (
+                    <a href={item.cta.href} class="horizontal-scroll__cta">
+                      {item.cta.label}
+                      <span class="material-symbols-outlined">chat</span>
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <!-- Progress indicators -->
+      <div class="horizontal-scroll__progress">
+        {items.map((_, index) => (
+          <button
+            class="horizontal-scroll__dot"
+            data-index={index}
+            aria-label={`Go to panel ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ═══════════════════════════════════════════════════════════════
+     CSS VARIABLES
+     ═══════════════════════════════════════════════════════════════ */
+  .horizontal-scroll-section {
+    --panel-gap: 0;
+    --content-max-width: 500px;
+    --image-max-size: 500px;
+    --transition-speed: 0.1s;
+
+    position: relative;
+    background: var(--theme-bg, var(--color-green-dark, #141110));
+    color: var(--theme-text, var(--color-white));
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     HEADER
+     ═══════════════════════════════════════════════════════════════ */
+  .horizontal-scroll__header {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-8);
+    text-align: center;
+  }
+
+  .horizontal-scroll__title {
+    font-size: var(--text-3xl);
+    color: var(--theme-heading, var(--color-white));
+    max-width: 800px;
+    margin-inline: auto;
+  }
+
+  .horizontal-scroll__title :global(strong),
+  .horizontal-scroll__title :global(em) {
+    color: var(--color-orange, #ff6b30);
+    font-style: normal;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     WRAPPER - Creates the scroll height
+     ═══════════════════════════════════════════════════════════════ */
+  .horizontal-scroll__wrapper {
+    /* Height set dynamically by JS based on scrollWidth */
+    position: relative;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     STICKY CONTAINER
+     ═══════════════════════════════════════════════════════════════ */
+  .horizontal-scroll__sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     SLIDING CONTAINER
+     ═══════════════════════════════════════════════════════════════ */
+  .horizontal-scroll__container {
+    display: flex;
+    flex-direction: row;
+    will-change: transform;
+    transition: transform var(--transition-speed) linear;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     PANEL
+     ═══════════════════════════════════════════════════════════════ */
+  .horizontal-scroll__panel {
+    flex: 0 0 100vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-8);
+    box-sizing: border-box;
+  }
+
+  .horizontal-scroll__panel-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+  }
+
+  /* Alternate layout: odd panels have image on left, even on right */
+  .horizontal-scroll__panel:nth-child(even) .horizontal-scroll__panel-inner {
+    direction: rtl;
+  }
+
+  .horizontal-scroll__panel:nth-child(even) .horizontal-scroll__panel-inner > * {
+    direction: ltr;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     IMAGE
+     ═══════════════════════════════════════════════════════════════ */
+  .horizontal-scroll__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .horizontal-scroll__image img {
+    max-width: var(--image-max-size);
+    max-height: 70vh;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--radius-lg);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     CONTENT
+     ═══════════════════════════════════════════════════════════════ */
+  .horizontal-scroll__content {
+    max-width: var(--content-max-width);
+  }
+
+  .horizontal-scroll__eyebrow {
+    display: block;
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-orange, #ff6b30);
+    margin-bottom: var(--space-3);
+  }
+
+  .horizontal-scroll__eyebrow :global(strong) {
+    font-weight: inherit;
+  }
+
+  .horizontal-scroll__item-title {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    color: var(--theme-heading, var(--color-white));
+    margin-bottom: var(--space-4);
+    line-height: 1.2;
+  }
+
+  .horizontal-scroll__item-title :global(strong),
+  .horizontal-scroll__item-title :global(em) {
+    color: var(--color-orange, #ff6b30);
+    font-style: normal;
+    font-weight: inherit;
+  }
+
+  .horizontal-scroll__description {
+    font-size: var(--text-base);
+    color: var(--theme-text-muted, hsla(var(--color-white-hsl), 0.8));
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-6);
+  }
+
+  .horizontal-scroll__description :global(a) {
+    color: var(--color-orange, #ff6b30);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .horizontal-scroll__description :global(a:hover) {
+    text-decoration: none;
+  }
+
+  .horizontal-scroll__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--theme-text, var(--color-white));
+    font-weight: var(--font-medium);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding-left: var(--space-6);
+    position: relative;
+  }
+
+  .horizontal-scroll__cta::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--space-4);
+    height: 1px;
+    background: currentColor;
+    opacity: 0.5;
+  }
+
+  .horizontal-scroll__cta:hover {
+    color: var(--color-orange, #ff6b30);
+  }
+
+  .horizontal-scroll__cta .material-symbols-outlined {
+    font-size: 1.25rem;
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     PROGRESS INDICATORS
+     ═══════════════════════════════════════════════════════════════ */
+  .horizontal-scroll__progress {
+    position: absolute;
+    bottom: var(--space-8);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: var(--space-3);
+    z-index: 10;
+  }
+
+  .horizontal-scroll__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid hsla(var(--color-white-hsl), 0.4);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+  }
+
+  .horizontal-scroll__dot:hover {
+    border-color: hsla(var(--color-white-hsl), 0.7);
+  }
+
+  .horizontal-scroll__dot.active {
+    background: var(--color-orange, #ff6b30);
+    border-color: var(--color-orange, #ff6b30);
+    transform: scale(1.2);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     MOBILE LAYOUT - Vertical stack
+     ═══════════════════════════════════════════════════════════════ */
+  @media (max-width: 768px) {
+    .horizontal-scroll__wrapper {
+      height: auto;
+    }
+
+    .horizontal-scroll__sticky {
+      position: relative;
+      height: auto;
+      overflow: visible;
+    }
+
+    .horizontal-scroll__container {
+      flex-direction: column;
+      transform: none !important;
+    }
+
+    .horizontal-scroll__panel {
+      flex: none;
+      width: 100%;
+      height: auto;
+      min-height: auto;
+      padding: var(--space-12) var(--space-4);
+    }
+
+    .horizontal-scroll__panel-inner {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+      text-align: center;
+    }
+
+    .horizontal-scroll__panel:nth-child(even) .horizontal-scroll__panel-inner {
+      direction: ltr;
+    }
+
+    .horizontal-scroll__image {
+      order: -1;
+    }
+
+    .horizontal-scroll__image img {
+      max-width: 280px;
+      max-height: 280px;
+    }
+
+    .horizontal-scroll__content {
+      max-width: none;
+    }
+
+    .horizontal-scroll__cta {
+      justify-content: center;
+      padding-left: 0;
+    }
+
+    .horizontal-scroll__cta::before {
+      display: none;
+    }
+
+    .horizontal-scroll__progress {
+      display: none;
+    }
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     LIGHT THEME ADJUSTMENTS
+     ═══════════════════════════════════════════════════════════════ */
+  [data-theme="light"] .horizontal-scroll-section,
+  [data-theme="beige"] .horizontal-scroll-section {
+    --theme-bg: var(--color-white);
+    --theme-text: var(--color-text);
+    --theme-heading: var(--color-text);
+    --theme-text-muted: var(--color-text-muted);
+  }
+
+  [data-theme="light"] .horizontal-scroll__dot,
+  [data-theme="beige"] .horizontal-scroll__dot {
+    border-color: hsla(var(--color-text-hsl), 0.3);
+  }
+
+  [data-theme="light"] .horizontal-scroll__dot:hover,
+  [data-theme="beige"] .horizontal-scroll__dot:hover {
+    border-color: hsla(var(--color-text-hsl), 0.6);
+  }
+</style>
+
+<script>
+  /**
+   * Horizontal scroll animation - transforms vertical scroll to horizontal movement
+   * Ported from original noevu.ch implementation
+   */
+
+  function initHorizontalScroll() {
+    const wrappers = document.querySelectorAll('.horizontal-scroll__wrapper');
+
+    wrappers.forEach((wrapper) => {
+      const container = wrapper.querySelector('.horizontal-scroll__container') as HTMLElement;
+      const panels = wrapper.querySelectorAll('.horizontal-scroll__panel');
+      const dots = wrapper.querySelectorAll('.horizontal-scroll__dot');
+      const panelCount = panels.length;
+      const wrapperEl = wrapper as HTMLElement;
+
+      if (!container || panelCount === 0) return;
+
+      // Calculate scroll distance based on actual content width
+      let scrollDistance = 0;
+
+      const recalculate = () => {
+        // Only apply horizontal scroll on desktop
+        if (window.innerWidth <= 768) {
+          wrapperEl.style.height = '';
+          container.style.transform = 'translateX(0)';
+          return false;
+        }
+
+        // scrollDistance = total width to scroll through
+        scrollDistance = container.scrollWidth - window.innerWidth;
+
+        // Set wrapper height to create the scroll distance
+        // Height = scrollDistance + one viewport height
+        wrapperEl.style.height = `${scrollDistance + window.innerHeight}px`;
+
+        return true;
+      };
+
+      const onScroll = () => {
+        // Skip on mobile
+        if (window.innerWidth <= 768) return;
+
+        // Calculate how far we've scrolled into the wrapper
+        const offset = window.pageYOffset - wrapperEl.offsetTop;
+
+        // Clamp between 0 and scrollDistance
+        const clamped = Math.min(Math.max(offset, 0), scrollDistance);
+
+        // Apply transform
+        container.style.transform = `translateX(-${clamped}px)`;
+
+        // Update active dot based on progress
+        if (scrollDistance > 0) {
+          const progress = clamped / scrollDistance;
+          const activeIndex = Math.min(
+            Math.floor(progress * panelCount),
+            panelCount - 1
+          );
+
+          dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === activeIndex);
+          });
+        }
+      };
+
+      // Scroll to specific panel
+      const scrollToPanel = (index: number) => {
+        if (scrollDistance <= 0 || panelCount <= 1) return;
+
+        const panelWidth = scrollDistance / (panelCount - 1);
+        const targetOffset = panelWidth * index;
+        const targetScroll = wrapperEl.offsetTop + targetOffset;
+
+        window.scrollTo({
+          top: targetScroll,
+          behavior: 'smooth'
+        });
+      };
+
+      // Event listeners with throttling
+      let ticking = false;
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            onScroll();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+
+      window.addEventListener('resize', () => {
+        recalculate();
+        onScroll();
+      });
+
+      // Dot click handlers
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          scrollToPanel(index);
+        });
+      });
+
+      // Initial setup
+      recalculate();
+      onScroll();
+    });
+  }
+
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initHorizontalScroll);
+  } else {
+    initHorizontalScroll();
+  }
+</script>

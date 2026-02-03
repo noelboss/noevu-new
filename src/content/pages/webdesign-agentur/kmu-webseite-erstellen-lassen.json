@@ -146,10 +146,8 @@
       "columns": "3"
     },
     {
-      "type": "process",
-      "title": "Der Prozess",
-      "subtitle": "In 4 Schritten zu eurer neuen Website",
-      "description": "Unser Prozess ist auf maximale Effizienz und Transparenz für euer KMU ausgelegt.",
+      "type": "verticalTimeline",
+      "headline": "In 4 Schritten zu eurer neuen **Website**",
       "steps": [
         {
           "title": "**Vorbereitung & Analyse**",

@@ -37,6 +37,8 @@ import CertificationBadgeSection from './sections/CertificationBadgeSection.astr
 import TimelineProcessSection from './sections/TimelineProcessSection.astro';
 import IconGridSection from './sections/IconGridSection.astro';
 import ContentShowcaseSection from './sections/ContentShowcaseSection.astro';
+import VerticalTimeline from './sections/VerticalTimeline.astro';
+import HorizontalScroll from './sections/HorizontalScroll.astro';
 
 interface Props {
   sections: SectionEntry[];
@@ -83,6 +85,8 @@ const sectionComponents: Record<string, any> = {
   timelineProcess: TimelineProcessSection,
   iconGrid: IconGridSection,
   contentShowcase: ContentShowcaseSection,
+  verticalTimeline: VerticalTimeline,
+  horizontalScroll: HorizontalScroll,
 };
 ---
 

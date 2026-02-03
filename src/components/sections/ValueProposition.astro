@@ -54,6 +54,44 @@ const parsedSubtitle = parseInlineMarkdown(subtitle);
   </div>
 </section>
 
+<script>
+  // 3D Card hover effect matching cards3d.js
+  const THRESHOLD = 8;
+  const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  function init3dCards() {
+    const cards = document.querySelectorAll('.value-prop__card');
+
+    cards.forEach((card) => {
+      if (motionQuery.matches) return;
+
+      const handleHover = (e: MouseEvent) => {
+        const rect = card.getBoundingClientRect();
+        const hor = (e.clientX - rect.left) / rect.width;
+        const ver = (e.clientY - rect.top) / rect.height;
+        const ry = (THRESHOLD / 2 - hor * THRESHOLD).toFixed(2);
+        const rx = (ver * THRESHOLD - THRESHOLD / 3).toFixed(2);
+        (card as HTMLElement).style.transform = `perspective(${rect.width}px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+      };
+
+      const resetStyles = () => {
+        const rect = card.getBoundingClientRect();
+        (card as HTMLElement).style.transform = `perspective(${rect.width}px) rotateX(0deg) rotateY(0deg)`;
+      };
+
+      card.addEventListener('mousemove', handleHover as EventListener);
+      card.addEventListener('mouseleave', resetStyles);
+    });
+  }
+
+  // Run on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init3dCards);
+  } else {
+    init3dCards();
+  }
+</script>
+
 <style>
   /* Section base */
   .value-prop {
@@ -117,22 +155,35 @@ const parsedSubtitle = parseInlineMarkdown(subtitle);
     -webkit-backdrop-filter: blur(12px);
     border-radius: var(--radius-xl);
     overflow: hidden;
+    /* 3D transform support matching cards3d.less */
+    will-change: transform;
+    transform-style: preserve-3d;
     /* 2-layer shadow matching original .defaultBoxShadow() mixin */
     box-shadow:
       0px 0px 15px hsla(17, 100%, 59%, 0.3),
       8px 8px 40px hsla(var(--color-white-hsl), 0.5);
     /* Matching original .glass() transition timing */
     transition:
+      transform 0.2s ease-in-out,
       box-shadow 0.5s ease-in-out,
       backdrop-filter 0.5s ease-in-out,
       background-color 0.5s ease-in-out;
   }
 
   .value-prop__card:hover {
-    /* Enhanced 2-layer shadow on hover */
+    /* Enhanced shadow on hover matching cards3d.less */
     box-shadow:
-      0px 0px 20px hsla(17, 100%, 59%, 0.4),
-      12px 12px 50px hsla(var(--color-white-hsl), 0.6);
+      0px 0px 30px hsla(var(--color-white-hsl), 0.1),
+      0px 0px 40px hsla(var(--color-black-hsl), 0.2);
+  }
+
+  /* Content parallax effect matching cards3d.less */
+  .value-prop__card .value-prop__content {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .value-prop__card:hover .value-prop__content {
+    transform: scale(1.01);
   }
 
   /* Image wrapper with gradient background */
@@ -305,5 +356,17 @@ const parsedSubtitle = parseInlineMarkdown(subtitle);
       hsla(var(--color-grey-hsl), 0.3) 0%,
       hsla(var(--color-orange-hsl), 0.2) 100%
     );
+  }
+
+  /* Reduced motion preference - disable 3D transforms */
+  @media (prefers-reduced-motion: reduce) {
+    .value-prop__card {
+      will-change: auto;
+      transform: none !important;
+    }
+
+    .value-prop__card:hover .value-prop__content {
+      transform: none;
+    }
   }
 </style>

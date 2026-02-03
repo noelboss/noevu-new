@@ -207,11 +207,11 @@
       }
     },
     {
-      "type": "process",
-      "title": "",
+      "type": "verticalTimeline",
+      "headline": "",
       "steps": [
         {
-          "number": 1,
+          "eyebrow": "Schritt 1",
           "title": "Zuhören. Verstehen. Strukturieren.",
           "description": "Eine neue Squarespace Webseiten entwickeln zu lassen beginnt damit, dass wir zuhören und ein tiefes Verständnis für Eure Welt und die Eurer Kunden entwickeln. Das Resultat ist eine klare Struktur und ein zielgerichtetes Konzept. **Ihr erhaltet die Gewissheit,** dass eure neue Webseite auf einem soliden, strategischen Fundament steht.",
           "label": "Vorbereitung & Analyse",
@@ -221,42 +221,40 @@
           }
         },
         {
-          "number": 2,
+          "eyebrow": "Schritt 2",
           "title": "Aus Erkenntnissen wird erlebbares Design.",
           "description": "Aus der Strategie entstehen lebendige, klickbare Webseiten Prototypen. **Ihr könnt so spüren,** was zu Euch passt, und sehen, was eure Kunden begeistern wird, bevor Entwicklungsaufwand entsteht. Ihr entscheidet, welche Richtung perfektioniert wird.",
-          "label": "Design Prototypen",
           "image": {
             "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/55e92916-452c-4ec9-affd-c0234c1dc79f/a-direct-frontal-product-photography-of-_anB4IVyFRG6RFy703Jy_Gw_7CyRI8RETZye6B3IzbbTOw.png",
             "alt": "individualisierte und angepasste Squarespace Webdesigns, die über die Standardfunktionalität hinausgehen."
           }
         },
         {
-          "number": 3,
+          "eyebrow": "Schritt 3",
           "title": "Effizienz trifft Exzellenz.",
           "description": "In dieser Phase wird der Wunsch, eine neue Webseite erstellen zu lassen Realität. **Ihr profitiert von** über 25 Jahren Erfahrung, kombiniert mit der Effizienz smarter Tools. Das Ergebnis ist eine **professionelle Webseite** mit erstklassiger Funktion und einer Bedienung, die eure Kunden begeistert – und Euch den Alltag erleichtert.",
-          "label": "Entwicklung",
           "image": {
             "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/3093755f-ad25-47f5-9b01-4dd4ba1da91e/image-that-conveys-the-following-partner_MSDYydBZQrO7REUdXr27eQ_Vy1YyQY7S-yQ_X29-18jCQ.png",
             "alt": "Individuelle Code-Erweiterungen für Squarespace-Webseiten"
           }
         },
         {
-          "number": 4,
+          "eyebrow": "Schritt 4",
           "title": "Go-Live ist nur der Anfang.",
           "description": "Der Livegang ist nur der Anfang eurer Reise. **Ihr bleibt nicht allein** – eure Webseite wird weiter betreut. Dank einem einfachen All-in-One-Paket aus Hosting, Wartung und Support seid ihr jederzeit sicher abgedeckt. Unkompliziert, verlässlich und schnell erreichbar.",
-          "label": "Betrieb & Support",
           "image": {
             "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/c024652b-0050-4a29-a1c8-9fa674f91189/website-expanding-beyond-the-screen-to-s__U2lz-sHSSaUubT5f7b4OQ_Zett5ctnSpmhgBAAcfjO3w.png",
             "alt": "Professionelle Begleitung für Squarespace Webseiten in Bezug auf Hosting und Technologie."
           }
         }
       ],
-      "layout": "vertical",
-      "cta": {
-        "label": "Neue Webseite erstellen lassen?",
-        "href": "/kontakt",
-        "variant": "primary"
-      }
+      "ctas": [
+        {
+          "label": "Neue Webseite erstellen lassen?",
+          "href": "/kontakt",
+          "variant": "primary"
+        }
+      ]
     },
     {
       "type": "servicesGrid",

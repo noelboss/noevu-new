@@ -135,7 +135,7 @@
       "theme": "black-bold"
     },
     {
-      "type": "process",
+      "type": "verticalTimeline",
       "headline": "So einfach funktioniert Euer Weg zur AI-**Transformation**",
       "steps": [
         {
