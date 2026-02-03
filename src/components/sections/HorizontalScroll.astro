@@ -3,11 +3,11 @@
  * HorizontalScroll - Transforms vertical scroll into horizontal panel movement
  * Ported from original noevu.ch Squarespace implementation
  *
- * Features:
- * - Sticky container that slides panels horizontally on scroll
- * - Full viewport width panels with image + text
- * - Falls back to vertical stacking on mobile
- * - Progress indicator showing current panel
+ * Structure (matching original):
+ * - .horizontal-scroll-section: outer section with theme
+ * - .horizontal-scroll__wrapper: height container (position: relative, dynamic height via JS)
+ * - .horizontal-scroll__container: sticky element that transforms (position: sticky, width: max-content)
+ * - .horizontal-scroll__panel: individual 100vw panels
  */
 import type { Theme } from '../../schemas/sections';
 import { parseInlineMarkdown } from '../../utils/markdown';
@@ -25,6 +25,7 @@ interface HorizontalScrollItem {
     label: string;
     href: string;
     variant?: string;
+    icon?: string;
   };
 }
 
@@ -53,53 +54,51 @@ const parsedHeadline = headline ? parseInlineMarkdown(headline) : null;
   )}
 
   <div class="horizontal-scroll__wrapper" data-panel-count={items.length}>
-    <div class="horizontal-scroll__sticky">
-      <div class="horizontal-scroll__container">
-        {items.map((item, index) => {
-          const eyebrow = item.eyebrow || (item.number ? `${item.number}.` : '');
-          return (
-            <div class="horizontal-scroll__panel" data-panel-index={index} id={`scroll-${index + 1}`}>
-              <div class="horizontal-scroll__panel-inner">
-                {item.image && (
-                  <div class="horizontal-scroll__image">
-                    <img
-                      src={item.image.src}
-                      alt={item.image.alt}
-                      loading={index === 0 ? 'eager' : 'lazy'}
-                    />
-                  </div>
-                )}
-
-                <div class="horizontal-scroll__content">
-                  {eyebrow && (
-                    <span class="horizontal-scroll__eyebrow" set:html={parseInlineMarkdown(eyebrow)} />
-                  )}
-                  <h3 class="horizontal-scroll__item-title" set:html={parseInlineMarkdown(item.title)} />
-                  <div class="horizontal-scroll__description" set:html={parseInlineMarkdown(item.description)} />
-
-                  {item.cta && (
-                    <a href={item.cta.href} class="horizontal-scroll__cta">
-                      {item.cta.label}
-                      <span class="material-symbols-outlined">chat</span>
-                    </a>
-                  )}
+    <div class="horizontal-scroll__container">
+      {items.map((item, index) => {
+        const eyebrow = item.eyebrow || (item.number ? `${item.number}.` : '');
+        return (
+          <section class="horizontal-scroll__panel" data-panel-index={index} id={`scroll-${index + 1}`}>
+            <div class="horizontal-scroll__panel-inner">
+              {item.image && (
+                <div class="horizontal-scroll__image">
+                  <img
+                    src={item.image.src}
+                    alt={item.image.alt}
+                    loading={index === 0 ? 'eager' : 'lazy'}
+                  />
                 </div>
+              )}
+
+              <div class="horizontal-scroll__content">
+                {eyebrow && (
+                  <span class="horizontal-scroll__eyebrow" set:html={parseInlineMarkdown(eyebrow)} />
+                )}
+                <h3 class="horizontal-scroll__item-title" set:html={parseInlineMarkdown(item.title)} />
+                <div class="horizontal-scroll__description" set:html={parseInlineMarkdown(item.description)} />
+
+                {item.cta && (
+                  <a href={item.cta.href} class="horizontal-scroll__cta">
+                    {item.cta.label}
+                    <span class="material-symbols-outlined">{item.cta.icon || 'chat'}</span>
+                  </a>
+                )}
               </div>
             </div>
-          );
-        })}
-      </div>
+          </section>
+        );
+      })}
+    </div>
 
-      <!-- Progress indicators -->
-      <div class="horizontal-scroll__progress">
-        {items.map((_, index) => (
-          <button
-            class="horizontal-scroll__dot"
-            data-index={index}
-            aria-label={`Go to panel ${index + 1}`}
-          />
-        ))}
-      </div>
+    <!-- Progress indicators (fixed position within wrapper) -->
+    <div class="horizontal-scroll__progress">
+      {items.map((_, index) => (
+        <button
+          class="horizontal-scroll__dot"
+          data-index={index}
+          aria-label={`Go to panel ${index + 1}`}
+        />
+      ))}
     </div>
   </div>
 </section>
@@ -112,7 +111,6 @@ const parsedHeadline = headline ? parseInlineMarkdown(headline) : null;
     --panel-gap: 0;
     --content-max-width: 500px;
     --image-max-size: 500px;
-    --transition-speed: 0.1s;
 
     position: relative;
     background: var(--theme-bg, var(--color-green-dark, #141110));
@@ -142,47 +140,83 @@ const parsedHeadline = headline ? parseInlineMarkdown(headline) : null;
   }
 
   /* ═══════════════════════════════════════════════════════════════
-     WRAPPER - Creates the scroll height
+     WRAPPER - Creates the scroll height (matching original .horizontal-section)
+     Height set dynamically by JS: scrollDistance + viewportHeight
      ═══════════════════════════════════════════════════════════════ */
   .horizontal-scroll__wrapper {
-    /* Height set dynamically by JS based on scrollWidth */
     position: relative;
+    /* Prevent horizontal overflow on the wrapper */
+    overflow-x: clip;
+  }
+
+  @supports not (overflow-x: clip) {
+    .horizontal-scroll__wrapper {
+      overflow-x: hidden;
+    }
   }
 
   /* ═══════════════════════════════════════════════════════════════
-     STICKY CONTAINER
-     ═══════════════════════════════════════════════════════════════ */
-  .horizontal-scroll__sticky {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-  }
-
-  /* ═══════════════════════════════════════════════════════════════
-     SLIDING CONTAINER
+     CONTAINER - Sticky element that transforms horizontally
+     (matching original .horizontal-container)
      ═══════════════════════════════════════════════════════════════ */
   .horizontal-scroll__container {
-    display: flex;
-    flex-direction: row;
-    will-change: transform;
-    transition: transform var(--transition-speed) linear;
+    /* Mobile first - vertical stacking */
+    display: block;
+    width: 100%;
+  }
+
+  @media (min-width: 769px) {
+    .horizontal-scroll__container {
+      position: sticky;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      display: flex;
+      width: max-content;
+      /* GPU acceleration for smooth transforms */
+      will-change: transform;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translateZ(0);
+      -webkit-font-smoothing: subpixel-antialiased;
+    }
   }
 
   /* ═══════════════════════════════════════════════════════════════
-     PANEL
+     PANEL - Individual 100vw sections
+     (matching original .horizontal-scroll-section)
      ═══════════════════════════════════════════════════════════════ */
   .horizontal-scroll__panel {
-    flex: 0 0 100vw;
     width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: var(--space-8);
     box-sizing: border-box;
+    /* Reset default section margins */
+    margin: 0;
+  }
+
+  @media (min-width: 769px) {
+    .horizontal-scroll__panel {
+      flex: 0 0 100vw;
+      height: 100vh;
+      min-height: 100vh;
+      /* GPU acceleration */
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translateZ(0);
+      -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+    /* Remove padding from first panel */
+    .horizontal-scroll__panel:first-child {
+      padding-top: 0;
+    }
   }
 
   .horizontal-scroll__panel-inner {
@@ -309,16 +343,30 @@ const parsedHeadline = headline ? parseInlineMarkdown(headline) : null;
   }
 
   /* ═══════════════════════════════════════════════════════════════
-     PROGRESS INDICATORS
+     PROGRESS INDICATORS - Fixed at bottom of viewport during scroll
      ═══════════════════════════════════════════════════════════════ */
   .horizontal-scroll__progress {
-    position: absolute;
-    bottom: var(--space-8);
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: var(--space-3);
-    z-index: 10;
+    display: none;
+  }
+
+  @media (min-width: 769px) {
+    .horizontal-scroll__progress {
+      display: flex;
+      position: fixed;
+      bottom: var(--space-8);
+      left: 50%;
+      transform: translateX(-50%);
+      gap: var(--space-3);
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .horizontal-scroll__wrapper.is-active .horizontal-scroll__progress {
+      opacity: 1;
+      pointer-events: auto;
+    }
   }
 
   .horizontal-scroll__dot {
@@ -343,30 +391,23 @@ const parsedHeadline = headline ? parseInlineMarkdown(headline) : null;
   }
 
   /* ═══════════════════════════════════════════════════════════════
-     MOBILE LAYOUT - Vertical stack
+     MOBILE LAYOUT - Vertical stack (< 769px)
      ═══════════════════════════════════════════════════════════════ */
   @media (max-width: 768px) {
     .horizontal-scroll__wrapper {
-      height: auto;
-    }
-
-    .horizontal-scroll__sticky {
-      position: relative;
-      height: auto;
-      overflow: visible;
+      height: auto !important;
     }
 
     .horizontal-scroll__container {
-      flex-direction: column;
       transform: none !important;
     }
 
     .horizontal-scroll__panel {
-      flex: none;
       width: 100%;
       height: auto;
       min-height: auto;
       padding: var(--space-12) var(--space-4);
+      padding-top: 0;
     }
 
     .horizontal-scroll__panel-inner {
@@ -400,10 +441,6 @@ const parsedHeadline = headline ? parseInlineMarkdown(headline) : null;
     .horizontal-scroll__cta::before {
       display: none;
     }
-
-    .horizontal-scroll__progress {
-      display: none;
-    }
   }
 
   /* ═══════════════════════════════════════════════════════════════
@@ -431,7 +468,13 @@ const parsedHeadline = headline ? parseInlineMarkdown(headline) : null;
 <script>
   /**
    * Horizontal scroll animation - transforms vertical scroll to horizontal movement
-   * Ported from original noevu.ch implementation
+   * Ported from original noevu.ch implementation (global/horizontal-scroll.js)
+   *
+   * Key mechanics:
+   * 1. wrapper height = scrollDistance + viewportHeight (creates vertical scroll room)
+   * 2. container is sticky, transforms horizontally based on scroll position
+   * 3. scrollDistance = container.scrollWidth - viewportWidth
+   * 4. transform = translateX(-offset) clamped to [0, scrollDistance]
    */
 
   function initHorizontalScroll() {
@@ -446,45 +489,60 @@ const parsedHeadline = headline ? parseInlineMarkdown(headline) : null;
 
       if (!container || panelCount === 0) return;
 
-      // Calculate scroll distance based on actual content width
       let scrollDistance = 0;
 
+      // Recalculate dimensions on resize
       const recalculate = () => {
-        // Only apply horizontal scroll on desktop
-        if (window.innerWidth <= 768) {
+        // Only apply horizontal scroll on desktop (>= 769px, matching original)
+        if (window.innerWidth < 769) {
           wrapperEl.style.height = '';
-          container.style.transform = 'translateX(0)';
+          container.style.transform = '';
+          wrapperEl.classList.remove('is-active');
           return false;
         }
 
-        // scrollDistance = total width to scroll through
+        // scrollDistance = total horizontal scroll distance
+        // (total content width - one viewport width)
         scrollDistance = container.scrollWidth - window.innerWidth;
 
-        // Set wrapper height to create the scroll distance
-        // Height = scrollDistance + one viewport height
-        wrapperEl.style.height = `${scrollDistance + window.innerHeight}px`;
+        // Set wrapper height to create vertical scroll room
+        // Height = scrollDistance + viewportHeight
+        // This means: scrolling viewportHeight pixels vertically = scrollDistance pixels horizontally
+        if (scrollDistance > 0) {
+          wrapperEl.style.height = `${scrollDistance + window.innerHeight}px`;
+        }
 
         return true;
       };
 
+      // Handle scroll event
       const onScroll = () => {
         // Skip on mobile
-        if (window.innerWidth <= 768) return;
+        if (window.innerWidth < 769) return;
 
-        // Calculate how far we've scrolled into the wrapper
-        const offset = window.pageYOffset - wrapperEl.offsetTop;
+        // Calculate vertical offset from top of wrapper
+        // Use getBoundingClientRect for accurate position relative to viewport
+        const wrapperRect = wrapperEl.getBoundingClientRect();
+        const offset = -wrapperRect.top;
 
-        // Clamp between 0 and scrollDistance
+        // Clamp offset between 0 and scrollDistance
         const clamped = Math.min(Math.max(offset, 0), scrollDistance);
 
-        // Apply transform
+        // Calculate percentage for dot indicators
+        const pct = scrollDistance > 0 ? clamped / scrollDistance : 0;
+
+        // Apply horizontal transform (negative = move left)
         container.style.transform = `translateX(-${clamped}px)`;
 
+        // Toggle active class when we're within the scroll section
+        const isInSection = offset > 0 && offset < scrollDistance;
+        wrapperEl.classList.toggle('is-active', isInSection || (offset >= 0 && offset <= scrollDistance));
+
         // Update active dot based on progress
-        if (scrollDistance > 0) {
-          const progress = clamped / scrollDistance;
+        if (scrollDistance > 0 && panelCount > 0) {
+          // Calculate which panel is most visible
           const activeIndex = Math.min(
-            Math.floor(progress * panelCount),
+            Math.floor(pct * panelCount),
             panelCount - 1
           );
 
@@ -494,13 +552,20 @@ const parsedHeadline = headline ? parseInlineMarkdown(headline) : null;
         }
       };
 
-      // Scroll to specific panel
+      // Scroll to specific panel when dot is clicked
       const scrollToPanel = (index: number) => {
         if (scrollDistance <= 0 || panelCount <= 1) return;
 
-        const panelWidth = scrollDistance / (panelCount - 1);
-        const targetOffset = panelWidth * index;
-        const targetScroll = wrapperEl.offsetTop + targetOffset;
+        // Each panel takes up scrollDistance / (panelCount - 1) of vertical scroll
+        // But we want to scroll to the start of each panel
+        const panelScrollWidth = window.innerWidth; // Each panel is 100vw
+        const targetHorizontalOffset = panelScrollWidth * index;
+
+        // Clamp to scrollDistance
+        const clampedOffset = Math.min(targetHorizontalOffset, scrollDistance);
+
+        // Convert to vertical scroll position
+        const targetScroll = wrapperEl.offsetTop + clampedOffset;
 
         window.scrollTo({
           top: targetScroll,
@@ -508,7 +573,7 @@ const parsedHeadline = headline ? parseInlineMarkdown(headline) : null;
         });
       };
 
-      // Event listeners with throttling
+      // Throttled scroll handler
       let ticking = false;
       window.addEventListener('scroll', () => {
         if (!ticking) {
@@ -520,6 +585,7 @@ const parsedHeadline = headline ? parseInlineMarkdown(headline) : null;
         }
       });
 
+      // Recalculate on resize
       window.addEventListener('resize', () => {
         recalculate();
         onScroll();

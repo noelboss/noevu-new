@@ -277,7 +277,7 @@
             "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/df100f1e-d91e-4f9f-bd3e-b86302aee06f/modern-tablet-floating-in-mid-air-with-t_oulZQSkSTEib2GV67kN1xg_nnyoW0CJQxG8lfT2F5DlYg.png",
             "alt": "Grafik des Golden Circle Modells mit drei Kreisen"
           },
-          "cta": { "label": "Botschaft Eurer Webseite entwicklen?", "href": "/termin", "variant": "text" }
+          "cta": { "label": "Botschaft Eurer Webseite entwicklen?", "href": "/termin", "variant": "text", "icon": "chat" }
         },
         {
           "number": "2",
@@ -288,29 +288,29 @@
             "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/6884ea7c-68b1-4a9d-86e3-797469320890/a-professional-render-of-a-tablet-device_m5o3-uTgQvOnnAIlJBJcYg_FyUaemYmQaGJ2Pr1pTI3mA.png",
             "alt": "Digitales Tablet mit der Aufschrift Level Up"
           },
-          "cta": { "label": "Webseite mit Kundenfokus erstellen?", "href": "/webdesign-agentur/kmu-webseite-erstellen-lassen", "variant": "text" }
+          "cta": { "label": "Webseite mit Kundenfokus erstellen?", "href": "/websites-erstellen-lassen", "variant": "text", "icon": "frame_person" }
         },
         {
           "number": "3",
           "eyebrow": "**3. Strategisches Design & Funktion**",
           "title": "Schönheit mit **Strategie**.",
-          "description": "Ihr braucht mehr als eine <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">schöne neue Webseite</a>: Das Webdesign muss Eure Botschaft klar unterstützen und zugleich zum Handeln motivieren. Als Zügestalten ein visuelles Erlebnis, das Eure Inhalte wirkungsvoll und ansprechend inszeniert.",
+          "description": "Ihr braucht mehr als eine <a href=\"/websites-erstellen-lassen\">schöne neue Webseite</a>: Das Webdesign muss Eure Botschaft klar unterstützen und zugleich zum Handeln motivieren. Als Zügestalten ein visuelles Erlebnis, das Eure Inhalte wirkungsvoll und ansprechend inszeniert.",
           "image": {
             "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/9b1eb194-7eac-4e46-9b42-5131cedfc155/a-render-of-a-macbook-pro-like-laptop-di_E74U8zM-RVm7moaCW9LddQ_mOWRABLGTju6z-WQGxMRnA.png",
             "alt": "Laptop mit gestapelten Bergen und aufsteigendem Pfeil auf beigem Hintergrund"
           },
-          "cta": { "label": "Webseiten Strategie entwickeln?", "href": "/termin", "variant": "text" }
+          "cta": { "label": "Webseiten Strategie entwickeln?", "href": "/termin", "variant": "text", "icon": "motion_sensor_active" }
         },
         {
           "number": "4",
           "eyebrow": "**4. Service & Betrieb**",
           "title": "Bereit für die Zukunft – **automatisch**.",
-          "description": "Normale Webseiten werden alt. Eure <a href=\"/webdesign-agentur/kmu-webseite-erstellen-lassen\">neue KMU Webseite</a> verbessert sich ständig. Mit modernen SaaS-Lösungen erhält sie laufend neue Funktionen. Durch gezielte Optimierungen, höchste Sicherheitsstandards und clevere Performance-Verbesserungen (z. B. mit Cloudflare) bleibt sie schnell, stabil und immer aktuell. Dank integrierten Service-Stunden reagiert unsere Webagentur in Zürich flexibel auf Eure Wünsche. Wenn einmal ein Problem auftaucht, finden und lösen wir es schnell.",
+          "description": "Normale Webseiten werden alt. Eure <a href=\"/websites-erstellen-lassen\">neue KMU Webseite</a> verbessert sich ständig. Mit modernen SaaS-Lösungen erhält sie laufend neue Funktionen. Durch gezielte Optimierungen, höchste Sicherheitsstandards und clevere Performance-Verbesserungen (z. B. mit Cloudflare) bleibt sie schnell, stabil und immer aktuell. Dank integrierten Service-Stunden reagiert unsere Webagentur in Zürich flexibel auf Eure Wünsche. Wenn einmal ein Problem auftaucht, finden und lösen wir es schnell.",
           "image": {
             "src": "https://images.squarespace-cdn.com/content/v1/67fe953929835a475f4fe93c/543dad37-8791-49d6-84ec-fbd29c8a98dd/a-product-photograph-of-a-modern-air-pur_URzbQ1iARwCAbgzsqEgxbA_u2D5L9fmR_6C3CncP2fTNg.png",
             "alt": "Moderner Server mit glänzender Oberfläche auf schwarzer Basis"
           },
-          "cta": { "label": "KMU Webseite optimieren?", "href": "/termin", "variant": "text" }
+          "cta": { "label": "KMU Webseite optimieren?", "href": "/termin", "variant": "text", "icon": "monitoring" }
         }
       ],
       "layout": "vertical"
