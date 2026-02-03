@@ -107,7 +107,7 @@ const parsedSubtitle = parseInlineMarkdown(subtitle);
     }
   }
 
-  /* Card styling with glass effect and 3D transforms */
+  /* Card styling with glass effect - 2-layer shadow matching original */
   .value-prop__card {
     position: relative;
     display: flex;
@@ -117,27 +117,22 @@ const parsedSubtitle = parseInlineMarkdown(subtitle);
     -webkit-backdrop-filter: blur(12px);
     border-radius: var(--radius-xl);
     overflow: hidden;
-    /* 3D perspective setup */
-    transform-style: preserve-3d;
-    /* 3-layer shadow matching original */
+    /* 2-layer shadow matching original .defaultBoxShadow() mixin */
     box-shadow:
-      0px 0px 15px hsla(17, 100%, 59%, 0.15),
-      8px 8px 40px hsla(0, 0%, 100%, 0.3),
-      inset -5px -5px 10px hsla(17, 100%, 59%, 0.08);
+      0px 0px 15px hsla(17, 100%, 59%, 0.3),
+      8px 8px 40px hsla(var(--color-white-hsl), 0.5);
+    /* Matching original .glass() transition timing */
     transition:
-      transform 0.3s ease-out,
-      box-shadow 0.3s ease-out,
-      filter 0.3s ease-out;
+      box-shadow 0.5s ease-in-out,
+      backdrop-filter 0.5s ease-in-out,
+      background-color 0.5s ease-in-out;
   }
 
   .value-prop__card:hover {
-    /* 3D rotation effect */
-    transform: perspective(1000px) rotateX(2deg) rotateY(-3deg) translateZ(10px);
-    filter: brightness(1.05) saturate(1.1);
+    /* Enhanced 2-layer shadow on hover */
     box-shadow:
-      0px 0px 20px hsla(17, 100%, 59%, 0.25),
-      12px 12px 50px hsla(0, 0%, 100%, 0.4),
-      inset -5px -5px 10px hsla(17, 100%, 59%, 0.12);
+      0px 0px 20px hsla(17, 100%, 59%, 0.4),
+      12px 12px 50px hsla(var(--color-white-hsl), 0.6);
   }
 
   /* Image wrapper with gradient background */
@@ -165,11 +160,10 @@ const parsedSubtitle = parseInlineMarkdown(subtitle);
   }
 
   .value-prop__card:hover .value-prop__image {
-    transform: scale(1.08) rotate(-1deg);
-    filter: brightness(1.08);
+    transform: scale(1.05);
   }
 
-  /* Icon fallback (when no image) with glass effect */
+  /* Icon fallback (when no image) with glass effect matching .glass() mixin */
   .value-prop__icon {
     display: flex;
     align-items: center;
@@ -184,12 +178,13 @@ const parsedSubtitle = parseInlineMarkdown(subtitle);
     );
     border-radius: var(--radius-lg);
     color: var(--color-orange);
-    /* Glass effect */
+    /* Glass effect matching original .glass() mixin */
     backdrop-filter: blur(10px);
     border: 1px solid hsla(255, 255, 255, 0.15);
     box-shadow:
-      inset 5px 0 20px 0 hsla(17, 100%, 59%, 0.1),
-      inset 0 -10px 20px 0 hsla(17, 100%, 59%, 0.05);
+      inset 5px 0 20px 0 hsla(17, 100%, 59%, 0.5),
+      inset 0 -30px 30px 0 hsla(17, 100%, 59%, 0.5);
+    transition: box-shadow 0.5s ease-in-out;
   }
 
   .value-prop__icon :global(svg) {

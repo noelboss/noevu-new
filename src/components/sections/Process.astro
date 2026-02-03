@@ -125,11 +125,11 @@ const parsedSubtitle = parseInlineMarkdown(subtitle);
     min-height: 200px;
   }
 
-  /* Content area (left or right) */
+  /* Content area (left or right) - 0.5 opacity matching original */
   .process__content {
     padding: var(--space-8);
-    opacity: 0.6;
-    transition: opacity 0.5s ease-in-out;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
   }
 
   .process__step:hover .process__content {
@@ -261,7 +261,8 @@ const parsedSubtitle = parseInlineMarkdown(subtitle);
   }
 
   .process__step:hover .process__step-title::after {
-    width: 100%;
+    /* calc includes overflow padding matching original */
+    width: calc(100% + 0.5em);
   }
 
   .process__description {

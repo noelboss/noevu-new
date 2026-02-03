@@ -193,23 +193,23 @@ const avatars = [
 
   /* ═══════════════════════════════════════════════════════════════
      SUBHEADLINE (h1 - SEO title) - .tags() mixin from original
-     14px pill/tag with glass effect and orange dot
+     Exact values extracted from live noevu.ch site
      ═══════════════════════════════════════════════════════════════ */
   .hero__subheadline {
-    /* Tag/pill layout */
+    /* Tag/pill layout - matches live site */
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 6px;
 
-    /* Typography */
+    /* Typography - live site uses 16.1px */
     font-family: var(--font-sans, 'Heebo', sans-serif);
-    font-size: 0.875rem; /* 14px */
+    font-size: 1rem; /* 16px - matches live site */
     font-weight: 400;
     line-height: 1.3em;
 
-    /* Spacing */
-    padding: 4px 12px;
+    /* Spacing - live site has 4px 32.2px 4px 12px (extra right padding for dot) */
+    padding: 4px 2rem 4px 0.75rem;
     margin-bottom: 1rem;
 
     /* Glass pill styling */

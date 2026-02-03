@@ -151,7 +151,7 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
     border-bottom-color: var(--theme-border);
   }
 
-  /* Question button */
+  /* Question button - comprehensive reset matching original */
   .faq__question {
     display: flex;
     justify-content: space-between;
@@ -162,11 +162,16 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
     font-family: var(--font-sans);
     font-size: var(--text-base);
     font-weight: var(--font-medium);
+    font-style: inherit;
     text-align: left;
+    text-transform: inherit;
+    letter-spacing: inherit;
     cursor: pointer;
-    background: none;
+    background: transparent;
     border: none;
     color: var(--color-text);
+    -webkit-appearance: none;
+    touch-action: manipulation;
     transition: color var(--transition);
   }
 
@@ -210,7 +215,7 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
     right: -2px;
     opacity: 0;
     transform: scale(0.5);
-    transition: opacity var(--transition), transform var(--transition);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
     box-shadow: 0 0 6px hsla(var(--color-orange-hsl), 0.6);
   }
 
@@ -230,7 +235,8 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
   .faq__icon-line {
     position: absolute;
     background-color: var(--color-primary);
-    transition: transform var(--transition-slow), opacity var(--transition-slow);
+    /* 0.2s timing matching original Squarespace accordion */
+    transition: transform 0.2s ease-in-out;
   }
 
   .faq[data-theme] .faq__icon-line {
@@ -253,10 +259,9 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
     transform: translateX(-50%);
   }
 
-  /* Rotate to minus when expanded */
+  /* Rotate vertical line to form minus when expanded (matches original) */
   .faq__question[aria-expanded="true"] .faq__icon-line--v {
-    transform: translateX(-50%) rotate(90deg);
-    opacity: 0;
+    transform: translateX(-50%) rotate(0deg);
   }
 
   /* Answer wrapper for smooth animation */
@@ -330,5 +335,18 @@ const sectionId = `faq-${Math.random().toString(36).slice(2, 9)}`;
 
   .faq[data-theme] .faq__question:focus-visible {
     outline-color: var(--theme-accent);
+  }
+
+  /* Respect user's motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .faq__answer-wrapper {
+      transition: none !important;
+    }
+    .faq__icon-line {
+      transition: none !important;
+    }
+    .faq__icon-wrapper::before {
+      transition: none !important;
+    }
   }
 </style>
