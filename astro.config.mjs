@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
+  server: { port: 3006 },
   integrations: [
     mdx(),
     sitemap({

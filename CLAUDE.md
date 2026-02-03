@@ -1,5 +1,13 @@
 # Claude Code Session Notes
 
+## Local Development
+
+| URL | Port |
+|-----|------|
+| http://noevu-new2.noevu.test | 3006 |
+
+**Prerequisites:** dnsmasq + Caddy (see `~/.claude/CLAUDE.md` for setup)
+
 ## Project Overview
 Rebuilding noevu.ch with Astro 5, Zod validation, and JSON as canonical truth.
 **Critical requirement:** Content and design must match 100% with original.
