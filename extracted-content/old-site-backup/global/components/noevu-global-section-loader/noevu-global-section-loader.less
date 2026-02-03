@@ -1,0 +1,160 @@
+// Global Sections for Squarespace (NGS) — LESS
+// Licensed by noevu.com
+
+// Base variables (you can override these if you like)
+@outer-spacing: var(--outer-spacing, 0);
+@inner-spacing: var(--inner-spacing, 0);
+@sqs-gutter: var(--sqs-site-gutter, 4vw);
+@grid-gutter: var(--grid-gutter);
+@cell-max: var(--cell-max-width);
+
+// --------------------------------------------------
+// 1) NGS load container
+// --------------------------------------------------
+
+.sqs-is-page-editing div[id^="load-"],
+.sqs-is-page-editing section[id^="load-"] .section-background {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.1) 10px,
+    rgba(0, 0, 0, 0.2) 10px,
+    rgba(0, 0, 0, 0.2) 20px
+  ) !important;
+  &:after {
+    content: "Inhalte werden dynamisch geladen 👇";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.ngs-load-container {
+  overflow: hidden;
+
+  .product-detail > & {
+    padding: 22px var(--sqs-site-gutter);
+  }
+
+  /* make shapes visible */
+  .website-component-block .sgs-shape {
+    position: absolute;
+    display: block;
+    overflow: visible;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  // Full‑page variant
+  &.full-page {
+    > *:first-child {
+      padding-top: 0 !important;
+    }
+    > * {
+      position: relative;
+      box-sizing: border-box;
+    }
+    .fluid-engine {
+      grid-template-columns:
+        minmax(@grid-gutter, 1fr)
+        repeat(24, minmax(0, @cell-max))
+        minmax(@grid-gutter, 1fr);
+
+      @media (max-width: 767px) {
+        grid-template-columns:
+          minmax(@grid-gutter, 1fr)
+          repeat(8, minmax(0, @cell-max))
+          minmax(@grid-gutter, 1fr);
+      }
+    }
+  }
+
+  // Standard (not full‑page)
+  &:not(.full-page) > * {
+    margin: @outer-spacing !important;
+    padding: @inner-spacing !important;
+    min-height: unset !important;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  // Content wrapper adjustments
+  .content-wrapper {
+    padding: 0 !important;
+
+    > .content {
+      width: 100% !important;
+    }
+  }
+
+  // Fluid‑engine blocks
+  [data-fluid-engine="true"] {
+    container-type: inline-size;
+  }
+  .fluid-engine {
+    grid-template-columns: 0 repeat(24, minmax(0, @cell-max)) 0;
+
+    @media (max-width: 767px) {
+      grid-template-columns: 0 repeat(8, minmax(0, @cell-max)) 0;
+    }
+
+    // Classic editor fix inside sqs-grid-12
+    .sqs-grid-12 & .sqs-block {
+      padding: 0;
+    }
+  }
+
+  // Inset background images
+  section.background-width--inset {
+    .content-wrapper > * {
+      padding: @sqs-gutter;
+    }
+  }
+}
+
+// --------------------------------------------------
+// 2) Load‑plugin alerts & editor placeholders
+// --------------------------------------------------
+.load-plugin.ngs-alert {
+  display: none;
+  border: 1px dashed red;
+  padding: 17px;
+}
+
+.sqs-edit-mode {
+  .load-plugin.ngs-alert {
+    display: block;
+  }
+}
+
+.sqs-edit-mode-active {
+  [data-ngs-load] {
+    position: relative;
+    border: 1px dashed;
+    padding: 17px;
+    min-height: 68px;
+
+    &:after {
+      content: "Load Content from: " attr(data-target);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
+// --------------------------------------------------
+// 3) Background images loaded by JS
+// --------------------------------------------------
+img.ngs-image-loaded {
+  --x: 50%;
+  --y: 50%;
+}

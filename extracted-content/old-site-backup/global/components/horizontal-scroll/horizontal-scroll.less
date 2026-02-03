@@ -1,0 +1,79 @@
+// Base styles for horizontal scroll sections
+.horizontal-section {
+  // Mobile first - vertical scrolling
+  //min-height: 100vh;
+  overflow-x: auto; /* Fallback for all browsers */
+  @supports (overflow-x: clip) {
+    overflow-x: clip; /* Modern browsers that support clip */
+  }
+
+  // Desktop styles - horizontal scrolling
+  @media (min-width: 769px) {
+    position: relative;
+    height: auto;
+  }
+
+  // When not scrolling
+  &:not(.is-scrolling) .horizontal-container {
+    @media (min-width: 769px) {
+      max-width: 100vw;
+      overflow: hidden;
+    }
+  }
+
+  // When scrolling
+  .is-scrolling .horizontal-container {
+    @media (min-width: 769px) {
+      width: auto;
+    }
+  }
+
+  .horizontal-container {
+    // Mobile first - vertical stacking
+    display: block;
+    width: 100%;
+
+    // Desktop styles - horizontal scrolling
+    @media (min-width: 769px) {
+      position: sticky;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      display: flex;
+      will-change: transform;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translateZ(0);
+      -webkit-font-smoothing: subpixel-antialiased;
+      width: max-content;
+    }
+
+    // Reset first section padding
+    .horizontal-scroll-section:first-child {
+      padding-top: 0 !important;
+    }
+
+    // Individual scroll sections
+    .horizontal-scroll-section {
+      // Mobile first - full width, vertical stacking
+      width: 100vw;
+      min-height: 100vh;
+      max-width: 100vw;
+      @media (max-width: 768px) {
+        padding-top: 0 !important;
+      }
+
+      // Desktop styles - horizontal scrolling
+      @media (min-width: 769px) {
+        flex: 0 0 100vw;
+        height: 100vh;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translateZ(0);
+        -webkit-font-smoothing: subpixel-antialiased;
+      }
+    }
+  }
+}

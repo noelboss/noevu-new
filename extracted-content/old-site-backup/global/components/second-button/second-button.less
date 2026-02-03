@@ -1,0 +1,31 @@
+// 2 Navigation Buttons 7.1 - GhostPlugins.com //
+
+@link-for-first-button: 4; // add the number of the link to turn it into a button - example: if it's the 4th link add 4
+@link-for-second-button: 5; // add the number of the link to turn it into a button
+
+@2-nav-buttons-background: #000;
+@2-nav-buttons-link-color: #fff;
+@2-nav-buttons-font-size: 14px;
+@2-nav-buttons-padding: 10px 5px;
+
+@2-nav-buttons-width: 120px;
+@2-nav-buttons-border: 1px solid #000;
+@2-nav-buttons-radius: 5px;
+
+/* ---- Do Not Edit Below ---- */
+
+.header-nav-item:nth-child(@link-for-first-button) a,
+.header-nav-item:nth-child(@link-for-second-button) a {
+  font-size: @2-nav-buttons-font-size;
+  background: @2-nav-buttons-background !important;
+  color: @2-nav-buttons-link-color !important;
+  width: @2-nav-buttons-width !important;
+  border: @2-nav-buttons-border !important;
+  border-radius: @2-nav-buttons-radius !important;
+  text-align: center !important;
+}
+.header-nav-item a {
+  padding: @2-nav-buttons-padding !important;
+}
+
+// 2 Navigation Buttons 7.1 - GhostPlugins.com //

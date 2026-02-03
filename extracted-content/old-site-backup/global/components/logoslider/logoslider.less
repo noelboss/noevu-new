@@ -1,0 +1,73 @@
+/* Keyframes use the custom properties so distance/time stays consistent when height changes */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    /* Prefer JS-computed loop distance; fallback to old per-item calc */
+    transform: translateX(calc(-1 * var(--loop-distance, calc(var(--slide-width-per-item) * var(--repeat-count)))));
+  }
+}
+
+#logoslider {
+  --slide-height: 40px;
+  --slide-width-per-item: 180px;
+  --repeat-count: 3;
+  --slide-padding: 40px;
+  --scroll-speed: 70s;
+  --logo-opacity: 0.75;
+}
+
+/* Image/slide/chrome rules grouped using nesting */
+#logoslider {
+
+  /* Image height driven by variable */
+  .slide img {
+    height: var(--slide-height);
+  }
+
+  /* Slide box uses variable for height; padding unchanged */
+  .slide {
+    height: var(--slide-height);
+    padding: 0 var(--slide-padding);
+  }
+
+  /* Hide surrounding section chrome when slider present */
+  .section-border,
+  .content-wrapper {
+    display: none;
+  }
+}
+
+/* Slider container driven by variable */
+.slider {
+  height: var(--slide-height);
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Track animation remains infinite; flex row by default */
+#slider-left {
+  .slide-track {
+    animation: scrollLeft var(--scroll-speed) linear infinite;
+    display: flex;
+
+    img {
+      opacity: var(--logo-opacity);
+      transition: opacity 200ms ease-in-out;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* Spacing around the slider */
+div#slider-left {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}

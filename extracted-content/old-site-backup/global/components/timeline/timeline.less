@@ -1,0 +1,266 @@
+// ============================================
+// Timeline Component
+// ============================================
+
+// Variables
+// ============================================
+@card-green-hsl: hsla(var(--darkAccent-hsl), 1);
+@card-orange-hsl: hsla(var(--white-hsl), 1);
+@card-grey-hsl: hsla(var(--black-hsl), 1);
+
+section {
+  // Colors
+  --timelineanimatedcolor: var(--tweak-text-block-stroke-color);
+  --timelinecolor: color-mix(in oklab, var(--paragraphLargeColor) 40%, transparent 100%);
+  --timelinestopbackground: transparent;
+
+  // Sizes
+  --circlesize: 5px;
+  --timelineactivecirclesize: 7px;
+  --timelinehorizontallinelength: 20px;
+  --timelinewidth: 1px;
+  --timelineanimatedwidth: 2.5px;
+  --textblockanimationhorizontaldistance: 0;
+
+  // Transitions
+  --timelinetransition: 0.1s;
+}
+
+// Mixins
+// ============================================
+.timeline-transition() {
+  transition: all 0.1s ease-in-out;
+}
+
+.horizontal-line() {
+  content: "";
+  position: absolute;
+  transform: translateY(calc(0% - var(--timelinewidth) / 2));
+  height: var(--timelinewidth);
+  width: calc(var(--timelinehorizontallinelength) - var(--circlesize) / 2);
+  background-color: var(--timelinecolor);
+  .timeline-transition();
+}
+
+.circle-marker() {
+  content: "";
+  position: absolute;
+  transform: translateY(calc((0% - 0.5 * var(--circlesize)) - (1 * var(--timelinewidth))));
+  height: var(--circlesize);
+  width: var(--circlesize);
+  border: var(--timelinewidth) solid var(--timelinecolor);
+  background: var(--timelinestopbackground) !important;
+  border-radius: 50%;
+  .timeline-transition();
+}
+
+// Base Styles
+// ============================================
+.timeline-vertical {
+  position: relative;
+  height: 100%;
+  background: var(--timelinecolor);
+  width: var(--timelinewidth);
+  margin: auto;
+
+  &.left-edge {
+    margin: 0 auto 0 0;
+  }
+
+  &.right-edge {
+    margin: 0 0 0 auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+  }
+}
+
+// Horizontal Lines
+// ============================================
+.horizontal-right,
+.horizontal-left {
+  width: 100%;
+
+  &:before {
+    .horizontal-line();
+  }
+
+  &:after {
+    .circle-marker();
+  }
+
+  // Edit mode specific styles
+  body:not(.sqs-edit-mode.sqs-edit-mode-active) & {
+
+    &:before,
+    &:after {
+      .timeline-transition();
+    }
+  }
+}
+
+.horizontal-right {
+  &:before {
+    left: calc((-0.5 * var(--timelinewidth)));
+  }
+
+  &:after {
+    left: calc(var(--timelinehorizontallinelength) - (var(--circlesize) / 2) - var(--timelinewidth));
+  }
+}
+
+.horizontal-left {
+  &:before {
+    right: calc((-0.5 * var(--timelinewidth))) !important;
+    left: unset !important;
+  }
+
+  &:after {
+    right: calc(var(--timelinehorizontallinelength) - (var(--circlesize) / 2) - var(--timelinewidth));
+    left: unset !important;
+  }
+}
+
+// Mobile styles for horizontal lines
+@media screen and (max-width: 767px) {
+
+  .horizontal-left,
+  .horizontal-right {
+    &:before {
+      left: 0 !important;
+      right: unset !important;
+    }
+
+    &:after {
+      left: calc(var(--timelinehorizontallinelength) - (var(--circlesize) / 2) - var(--timelinewidth) + 0.5px) !important;
+      right: unset !important;
+    }
+  }
+}
+
+// Animated Elements
+// ============================================
+.vertical-line-animated {
+  background: var(--timelineanimatedcolor);
+  will-change: height;
+  z-index: 10000001999999999;
+  display: block;
+  width: var(--timelineanimatedwidth);
+  position: relative;
+  transform: translatex(calc(0.5px - var(--timelineanimatedwidth) * 0.5));
+}
+
+// Text Animations
+// ============================================
+.timeline-text-animations-enabled {
+  body:not(.sqs-edit-mode.sqs-edit-mode-active) {
+
+    .vertical-timeline-section .html-block:not(.code-block),
+    section:has(.timeline-vertical) .html-block:not(.code-block) {
+      transition: 0.3s all ease;
+    }
+
+    .timeline-stop-activated {
+      &.right-of-timeline.html-block:not(.code-block) {
+        transform: translate(var(--textblockanimationhorizontaldistance), 0);
+      }
+
+      &.left-of-timeline.html-block:not(.code-block) {
+        transform: translate(calc(-1 * var(--textblockanimationhorizontaldistance)), 0);
+      }
+    }
+  }
+}
+
+// Active States
+// ============================================
+body:not(.sqs-edit-mode.sqs-edit-mode-active) {
+  .timeline-stop-activated {
+    --circlesize: var(--timelineactivecirclesize);
+    --timelinewidth: var(--timelineanimatedwidth);
+
+    .horizontal-right:after,
+    .horizontal-left:after {
+      border: var(--timelinewidth) solid var(--timelineanimatedcolor) !important;
+    }
+
+    .horizontal-right:before,
+    .horizontal-left:before {
+      background: var(--timelineanimatedcolor) !important;
+      height: var(--timelinewidth);
+    }
+  }
+
+  hr {
+    transition: height var(--timelinetransition) ease;
+
+    &.timeline-stop-activated {
+      height: var(--timelineanimatedwidth) !important;
+    }
+  }
+}
+
+// Section Styles
+// ============================================
+.vertical-timeline-section,
+section:has(.timeline-vertical) {
+
+  // Block content
+  .sqs-block-code .sqs-block-content {
+    position: static !important;
+  }
+
+  // Typography
+  pre,
+  pre code {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-bottom: 4px !important;
+  }
+
+  h3,
+  h4 {
+    margin-top: 0 !important;
+    margin-bottom: 4px !important;
+  }
+
+  h4+p,
+  h3+p {
+    margin-top: 0 !important;
+  }
+
+  .sqs-block-horizontalrule hr {
+    margin: 0 !important;
+  }
+
+  // Right-aligned text on mobile
+  @media screen and (max-width: 768px) {
+    *[style*="right"] {
+      text-align: left !important;
+    }
+  }
+}
+
+// Block Layout
+// ============================================
+.sqs-block-content {
+  &.has-timeline-vertical {
+    height: 100%;
+  }
+
+  &:has(.timeline-vertical),
+  &.has-timeline-vertical,
+  .sqs-block.has-timeline-vertical,
+  &:has(.timeline-vertical)>div {
+    height: 100%;
+  }
+
+  .sqs-block-focused &:has(.timeline-vertical,
+    .horizontal-left,
+    .horizontal-right) {
+    height: 0 !important;
+  }
+}
