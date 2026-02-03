@@ -249,7 +249,7 @@ img {
   padding: var(--space-3) var(--space-6);
   font-family: var(--font-sans);
   font-size: var(--text-base);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semibold); /* Live site: 600 */
   line-height: 1;
   text-decoration: none;
   border: none;
