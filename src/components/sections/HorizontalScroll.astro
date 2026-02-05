@@ -538,11 +538,12 @@ const parsedHeadline = headline ? parseInlineMarkdown(headline) : null;
         const isInSection = offset > 0 && offset < scrollDistance;
         wrapperEl.classList.toggle('is-active', isInSection || (offset >= 0 && offset <= scrollDistance));
 
-        // Update active dot based on progress
-        if (scrollDistance > 0 && panelCount > 0) {
-          // Calculate which panel is most visible
+        // Update active dot based on which panel is currently visible
+        if (panelCount > 0) {
+          // Each panel is 100vw, calculate which one is visible based on horizontal offset
+          const panelWidth = window.innerWidth;
           const activeIndex = Math.min(
-            Math.floor(pct * panelCount),
+            Math.max(0, Math.floor(clamped / panelWidth)),
             panelCount - 1
           );
 
